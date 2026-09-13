@@ -1,0 +1,9 @@
+node_modules
+.next
+pnpm-lock.yaml
+docs/phase-1
+PRODUCT.md
+.impeccable
+coverage
+next-env.d.ts
+drizzle/meta
