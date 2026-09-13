@@ -29,9 +29,14 @@ export default function Home() {
           services are not available in this development build.
         </p>
         <div className="mt-8">
-          <Button asChild>
-            <a href="#foundation">View foundation status</a>
-          </Button>
+          <div className="flex flex-wrap gap-3">
+            <Button asChild>
+              <a href="#foundation">View foundation status</a>
+            </Button>
+            <Button asChild variant="outline">
+              <a href="/login">Test authentication</a>
+            </Button>
+          </div>
         </div>
         <section
           id="foundation"
@@ -48,7 +53,7 @@ export default function Home() {
             </div>
             <div className="grid gap-2 py-4 sm:grid-cols-2">
               <dt>Database</dt>
-              <dd>Not checked by this page</dd>
+              <dd>Foundation migrated; not checked by this page</dd>
             </div>
             <div className="grid gap-2 py-4 sm:grid-cols-2">
               <dt>Portal access</dt>

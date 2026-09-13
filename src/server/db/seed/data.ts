@@ -18,6 +18,9 @@ export const seedIds = {
     student: "40000000-0000-4000-8000-000000000001",
     applicant: "40000000-0000-4000-8000-000000000002",
     employee: "40000000-0000-4000-8000-000000000003",
+    records: "40000000-0000-4000-8000-000000000004",
+    operations: "40000000-0000-4000-8000-000000000005",
+    technology: "40000000-0000-4000-8000-000000000006",
   },
   profiles: {
     student: "50000000-0000-4000-8000-000000000001",
@@ -25,6 +28,39 @@ export const seedIds = {
     employee: "50000000-0000-4000-8000-000000000003",
   },
 } as const;
+
+export const developmentAuthAccountSeed = [
+  {
+    email: "student.test@example.invalid",
+    name: "Alex Teststudent",
+    personId: seedIds.people.student,
+  },
+  {
+    email: "applicant.test@example.invalid",
+    name: "Jamie Testapplicant",
+    personId: seedIds.people.applicant,
+  },
+  {
+    email: "faculty.test@example.invalid",
+    name: "Taylor Testemployee",
+    personId: seedIds.people.employee,
+  },
+  {
+    email: "records.test@example.invalid",
+    name: "Riley Testrecords",
+    personId: seedIds.people.records,
+  },
+  {
+    email: "operations.test@example.invalid",
+    name: "Morgan Testoperations",
+    personId: seedIds.people.operations,
+  },
+  {
+    email: "technology.test@example.invalid",
+    name: "Casey Testtechnology",
+    personId: seedIds.people.technology,
+  },
+] as const;
 
 export const campusSeed = [
   {

@@ -4,6 +4,9 @@ const schema = z
   .object({
     APP_ENV: z.enum(["development", "test", "preview", "production"]),
     APP_URL: z.url(),
+    BETTER_AUTH_URL: z.url(),
+    BETTER_AUTH_SECRET: z.string().min(32),
+    AUTH_SEED_PASSWORD: z.string().min(12).optional(),
     DATABASE_URL: z
       .string()
       .url()
@@ -29,6 +32,42 @@ const schema = z
         code: "custom",
         path: ["APP_URL"],
         message: "HTTPS required",
+      });
+    }
+
+    if (
+      ["preview", "production"].includes(value.APP_ENV) &&
+      (!URL.canParse(value.BETTER_AUTH_URL) ||
+        new URL(value.BETTER_AUTH_URL).protocol !== "https:")
+    ) {
+      context.addIssue({
+        code: "custom",
+        path: ["BETTER_AUTH_URL"],
+        message: "HTTPS required",
+      });
+    }
+
+    if (
+      ["preview", "production"].includes(value.APP_ENV) &&
+      /local|development|change|example|placeholder/i.test(
+        value.BETTER_AUTH_SECRET,
+      )
+    ) {
+      context.addIssue({
+        code: "custom",
+        path: ["BETTER_AUTH_SECRET"],
+        message: "Production auth secret must be unique",
+      });
+    }
+
+    if (
+      value.AUTH_SEED_PASSWORD &&
+      ["preview", "production"].includes(value.APP_ENV)
+    ) {
+      context.addIssue({
+        code: "custom",
+        path: ["AUTH_SEED_PASSWORD"],
+        message: "Development seed passwords are not allowed",
       });
     }
   });
