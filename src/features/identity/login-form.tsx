@@ -3,6 +3,10 @@
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
+import { Button } from "@/components/ui/button";
+import { Input, Select } from "@/components/ui/input";
+import { Alert } from "@/components/ui/alert";
+import { FormSection } from "@/components/ui/form-section";
 
 const portalOptions = [
   "Applicant",
@@ -45,26 +49,28 @@ export function LoginForm() {
   }
 
   return (
-    <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
+    <form
+      className="mt-7 space-y-5"
+      onSubmit={handleSubmit}
+      aria-busy={isSubmitting}
+    >
       {error ? (
-        <div
-          role="alert"
-          className="rounded-md border border-red-300 bg-red-50 px-4 py-3 text-sm leading-6 text-red-900"
-        >
+        <Alert role="alert" tone="destructive">
           {error}
-        </div>
+        </Alert>
       ) : null}
 
       <div>
         <label htmlFor="portal" className="block text-sm font-semibold">
           Portal
         </label>
-        <select
+        <Select
           id="portal"
+          aria-describedby="portal-help"
           name="portal"
           required
           defaultValue=""
-          className="mt-2 min-h-11 w-full rounded-md border border-border bg-white px-3 py-2 text-base outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          className="mt-2"
         >
           <option value="" disabled>
             Select a portal
@@ -74,63 +80,68 @@ export function LoginForm() {
               {portal}
             </option>
           ))}
-        </select>
-        <p className="mt-2 text-sm leading-6 text-muted-foreground">
+        </Select>
+        <p
+          id="portal-help"
+          className="mt-2 text-sm leading-6 text-muted-foreground"
+        >
           This selection is context only. Portal access is not evaluated yet.
         </p>
       </div>
 
-      <div>
-        <label htmlFor="email" className="block text-sm font-semibold">
-          Email address
-        </label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          autoComplete="username"
-          inputMode="email"
-          required
-          className="mt-2 min-h-11 w-full rounded-md border border-border bg-white px-3 py-2 text-base outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-        />
-        <p className="mt-2 text-sm leading-6 text-muted-foreground">
-          Institutional username rules are intentionally deferred.
-        </p>
-      </div>
-
-      <div>
-        <label htmlFor="password" className="block text-sm font-semibold">
-          Password
-        </label>
-        <div className="relative mt-2">
-          <input
-            id="password"
-            name="password"
-            type={showPassword ? "text" : "password"}
-            autoComplete="current-password"
+      <FormSection>
+        <legend className="sr-only">Sign-in details</legend>
+        <div>
+          <label htmlFor="email" className="block text-sm font-semibold">
+            Email address
+          </label>
+          <Input
+            id="email"
+            aria-describedby="email-help"
+            name="email"
+            type="email"
+            autoComplete="username"
+            inputMode="email"
             required
-            minLength={12}
-            className="min-h-11 w-full rounded-md border border-border bg-white py-2 pr-20 pl-3 text-base outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            className="mt-2"
           />
-          <button
-            type="button"
-            aria-pressed={showPassword}
-            aria-controls="password"
-            onClick={() => setShowPassword((visible) => !visible)}
-            className="absolute inset-y-1 right-1 min-w-16 rounded px-3 text-sm font-semibold text-primary outline-none hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring"
+          <p
+            id="email-help"
+            className="mt-2 text-sm leading-6 text-muted-foreground"
           >
-            {showPassword ? "Hide" : "Show"}
-          </button>
+            Institutional username rules are intentionally deferred.
+          </p>
         </div>
-      </div>
 
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className="min-h-11 w-full rounded-md bg-primary px-5 py-3 font-semibold text-primary-foreground outline-none hover:bg-[#1f3e2f] focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-wait disabled:opacity-65"
-      >
+        <div>
+          <label htmlFor="password" className="block text-sm font-semibold">
+            Password
+          </label>
+          <div className="relative mt-2">
+            <Input
+              id="password"
+              name="password"
+              type={showPassword ? "text" : "password"}
+              autoComplete="current-password"
+              required
+              minLength={12}
+              className="pr-20"
+            />
+            <button
+              type="button"
+              aria-pressed={showPassword}
+              aria-controls="password"
+              onClick={() => setShowPassword((visible) => !visible)}
+              className="absolute inset-y-0 right-0 min-h-11 min-w-16 rounded-md px-3 text-sm font-semibold text-primary hover:bg-primary-soft"
+            >
+              {showPassword ? "Hide" : "Show"}
+            </button>
+          </div>
+        </div>
+      </FormSection>
+      <Button type="submit" disabled={isSubmitting} className="w-full">
         {isSubmitting ? "Signing in…" : "Sign in"}
-      </button>
+      </Button>
     </form>
   );
 }

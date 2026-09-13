@@ -1,4 +1,11 @@
 import type { Metadata } from "next";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "@/components/ui/card";
+import {
+  ConceptDisclaimer,
+  DevelopmentHeader,
+  SkipLink,
+} from "@/components/development-identity";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { SignOutButton } from "@/features/identity/sign-out-button";
@@ -11,59 +18,71 @@ export default async function AccountPage() {
   if (!current) redirect("/login");
 
   return (
-    <main className="mx-auto min-h-screen max-w-3xl px-5 py-12 sm:px-8 sm:py-20">
-      <header className="border-b border-border pb-7">
-        <p className="text-sm font-semibold tracking-[0.12em] text-primary uppercase">
-          Authenticated account
-        </p>
-        <h1 className="mt-3 text-3xl font-semibold sm:text-4xl">
-          Identity confirmed
-        </h1>
-        <p className="mt-4 max-w-2xl leading-7 text-muted-foreground">
-          This neutral page proves authentication only. No portal membership,
-          role, or permission has been evaluated.
-        </p>
-      </header>
+    <div className="flex min-h-screen flex-col">
+      <SkipLink />
+      <DevelopmentHeader />
+      <main
+        id="main"
+        className="mx-auto w-full max-w-3xl flex-1 px-5 py-10 sm:px-8 sm:py-12"
+      >
+        <header className="border-b border-border pb-7">
+          <p className="text-sm font-semibold text-primary-hover">
+            Authenticated account
+          </p>
+          <h1 className="mt-3 text-3xl font-semibold sm:text-4xl">
+            Identity confirmed
+          </h1>
+          <p className="mt-4 max-w-2xl leading-7 text-muted-foreground">
+            This development page proves authentication only. No portal
+            membership, role, or permission has been evaluated.
+          </p>
+        </header>
 
-      <section aria-labelledby="identity-title" className="py-8">
-        <h2 id="identity-title" className="text-xl font-semibold">
-          Account details
-        </h2>
-        <dl className="mt-5 divide-y divide-border border-y border-border">
-          <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
-            <dt className="text-sm font-semibold text-muted-foreground">
-              Name
-            </dt>
-            <dd>{current.user.name}</dd>
-          </div>
-          <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
-            <dt className="text-sm font-semibold text-muted-foreground">
-              Email
-            </dt>
-            <dd className="break-words">{current.user.email}</dd>
-          </div>
-          <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
-            <dt className="text-sm font-semibold text-muted-foreground">
-              Account status
-            </dt>
-            <dd>Active</dd>
-          </div>
-          <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
-            <dt className="text-sm font-semibold text-muted-foreground">
-              Session
-            </dt>
-            <dd>Present and server-verified</dd>
-          </div>
-          <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
-            <dt className="text-sm font-semibold text-muted-foreground">
-              Portal access
-            </dt>
-            <dd>Not evaluated in P2-M3</dd>
-          </div>
-        </dl>
-      </section>
+        <Card aria-labelledby="identity-title" className="my-8">
+          <h2 id="identity-title" className="text-xl font-semibold">
+            Account details
+          </h2>
+          <dl className="mt-5 divide-y divide-border border-y border-border">
+            <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
+              <dt className="text-sm font-semibold text-muted-foreground">
+                Name
+              </dt>
+              <dd className="min-w-0 break-words">{current.user.name}</dd>
+            </div>
+            <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
+              <dt className="text-sm font-semibold text-muted-foreground">
+                Email
+              </dt>
+              <dd className="min-w-0 break-words">{current.user.email}</dd>
+            </div>
+            <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
+              <dt className="text-sm font-semibold text-muted-foreground">
+                Account status
+              </dt>
+              <dd>
+                <Badge tone="success">Active</Badge>
+              </dd>
+            </div>
+            <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
+              <dt className="text-sm font-semibold text-muted-foreground">
+                Session
+              </dt>
+              <dd className="text-success-foreground">
+                Present and server-verified
+              </dd>
+            </div>
+            <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
+              <dt className="text-sm font-semibold text-muted-foreground">
+                Portal access
+              </dt>
+              <dd>Not evaluated in P2-M3</dd>
+            </div>
+          </dl>
+        </Card>
 
-      <SignOutButton />
-    </main>
+        <SignOutButton />
+      </main>
+      <ConceptDisclaimer />
+    </div>
   );
 }
