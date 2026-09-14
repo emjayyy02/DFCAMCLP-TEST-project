@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DFCAMCLP Portal — Development foundation",
+  title: "DFCAMCLP — Integrated Student & Employee Portal",
   description:
-    "Development foundation for the DFCAMCLP Integrated Student & Employee Portal.",
+    "Explore programs, admissions, and the DFCAMCLP student and employee portal concept. An unofficial educational and portfolio project.",
   robots: { index: false, follow: false },
 };
 

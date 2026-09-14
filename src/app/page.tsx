@@ -1,90 +1,118 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { SiteShell } from "@/components/public/site-shell";
 import {
-  ConceptDisclaimer,
-  DevelopmentHeader,
-  SkipLink,
-} from "@/components/development-identity";
+  AdmissionsJourney,
+  CampusPrograms,
+} from "@/components/public/institution-content";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <SkipLink />
-      <DevelopmentHeader />
-      <main
-        id="main"
-        className="mx-auto w-full max-w-6xl flex-1 px-5 py-10 sm:px-8 sm:py-14"
-      >
-        <section
-          aria-labelledby="page-title"
-          className="grid gap-8 lg:grid-cols-[1fr_19rem] lg:items-center lg:gap-16"
-        >
-          <div>
-            <h1
-              id="page-title"
-              className="max-w-xl text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-4xl"
-            >
+    <SiteShell>
+      <main id="main">
+        <section className="campus-hero" aria-labelledby="hero-title">
+          <Image
+            src="/images/campus-hero.webp"
+            alt="DFCAMCLP campus buildings surrounding an open courtyard"
+            fill
+            preload
+            sizes="100vw"
+            className="campus-hero-image"
+          />
+          <div className="hero-scrim" aria-hidden="true" />
+          <div className="public-container hero-content">
+            <h1 id="hero-title">
               Integrated Student
-              <br className="hidden sm:block" /> &amp; Employee Portal
+              <br />
+              &amp; Employee Portal
             </h1>
-            <p className="mt-5 max-w-xl leading-7 text-muted-foreground">
-              The application foundation is being prepared. Student and employee
-              services are not available in this development build.
+            <p>
+              Admissions, academics, and campus services
+              <br className="hero-line-break" /> in one integrated experience.
             </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="hero-actions">
               <Button asChild>
-                <a href="#foundation">View foundation status</a>
+                <Link href="/admissions">Explore Admissions</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link href="/login">Test portal access</Link>
+                <Link href="/login">Portal Sign In</Link>
               </Button>
             </div>
           </div>
-          <aside className="rounded-lg bg-primary-soft p-6 text-info-foreground">
-            <h2 className="text-lg font-semibold">
-              A foundation for campus services
-            </h2>
-            <p className="mt-3 text-sm leading-6">
-              This build establishes the application, database and sign-in
-              experience.
-            </p>
-            <p className="mt-5 rounded-md bg-accent-soft px-3 py-2 text-sm text-accent-foreground">
-              For testing with fake development data only.
-            </p>
-          </aside>
         </section>
-        <Card
-          id="foundation"
-          aria-labelledby="foundation-title"
-          className="mt-10 sm:mt-12"
+        <section
+          className="quick-access public-container"
+          aria-labelledby="quick-title"
         >
-          <h2 id="foundation-title" className="text-xl font-semibold">
-            Foundation status
-          </h2>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Implementation notes for this development build.
-          </p>
-          <dl className="mt-5 divide-y divide-border">
-            <div className="grid items-start gap-2 py-4 sm:grid-cols-[12rem_1fr] sm:gap-6">
-              <dt className="font-medium">Application</dt>
-              <dd>Bootstrap landing page available</dd>
+          <h2 id="quick-title">Quick access</h2>
+          <div className="quick-links">
+            {[
+              ["/admissions", "Admissions"],
+              ["/login?portal=STUDENT", "Student Portal"],
+              ["/login?portal=ACADEMIC", "Academic Portal"],
+              ["/login?portal=RECORDS", "Admissions & Records"],
+            ].map(([href, label]) => (
+              <Link href={href} key={href}>
+                {label}
+                <svg
+                  aria-hidden="true"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                >
+                  <path d="M7 17 17 7M7 7h10v10" />
+                </svg>
+              </Link>
+            ))}
+          </div>
+        </section>
+        <section
+          className="public-section public-container"
+          aria-labelledby="programs-title"
+        >
+          <div className="section-heading">
+            <div>
+              <h2 id="programs-title">Programs &amp; campuses</h2>
+              <p>Explore the academic programs across two campuses.</p>
             </div>
-            <div className="grid items-start gap-2 py-4 sm:grid-cols-[12rem_1fr] sm:gap-6">
-              <dt className="font-medium">Database</dt>
-              <dd>Foundation migrated; not checked by this page</dd>
+            <Link className="text-link" href="/programs">
+              View programs
+            </Link>
+          </div>
+          <CampusPrograms />
+        </section>
+        <section className="journey-section">
+          <div className="public-container">
+            <div className="section-heading">
+              <div>
+                <h2>Your admissions journey</h2>
+                <p>A clear path from application to enrollment.</p>
+              </div>
+              <Link className="text-link" href="/admissions">
+                Admissions overview
+              </Link>
             </div>
-            <div className="grid items-start gap-2 pt-4 sm:grid-cols-[12rem_1fr] sm:gap-6">
-              <dt className="font-medium">Portal access</dt>
-              <dd>
-                <Badge tone="info">M4 foundation available</Badge>
-              </dd>
-            </div>
-          </dl>
-        </Card>
+            <AdmissionsJourney />
+          </div>
+        </section>
+        <aside className="public-container portal-notice">
+          <span className="notice-marker" aria-hidden="true" />
+          <div>
+            <h2>Explore the portal concept</h2>
+            <p>
+              This is a demonstration. Applications and real student information
+              are not accepted.
+            </p>
+          </div>
+          <Link className="text-link" href="/about">
+            About this project
+          </Link>
+        </aside>
       </main>
-      <ConceptDisclaimer />
-    </div>
+    </SiteShell>
   );
 }

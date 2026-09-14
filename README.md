@@ -2,7 +2,7 @@
 
 Development project; not an official college service. Fake development data only.
 
-Phase 1 is preserved in [docs/phase-1](docs/phase-1/PHASE-1-OVERVIEW.md). Phase 2 is being implemented sequentially. **Current checkpoint: P2-M4 access control and portal shell are PASS / COMPLETE after an explicitly user-authorized fresh development-database reset and full regression/browser acceptance. P2-M5 has not started.**
+Phase 1 is preserved in [docs/phase-1](docs/phase-1/PHASE-1-OVERVIEW.md). Phase 2 is **COMPLETE** through P2-M4. P2-M5 is removed as a standalone milestone; regression and shared-foundation checks continue inside frontend milestones. **Current milestone: P3-M1 — Public Website + Login Experience.** P3-M2–M7 remain unstarted. See [P3-M1 implementation and validation](docs/phase-3/P3-M1-PUBLIC-EXPERIENCE.md).
 
 ## Local setup
 
@@ -43,6 +43,6 @@ Use `pnpm db:generate` after an intentional Drizzle schema change and commit the
 
 `pnpm db:reset:dev` removes and recreates only the configured local development database schemas, then migrates and seeds them. It refuses to run unless `APP_ENV=development`, the database host is local, `DATABASE_URL` matches `POSTGRES_USER` and `POSTGRES_DB`, and the database name ends in `_dev`. It is destructive to that development database and must never be used for preview or production.
 
-Authentication is implemented in M3. M4 adds explicit portal memberships, portal-scoped roles, small shell permissions, server guards, and the shared responsive portal shell. These permissions do not authorize future records or business actions. Shared audit and full regression work remain P2-M5. No school workflow tables or functionality exist.
+Authentication is implemented in M3. M4 adds explicit portal memberships, portal-scoped roles, small shell permissions, server guards, and the shared responsive portal shell. These permissions do not authorize future records or business actions. Regression runs continuously within Phase 3 frontend milestones. A shared audit service and school business workflows remain unimplemented; they are not a standalone P2-M5 milestone.
 
 See [authentication architecture](docs/phase-2/AUTHENTICATION.md), [access-control architecture](docs/phase-2/ACCESS-CONTROL.md), [portal shell](docs/phase-2/PORTAL-SHELL.md), [M4 validation](docs/phase-2/M4-VALIDATION.md), and [Phase 2 status and architecture](docs/phase-2/PHASE-2-OVERVIEW.md).

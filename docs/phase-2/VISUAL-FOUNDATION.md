@@ -31,6 +31,8 @@ Brief review: avoid a generic marketing hero, statistics, icon-card grid, or dar
 
 ## Palette and tokens
 
+P3-M1 update: the historical approximate brand values below are superseded by canonical blue **#0D13CD** and yellow **#FCDF00**. Hover/soft tokens are now derived with color-mix, and focus follows primary. Neutral typography/surfaces and independent semantic colors are preserved. See [P3-M1](../phase-3/P3-M1-PUBLIC-EXPERIENCE.md) and current globals.css for the implemented values.
+
 The source of truth is `src/app/globals.css`, mapped through Tailwind v4 `@theme inline` and the existing shadcn configuration. No competing theme engine.
 
 | Role                                | Value / use                                                   |

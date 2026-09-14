@@ -2,7 +2,7 @@
 
 ## Current checkpoint
 
-P2-M1 Repository + Stack Bootstrap, P2-M2 Database Foundation, P2-M3 Authentication, the Visual Foundation, and P2-M4 Access Control + Portal Shell are complete. P2-M4 passed an explicitly user-authorized fresh development-database reset, full regression suite, and rendered-browser acceptance. P2-M5 has not started. This is not a completed Phase 2 delivery.
+P2-M1 Repository + Stack Bootstrap, P2-M2 Database Foundation, P2-M3 Authentication, the Visual Foundation, and P2-M4 Access Control + Portal Shell are complete. P2-M4 passed an explicitly user-authorized fresh development-database reset, full regression suite, and rendered-browser acceptance. Phase 2 is COMPLETE. P2-M5 is intentionally removed as a standalone milestone; shared-foundation and regression checks run continuously inside Phase 3 frontend milestones.
 
 The approved stack is Next.js App Router, React, TypeScript, Tailwind, shadcn/ui primitives, PostgreSQL, Drizzle, Better Auth, Zod, React Hook Form, TanStack Table, Vitest/Testing Library/Playwright, Docker Compose, pnpm and GitHub Actions. Dependencies are installed when their milestone needs them; the exact current dependency versions are in package.json and pnpm-lock.yaml.
 
@@ -39,9 +39,9 @@ M2 owns the foundational institution and person/profile schema. M3 owns authenti
 3. M3 — Authentication ✅
 4. Visual Foundation ✅
 5. M4 — Access Control + Portal Shell ✅
-6. M5 — Shared Foundation + Regression — remaining, not started
+6. M5 — Removed as a standalone milestone; checks continue inside frontend milestones
 
-The older M4–M8 enterprise-sized sequence is obsolete for this polished mock/demo. Its useful security boundaries are preserved in the compressed M4–M5 plan; it is not a direction to build audit, CI, and portal shells as separate later milestones.
+The older M4–M8 enterprise-sized sequence is obsolete for this polished mock/demo. Its useful security boundaries are preserved in the completed M4 foundation; it is not a direction to build audit, CI, and portal shells as separate later milestones.
 
 ## Environments
 
@@ -60,4 +60,14 @@ See [M1 validation](M1-VALIDATION.md), [M2 validation](M2-VALIDATION.md), [M3 va
 
 ## Next checkpoint
 
-Stop after P2-M4. P2-M5 Shared Foundation + Regression may begin only after explicit approval.
+Phase 2 is complete. The authorized continuation is P3-M1 only. Stop after P3-M1; P3-M2 requires a separate instruction.
+
+## Phase 3 roadmap
+
+- M1 — Public Website + Login Experience — current; see [implementation and validation](../phase-3/P3-M1-PUBLIC-EXPERIENCE.md).
+- M2 — Applicant Experience — remaining.
+- M3 — Student Experience — remaining.
+- M4 — Academic Experience — remaining.
+- M5 — Admissions & Records Experience — remaining.
+- M6 — Operations Experience — remaining.
+- M7 — Technology Experience — remaining.

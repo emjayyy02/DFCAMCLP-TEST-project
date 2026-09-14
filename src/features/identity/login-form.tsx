@@ -96,7 +96,7 @@ export function LoginForm({ defaultPortal = "" }: { defaultPortal?: string }) {
           id="portal-help"
           className="mt-2 text-sm leading-6 text-muted-foreground"
         >
-          Your account must have an active membership for the selected portal.
+          Use a portal your account has access to.
         </p>
       </div>
 
@@ -108,7 +108,6 @@ export function LoginForm({ defaultPortal = "" }: { defaultPortal?: string }) {
           </label>
           <Input
             id="email"
-            aria-describedby="email-help"
             name="email"
             type="email"
             autoComplete="username"
@@ -116,12 +115,6 @@ export function LoginForm({ defaultPortal = "" }: { defaultPortal?: string }) {
             required
             className="mt-2"
           />
-          <p
-            id="email-help"
-            className="mt-2 text-sm leading-6 text-muted-foreground"
-          >
-            Institutional username rules are intentionally deferred.
-          </p>
         </div>
 
         <div>
