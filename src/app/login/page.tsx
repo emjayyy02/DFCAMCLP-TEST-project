@@ -7,10 +7,16 @@ import {
   DevelopmentHeader,
   SkipLink,
 } from "@/components/development-identity";
+import { isPortalCode } from "@/lib/portals";
 
 export const metadata: Metadata = { title: "Sign in — DFCAMCLP Portal" };
 
-export default function LoginPage() {
+export default async function LoginPage({ searchParams }: PageProps<"/login">) {
+  const requestedPortal = (await searchParams).portal;
+  const defaultPortal =
+    typeof requestedPortal === "string" && isPortalCode(requestedPortal)
+      ? requestedPortal
+      : "";
   return (
     <div className="flex min-h-screen flex-col">
       <SkipLink />
@@ -44,9 +50,10 @@ export default function LoginPage() {
             Portal sign in
           </h1>
           <p className="mt-3 leading-7 text-muted-foreground">
-            Use a development account to verify secure authentication.
+            Choose a portal, then use a fake development account with access to
+            it.
           </p>
-          <LoginForm />
+          <LoginForm defaultPortal={defaultPortal} />
           <div className="mt-7 border-t border-border pt-5 text-sm leading-6 text-muted-foreground">
             <p>
               Account activation and recovery are not available in this build.

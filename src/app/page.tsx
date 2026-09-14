@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -37,7 +38,7 @@ export default function Home() {
                 <a href="#foundation">View foundation status</a>
               </Button>
               <Button asChild variant="outline">
-                <a href="/login">Test authentication</a>
+                <Link href="/login">Test portal access</Link>
               </Button>
             </div>
           </div>
@@ -77,7 +78,7 @@ export default function Home() {
             <div className="grid items-start gap-2 pt-4 sm:grid-cols-[12rem_1fr] sm:gap-6">
               <dt className="font-medium">Portal access</dt>
               <dd>
-                <Badge>Not implemented yet</Badge>
+                <Badge tone="info">M4 foundation available</Badge>
               </dd>
             </div>
           </dl>

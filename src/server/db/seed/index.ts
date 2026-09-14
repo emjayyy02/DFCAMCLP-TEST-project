@@ -89,6 +89,21 @@ export async function seedDatabase(database: Database) {
         firstName: "Casey",
         lastName: "Testtechnology",
       },
+      {
+        id: seedIds.people.coordinator,
+        firstName: "Jordan",
+        lastName: "Testcoordinator",
+      },
+      {
+        id: seedIds.people.schoolAdmin,
+        firstName: "Avery",
+        lastName: "Testadministrator",
+      },
+      {
+        id: seedIds.people.facultyTechnology,
+        firstName: "Quinn",
+        lastName: "Testmultiporal",
+      },
     ] as const;
 
     for (const person of fakePeople) {

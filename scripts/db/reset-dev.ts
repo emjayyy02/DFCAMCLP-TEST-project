@@ -3,6 +3,7 @@ import { createDatabaseClient } from "../../src/server/db/connection";
 import { seedDatabase } from "../../src/server/db/seed";
 import { loadSafeDevelopmentResetEnvironment } from "./environment";
 import { provisionDevelopmentAuthUsers } from "../../src/server/auth/provision-development";
+import { seedAccessControl } from "../../src/server/db/seed/access-control";
 
 async function main() {
   const env = loadSafeDevelopmentResetEnvironment();
@@ -28,6 +29,7 @@ async function main() {
       secret: env.BETTER_AUTH_SECRET,
       password: env.AUTH_SEED_PASSWORD,
     });
+    await seedAccessControl(database);
     console.info(
       "Development database reset, migrated, and seeded successfully.",
     );

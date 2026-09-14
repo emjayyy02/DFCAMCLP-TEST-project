@@ -1,6 +1,6 @@
 # Visual foundation
 
-Scope: the existing development, login, and authentication-proof pages only. This user-approved visual pass supersedes the provisional green styling in the earlier surface brief. P2-M4 and school workflows remain unstarted.
+Scope at completion: the development, login, and authentication-proof pages only. This user-approved visual pass superseded the provisional green styling in the earlier surface brief. P2-M4 later extended these approved tokens; school workflows remain unstarted.
 
 ## Direction recorded before implementation
 
@@ -108,4 +108,4 @@ PostgreSQL blocker resolved on host. The following were re-run with no visual-sy
 
 This clears the prior BLOCKED status. Database/authentication suites are no longer skipped; successful login, authenticated account rendering, and logout are now verified against the running Next.js development server and local PostgreSQL.
 
-P2-M4 should reuse these tokens and primitives, then implement and test actual portal authorization, shell navigation, accessible drawers/dialogs/tabs and resource policies in its own milestone. This pass adds none of those behaviors.
+P2-M4 reuses these tokens and primitives for portal authorization, shell navigation, and the accessible mobile drawer. This visual-foundation pass itself added none of those later behaviors. Resource-level business policy remains deferred beyond the M4 shell-permission boundary.

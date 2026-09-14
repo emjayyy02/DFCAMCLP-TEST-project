@@ -2,22 +2,22 @@
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
-import { authClient } from "@/lib/auth-client";
+import type { PortalCode } from "@/lib/portals";
 import { Button } from "@/components/ui/button";
 import { Input, Select } from "@/components/ui/input";
 import { Alert } from "@/components/ui/alert";
 import { FormSection } from "@/components/ui/form-section";
 
 const portalOptions = [
-  "Applicant",
-  "Student",
-  "Academic",
-  "Admissions & Records",
-  "Operations",
-  "Technology",
-] as const;
+  { value: "APPLICANT", label: "Applicant" },
+  { value: "STUDENT", label: "Student" },
+  { value: "ACADEMIC", label: "Academic" },
+  { value: "RECORDS", label: "Admissions & Records" },
+  { value: "OPERATIONS", label: "Operations" },
+  { value: "TECHNOLOGY", label: "Technology" },
+] as const satisfies readonly { value: PortalCode; label: string }[];
 
-export function LoginForm() {
+export function LoginForm({ defaultPortal = "" }: { defaultPortal?: string }) {
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -29,17 +29,28 @@ export function LoginForm() {
     setIsSubmitting(true);
 
     const form = new FormData(event.currentTarget);
+    const portal = String(form.get("portal") ?? "");
     const email = String(form.get("email") ?? "").trim();
     const password = String(form.get("password") ?? "");
 
     try {
-      const result = await authClient.signIn.email({ email, password });
-      if (result.error) {
-        setError("Invalid email or password.");
+      const response = await fetch("/api/portal-login", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ email, password, portal }),
+      });
+      const result = (await response.json()) as {
+        message?: string;
+        redirectTo?: string;
+      };
+      if (!response.ok || !result.redirectTo) {
+        setError(
+          result.message ?? "Sign in could not be completed. Try again.",
+        );
         return;
       }
 
-      router.replace("/account");
+      router.replace(result.redirectTo);
       router.refresh();
     } catch {
       setError("Sign in is unavailable right now. Please try again.");
@@ -69,15 +80,15 @@ export function LoginForm() {
           aria-describedby="portal-help"
           name="portal"
           required
-          defaultValue=""
+          defaultValue={defaultPortal}
           className="mt-2"
         >
           <option value="" disabled>
             Select a portal
           </option>
           {portalOptions.map((portal) => (
-            <option key={portal} value={portal}>
-              {portal}
+            <option key={portal.value} value={portal.value}>
+              {portal.label}
             </option>
           ))}
         </Select>
@@ -85,7 +96,7 @@ export function LoginForm() {
           id="portal-help"
           className="mt-2 text-sm leading-6 text-muted-foreground"
         >
-          This selection is context only. Portal access is not evaluated yet.
+          Your account must have an active membership for the selected portal.
         </p>
       </div>
 

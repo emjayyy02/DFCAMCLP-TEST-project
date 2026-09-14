@@ -15,6 +15,13 @@
       "when": 1789291077234,
       "tag": "0001_material_gladiator",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1789350735166,
+      "tag": "0002_striped_angel",
+      "breakpoints": true
     }
   ]
 }

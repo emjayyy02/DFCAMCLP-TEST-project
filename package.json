@@ -17,6 +17,7 @@
     "test": "vitest run --exclude **/*.integration.test.ts",
     "test:db": "vitest run src/tests/database.integration.test.ts --no-file-parallelism",
     "test:auth": "vitest run src/tests/authentication.integration.test.ts --no-file-parallelism",
+    "test:access": "vitest run src/tests/access-control.integration.test.ts --no-file-parallelism",
     "env:check": "tsx scripts/check-env.ts",
     "db:up": "docker compose up -d --wait",
     "db:stop": "docker compose stop",

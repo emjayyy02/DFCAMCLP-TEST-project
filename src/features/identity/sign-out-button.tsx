@@ -5,7 +5,13 @@ import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import { Button } from "@/components/ui/button";
 
-export function SignOutButton() {
+export function SignOutButton({
+  className,
+  variant = "outline",
+}: {
+  className?: string;
+  variant?: "outline" | "ghost";
+} = {}) {
   const router = useRouter();
   const [isPending, setIsPending] = useState(false);
 
@@ -18,9 +24,10 @@ export function SignOutButton() {
 
   return (
     <Button
-      variant="outline"
       type="button"
       disabled={isPending}
+      className={className}
+      variant={variant}
       onClick={signOut}
     >
       {isPending ? "Signing out…" : "Sign out"}
