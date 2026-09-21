@@ -1,0 +1,146 @@
+[
+  {
+    "name": "dashboard",
+    "size": "desktop",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "name": "application",
+    "size": "desktop",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "name": "requirements",
+    "size": "desktop",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "name": "status",
+    "size": "desktop",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "name": "dcat",
+    "size": "desktop",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "name": "enrollment",
+    "size": "desktop",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "name": "announcements",
+    "size": "desktop",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "name": "profile",
+    "size": "desktop",
+    "overflow": false,
+    "width": 1440
+  },
+  {
+    "name": "dashboard",
+    "size": "mobile",
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "name": "application",
+    "size": "mobile",
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "name": "requirements",
+    "size": "mobile",
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "name": "status",
+    "size": "mobile",
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "name": "dcat",
+    "size": "mobile",
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "name": "enrollment",
+    "size": "mobile",
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "name": "announcements",
+    "size": "mobile",
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "name": "profile",
+    "size": "mobile",
+    "overflow": false,
+    "width": 375
+  },
+  {
+    "name": "dashboard",
+    "size": "tablet",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "name": "application",
+    "size": "tablet",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "name": "requirements",
+    "size": "tablet",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "name": "status",
+    "size": "tablet",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "name": "dcat",
+    "size": "tablet",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "name": "enrollment",
+    "size": "tablet",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "name": "announcements",
+    "size": "tablet",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "name": "profile",
+    "size": "tablet",
+    "overflow": false,
+    "width": 768
+  }
+]

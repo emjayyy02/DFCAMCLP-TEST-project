@@ -2,7 +2,7 @@
 
 Development project; not an official college service. Fake development data only.
 
-Phase 1 is preserved in [docs/phase-1](docs/phase-1/PHASE-1-OVERVIEW.md). Phase 2 is **COMPLETE** through P2-M4. P2-M5 is removed as a standalone milestone; regression and shared-foundation checks continue inside frontend milestones. **Current milestone: P3-M1 — Public Website + Login Experience.** P3-M2–M7 remain unstarted. See [P3-M1 implementation and validation](docs/phase-3/P3-M1-PUBLIC-EXPERIENCE.md).
+Phase 1 is preserved in [docs/phase-1](docs/phase-1/PHASE-1-OVERVIEW.md). Phase 2 is **COMPLETE** through P2-M4. P2-M5 is removed as a standalone milestone; regression and shared-foundation checks continue inside frontend milestones. **Completed milestone: P3-M2 — Applicant Experience (frontend demo).** P3-M3–M7 remain unstarted. See [P3-M1 implementation and validation](docs/phase-3/P3-M1-PUBLIC-EXPERIENCE.md) and [P3-M2 implementation and validation](docs/phase-3/P3-M2-APPLICANT-EXPERIENCE.md).
 
 ## Local setup
 

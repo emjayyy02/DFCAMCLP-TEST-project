@@ -5,9 +5,11 @@ import { PageHeader } from "@/components/portal/page-header";
 import { portalCodeFromSlug, portalDetails } from "@/lib/portals";
 import { permittedNavigation } from "@/server/access-control/navigation";
 import { requirePortalPath } from "@/server/access-control/current";
+import { ApplicantPage } from "@/features/applicant/applicant-page";
 
 export default async function PortalFoundationPage({
   params,
+  searchParams,
 }: PageProps<"/[portal]/[[...section]]">) {
   const { portal: portalSlug, section = [] } = await params;
   const portal = portalCodeFromSlug(portalSlug);
@@ -16,6 +18,17 @@ export default async function PortalFoundationPage({
   const path = `/${portalSlug}${section.length ? `/${section.join("/")}` : ""}`;
   const authorized = await requirePortalPath(portal, path);
   if (!authorized) notFound();
+
+  if (portal === "APPLICANT") {
+    const query = await searchParams;
+    return (
+      <ApplicantPage
+        key={path}
+        section={section[0] ?? "dashboard"}
+        view={typeof query.view === "string" ? query.view : undefined}
+      />
+    );
+  }
 
   const membership = authorized.context.memberships.find(
     (candidate) => candidate.portal === portal,

@@ -150,6 +150,42 @@ describe("P2-M4 access control", () => {
     expect(context.memberships.map((item) => item.portal)).toEqual(["STUDENT"]);
   });
 
+  it("allows the six Applicant demo pages without granting other portals", async () => {
+    const context = await contextFor("applicant.test@example.invalid");
+    expect(context.memberships.map((item) => item.portal)).toEqual([
+      "APPLICANT",
+    ]);
+    for (const path of [
+      "/applicant",
+      "/applicant/application",
+      "/applicant/dcat",
+      "/applicant/enrollment",
+      "/applicant/announcements",
+      "/applicant/profile",
+    ]) {
+      expect(canAccessPortalPath(context, "APPLICANT", path)).toBe(true);
+    }
+    for (const portal of [
+      "STUDENT",
+      "ACADEMIC",
+      "RECORDS",
+      "OPERATIONS",
+      "TECHNOLOGY",
+    ] as const) {
+      expect(canEnterPortal(context, portal)).toBe(false);
+    }
+    expect(
+      canAccessPortalPath(context, "APPLICANT", "/applicant/unregistered"),
+    ).toBe(false);
+    expect(
+      canAccessPortalPath(
+        await contextFor("student.test@example.invalid"),
+        "APPLICANT",
+        "/applicant/application",
+      ),
+    ).toBe(false);
+  });
+
   it("allows Student access to /student", async () => {
     const context = await contextFor("student.test@example.invalid");
     expect(canEnterPortal(context, "STUDENT")).toBe(true);

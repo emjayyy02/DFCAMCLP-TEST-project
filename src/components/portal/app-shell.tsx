@@ -39,7 +39,14 @@ function Navigation({
         {items.map((item) => {
           const isCurrent = pathname === item.path;
           return (
-            <li key={item.path}>
+            <li
+              key={item.path}
+              className={
+                item.path === "/applicant/profile"
+                  ? "mt-6 border-t border-border pt-4"
+                  : undefined
+              }
+            >
               <Link
                 href={item.path}
                 aria-current={isCurrent ? "page" : undefined}

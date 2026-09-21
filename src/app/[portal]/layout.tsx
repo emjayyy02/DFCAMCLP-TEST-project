@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { AppShell } from "@/components/portal/app-shell";
+import { ApplicantDemoProvider } from "@/features/applicant/demo-context";
 import { portalCodeFromSlug } from "@/lib/portals";
 import { permittedNavigation } from "@/server/access-control/navigation";
 import {
@@ -28,7 +29,13 @@ export default async function PortalLayout({
       navigation={permittedNavigation(portal, membership.permissions)}
       user={{ name: context.user.name, email: context.user.email }}
     >
-      {children}
+      {portal === "APPLICANT" ? (
+        <ApplicantDemoProvider key={context.user.email}>
+          {children}
+        </ApplicantDemoProvider>
+      ) : (
+        children
+      )}
     </AppShell>
   );
 }
