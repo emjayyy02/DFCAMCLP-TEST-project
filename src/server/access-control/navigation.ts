@@ -12,7 +12,7 @@ export type PortalRouteDefinition = {
 export type NavigationItem = Pick<
   PortalRouteDefinition,
   "path" | "label" | "title"
->;
+> & { sectionStart?: boolean };
 
 export const portalRoutes: Record<
   PortalCode,
@@ -67,9 +67,51 @@ export const portalRoutes: Record<
     {
       path: "/student",
       label: "Dashboard",
-      title: "Student portal",
+      title: "Dashboard",
+      description: "Your next class, day schedule, and recent sample updates.",
+      permission: "student.portal.view",
+    },
+    {
+      path: "/student/academics",
+      label: "Academics",
+      title: "Academics",
       description:
-        "Student schedules, subjects, grades, and attendance will be implemented in a later demo phase.",
+        "Your schedule, subjects, grades, attendance, and sample curriculum.",
+      permission: "student.portal.view",
+    },
+    {
+      path: "/student/enrollment",
+      label: "Enrollment",
+      title: "Enrollment",
+      description: "Your sample enrollment status and documents.",
+      permission: "student.portal.view",
+    },
+    {
+      path: "/student/requests",
+      label: "Requests",
+      title: "Requests",
+      description: "Frontend-only requests for additional document copies.",
+      permission: "student.portal.view",
+    },
+    {
+      path: "/student/announcements",
+      label: "Announcements",
+      title: "Announcements",
+      description: "Fictional notices for the Student portal demonstration.",
+      permission: "student.portal.view",
+    },
+    {
+      path: "/student/calendar",
+      label: "Calendar",
+      title: "Calendar",
+      description: "Sample class meetings and illustrative dates.",
+      permission: "student.portal.view",
+    },
+    {
+      path: "/student/profile",
+      label: "Profile",
+      title: "Profile",
+      description: "Read-only sample student information.",
       permission: "student.portal.view",
     },
   ],
@@ -245,5 +287,10 @@ export function permittedNavigation(
 ): NavigationItem[] {
   return portalRoutes[portal]
     .filter((route) => effectivePermissions.includes(route.permission))
-    .map(({ path, label, title }) => ({ path, label, title }));
+    .map(({ path, label, title }) => ({
+      path,
+      label,
+      title,
+      sectionStart: path.endsWith("/profile"),
+    }));
 }

@@ -6,6 +6,7 @@ import { portalCodeFromSlug, portalDetails } from "@/lib/portals";
 import { permittedNavigation } from "@/server/access-control/navigation";
 import { requirePortalPath } from "@/server/access-control/current";
 import { ApplicantPage } from "@/features/applicant/applicant-page";
+import { StudentPage } from "@/features/student/student-page";
 
 export default async function PortalFoundationPage({
   params,
@@ -23,6 +24,17 @@ export default async function PortalFoundationPage({
     const query = await searchParams;
     return (
       <ApplicantPage
+        key={path}
+        section={section[0] ?? "dashboard"}
+        view={typeof query.view === "string" ? query.view : undefined}
+      />
+    );
+  }
+
+  if (portal === "STUDENT") {
+    const query = await searchParams;
+    return (
+      <StudentPage
         key={path}
         section={section[0] ?? "dashboard"}
         view={typeof query.view === "string" ? query.view : undefined}

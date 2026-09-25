@@ -42,7 +42,7 @@ function Navigation({
             <li
               key={item.path}
               className={
-                item.path === "/applicant/profile"
+                item.sectionStart
                   ? "mt-6 border-t border-border pt-4"
                   : undefined
               }

@@ -1,0 +1,1583 @@
+.student-experience {
+  width: 100%;
+  max-width: 82rem;
+  margin-inline: auto;
+}
+
+.student-page-header {
+  max-width: 58rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-page-header h1 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.student-page-header > p {
+  margin-top: 0.55rem;
+  color: var(--foreground-muted);
+  line-height: 1.6;
+}
+
+.student-page-header .student-term-line {
+  margin-top: 0.15rem;
+  font-size: 0.875rem;
+}
+
+.student-demo-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+.student-demo-notice > span {
+  width: 0.5rem;
+  height: 0.5rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.student-page-content {
+  margin-top: 1.75rem;
+}
+
+.student-dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.student-next-class,
+.student-dashboard-surface,
+.student-enrollment-summary,
+.student-academic-panel,
+.student-document-row,
+.student-curriculum-group,
+.student-profile-group {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+}
+
+.student-next-class {
+  display: flex;
+  min-height: 17rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: clamp(1.5rem, 3vw, 2rem);
+}
+
+.student-section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--primary-hover);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.student-section-label::before {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--accent);
+  content: "";
+}
+
+.student-next-class h2 {
+  margin-top: 0.75rem;
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.student-class-code,
+.student-next-class-room,
+.student-meeting-detail,
+.student-muted {
+  color: var(--foreground-muted);
+}
+
+.student-class-code {
+  margin-top: 0.3rem;
+  font-size: 0.875rem;
+}
+
+.student-next-class-time {
+  margin-top: 1.1rem;
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.student-next-class-room {
+  margin-top: 0.15rem;
+}
+
+.student-text-link,
+.student-text-button {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  color: var(--primary-hover);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.student-text-link:hover,
+.student-text-button:hover {
+  color: var(--primary);
+}
+
+.student-dashboard-surface {
+  min-height: 13rem;
+  padding: 1.4rem 1.5rem;
+}
+
+.student-section-heading,
+.student-panel-heading,
+.student-calendar-toolbar,
+.student-attendance-heading,
+.student-curriculum-heading,
+.student-subject-card-title,
+.student-grade-card,
+.student-document-row,
+.student-request-row,
+.student-profile-group dl > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.student-section-heading {
+  align-items: baseline;
+}
+
+.student-section-heading h2,
+.student-panel-heading h2,
+.student-enrollment-summary h2,
+.student-profile-group h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.student-section-heading > time {
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+  text-align: right;
+}
+
+.student-today-list {
+  margin-top: 1rem;
+}
+
+.student-today-list li {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.7fr) minmax(0, 1.3fr);
+  gap: 0.85rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.student-today-list li > time {
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.student-today-list li > div,
+.student-today-list li > div span {
+  display: block;
+}
+
+.student-today-list li > div span {
+  margin-top: 0.12rem;
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+}
+
+.student-status {
+  display: inline-flex;
+  min-height: 1.65rem;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--muted);
+  color: var(--foreground);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.student-status[data-state="released"],
+.student-status[data-state="completed"] {
+  background: var(--success-soft);
+  color: var(--success-foreground);
+}
+
+.student-status[data-state="pending"],
+.student-status[data-state="current"] {
+  background: var(--primary-soft);
+  color: var(--primary-hover);
+}
+
+.student-status[data-state="cancelled"] {
+  background: var(--muted);
+  color: var(--foreground);
+}
+
+.student-status[data-state="information"] {
+  background: var(--info-soft);
+  color: var(--info-foreground);
+}
+
+.student-enrollment-term {
+  margin-top: 0.75rem;
+  color: var(--foreground-muted);
+}
+
+.student-enrollment-document {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-block: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+
+.student-recent-list {
+  margin-top: 0.45rem;
+}
+
+.student-recent-list li {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.75fr) minmax(0, 1.25fr);
+  gap: 0.75rem;
+  padding-block: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.student-recent-list li:first-child {
+  margin-top: 0.5rem;
+}
+
+.student-recent-kind {
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+}
+
+.student-recent-list a {
+  color: var(--primary-hover);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.student-academics {
+  min-width: 0;
+}
+
+.student-term-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin-bottom: 1.1rem;
+  color: var(--foreground-muted);
+  font-size: 0.875rem;
+}
+
+.student-tabs {
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+  padding: 0.3rem;
+  border-radius: var(--radius-panel);
+  background: var(--muted);
+  overscroll-behavior-inline: contain;
+  scrollbar-color: var(--border-strong) var(--muted);
+  scrollbar-width: thin;
+}
+
+.student-tab {
+  min-width: max-content;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  color: var(--foreground-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition:
+    color 150ms ease,
+    background-color 150ms ease;
+}
+
+.student-tab:hover {
+  color: var(--foreground);
+}
+
+.student-tab[aria-selected="true"] {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--primary-hover);
+}
+
+.student-tab-panel {
+  min-width: 0;
+  margin-top: 1.25rem;
+}
+
+.student-academic-panel {
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+}
+
+.student-panel-heading {
+  align-items: flex-end;
+  margin-bottom: 1.2rem;
+}
+
+.student-panel-heading p {
+  margin-top: 0.25rem;
+  color: var(--foreground-muted);
+  font-size: 0.875rem;
+}
+
+.student-week-controls,
+.student-filter-row,
+.student-dialog-actions,
+.student-page-actions,
+.student-request-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.student-button {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25;
+  transition:
+    color 150ms ease,
+    background-color 150ms ease,
+    border-color 150ms ease;
+}
+
+.student-button:active {
+  transform: translateY(1px);
+}
+
+.student-button-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.student-button-primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+}
+
+.student-button-secondary {
+  border-color: var(--border-strong);
+  background: var(--surface);
+  color: var(--foreground);
+}
+
+.student-button-secondary:hover:not(:disabled) {
+  border-color: var(--foreground-muted);
+  background: var(--muted);
+}
+
+.student-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.student-week-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.student-week-day {
+  min-width: 0;
+  padding: 0.8rem 0.65rem 1rem;
+}
+
+.student-week-day + .student-week-day {
+  border-left: 1px solid var(--border);
+}
+
+.student-week-day h3 {
+  min-height: 3.1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.student-week-day h3 span {
+  display: block;
+  margin-top: 0.12rem;
+  color: var(--foreground-muted);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.student-week-meetings,
+.student-agenda-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.student-meeting {
+  min-width: 0;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--border);
+}
+
+.student-meeting-time {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--primary-hover);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+}
+
+.student-meeting > div > p:first-child {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.student-subject-code {
+  display: block;
+  margin-bottom: 0.18rem;
+  color: var(--foreground-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.student-meeting-detail {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.student-empty-inline {
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8125rem;
+}
+
+.student-mobile-day-picker,
+.student-mobile-agenda {
+  display: none;
+}
+
+.student-subject-table-wrap,
+.student-grade-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.student-subject-table {
+  min-width: 58rem;
+  font-size: 0.875rem;
+}
+
+.student-grade-table {
+  font-size: 0.9rem;
+}
+
+.student-grade-table th[scope="row"] {
+  font-weight: 500;
+}
+
+.student-grade-table th[scope="row"] .student-subject-code {
+  display: block;
+}
+
+.student-subject-cards,
+.student-grade-cards {
+  display: none;
+}
+
+.student-filter-row {
+  align-items: flex-end;
+}
+
+.student-filter-row label {
+  display: grid;
+  gap: 0.25rem;
+  color: var(--foreground-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.student-filter-row select,
+.student-request-step select {
+  min-width: 9.5rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--foreground);
+  font: inherit;
+  font-size: 0.875rem;
+}
+
+.student-policy-note {
+  margin: 0.85rem 0 1.1rem;
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+}
+
+.student-policy-note strong {
+  color: var(--foreground);
+}
+
+.student-grade-result {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: right;
+}
+
+.student-grade-result > strong {
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.student-empty-state {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--background);
+  line-height: 1.55;
+}
+
+.student-empty-state > p + p {
+  margin-top: 0.4rem;
+  color: var(--foreground-muted);
+}
+
+.student-attendance-list {
+  border-top: 1px solid var(--border);
+}
+
+.student-attendance-item {
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-attendance-heading {
+  align-items: center;
+}
+
+.student-attendance-heading h3 {
+  font-size: 0.975rem;
+  font-weight: 600;
+}
+
+.student-attendance-counts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem 1rem;
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+}
+
+.student-attendance-counts strong {
+  color: var(--foreground);
+  font-variant-numeric: tabular-nums;
+}
+
+.student-attendance-details {
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+}
+
+.student-attendance-details summary {
+  width: fit-content;
+  min-height: 2.75rem;
+  padding-block: 0.65rem;
+  color: var(--primary-hover);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.student-attendance-details ul {
+  max-width: 34rem;
+  border-top: 1px solid var(--border);
+}
+
+.student-attendance-details li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-attendance-footnote {
+  margin-top: 0.8rem;
+  font-size: 0.8125rem;
+}
+
+.student-curriculum-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.student-curriculum-group {
+  padding: 1.1rem 1.2rem;
+}
+
+.student-curriculum-heading {
+  align-items: center;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-curriculum-heading h3 {
+  font-weight: 600;
+}
+
+.student-curriculum-heading p {
+  margin-top: 0.1rem;
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+}
+
+.student-curriculum-group > ul {
+  margin-top: 0.35rem;
+}
+
+.student-curriculum-group > ul li {
+  padding-block: 0.45rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.875rem;
+}
+
+.student-curriculum-group > ul li:last-child {
+  border-bottom: 0;
+}
+
+.student-enrollment-page > section + section {
+  margin-top: 2rem;
+}
+
+.student-enrollment-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.4rem 1.5rem;
+}
+
+.student-enrollment-summary .student-section-label {
+  margin-bottom: 0.5rem;
+}
+
+.student-enrollment-summary h2 {
+  font-size: 1.45rem;
+}
+
+.student-enrollment-summary p:last-child {
+  margin-top: 0.3rem;
+  color: var(--foreground-muted);
+}
+
+.student-document-list {
+  border-top: 1px solid var(--border);
+}
+
+.student-document-row {
+  align-items: center;
+  padding: 1.2rem 0.2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-document-row h3 {
+  font-weight: 600;
+}
+
+.student-document-row > div > p:not(.student-document-kind) {
+  margin-top: 0.2rem;
+  color: var(--foreground-muted);
+  font-size: 0.875rem;
+}
+
+.student-document-row .student-status {
+  margin-top: 0.65rem;
+}
+
+.student-document-kind {
+  margin-bottom: 0.15rem;
+  color: var(--primary-hover);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.student-modal {
+  width: min(44rem, calc(100vw - 2rem));
+  max-width: none;
+  max-height: min(90dvh, 56rem);
+  margin: auto;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  overflow: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface-elevated);
+  color: var(--foreground);
+  box-shadow: var(--shadow-elevated);
+}
+
+.student-modal::backdrop {
+  background: rgb(17 24 39 / 48%);
+}
+
+.student-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-modal-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.student-request-step {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.2rem;
+}
+
+.student-request-step label {
+  font-weight: 600;
+}
+
+.student-request-step > p {
+  color: var(--foreground-muted);
+  line-height: 1.55;
+}
+
+.student-request-review-name {
+  color: var(--foreground) !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.student-request-step .student-dialog-actions {
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.student-request-step .student-policy-note {
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--background);
+}
+
+.student-dialog-actions {
+  justify-content: flex-end;
+}
+
+.student-document-modal .student-dialog-actions {
+  margin-bottom: 1rem;
+}
+
+.student-print-preview {
+  min-height: 24rem;
+  padding: clamp(1rem, 4vw, 2.25rem);
+  border: 1px solid var(--border);
+  background: #fff;
+  color: #111827;
+}
+
+.student-sample-stamp {
+  width: fit-content;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--border-strong);
+  color: #374151;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.student-print-preview h2 {
+  margin-top: 1.7rem;
+  font-size: clamp(1.35rem, 4vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.student-document-term {
+  margin-top: 0.35rem;
+  color: #4b5563;
+  text-align: center;
+}
+
+.student-document-details {
+  margin-top: 1.6rem;
+  border-top: 1px solid #d1d5db;
+}
+
+.student-document-details > div {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding-block: 0.65rem;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.student-document-details dt {
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.student-print-preview > h3 {
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+.student-print-subjects {
+  margin-top: 0.4rem;
+  border-top: 1px solid #d1d5db;
+}
+
+.student-print-subjects li {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr) 4.5rem;
+  gap: 0.65rem;
+  padding-block: 0.45rem;
+  border-bottom: 1px solid #d1d5db;
+  font-size: 0.85rem;
+}
+
+.student-print-subjects li span:last-child {
+  text-align: right;
+}
+
+.student-document-body {
+  max-width: 55ch;
+  margin-top: 1.6rem;
+  line-height: 1.6;
+}
+
+.student-document-disclaimer {
+  margin-top: 2rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid #d1d5db;
+  color: #4b5563;
+  font-size: 0.75rem;
+}
+
+.student-page-actions {
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.student-page-actions > p {
+  color: var(--foreground-muted);
+}
+
+.student-live-message {
+  margin-bottom: 1rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--success-soft);
+  color: var(--success-foreground);
+}
+
+.student-list-title {
+  margin: 1.5rem 0 0.65rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.student-request-list,
+.student-announcement-list {
+  border-top: 1px solid var(--border);
+}
+
+.student-request-row {
+  align-items: center;
+  padding: 1rem 0.15rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-request-row h3,
+.student-announcement-list h3 {
+  font-weight: 600;
+}
+
+.student-request-row > div:first-child > p:last-child {
+  margin-top: 0.25rem;
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+}
+
+.student-request-actions {
+  justify-content: flex-end;
+}
+
+.student-text-button {
+  min-height: 2.75rem;
+  padding: 0.4rem 0.2rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.8125rem;
+}
+
+.student-announcement-filter {
+  justify-content: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+.student-announcement-list li {
+  padding: 1.2rem 0.15rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-announcement-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+}
+
+.student-announcement-list h3 {
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.student-announcement-list li > p {
+  max-width: 70ch;
+  margin-top: 0.25rem;
+  color: var(--foreground-muted);
+  line-height: 1.55;
+}
+
+.student-calendar-toolbar {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.student-calendar-toolbar h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.student-calendar-month-controls .student-button {
+  white-space: nowrap;
+}
+
+.student-calendar-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 0.75fr);
+  gap: 1.5rem;
+}
+
+.student-month-calendar {
+  min-width: 0;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.student-calendar-row {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.student-calendar-weekday,
+.student-calendar-cell,
+.student-calendar-blank {
+  min-width: 0;
+  min-height: 4.75rem;
+  padding: 0.35rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.student-calendar-row > * {
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.student-calendar-weekday,
+.student-calendar-cell,
+.student-calendar-blank {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.student-calendar-weekday {
+  min-height: auto;
+  background: var(--muted);
+  color: var(--foreground-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.student-calendar-day {
+  display: flex;
+  width: 100%;
+  min-height: 4rem;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.35rem;
+  border-radius: var(--radius);
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+
+.student-calendar-day:hover {
+  background: var(--muted);
+}
+
+.student-calendar-day[aria-pressed="true"] {
+  background: var(--primary-soft);
+  color: var(--primary-hover);
+  font-weight: 700;
+}
+
+.student-calendar-count {
+  color: var(--foreground-muted);
+  font-size: 0.65rem;
+  line-height: 1.25;
+}
+
+.student-calendar-agenda h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.student-calendar-event-list {
+  margin-top: 0.7rem;
+  border-top: 1px solid var(--border);
+}
+
+.student-calendar-event-list > li {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  gap: 0.65rem;
+  padding-block: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-calendar-event-list time {
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.student-calendar-event-list h4 {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.student-calendar-event-list p {
+  margin-top: 0.15rem;
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+}
+
+.student-mobile-week-controls,
+.student-mobile-date-picker {
+  display: none;
+}
+
+.student-profile-page {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.student-profile-page > .student-policy-note {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.student-profile-group {
+  padding: 1.25rem 1.4rem;
+}
+
+.student-profile-group h2 {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-profile-group dl > div {
+  display: grid;
+  grid-template-columns: minmax(6rem, 0.7fr) minmax(0, 1.3fr);
+  gap: 0.75rem;
+  padding-block: 0.7rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.student-profile-group dl > div:last-child {
+  border-bottom: 0;
+}
+
+.student-profile-group dt {
+  color: var(--foreground-muted);
+  font-size: 0.8125rem;
+}
+
+.student-profile-group dd {
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .student-subject-table-wrap {
+    display: none;
+  }
+
+  .student-subject-cards {
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  .student-subject-card {
+    padding: 1rem 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .student-subject-card-title {
+    align-items: flex-start;
+  }
+
+  .student-subject-card-title h3 {
+    font-weight: 600;
+  }
+
+  .student-units {
+    flex-shrink: 0;
+    color: var(--foreground-muted);
+    font-size: 0.8125rem;
+  }
+
+  .student-subject-meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem 1rem;
+    margin-top: 0.85rem;
+  }
+
+  .student-subject-meta > div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .student-subject-meta dt {
+    color: var(--foreground-muted);
+    font-size: 0.75rem;
+  }
+
+  .student-subject-meta dd {
+    margin-top: 0.12rem;
+    font-size: 0.8125rem;
+  }
+
+  .student-calendar-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .student-month-calendar {
+    display: none;
+  }
+
+  .student-mobile-week-controls,
+  .student-mobile-date-picker {
+    display: flex;
+  }
+
+  .student-mobile-week-controls {
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  .student-mobile-date-picker {
+    gap: 0.25rem;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+    scrollbar-color: var(--border-strong) var(--background);
+    scrollbar-width: thin;
+  }
+
+  .student-mobile-date-picker .student-day-button {
+    flex: 1 0 3.25rem;
+    display: flex;
+    min-width: 3.25rem;
+    min-height: 3.4rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1rem;
+    padding: 0.35rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--foreground-muted);
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .student-mobile-date-picker .student-day-button[aria-pressed="true"] {
+    border-color: var(--primary);
+    background: var(--primary-soft);
+    color: var(--primary-hover);
+    font-weight: 700;
+  }
+
+  .student-date-event-indicator {
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background: var(--primary);
+  }
+}
+
+@media (max-width: 720px) {
+  .student-page-content {
+    margin-top: 1.25rem;
+  }
+
+  .student-dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.85rem;
+  }
+
+  .student-next-class {
+    min-height: 15.5rem;
+  }
+
+  .student-dashboard-surface {
+    min-height: 0;
+    padding: 1.1rem 1rem;
+  }
+
+  .student-panel-heading,
+  .student-attendance-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .student-week-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .student-week-controls .student-button {
+    flex: 1 1 auto;
+    padding-inline: 0.55rem;
+    font-size: 0.75rem;
+  }
+
+  .student-week-controls.student-calendar-month-controls {
+    width: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+
+  .student-week-controls.student-calendar-month-controls .student-button {
+    min-height: 2.5rem;
+    flex: 0 0 auto;
+    padding-inline: 0.55rem;
+  }
+
+  .student-week-grid {
+    display: none;
+  }
+
+  .student-mobile-day-picker {
+    display: flex;
+    gap: 0.35rem;
+    overflow-x: auto;
+    margin-top: 0.5rem;
+    padding-bottom: 0.45rem;
+    scrollbar-color: var(--border-strong) var(--background);
+    scrollbar-width: thin;
+  }
+
+  .student-day-button {
+    display: flex;
+    min-width: 3.4rem;
+    min-height: 3.4rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1rem;
+    padding: 0.35rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--foreground-muted);
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .student-day-button[aria-pressed="true"] {
+    border-color: var(--primary);
+    background: var(--primary-soft);
+    color: var(--primary-hover);
+    font-weight: 700;
+  }
+
+  .student-mobile-agenda {
+    display: block;
+    margin-top: 0.6rem;
+  }
+
+  .student-mobile-agenda h3 {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+
+  .student-agenda-list {
+    border-top: 1px solid var(--border);
+  }
+
+  .student-agenda-list .student-meeting {
+    display: grid;
+    grid-template-columns: minmax(7.2rem, 0.75fr) minmax(0, 1.25fr);
+    gap: 0.85rem;
+    padding-block: 0.85rem;
+  }
+
+  .student-agenda-list .student-meeting-time {
+    margin: 0;
+    font-size: 0.8125rem;
+  }
+
+  .student-agenda-list .student-meeting > div > p:first-child {
+    font-size: 0.9rem;
+  }
+
+  .student-agenda-list .student-meeting-detail {
+    font-size: 0.8125rem;
+  }
+
+  .student-filter-row {
+    width: 100%;
+  }
+
+  .student-filter-row label {
+    flex: 1 1 8.5rem;
+  }
+
+  .student-filter-row select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .student-grade-table-wrap {
+    display: none;
+  }
+
+  .student-grade-cards {
+    display: grid;
+    border-top: 1px solid var(--border);
+  }
+
+  .student-grade-card {
+    align-items: center;
+    padding-block: 0.9rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .student-grade-card h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .student-grade-result > strong {
+    font-size: 1rem;
+  }
+
+  .student-grade-result .student-status {
+    white-space: normal;
+    text-align: right;
+  }
+
+  .student-curriculum-list,
+  .student-profile-page {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .student-profile-page > .student-policy-note {
+    grid-column: auto;
+  }
+
+  .student-enrollment-summary,
+  .student-document-row,
+  .student-request-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .student-document-row {
+    gap: 0.9rem;
+  }
+
+  .student-request-row {
+    gap: 0.75rem;
+  }
+
+  .student-request-actions {
+    justify-content: flex-start;
+  }
+
+  .student-page-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .student-announcement-filter {
+    justify-content: flex-start;
+  }
+
+  .student-attendance-heading {
+    gap: 0.7rem;
+  }
+
+  .student-attendance-counts {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-page-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .student-tab {
+    padding-inline: 0.7rem;
+  }
+
+  .student-tabs {
+    margin-inline: -0.2rem;
+  }
+
+  .student-agenda-list .student-meeting {
+    grid-template-columns: minmax(6.4rem, 0.78fr) minmax(0, 1.22fr);
+    gap: 0.6rem;
+  }
+
+  .student-document-details > div {
+    grid-template-columns: minmax(6rem, 0.65fr) minmax(0, 1.35fr);
+    gap: 0.5rem;
+  }
+
+  .student-print-subjects li {
+    grid-template-columns: 4.1rem minmax(0, 1fr);
+  }
+
+  .student-print-subjects li span:last-child {
+    grid-column: 2;
+    text-align: left;
+  }
+
+  .student-modal {
+    width: 100vw;
+    max-height: 100dvh;
+    border-radius: 0;
+  }
+
+  .student-modal .student-dialog-actions {
+    justify-content: stretch;
+  }
+
+  .student-modal .student-dialog-actions > button {
+    flex: 1 1 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .student-button:active {
+    transform: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  .student-document-modal[open],
+  .student-document-modal[open] * {
+    visibility: visible !important;
+  }
+
+  .student-document-modal[open] {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .student-dialog-actions {
+    display: none !important;
+  }
+
+  .student-print-preview {
+    min-height: 0;
+    border: 0;
+    padding: 1cm;
+  }
+}

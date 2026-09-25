@@ -186,10 +186,26 @@ describe("P2-M4 access control", () => {
     ).toBe(false);
   });
 
-  it("allows Student access to /student", async () => {
+  it("allows the Student experience routes without granting other portals", async () => {
     const context = await contextFor("student.test@example.invalid");
     expect(canEnterPortal(context, "STUDENT")).toBe(true);
-    expect(canAccessPortalPath(context, "STUDENT", "/student")).toBe(true);
+    for (const path of [
+      "/student",
+      "/student/academics",
+      "/student/enrollment",
+      "/student/requests",
+      "/student/announcements",
+      "/student/calendar",
+      "/student/profile",
+    ]) {
+      expect(canAccessPortalPath(context, "STUDENT", path)).toBe(true);
+    }
+    expect(canAccessPortalPath(context, "STUDENT", "/student/grades")).toBe(
+      false,
+    );
+    expect(canAccessPortalPath(context, "TECHNOLOGY", "/technology")).toBe(
+      false,
+    );
   });
 
   it("denies Student access to /technology", async () => {
