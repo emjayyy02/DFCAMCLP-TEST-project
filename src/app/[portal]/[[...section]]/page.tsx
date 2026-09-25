@@ -7,6 +7,7 @@ import { permittedNavigation } from "@/server/access-control/navigation";
 import { requirePortalPath } from "@/server/access-control/current";
 import { ApplicantPage } from "@/features/applicant/applicant-page";
 import { StudentPage } from "@/features/student/student-page";
+import { AcademicPage } from "@/features/academic/academic-page";
 
 export default async function PortalFoundationPage({
   params,
@@ -38,6 +39,28 @@ export default async function PortalFoundationPage({
         key={path}
         section={section[0] ?? "dashboard"}
         view={typeof query.view === "string" ? query.view : undefined}
+      />
+    );
+  }
+
+  if (portal === "ACADEMIC") {
+    const query = await searchParams;
+    const membership = authorized.context.memberships.find(
+      (candidate) => candidate.portal === portal,
+    );
+    if (!membership) notFound();
+    const isCoordinator = membership.roles.some(
+      (role) => role.code === "PROGRAM_COORDINATOR",
+    );
+    return (
+      <AcademicPage
+        key={`${path}:${query.offering ?? ""}`}
+        section={section[0] ?? "dashboard"}
+        isCoordinator={isCoordinator}
+        offeringId={
+          typeof query.offering === "string" ? query.offering : undefined
+        }
+        date={typeof query.date === "string" ? query.date : undefined}
       />
     );
   }

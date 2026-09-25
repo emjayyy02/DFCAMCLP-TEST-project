@@ -243,12 +243,18 @@ describe("P2-M4 access control", () => {
     expect(
       canAccessPortalPath(context, "ACADEMIC", "/academic/management"),
     ).toBe(false);
+    expect(
+      canAccessPortalPath(context, "ACADEMIC", "/academic/announcements"),
+    ).toBe(true);
   });
 
   it("allows Program Coordinator into Academic Management", async () => {
     const context = await contextFor("coordinator.test@example.invalid");
     expect(
       canAccessPortalPath(context, "ACADEMIC", "/academic/management"),
+    ).toBe(true);
+    expect(
+      canAccessPortalPath(context, "ACADEMIC", "/academic/announcements"),
     ).toBe(true);
   });
 

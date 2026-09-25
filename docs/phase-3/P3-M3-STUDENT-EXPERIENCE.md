@@ -68,7 +68,7 @@ The access-control regression includes all seven Student navigation routes, unkn
 
 P3-M3 does not add Student tables, grade or attendance APIs, official curriculum data, schedule assignment, official document generation, request fulfillment, announcement delivery, calendar persistence, uploads, notifications, audit records, or resource-level authorization. Those require separate institutional policy and backend work.
 
-P3-M4 Academic Experience is next. P3-M3 adds Student self-view presentation only; academic staff workflows and authoritative academic records remain outside this milestone.
+P3-M4 Academic Experience is now complete as a frontend demo; P3-M5 Admissions & Records is next. P3-M3 adds Student self-view presentation only; academic staff workflows and authoritative academic records were outside that milestone.
 
 ## File inventory
 

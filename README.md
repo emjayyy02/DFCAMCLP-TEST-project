@@ -2,7 +2,7 @@
 
 Development project; not an official college service. Fake development data only.
 
-Phase 1 is preserved in [docs/phase-1](docs/phase-1/PHASE-1-OVERVIEW.md). Phase 2 is **COMPLETE** through P2-M4. P2-M5 is removed as a standalone milestone; regression and shared-foundation checks continue inside frontend milestones. P3-M1 Public Website, P3-M2 Applicant Experience, and P3-M3 Student Experience are complete as frontend demos. **P3-M4 Academic Experience is next; P3-M5–M7 remain unstarted.** See [P3-M1 implementation and validation](docs/phase-3/P3-M1-PUBLIC-EXPERIENCE.md), [P3-M2 implementation and validation](docs/phase-3/P3-M2-APPLICANT-EXPERIENCE.md), and [P3-M3 Student Experience](docs/phase-3/P3-M3-STUDENT-EXPERIENCE.md).
+Phase 1 is preserved in [docs/phase-1](docs/phase-1/PHASE-1-OVERVIEW.md). Phase 2 is **COMPLETE** through P2-M4. P2-M5 is removed as a standalone milestone; regression and shared-foundation checks continue inside frontend milestones. P3-M1 Public Website, P3-M2 Applicant Experience, P3-M3 Student Experience, and P3-M4 Academic Experience are complete as frontend demos. **P3-M5–M7 remain unstarted.** See [P3-M1 implementation and validation](docs/phase-3/P3-M1-PUBLIC-EXPERIENCE.md), [P3-M2 implementation and validation](docs/phase-3/P3-M2-APPLICANT-EXPERIENCE.md), [P3-M3 Student Experience](docs/phase-3/P3-M3-STUDENT-EXPERIENCE.md), and [P3-M4 Academic Experience](docs/phase-3/P3-M4-ACADEMIC-EXPERIENCE.md).
 
 ## Local setup
 

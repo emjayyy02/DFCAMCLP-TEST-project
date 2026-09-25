@@ -121,7 +121,7 @@ export const portalRoutes: Record<
       label: "Dashboard",
       title: "Academic portal",
       description:
-        "Teaching work is intentionally limited to access-control and shell foundations in this milestone.",
+        "A sample view of your classes, teaching tasks, and academic updates.",
       permission: "academic.portal.view",
     },
     {
@@ -129,15 +129,14 @@ export const portalRoutes: Record<
       label: "Teaching",
       title: "Teaching",
       description:
-        "Assigned classes and teaching workflows will be implemented in a later demo phase.",
+        "Your assigned course offerings, schedules, and sample class rosters.",
       permission: "academic.classes.view",
     },
     {
       path: "/academic/attendance",
       label: "Attendance",
       title: "Attendance",
-      description:
-        "Attendance records and class meetings will be implemented in a later demo phase.",
+      description: "Record and review attendance for a sample class meeting.",
       permission: "academic.attendance.view",
     },
     {
@@ -145,15 +144,23 @@ export const portalRoutes: Record<
       label: "Grades",
       title: "Grades",
       description:
-        "Grade entry, review, and release will be implemented in a later demo phase.",
+        "Enter, review, and submit sample final grades for assigned classes.",
       permission: "academic.grades.view",
+    },
+    {
+      path: "/academic/announcements",
+      label: "Announcements",
+      title: "Announcements",
+      description:
+        "Fictional campus, program, section, and class notices for this demo.",
+      permission: "academic.portal.view",
     },
     {
       path: "/academic/management",
       label: "Academic Management",
       title: "Academic management",
       description:
-        "Program-level academic management will be implemented in a later demo phase.",
+        "A read-only overview of sample program offerings and faculty assignments.",
       permission: "academic.management.view",
     },
   ],
