@@ -178,7 +178,8 @@ function DashboardView({ isCoordinator }: { isCoordinator: boolean }) {
               : `Good morning, ${academicDemoData.identities.faculty.name}.`}
           </h2>
           <p>
-            BS Information Systems <span aria-hidden="true">·</span> IIT Campus
+            BSIS — Bachelor of Science in Information Systems{" "}
+            <span aria-hidden="true">·</span> IIT Campus
           </p>
         </div>
         <time dateTime={today.date}>
@@ -197,7 +198,9 @@ function DashboardView({ isCoordinator }: { isCoordinator: boolean }) {
         >
           <div>
             <p className="academic-eyebrow">Program snapshot</p>
-            <h2 id="program-summary-title">BS Information Systems</h2>
+            <h2 id="program-summary-title">
+              BSIS — Bachelor of Science in Information Systems
+            </h2>
           </div>
           <dl>
             <div>

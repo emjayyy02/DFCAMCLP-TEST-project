@@ -223,7 +223,7 @@ export const academicDemoData = {
       termId: "2026-2027-1",
       section: "BSIS-2A",
       campus: "IIT Campus",
-      program: "BS Information Systems",
+      program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-ms",
       studentIds,
       schedule: [
@@ -238,7 +238,7 @@ export const academicDemoData = {
       termId: "2026-2027-1",
       section: "BSIS-2A",
       campus: "IIT Campus",
-      program: "BS Information Systems",
+      program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-ldc",
       studentIds,
       schedule: [
@@ -253,7 +253,7 @@ export const academicDemoData = {
       termId: "2026-2027-1",
       section: "BSIS-2A",
       campus: "IIT Campus",
-      program: "BS Information Systems",
+      program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-ag",
       studentIds,
       schedule: [
@@ -268,7 +268,7 @@ export const academicDemoData = {
       termId: "2026-2027-1",
       section: "BSIS-2A",
       campus: "IIT Campus",
-      program: "BS Information Systems",
+      program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-rl",
       studentIds,
       schedule: [
@@ -293,7 +293,7 @@ export const academicDemoData = {
       termId: "2026-2027-1",
       section: "BSIS-2A",
       campus: "IIT Campus",
-      program: "BS Information Systems",
+      program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-jc",
       studentIds,
       schedule: [

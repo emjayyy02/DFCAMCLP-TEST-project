@@ -26,7 +26,11 @@ const campuses = [
         name: "Bachelor of Science in Information Systems",
         majors: [],
       },
-      { code: "BSCpE", name: "Computer Engineering", majors: [] },
+      {
+        code: "BSCpE",
+        name: "Bachelor of Science in Computer Engineering",
+        majors: [],
+      },
     ],
   },
 ];

@@ -84,15 +84,15 @@ export const campusSeed = [
   {
     id: seedIds.campuses.main,
     code: "MAIN",
-    name: "Main Campus — Talon III",
+    name: "Main Campus",
     shortName: "Main Campus",
     locationLabel: "Talon III",
   },
   {
     id: seedIds.campuses.iitCaa,
     code: "IIT_CAA",
-    name: "IIT / CAA Campus",
-    shortName: "IIT / CAA",
+    name: "IIT Campus",
+    shortName: "IIT Campus",
     locationLabel: "Las Piñas",
   },
 ] as const;
@@ -123,8 +123,8 @@ export const programSeed = [
     id: seedIds.programs.cpe,
     campusId: seedIds.campuses.iitCaa,
     code: "CPE",
-    name: "Computer Engineering",
-    shortName: "CpE",
+    name: "Bachelor of Science in Computer Engineering",
+    shortName: "BSCpE",
   },
 ] as const;
 

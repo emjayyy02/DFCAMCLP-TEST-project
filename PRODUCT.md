@@ -52,8 +52,8 @@ There is no admission interview stage. Do not add one.
 
 Known institutional structure:
 
-- Main Campus — Talon III: BSA and BSBA, with Financial Management, Marketing Management, and Human Resource Management programs.
-- IIT / CAA Campus: BSIS and Computer Engineering / CpE.
+- Main Campus: BSA — Bachelor of Science in Accountancy; BSBA — Bachelor of Science in Business Administration. BSBA majors: Financial Management, Marketing Management, and Human Resource Management.
+- IIT Campus: BSIS — Bachelor of Science in Information Systems; BSCpE — Bachelor of Science in Computer Engineering.
 
 Campus and program relationships should eventually be data-driven rather than hardcoded into UI logic.
 

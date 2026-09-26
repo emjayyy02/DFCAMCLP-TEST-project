@@ -1,4 +1,4 @@
-import { inArray } from "drizzle-orm";
+import { eq, inArray } from "drizzle-orm";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { parseServerEnv } from "../lib/env-schema";
 import { createDatabaseClient } from "../server/db/connection";
@@ -103,13 +103,36 @@ describe("P2-M2 database foundation", () => {
     expect(seededPeople).toHaveLength(Object.keys(seedIds.people).length);
   });
 
-  it("retrieves IIT / CAA programs through the campus relation", async () => {
+  it("retrieves the canonical IIT Campus programs through the campus relation", async () => {
     const rows = await getProgramsForCampusCode(database, "IIT_CAA");
 
-    expect(rows.map((row) => row.programCode)).toEqual(["BSIS", "CPE"]);
+    expect(rows).toEqual([
+      {
+        campusCode: "IIT_CAA",
+        campusName: "IIT Campus",
+        programCode: "BSIS",
+        programName: "Bachelor of Science in Information Systems",
+      },
+      {
+        campusCode: "IIT_CAA",
+        campusName: "IIT Campus",
+        programCode: "CPE",
+        programName: "Bachelor of Science in Computer Engineering",
+      },
+    ]);
     expect(new Set(rows.map((row) => row.campusCode))).toEqual(
       new Set(["IIT_CAA"]),
     );
+    expect(rows.filter((row) => row.programCode === "BSIS")).toHaveLength(1);
+    expect(rows.some((row) => ["BSA", "BSBA"].includes(row.programCode))).toBe(
+      false,
+    );
+    const bsisRows = await database
+      .select({ programCode: programs.code, campusCode: campuses.code })
+      .from(programs)
+      .innerJoin(campuses, eq(programs.campusId, campuses.id))
+      .where(eq(programs.code, "BSIS"));
+    expect(bsisRows).toEqual([{ programCode: "BSIS", campusCode: "IIT_CAA" }]);
   });
 
   it("retrieves the three BSBA majors through the program relation", async () => {
@@ -120,6 +143,18 @@ describe("P2-M2 database foundation", () => {
       "Human Resource Management",
       "Marketing Management",
     ]);
+    expect(rows.every((row) => row.programCode === "BSBA")).toBe(true);
+    expect(programSeed.map((program) => program.code)).toEqual([
+      "BSA",
+      "BSBA",
+      "BSIS",
+      "CPE",
+    ]);
+    expect(
+      programSeed.some((program) =>
+        rows.some((major) => major.majorName === program.name),
+      ),
+    ).toBe(false);
   });
 
   it("resolves the fake student through person, program, and campus", async () => {

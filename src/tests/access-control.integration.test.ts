@@ -208,6 +208,27 @@ describe("P2-M4 access control", () => {
     );
   });
 
+  it("allows Records Staff into the six guarded Records pages only", async () => {
+    const staff = await contextFor("records.test@example.invalid");
+    const student = await contextFor("student.test@example.invalid");
+    expect(staff.memberships.map((item) => item.portal)).toEqual(["RECORDS"]);
+    for (const path of [
+      "/records",
+      "/records/applicants",
+      "/records/dcat",
+      "/records/students",
+      "/records/enrollment",
+      "/records/documents",
+    ]) {
+      expect(canAccessPortalPath(staff, "RECORDS", path)).toBe(true);
+      expect(canAccessPortalPath(student, "RECORDS", path)).toBe(false);
+    }
+    expect(canAccessPortalPath(staff, "RECORDS", "/records/unregistered")).toBe(
+      false,
+    );
+    expect(canAccessPortalPath(staff, "STUDENT", "/student")).toBe(false);
+  });
+
   it("denies Student access to /technology", async () => {
     const context = await contextFor("student.test@example.invalid");
     expect(canEnterPortal(context, "TECHNOLOGY")).toBe(false);

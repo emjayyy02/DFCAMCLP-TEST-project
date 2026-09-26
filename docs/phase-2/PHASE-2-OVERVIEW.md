@@ -60,7 +60,7 @@ See [M1 validation](M1-VALIDATION.md), [M2 validation](M2-VALIDATION.md), [M3 va
 
 ## Next checkpoint
 
-Phase 2 is complete. P3-M1 Public Website, P3-M2 Applicant, P3-M3 Student, and P3-M4 Academic experiences are complete as frontend demos. P3-M5 Admissions & Records Experience is next.
+Phase 2 is complete. P3-M1 Public Website, P3-M2 Applicant, P3-M3 Student, P3-M4 Academic, and P3-M5 Admissions & Records experiences are complete as frontend demos. P3-M6 Operations Experience is next.
 
 ## Phase 3 roadmap
 
@@ -68,6 +68,6 @@ Phase 2 is complete. P3-M1 Public Website, P3-M2 Applicant, P3-M3 Student, and P
 - M2 — Applicant Experience — complete as a frontend demo; see [implementation and validation](../phase-3/P3-M2-APPLICANT-EXPERIENCE.md).
 - M3 — Student Experience — complete as a frontend demo; see [implementation and validation](../phase-3/P3-M3-STUDENT-EXPERIENCE.md).
 - M4 — Academic Experience — complete as a frontend demo; see [implementation and validation](../phase-3/P3-M4-ACADEMIC-EXPERIENCE.md).
-- M5 — Admissions & Records Experience — remaining.
+- M5 — Admissions & Records Experience — complete as a frontend demo; see [implementation and validation](../phase-3/P3-M5-ADMISSIONS-RECORDS-EXPERIENCE.md).
 - M6 — Operations Experience — remaining.
 - M7 — Technology Experience — remaining.

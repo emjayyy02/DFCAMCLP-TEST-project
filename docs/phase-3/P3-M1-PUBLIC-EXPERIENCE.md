@@ -20,7 +20,7 @@ The direction is a restrained modern institutional website: the existing Arial/H
 | Route         | Content                                                                                                                                                |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `/`           | Campus hero, admissions/sign-in actions, compact quick access, grouped programs, five-step journey, small demo notice                                  |
-| `/programs`   | Main Campus — Talon III: BSA, BSBA and three majors; IIT Campus: BSIS and provisional Computer Engineering / CpE                                       |
+| `/programs`   | Main Campus: BSA and BSBA with three BSBA majors; IIT Campus: BSIS and BSCpE                                                                           |
 | `/admissions` | Project-established residency/free-tuition context, physical submission, Application → Document submission → DCAT → Results → Enrollment; no interview |
 | `/about`      | Short concept explanation, educational/portfolio purpose and explicit non-affiliation                                                                  |
 | `/login`      | Original seal, portal selector, email/password, visibility toggle, pending/error feedback, demo-use notice and disclaimer in footer                    |
@@ -41,7 +41,7 @@ Validation results and browser evidence are recorded below after the implementat
 
 ## Limitations and next milestone
 
-This is an unofficial mock/demo, not a commissioned or endorsed service, and must not receive real student data. Admission submission, activation/recovery, official requirements/deadlines, announcements, and school workflows are unavailable. Computer Engineering naming remains provisional. The source photo limits fine detail on wide displays; its original asset is preserved. No client demo-password helper is added and no seed secrets are exposed.
+This is an unofficial mock/demo, not a commissioned or endorsed service, and must not receive real student data. Admission submission, activation/recovery, official requirements/deadlines, announcements, and school workflows are unavailable. Program presentation follows the canonical names in `DFCAMCLP.md`. The source photo limits fine detail on wide displays; its original asset is preserved. No client demo-password helper is added and no seed secrets are exposed.
 
 P3-M2 remains the Applicant Experience. P3-M3 Student, M4 Academic, M5 Admissions & Records, M6 Operations and M7 Technology remain future frontend milestones. Their existing shell placeholders are preserved.
 
@@ -74,7 +74,7 @@ Browser evaluation is read-only: no live Impeccable overlay injection was possib
 
 ### Review refinements
 
-Moved the demo notice before credentials; added a public programs path for visitors without accounts; explained DCAT as an admission examination; changed static program codes to neutral text to avoid link confusion; gave the small-screen demo notice a full-width text column. A suggestion to add another hero disclaimer was not adopted: the requested restrained footer/about notice pattern is retained, with an explicit demo notice before login entry. No unresolved design decision blocks this milestone. Provisional CpE naming remains a factual limitation.
+Moved the demo notice before credentials; added a public programs path for visitors without accounts; explained DCAT as an admission examination; changed static program codes to neutral text to avoid link confusion; gave the small-screen demo notice a full-width text column. A suggestion to add another hero disclaimer was not adopted: the requested restrained footer/about notice pattern is retained, with an explicit demo notice before login entry. No unresolved design decision blocks this milestone. Program labels now follow the canonical names in `DFCAMCLP.md`.
 
 ### Evidence
 
@@ -99,6 +99,6 @@ Skills: installed frontend-design, find-skills, and impeccable. Discovery review
 
 Removed the desktop/mobile navbar sign-in CTA; the homepage hero action, footer links and direct `/login` route remain. Added a centered white sticky header with 16px top/inset spacing, 12px corners, a subtle border/shadow and no blur. The header retains normal document space, stays above scrolling content, and uses target scroll margins to keep anchored headings visible. Mobile navigation retains Escape/focus restoration and route-close behavior. Active, hover, focus and pressed feedback now apply equally to all four navigation links, including About.
 
-Renamed the public-facing campus label from “IIT / CAA Campus” to “IIT Campus” in the shared homepage/Programs content. BSIS and Computer Engineering / CpE are unchanged; database identifiers and migrations are untouched.
+Renamed the legacy public-facing campus label to “IIT Campus” in the shared homepage/Programs content. The campus identifier remains `IIT_CAA`; database migrations are untouched.
 
 Polish validation: 375×812, 768×900 and 1440×900 browser checks cover inset fit, scrolling, unobscured headings, seal sizing, navigation and overflow. Lint, typecheck, format check and production build PASS. At the Programs anchor the heading starts at 144px, below the sticky header bottom edge at 98px. Direct login rendering, mobile Escape/focus restoration, route close, and About active underline were verified. Existing homepage evidence screenshots were refreshed. No existing test covers the changed presentation-only files, so database/auth suites were not rerun for this patch. No backend/auth/access-control changes or database reset; P3-M2 NOT started.

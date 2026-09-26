@@ -53,7 +53,7 @@ Employee department remains a nullable label because an authoritative department
 
 ## Institutional codes and working names
 
-The development seed uses campus codes `MAIN` and `IIT_CAA`. Program codes are globally unique: `BSA`, `BSBA`, `BSIS` and `CPE`. The working display short name for `CPE` is `CpE`; its formal stored name is `Computer Engineering`, which remains provisional until the official degree name is confirmed.
+The development seed uses campus codes `MAIN` and `IIT_CAA`; their canonical campus names are Main Campus and IIT Campus. Program codes are globally unique: `BSA`, `BSBA`, `BSIS` and the internal `CPE` code, which maps to the public display BSCpE — Bachelor of Science in Computer Engineering.
 
 These are database data values, not React control flow. UI code must query configured relationships rather than branch on the literals.
 
@@ -109,11 +109,11 @@ pnpm db:seed
 
 The seed uses stable UUIDs and conflict-aware writes. Repeating it reconciles the same rows instead of duplicating them. It creates only clearly fake people and institutional relationships:
 
-- Main Campus — Talon III → BSA, BSBA;
+- Main Campus → BSA, BSBA;
 - BSBA → Financial Management, Marketing Management, Human Resource Management;
-- IIT / CAA Campus → BSIS, CPE;
-- Alex Teststudent → `TEST-2027-0001` → BSIS → IIT / CAA;
-- Jamie Testapplicant → `APP-TEST-0001` → CPE → IIT / CAA;
+- IIT Campus → BSIS, BSCpE;
+- Alex Teststudent → `TEST-2027-0001` → BSIS → IIT Campus;
+- Jamie Testapplicant → `APP-TEST-0001` → BSCpE → IIT Campus;
 - Taylor Testemployee → `EMP-TEST-0001` with explicitly synthetic labels.
 
 The number formats above are development placeholders, not final institutional algorithms.

@@ -42,7 +42,7 @@ All 12 integration tests passed:
 1. validated connection succeeds;
 2. migrated foundation tables and migration history exist;
 3. running seed repeatedly preserves one copy of each deterministic row;
-4. IIT / CAA resolves exactly BSIS and CPE;
+4. IIT Campus resolves exactly BSIS and BSCpE (stored under internal code `CPE`);
 5. BSBA resolves exactly its three majors;
 6. fake student resolves person → program → campus;
 7. fake applicant resolves person → selected program → campus;
@@ -101,7 +101,7 @@ Next.js bootstrap, application UI, Tailwind, shadcn primitive, Compose, environm
 
 ## Open questions retained
 
-Official Applicant ID and Student ID formats, Student ID creation checkpoint, username normalization/collision behavior, official CpE degree name, authoritative department structure, application fields and all admissions/academic/employee workflows remain unresolved. M2 does not invent them.
+Official Applicant ID and Student ID formats, Student ID creation checkpoint, username normalization/collision behavior, authoritative department structure, application fields and all admissions/academic/employee workflows remain unresolved. M2 does not invent them.
 
 ## Scope confirmation
 

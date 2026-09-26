@@ -18,10 +18,6 @@ export default function ProgramsPage() {
           </h2>
           <CampusPrograms detailed />
         </section>
-        <p className="provisional-note">
-          Computer Engineering / CpE follows the project’s provisional program
-          naming.
-        </p>
         <div className="page-next">
           <div>
             <h2>Planning your next step?</h2>

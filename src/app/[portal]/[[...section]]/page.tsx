@@ -8,6 +8,7 @@ import { requirePortalPath } from "@/server/access-control/current";
 import { ApplicantPage } from "@/features/applicant/applicant-page";
 import { StudentPage } from "@/features/student/student-page";
 import { AcademicPage } from "@/features/academic/academic-page";
+import { RecordsPage } from "@/features/records/records-page";
 
 export default async function PortalFoundationPage({
   params,
@@ -61,6 +62,24 @@ export default async function PortalFoundationPage({
           typeof query.offering === "string" ? query.offering : undefined
         }
         date={typeof query.date === "string" ? query.date : undefined}
+      />
+    );
+  }
+
+  if (portal === "RECORDS") {
+    const query = await searchParams;
+    return (
+      <RecordsPage
+        key={path}
+        section={section[0] ?? "dashboard"}
+        recordId={typeof query.record === "string" ? query.record : undefined}
+        queue={
+          typeof query.queue === "string"
+            ? query.queue
+            : typeof query.from === "string"
+              ? query.from
+              : undefined
+        }
       />
     );
   }

@@ -21,8 +21,8 @@ An Academic + Technology account is possible only through explicit assignments. 
 
 | Campus in current project model | Programs | Major structure |
 |---|---|---|
-| Main Campus — Talon III | BSA — Bachelor of Science in Accountancy; BSBA — Bachelor of Science in Business Administration | BSBA: Financial Management, Marketing Management, Human Resource Management |
-| IIT / CAA Campus | BSIS — Bachelor of Science in Information Systems; CpE — Computer Engineering | None specified in this brief |
+| Main Campus | BSA — Bachelor of Science in Accountancy; BSBA — Bachelor of Science in Business Administration | BSBA: Financial Management, Marketing Management, Human Resource Management |
+| IIT Campus | BSIS — Bachelor of Science in Information Systems; BSCpE — Bachelor of Science in Computer Engineering | None |
 
 Campus, program, major and their relationships are configured data. Forms show available valid choices from that information; never infer campus from a program code. Changes must not relabel historical records silently. Curriculum version is visible where it explains student progress (Q04).
 

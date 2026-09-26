@@ -169,32 +169,43 @@ export const portalRoutes: Record<
       path: "/records",
       label: "Dashboard",
       title: "Admissions & Records portal",
-      description:
-        "Records work is intentionally limited to access-control and shell foundations in this milestone.",
+      description: "Sample admissions and student-record work queues.",
       permission: "records.portal.view",
     },
     {
       path: "/records/applicants",
       label: "Applicants",
       title: "Applicants",
+      description: "Find sample applicants and review physical requirements.",
+      permission: "records.applicants.view",
+    },
+    {
+      path: "/records/dcat",
+      label: "DCAT",
+      title: "DCAT",
       description:
-        "Applicant review and requirements processing will be implemented in a later demo phase.",
+        "Sample scheduling and result states for eligible applicants.",
       permission: "records.applicants.view",
     },
     {
       path: "/records/students",
       label: "Students",
       title: "Students",
-      description:
-        "Student records and account-creation workflows will be implemented in a later demo phase.",
+      description: "Read existing sample student records.",
       permission: "records.students.view",
     },
     {
       path: "/records/enrollment",
       label: "Enrollment",
       title: "Enrollment",
-      description:
-        "Enrollment processing, COE, and COR workflows will be implemented in a later demo phase.",
+      description: "Sample Registrar progression for qualified applicants.",
+      permission: "records.enrollment.view",
+    },
+    {
+      path: "/records/documents",
+      label: "Documents",
+      title: "Documents",
+      description: "Sample COE and COR document states and previews.",
       permission: "records.enrollment.view",
     },
   ],

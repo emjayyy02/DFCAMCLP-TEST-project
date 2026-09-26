@@ -28,7 +28,7 @@ export const studentDemoData = {
     fullName: "Marvin Reyes",
     studentId: "DEMO-STU-2026-0142",
     email: "marvin.reyes.demo@example.invalid",
-    program: "BS Information Systems",
+    program: "BSIS — Bachelor of Science in Information Systems",
     programCode: "BSIS",
     campus: "IIT Campus",
     yearLevel: "2nd Year",

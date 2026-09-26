@@ -12,11 +12,16 @@ export const campusOptions = [
 ] as const;
 
 export const programOptions = [
-  { code: "BSA", campus: "MAIN", label: "BSA — Accountancy", majors: [] },
+  {
+    code: "BSA",
+    campus: "MAIN",
+    label: "BSA — Bachelor of Science in Accountancy",
+    majors: [],
+  },
   {
     code: "BSBA",
     campus: "MAIN",
-    label: "BSBA — Business Administration",
+    label: "BSBA — Bachelor of Science in Business Administration",
     majors: [
       "Financial Management",
       "Marketing Management",
@@ -26,13 +31,13 @@ export const programOptions = [
   {
     code: "BSIS",
     campus: "IIT_CAA",
-    label: "BSIS — Information Systems",
+    label: "BSIS — Bachelor of Science in Information Systems",
     majors: [],
   },
   {
     code: "CPE",
     campus: "IIT_CAA",
-    label: "CpE — Computer Engineering",
+    label: "BSCpE — Bachelor of Science in Computer Engineering",
     majors: [],
   },
 ];

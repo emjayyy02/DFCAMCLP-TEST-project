@@ -3,6 +3,7 @@ import { AppShell } from "@/components/portal/app-shell";
 import { ApplicantDemoProvider } from "@/features/applicant/demo-context";
 import { StudentDemoProvider } from "@/features/student/demo-context";
 import { AcademicDemoProvider } from "@/features/academic/demo-context";
+import { RecordsDemoProvider } from "@/features/records/demo-context";
 import { portalCodeFromSlug } from "@/lib/portals";
 import { permittedNavigation } from "@/server/access-control/navigation";
 import {
@@ -43,6 +44,10 @@ export default async function PortalLayout({
         <AcademicDemoProvider key={context.user.email}>
           {children}
         </AcademicDemoProvider>
+      ) : portal === "RECORDS" ? (
+        <RecordsDemoProvider key={context.user.email}>
+          {children}
+        </RecordsDemoProvider>
       ) : (
         children
       )}
