@@ -213,41 +213,36 @@ export const portalRoutes: Record<
     {
       path: "/operations",
       label: "Dashboard",
-      title: "Operations portal",
-      description:
-        "Operations work is intentionally limited to access-control and shell foundations in this milestone.",
+      title: "Operations",
+      description: "Routine school-support work for this demonstration.",
       permission: "operations.portal.view",
     },
     {
       path: "/operations/student-services",
       label: "Student Services",
-      title: "Student services",
-      description:
-        "Student-service requests and concerns will be implemented in a later demo phase.",
+      title: "Student Services",
+      description: "Review fictional, non-academic student-service requests.",
       permission: "operations.student_services.view",
     },
     {
       path: "/operations/employees",
       label: "Employees",
       title: "Employees",
-      description:
-        "Employee operations will be implemented in a later demo phase.",
+      description: "Find basic fictional employee directory entries.",
       permission: "operations.employees.view",
     },
     {
       path: "/operations/facilities",
       label: "Facilities",
       title: "Facilities",
-      description:
-        "Facilities and maintenance workflows will be implemented in a later demo phase.",
+      description: "Review sample maintenance tickets and demo updates.",
       permission: "operations.facilities.view",
     },
     {
       path: "/operations/administration",
       label: "Administration",
       title: "Administration",
-      description:
-        "Institutional configuration workflows will be implemented in a later demo phase.",
+      description: "Read the demo term and canonical campus/program reference.",
       permission: "operations.administration.view",
     },
   ],

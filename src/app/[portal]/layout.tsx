@@ -4,6 +4,7 @@ import { ApplicantDemoProvider } from "@/features/applicant/demo-context";
 import { StudentDemoProvider } from "@/features/student/demo-context";
 import { AcademicDemoProvider } from "@/features/academic/demo-context";
 import { RecordsDemoProvider } from "@/features/records/demo-context";
+import { OperationsDemoProvider } from "@/features/operations/demo-context";
 import { portalCodeFromSlug } from "@/lib/portals";
 import { permittedNavigation } from "@/server/access-control/navigation";
 import {
@@ -48,6 +49,10 @@ export default async function PortalLayout({
         <RecordsDemoProvider key={context.user.email}>
           {children}
         </RecordsDemoProvider>
+      ) : portal === "OPERATIONS" ? (
+        <OperationsDemoProvider key={context.user.email}>
+          {children}
+        </OperationsDemoProvider>
       ) : (
         children
       )}

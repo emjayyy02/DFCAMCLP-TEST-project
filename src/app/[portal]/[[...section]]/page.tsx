@@ -9,6 +9,7 @@ import { ApplicantPage } from "@/features/applicant/applicant-page";
 import { StudentPage } from "@/features/student/student-page";
 import { AcademicPage } from "@/features/academic/academic-page";
 import { RecordsPage } from "@/features/records/records-page";
+import { OperationsPage } from "@/features/operations/operations-page";
 
 export default async function PortalFoundationPage({
   params,
@@ -80,6 +81,34 @@ export default async function PortalFoundationPage({
               ? query.from
               : undefined
         }
+      />
+    );
+  }
+
+  if (portal === "OPERATIONS") {
+    const query = await searchParams;
+    const membership = authorized.context.memberships.find(
+      (candidate) => candidate.portal === portal,
+    );
+    if (!membership) notFound();
+    const isMaintenanceStaff = membership.roles.some(
+      (role) => role.code === "MAINTENANCE_STAFF",
+    );
+    return (
+      <OperationsPage
+        key={path}
+        section={section[0] ?? "dashboard"}
+        title={authorized.route.title}
+        description={authorized.route.description}
+        isMaintenanceStaff={isMaintenanceStaff}
+        requestId={
+          typeof query.request === "string" ? query.request : undefined
+        }
+        employeeId={
+          typeof query.employee === "string" ? query.employee : undefined
+        }
+        ticketId={typeof query.ticket === "string" ? query.ticket : undefined}
+        facilityView={typeof query.view === "string" ? query.view : undefined}
       />
     );
   }
