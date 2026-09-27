@@ -250,17 +250,17 @@ export const portalRoutes: Record<
     {
       path: "/technology",
       label: "Dashboard",
-      title: "Technology portal",
+      title: "Technology",
       description:
-        "Technology work is intentionally limited to access-control and shell foundations in this milestone.",
+        "A read-only view of demo account access, security foundations, and the systems behind this project.",
       permission: "technology.portal.view",
     },
     {
       path: "/technology/accounts",
       label: "Accounts",
-      title: "Accounts",
+      title: "Demo accounts",
       description:
-        "Account and membership administration will be implemented in a later demo phase.",
+        "Review fictional account status, portal memberships, and assigned roles.",
       permission: "technology.accounts.view",
     },
     {
@@ -268,7 +268,7 @@ export const portalRoutes: Record<
       label: "Security",
       title: "Security",
       description:
-        "Security activity and audit views will be implemented in a later demo phase.",
+        "Review the implemented authentication and authorization foundations, plus sample scenarios.",
       permission: "technology.security.view",
     },
     {
@@ -276,7 +276,7 @@ export const portalRoutes: Record<
       label: "System",
       title: "System",
       description:
-        "System health and configuration views will be implemented in a later demo phase.",
+        "See safe project stack and environment information without simulated health metrics.",
       permission: "technology.system.view",
     },
     {
@@ -284,7 +284,7 @@ export const portalRoutes: Record<
       label: "Developer",
       title: "Developer",
       description:
-        "Developer diagnostics will be implemented in a later demo phase.",
+        "Explore the project architecture, portal map, canonical data, and demo boundaries.",
       permission: "technology.developer.view",
     },
   ],

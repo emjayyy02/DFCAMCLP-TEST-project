@@ -104,12 +104,12 @@ The exact current official street-address wording for IIT should be treated as *
 
 There are **four degree programs in the current project model**.
 
-| Campus | Canonical Code | Program |
-| --- | --- | --- |
-| Main Campus | BSA | Bachelor of Science in Accountancy |
-| Main Campus | BSBA | Bachelor of Science in Business Administration |
-| IIT Campus | BSIS | Bachelor of Science in Information Systems |
-| IIT Campus | BSCpE | Bachelor of Science in Computer Engineering |
+| Campus      | Canonical Code | Program                                        |
+| ----------- | -------------- | ---------------------------------------------- |
+| Main Campus | BSA            | Bachelor of Science in Accountancy             |
+| Main Campus | BSBA           | Bachelor of Science in Business Administration |
+| IIT Campus  | BSIS           | Bachelor of Science in Information Systems     |
+| IIT Campus  | BSCpE          | Bachelor of Science in Computer Engineering    |
 
 ## Critical deduplication rule
 
@@ -605,21 +605,27 @@ These are **project information-architecture groups**, not claims that DFCAMCLP 
 ## Meaning
 
 ### Applicant
+
 Admissions journey and enrollment transition.
 
 ### Student
+
 Academic self-service, enrollment documents, requests, announcements, calendar.
 
 ### Academic
+
 Faculty and program-coordinator teaching workflows.
 
 ### Admissions & Records
+
 Applicant processing, DCAT, enrollment, student records, COE/COR.
 
 ### Operations
+
 Compressed project area for Student Services, Employees/HR, Facilities, and school administration.
 
 ### Technology
+
 Accounts, access, security, system/developer tools.
 
 ---
@@ -736,19 +742,19 @@ The provided seal/logo must be used without:
 
 Use these user-facing names consistently:
 
-| Concept | Canonical Display |
-| --- | --- |
-| Institution | DFCAMCLP |
-| Main campus | Main Campus |
-| IT campus | IIT Campus |
-| Accountancy | BSA — Bachelor of Science in Accountancy |
-| Business Administration | BSBA — Bachelor of Science in Business Administration |
-| Information Systems | BSIS — Bachelor of Science in Information Systems |
-| Computer Engineering | BSCpE — Bachelor of Science in Computer Engineering |
-| Admission exam | DCAT |
-| Certificate of Enrollment | COE |
-| Certificate of Registration | COR |
-| Admissions/registrar portal | Admissions & Records |
+| Concept                     | Canonical Display                                     |
+| --------------------------- | ----------------------------------------------------- |
+| Institution                 | DFCAMCLP                                              |
+| Main campus                 | Main Campus                                           |
+| IT campus                   | IIT Campus                                            |
+| Accountancy                 | BSA — Bachelor of Science in Accountancy              |
+| Business Administration     | BSBA — Bachelor of Science in Business Administration |
+| Information Systems         | BSIS — Bachelor of Science in Information Systems     |
+| Computer Engineering        | BSCpE — Bachelor of Science in Computer Engineering   |
+| Admission exam              | DCAT                                                  |
+| Certificate of Enrollment   | COE                                                   |
+| Certificate of Registration | COR                                                   |
+| Admissions/registrar portal | Admissions & Records                                  |
 
 Avoid switching between multiple labels for the same thing without a reason.
 

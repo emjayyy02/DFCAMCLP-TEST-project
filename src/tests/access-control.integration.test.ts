@@ -12,6 +12,7 @@ import {
   getAccessContext,
   hasPermission,
 } from "../server/access-control/service";
+import { permittedNavigation } from "../server/access-control/navigation";
 import {
   membershipSeed,
   permissionSeed,
@@ -303,7 +304,12 @@ describe("P2-M4 access control", () => {
 
   it("allows IT Admin into normal Technology sections but not Developer", async () => {
     const context = await contextFor("technology.test@example.invalid");
+    const technologyPermissions =
+      context.memberships.find(
+        (membership) => membership.portal === "TECHNOLOGY",
+      )?.permissions ?? [];
     for (const path of [
+      "/technology",
       "/technology/accounts",
       "/technology/security",
       "/technology/system",
@@ -313,13 +319,39 @@ describe("P2-M4 access control", () => {
     expect(
       canAccessPortalPath(context, "TECHNOLOGY", "/technology/developer"),
     ).toBe(false);
+    expect(
+      permittedNavigation("TECHNOLOGY", technologyPermissions).map(
+        (item) => item.path,
+      ),
+    ).toEqual([
+      "/technology",
+      "/technology/accounts",
+      "/technology/security",
+      "/technology/system",
+    ]);
   });
 
   it("allows the Developer role into the Developer foundation", async () => {
     const context = await contextFor("faculty-it.test@example.invalid");
+    const technologyPermissions =
+      context.memberships.find(
+        (membership) => membership.portal === "TECHNOLOGY",
+      )?.permissions ?? [];
+    for (const path of [
+      "/technology",
+      "/technology/system",
+      "/technology/developer",
+    ]) {
+      expect(canAccessPortalPath(context, "TECHNOLOGY", path)).toBe(true);
+    }
+    for (const path of ["/technology/accounts", "/technology/security"]) {
+      expect(canAccessPortalPath(context, "TECHNOLOGY", path)).toBe(false);
+    }
     expect(
-      canAccessPortalPath(context, "TECHNOLOGY", "/technology/developer"),
-    ).toBe(true);
+      permittedNavigation("TECHNOLOGY", technologyPermissions).map(
+        (item) => item.path,
+      ),
+    ).toEqual(["/technology", "/technology/system", "/technology/developer"]);
   });
 
   it("allows the multi-portal account into both explicit portals only", async () => {
