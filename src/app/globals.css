@@ -729,7 +729,7 @@
   line-height: 1.14;
   letter-spacing: -0.025em;
   text-wrap: balance;
-  max-width: 640px;
+  max-width: 720px;
 }
 .hero-content p {
   font-size: 18px;
@@ -750,44 +750,22 @@
 .hero-actions a:focus-visible {
   outline-color: white;
 }
-.quick-access {
-  padding-block: 24px;
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  align-items: center;
-  gap: 24px;
-  border-bottom: 1px solid var(--border);
-}
-.quick-access h2 {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--foreground-muted);
-}
-.quick-links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-.quick-links a {
-  min-height: 48px;
-  font-size: 14px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-}
-.quick-links svg {
-  flex-shrink: 0;
-  color: var(--primary);
-}
-.quick-links a:hover {
-  color: var(--primary);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
 .public-section {
   padding-block: 64px;
+}
+.institution-intro {
+  border-bottom: 1px solid var(--border);
+}
+.institution-intro-copy {
+  max-width: 76ch;
+}
+.institution-intro-copy h2 {
+  margin-bottom: 16px;
+}
+.institution-intro-copy p {
+  color: var(--foreground-muted);
+  font-size: 17px;
+  line-height: 1.7;
 }
 .section-heading {
   display: flex;
@@ -802,10 +780,6 @@
   font-weight: 600;
   letter-spacing: -0.02em;
   text-wrap: balance;
-}
-.public-site .quick-access h2 {
-  font-size: 14px;
-  letter-spacing: 0;
 }
 .section-heading p,
 .page-next p {
@@ -833,7 +807,7 @@
   gap: 56px;
 }
 .campus-heading {
-  padding-bottom: 16px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--border-strong);
 }
 .campus-heading h3 {
@@ -841,32 +815,44 @@
   font-size: 21px;
   line-height: 1.4;
 }
-.campus-heading > p {
+.program-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
   font-size: 14px;
-  color: var(--foreground-muted);
-  margin-top: 4px;
 }
-.program-list > li {
-  display: grid;
-  grid-template-columns: 64px 1fr;
-  gap: 16px;
-  padding-block: 20px;
+.program-table th,
+.program-table td {
+  padding: 14px 10px;
   border-bottom: 1px solid var(--border);
-  font-size: 15px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
 }
-.program-code {
+.program-table thead th {
+  background: var(--muted);
+  color: var(--foreground-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+.program-table thead th:first-child,
+.program-table tbody th {
+  width: 72px;
+}
+.program-table tbody th {
   color: var(--foreground);
   font-weight: 600;
 }
 .major-list {
-  margin-top: 12px;
-  padding-left: 18px;
+  margin-top: 8px;
+  padding-left: 16px;
   list-style: disc;
   color: var(--foreground-muted);
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.55;
 }
 .major-list li + li {
-  margin-top: 6px;
+  margin-top: 3px;
 }
 .journey-section {
   background: var(--surface);
@@ -912,30 +898,65 @@
   font-size: 14px;
   margin-top: 8px;
 }
-.portal-notice {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  padding-block: 36px;
+.history-preview {
+  background: var(--muted);
 }
-.notice-marker {
-  background: var(--accent);
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
+.history-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  list-style: none;
 }
-.public-site .portal-notice h2 {
+.history-timeline > li {
+  min-width: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-strong);
+}
+.history-year {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  font-variant-numeric: tabular-nums;
+}
+.history-timeline h3 {
+  margin-top: 8px;
   font-size: 16px;
-  letter-spacing: 0;
+  font-weight: 600;
+  line-height: 1.4;
 }
-.portal-notice p {
+.history-timeline li > p:last-child {
+  margin-top: 8px;
+  color: var(--foreground-muted);
   font-size: 14px;
-  margin-top: 6px;
+  line-height: 1.6;
+}
+.final-cta {
+  padding-block: 40px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+.final-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.final-cta-inner > div:first-child {
+  max-width: 58ch;
+}
+.public-site .final-cta h2 {
+  font-size: 22px;
+}
+.final-cta p {
+  margin-top: 8px;
   color: var(--foreground-muted);
 }
-.portal-notice .text-link {
-  margin-left: auto;
+.final-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  flex-shrink: 0;
 }
 .public-footer {
   border-top: 1px solid var(--border);
@@ -978,6 +999,9 @@
   color: var(--foreground-muted);
   margin-top: 24px;
   max-width: 750px;
+}
+.public-footer .footer-copyright {
+  margin-top: 8px;
 }
 .public-page {
   padding-block: 64px;
@@ -1051,23 +1075,43 @@
 .admissions-flow .admissions-journey {
   margin-top: 28px;
 }
-.about-columns {
+.about-overview {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
+  padding-block: 8px 40px;
+  border-bottom: 1px solid var(--border);
+}
+.public-site .about-overview h2,
+.public-site .about-disclosure h2 {
+  font-size: 23px;
+}
+.about-overview p,
+.about-disclosure p {
+  max-width: 58ch;
+  margin-top: 14px;
+  color: var(--foreground-muted);
+}
+.about-overview .text-link {
+  margin-top: 12px;
+}
+.about-history {
+  padding-block: 40px;
+}
+.about-disclosure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
   padding-top: 32px;
   border-top: 1px solid var(--border);
 }
-.public-site .about-columns h2 {
-  font-size: 23px;
+.about-disclosure > div {
+  max-width: 72ch;
 }
-.about-columns p {
-  color: var(--foreground-muted);
-  margin-top: 16px;
-  max-width: 55ch;
-}
-.about-columns .text-link {
-  margin-top: 20px;
+.about-disclosure .button,
+.about-disclosure a {
+  flex-shrink: 0;
 }
 .login-page {
   padding-block: 48px;
@@ -1103,10 +1147,14 @@
   font-size: 13px;
   color: var(--foreground-muted);
 }
-.login-help {
-  margin-top: 24px;
-  font-size: 12px;
-  color: var(--foreground-muted);
+.login-account-links {
+  display: grid;
+  justify-items: start;
+  gap: 4px;
+  margin-top: 20px;
+}
+.login-account-links .text-link {
+  flex-shrink: 1;
 }
 .public-site input:hover,
 .public-site select:hover {
@@ -1115,6 +1163,152 @@
 .public-site input:focus,
 .public-site select:focus {
   border-color: var(--primary);
+}
+.identity-flow {
+  max-width: 900px;
+}
+.identity-flow > .demo-notice {
+  margin: -16px 0 32px;
+}
+.applicant-entry-choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-block: 24px;
+  border-block: 1px solid var(--border);
+}
+.applicant-entry-choice > div {
+  max-width: 64ch;
+}
+.public-site .applicant-entry-choice h2,
+.public-site .managed-recovery h2,
+.public-site .identity-flow-panel h2 {
+  font-size: 22px;
+}
+.applicant-entry-choice p,
+.managed-account-guidance .section-heading p,
+.identity-flow-intro {
+  margin-top: 8px;
+  color: var(--foreground-muted);
+}
+.applicant-entry-choice .button,
+.applicant-entry-choice a {
+  flex-shrink: 0;
+}
+.managed-account-guidance {
+  margin-top: 40px;
+}
+.managed-account-guidance .section-heading {
+  margin-bottom: 24px;
+}
+.identity-guidance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+.identity-guidance-grid section {
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.identity-guidance-grid h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.identity-guidance-grid p {
+  margin-top: 8px;
+  color: var(--foreground-muted);
+  font-size: 14px;
+}
+.identity-guidance-grid .text-link {
+  margin-top: 8px;
+}
+.identity-flow-panel {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.identity-entry-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 24px;
+  margin-top: 24px;
+}
+.identity-entry-form > div {
+  min-width: 0;
+}
+.identity-entry-form .field-help {
+  margin-top: 6px;
+}
+.identity-entry-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  grid-column: 1 / -1;
+  padding-top: 4px;
+}
+.identity-preview-result {
+  margin-top: 20px;
+}
+.identity-preview-facts {
+  margin-block: 20px;
+  border-block: 1px solid var(--border);
+}
+.identity-preview-facts > div {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.4fr) 1fr;
+  gap: 16px;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.identity-preview-facts > div:last-child {
+  border-bottom: 0;
+}
+.identity-preview-facts dt {
+  font-size: 14px;
+  font-weight: 600;
+}
+.identity-preview-facts dd {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.identity-flow-boundaries {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--foreground-muted);
+  font-size: 14px;
+}
+.identity-flow-boundaries a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.managed-recovery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+.managed-recovery > div:first-child {
+  max-width: 64ch;
+}
+.managed-recovery p {
+  margin-top: 8px;
+  color: var(--foreground-muted);
+  font-size: 14px;
+}
+.managed-recovery-actions {
+  display: grid;
+  justify-items: start;
+  flex-shrink: 0;
 }
 @media (max-width: 1050px) {
   .public-container {
@@ -1125,13 +1319,6 @@
   }
   .site-identity span span {
     display: none;
-  }
-  .quick-access {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
-  .quick-links {
-    gap: 24px;
   }
   .campus-columns {
     gap: 32px;
@@ -1174,10 +1361,6 @@
   .public-navigation > a {
     padding: 10px 12px;
   }
-  .quick-links {
-    grid-template-columns: 1fr 1fr;
-    gap: 0 32px;
-  }
   .campus-hero {
     min-height: 430px;
   }
@@ -1202,23 +1385,37 @@
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  .about-columns {
-    gap: 32px;
-  }
   .admissions-journey {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
+  }
+  .admissions-journey > li::after {
+    display: none;
   }
   .admissions-journey h3 {
     font-size: 14px;
   }
-  .portal-notice {
-    flex-wrap: wrap;
+  .history-timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .portal-notice > div {
-    flex: 1;
+  .final-cta-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
   }
-  .portal-notice .text-link {
-    margin-left: 28px;
+  .about-overview {
+    gap: 32px;
+  }
+  .about-disclosure,
+  .managed-recovery {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .applicant-entry-choice {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
   }
 }
 @media (max-width: 600px) {
@@ -1269,16 +1466,6 @@
     align-items: stretch;
     max-width: 335px;
   }
-  .quick-access {
-    padding-block: 20px;
-  }
-  .quick-links {
-    column-gap: 20px;
-  }
-  .quick-links a {
-    font-size: 13px;
-    min-height: 56px;
-  }
   .public-section {
     padding-block: 40px;
   }
@@ -1297,9 +1484,16 @@
   .campus-heading h3 {
     font-size: 20px;
   }
-  .program-list > li {
-    grid-template-columns: 52px 1fr;
-    gap: 12px;
+  .program-table {
+    font-size: 13px;
+  }
+  .program-table th,
+  .program-table td {
+    padding: 12px 8px;
+  }
+  .program-table thead th:first-child,
+  .program-table tbody th {
+    width: 58px;
   }
   .journey-section {
     padding-block: 36px;
@@ -1332,19 +1526,21 @@
     margin-top: 6px;
     font-size: 15px;
   }
-  .portal-notice {
-    padding-block: 28px;
-    gap: 12px;
-    display: grid;
-    grid-template-columns: 8px 1fr;
-    align-items: start;
+  .institution-intro-copy p {
+    font-size: 16px;
   }
-  .portal-notice .notice-marker {
-    margin-top: 6px;
+  .history-timeline {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
-  .portal-notice .text-link {
-    margin-left: 0;
-    grid-column: 2;
+  .final-cta {
+    padding-block: 32px;
+  }
+  .final-cta-actions {
+    width: 100%;
+  }
+  .final-cta-actions > a {
+    flex: 1 1 100%;
   }
   .footer-top {
     flex-direction: column;
@@ -1352,7 +1548,7 @@
     gap: 16px;
   }
   .public-footer nav {
-    gap: 24px;
+    gap: 8px 20px;
     flex-wrap: wrap;
   }
   .public-footer .public-container > p {
@@ -1381,9 +1577,18 @@
   .admissions-flow {
     margin-top: 40px;
   }
-  .about-columns {
+  .about-overview {
     grid-template-columns: 1fr;
     gap: 36px;
+  }
+  .about-overview {
+    padding-bottom: 32px;
+  }
+  .about-history {
+    padding-block: 32px;
+  }
+  .about-disclosure {
+    padding-top: 24px;
   }
   .login-page {
     padding-block: 28px;
@@ -1393,6 +1598,32 @@
   }
   .login-panel h1 {
     font-size: 28px;
+  }
+  .identity-flow > .demo-notice {
+    margin: -8px 0 24px;
+  }
+  .identity-flow-panel {
+    padding: 20px 16px;
+  }
+  .identity-entry-form,
+  .identity-guidance-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .identity-entry-actions {
+    grid-column: auto;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .identity-preview-facts > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .identity-guidance-grid {
+    gap: 24px;
+  }
+  .managed-account-guidance {
+    margin-top: 32px;
   }
 }
 @keyframes public-menu-in {

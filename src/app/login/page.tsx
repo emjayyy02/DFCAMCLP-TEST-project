@@ -4,7 +4,9 @@ import Link from "next/link";
 import { LoginForm } from "@/features/identity/login-form";
 import { SiteShell } from "@/components/public/site-shell";
 import { isPortalCode } from "@/lib/portals";
-export const metadata: Metadata = { title: "Sign in — DFCAMCLP Portal" };
+export const metadata: Metadata = {
+  title: "Sign in — DFCAMCLP Portal Concept",
+};
 export default async function LoginPage({ searchParams }: PageProps<"/login">) {
   const requestedPortal = (await searchParams).portal;
   const defaultPortal =
@@ -28,12 +30,14 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
             Demo accounts only. Do not enter real student information.
           </p>
           <LoginForm defaultPortal={defaultPortal} />
-          <p className="login-help">
-            Account activation and recovery are not available in this concept.
-          </p>
-          <Link href="/programs" className="text-link">
-            No demo account? Explore programs
-          </Link>
+          <div className="login-account-links">
+            <Link href="/account/recovery" className="text-link">
+              Forgot your password or need account help?
+            </Link>
+            <Link href="/account/create" className="text-link">
+              New applicant? View account-entry options
+            </Link>
+          </div>
         </section>
       </main>
     </SiteShell>

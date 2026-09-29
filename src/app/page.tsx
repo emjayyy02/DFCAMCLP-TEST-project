@@ -5,6 +5,7 @@ import { SiteShell } from "@/components/public/site-shell";
 import {
   AdmissionsJourney,
   CampusPrograms,
+  HistoryTimeline,
 } from "@/components/public/institution-content";
 
 export default function Home() {
@@ -22,16 +23,99 @@ export default function Home() {
           />
           <div className="hero-scrim" aria-hidden="true" />
           <div className="public-container hero-content">
-            <h1 id="hero-title">
-              Integrated Student
-              <br />
-              &amp; Employee Portal
-            </h1>
+            <h1 id="hero-title">Student &amp; Workers Portal</h1>
             <p>
-              Admissions, academics, and campus services
-              <br className="hero-line-break" /> in one integrated experience.
+              Public college information and portal access for the DFCAMCLP
+              community.
             </p>
             <div className="hero-actions">
+              <Button asChild>
+                <Link href="/login">Portal Sign In</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="/admissions">Explore Admissions</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        <section className="institution-intro public-section">
+          <div className="public-container">
+            <div className="institution-intro-copy">
+              <h2>College life in Las Piñas</h2>
+              <p>
+                Dr. Filemon C. Aguilar Memorial College of Las Piñas (DFCAMCLP)
+                is a local, city-funded public college serving learners in Las
+                Piñas City. This concept brings together campus program
+                information, admissions guidance, and separate portal entry
+                points for applicants, students, faculty, and school staff.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          className="public-section public-container"
+          aria-labelledby="programs-title"
+        >
+          <div className="section-heading">
+            <div>
+              <h2 id="programs-title">Programs across two campuses</h2>
+              <p>
+                Four degree programs in the project model, with BSBA majors
+                grouped under the degree.
+              </p>
+            </div>
+            <Link className="text-link" href="/programs">
+              View programs
+            </Link>
+          </div>
+          <CampusPrograms detailed />
+        </section>
+        <section className="journey-section">
+          <div className="public-container">
+            <div className="section-heading">
+              <div>
+                <h2>The admissions journey</h2>
+                <p>
+                  Application, physical document submission and verification,
+                  DCAT, results, then enrollment.
+                </p>
+              </div>
+              <Link className="text-link" href="/admissions">
+                Admissions overview
+              </Link>
+            </div>
+            <AdmissionsJourney />
+          </div>
+        </section>
+        <section
+          className="history-preview public-section"
+          aria-labelledby="history-title"
+        >
+          <div className="public-container">
+            <div className="section-heading">
+              <div>
+                <h2 id="history-title">A brief history</h2>
+                <p>Selected milestones supported by public reporting.</p>
+              </div>
+              <Link href="/about" className="text-link">
+                About the college
+              </Link>
+            </div>
+            <HistoryTimeline />
+          </div>
+        </section>
+
+        <section className="final-cta" aria-labelledby="final-cta-title">
+          <div className="public-container final-cta-inner">
+            <div>
+              <h2 id="final-cta-title">Choose your next step</h2>
+              <p>
+                Read the admissions overview or continue to the portal sign-in
+                page.
+              </p>
+            </div>
+            <div className="final-cta-actions">
               <Button asChild>
                 <Link href="/admissions">Explore Admissions</Link>
               </Button>
@@ -41,77 +125,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          className="quick-access public-container"
-          aria-labelledby="quick-title"
-        >
-          <h2 id="quick-title">Quick access</h2>
-          <div className="quick-links">
-            {[
-              ["/admissions", "Admissions"],
-              ["/login?portal=STUDENT", "Student Portal"],
-              ["/login?portal=ACADEMIC", "Academic Portal"],
-              ["/login?portal=RECORDS", "Admissions & Records"],
-            ].map(([href, label]) => (
-              <Link href={href} key={href}>
-                {label}
-                <svg
-                  aria-hidden="true"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.6"
-                >
-                  <path d="M7 17 17 7M7 7h10v10" />
-                </svg>
-              </Link>
-            ))}
-          </div>
-        </section>
-        <section
-          className="public-section public-container"
-          aria-labelledby="programs-title"
-        >
-          <div className="section-heading">
-            <div>
-              <h2 id="programs-title">Programs &amp; campuses</h2>
-              <p>Explore the academic programs across two campuses.</p>
-            </div>
-            <Link className="text-link" href="/programs">
-              View programs
-            </Link>
-          </div>
-          <CampusPrograms />
-        </section>
-        <section className="journey-section">
-          <div className="public-container">
-            <div className="section-heading">
-              <div>
-                <h2>Your admissions journey</h2>
-                <p>A clear path from application to enrollment.</p>
-              </div>
-              <Link className="text-link" href="/admissions">
-                Admissions overview
-              </Link>
-            </div>
-            <AdmissionsJourney />
-          </div>
-        </section>
-        <aside className="public-container portal-notice">
-          <span className="notice-marker" aria-hidden="true" />
-          <div>
-            <h2>Explore the portal concept</h2>
-            <p>
-              This is a demonstration. Applications and real student information
-              are not accepted.
-            </p>
-          </div>
-          <Link className="text-link" href="/about">
-            About this project
-          </Link>
-        </aside>
       </main>
     </SiteShell>
   );

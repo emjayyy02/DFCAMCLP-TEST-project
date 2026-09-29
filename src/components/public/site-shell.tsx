@@ -14,15 +14,19 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="public-container">
           <div className="footer-top">
             <Link href="/" className="footer-identity">
-              DFCAMCLP<span>Integrated Student &amp; Employee Portal</span>
+              DFCAMCLP<span>Student &amp; Workers Portal</span>
             </Link>
             <nav aria-label="Footer navigation">
               <Link href="/programs">Programs</Link>
               <Link href="/admissions">Admissions</Link>
+              <Link href="/about">About</Link>
               <Link href="/login">Portal Sign In</Link>
             </nav>
           </div>
           <p>{conceptNotice}</p>
+          <p className="footer-copyright">
+            © 2026 Marvin Silverio · Independent portfolio project.
+          </p>
         </div>
       </footer>
     </div>

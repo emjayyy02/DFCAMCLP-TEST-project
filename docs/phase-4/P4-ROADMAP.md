@@ -1,6 +1,6 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 complete; P4-M2 PASS / COMPLETE; P4-M3 remains next and has not started.** This roadmap allocates work; only an explicit milestone instruction authorizes implementation. Visual and behavioral decisions are owned by [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) and [P4-UX-RULES.md](P4-UX-RULES.md). Product authority, evidence limits, and U1–U10 gates are in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 complete; P4-M2 PASS / COMPLETE; P4-M3 PASS / COMPLETE; P4-M4 next.** This roadmap allocates work; only an explicit milestone instruction authorizes implementation. Visual and behavioral decisions are owned by [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) and [P4-UX-RULES.md](P4-UX-RULES.md). Product authority, evidence limits, and U1–U10 gates are in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 
@@ -245,4 +245,10 @@ Source: [PHASE-4-MANUAL-AUDIT.md](PHASE-4-MANUAL-AUDIT.md). Each row has one pri
 - Git change-scope check: only these four new documents; application source, package files, canonical institution source, PRODUCT.md, README.md, and manual audit unchanged.
 - Application tests, lint, typecheck, and build: not rerun because this milestone changes documentation only. Prior inspection and historical validation are explicitly attributed rather than claimed as new acceptance.
 
-The only intended P4-M1 changes are the four new lock documents. No application source changes, test executions for application behavior, database reset, commit, push, or deployment are part of this milestone. **Stop after P4-M1. P4-M2 is not started.**
+### P4-M3 completion — 29 September 2026
+
+- P4-M3 is **PASS / COMPLETE**. See [P4-M3-PUBLIC-AUTH-ACCOUNT-UX.md](P4-M3-PUBLIC-AUTH-ACCOUNT-UX.md) for implementation details, sources, browser evidence, and check results.
+- P4-M1 and P4-M2 remain complete. P4-M4 is next in the sequence and **has not started**.
+- No database reset, credential synchronization, commit, push, or deployment was performed for P4-M3. The standalone environment-check Node error is documented in the M3 report.
+
+**Stop after P4-M3. P4-M4 is not started.**

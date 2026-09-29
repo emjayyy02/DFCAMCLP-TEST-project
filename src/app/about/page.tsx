@@ -5,37 +5,67 @@ import {
   PageIntro,
   conceptNotice,
 } from "@/components/public/site-shell";
+import { HistoryTimeline } from "@/components/public/institution-content";
+import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
-  title: "About the Concept — DFCAMCLP Portal",
+  title: "About — DFCAMCLP Portal Concept",
 };
 export default function AboutPage() {
   return (
     <SiteShell>
       <main id="main" className="public-container public-page about-page">
-        <PageIntro title="One connected campus experience">
-          A portal concept for Dr. Filemon C. Aguilar Memorial College of Las
-          Piñas.
+        <PageIntro title="About DFCAMCLP">
+          A short institutional overview and the history behind this unofficial
+          portal concept.
         </PageIntro>
-        <div className="about-columns">
-          <section>
-            <h2>Designed around campus life</h2>
+        <section className="about-overview" aria-labelledby="college-overview">
+          <div>
+            <h2 id="college-overview">A city-funded public college</h2>
             <p>
-              A shared starting point for admissions, academics, and the
-              services students and employees use.
+              Dr. Filemon C. Aguilar Memorial College of Las Piñas serves
+              learners in Las Piñas City through undergraduate programs. Its
+              current project model groups the Main Campus and IIT Campus.
+            </p>
+          </div>
+          <div>
+            <h2>Campuses and programs</h2>
+            <p>
+              Main Campus includes BSA and BSBA, with three majors under BSBA.
+              IIT Campus includes BSIS and BSCpE.
             </p>
             <Link className="text-link" href="/programs">
-              Explore programs &amp; campuses
+              View programs and campuses
             </Link>
-          </section>
-          <section>
-            <h2>A learning project</h2>
+          </div>
+        </section>
+
+        <section
+          className="about-history"
+          aria-labelledby="about-history-title"
+        >
+          <div className="section-heading">
+            <div>
+              <h2 id="about-history-title">Selected history</h2>
+              <p>Three dated milestones supported by public sources.</p>
+            </div>
+          </div>
+          <HistoryTimeline detailed />
+        </section>
+
+        <section className="about-disclosure" aria-labelledby="project-title">
+          <div>
+            <h2 id="project-title">About this project</h2>
             <p>{conceptNotice}</p>
             <p>
-              Not commissioned by the college, intended for institutional
-              deployment, or designed to process real student information.
+              This portfolio project is not commissioned for institutional
+              deployment and is not designed to process real student, applicant,
+              or employee information.
             </p>
-          </section>
-        </div>
+          </div>
+          <Button asChild variant="outline">
+            <Link href="/login">Portal Sign In</Link>
+          </Button>
+        </section>
       </main>
     </SiteShell>
   );

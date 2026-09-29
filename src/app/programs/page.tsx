@@ -10,7 +10,8 @@ export default function ProgramsPage() {
     <SiteShell>
       <main id="main" className="public-container public-page">
         <PageIntro title="Programs & campuses">
-          Find the campus and program that match your interests.
+          The current project model groups four degree programs across Main
+          Campus and IIT Campus. BSBA majors remain part of the BSBA degree.
         </PageIntro>
         <section aria-labelledby="academic-programs">
           <h2 id="academic-programs" className="sr-only">
@@ -21,7 +22,7 @@ export default function ProgramsPage() {
         <div className="page-next">
           <div>
             <h2>Planning your next step?</h2>
-            <p>Get to know the admissions journey.</p>
+            <p>Review the known admissions journey and its physical steps.</p>
           </div>
           <Link href="/admissions" className="text-link">
             Explore admissions

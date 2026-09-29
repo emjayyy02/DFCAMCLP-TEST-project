@@ -110,6 +110,7 @@ export function LoginForm({ defaultPortal = "" }: { defaultPortal?: string }) {
             id="email"
             name="email"
             type="email"
+            placeholder="name@example.com"
             autoComplete="username"
             inputMode="email"
             required
@@ -129,16 +130,49 @@ export function LoginForm({ defaultPortal = "" }: { defaultPortal?: string }) {
               autoComplete="current-password"
               required
               minLength={12}
-              className="pr-20"
+              className="pr-14"
             />
             <button
               type="button"
+              aria-label={showPassword ? "Hide password" : "Show password"}
               aria-pressed={showPassword}
               aria-controls="password"
               onClick={() => setShowPassword((visible) => !visible)}
-              className="absolute inset-y-0 right-0 min-h-11 min-w-16 rounded-md px-3 text-sm font-semibold text-primary hover:bg-primary-soft"
+              className="absolute right-1 top-1/2 inline-flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center rounded-md text-primary hover:bg-primary-soft focus-visible:outline-offset-2"
             >
-              {showPassword ? "Hide" : "Show"}
+              {showPassword ? (
+                <svg
+                  aria-hidden="true"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.7"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M3 3l18 18" />
+                  <path d="M10.6 10.6a2 2 0 0 0 2.8 2.8" />
+                  <path d="M9.9 5.2A11.7 11.7 0 0 1 12 5c5 0 8.5 4.7 9.5 7-.4.9-1.2 2-2.3 3" />
+                  <path d="M6.2 6.2C4.2 7.5 2.9 9.5 2.5 12c.9 2.3 4.5 7 9.5 7 1 0 2-.2 2.9-.5" />
+                </svg>
+              ) : (
+                <svg
+                  aria-hidden="true"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.7"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M2.5 12s3.5-7 9.5-7 9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7Z" />
+                  <circle cx="12" cy="12" r="2.5" />
+                </svg>
+              )}
             </button>
           </div>
         </div>

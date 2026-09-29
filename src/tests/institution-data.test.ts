@@ -116,6 +116,7 @@ describe("canonical institution data presentation", () => {
     const publicCatalog = renderToStaticMarkup(
       createElement(CampusPrograms, { detailed: true }),
     );
+    expect(publicCatalog.match(/>BSIS</g)).toHaveLength(1);
     for (const label of canonicalPrograms) {
       const [code, degreeName] = label.split(" — ");
       expect(publicCatalog).toContain(code);

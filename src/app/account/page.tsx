@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { IdentitySummary } from "@/components/ui/identity";
 import { PageHeader } from "@/components/portal/page-header";
 import {
   ConceptDisclaimer,
@@ -32,26 +33,21 @@ export default async function AccountPage() {
       >
         <PageHeader
           title="Account access"
-          description="Review the active portal memberships and role labels assigned to this fake development account."
+          description="Review the identity, account state, and active portal memberships in this fictional development environment."
         />
 
         <Card aria-labelledby="identity-title" className="my-8">
           <h2 id="identity-title" className="text-xl font-semibold">
             Account details
           </h2>
-          <dl className="mt-5 divide-y divide-border border-y border-border">
-            <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
-              <dt className="text-sm font-semibold text-muted-foreground">
-                Name
-              </dt>
-              <dd className="min-w-0 break-words">{current.user.name}</dd>
-            </div>
-            <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
-              <dt className="text-sm font-semibold text-muted-foreground">
-                Email
-              </dt>
-              <dd className="min-w-0 break-words">{current.user.email}</dd>
-            </div>
+          <div className="my-5">
+            <IdentitySummary
+              name={current.user.name}
+              detail={current.user.email}
+              size="large"
+            />
+          </div>
+          <dl className="divide-y divide-border border-y border-border">
             <div className="grid gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-4">
               <dt className="text-sm font-semibold text-muted-foreground">
                 Account status
