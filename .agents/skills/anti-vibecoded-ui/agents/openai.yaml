@@ -1,0 +1,4 @@
+interface:
+  display_name: "Anti-Vibecoded UI"
+  short_description: "Make interfaces feel product-specific"
+  default_prompt: "Use $anti-vibecoded-ui to audit this interface for unexplained generic AI patterns, preserve intentional choices, and recommend product-specific improvements."
