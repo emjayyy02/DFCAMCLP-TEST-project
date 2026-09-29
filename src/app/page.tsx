@@ -23,7 +23,7 @@ export default function Home() {
           />
           <div className="hero-scrim" aria-hidden="true" />
           <div className="public-container hero-content">
-            <h1 id="hero-title">Student &amp; Workers Portal</h1>
+            <h1 id="hero-title">Student &amp; Staff Portal</h1>
             <p>
               Public college information and portal access for the DFCAMCLP
               community.
@@ -103,26 +103,6 @@ export default function Home() {
               </Link>
             </div>
             <HistoryTimeline />
-          </div>
-        </section>
-
-        <section className="final-cta" aria-labelledby="final-cta-title">
-          <div className="public-container final-cta-inner">
-            <div>
-              <h2 id="final-cta-title">Choose your next step</h2>
-              <p>
-                Read the admissions overview or continue to the portal sign-in
-                page.
-              </p>
-            </div>
-            <div className="final-cta-actions">
-              <Button asChild>
-                <Link href="/admissions">Explore Admissions</Link>
-              </Button>
-              <Button asChild variant="outline">
-                <Link href="/login">Portal Sign In</Link>
-              </Button>
-            </div>
           </div>
         </section>
       </main>

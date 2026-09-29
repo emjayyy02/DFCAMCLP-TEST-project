@@ -19,27 +19,29 @@ The requested installed Next.js 16.3.5 guides were read before editing: App Rout
 
 ## 2. Public information architecture
 
-The homepage now flows through the campus hero, concise institution context, the two-campus program tables, the five-step admissions journey, a short history preview, and a final next-step area. Programs, Admissions, About, and Portal Sign In remain in the shared public navigation and footer. The redundant Quick Access and portal-concept sections were removed.
+The homepage flows through the campus hero, concise institution context, the two-campus program tables, the five-step admissions journey, and a four-point history preview. Programs, Admissions, About, and Sign In remain in the shared public navigation and footer. The redundant Quick Access, portal-concept, and bottom next-step sections were removed.
 
 ## 3. Homepage changes
 
-The display title is **Student & Workers Portal**. The hero keeps the supplied campus image and its two destinations, with Portal Sign In primary and Explore Admissions secondary. The identity section explains who the college serves and what the site contains. The program, journey, and history sections lead into an admissions/sign-in call to action without adding M7 scroll motion.
+The public display title is **Student & Staff Portal**. The hero keeps the supplied campus image and its two destinations, with Portal Sign In primary and Explore Admissions secondary. The identity section explains who the college serves and what the site contains. The program, journey, and history sections finish without a duplicate bottom call to action or M7 scroll motion.
 
 ## 4. Institutional research
 
-Research confirmed public reporting for the 1998 establishment year, the city-funded context of the college, the Batch 2017 graduation, and the 2019–20 BSIS opening. Research did not verify a current IIT Campus street address or current admissions dates/eligibility rules, so neither was added. The 1998 date remains aligned with the canonical institution file and a 2005 newspaper report; a lower-authority directory lists 1995. That discrepancy is recorded below and was not used to change the canonical fact.
+Research confirmed public reporting for the 1998 establishment, a DFCAMCLP Accountancy graduate's No. 3 result in the May 2017 CPA board examination, and the 2019–20 BSIS opening. Current campus and program names remain aligned with the canonical institution file. Research did not verify a current IIT Campus street address or current admissions dates/eligibility rules, so neither was added. The 1998 date remains aligned with the canonical institution file and a 2005 newspaper report; a lower-authority directory lists 1995. That discrepancy is recorded below and was not used to change the canonical fact.
 
 ## 5. Research sources
 
 - [Las Piñas City: DFCAMCLP opens BSIS at the Institute of Technology (2019)](https://laspinascity.gov.ph/news-and-events/news/205/index.html) — reports the BSIS opening for academic year 2019–20 following approval of the city’s CHED permit application.
 - [Las Piñas City: DFCAMCLP Batch 2017 graduation coverage](https://laspinascity.gov.ph/news-and-events/news/99/index.html) — documents the graduation and the city-funded, tuition-free context for qualified Las Piñas students.
+- [Las Piñas City: DFCAMCLP graduate places No. 3 in CPA board exam](https://laspinascity.gov.ph/news-and-events/news/135/index.html) — identifies Jason Granado Bugatan as a DFCAMCLP BS Accountancy graduate who placed No. 3 in the May 2017 CPA board examination.
+- [Professional Regulation Commission: May 2017 CPA licensure examination results](https://prc.gov.ph/article/may-2017-certified-public-accountant-licensure-examination-results-released-five-5-working) — links the official top-ten results; the [official top-ten list](https://prc.gov.ph/uploaded/documents/CPA0517t10_j.pdf) records Jason Granado Bugatan of Dr. Filemon C. Aguilar Memorial College in third place.
 - [Philstar: 700 freshmen receive scholarships in Las Piñas (29 May 2005)](https://www.philstar.com/metro/2005/05/29/279538/700-freshmen-receive-scholarships-las-pintildeas/amp/) — contemporary reporting that describes the college as established in 1998 through city initiative/funding.
 - [Third-party college directory entry](https://www.infomaninc.com/link/ched/dr_filemon_c_aguilar_memorial_college.htm) — lists 1995, conflicting with the project’s canonical 1998 fact and the newspaper report. It was not treated as sufficient evidence to change public history.
 - `DFCAMCLP.md` — authoritative project source for the canonical campus and degree-program presentation.
 
 ## 6. History treatment
 
-The homepage shows a concise 1998 establishment milestone and the 2019 BSIS milestone. About shows those plus the 2017 graduation milestone. Copy identifies public reporting as the basis and avoids invented events. The third-party 1995 listing remains an internal research conflict; no 1995 date is shown in the UI.
+The homepage and About page show the same four compact milestones: 1998 college establishment, the 2017 Accountancy achievement, 2019 Information Systems introduction, and today's two-campus program model. Copy stays within 1–2 sentences per milestone and uses no additional milestone years. The third-party 1995 listing remains an internal research conflict; no 1995 date is shown in the UI.
 
 ## 7. Programs presentation
 
@@ -51,7 +53,7 @@ The sequence is application → physical document submission and verification �
 
 ## 9. Footer/header changes
 
-The public header aligns the DFCAMCLP identity with the Student & Workers Portal display title and includes Portal Sign In. The mobile menu retains its expanded state, accessible links, Escape handling, and focus restoration. The footer keeps an explicit unofficial/non-affiliation disclosure and author attribution; it makes no DFCAMCLP ownership or endorsement claim.
+The public header and footer identify the DFCAMCLP Student & Staff Portal. Their navigation uses the concise Sign In label; the hero keeps the descriptive Portal Sign In action. The mobile menu retains its expanded state, accessible links, Escape handling, and focus restoration. The footer keeps an explicit unofficial/non-affiliation disclosure and author attribution; it makes no DFCAMCLP ownership or endorsement claim.
 
 ## 10. Login UX
 
@@ -101,6 +103,8 @@ The authenticated `/account` page uses the shared identity summary/avatar fallba
 
 All nine reviewed routes were rendered at 375×812, 768×900, and 1440×900: `/`, `/programs`, `/admissions`, `/about`, `/login`, `/account/create`, `/account/create/applicant`, `/account/recovery`, and `/account`. Each had one document-wide horizontal boundary within its viewport and no horizontal overflow. The campus image was checked after its optimized image loaded.
 
+The public-title/history follow-up was rendered at 375×812, 768×900, and 1440×900 on the homepage, and at 375×812 and 1440×900 on About. Both pages show all four milestones; the timeline stacks on mobile and uses a 2×2 grid at tablet/desktop widths. No horizontal overflow was present, and the homepage has no duplicate bottom CTA.
+
 ## 22. Accessibility review
 
 The rendered-route review found one H1 and one main landmark per route, no unlabeled form controls, unnamed buttons/links, or images missing `alt`. Program catalogs use table headers and BSBA majors use a nested list. Mobile menu open/close and Escape focus restoration were exercised; the password toggle was checked through its accessible name and state. This was a targeted manual semantic and keyboard review, not a formal WCAG certification or a full automated accessibility scan.
@@ -123,6 +127,8 @@ The rendered account belonged to the seeded single-membership Applicant. Portal 
 - `git diff --check` — PASS after the documentation and roadmap update.
 - `pnpm format:check` — all changed files formatted; the repository check reports only the untouched `docs/phase-4/PHASE-4-MANUAL-AUDIT.md` baseline warning. That file was not edited or reformatted.
 - `pnpm env:check` — separately blocked by Node 24.19.0 `uv_os_get_passwd returned ENOMEM`; no unrelated application code was changed to suppress this host error.
+
+The 29 September public-site correction passed the focused regression checks: `pnpm test` (7 files / 47 tests), `pnpm lint`, `pnpm typecheck`, `pnpm build`, and `git diff --check`. The format check continues to report only the untouched manual-audit baseline warning.
 
 ## 25. Remaining unresolved account/backend rules
 

@@ -46,10 +46,10 @@ export default function AboutPage() {
           <div className="section-heading">
             <div>
               <h2 id="about-history-title">Selected history</h2>
-              <p>Three dated milestones supported by public sources.</p>
+              <p>Four selected milestones supported by public sources.</p>
             </div>
           </div>
-          <HistoryTimeline detailed />
+          <HistoryTimeline />
         </section>
 
         <section className="about-disclosure" aria-labelledby="project-title">

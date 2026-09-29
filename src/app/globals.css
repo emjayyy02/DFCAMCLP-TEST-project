@@ -903,7 +903,7 @@
 }
 .history-timeline {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 32px;
   list-style: none;
 }
@@ -930,33 +930,6 @@
   color: var(--foreground-muted);
   font-size: 14px;
   line-height: 1.6;
-}
-.final-cta {
-  padding-block: 40px;
-  border-top: 1px solid var(--border);
-  background: var(--surface);
-}
-.final-cta-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-}
-.final-cta-inner > div:first-child {
-  max-width: 58ch;
-}
-.public-site .final-cta h2 {
-  font-size: 22px;
-}
-.final-cta p {
-  margin-top: 8px;
-  color: var(--foreground-muted);
-}
-.final-cta-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  flex-shrink: 0;
 }
 .public-footer {
   border-top: 1px solid var(--border);
@@ -1395,14 +1368,6 @@
   .admissions-journey h3 {
     font-size: 14px;
   }
-  .history-timeline {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .final-cta-inner {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-  }
   .about-overview {
     gap: 32px;
   }
@@ -1532,15 +1497,6 @@
   .history-timeline {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-  .final-cta {
-    padding-block: 32px;
-  }
-  .final-cta-actions {
-    width: 100%;
-  }
-  .final-cta-actions > a {
-    flex: 1 1 100%;
   }
   .footer-top {
     flex-direction: column;

@@ -50,40 +50,37 @@ const historyEvents = [
   {
     year: "1998",
     title: "College established",
-    summary: "Established through city initiative and funding.",
-    detail:
-      "Contemporary reporting describes the college as established through the initiative and funding of the Las Piñas City government.",
+    description:
+      "DFCAMCLP was established through the Las Piñas city initiative as a local public college.",
   },
   {
     year: "2017",
-    title: "A graduating class",
-    summary:
-      "City coverage recorded the DFCAMCLP Batch 2017 graduation and its city-funded college context.",
-    detail:
-      "The City of Las Piñas documented the Batch 2017 graduation as part of its scholarship and public-college story.",
+    title: "Accountancy achievement",
+    description:
+      "A DFCAMCLP BS Accountancy graduate placed No. 3 in the May 2017 Certified Public Accountant board examination.",
   },
   {
     year: "2019",
-    title: "Information Systems added",
-    summary:
-      "The Information Systems degree opened at the Institute of Technology for academic year 2019–20 after a city permit application was approved.",
-    detail:
-      "The City reported the Bachelor of Science in Information Systems opening at DFCAMCLP-IT for academic year 2019–20 after CHED approved the city's application for a permit.",
+    title: "Information Systems introduced",
+    description:
+      "Bachelor of Science in Information Systems opened under the Institute of Technology for AY 2019–2020, following permit approval.",
+  },
+  {
+    year: "Today",
+    title: "Two-campus academic community",
+    description:
+      "Current project model: Main Campus and IIT Campus, with Accountancy, Business Administration, Information Systems, and Computer Engineering.",
   },
 ] as const;
 
-export function HistoryTimeline({ detailed = false }: { detailed?: boolean }) {
-  const events = detailed
-    ? historyEvents
-    : historyEvents.filter((event) => event.year !== "2017");
-
+export function HistoryTimeline() {
   return (
     <ol className="history-timeline">
-      {events.map((event) => (
+      {historyEvents.map((event) => (
         <li key={event.year}>
           <p className="history-year">{event.year}</p>
           <h3>{event.title}</h3>
-          <p>{detailed ? event.detail : event.summary}</p>
+          <p>{event.description}</p>
         </li>
       ))}
     </ol>

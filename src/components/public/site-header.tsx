@@ -10,7 +10,7 @@ const links = [
   ["/programs", "Programs"],
   ["/admissions", "Admissions"],
   ["/about", "About"],
-  ["/login", "Portal Sign In"],
+  ["/login", "Sign In"],
 ] as const;
 
 export function SiteHeader() {
@@ -44,7 +44,7 @@ export function SiteHeader() {
           />
           <span>
             <strong>DFCAMCLP</strong>
-            <span>Student &amp; Workers Portal</span>
+            <span>Student &amp; Staff Portal</span>
           </span>
         </Link>
         <button

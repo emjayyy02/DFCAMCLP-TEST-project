@@ -14,13 +14,13 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="public-container">
           <div className="footer-top">
             <Link href="/" className="footer-identity">
-              DFCAMCLP<span>Student &amp; Workers Portal</span>
+              DFCAMCLP<span>Student &amp; Staff Portal</span>
             </Link>
             <nav aria-label="Footer navigation">
               <Link href="/programs">Programs</Link>
               <Link href="/admissions">Admissions</Link>
               <Link href="/about">About</Link>
-              <Link href="/login">Portal Sign In</Link>
+              <Link href="/login">Sign In</Link>
             </nav>
           </div>
           <p>{conceptNotice}</p>
