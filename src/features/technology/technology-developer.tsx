@@ -185,8 +185,8 @@ export function TechnologyDeveloper({
         </TechnologySection>
 
         <TechnologySection
-          title="Read-only route utility"
-          description="Copy the route map available to your current Developer role."
+          title="Read-only route reference"
+          description="Lists routes available to this signed-in Developer membership. It is a reference only and does not run an access test."
         >
           <ul className="mt-4 divide-y divide-border border-y border-border">
             {availableRoutes.map((route) => (

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   filterTechnologyAccounts,
   groupTechnologyAccountRows,
+  sortTechnologyAccounts,
   summarizeTechnologyAccounts,
   type TechnologyAccountRow,
 } from "../features/technology/demo-data";
@@ -118,5 +119,27 @@ describe("Technology account directory data", () => {
       disabled: 1,
       memberships: 3,
     });
+  });
+
+  it("sorts the account list independently from its filters", () => {
+    const accounts = groupTechnologyAccountRows([
+      {
+        ...accountRows[0],
+        name: "Zed Sample",
+        email: "a.zed@example.invalid",
+      },
+      {
+        ...accountRows[0],
+        name: "Ari Sample",
+        email: "z.ari@example.invalid",
+      },
+    ]);
+
+    expect(
+      sortTechnologyAccounts(accounts).map((account) => account.name),
+    ).toEqual(["Ari Sample", "Zed Sample"]);
+    expect(
+      sortTechnologyAccounts(accounts, "email").map((account) => account.name),
+    ).toEqual(["Zed Sample", "Ari Sample"]);
   });
 });

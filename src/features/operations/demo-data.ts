@@ -357,6 +357,7 @@ export function filterEmployees(
       employee.name,
       employee.position,
       employee.functionalArea,
+      employee.campus,
     ]
       .join(" ")
       .toLowerCase();
@@ -370,6 +371,13 @@ export function filterEmployees(
         employee.functionalArea === filters.functionalArea)
     );
   });
+}
+
+export function sortEmployeesByName(employees: EmployeeDirectoryEntry[]) {
+  return [...employees].sort(
+    (left, right) =>
+      left.name.localeCompare(right.name) || left.id.localeCompare(right.id),
+  );
 }
 
 export function filterFacilityTickets(
@@ -393,6 +401,7 @@ export function filterFacilityTickets(
       ticket.area,
       ticket.issue,
       ticket.category,
+      ticket.campus,
       assignee ?? "Unassigned",
     ]
       .join(" ")
@@ -415,6 +424,28 @@ export function filterFacilityTickets(
         ticket.assigneeId === filters.assigneeId)
     );
   });
+}
+
+export function sortFacilityTicketsForQueue(tickets: FacilityTicket[]) {
+  const priorityRank: Record<FacilityTicket["priority"], number> = {
+    High: 0,
+    Normal: 1,
+    Low: 2,
+  };
+  const activeRank = (status: FacilityStatus) =>
+    status === "Open" || status === "In Progress" ? 0 : 1;
+  const reportedTimestamp = (ticket: FacilityTicket) => {
+    const timestamp = Date.parse(ticket.reportedOn);
+    return Number.isNaN(timestamp) ? Number.MAX_SAFE_INTEGER : timestamp;
+  };
+
+  return [...tickets].sort(
+    (left, right) =>
+      activeRank(left.status) - activeRank(right.status) ||
+      priorityRank[left.priority] - priorityRank[right.priority] ||
+      reportedTimestamp(left) - reportedTimestamp(right) ||
+      left.id.localeCompare(right.id),
+  );
 }
 
 export function countOpenStudentServiceRequests(

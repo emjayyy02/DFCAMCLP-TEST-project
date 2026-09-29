@@ -31,7 +31,7 @@ export function TechnologySection({
 
 export function TechnologyAccessPath() {
   return (
-    <ol className="mt-5 grid gap-x-4 gap-y-5 sm:grid-cols-2 xl:grid-cols-5">
+    <ol className="mt-5 grid gap-x-4 gap-y-5 sm:grid-cols-2 xl:grid-cols-3">
       {technologyAccessSteps.map((step, index) => (
         <li key={step.label} className="min-w-0 border-t border-border pt-3">
           <span className="inline-flex h-8 min-w-8 items-center justify-center rounded-md bg-primary-soft px-2 text-sm font-semibold tabular-nums text-primary">

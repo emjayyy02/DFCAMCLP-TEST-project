@@ -31,6 +31,8 @@ export type TechnologyAccountFilters = {
   portal: "ALL" | PortalCode;
 };
 
+export type TechnologyAccountSort = "name" | "email";
+
 export function groupTechnologyAccountRows(
   rows: readonly TechnologyAccountRow[],
 ): TechnologyAccount[] {
@@ -99,6 +101,18 @@ export function filterTechnologyAccounts(
   });
 }
 
+export function sortTechnologyAccounts(
+  accounts: readonly TechnologyAccount[],
+  sort: TechnologyAccountSort = "name",
+) {
+  return [...accounts].sort((left, right) =>
+    sort === "name"
+      ? left.name.localeCompare(right.name) ||
+        left.email.localeCompare(right.email)
+      : left.email.localeCompare(right.email),
+  );
+}
+
 export function summarizeTechnologyAccounts(
   accounts: readonly TechnologyAccount[],
 ) {
@@ -117,7 +131,8 @@ export function summarizeTechnologyAccounts(
 export const technologyAccessSteps = [
   {
     label: "Authentication",
-    detail: "A server-verified account session",
+    detail:
+      "An active account linked to a project Person, with a server-verified session",
   },
   {
     label: "Portal membership",

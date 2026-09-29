@@ -131,7 +131,7 @@ export function TechnologyDashboard({
       {showSecurity ? (
         <div className="grid min-w-0 gap-6 xl:grid-cols-2">
           <TechnologySection
-            title="Security posture"
+            title="Security foundations"
             description="A concise summary of implemented access protections. No external certification is claimed."
           >
             <ul className="mt-4 divide-y divide-border border-y border-border">

@@ -6,11 +6,14 @@ import { Button } from "@/components/ui/button";
 import { Input, Select } from "@/components/ui/input";
 import { ListToolbar, SortControl } from "@/components/ui/list-toolbar";
 import { EmptyState } from "@/components/ui/states";
+import { IdentitySummary } from "@/components/ui/identity";
 import { portalCodes, portalDetails } from "@/lib/portals";
 import {
   filterTechnologyAccounts,
+  sortTechnologyAccounts,
   type TechnologyAccount,
   type TechnologyAccountFilters,
+  type TechnologyAccountSort,
 } from "./demo-data";
 
 const initialFilters: TechnologyAccountFilters = {
@@ -30,8 +33,24 @@ function AccountStatusBadge({
 }
 
 function RoleSummary({ account }: { account: TechnologyAccount }) {
-  const roles = [...new Set(account.memberships.flatMap((item) => item.roles))];
-  return <span>{roles.length ? roles.join(", ") : "No assigned role"}</span>;
+  const membershipsWithRoles = account.memberships.filter(
+    (membership) => membership.roles.length > 0,
+  );
+
+  return membershipsWithRoles.length ? (
+    <ul className="space-y-1">
+      {membershipsWithRoles.map((membership) => (
+        <li key={membership.portal}>
+          <span className="text-muted-foreground">
+            {portalDetails[membership.portal].label}:
+          </span>
+          {membership.roles.join(", ")}
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <span>No assigned role</span>
+  );
 }
 
 function MembershipSummary({ account }: { account: TechnologyAccount }) {
@@ -56,11 +75,22 @@ function MembershipSummary({ account }: { account: TechnologyAccount }) {
   );
 }
 
-function AccountDetails({ account }: { account: TechnologyAccount | null }) {
+function AccountDetails({
+  account,
+  headingId,
+}: {
+  account: TechnologyAccount | null;
+  headingId: string;
+}) {
   if (!account) {
     return (
-      <aside className="rounded-lg border border-border bg-white p-5 sm:p-6">
-        <h2 className="text-lg font-semibold">Account details</h2>
+      <aside
+        aria-labelledby={headingId}
+        className="rounded-lg border border-border bg-white p-5 sm:p-6"
+      >
+        <h2 id={headingId} className="text-lg font-semibold">
+          Account details
+        </h2>
         <p className="mt-3 leading-6 text-muted-foreground">
           Select a demo account to review its account state, portal memberships,
           and assigned roles.
@@ -71,26 +101,18 @@ function AccountDetails({ account }: { account: TechnologyAccount | null }) {
 
   return (
     <aside
-      aria-labelledby="technology-account-details"
+      aria-labelledby={headingId}
       className="min-w-0 rounded-lg border border-border bg-white p-5 sm:p-6"
     >
-      <h2 id="technology-account-details" className="text-lg font-semibold">
+      <h2 id={headingId} className="mb-4 text-lg font-semibold">
         Account details
       </h2>
-      <p className="mt-1 break-all text-sm text-muted-foreground">
-        {account.email}
-      </p>
+      <IdentitySummary name={account.name} detail={account.email} />
 
       <dl className="mt-5 divide-y divide-border border-y border-border">
-        <div className="grid gap-1 py-4">
-          <dt className="text-sm font-semibold text-muted-foreground">
-            Demo identity
-          </dt>
-          <dd className="break-words">{account.name}</dd>
-        </div>
         <div className="grid gap-2 py-4">
           <dt className="text-sm font-semibold text-muted-foreground">
-            Account status
+            Account state
           </dt>
           <dd>
             <AccountStatusBadge status={account.status} />
@@ -133,8 +155,9 @@ function AccountDetails({ account }: { account: TechnologyAccount | null }) {
         </div>
       </dl>
       <p className="mt-4 text-sm leading-6 text-muted-foreground">
-        Account state and portal membership are separate checks. Only the
-        memberships listed here grant portal context.
+        Access requires an active application account linked to a project
+        Person, an active membership in the portal, and a role permitted to open
+        the requested page.
       </p>
     </aside>
   );
@@ -147,19 +170,13 @@ export function TechnologyAccountsDirectory({
 }) {
   const [filters, setFilters] = useState(initialFilters);
   const [selectedEmail, setSelectedEmail] = useState<string | null>(null);
-  const [sortOrder, setSortOrder] = useState("email");
+  const [sortOrder, setSortOrder] = useState<TechnologyAccountSort>("name");
   const filteredAccounts = useMemo(
     () => filterTechnologyAccounts(accounts, filters),
     [accounts, filters],
   );
   const sortedAccounts = useMemo(
-    () =>
-      [...filteredAccounts].sort((left, right) =>
-        sortOrder === "name"
-          ? left.name.localeCompare(right.name) ||
-            left.email.localeCompare(right.email)
-          : left.email.localeCompare(right.email),
-      ),
+    () => sortTechnologyAccounts(filteredAccounts, sortOrder),
     [filteredAccounts, sortOrder],
   );
   const selectedAccount = filteredAccounts.find(
@@ -264,10 +281,12 @@ export function TechnologyAccountsDirectory({
               <SortControl
                 id="technology-account-sort"
                 value={sortOrder}
-                onChange={setSortOrder}
+                onChange={(value) =>
+                  setSortOrder(value as TechnologyAccountSort)
+                }
                 options={[
-                  { value: "email", label: "Email A–Z" },
                   { value: "name", label: "Name A–Z" },
+                  { value: "email", label: "Email A–Z" },
                 ]}
               />
             }
@@ -312,6 +331,14 @@ export function TechnologyAccountsDirectory({
                         </span>
                       </span>
                     </button>
+                    {selectedEmail === account.email ? (
+                      <div className="mt-3 xl:hidden">
+                        <AccountDetails
+                          account={account}
+                          headingId="technology-account-details-mobile"
+                        />
+                      </div>
+                    ) : null}
                   </li>
                 ))}
               </ul>
@@ -369,7 +396,12 @@ export function TechnologyAccountsDirectory({
           )}
         </section>
 
-        <AccountDetails account={selectedAccount ?? null} />
+        <div className="hidden xl:block">
+          <AccountDetails
+            account={selectedAccount ?? null}
+            headingId="technology-account-details-desktop"
+          />
+        </div>
       </div>
       <p className="text-sm leading-6 text-muted-foreground">
         This directory does not assign roles, change account state, or alter

@@ -205,6 +205,26 @@
   margin-bottom: 0.3rem;
 }
 
+.operations-ticket-preview-id {
+  color: var(--muted-foreground);
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.operations-ticket-preview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.operations-ticket-preview-meta > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 .operations-activity-list,
 .operations-history-list {
   margin: 0;
@@ -345,6 +365,12 @@
   min-width: 0;
 }
 
+.operations-mobile-record-identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
 .operations-mobile-record-heading strong {
   display: block;
   overflow-wrap: anywhere;
@@ -409,6 +435,13 @@
   grid-template-columns: minmax(0, 1.2fr) minmax(17rem, 0.8fr);
   align-items: start;
   gap: 1rem;
+}
+
+.operations-page .context-header-metadata > .operations-context-metadata {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
 }
 
 .operations-record-id {
@@ -561,6 +594,31 @@
   overflow-wrap: anywhere;
 }
 
+@media (max-width: 70rem) {
+  .operations-dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 45rem) and (max-width: 70rem) {
+  .operations-quick-counts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .operations-quick-counts .operations-queue-link:nth-child(2) {
+    border-right: 0;
+  }
+
+  .operations-quick-counts .operations-queue-link:last-child {
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border-top: 1px solid var(--border);
+  }
+}
+
 @media (min-width: 80rem) {
   .operations-record-cards {
     display: none;
@@ -619,6 +677,11 @@
 
   .operations-activity-list a {
     grid-column: 1 / -1;
+  }
+
+  .operations-activity-list .operations-ticket-preview-meta {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
   }
 
   .operations-activity-list .inline-flex {

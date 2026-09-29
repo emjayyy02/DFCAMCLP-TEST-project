@@ -8,7 +8,7 @@ export function TechnologySecurity() {
       <div className="grid min-w-0 gap-6 xl:grid-cols-2">
         <TechnologySection
           title="Authentication"
-          description="The project uses its existing Better Auth integration for sign-in and server-resolved sessions."
+          description="Better Auth handles sign-in; protected routes resolve sessions on the server."
         >
           <dl className="mt-4 divide-y divide-border border-y border-border">
             <div className="grid gap-1 py-3 sm:grid-cols-[10rem_minmax(0,1fr)] sm:gap-4">
@@ -20,15 +20,15 @@ export function TechnologySecurity() {
             <div className="grid gap-1 py-3 sm:grid-cols-[10rem_minmax(0,1fr)] sm:gap-4">
               <dt className="font-semibold">Application account</dt>
               <dd className="leading-6 text-muted-foreground">
-                Only an active account linked to a project Person can use
-                protected routes.
+                A protected route requires an active application account linked
+                to a project Person.
               </dd>
             </div>
             <div className="grid gap-1 py-3 sm:grid-cols-[10rem_minmax(0,1fr)] sm:gap-4">
               <dt className="font-semibold">Session</dt>
               <dd className="leading-6 text-muted-foreground">
-                Opaque, database-backed sessions expire after seven days and
-                refresh at most daily. Session IDs and cookies are never shown.
+                Database-backed sessions expire after seven days and refresh at
+                most daily. Session IDs and cookies are not shown.
               </dd>
             </div>
             <div className="grid gap-1 py-3 sm:grid-cols-[10rem_minmax(0,1fr)] sm:gap-4">
@@ -45,15 +45,15 @@ export function TechnologySecurity() {
 
         <TechnologySection
           title="Authorization"
-          description="The portal selector expresses intent. The server checks the account's actual access for every protected destination."
+          description="Deny by default: the selector sets portal intent, and each protected route must pass the full server-side sequence."
         >
           <TechnologyAccessPath />
         </TechnologySection>
       </div>
 
       <TechnologySection
-        title="Sample security scenarios"
-        description="These examples describe application behavior. They are not real events, audit records, or an external security feed."
+        title="Sample access scenarios"
+        description="Fictional examples of route responses, not logs or recorded events."
       >
         <ul className="mt-4 divide-y divide-border border-y border-border">
           {technologySecurityScenarios.map((item) => (
@@ -73,7 +73,7 @@ export function TechnologySecurity() {
 
       <TechnologySection
         title="Known limitations"
-        description="This project demonstrates a security architecture foundation, not a security operations platform."
+        description="Current limits of the implemented security foundation."
       >
         <ul className="mt-4 list-disc space-y-2 pl-5 leading-6 text-muted-foreground marker:text-foreground">
           <li>Security scenarios are not persisted as an audit history.</li>

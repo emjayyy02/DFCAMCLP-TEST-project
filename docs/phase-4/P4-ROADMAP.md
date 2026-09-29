@@ -1,6 +1,6 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 complete; P4-M2 PASS / COMPLETE; P4-M3 PASS / COMPLETE; P4-M4 PASS / COMPLETE; P4-M5 PASS / COMPLETE; P4-M6 next.** This roadmap allocates work; only an explicit milestone instruction authorizes implementation. Visual and behavioral decisions are owned by [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) and [P4-UX-RULES.md](P4-UX-RULES.md). Product authority, evidence limits, and U1–U10 gates are in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 complete; P4-M2 PASS / COMPLETE; P4-M3 PASS / COMPLETE; P4-M4 PASS / COMPLETE; P4-M5 PASS / COMPLETE; P4-M6 PASS / COMPLETE; P4-M7 next.** This roadmap allocates work; only an explicit milestone instruction authorizes implementation. Visual and behavioral decisions are owned by [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) and [P4-UX-RULES.md](P4-UX-RULES.md). Product authority, evidence limits, and U1–U10 gates are in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 
@@ -263,4 +263,12 @@ Source: [PHASE-4-MANUAL-AUDIT.md](PHASE-4-MANUAL-AUDIT.md). Each row has one pri
 - Frontend, database, authentication, access-control, lint, targeted format, direct TypeScript, and isolated Webpack production-build checks pass. Faculty, Program Coordinator, and Records Staff browser acceptance passed at mobile, tablet, and desktop widths. P4-M5 is **PASS / COMPLETE**.
 - P4-M6 is next and **has not started**.
 
-**Stop after P4-M5. Do not begin P4-M6.**
+**Historical P4-M5 handoff:** Stop after P4-M5. Do not begin P4-M6 until its milestone brief is supplied.
+
+### P4-M6 implementation and acceptance — 29 September 2026
+
+- Operations and Technology refinements, responsive browser evidence, review findings, and validation are documented in [P4-M6-OPERATIONS-TECHNOLOGY-REFINEMENT.md](P4-M6-OPERATIONS-TECHNOLOGY-REFINEMENT.md).
+- P4-M6 is **PASS / COMPLETE**. P4-M7 is next and has not started.
+- No database reset, credential synchronization, commit, push, or deployment was performed for P4-M6.
+
+**Stop after P4-M6. Do not begin P4-M7.**

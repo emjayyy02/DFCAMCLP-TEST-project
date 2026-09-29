@@ -11,6 +11,8 @@ import {
   initialStudentServiceRequests,
   operationsInstitutionRegistry,
   operationsTerm,
+  sortEmployeesByName,
+  sortFacilityTicketsForQueue,
   updateFacilityAssignee,
   updateFacilityStatus,
   updateStudentServiceStatus,
@@ -55,6 +57,21 @@ describe("Operations demo queues", () => {
         functionalArea: "Facilities",
       }).map((employee) => employee.id),
     ).toEqual(["EMP-DEMO-014", "EMP-DEMO-019"]);
+    expect(
+      filterEmployees(initialEmployees, { search: "iit campus" }).map(
+        (employee) => employee.id,
+      ),
+    ).toEqual(["EMP-DEMO-014", "EMP-DEMO-016", "EMP-DEMO-019"]);
+    expect(
+      sortEmployeesByName(initialEmployees).map((employee) => employee.name),
+    ).toEqual([
+      "Alex Demo",
+      "Avery Testadministrator",
+      "Casey Testtechnology",
+      "Morgan Testoperations",
+      "Sam Demo",
+      "Taylor Testemployee",
+    ]);
   });
 
   it("filters tickets by priority, status, and unassigned state", () => {
@@ -69,6 +86,22 @@ describe("Operations demo queues", () => {
         (ticket) => ticket.id,
       ),
     ).toEqual(["FAC-26037"]);
+    expect(
+      filterFacilityTickets(initialFacilityTickets, {
+        search: "iit campus",
+      }).map((ticket) => ticket.id),
+    ).toEqual(["FAC-26041", "FAC-26033"]);
+    expect(
+      sortFacilityTicketsForQueue(initialFacilityTickets).map(
+        (ticket) => ticket.id,
+      ),
+    ).toEqual([
+      "FAC-26037",
+      "FAC-26041",
+      "FAC-26039",
+      "FAC-26031",
+      "FAC-26033",
+    ]);
   });
 
   it("derives open queue counts from current demo statuses", () => {

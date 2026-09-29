@@ -6,6 +6,8 @@ import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { ContextHeader } from "@/components/ui/context-header";
+import { Avatar } from "@/components/ui/identity";
 import { Input, Select, Textarea } from "@/components/ui/input";
 import { PageHeader } from "@/components/portal/page-header";
 import { DemoNotice as SharedDemoNotice } from "@/components/ui/demo-notice";
@@ -13,7 +15,6 @@ import { EmptyState as SharedEmptyState } from "@/components/ui/states";
 import { campusOptions } from "../applicant/demo-data";
 import { useOperationsDemo } from "./demo-context";
 import {
-  countHighPriorityOpenFacilityTickets,
   countOpenFacilityTickets,
   countOpenStudentServiceRequests,
   filterEmployees,
@@ -24,6 +25,8 @@ import {
   operationsIdentity,
   operationsInstitutionRegistry,
   operationsTerm,
+  sortEmployeesByName,
+  sortFacilityTicketsForQueue,
   studentServiceCategories,
   studentServiceStatuses,
   type EmployeeDirectoryEntry,
@@ -50,13 +53,17 @@ type StatusLabelProps = { children: React.ReactNode };
 
 function StatusLabel({ children }: StatusLabelProps) {
   const tone =
-    children === "Resolved" || children === "Closed"
-      ? "success"
-      : children === "New" || children === "Open" || children === "High"
-        ? "warning"
-        : children === "In Review" || children === "In Progress"
-          ? "info"
-          : "neutral";
+    children === "High"
+      ? "destructive"
+      : children === "Closed"
+        ? "neutral"
+        : children === "Resolved"
+          ? "success"
+          : children === "New" || children === "Open"
+            ? "warning"
+            : children === "In Review" || children === "In Progress"
+              ? "info"
+              : "neutral";
   return <Badge tone={tone}>{children}</Badge>;
 }
 
@@ -164,18 +171,20 @@ function OperationsDashboard({
   const { requests, tickets, employees, activity } = useOperationsDemo();
   const openRequests = countOpenStudentServiceRequests(requests);
   const openTickets = countOpenFacilityTickets(tickets);
-  const highPriority = countHighPriorityOpenFacilityTickets(tickets);
+  const highPriority = tickets.filter(
+    (ticket) => ticket.priority === "High",
+  ).length;
   const myTickets = tickets.filter(
     (ticket) => ticket.assigneeId === operationsIdentity.maintenanceStaffId,
   ).length;
   const unassigned = tickets.filter((ticket) => !ticket.assigneeId).length;
 
   if (isMaintenanceStaff) {
-    const activeTickets = tickets
-      .filter(
+    const activeTickets = sortFacilityTicketsForQueue(
+      tickets.filter(
         (ticket) => ticket.status === "Open" || ticket.status === "In Progress",
-      )
-      .slice(0, 3);
+      ),
+    ).slice(0, 3);
     return (
       <div className="operations-stack">
         <section
@@ -201,34 +210,43 @@ function OperationsDashboard({
             <QueueCountLink
               href="/operations/facilities?view=high"
               label="High priority"
-              detail="Unresolved sample tickets"
+              detail="Tickets marked High priority"
               count={highPriority}
             />
             <QueueCountLink
               href="/operations/facilities?view=unassigned"
               label="Unassigned"
-              detail="Open sample tickets"
+              detail="Tickets without an assignee"
               count={unassigned}
             />
           </div>
           <div className="operations-ticket-preview">
-            <h3>Open tickets</h3>
+            <h3>Active tickets</h3>
             {activeTickets.length ? (
               <ul className="operations-activity-list">
                 {activeTickets.map((ticket) => (
                   <li key={ticket.id}>
-                    <time>{ticket.id}</time>
+                    <span className="operations-ticket-preview-id">
+                      {ticket.id}
+                    </span>
                     <Link href={`/operations/facilities?ticket=${ticket.id}`}>
                       {ticket.campus} · {ticket.area} — {ticket.issue}
                     </Link>
-                    <StatusLabel>{ticket.priority}</StatusLabel>
+                    <span className="operations-ticket-preview-meta">
+                      <span>
+                        Priority: <StatusLabel>{ticket.priority}</StatusLabel>
+                      </span>
+                      <span>
+                        Status: <StatusLabel>{ticket.status}</StatusLabel>
+                      </span>
+                    </span>
                   </li>
                 ))}
               </ul>
             ) : (
               <EmptyState
-                title="No open tickets"
-                detail="The sample facilities queue has no open work."
+                title="No active tickets"
+                detail="The sample facilities queue has no open or in-progress work."
               />
             )}
             <p className="operations-footnote">
@@ -364,29 +382,30 @@ function RequestDetail({ request }: { request: StudentServiceRequest }) {
 
   return (
     <div className="operations-stack">
-      <Link
-        className="operations-back-link"
-        href="/operations/student-services"
-      >
-        Back to Student Services
-      </Link>
-      <div className="operations-detail-grid-layout">
-        <Card aria-labelledby="request-summary-title">
-          <div className="operations-panel-heading">
-            <div>
-              <p className="operations-record-id">{request.id}</p>
-              <h2 id="request-summary-title">{request.category}</h2>
-            </div>
+      <ContextHeader
+        parent="Student Services"
+        parentHref="/operations/student-services"
+        title={request.studentName}
+        metadata={
+          <div className="operations-context-metadata">
+            <span>Request {request.id}</span>
+            <span>Student ID: {request.studentId}</span>
             <StatusLabel>{request.status}</StatusLabel>
           </div>
-          <dl className="operations-detail-list">
-            <DetailRow label="Student">{request.studentName}</DetailRow>
-            <DetailRow label="Student ID">{request.studentId}</DetailRow>
-            <DetailRow label="Campus">{request.campus}</DetailRow>
-            <DetailRow label="Received">{request.createdOn}</DetailRow>
-          </dl>
+        }
+        description={`${request.category} · ${request.campus} · Received ${request.createdOn}`}
+        backHref="/operations/student-services"
+        backLabel="Back to Student Services"
+      />
+      <div className="operations-detail-grid-layout">
+        <Card aria-label={`Request details for ${request.studentName}`}>
+          <div className="operations-panel-heading">
+            <div>
+              <h2>Request update</h2>
+            </div>
+          </div>
           <div className="operations-message-block">
-            <h3>Request message</h3>
+            <h3>Student message</h3>
             <p>{request.message}</p>
           </div>
           <form className="operations-action-form" onSubmit={submitStatus}>
@@ -662,16 +681,24 @@ function StudentServices({ requestId }: { requestId?: string }) {
 function EmployeeDetail({ employee }: { employee: EmployeeDirectoryEntry }) {
   return (
     <div className="operations-stack">
-      <Link className="operations-back-link" href="/operations/employees">
-        Back to Employees
-      </Link>
-      <Card aria-labelledby="employee-detail-title">
+      <ContextHeader
+        parent="Employees"
+        parentHref="/operations/employees"
+        title={employee.name}
+        metadata={
+          <div className="operations-context-metadata">
+            <span>Employee ID: {employee.id}</span>
+          </div>
+        }
+        description="Fictional staff directory entry. Functional areas are provisional demo groupings."
+        backHref="/operations/employees"
+        backLabel="Back to Employees"
+      />
+      <Card aria-label={`Directory details for ${employee.name}`}>
         <div className="operations-panel-heading">
           <div>
-            <p className="operations-record-id">{employee.id}</p>
-            <h2 id="employee-detail-title">{employee.name}</h2>
+            <h2>Directory details</h2>
           </div>
-          <StatusLabel>{employee.listingStatus} · demo</StatusLabel>
         </div>
         <dl className="operations-detail-list">
           <DetailRow label="Position">{employee.position}</DetailRow>
@@ -701,7 +728,10 @@ function Employees({ employeeId }: { employeeId?: string }) {
   const [campus, setCampus] = useState("All");
   const [functionalArea, setFunctionalArea] = useState("All");
   const visibleEmployees = useMemo(
-    () => filterEmployees(employees, { search, campus, functionalArea }),
+    () =>
+      sortEmployeesByName(
+        filterEmployees(employees, { search, campus, functionalArea }),
+      ),
     [employees, search, campus, functionalArea],
   );
 
@@ -751,7 +781,7 @@ function Employees({ employeeId }: { employeeId?: string }) {
               type="search"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              placeholder="Name or employee ID"
+              placeholder="Name, ID, campus, or area"
             />
           </label>
           <FilterField
@@ -801,9 +831,12 @@ function Employees({ employeeId }: { employeeId?: string }) {
                       href={`/operations/employees?employee=${item.id}`}
                     >
                       <span className="operations-mobile-record-heading">
-                        <span>
-                          <strong>{item.name}</strong>
-                          <small>{item.id}</small>
+                        <span className="operations-mobile-record-identity">
+                          <Avatar name={item.name} size="small" />
+                          <span>
+                            <strong>{item.name}</strong>
+                            <small>{item.id}</small>
+                          </span>
                         </span>
                         <StatusLabel>{item.listingStatus} · demo</StatusLabel>
                       </span>
@@ -940,17 +973,25 @@ function TicketDetail({
 
   return (
     <div className="operations-stack">
-      <Link className="operations-back-link" href={backHref}>
-        Back to Facilities
-      </Link>
+      <ContextHeader
+        parent="Facilities"
+        parentHref="/operations/facilities"
+        title={ticket.issue}
+        metadata={
+          <div className="operations-context-metadata">
+            <span>Ticket {ticket.id}</span>
+            <StatusLabel>{ticket.status}</StatusLabel>
+          </div>
+        }
+        backHref={backHref}
+        backLabel="Back to Facilities"
+      />
       <div className="operations-detail-grid-layout">
-        <Card aria-labelledby="ticket-detail-title">
+        <Card aria-label={`Ticket details for ${ticket.id}`}>
           <div className="operations-panel-heading">
             <div>
-              <p className="operations-record-id">{ticket.id}</p>
-              <h2 id="ticket-detail-title">{ticket.issue}</h2>
+              <h2>Ticket details</h2>
             </div>
-            <StatusLabel>{ticket.status}</StatusLabel>
           </div>
           <dl className="operations-detail-list">
             <DetailRow label="Location">
@@ -1097,7 +1138,7 @@ function Facilities({
     if (view === "progress") filters.status = "In Progress";
     if (view === "high") filters.priority = "High";
     if (view === "unassigned") filters.assigneeId = null;
-    return filterFacilityTickets(tickets, filters);
+    return sortFacilityTicketsForQueue(filterFacilityTickets(tickets, filters));
   }, [tickets, search, status, campus, priority, category, view]);
 
   if (ticketId) {
@@ -1181,7 +1222,7 @@ function Facilities({
               type="search"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              placeholder="Ticket, location, or issue"
+              placeholder="Ticket, campus, location, or issue"
             />
           </label>
           <FilterField
@@ -1452,7 +1493,8 @@ export function OperationsPage({
   ticketId,
   facilityView,
 }: OperationsPageProps) {
-  const { feedback, clearFeedback } = useOperationsDemo();
+  const { feedback, clearFeedback, requests, employees, tickets } =
+    useOperationsDemo();
   useEffect(() => {
     clearFeedback();
   }, [section, requestId, employeeId, ticketId, clearFeedback]);
@@ -1475,10 +1517,21 @@ export function OperationsPage({
     pageTitle = `Ticket ${ticketId}`;
     pageDescription = "Facilities · fictional issue details and demo updates.";
   }
+  const hasSelectedRecord =
+    (section === "student-services" &&
+      Boolean(requestId && requests.some((item) => item.id === requestId))) ||
+    (section === "employees" &&
+      Boolean(
+        employeeId && employees.some((item) => item.id === employeeId),
+      )) ||
+    (section === "facilities" &&
+      Boolean(ticketId && tickets.some((item) => item.id === ticketId)));
 
   return (
     <div className="operations-page">
-      <PageHeader title={pageTitle} description={pageDescription.trim()} />
+      {hasSelectedRecord ? null : (
+        <PageHeader title={pageTitle} description={pageDescription.trim()} />
+      )}
       {section === "dashboard" ? (
         <DemoNotice>
           Fictional Operations data · Changes reset on refresh

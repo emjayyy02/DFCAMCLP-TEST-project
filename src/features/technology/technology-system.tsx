@@ -7,7 +7,7 @@ export function TechnologySystem({ environment }: { environment: string }) {
     <div className="space-y-6">
       <TechnologySection
         title="Application foundations"
-        description="Stack and architecture details derived from the project implementation. Status describes the foundation, not live service health."
+        description="Project stack and access architecture. Status describes implementation, not live health."
       >
         <dl className="mt-4 divide-y divide-border border-y border-border">
           {technologySystemComponents.map((item) => (
@@ -37,7 +37,7 @@ export function TechnologySystem({ environment }: { environment: string }) {
 
       <TechnologySection
         title="Environment"
-        description="This value identifies the current application runtime mode only. No host paths or environment-variable values are displayed."
+        description="Runtime mode only; no host path, secret, or service-health value is shown."
       >
         <dl className="mt-4 grid gap-4 border-y border-border py-4 sm:grid-cols-[12rem_minmax(0,1fr)]">
           <dt className="font-semibold">Runtime mode</dt>
@@ -51,9 +51,8 @@ export function TechnologySystem({ environment }: { environment: string }) {
       </TechnologySection>
 
       <p className="max-w-[75ch] text-sm leading-6 text-muted-foreground">
-        This page does not report uptime, latency, resource usage, deployment
-        state, or database connectivity. No secrets, connection details,
-        credentials, or session data are displayed.
+        No uptime, latency, resource, deployment, connectivity, credential, or
+        session values are reported.
       </p>
     </div>
   );
