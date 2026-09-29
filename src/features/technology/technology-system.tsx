@@ -4,7 +4,7 @@ import { TechnologySection } from "./technology-shared";
 
 export function TechnologySystem({ environment }: { environment: string }) {
   return (
-    <div className="mt-8 space-y-6">
+    <div className="space-y-6">
       <TechnologySection
         title="Application foundations"
         description="Stack and architecture details derived from the project implementation. Status describes the foundation, not live service health."

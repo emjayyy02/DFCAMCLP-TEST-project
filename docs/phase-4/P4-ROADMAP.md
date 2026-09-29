@@ -1,6 +1,6 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 planning complete; P4-M2–M7 not started.** This roadmap allocates work; only an explicit milestone instruction authorizes implementation. Visual and behavioral decisions are owned by [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) and [P4-UX-RULES.md](P4-UX-RULES.md). Product authority, evidence limits, and U1–U10 gates are in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 complete; P4-M2 PASS / COMPLETE; P4-M3 remains next and has not started.** This roadmap allocates work; only an explicit milestone instruction authorizes implementation. Visual and behavioral decisions are owned by [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) and [P4-UX-RULES.md](P4-UX-RULES.md). Product authority, evidence limits, and U1–U10 gates are in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 

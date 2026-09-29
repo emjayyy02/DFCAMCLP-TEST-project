@@ -1,54 +1,13 @@
 .student-experience {
-  width: 100%;
-  max-width: 82rem;
+  width: min(100%, var(--width-operational));
   margin-inline: auto;
-}
-
-.student-page-header {
-  max-width: 58rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.student-page-header h1 {
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.025em;
-  text-wrap: balance;
-}
-
-.student-page-header > p {
-  margin-top: 0.55rem;
-  color: var(--foreground-muted);
-  line-height: 1.6;
-}
-
-.student-page-header .student-term-line {
-  margin-top: 0.15rem;
-  font-size: 0.875rem;
-}
-
-.student-demo-notice {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-top: 1rem;
-  color: var(--foreground-muted);
-  font-size: 0.8125rem;
-  line-height: 1.5;
-}
-
-.student-demo-notice > span {
-  width: 0.5rem;
-  height: 0.5rem;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  background: var(--accent);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-8);
 }
 
 .student-page-content {
-  margin-top: 1.75rem;
+  margin-top: 0;
 }
 
 .student-dashboard-grid {
@@ -1495,10 +1454,6 @@
 }
 
 @media (max-width: 480px) {
-  .student-page-header h1 {
-    font-size: 1.75rem;
-  }
-
   .student-tab {
     padding-inline: 0.7rem;
   }

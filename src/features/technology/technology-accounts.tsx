@@ -4,6 +4,8 @@ import { useMemo, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input, Select } from "@/components/ui/input";
+import { ListToolbar, SortControl } from "@/components/ui/list-toolbar";
+import { EmptyState } from "@/components/ui/states";
 import { portalCodes, portalDetails } from "@/lib/portals";
 import {
   filterTechnologyAccounts,
@@ -145,9 +147,20 @@ export function TechnologyAccountsDirectory({
 }) {
   const [filters, setFilters] = useState(initialFilters);
   const [selectedEmail, setSelectedEmail] = useState<string | null>(null);
+  const [sortOrder, setSortOrder] = useState("email");
   const filteredAccounts = useMemo(
     () => filterTechnologyAccounts(accounts, filters),
     [accounts, filters],
+  );
+  const sortedAccounts = useMemo(
+    () =>
+      [...filteredAccounts].sort((left, right) =>
+        sortOrder === "name"
+          ? left.name.localeCompare(right.name) ||
+            left.email.localeCompare(right.email)
+          : left.email.localeCompare(right.email),
+      ),
+    [filteredAccounts, sortOrder],
   );
   const selectedAccount = filteredAccounts.find(
     (account) => account.email === selectedEmail,
@@ -161,7 +174,7 @@ export function TechnologyAccountsDirectory({
   }
 
   return (
-    <div className="mt-8 space-y-6">
+    <div className="space-y-6">
       <form
         className="grid gap-4 rounded-lg border border-border bg-white p-5 sm:grid-cols-2 sm:p-6 xl:grid-cols-[minmax(18rem,1fr)_13rem_15rem]"
         onSubmit={(event) => event.preventDefault()}
@@ -239,30 +252,45 @@ export function TechnologyAccountsDirectory({
             <h2 id="technology-accounts-list" className="text-xl font-semibold">
               Demo accounts
             </h2>
-            <p className="text-sm text-muted-foreground" aria-live="polite">
-              Showing {filteredAccounts.length} of {accounts.length} accounts
-            </p>
           </div>
 
-          {filteredAccounts.length === 0 ? (
-            <div className="rounded-lg border border-border bg-white p-6">
-              <h3 className="font-semibold">No accounts match these filters</h3>
-              <p className="mt-2 leading-6 text-muted-foreground">
-                Try a different email, identity, status, or portal.
+          <ListToolbar
+            count={
+              <p aria-live="polite">
+                Showing {filteredAccounts.length} of {accounts.length} accounts
               </p>
-              <Button
-                className="mt-4"
-                type="button"
-                variant="outline"
-                onClick={() => setFilters(initialFilters)}
-              >
-                Clear filters
-              </Button>
-            </div>
+            }
+            sort={
+              <SortControl
+                id="technology-account-sort"
+                value={sortOrder}
+                onChange={setSortOrder}
+                options={[
+                  { value: "email", label: "Email A–Z" },
+                  { value: "name", label: "Name A–Z" },
+                ]}
+              />
+            }
+          />
+
+          {filteredAccounts.length === 0 ? (
+            <EmptyState
+              title="No accounts match these filters"
+              description="Try a different email, identity, status, or portal."
+              action={
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={() => setFilters(initialFilters)}
+                >
+                  Clear filters
+                </Button>
+              }
+            />
           ) : (
             <>
               <ul className="space-y-3 xl:hidden">
-                {filteredAccounts.map((account) => (
+                {sortedAccounts.map((account) => (
                   <li key={account.email}>
                     <button
                       type="button"
@@ -302,7 +330,7 @@ export function TechnologyAccountsDirectory({
                     </tr>
                   </thead>
                   <tbody>
-                    {filteredAccounts.map((account) => (
+                    {sortedAccounts.map((account) => (
                       <tr
                         key={account.email}
                         aria-selected={selectedEmail === account.email}
@@ -344,8 +372,8 @@ export function TechnologyAccountsDirectory({
         <AccountDetails account={selectedAccount ?? null} />
       </div>
       <p className="text-sm leading-6 text-muted-foreground">
-        This read-only directory includes only fictional development accounts.
-        It does not assign roles, change account state, or alter memberships.
+        This directory does not assign roles, change account state, or alter
+        memberships.
       </p>
     </div>
   );

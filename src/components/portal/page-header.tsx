@@ -1,18 +1,34 @@
+import type { ReactNode } from "react";
+import { cn } from "@/lib/utils";
+
 export function PageHeader({
   title,
   description,
+  eyebrow,
+  action,
+  context,
+  className,
+  density = "staff",
 }: {
   title: string;
-  description: string;
+  description?: string;
+  eyebrow?: string;
+  action?: ReactNode;
+  context?: ReactNode;
+  className?: string;
+  density?: "staff" | "personal";
 }) {
   return (
-    <header className="max-w-3xl border-b border-border pb-6">
-      <h1 className="text-3xl leading-tight font-semibold tracking-tight sm:text-4xl">
-        {title}
-      </h1>
-      <p className="mt-3 max-w-[70ch] leading-7 text-muted-foreground">
-        {description}
-      </p>
+    <header className={cn("page-header", `page-header-${density}`, className)}>
+      <div className="page-header-copy">
+        {eyebrow ? <p className="page-header-eyebrow">{eyebrow}</p> : null}
+        <h1 className="page-title">{title}</h1>
+        {description ? (
+          <p className="page-header-description">{description}</p>
+        ) : null}
+        {context ? <div className="page-header-context">{context}</div> : null}
+      </div>
+      {action ? <div className="page-header-actions">{action}</div> : null}
     </header>
   );
 }

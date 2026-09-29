@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { PageHeader } from "@/components/portal/page-header";
 import {
   ConceptDisclaimer,
   DevelopmentHeader,
@@ -29,13 +30,10 @@ export default async function AccountPage() {
         id="main"
         className="mx-auto w-full max-w-3xl flex-1 px-5 py-10 sm:px-8 sm:py-12"
       >
-        <header className="border-b border-border pb-7">
-          <h1 className="text-3xl font-semibold sm:text-4xl">Account access</h1>
-          <p className="mt-4 max-w-2xl leading-7 text-muted-foreground">
-            Review the active portal memberships and role labels assigned to
-            this fake development account.
-          </p>
-        </header>
+        <PageHeader
+          title="Account access"
+          description="Review the active portal memberships and role labels assigned to this fake development account."
+        />
 
         <Card aria-labelledby="identity-title" className="my-8">
           <h2 id="identity-title" className="text-xl font-semibold">

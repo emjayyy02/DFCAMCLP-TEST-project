@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function DevelopmentHeader() {
   return (
@@ -6,13 +7,17 @@ export function DevelopmentHeader() {
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2">
         <Link
           href="/"
-          className="inline-flex min-h-11 flex-col items-start justify-center font-semibold tracking-wide text-primary-hover"
+          className="inline-flex min-h-11 items-center gap-2 font-semibold tracking-wide text-primary-hover"
         >
-          DFCAMCLP
-          <span
-            aria-hidden="true"
-            className="mt-1 block h-1 w-8 rounded bg-accent"
+          <Image
+            src="/images/dfcamclp-seal.webp"
+            alt=""
+            width={40}
+            height={40}
+            unoptimized
+            className="h-10 w-10 object-contain"
           />
+          <span>DFCAMCLP</span>
         </Link>
         <span className="text-sm text-muted-foreground">
           Development environment

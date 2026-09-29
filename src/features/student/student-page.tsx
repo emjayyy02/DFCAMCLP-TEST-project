@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { StudentAcademics } from "./student-academics";
+import { PageHeader } from "@/components/portal/page-header";
+import { DemoNotice } from "@/components/ui/demo-notice";
 import { useStudentDemo } from "./demo-context";
 import { formatScheduleRange, studentDemoData } from "./demo-data";
 import type { StudentRequest } from "./demo-data";
@@ -29,44 +31,6 @@ const sectionDescriptions: Record<string, string> = {
   calendar: "Sample classes and illustrative dates.",
   profile: "Read-only sample student information.",
 };
-
-function StudentPageHeader({ section }: { section: string }) {
-  if (section === "dashboard") {
-    return (
-      <header className="student-page-header student-dashboard-header">
-        <h1>Good morning, {studentDemoData.identity.firstName}.</h1>
-        <p>
-          {studentDemoData.identity.program} <span aria-hidden="true">·</span>{" "}
-          {studentDemoData.identity.yearLevel} <span aria-hidden="true">·</span>{" "}
-          {studentDemoData.identity.campus}
-        </p>
-        <p className="student-term-line">
-          AY {studentDemoData.term.academicYear}{" "}
-          <span aria-hidden="true">·</span> {studentDemoData.term.semester}
-        </p>
-      </header>
-    );
-  }
-
-  const title = sectionTitles[section] ?? "Student portal";
-  return (
-    <header className="student-page-header">
-      <h1>{title}</h1>
-      {sectionDescriptions[section] ? (
-        <p>{sectionDescriptions[section]}</p>
-      ) : null}
-    </header>
-  );
-}
-
-function DemoNotice() {
-  return (
-    <p className="student-demo-notice">
-      <span aria-hidden="true" />
-      Sample student view · Fictional data · Changes reset on refresh
-    </p>
-  );
-}
 
 function DashboardPage() {
   const todayMeetings = studentDemoData.schedule
@@ -941,10 +905,18 @@ export function StudentPage({
   section: string;
   view?: string;
 }) {
+  const isDashboard = section === "dashboard";
+  const title = isDashboard
+    ? `Good morning, ${studentDemoData.identity.firstName}.`
+    : (sectionTitles[section] ?? "Student portal");
+  const description = isDashboard
+    ? `${studentDemoData.identity.program} · ${studentDemoData.identity.yearLevel} · ${studentDemoData.identity.campus} · AY ${studentDemoData.term.academicYear} · ${studentDemoData.term.semester}`
+    : sectionDescriptions[section];
+
   return (
     <div className="student-experience">
-      <StudentPageHeader section={section} />
-      <DemoNotice />
+      <PageHeader title={title} description={description} density="personal" />
+      <DemoNotice detail="Fictional student data · Changes reset on refresh" />
       <div className="student-page-content">
         {section === "dashboard" ? <DashboardPage /> : null}
         {section === "academics" ? (

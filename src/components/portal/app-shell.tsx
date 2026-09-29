@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useRef } from "react";
 import type { PortalCode } from "@/lib/portals";
@@ -8,6 +9,7 @@ import { portalDetails } from "@/lib/portals";
 import type { NavigationItem } from "@/server/access-control/navigation";
 import { SignOutButton } from "@/features/identity/sign-out-button";
 import { cn } from "@/lib/utils";
+import { IdentitySummary } from "@/components/ui/identity";
 
 type MembershipSummary = {
   portal: PortalCode;
@@ -123,10 +125,7 @@ function UserMenu({ user }: Pick<AppShellProps, "user">) {
       </summary>
       <div className="absolute right-0 z-30 mt-2 w-[min(19rem,calc(100vw-2rem))] rounded-lg bg-surface-elevated p-3 shadow-elevated">
         <div className="border-b border-border px-2 pb-3">
-          <p className="font-semibold break-words">{user.name}</p>
-          <p className="mt-1 text-sm text-muted-foreground break-all">
-            {user.email}
-          </p>
+          <IdentitySummary name={user.name} detail={user.email} size="small" />
         </div>
         <Link href="/account" className="navigation-item mt-2 font-medium">
           Account
@@ -284,13 +283,23 @@ export function AppShell({
           />
           <Link
             href={`/${portalDetails[currentPortal].slug}`}
-            className="flex min-h-11 min-w-0 flex-1 flex-col justify-center lg:flex-none"
+            className="flex min-h-11 min-w-0 flex-1 items-center gap-2 lg:flex-none"
           >
-            <span className="truncate font-semibold tracking-wide text-primary-hover">
-              DFCAMCLP
-            </span>
-            <span className="truncate text-xs text-muted-foreground">
-              {portalDetails[currentPortal].label} portal
+            <Image
+              src="/images/dfcamclp-seal.webp"
+              alt=""
+              width={40}
+              height={40}
+              unoptimized
+              className="h-10 w-10 shrink-0 object-contain"
+            />
+            <span className="flex min-w-0 flex-col justify-center">
+              <span className="truncate font-semibold tracking-wide text-primary-hover">
+                DFCAMCLP
+              </span>
+              <span className="truncate text-xs text-muted-foreground">
+                {portalDetails[currentPortal].label} portal
+              </span>
             </span>
           </Link>
           <div className="ml-auto flex items-center gap-2">

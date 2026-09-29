@@ -24,7 +24,7 @@ export function TechnologyDashboard({
   const accountSummary = summarizeTechnologyAccounts(accounts);
 
   return (
-    <div className="mt-8 space-y-6">
+    <div className="space-y-6">
       <div className="grid min-w-0 gap-6 xl:grid-cols-[minmax(0,1.4fr)_minmax(18rem,0.8fr)]">
         <TechnologySection
           title="How access is checked"

@@ -19,6 +19,7 @@
     "test:auth": "vitest run src/tests/authentication.integration.test.ts --no-file-parallelism",
     "test:access": "vitest run src/tests/access-control.integration.test.ts --no-file-parallelism",
     "env:check": "tsx scripts/check-env.ts",
+    "auth:sync-demo": "node --env-file=.env scripts/auth/sync-demo.mjs",
     "db:up": "docker compose up -d --wait",
     "db:stop": "docker compose stop",
     "db:generate": "drizzle-kit generate",

@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { PageHeader } from "@/components/portal/page-header";
+import { DemoNotice } from "@/components/ui/demo-notice";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useAcademicDemo } from "./demo-context";
 import {
@@ -47,39 +49,14 @@ function courseHref(section: string, offeringId: string) {
   return `/academic/${section}?offering=${encodeURIComponent(offeringId)}`;
 }
 
-function DemoNotice() {
-  return (
-    <p className="academic-demo-notice">
-      <span aria-hidden="true" />
-      Sample academic workspace · Fictional records · Changes reset on refresh
-    </p>
-  );
-}
-
-function AcademicPageHeader({ section }: { section: string }) {
-  const title = sectionTitles[section] ?? "Academic portal";
-  const descriptions: Record<string, string> = {
-    dashboard: "Your teaching day, follow-up work, and academic updates.",
-    classes: "Assigned offerings, class schedules, and sample rosters.",
-    attendance: "Record attendance for a sample class meeting.",
-    grades: "Enter and submit sample final grades for an assigned class.",
-    announcements: "Fictional notices for the Academic portal demonstration.",
-    management: "A read-only view of sample program offerings and assignments.",
-  };
-  return (
-    <header className="academic-page-header">
-      <div>
-        <p className="academic-eyebrow">
-          {academicDemoData.term.academicYear} ·{" "}
-          {academicDemoData.term.semester}
-        </p>
-        <h1>{title}</h1>
-        <p>{descriptions[section] ?? descriptions.dashboard}</p>
-      </div>
-      <DemoNotice />
-    </header>
-  );
-}
+const sectionDescriptions: Record<string, string> = {
+  dashboard: "Your teaching day, follow-up work, and academic updates.",
+  classes: "Assigned offerings, class schedules, and sample rosters.",
+  attendance: "Record attendance for a sample class meeting.",
+  grades: "Enter and submit sample final grades for an assigned class.",
+  announcements: "Fictional notices for the Academic portal demonstration.",
+  management: "A read-only view of sample program offerings and assignments.",
+};
 
 function SectionHeading({
   id,
@@ -1577,7 +1554,14 @@ export function AcademicPage({
   }
   return (
     <div className="academic-page">
-      <AcademicPageHeader section={section} />
+      <PageHeader
+        title={sectionTitles[section] ?? "Academic portal"}
+        description={
+          sectionDescriptions[section] ?? sectionDescriptions.dashboard
+        }
+        eyebrow={`${academicDemoData.term.academicYear} · ${academicDemoData.term.semester}`}
+      />
+      <DemoNotice detail="Fictional academic records · Changes reset on refresh" />
       {view}
     </div>
   );

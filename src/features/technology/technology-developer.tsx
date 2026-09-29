@@ -32,7 +32,7 @@ export function TechnologyDeveloper({
   const registry = institutionRegistry();
 
   return (
-    <div className="mt-8 space-y-6">
+    <div className="space-y-6">
       <TechnologySection
         title="Project architecture"
         description="A compact view of how a request moves through the demo application."

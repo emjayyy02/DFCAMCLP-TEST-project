@@ -3,9 +3,10 @@
 import Link from "next/link";
 import { useState } from "react";
 import { PageHeader } from "@/components/portal/page-header";
+import { DemoNotice } from "@/components/ui/demo-notice";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Select } from "@/components/ui/input";
+import { CheckboxInput, Select } from "@/components/ui/input";
 import { ApplicationForm } from "./application-form";
 import { useApplicantDemo } from "./demo-context";
 import {
@@ -32,34 +33,34 @@ import {
 function DemoControls() {
   const { scenario, setScenario } = useApplicantDemo();
   return (
-    <aside className="applicant-demo-notice" aria-label="Demo context">
-      <p>
-        <span className="applicant-demo-dot" aria-hidden="true" />
-        <strong>Demo workspace</strong>
-        <span>Fake data only. Changes reset on refresh.</span>
-      </p>
-      <details>
-        <summary>Preview scenarios</summary>
-        <div className="applicant-demo-controls">
-          <label htmlFor="applicant-scenario">Demo scenario</label>
-          <Select
-            id="applicant-scenario"
-            value={scenario}
-            onChange={(event) => setScenario(event.target.value as ScenarioKey)}
-          >
-            {Object.entries(scenarios).map(([key, value]) => (
-              <option key={key} value={key}>
-                {value.label}
-              </option>
-            ))}
-          </Select>
-          <p>
-            Switch the sample journey across all Applicant pages. No school
-            records change.
-          </p>
-        </div>
-      </details>
-    </aside>
+    <DemoNotice
+      detail="Fictional applicant data · Changes reset on refresh"
+      action={
+        <details>
+          <summary>Preview scenarios</summary>
+          <div className="applicant-demo-controls">
+            <label htmlFor="applicant-scenario">Demo scenario</label>
+            <Select
+              id="applicant-scenario"
+              value={scenario}
+              onChange={(event) =>
+                setScenario(event.target.value as ScenarioKey)
+              }
+            >
+              {Object.entries(scenarios).map(([key, value]) => (
+                <option key={key} value={key}>
+                  {value.label}
+                </option>
+              ))}
+            </Select>
+            <p>
+              Switch the sample journey across all Applicant pages. No school
+              records change.
+            </p>
+          </div>
+        </details>
+      }
+    />
   );
 }
 
@@ -264,8 +265,7 @@ function Requirements() {
               <h3>{item.name}</h3>
               {!state.verified ? (
                 <label className="applicant-check">
-                  <input
-                    type="checkbox"
+                  <CheckboxInput
                     aria-label={`${item.name} ready to bring`}
                     checked={ready.includes(item.name)}
                     onChange={(event) =>

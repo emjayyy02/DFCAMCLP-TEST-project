@@ -4,7 +4,7 @@ import { TechnologyAccessPath, TechnologySection } from "./technology-shared";
 
 export function TechnologySecurity() {
   return (
-    <div className="mt-8 space-y-6">
+    <div className="space-y-6">
       <div className="grid min-w-0 gap-6 xl:grid-cols-2">
         <TechnologySection
           title="Authentication"

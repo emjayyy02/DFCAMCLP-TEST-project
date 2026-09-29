@@ -1,11 +1,11 @@
 /* Applicant surfaces inherit the P3-M1 palette, type, controls, and shell. */
 .applicant-experience {
-  max-width: 1120px;
+  max-width: var(--width-operational);
+  display: grid;
+  gap: var(--space-6);
 }
-.applicant-experience > header {
-  max-width: none;
-  border: 0;
-  padding-bottom: 0;
+.applicant-experience > .page-header {
+  max-width: var(--width-operational);
 }
 .applicant-experience > header p {
   margin-top: 8px;
@@ -66,47 +66,13 @@
 .applicant-link:active {
   transform: translateY(1px);
 }
-.applicant-demo-notice {
-  margin-block: 24px;
-  border-block: 1px solid var(--border);
-  padding-block: 10px;
-  display: flex;
-  gap: 12px;
-  justify-content: space-between;
-  align-items: start;
-  font-size: 12px;
-}
-.applicant-demo-notice > p {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-top: 12px;
-}
-.applicant-demo-notice > p > span:last-child {
-  color: var(--foreground-muted);
-}
-.applicant-demo-dot {
-  width: 7px;
-  height: 7px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 1px var(--border-strong);
-}
-.applicant-demo-notice details {
-  width: 230px;
-  flex-shrink: 0;
-}
-.applicant-demo-notice summary {
-  min-height: 44px;
-  padding: 10px 4px;
-  cursor: pointer;
-  color: var(--primary);
-  text-align: right;
-}
-.applicant-demo-notice summary:hover {
-  text-decoration: underline;
+.demo-notice .applicant-demo-controls {
+  width: min(17rem, calc(100vw - 2rem));
+  padding: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-elevated);
 }
 .applicant-demo-controls {
   padding-block: 8px;
@@ -610,24 +576,6 @@
   }
 }
 @media (max-width: 600px) {
-  .applicant-demo-notice {
-    display: block;
-    margin-block: 20px;
-  }
-  .applicant-demo-notice > p {
-    padding-top: 4px;
-    gap: 8px;
-  }
-  .applicant-demo-notice > p > span:last-child {
-    flex-basis: 100%;
-  }
-  .applicant-demo-notice details {
-    width: 100%;
-  }
-  .applicant-demo-notice summary {
-    text-align: left;
-    padding-inline: 0;
-  }
   .applicant-next-action,
   .applicant-surface,
   .applicant-form,

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { PageHeader } from "@/components/portal/page-header";
+import { DemoNotice } from "@/components/ui/demo-notice";
 import { portalCodeFromSlug } from "@/lib/portals";
 import { requirePortalPath } from "@/server/access-control/current";
 import { ApplicantPage } from "@/features/applicant/applicant-page";
@@ -117,16 +118,26 @@ export default async function PortalFoundationPage({
     );
     if (!membership) notFound();
     return (
-      <>
+      <div className="portal-technology-page">
         <PageHeader
           title={authorized.route.title}
           description={authorized.route.description}
+        />
+        <DemoNotice
+          label={
+            section[0] === "accounts" ? "Demo workspace" : "Project information"
+          }
+          detail={
+            section[0] === "accounts"
+              ? "Fictional development accounts · Read-only"
+              : "No live monitoring or service-health reporting"
+          }
         />
         <TechnologyPage
           section={section[0] ?? "dashboard"}
           permissions={membership.permissions}
         />
-      </>
+      </div>
     );
   }
 

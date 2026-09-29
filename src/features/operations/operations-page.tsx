@@ -6,8 +6,10 @@ import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Input, Select } from "@/components/ui/input";
+import { Input, Select, Textarea } from "@/components/ui/input";
 import { PageHeader } from "@/components/portal/page-header";
+import { DemoNotice as SharedDemoNotice } from "@/components/ui/demo-notice";
+import { EmptyState as SharedEmptyState } from "@/components/ui/states";
 import { campusOptions } from "../applicant/demo-data";
 import { useOperationsDemo } from "./demo-context";
 import {
@@ -59,21 +61,11 @@ function StatusLabel({ children }: StatusLabelProps) {
 }
 
 function DemoNotice({ children }: { children: React.ReactNode }) {
-  return (
-    <p className="operations-demo-notice">
-      <Badge tone="neutral">DEMO DATA</Badge>
-      <span>{children}</span>
-    </p>
-  );
+  return <SharedDemoNotice detail={children} />;
 }
 
 function EmptyState({ title, detail }: { title: string; detail: string }) {
-  return (
-    <div className="operations-empty">
-      <strong>{title}</strong>
-      <p>{detail}</p>
-    </div>
-  );
+  return <SharedEmptyState title={title} description={detail} />;
 }
 
 function MissingDetail({
@@ -420,7 +412,7 @@ function RequestDetail({ request }: { request: StudentServiceRequest }) {
                 <span>
                   {status === "Resolved" ? "Resolution note" : "Closure note"}
                 </span>
-                <textarea
+                <Textarea
                   id="request-outcome-note"
                   value={outcomeNote}
                   onChange={(event) => setOutcomeNote(event.target.value)}
@@ -995,7 +987,7 @@ function TicketDetail({
                   <span>
                     {status === "Resolved" ? "Completion note" : "Closure note"}
                   </span>
-                  <textarea
+                  <Textarea
                     id="ticket-completion-note"
                     value={completionNote}
                     onChange={(event) => setCompletionNote(event.target.value)}
@@ -1487,6 +1479,11 @@ export function OperationsPage({
   return (
     <div className="operations-page">
       <PageHeader title={pageTitle} description={pageDescription.trim()} />
+      {section === "dashboard" ? (
+        <DemoNotice>
+          Fictional Operations data · Changes reset on refresh
+        </DemoNotice>
+      ) : null}
       {feedback ? (
         <p className="operations-live-message" role="status">
           {feedback}

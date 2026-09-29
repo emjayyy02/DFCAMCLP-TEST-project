@@ -1,6 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { PageHeader } from "@/components/portal/page-header";
+import { Badge } from "@/components/ui/badge";
+import { DemoNotice } from "@/components/ui/demo-notice";
+import { EmptyState as SharedEmptyState } from "@/components/ui/states";
 import { useEffect, useMemo, useState } from "react";
 import { useRecordsDemo } from "./demo-context";
 import {
@@ -41,7 +45,7 @@ const detailTabs = [
 type DetailTab = (typeof detailTabs)[number];
 
 function Status({ children }: { children: string }) {
-  return <span className="records-status">{children}</span>;
+  return <Badge tone="neutral">{children}</Badge>;
 }
 function Empty({
   title = "No matching records",
@@ -50,24 +54,17 @@ function Empty({
   title?: string;
   detail?: string;
 }) {
-  return (
-    <div className="records-empty">
-      <strong>{title}</strong>
-      <p>{detail}</p>
-    </div>
-  );
+  return <SharedEmptyState title={title} description={detail} />;
 }
 function Heading({ section }: { section: string }) {
   return (
-    <header className="records-heading">
-      <div>
-        <h1>{titles[section] ?? titles.dashboard}</h1>
-        <p>{descriptions[section] ?? descriptions.dashboard}</p>
-      </div>
-      <p className="records-demo-label">
-        Sample records · Fictional data · Changes reset on refresh
-      </p>
-    </header>
+    <>
+      <PageHeader
+        title={titles[section] ?? titles.dashboard}
+        description={descriptions[section] ?? descriptions.dashboard}
+      />
+      <DemoNotice detail="Fictional records · Changes reset on refresh" />
+    </>
   );
 }
 function QueueLink({
