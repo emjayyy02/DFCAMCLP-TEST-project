@@ -25,7 +25,7 @@ const dayNames: Record<ScheduleDay, string> = {
 };
 
 function getWeekDate(dayOffset: number, weekOffset: number) {
-  return new Date(2026, 8, 21 + dayOffset + weekOffset * 7, 12);
+  return new Date(2027, 1, 22 + dayOffset + weekOffset * 7, 12);
 }
 
 function formatShortDate(date: Date) {
@@ -219,6 +219,10 @@ function SubjectView() {
             {studentDemoData.term.section} · {studentDemoData.term.academicYear}{" "}
             · {studentDemoData.term.semester}
           </p>
+          <p className="student-muted">
+            Synthetic course list for interface review; not an official
+            curriculum.
+          </p>
         </div>
       </div>
       <div className="student-subject-table-wrap">
@@ -251,7 +255,7 @@ function SubjectView() {
                       ? meetings
                           .map(
                             (meeting) =>
-                              `${dayNames[meeting.day]} ${meeting.start}`,
+                              `${dayNames[meeting.day]} ${formatScheduleRange(meeting.start, meeting.end)}`,
                           )
                           .join(", ")
                       : "Not yet assigned"}
@@ -341,7 +345,8 @@ function GradeView() {
         <div>
           <h2 id="grades-title">Grades</h2>
           <p>
-            Released sample grades only. No average or standing is calculated.
+            Sample grades and release statuses are shown by term. No average or
+            standing is calculated.
           </p>
         </div>
         <div className="student-filter-row">

@@ -10,12 +10,25 @@ import {
   initialFacilityTickets,
   initialStudentServiceRequests,
   operationsInstitutionRegistry,
+  operationsTerm,
   updateFacilityAssignee,
   updateFacilityStatus,
   updateStudentServiceStatus,
 } from "../features/operations/demo-data";
+import { studentDemoData } from "../features/student/demo-data";
 
 describe("Operations demo queues", () => {
+  it("uses the same fictional Student and sample academic term", () => {
+    const linkedRequest = initialStudentServiceRequests.find(
+      (request) => request.studentId === studentDemoData.identity.studentId,
+    );
+    expect(linkedRequest?.studentName).toBe(studentDemoData.identity.fullName);
+    expect(operationsTerm).toMatchObject({
+      academicYear: `AY ${studentDemoData.term.academicYear}`,
+      semester: studentDemoData.term.semester,
+    });
+  });
+
   it("filters Student Services by student or request and by queue fields", () => {
     expect(
       filterStudentServiceRequests(initialStudentServiceRequests, {

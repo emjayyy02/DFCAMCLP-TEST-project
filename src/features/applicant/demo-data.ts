@@ -154,19 +154,19 @@ export const requirements = [
 
 export const demoSchedules = {
   documents: {
-    date: "22 September 2026",
+    date: "6 October 2026",
     time: "9:00 AM",
     location: "Sample submission desk",
     campus: "IIT Campus",
   },
   exam: {
-    date: "28 September 2026",
+    date: "12 October 2026",
     time: "8:00–10:00 AM",
     location: "Sample Room 204",
     campus: "IIT Campus",
   },
   registrar: {
-    date: "6 October 2026",
+    date: "20 October 2026",
     time: "9:30 AM",
     location: "Sample Registrar desk",
     campus: "IIT Campus",

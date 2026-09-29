@@ -85,45 +85,45 @@ export type AcademicAnnouncement = {
 
 const roster = [
   {
-    id: "student-marvin",
+    id: "student-primary",
     studentId: "DEMO-STU-2026-0142",
-    name: "Marvin Reyes",
-    section: "BSIS-2A",
+    name: "John Paul Reyes",
+    section: "BSIS-3A",
     status: "Enrolled",
   },
   {
     id: "student-nina",
     studentId: "DEMO-STU-2026-0186",
     name: "Nina Santos",
-    section: "BSIS-2A",
+    section: "BSIS-3A",
     status: "Enrolled",
   },
   {
     id: "student-paolo",
     studentId: "DEMO-STU-2026-0204",
     name: "Paolo Garcia",
-    section: "BSIS-2A",
+    section: "BSIS-3A",
     status: "Enrolled",
   },
   {
     id: "student-ella",
     studentId: "DEMO-STU-2026-0231",
     name: "Ella Cruz",
-    section: "BSIS-2A",
+    section: "BSIS-3A",
     status: "Enrolled",
   },
   {
     id: "student-liam",
     studentId: "DEMO-STU-2026-0277",
     name: "Liam Ramos",
-    section: "BSIS-2A",
+    section: "BSIS-3A",
     status: "Enrolled",
   },
   {
     id: "student-aria",
     studentId: "DEMO-STU-2026-0308",
     name: "Aria Lim",
-    section: "BSIS-2A",
+    section: "BSIS-3A",
     status: "Enrolled",
   },
 ] as const satisfies readonly AcademicStudent[];
@@ -138,39 +138,39 @@ function sampleAttendanceRecords(
 
 const weekdayDates = {
   monday: [
-    "2026-09-07",
-    "2026-09-14",
-    "2026-09-21",
-    "2026-09-28",
-    "2026-10-05",
+    "2027-02-08",
+    "2027-02-15",
+    "2027-02-22",
+    "2027-03-01",
+    "2027-03-08",
   ],
   tuesday: [
-    "2026-09-08",
-    "2026-09-15",
-    "2026-09-22",
-    "2026-09-29",
-    "2026-10-06",
+    "2027-02-09",
+    "2027-02-16",
+    "2027-02-23",
+    "2027-03-02",
+    "2027-03-09",
   ],
   wednesday: [
-    "2026-09-09",
-    "2026-09-16",
-    "2026-09-23",
-    "2026-09-30",
-    "2026-10-07",
+    "2027-02-10",
+    "2027-02-17",
+    "2027-02-24",
+    "2027-03-03",
+    "2027-03-10",
   ],
   thursday: [
-    "2026-09-10",
-    "2026-09-17",
-    "2026-09-24",
-    "2026-10-01",
-    "2026-10-08",
+    "2027-02-11",
+    "2027-02-18",
+    "2027-02-25",
+    "2027-03-04",
+    "2027-03-11",
   ],
   friday: [
-    "2026-09-04",
-    "2026-09-11",
-    "2026-09-18",
-    "2026-09-25",
-    "2026-10-02",
+    "2027-02-05",
+    "2027-02-12",
+    "2027-02-19",
+    "2027-02-26",
+    "2027-03-05",
   ],
 } as const;
 
@@ -188,13 +188,13 @@ const studentIds = roster.map((student) => student.id);
 
 export const academicDemoData = {
   term: {
-    id: "2026-2027-1",
+    id: "2026-2027-2",
     academicYear: "2026–2027",
-    semester: "1st Semester",
-    label: "AY 2026–2027 · 1st Semester",
+    semester: "2nd Semester",
+    label: "AY 2026–2027 · 2nd Semester",
   },
   today: {
-    date: "2026-09-25",
+    date: "2027-02-26",
     day: "Friday" as const,
   },
   identities: {
@@ -202,11 +202,16 @@ export const academicDemoData = {
     coordinator: { facultyId: "faculty-ag", name: "A. Garcia" },
   },
   subjects: [
-    { id: "is201", code: "IS 201", title: "Data Management", units: 3 },
-    { id: "is203", code: "IS 203", title: "Systems Analysis", units: 3 },
-    { id: "ge201", code: "GE 201", title: "Ethics and Society", units: 3 },
-    { id: "is205", code: "IS 205", title: "Web Systems", units: 3 },
-    { id: "pe202", code: "PE 202", title: "Movement and Wellness", units: 2 },
+    { id: "is201", code: "IS 302", title: "Systems Design", units: 3 },
+    { id: "is203", code: "IS 304", title: "Project Management", units: 3 },
+    { id: "ge201", code: "GE 302", title: "Applied Research", units: 3 },
+    {
+      id: "is205",
+      code: "IS 306",
+      title: "Enterprise Applications",
+      units: 3,
+    },
+    { id: "pe202", code: "PE 302", title: "Movement and Wellness", units: 2 },
   ] satisfies readonly AcademicSubject[],
   faculty: [
     { id: "faculty-ms", name: "M. Santos", roleLabel: "Faculty" },
@@ -220,8 +225,8 @@ export const academicDemoData = {
     {
       id: "off-is201-bsis-2a",
       subjectId: "is201",
-      termId: "2026-2027-1",
-      section: "BSIS-2A",
+      termId: "2026-2027-2",
+      section: "BSIS-3A",
       campus: "IIT Campus",
       program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-ms",
@@ -235,8 +240,8 @@ export const academicDemoData = {
     {
       id: "off-is203-bsis-2a",
       subjectId: "is203",
-      termId: "2026-2027-1",
-      section: "BSIS-2A",
+      termId: "2026-2027-2",
+      section: "BSIS-3A",
       campus: "IIT Campus",
       program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-ldc",
@@ -250,8 +255,8 @@ export const academicDemoData = {
     {
       id: "off-ge201-bsis-2a",
       subjectId: "ge201",
-      termId: "2026-2027-1",
-      section: "BSIS-2A",
+      termId: "2026-2027-2",
+      section: "BSIS-3A",
       campus: "IIT Campus",
       program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-ag",
@@ -265,8 +270,8 @@ export const academicDemoData = {
     {
       id: "off-is205-bsis-2a",
       subjectId: "is205",
-      termId: "2026-2027-1",
-      section: "BSIS-2A",
+      termId: "2026-2027-2",
+      section: "BSIS-3A",
       campus: "IIT Campus",
       program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-rl",
@@ -290,8 +295,8 @@ export const academicDemoData = {
     {
       id: "off-pe202-bsis-2a",
       subjectId: "pe202",
-      termId: "2026-2027-1",
-      section: "BSIS-2A",
+      termId: "2026-2027-2",
+      section: "BSIS-3A",
       campus: "IIT Campus",
       program: "BSIS — Bachelor of Science in Information Systems",
       facultyId: "faculty-jc",
@@ -310,7 +315,7 @@ export const academicDemoData = {
   announcements: [
     {
       id: "academic-notice-campus",
-      date: "24 Sep 2026",
+      date: "25 Feb 2027",
       audience: "Campus",
       audienceLabel: "IIT Campus",
       title: "Sample campus study-space note",
@@ -319,7 +324,7 @@ export const academicDemoData = {
     },
     {
       id: "academic-notice-program",
-      date: "22 Sep 2026",
+      date: "23 Feb 2027",
       audience: "Program",
       audienceLabel: "BSIS",
       title: "Sample program advising note",
@@ -328,18 +333,18 @@ export const academicDemoData = {
     },
     {
       id: "academic-notice-section",
-      date: "18 Sep 2026",
+      date: "19 Feb 2027",
       audience: "Section",
-      audienceLabel: "BSIS-2A",
+      audienceLabel: "BSIS-3A",
       title: "Sample section coordination note",
       summary:
         "An illustrative notice for one sample section. No official schedule change is represented.",
     },
     {
       id: "academic-notice-class",
-      date: "16 Sep 2026",
+      date: "17 Feb 2027",
       audience: "Class",
-      audienceLabel: "IS 203 · Systems Analysis",
+      audienceLabel: "IS 304 · Project Management",
       offeringId: "off-is203-bsis-2a",
       title: "Sample class reading note",
       summary:
@@ -348,10 +353,10 @@ export const academicDemoData = {
   ] satisfies readonly AcademicAnnouncement[],
   attendanceHistory: [
     {
-      id: "attendance-is203-2026-09-18",
+      id: "attendance-is203-2027-02-19",
       offeringId: "off-is203-bsis-2a",
-      date: "2026-09-18",
-      savedOn: "2026-09-18",
+      date: "2027-02-19",
+      savedOn: "2027-02-19",
       records: sampleAttendanceRecords([
         "Present",
         "Present",
@@ -362,10 +367,10 @@ export const academicDemoData = {
       ]),
     },
     {
-      id: "attendance-is203-2026-09-11",
+      id: "attendance-is203-2027-02-12",
       offeringId: "off-is203-bsis-2a",
-      date: "2026-09-11",
-      savedOn: "2026-09-11",
+      date: "2027-02-12",
+      savedOn: "2027-02-12",
       records: sampleAttendanceRecords([
         "Absent",
         "Present",
@@ -376,10 +381,10 @@ export const academicDemoData = {
       ]),
     },
     {
-      id: "attendance-is203-2026-09-04",
+      id: "attendance-is203-2027-02-05",
       offeringId: "off-is203-bsis-2a",
-      date: "2026-09-04",
-      savedOn: "2026-09-04",
+      date: "2027-02-05",
+      savedOn: "2027-02-05",
       records: sampleAttendanceRecords([
         "Present",
         "Absent",
@@ -390,10 +395,10 @@ export const academicDemoData = {
       ]),
     },
     {
-      id: "attendance-is201-2026-09-18",
+      id: "attendance-is201-2027-02-19",
       offeringId: "off-is201-bsis-2a",
-      date: "2026-09-18",
-      savedOn: "2026-09-18",
+      date: "2027-02-19",
+      savedOn: "2027-02-19",
       records: sampleAttendanceRecords([
         "Present",
         "Present",
@@ -404,10 +409,10 @@ export const academicDemoData = {
       ]),
     },
     {
-      id: "attendance-is201-2026-09-11",
+      id: "attendance-is201-2027-02-12",
       offeringId: "off-is201-bsis-2a",
-      date: "2026-09-11",
-      savedOn: "2026-09-11",
+      date: "2027-02-12",
+      savedOn: "2027-02-12",
       records: sampleAttendanceRecords([
         "Late",
         "Present",
@@ -418,10 +423,10 @@ export const academicDemoData = {
       ]),
     },
     {
-      id: "attendance-ge201-2026-09-25",
+      id: "attendance-ge201-2027-02-26",
       offeringId: "off-ge201-bsis-2a",
-      date: "2026-09-25",
-      savedOn: "2026-09-25",
+      date: "2027-02-26",
+      savedOn: "2027-02-26",
       records: sampleAttendanceRecords([
         "Present",
         "Present",
@@ -432,10 +437,10 @@ export const academicDemoData = {
       ]),
     },
     {
-      id: "attendance-ge201-2026-09-18",
+      id: "attendance-ge201-2027-02-19",
       offeringId: "off-ge201-bsis-2a",
-      date: "2026-09-18",
-      savedOn: "2026-09-18",
+      date: "2027-02-19",
+      savedOn: "2027-02-19",
       records: sampleAttendanceRecords([
         "Present",
         "Late",
@@ -446,10 +451,10 @@ export const academicDemoData = {
       ]),
     },
     {
-      id: "attendance-is205-2026-09-24",
+      id: "attendance-is205-2027-02-25",
       offeringId: "off-is205-bsis-2a",
-      date: "2026-09-24",
-      savedOn: "2026-09-24",
+      date: "2027-02-25",
+      savedOn: "2027-02-25",
       records: sampleAttendanceRecords([
         "Present",
         "Present",
@@ -460,10 +465,10 @@ export const academicDemoData = {
       ]),
     },
     {
-      id: "attendance-is205-2026-09-17",
+      id: "attendance-is205-2027-02-18",
       offeringId: "off-is205-bsis-2a",
-      date: "2026-09-17",
-      savedOn: "2026-09-17",
+      date: "2027-02-18",
+      savedOn: "2027-02-18",
       records: sampleAttendanceRecords([
         "Present",
         "Present",
@@ -478,9 +483,9 @@ export const academicDemoData = {
     {
       offeringId: "off-is203-bsis-2a",
       status: "Draft",
-      updatedOn: "2026-09-24",
+      updatedOn: "2027-02-25",
       grades: {
-        "student-marvin": "1.50",
+        "student-primary": "1.50",
         "student-nina": "1.75",
         "student-paolo": "2.00",
         "student-ella": "1.75",
@@ -491,10 +496,10 @@ export const academicDemoData = {
     {
       offeringId: "off-is205-bsis-2a",
       status: "Submitted",
-      updatedOn: "2026-09-18",
-      submittedOn: "2026-09-18",
+      updatedOn: "2027-02-19",
+      submittedOn: "2027-02-19",
       grades: {
-        "student-marvin": "1.75",
+        "student-primary": "1.75",
         "student-nina": "2.00",
         "student-paolo": "1.50",
         "student-ella": "2.25",
@@ -505,9 +510,9 @@ export const academicDemoData = {
     {
       offeringId: "off-ge201-bsis-2a",
       status: "Draft",
-      updatedOn: "2026-09-23",
+      updatedOn: "2027-02-24",
       grades: {
-        "student-marvin": "1.50",
+        "student-primary": "1.50",
         "student-nina": "1.75",
         "student-paolo": "",
         "student-ella": "2.00",
@@ -518,9 +523,9 @@ export const academicDemoData = {
     {
       offeringId: "off-is201-bsis-2a",
       status: "Draft",
-      updatedOn: "2026-09-22",
+      updatedOn: "2027-02-23",
       grades: {
-        "student-marvin": "1.75",
+        "student-primary": "1.75",
         "student-nina": "1.50",
         "student-paolo": "2.00",
         "student-ella": "",
@@ -531,9 +536,9 @@ export const academicDemoData = {
     {
       offeringId: "off-pe202-bsis-2a",
       status: "Draft",
-      updatedOn: "2026-09-20",
+      updatedOn: "2027-02-21",
       grades: {
-        "student-marvin": "",
+        "student-primary": "",
         "student-nina": "",
         "student-paolo": "",
         "student-ella": "",
@@ -544,13 +549,13 @@ export const academicDemoData = {
   ] satisfies readonly AcademicGradeBook[],
   submissionHistory: [
     {
-      id: "submission-is205-2026-09-18",
+      id: "submission-is205-2027-02-19",
       offeringId: "off-is205-bsis-2a",
       facultyId: "faculty-rl",
       subjectId: "is205",
-      section: "BSIS-2A",
-      termLabel: "AY 2026–2027 · 1st Semester",
-      submittedOn: "2026-09-18",
+      section: "BSIS-3A",
+      termLabel: "AY 2026–2027 · 2nd Semester",
+      submittedOn: "2027-02-19",
       studentCount: 6,
       status: "Submitted",
     },

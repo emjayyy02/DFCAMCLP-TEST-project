@@ -8,7 +8,7 @@ export const operationsIdentity = {
 
 export const operationsTerm = {
   academicYear: "AY 2026–2027",
-  semester: "1st Semester",
+  semester: "2nd Semester",
 } as const;
 
 export const studentServiceCategories = [
@@ -76,15 +76,15 @@ export type OperationsActivity = {
 export const initialStudentServiceRequests: StudentServiceRequest[] = [
   {
     id: "SS-26041",
-    studentName: "Marvin Reyes",
+    studentName: "John Paul Reyes",
     studentId: "DEMO-STU-2026-0142",
     category: "General student assistance",
     campus: "IIT Campus",
-    createdOn: "26 Sep 2026",
+    createdOn: "26 Feb 2027",
     status: "New",
     message:
       "I have a question about where to ask for help with a campus service.",
-    history: [{ date: "26 Sep 2026", label: "Sample request received" }],
+    history: [{ date: "26 Feb 2027", label: "Sample request received" }],
   },
   {
     id: "SS-26038",

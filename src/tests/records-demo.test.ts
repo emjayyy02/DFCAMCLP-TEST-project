@@ -18,6 +18,13 @@ describe("P3-M5 Records demo fixtures", () => {
       initialStudents.some((item) => item.id === "DEMO-STU-2026-0142"),
     ).toBe(true);
     expect(
+      initialStudents.find((item) => item.id === "DEMO-STU-2026-0142"),
+    ).toMatchObject({
+      name: "John Paul Reyes",
+      year: "3rd Year",
+      term: "2026–2027 · 2nd Semester",
+    });
+    expect(
       initialApplicants.every(
         (item) => !initialStudents.some((student) => student.id === item.id),
       ),

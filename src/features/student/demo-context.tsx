@@ -9,11 +9,14 @@ import {
 } from "react";
 import type { StudentRequest } from "./demo-data";
 import { studentDemoData } from "./demo-data";
+import { useDemoProfilePhoto } from "@/components/ui/demo-profile-photo";
 
 type StudentDemoContextValue = {
   requests: StudentRequest[];
   addRequest: (document: StudentRequest["document"]) => void;
   cancelRequest: (requestId: string) => void;
+  profilePhoto: string | undefined;
+  setProfilePhoto: (file: File | null) => void;
 };
 
 const StudentDemoContext = createContext<StudentDemoContextValue | null>(null);
@@ -23,6 +26,7 @@ export function StudentDemoProvider({
 }: {
   children: React.ReactNode;
 }) {
+  const [profilePhoto, setProfilePhoto] = useDemoProfilePhoto();
   const [requests, setRequests] = useState<StudentRequest[]>(() =>
     studentDemoData.requests.map((request) => ({ ...request })),
   );
@@ -52,8 +56,14 @@ export function StudentDemoProvider({
   }, []);
 
   const value = useMemo(
-    () => ({ requests, addRequest, cancelRequest }),
-    [requests, addRequest, cancelRequest],
+    () => ({
+      requests,
+      addRequest,
+      cancelRequest,
+      profilePhoto,
+      setProfilePhoto,
+    }),
+    [requests, addRequest, cancelRequest, profilePhoto, setProfilePhoto],
   );
 
   return (

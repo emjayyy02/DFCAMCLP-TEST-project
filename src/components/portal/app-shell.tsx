@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useRef } from "react";
+import { useRef, type ReactNode } from "react";
 import type { PortalCode } from "@/lib/portals";
 import { portalDetails } from "@/lib/portals";
 import type { NavigationItem } from "@/server/access-control/navigation";
@@ -23,6 +23,7 @@ type AppShellProps = {
   currentPortal: PortalCode;
   memberships: MembershipSummary[];
   navigation: NavigationItem[];
+  navigationTools?: ReactNode;
   user: { name: string; email: string };
 };
 
@@ -140,7 +141,11 @@ function MobileDrawer({
   currentPortal,
   memberships,
   navigation,
-}: Pick<AppShellProps, "currentPortal" | "memberships" | "navigation">) {
+  navigationTools,
+}: Pick<
+  AppShellProps,
+  "currentPortal" | "memberships" | "navigation" | "navigationTools"
+>) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
@@ -201,6 +206,11 @@ function MobileDrawer({
             </button>
           </div>
           <div className="flex-1 overflow-y-auto px-4 py-5">
+            {navigationTools ? (
+              <div className="mb-5 border-b border-border pb-5">
+                {navigationTools}
+              </div>
+            ) : null}
             <Navigation items={navigation} onNavigate={closeDrawer} />
             {memberships.length > 1 ? (
               <section
@@ -260,11 +270,14 @@ export function AppShell({
   currentPortal,
   memberships,
   navigation,
+  navigationTools,
   user,
 }: AppShellProps) {
   const currentMembership = memberships.find(
     (membership) => membership.portal === currentPortal,
   );
+  const portalLabel = portalDetails[currentPortal].label;
+  const roleSummary = currentMembership?.roleLabels.join(", ");
 
   return (
     <div className="min-h-screen bg-background">
@@ -280,6 +293,7 @@ export function AppShell({
             currentPortal={currentPortal}
             memberships={memberships}
             navigation={navigation}
+            navigationTools={navigationTools}
           />
           <Link
             href={`/${portalDetails[currentPortal].slug}`}
@@ -314,13 +328,18 @@ export function AppShell({
       <div className="mx-auto grid min-h-[calc(100vh-4.0625rem)] w-full max-w-[100rem] lg:grid-cols-[16rem_minmax(0,1fr)]">
         <aside className="hidden border-r border-border bg-surface px-5 py-7 lg:block">
           <div className="mb-6 border-b border-border pb-5">
-            <p className="font-semibold">
-              {portalDetails[currentPortal].label}
-            </p>
-            <p className="mt-1 text-sm leading-6 text-muted-foreground">
-              {currentMembership?.roleLabels.join(", ")}
-            </p>
+            <p className="font-semibold">{portalLabel}</p>
+            {roleSummary && roleSummary !== portalLabel ? (
+              <p className="mt-1 text-sm leading-6 text-muted-foreground">
+                {roleSummary}
+              </p>
+            ) : null}
           </div>
+          {navigationTools ? (
+            <div className="mb-5 border-b border-border pb-5">
+              {navigationTools}
+            </div>
+          ) : null}
           <Navigation items={navigation} />
         </aside>
         <div className="min-w-0">

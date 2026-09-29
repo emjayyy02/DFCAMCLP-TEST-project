@@ -5,8 +5,14 @@ import { useRef, useState } from "react";
 import { StudentAcademics } from "./student-academics";
 import { PageHeader } from "@/components/portal/page-header";
 import { DemoNotice } from "@/components/ui/demo-notice";
+import { IdentitySummary } from "@/components/ui/identity";
+import { DemoProfilePhotoPicker } from "@/components/ui/demo-profile-photo";
 import { useStudentDemo } from "./demo-context";
-import { formatScheduleRange, studentDemoData } from "./demo-data";
+import {
+  formatScheduleRange,
+  formatScheduleTime,
+  studentDemoData,
+} from "./demo-data";
 import type { StudentRequest } from "./demo-data";
 import "./student.css";
 
@@ -817,7 +823,9 @@ function CalendarPage() {
             <ul className="student-calendar-event-list">
               {selectedEvents.map((event) => (
                 <li key={event.id}>
-                  <time>{event.time}</time>
+                  <time dateTime={event.time}>
+                    {formatScheduleTime(event.time)}
+                  </time>
                   <div>
                     <span
                       className="student-status"
@@ -846,6 +854,7 @@ function CalendarPage() {
 
 function ProfilePage() {
   const identity = studentDemoData.identity;
+  const { profilePhoto, setProfilePhoto } = useStudentDemo();
   const groups = [
     {
       title: "Personal",
@@ -873,9 +882,22 @@ function ProfilePage() {
       className="student-profile-page"
       aria-label="Read-only student profile"
     >
+      <div className="student-profile-identity">
+        <IdentitySummary
+          name={identity.fullName}
+          detail={`${identity.studentId} · ${identity.yearLevel} · ${identity.campus}`}
+          src={profilePhoto}
+          size="large"
+        />
+        <DemoProfilePhotoPicker
+          id="student-profile-photo"
+          hasPhoto={Boolean(profilePhoto)}
+          onSelect={setProfilePhoto}
+        />
+      </div>
       <p className="student-policy-note">
-        This sample identity is fictional and read-only. Student ID is separate
-        from any Applicant ID.
+        Fictional, read-only identity. The Student ID is separate from any
+        Applicant ID.
       </p>
       {groups.map((group) => (
         <section

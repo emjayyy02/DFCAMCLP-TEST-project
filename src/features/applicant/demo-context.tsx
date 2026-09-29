@@ -8,9 +8,11 @@ import {
   type ApplicationDraft,
   type ScenarioKey,
 } from "./demo-data";
+import { useDemoProfilePhoto } from "@/components/ui/demo-profile-photo";
 import "./applicant.css";
 
 function useDemoState() {
+  const [profilePhoto, setProfilePhoto] = useDemoProfilePhoto();
   const [scenario, setScenario] = useState<ScenarioKey>("documents");
   const [draft, setDraft] = useState<ApplicationDraft>({
     ...initialApplication,
@@ -25,6 +27,8 @@ function useDemoState() {
   return {
     scenario,
     setScenario,
+    profilePhoto,
+    setProfilePhoto,
     state: scenarios[scenario],
     draft,
     setDraft,

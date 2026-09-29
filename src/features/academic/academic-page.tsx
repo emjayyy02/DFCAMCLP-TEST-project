@@ -1409,8 +1409,8 @@ function ManagementView() {
         </p>
         <p className="academic-assumption">
           <strong>V1 ASSUMPTION</strong> · Sample students are assigned to the
-          BSIS-2A offerings shown here. Official enrollment synchronization and
-          assignment policy remain undefined.
+          current sample section offerings shown here. Official enrollment
+          synchronization and assignment policy remain undefined.
         </p>
       </section>
       <section
@@ -1419,7 +1419,7 @@ function ManagementView() {
       >
         <SectionHeading
           id="offering-assignment-title"
-          eyebrow="AY 2026–2027 · 1st Semester"
+          eyebrow={academicDemoData.term.label}
           title="Program offerings"
         />
         <label className="academic-search-label">

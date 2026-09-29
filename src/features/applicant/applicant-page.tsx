@@ -7,6 +7,8 @@ import { DemoNotice } from "@/components/ui/demo-notice";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckboxInput, Select } from "@/components/ui/input";
+import { IdentitySummary } from "@/components/ui/identity";
+import { DemoProfilePhotoPicker } from "@/components/ui/demo-profile-photo";
 import { ApplicationForm } from "./application-form";
 import { useApplicantDemo } from "./demo-context";
 import {
@@ -18,8 +20,6 @@ import {
   journeySteps,
   programDisplay,
   requirements,
-  scenarios,
-  type ScenarioKey,
 } from "./demo-data";
 import {
   DemoDocument,
@@ -29,40 +29,6 @@ import {
   ScheduleBlock,
   Tabs,
 } from "./shared";
-
-function DemoControls() {
-  const { scenario, setScenario } = useApplicantDemo();
-  return (
-    <DemoNotice
-      detail="Fictional applicant data · Changes reset on refresh"
-      action={
-        <details>
-          <summary>Preview scenarios</summary>
-          <div className="applicant-demo-controls">
-            <label htmlFor="applicant-scenario">Demo scenario</label>
-            <Select
-              id="applicant-scenario"
-              value={scenario}
-              onChange={(event) =>
-                setScenario(event.target.value as ScenarioKey)
-              }
-            >
-              {Object.entries(scenarios).map(([key, value]) => (
-                <option key={key} value={key}>
-                  {value.label}
-                </option>
-              ))}
-            </Select>
-            <p>
-              Switch the sample journey across all Applicant pages. No school
-              records change.
-            </p>
-          </div>
-        </details>
-      }
-    />
-  );
-}
 
 function Dashboard() {
   const { scenario, state, savedDraft } = useApplicantDemo();
@@ -588,20 +554,23 @@ function Announcements() {
 }
 
 function Profile() {
-  const { savedDraft, state } = useApplicantDemo();
+  const { savedDraft, state, profilePhoto, setProfilePhoto } =
+    useApplicantDemo();
+  const fullName = `${savedDraft.firstName} ${savedDraft.lastName}`;
   return (
     <section className="applicant-surface">
       <div className="applicant-profile-identity">
-        <span aria-hidden="true">
-          {savedDraft.firstName.slice(0, 1)}
-          {savedDraft.lastName.slice(0, 1)}
-        </span>
-        <div>
-          <h2>
-            {savedDraft.firstName} {savedDraft.lastName}
-          </h2>
-          <p>Sample applicant · {applicantIdentity.id}</p>
-        </div>
+        <IdentitySummary
+          name={fullName}
+          detail={`Sample applicant · ${applicantIdentity.id}`}
+          src={profilePhoto}
+          size="large"
+        />
+        <DemoProfilePhotoPicker
+          id="applicant-profile-photo"
+          hasPhoto={Boolean(profilePhoto)}
+          onSelect={setProfilePhoto}
+        />
       </div>
       <section className="applicant-review-group">
         <h3>Personal</h3>
@@ -673,7 +642,7 @@ export function ApplicantPage({
   return (
     <div className="applicant-experience">
       <PageHeader title={title} description={description} />
-      <DemoControls />
+      <DemoNotice detail="Fictional applicant data · Changes reset on refresh" />
       {section === "dashboard" ? (
         <Dashboard />
       ) : section === "application" ? (

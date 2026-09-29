@@ -1,5 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { studentDemoData } from "../features/student/demo-data";
+import {
+  formatScheduleTime,
+  studentDemoData,
+} from "../features/student/demo-data";
 import {
   academicDemoData,
   countAttendanceRecords,
@@ -13,6 +16,42 @@ import { permittedNavigation } from "../server/access-control/navigation";
 import { rolePermissionSeed } from "../server/access-control/seed-data";
 
 describe("Academic portal sample experience", () => {
+  it("keeps the fictional Student identity and current academic context coherent", () => {
+    expect(studentDemoData.identity.fullName).toBe("John Paul Reyes");
+    expect(studentDemoData.identity.yearLevel).toBe("3rd Year");
+    expect(studentDemoData.term).toMatchObject({
+      academicYear: "2026–2027",
+      semester: "2nd Semester",
+      section: "BSIS-3A",
+    });
+    expect(
+      studentDemoData.curriculum.find(
+        (term) => term.year === "3rd Year" && term.semester === "2nd Semester",
+      )?.status,
+    ).toBe("Current");
+
+    const termKeys = new Set(
+      studentDemoData.grades.map(
+        (item) => `${item.academicYear} · ${item.semester}`,
+      ),
+    );
+    expect(termKeys.size).toBeGreaterThanOrEqual(6);
+    expect(
+      studentDemoData.grades
+        .filter(
+          (item) =>
+            item.academicYear === studentDemoData.term.academicYear &&
+            item.semester === studentDemoData.term.semester,
+        )
+        .every(
+          (item) => item.grade === null && item.status === "Not yet released",
+        ),
+    ).toBe(true);
+    expect(formatScheduleTime("00:30")).toMatch(/12:30\s*AM/i);
+    expect(formatScheduleTime("12:00")).toMatch(/12:00\s*PM/i);
+    expect(formatScheduleTime("13:45")).toMatch(/1:45\s*PM/i);
+  });
+
   it("keeps academic course offerings aligned with the Student demo schedule", () => {
     expect(academicDemoData.term.academicYear).toBe(
       studentDemoData.term.academicYear,

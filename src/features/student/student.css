@@ -1104,6 +1104,18 @@
   margin: 0;
 }
 
+.student-profile-identity {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.8fr);
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+}
+
 .student-profile-group {
   padding: 1.25rem 1.4rem;
 }
@@ -1414,6 +1426,11 @@
 
   .student-profile-page > .student-policy-note {
     grid-column: auto;
+  }
+
+  .student-profile-identity {
+    grid-column: auto;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .student-enrollment-summary,
