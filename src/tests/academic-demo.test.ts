@@ -105,8 +105,12 @@ describe("Academic portal sample experience", () => {
 
   it("keeps sample roster and attendance records complete", () => {
     for (const offering of academicDemoData.offerings) {
-      expect(getOfferingRoster(offering.id)).toHaveLength(
-        offering.studentIds.length,
+      const roster = getOfferingRoster(offering.id);
+      expect(roster).toHaveLength(offering.studentIds.length);
+      expect(roster.map((student) => student.name)).toEqual(
+        [...roster.map((student) => student.name)].sort((a, b) =>
+          a.localeCompare(b, "en", { sensitivity: "base" }),
+        ),
       );
     }
     for (const session of academicDemoData.attendanceHistory) {

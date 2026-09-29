@@ -80,6 +80,15 @@ export default async function PortalFoundationPage({
               ? query.from
               : undefined
         }
+        listState={{
+          search: typeof query.search === "string" ? query.search : undefined,
+          campus: typeof query.campus === "string" ? query.campus : undefined,
+          program:
+            typeof query.program === "string" ? query.program : undefined,
+          stage: typeof query.stage === "string" ? query.stage : undefined,
+          year: typeof query.year === "string" ? query.year : undefined,
+          sort: typeof query.sort === "string" ? query.sort : undefined,
+        }}
       />
     );
   }

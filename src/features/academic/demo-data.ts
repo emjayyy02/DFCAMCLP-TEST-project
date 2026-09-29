@@ -590,9 +590,13 @@ export function getFaculty(facultyId: string) {
 export function getOfferingRoster(offeringId: string) {
   const offering = getOffering(offeringId);
   if (!offering) return [];
-  return academicDemoData.students.filter((student) =>
-    offering.studentIds.includes(student.id),
-  );
+  return academicDemoData.students
+    .filter((student) => offering.studentIds.includes(student.id))
+    .sort(
+      (a, b) =>
+        a.name.localeCompare(b.name, "en", { sensitivity: "base" }) ||
+        a.studentId.localeCompare(b.studentId),
+    );
 }
 
 export function getOfferingsForFaculty(facultyId: string) {

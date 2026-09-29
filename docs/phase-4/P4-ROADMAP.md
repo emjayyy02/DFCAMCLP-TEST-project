@@ -1,6 +1,6 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 complete; P4-M2 PASS / COMPLETE; P4-M3 PASS / COMPLETE; P4-M4 PASS / COMPLETE; P4-M5 next.** This roadmap allocates work; only an explicit milestone instruction authorizes implementation. Visual and behavioral decisions are owned by [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) and [P4-UX-RULES.md](P4-UX-RULES.md). Product authority, evidence limits, and U1–U10 gates are in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 complete; P4-M2 PASS / COMPLETE; P4-M3 PASS / COMPLETE; P4-M4 PASS / COMPLETE; P4-M5 PASS / COMPLETE; P4-M6 next.** This roadmap allocates work; only an explicit milestone instruction authorizes implementation. Visual and behavioral decisions are owned by [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) and [P4-UX-RULES.md](P4-UX-RULES.md). Product authority, evidence limits, and U1–U10 gates are in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 
@@ -254,7 +254,13 @@ Source: [PHASE-4-MANUAL-AUDIT.md](PHASE-4-MANUAL-AUDIT.md). Each row has one pri
 ### P4-M4 completion — 29 September 2026
 
 - P4-M4 is **PASS / COMPLETE**. See [P4-M4-APPLICANT-STUDENT-REFINEMENT.md](P4-M4-APPLICANT-STUDENT-REFINEMENT.md) for implementation details, review evidence, limitations, and validation results.
-- P4-M1, P4-M2, and P4-M3 remain complete. P4-M5 is next and **has not started**.
+- At the P4-M4 handoff, P4-M1 through P4-M4 were complete and P4-M5 was next.
 - No database reset, credential synchronization, commit, push, or deployment was performed for P4-M4.
 
-**Stop after P4-M4. P4-M5 is not started.**
+### P4-M5 implementation and acceptance — 29 September 2026
+
+- Academic and Admissions & Records implementation is documented in [P4-M5-ACADEMIC-RECORDS-REFINEMENT.md](P4-M5-ACADEMIC-RECORDS-REFINEMENT.md).
+- Frontend, database, authentication, access-control, lint, targeted format, direct TypeScript, and isolated Webpack production-build checks pass. Faculty, Program Coordinator, and Records Staff browser acceptance passed at mobile, tablet, and desktop widths. P4-M5 is **PASS / COMPLETE**.
+- P4-M6 is next and **has not started**.
+
+**Stop after P4-M5. Do not begin P4-M6.**

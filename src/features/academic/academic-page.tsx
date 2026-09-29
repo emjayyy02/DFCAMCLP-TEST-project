@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { PageHeader } from "@/components/portal/page-header";
+import { ContextHeader } from "@/components/ui/context-header";
 import { DemoNotice } from "@/components/ui/demo-notice";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useAcademicDemo } from "./demo-context";
@@ -45,8 +46,85 @@ function courseLabel(offering: AcademicOffering) {
   return subject ? `${subject.code} · ${subject.title}` : "Sample offering";
 }
 
+function announcementDateIso(value: string) {
+  const [day, monthName, year] = value.split(" ");
+  const month = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ].indexOf(monthName);
+  if (month < 0) return "";
+  return `${year}-${String(month + 1).padStart(2, "0")}-${day.padStart(2, "0")}`;
+}
+
 function courseHref(section: string, offeringId: string) {
   return `/academic/${section}?offering=${encodeURIComponent(offeringId)}`;
+}
+
+function OfferingSubnav({
+  offering,
+  active,
+  canTeach,
+}: {
+  offering: AcademicOffering;
+  active: "classes" | "attendance" | "grades";
+  canTeach: boolean;
+}) {
+  const links = [
+    { section: "classes" as const, label: "Class details" },
+    ...(canTeach
+      ? [
+          { section: "attendance" as const, label: "Attendance" },
+          { section: "grades" as const, label: "Grades" },
+        ]
+      : []),
+  ];
+  return (
+    <nav className="academic-offering-subnav" aria-label="Class views">
+      {links.map((item) => (
+        <Link
+          key={item.section}
+          className={active === item.section ? "is-current" : undefined}
+          href={courseHref(item.section, offering.id)}
+          aria-current={active === item.section ? "page" : undefined}
+        >
+          {item.label}
+        </Link>
+      ))}
+    </nav>
+  );
+}
+
+function OfferingContext({
+  offering,
+  active,
+  canTeach,
+}: {
+  offering: AcademicOffering;
+  active: "attendance" | "grades";
+  canTeach: boolean;
+}) {
+  return (
+    <div className="academic-offering-context">
+      <div>
+        <h2>{courseLabel(offering)}</h2>
+        <p>
+          {offering.section} · {offering.program} · {offering.campus} ·{" "}
+          {academicDemoData.term.label}
+        </p>
+      </div>
+      <OfferingSubnav offering={offering} active={active} canTeach={canTeach} />
+    </div>
+  );
 }
 
 const sectionDescriptions: Record<string, string> = {
@@ -193,7 +271,10 @@ function DashboardView({ isCoordinator }: { isCoordinator: boolean }) {
               <dd>{coordinatorCounts.students}</dd>
             </div>
           </dl>
-          <Link href="/academic/management">
+          <Link
+            className="academic-button academic-button-secondary academic-button-compact"
+            href="/academic/management"
+          >
             Review program offerings <span aria-hidden="true">→</span>
           </Link>
         </section>
@@ -230,7 +311,7 @@ function DashboardView({ isCoordinator }: { isCoordinator: boolean }) {
                       </span>
                     </div>
                     <Link
-                      className="academic-row-action"
+                      className="academic-button academic-button-secondary academic-button-compact"
                       href={courseHref("attendance", offering.id)}
                     >
                       Attendance
@@ -276,7 +357,10 @@ function DashboardView({ isCoordinator }: { isCoordinator: boolean }) {
                     </strong>
                     <span>{courseLabel(offering)}</span>
                   </div>
-                  <Link href={courseHref("grades", offering.id)}>
+                  <Link
+                    className="academic-button academic-button-secondary academic-button-compact"
+                    href={courseHref("grades", offering.id)}
+                  >
                     {book?.status === "Submitted" ? "View" : "Open grades"}
                   </Link>
                   <div>
@@ -290,6 +374,7 @@ function DashboardView({ isCoordinator }: { isCoordinator: boolean }) {
                     </span>
                   </div>
                   <Link
+                    className="academic-button academic-button-secondary academic-button-compact"
                     href={`/academic/attendance?offering=${encodeURIComponent(offering.id)}&date=${today.date}`}
                   >
                     {attendanceSaved ? "Review" : "Take attendance"}
@@ -389,7 +474,6 @@ function TeachingView({
       : getAssignedOfferings(isCoordinator);
   const selected = offerings.find((item) => item.id === offeringId);
   if (selected) {
-    const subject = getSubject(selected.subjectId);
     const faculty = getFaculty(selected.facultyId);
     const students = getOfferingRoster(selected.id);
     const canTeachOffering =
@@ -404,24 +488,7 @@ function TeachingView({
     );
     return (
       <div className="academic-view">
-        <Link className="academic-back-link" href="/academic/classes">
-          ← All teaching
-        </Link>
         <section className="academic-panel academic-class-detail">
-          <div className="academic-detail-title">
-            <div>
-              <p className="academic-eyebrow">
-                {selected.section} · {selected.program}
-              </p>
-              <h2>
-                {subject?.code} · {subject?.title}
-              </h2>
-              <p>{academicDemoData.term.label}</p>
-            </div>
-            <span className="academic-detail-units">
-              {subject?.units} units
-            </span>
-          </div>
           <dl className="academic-facts-grid">
             <div>
               <dt>Instructor</dt>
@@ -564,7 +631,7 @@ function TeachingView({
                   </span>
                 </div>
                 <Link
-                  className="academic-offering-open"
+                  className="academic-button academic-button-secondary academic-button-compact academic-offering-open"
                   href={courseHref("classes", offering.id)}
                 >
                   Open class <span aria-hidden="true">→</span>
@@ -578,6 +645,24 @@ function TeachingView({
           There are no sample offerings assigned to this account.
         </p>
       )}
+    </section>
+  );
+}
+
+function UnavailableOffering() {
+  return (
+    <section className="academic-panel">
+      <h2>Offering unavailable</h2>
+      <p className="academic-intro">
+        This offering is not available in your current teaching list. Return to
+        Teaching and choose an assigned class.
+      </p>
+      <Link
+        className="academic-button academic-button-secondary"
+        href="/academic/classes"
+      >
+        Return to Teaching
+      </Link>
     </section>
   );
 }
@@ -599,9 +684,13 @@ function AttendanceView({
   date?: string;
 }) {
   const offerings = getAssignedOfferings(isCoordinator);
+  const invalidOffering =
+    Boolean(offeringId) && !offerings.some((item) => item.id === offeringId);
   const [selectedId, setSelectedId] = useState(
-    offerings.some((item) => item.id === offeringId)
-      ? offeringId!
+    offeringId
+      ? offerings.some((item) => item.id === offeringId)
+        ? offeringId
+        : ""
       : (offerings[0]?.id ?? ""),
   );
   const selectedOffering = offerings.find((item) => item.id === selectedId);
@@ -662,6 +751,8 @@ function AttendanceView({
     setSavedNotice(true);
   }
 
+  if (invalidOffering) return <UnavailableOffering />;
+
   return (
     <div className="academic-view">
       <section
@@ -711,9 +802,14 @@ function AttendanceView({
               </label>
             </div>
             {selectedOffering ? (
+              <OfferingContext
+                offering={selectedOffering}
+                active="attendance"
+                canTeach
+              />
+            ) : null}
+            {selectedOffering ? (
               <div className="academic-meeting-context">
-                <span>{selectedOffering.campus}</span>
-                <span>{selectedOffering.section}</span>
                 <span>
                   {selectedMeeting
                     ? `${selectedMeeting.day} · ${selectedOffering.schedule.find((slot) => slot.day === selectedMeeting.day)?.room ?? "Scheduled meeting"}`
@@ -966,9 +1062,13 @@ function GradesView({
   offeringId?: string;
 }) {
   const offerings = getAssignedOfferings(isCoordinator);
+  const invalidOffering =
+    Boolean(offeringId) && !offerings.some((item) => item.id === offeringId);
   const [selectedId, setSelectedId] = useState(
-    offerings.some((item) => item.id === offeringId)
-      ? offeringId!
+    offeringId
+      ? offerings.some((item) => item.id === offeringId)
+        ? offeringId
+        : ""
       : (offerings[0]?.id ?? ""),
   );
   const [reviewOpen, setReviewOpen] = useState(false);
@@ -1010,6 +1110,8 @@ function GradesView({
     setReviewOpen(false);
     setSubmittedNotice(true);
   }
+
+  if (invalidOffering) return <UnavailableOffering />;
 
   return (
     <div className="academic-view">
@@ -1059,6 +1161,9 @@ function GradesView({
                 ) : null}
               </div>
             </div>
+            {offering ? (
+              <OfferingContext offering={offering} active="grades" canTeach />
+            ) : null}
             {isSubmitted ? (
               <div className="academic-inline-confirmation" role="status">
                 This sample grade list has been submitted and is locked. Student
@@ -1320,17 +1425,24 @@ function AnnouncementsView({ isCoordinator }: { isCoordinator: boolean }) {
   const filters = ["All notices", "Campus", "Program", "Section", "Class"];
   const visible = useMemo(
     () =>
-      academicDemoData.announcements.filter((announcement) => {
-        const audienceMatches =
-          filter === "All notices" || announcement.audience === filter;
-        const classMatches =
-          !announcement.offeringId ||
-          facultyOfferings.some(
-            (offering) => offering.id === announcement.offeringId,
-          ) ||
-          isCoordinator;
-        return audienceMatches && classMatches;
-      }),
+      academicDemoData.announcements
+        .filter((announcement) => {
+          const audienceMatches =
+            filter === "All notices" || announcement.audience === filter;
+          const classMatches =
+            !announcement.offeringId ||
+            facultyOfferings.some(
+              (offering) => offering.id === announcement.offeringId,
+            ) ||
+            isCoordinator;
+          return audienceMatches && classMatches;
+        })
+        .sort(
+          (a, b) =>
+            announcementDateIso(b.date).localeCompare(
+              announcementDateIso(a.date),
+            ) || a.id.localeCompare(b.id),
+        ),
     [facultyOfferings, filter, isCoordinator],
   );
   return (
@@ -1366,11 +1478,18 @@ function AnnouncementsView({ isCoordinator }: { isCoordinator: boolean }) {
       </div>
       {visible.length ? (
         <div className="academic-announcement-list">
-          {visible.map((item: AcademicAnnouncement) => (
-            <article key={item.id}>
+          {visible.map((item: AcademicAnnouncement, index) => (
+            <article
+              key={item.id}
+              className={
+                index === 0 ? "academic-announcement-featured" : undefined
+              }
+            >
               <div className="academic-announcement-meta">
                 <span>{item.audienceLabel}</span>
-                <time>{item.date}</time>
+                <time dateTime={announcementDateIso(item.date)}>
+                  {item.date}
+                </time>
               </div>
               <h3>{item.title}</h3>
               <p>{item.summary}</p>
@@ -1465,7 +1584,10 @@ function ManagementView() {
                     <dd>{getOfferingRoster(offering.id).length} students</dd>
                   </div>
                 </dl>
-                <Link href={courseHref("classes", offering.id)}>
+                <Link
+                  className="academic-button academic-button-secondary academic-button-compact"
+                  href={courseHref("classes", offering.id)}
+                >
                   View teaching details <span aria-hidden="true">→</span>
                 </Link>
               </article>
@@ -1522,6 +1644,23 @@ export function AcademicPage({
   offeringId,
   date,
 }: AcademicPageProps) {
+  const classDetailOfferings =
+    isCoordinator && offeringId
+      ? academicDemoData.offerings
+      : getAssignedOfferings(isCoordinator);
+  const selectedClassOffering =
+    section === "classes" && offeringId
+      ? classDetailOfferings.find((item) => item.id === offeringId)
+      : undefined;
+  const selectedClassCanTeach = selectedClassOffering
+    ? selectedClassOffering.facultyId ===
+      (isCoordinator
+        ? academicDemoData.identities.coordinator.facultyId
+        : academicDemoData.identities.faculty.facultyId)
+    : false;
+  const roleContext = isCoordinator
+    ? "Program coordinator workspace"
+    : "Faculty workspace";
   let view: React.ReactNode;
   switch (section) {
     case "classes":
@@ -1554,13 +1693,46 @@ export function AcademicPage({
   }
   return (
     <div className="academic-page">
-      <PageHeader
-        title={sectionTitles[section] ?? "Academic portal"}
-        description={
-          sectionDescriptions[section] ?? sectionDescriptions.dashboard
-        }
-        eyebrow={`${academicDemoData.term.academicYear} · ${academicDemoData.term.semester}`}
-      />
+      {selectedClassOffering ? (
+        <ContextHeader
+          parent="Academic"
+          parentHref="/academic"
+          title={courseLabel(selectedClassOffering)}
+          metadata={
+            <div className="academic-page-context">
+              <span>{selectedClassOffering.section}</span>
+              <span>{selectedClassOffering.program}</span>
+              <span>{selectedClassOffering.campus}</span>
+              <span>{academicDemoData.term.label}</span>
+              <span>{roleContext}</span>
+            </div>
+          }
+          backHref={
+            isCoordinator ? "/academic/management" : "/academic/classes"
+          }
+          backLabel={isCoordinator ? "Program overview" : "All teaching"}
+          actions={
+            <OfferingSubnav
+              offering={selectedClassOffering}
+              active="classes"
+              canTeach={selectedClassCanTeach}
+            />
+          }
+        />
+      ) : (
+        <PageHeader
+          title={sectionTitles[section] ?? "Academic portal"}
+          description={
+            sectionDescriptions[section] ?? sectionDescriptions.dashboard
+          }
+          context={
+            <div className="academic-page-context">
+              <span>{roleContext}</span>
+              <span>{academicDemoData.term.label}</span>
+            </div>
+          }
+        />
+      )}
       <DemoNotice detail="Fictional academic records · Changes reset on refresh" />
       {view}
     </div>

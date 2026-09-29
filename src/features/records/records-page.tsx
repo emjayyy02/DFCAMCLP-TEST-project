@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import { PageHeader } from "@/components/portal/page-header";
+import { ContextHeader } from "@/components/ui/context-header";
 import { Badge } from "@/components/ui/badge";
 import { DemoNotice } from "@/components/ui/demo-notice";
 import { EmptyState as SharedEmptyState } from "@/components/ui/states";
+import { ListToolbar, SortControl } from "@/components/ui/list-toolbar";
 import { useEffect, useMemo, useState } from "react";
 import { useRecordsDemo } from "./demo-context";
 import {
@@ -13,10 +15,42 @@ import {
   nextEnrollmentStep,
   validSampleSchedule,
   type ApplicantRecord,
+  type StudentRecord,
 } from "./demo-data";
+import {
+  canonicalCampuses,
+  canonicalPrograms,
+  canonicalYearLevels,
+  matchesApplicantSearch,
+  matchesDcatSearch,
+  matchesDocumentSearch,
+  matchesRequirementsSearch,
+  matchesStudentSearch,
+  sortApplicants,
+  sortDcatRecords,
+  sortDocumentRecords,
+  sortStudents,
+  type DirectorySort,
+  type DcatSort,
+  type DocumentSort,
+  type StudentSort,
+} from "./list-utils";
 import "./records.css";
 
-type Props = { section: string; recordId?: string; queue?: string };
+type Props = {
+  section: string;
+  recordId?: string;
+  queue?: string;
+  listState?: DirectoryState;
+};
+type DirectoryState = {
+  search?: string;
+  campus?: string;
+  program?: string;
+  stage?: string;
+  year?: string;
+  sort?: string;
+};
 const titles: Record<string, string> = {
   dashboard: "Admissions & Records",
   applicants: "Applicants",
@@ -29,11 +63,12 @@ const descriptions: Record<string, string> = {
   dashboard: "Work queues for sample admissions and student records.",
   applicants:
     "Find an application, review its stage, and check physical requirements.",
-  dcat: "Schedule eligible applicants and record sample result states.",
+  dcat: "Schedule the DFCAMCLP College Admission Test (DCAT) for eligible applicants and record sample results.",
   students: "Read existing sample student records and enrollment documents.",
   enrollment:
     "Follow qualified applicants through the sample Registrar sequence.",
-  documents: "Review sample COE and COR availability and issuance.",
+  documents:
+    "Review sample Certificate of Enrollment (COE) and Certificate of Registration (COR) availability and issuance.",
 };
 const detailTabs = [
   "Overview",
@@ -45,7 +80,30 @@ const detailTabs = [
 type DetailTab = (typeof detailTabs)[number];
 
 function Status({ children }: { children: string }) {
-  return <Badge tone="neutral">{children}</Badge>;
+  const tone = [
+    "Verified",
+    "Passed",
+    "Enrolled",
+    "Issued",
+    "Active Student",
+  ].includes(children)
+    ? "success"
+    : ["Needs Attention", "Pending"].includes(children)
+      ? "warning"
+      : [
+            "Awaiting Exam",
+            "Awaiting Result",
+            "Eligible for DCAT",
+            "DCAT scheduled",
+            "For Enrollment",
+            "Registrar Submission",
+            "Available",
+            "COE Available",
+            "COR Available",
+          ].includes(children)
+        ? "info"
+        : "neutral";
+  return <Badge tone={tone}>{children}</Badge>;
 }
 function Empty({
   title = "No matching records",
@@ -56,13 +114,46 @@ function Empty({
 }) {
   return <SharedEmptyState title={title} description={detail} />;
 }
-function Heading({ section }: { section: string }) {
+function Heading({
+  section,
+  record,
+  backHref,
+}: {
+  section: string;
+  record?: ApplicantRecord | StudentRecord;
+  backHref?: string;
+}) {
   return (
     <>
-      <PageHeader
-        title={titles[section] ?? titles.dashboard}
-        description={descriptions[section] ?? descriptions.dashboard}
-      />
+      {record ? (
+        <ContextHeader
+          parent="Admissions & Records"
+          parentHref="/records"
+          title={record.name}
+          metadata={
+            <div className="records-context-metadata">
+              <span>
+                {"submitted" in record ? "Applicant ID" : "Student ID"}:{" "}
+                {record.id}
+              </span>
+              <span>{record.campus}</span>
+              <span>{record.program}</span>
+              <Status>
+                {"submitted" in record ? record.stage : record.standing}
+              </Status>
+            </div>
+          }
+          backHref={backHref}
+          backLabel={
+            section === "applicants" ? "Back to applicants" : "Back to students"
+          }
+        />
+      ) : (
+        <PageHeader
+          title={titles[section] ?? titles.dashboard}
+          description={descriptions[section] ?? descriptions.dashboard}
+        />
+      )}
       <DemoNotice detail="Fictional records · Changes reset on refresh" />
     </>
   );
@@ -114,9 +205,9 @@ function Dashboard() {
           />
           <QueueLink
             href="/records/dcat?queue=scheduling"
-            label="DCAT scheduling"
+            label="Admission test scheduling"
             count={counts.scheduling}
-            detail="Eligible, awaiting a sample schedule"
+            detail="Eligible applicants awaiting a sample DFCAMCLP College Admission Test (DCAT) schedule"
           />
           <QueueLink
             href="/records/dcat?queue=results"
@@ -134,7 +225,7 @@ function Dashboard() {
             href="/records/documents?queue=available"
             label="Documents available"
             count={counts.documents}
-            detail="Sample COE or COR ready to issue"
+            detail="Sample enrollment or registration documents ready to issue"
           />
         </div>
       </section>
@@ -166,21 +257,33 @@ function Dashboard() {
   );
 }
 
+function basicSearchMatch<T extends { id: string; name: string }>(
+  item: T,
+  query: string,
+) {
+  return `${item.id} ${item.name}`
+    .toLowerCase()
+    .includes(query.trim().toLowerCase());
+}
+
 function useFilters<
   T extends { id: string; name: string; campus: string; program: string },
->(items: T[]) {
-  const [search, setSearch] = useState("");
-  const [campus, setCampus] = useState("");
-  const [program, setProgram] = useState("");
-  const [stage, setStage] = useState("");
-  const campuses = [...new Set(items.map((item) => item.campus))];
-  const programs = [...new Set(items.map((item) => item.program))];
+>(
+  items: T[],
+  initial: DirectoryState = {},
+  searchMatch: (item: T, query: string) => boolean = basicSearchMatch,
+) {
+  const [search, setSearch] = useState(initial.search ?? "");
+  const [campus, setCampus] = useState(initial.campus ?? "");
+  const [program, setProgram] = useState(initial.program ?? "");
+  const [stage, setStage] = useState(initial.stage ?? "");
+  const campuses = canonicalCampuses;
+  const programs = canonicalPrograms;
   const filtered = useMemo(
     () =>
       items.filter((item) => {
-        const text = `${item.id} ${item.name}`.toLowerCase();
         return (
-          text.includes(search.trim().toLowerCase()) &&
+          searchMatch(item, search) &&
           (!campus || item.campus === campus) &&
           (!program || item.program === program) &&
           (!stage ||
@@ -188,7 +291,7 @@ function useFilters<
             ("standing" in item && item.standing === stage))
         );
       }),
-    [items, search, campus, program, stage],
+    [items, search, campus, program, stage, searchMatch],
   );
   return {
     search,
@@ -216,6 +319,7 @@ function Filters({
   searchLabel,
   stageLabel = "Stage",
   yearFilter,
+  onClear,
 }: {
   filters: Omit<ReturnType<typeof useFilters<ApplicantRecord>>, "filtered">;
   stages?: string[];
@@ -226,6 +330,7 @@ function Filters({
     value: string;
     set: (value: string) => void;
   };
+  onClear?: () => void;
 }) {
   return (
     <div
@@ -234,6 +339,7 @@ function Filters({
       <label>
         Search<span className="sr-only"> {searchLabel}</span>
         <input
+          type="search"
           value={filters.search}
           onChange={(event) => filters.setSearch(event.target.value)}
           placeholder={searchLabel}
@@ -298,6 +404,7 @@ function Filters({
         onClick={() => {
           filters.clear();
           yearFilter?.set("");
+          onClear?.();
         }}
         type="button"
       >
@@ -306,12 +413,53 @@ function Filters({
     </div>
   );
 }
+
+const directoryStateKeys = [
+  "search",
+  "campus",
+  "program",
+  "stage",
+  "year",
+  "sort",
+] as const;
+
+function buildDirectoryHref(
+  section: "applicants" | "students",
+  state: DirectoryState,
+  recordId?: string,
+  from?: string,
+) {
+  const params = new URLSearchParams();
+  for (const key of directoryStateKeys) {
+    const value = state[key];
+    if (value) params.set(key, value);
+  }
+  if (recordId) params.set("record", recordId);
+  if (from) params.set("from", from);
+  const query = params.toString();
+  return `/records/${section}${query ? `?${query}` : ""}`;
+}
+
+function isDirectorySort(value: string | undefined): value is DirectorySort {
+  return (
+    value === "attention" ||
+    value === "oldest" ||
+    value === "newest" ||
+    value === "name"
+  );
+}
+
+function isStudentSort(value: string | undefined): value is StudentSort {
+  return value === "name" || value === "id" || value === "year";
+}
 function ApplicantRows({
   records,
   from,
+  state,
 }: {
   records: ApplicantRecord[];
   from: string;
+  state: DirectoryState;
 }) {
   if (!records.length) return <Empty />;
   return (
@@ -347,9 +495,14 @@ function ApplicantRows({
                 <td>
                   <Link
                     className="records-row-link"
-                    href={`/records/applicants?record=${encodeURIComponent(record.id)}&from=${from}`}
+                    href={buildDirectoryHref(
+                      "applicants",
+                      state,
+                      record.id,
+                      from,
+                    )}
                   >
-                    Open record
+                    Open {record.name}
                   </Link>
                 </td>
               </tr>
@@ -362,7 +515,7 @@ function ApplicantRows({
           <Link
             className="records-mobile-row"
             key={record.id}
-            href={`/records/applicants?record=${encodeURIComponent(record.id)}&from=${from}`}
+            href={buildDirectoryHref("applicants", state, record.id, from)}
           >
             <strong>{record.name}</strong>
             <small>
@@ -377,17 +530,39 @@ function ApplicantRows({
     </>
   );
 }
-function Applicants({ queue }: { queue?: string }) {
+function Applicants({
+  queue,
+  initialState,
+}: {
+  queue?: string;
+  initialState?: DirectoryState;
+}) {
   const { applicants } = useRecordsDemo();
-  const filters = useFilters(applicants);
+  const filters = useFilters(
+    applicants,
+    initialState,
+    queue === "requirements"
+      ? matchesRequirementsSearch
+      : matchesApplicantSearch,
+  );
+  const defaultSort: DirectorySort =
+    queue === "requirements" ? "attention" : "newest";
+  const [sort, setSort] = useState<DirectorySort>(
+    isDirectorySort(initialState?.sort) ? initialState.sort : defaultSort,
+  );
   const stages = [...new Set(applicants.map((item) => item.stage))];
-  const records = filters.filtered.filter(
+  const queueRecords = applicants.filter(
     (item) =>
       queue !== "requirements" ||
       item.requirements.some(
         (requirement) => requirement.status !== "Verified",
       ),
   );
+  const records = sortApplicants(
+    filters.filtered.filter((item) => queueRecords.includes(item)),
+    sort,
+  );
+  const state = { ...filters, sort };
   return (
     <section className="records-panel">
       <div className="records-panel-head">
@@ -405,40 +580,65 @@ function Applicants({ queue }: { queue?: string }) {
         </div>
         {queue && <Link href="/records/applicants">All applicants</Link>}
       </div>
-      <Filters
-        filters={filters}
-        stages={stages}
-        searchLabel="Name or Applicant ID"
+      <ListToolbar
+        filters={
+          <Filters
+            filters={filters}
+            stages={stages}
+            searchLabel={
+              queue === "requirements"
+                ? "Name, ID, email, campus, program, stage, requirement or status"
+                : "Name, ID, email, campus, program or stage"
+            }
+            onClear={() => setSort(defaultSort)}
+          />
+        }
+        count={
+          <span role="status" aria-live="polite" aria-atomic="true">
+            {records.length} of {queueRecords.length} applicants shown
+          </span>
+        }
+        sort={
+          <SortControl
+            id="applicant-sort"
+            value={sort}
+            onChange={(value) => isDirectorySort(value) && setSort(value)}
+            options={
+              queue === "requirements"
+                ? [
+                    { value: "attention", label: "Attention, then oldest" },
+                    { value: "oldest", label: "Oldest submission" },
+                    { value: "newest", label: "Newest submission" },
+                    { value: "name", label: "Name A–Z" },
+                  ]
+                : [
+                    { value: "newest", label: "Newest submission" },
+                    { value: "oldest", label: "Oldest submission" },
+                    { value: "name", label: "Name A–Z" },
+                  ]
+            }
+          />
+        }
       />
-      <p
-        className="records-result-count"
-        role="status"
-        aria-live="polite"
-        aria-atomic="true"
-      >
-        {records.length} of {applicants.length} applicants shown
-      </p>
       <ApplicantRows
         records={records}
         from={queue === "requirements" ? "requirements" : "applicants"}
+        state={state}
       />
     </section>
   );
 }
 
-function RecordDetail({
-  record,
-  from,
-}: {
-  record: ApplicantRecord;
-  from?: string;
-}) {
+function RecordDetail({ record }: { record: ApplicantRecord }) {
   const { setRequirement, feedback } = useRecordsDemo();
   const [tab, setTab] = useState<DetailTab>("Overview");
-  const back =
-    from === "requirements"
-      ? "/records/applicants?queue=requirements"
-      : "/records/applicants";
+  const activeTabId = `applicant-tab-${tab.toLowerCase()}`;
+  const panelProps = {
+    id: "applicant-panel",
+    role: "tabpanel" as const,
+    tabIndex: 0,
+    "aria-labelledby": activeTabId,
+  };
   const needsRequirements = record.requirements.some(
     (item) => item.status !== "Verified",
   );
@@ -448,42 +648,64 @@ function RecordDetail({
       : "dcat";
   return (
     <div className="records-stack">
-      <Link className="records-back" href={back}>
-        ← Back to{" "}
-        {from === "requirements" ? "requirements queue" : "applicants"}
-      </Link>
       <section className="records-panel">
         <div className="records-detail-head">
           <div>
-            <h2>{record.name}</h2>
-            <p>
-              {record.id} · {record.campus} · {record.program}
-            </p>
+            <h2>Applicant record</h2>
+            <p>Submitted {record.submitted}</p>
           </div>
-          <Status>{record.stage}</Status>
         </div>
-        <nav className="records-tabs" aria-label="Applicant record sections">
+        <div
+          className="records-tabs"
+          role="tablist"
+          aria-label="Applicant record sections"
+          onKeyDown={(event) => {
+            const currentIndex = detailTabs.indexOf(tab);
+            const lastIndex = detailTabs.length - 1;
+            const nextIndex =
+              event.key === "ArrowRight"
+                ? (currentIndex + 1) % detailTabs.length
+                : event.key === "ArrowLeft"
+                  ? (currentIndex - 1 + detailTabs.length) % detailTabs.length
+                  : event.key === "Home"
+                    ? 0
+                    : event.key === "End"
+                      ? lastIndex
+                      : currentIndex;
+            if (nextIndex === currentIndex) return;
+            event.preventDefault();
+            const nextTab = detailTabs[nextIndex];
+            setTab(nextTab);
+            event.currentTarget
+              .querySelectorAll<HTMLButtonElement>('[role="tab"]')
+              [nextIndex]?.focus();
+          }}
+        >
           {detailTabs.map((item) => (
             <button
               key={item}
+              id={`applicant-tab-${item.toLowerCase()}`}
+              role="tab"
               type="button"
               className={tab === item ? "active" : ""}
               onClick={() => setTab(item)}
-              aria-current={tab === item ? "page" : undefined}
+              aria-selected={tab === item}
+              aria-controls="applicant-panel"
+              tabIndex={tab === item ? 0 : -1}
             >
               {item}
             </button>
           ))}
-        </nav>
+        </div>
         {tab === "Overview" && (
-          <div className="records-detail-content">
+          <div className="records-detail-content" {...panelProps}>
             <div className="records-summary-grid">
               <div>
                 <small>Current stage</small>
                 <strong>{record.stage}</strong>
               </div>
               <div>
-                <small>DCAT</small>
+                <small>DFCAMCLP College Admission Test (DCAT)</small>
                 <strong>{record.dcat?.status ?? "Not scheduled"}</strong>
               </div>
               <div>
@@ -537,7 +759,7 @@ function RecordDetail({
           </div>
         )}
         {tab === "Application" && (
-          <div className="records-detail-content">
+          <div className="records-detail-content" {...panelProps}>
             <h3>Application summary</h3>
             <dl className="records-definition">
               <div>
@@ -568,7 +790,7 @@ function RecordDetail({
           </div>
         )}
         {tab === "Requirements" && (
-          <div className="records-detail-content">
+          <div className="records-detail-content" {...panelProps}>
             <h3>Physical requirements</h3>
             <p className="records-context">
               Staff demo statuses only. Applicant preparation does not mean
@@ -616,7 +838,7 @@ function RecordDetail({
           </div>
         )}
         {tab === "DCAT" && (
-          <div className="records-detail-content">
+          <div className="records-detail-content" {...panelProps}>
             <h3>DCAT state</h3>
             <p>
               {record.dcat
@@ -632,7 +854,7 @@ function RecordDetail({
           </div>
         )}
         {tab === "Enrollment" && (
-          <div className="records-detail-content">
+          <div className="records-detail-content" {...panelProps}>
             <h3>Enrollment state</h3>
             <p>{record.enrollment}</p>
             <p className="records-context">
@@ -667,16 +889,31 @@ function Dcat({ recordId, queue }: { recordId?: string; queue?: string }) {
   const [review, setReview] = useState(false);
   const [result, setResult] = useState<"Passed" | "Not Qualified">("Passed");
   const [confirmResult, setConfirmResult] = useState(false);
+  const [search, setSearch] = useState("");
+  const [campus, setCampus] = useState("");
+  const [program, setProgram] = useState("");
+  const [status, setStatus] = useState("");
+  const [sort, setSort] = useState<DcatSort>("exam-date");
   const candidates = applicants.filter(
     (item) => item.stage === "Eligible for DCAT" || item.dcat,
   );
-  const visible = candidates.filter(
+  const queueCandidates = candidates.filter(
     (item) =>
       (queue !== "scheduling" && queue !== "results") ||
       (queue === "scheduling" && item.stage === "Eligible for DCAT") ||
       (queue === "results" && item.dcat?.status === "Awaiting Result"),
   );
-  const record = candidates.find((item) => item.id === selected);
+  const visible = sortDcatRecords(
+    queueCandidates.filter(
+      (item) =>
+        matchesDcatSearch(item, search) &&
+        (!campus || item.campus === campus) &&
+        (!program || item.program === program) &&
+        (!status || (item.dcat?.status ?? "Eligible for DCAT") === status),
+    ),
+    sort,
+  );
+  const record = visible.find((item) => item.id === selected);
   return (
     <div className="records-stack">
       <section className="records-panel">
@@ -693,14 +930,96 @@ function Dcat({ recordId, queue }: { recordId?: string; queue?: string }) {
           </div>
           {queue && <Link href="/records/dcat">All DCAT records</Link>}
         </div>
-        <p
-          className="records-result-count"
-          role="status"
-          aria-live="polite"
-          aria-atomic="true"
-        >
-          {visible.length} records shown
-        </p>
+        <ListToolbar
+          filters={
+            <div className="records-filters records-dcat-filters">
+              <label>
+                Search
+                <input
+                  type="search"
+                  value={search}
+                  onChange={(event) => setSearch(event.target.value)}
+                  placeholder="Name, ID, email, campus, program or exam status"
+                />
+              </label>
+              <label>
+                Campus
+                <select
+                  value={campus}
+                  onChange={(event) => setCampus(event.target.value)}
+                >
+                  <option value="">All campuses</option>
+                  {canonicalCampuses.map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                Program
+                <select
+                  value={program}
+                  onChange={(event) => setProgram(event.target.value)}
+                >
+                  <option value="">All programs</option>
+                  {canonicalPrograms.map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                Exam status
+                <select
+                  value={status}
+                  onChange={(event) => setStatus(event.target.value)}
+                >
+                  <option value="">All statuses</option>
+                  {[
+                    ...new Set(
+                      candidates.map(
+                        (item) => item.dcat?.status ?? "Eligible for DCAT",
+                      ),
+                    ),
+                  ].map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
+                </select>
+              </label>
+              <button
+                className="records-text-button"
+                type="button"
+                onClick={() => {
+                  setSearch("");
+                  setCampus("");
+                  setProgram("");
+                  setStatus("");
+                  setSort("exam-date");
+                }}
+              >
+                Clear filters
+              </button>
+            </div>
+          }
+          count={
+            <span role="status" aria-live="polite" aria-atomic="true">
+              {visible.length} of {queueCandidates.length} applicants shown
+            </span>
+          }
+          sort={
+            <SortControl
+              id="dcat-sort"
+              value={sort}
+              onChange={(value) =>
+                value === "name" || value === "exam-date"
+                  ? setSort(value)
+                  : undefined
+              }
+              options={[
+                { value: "exam-date", label: "Exam date, earliest first" },
+                { value: "name", label: "Name A–Z" },
+              ]}
+            />
+          }
+        />
         {visible.length ? (
           <div className="records-queue-list">
             {visible.map((item) => (
@@ -727,8 +1046,16 @@ function Dcat({ recordId, queue }: { recordId?: string; queue?: string }) {
           </div>
         ) : (
           <Empty
-            title="Queue is clear"
-            detail="There are no sample records in this DCAT state."
+            title={
+              queueCandidates.length
+                ? "No applicants match this search"
+                : "Queue is clear"
+            }
+            detail={
+              queueCandidates.length
+                ? "Try another search or filter."
+                : "There are no sample records in this DCAT state."
+            }
           />
         )}
       </section>
@@ -917,15 +1244,26 @@ function Dcat({ recordId, queue }: { recordId?: string; queue?: string }) {
   );
 }
 
-function Students({ recordId }: { recordId?: string }) {
+function Students({
+  recordId,
+  initialState,
+}: {
+  recordId?: string;
+  initialState?: DirectoryState;
+}) {
   const { students } = useRecordsDemo();
-  const filters = useFilters(students);
-  const [year, setYear] = useState("");
-  const years = [...new Set(students.map((item) => item.year))];
-  const standings = [...new Set(students.map((item) => item.standing))];
-  const studentRows = filters.filtered.filter(
-    (item) => !year || item.year === year,
+  const filters = useFilters(students, initialState, matchesStudentSearch);
+  const [year, setYear] = useState(initialState?.year ?? "");
+  const [sort, setSort] = useState<StudentSort>(
+    isStudentSort(initialState?.sort) ? initialState.sort : "name",
   );
+  const years = [...canonicalYearLevels];
+  const standings = [...new Set(students.map((item) => item.standing))];
+  const studentRows = sortStudents(
+    filters.filtered.filter((item) => !year || item.year === year),
+    sort,
+  );
+  const state = { ...filters, year, sort };
   const record = students.find((item) => item.id === recordId);
   if (recordId && !record)
     return (
@@ -937,21 +1275,16 @@ function Students({ recordId }: { recordId?: string }) {
   if (record)
     return (
       <div className="records-stack">
-        <Link className="records-back" href="/records/students">
-          ← Back to students
-        </Link>
         <section className="records-panel">
           <div className="records-detail-head">
             <div>
-              <h2>{record.name}</h2>
+              <h2>Student profile</h2>
               <p>
-                {record.id} · {record.program}
+                {record.year} · {record.term}
               </p>
             </div>
-            <Status>{record.standing}</Status>
           </div>
           <div className="records-detail-content">
-            <h3>Student profile</h3>
             <dl className="records-definition">
               <div>
                 <dt>Student ID</dt>
@@ -980,7 +1313,9 @@ function Students({ recordId }: { recordId?: string }) {
             </dl>
             <h3>Enrollment documents</h3>
             <p>
-              COE: <Status>{record.coe}</Status> · COR:{" "}
+              Certificate of Enrollment (COE): <Status>{record.coe}</Status>
+              <span aria-hidden="true"> · </span>
+              Certificate of Registration (COR): <Status>{record.cor}</Status>
               <Status>{record.cor}</Status>
             </p>
             <Link
@@ -1004,21 +1339,35 @@ function Students({ recordId }: { recordId?: string }) {
           </p>
         </div>
       </div>
-      <Filters
-        filters={filters}
-        searchLabel="Name or Student ID"
-        stages={standings}
-        stageLabel="Status"
-        yearFilter={{ options: years, value: year, set: setYear }}
+      <ListToolbar
+        filters={
+          <Filters
+            filters={filters}
+            searchLabel="Name, ID, email, campus, program, year or status"
+            stages={standings}
+            stageLabel="Status"
+            yearFilter={{ options: years, value: year, set: setYear }}
+            onClear={() => setSort("name")}
+          />
+        }
+        count={
+          <span role="status" aria-live="polite" aria-atomic="true">
+            {studentRows.length} of {students.length} students shown
+          </span>
+        }
+        sort={
+          <SortControl
+            id="student-sort"
+            value={sort}
+            onChange={(value) => isStudentSort(value) && setSort(value)}
+            options={[
+              { value: "name", label: "Name A–Z" },
+              { value: "id", label: "Student ID" },
+              { value: "year", label: "Year level" },
+            ]}
+          />
+        }
       />
-      <p
-        className="records-result-count"
-        role="status"
-        aria-live="polite"
-        aria-atomic="true"
-      >
-        {studentRows.length} of {students.length} students shown
-      </p>
       {studentRows.length ? (
         <>
           <div className="records-table-wrap">
@@ -1052,9 +1401,9 @@ function Students({ recordId }: { recordId?: string }) {
                     <td>
                       <Link
                         className="records-row-link"
-                        href={`/records/students?record=${encodeURIComponent(item.id)}`}
+                        href={buildDirectoryHref("students", state, item.id)}
                       >
-                        Open record
+                        Open {item.name}
                       </Link>
                     </td>
                   </tr>
@@ -1067,13 +1416,14 @@ function Students({ recordId }: { recordId?: string }) {
               <Link
                 className="records-mobile-row"
                 key={item.id}
-                href={`/records/students?record=${encodeURIComponent(item.id)}`}
+                href={buildDirectoryHref("students", state, item.id)}
               >
                 <strong>{item.name}</strong>
                 <small>{item.id}</small>
-                <span>
-                  {item.program} · {item.year}
-                </span>
+                <span>Campus: {item.campus}</span>
+                <span>Program: {item.program}</span>
+                <span>Year level: {item.year}</span>
+                <Status>{item.standing}</Status>
                 <b>Open record →</b>
               </Link>
             ))}
@@ -1168,8 +1518,8 @@ function Enrollment({ recordId }: { recordId?: string }) {
             </ol>
             <p className="records-context">
               Registrar physical submission is represented by a sample
-              confirmation. COE and COR are sample statuses, not official
-              releases.
+              confirmation. Certificate of Enrollment (COE) and Certificate of
+              Registration (COR) are sample statuses, not official releases.
             </p>
             {next &&
               (confirm ? (
@@ -1246,22 +1596,29 @@ function Documents({ recordId, queue }: { recordId?: string; queue?: string }) {
   const [kind, setKind] = useState<"" | "coe" | "cor">("");
   const [status, setStatus] = useState("");
   const [recordType, setRecordType] = useState("");
-  const visible = rows.filter(
+  const [campus, setCampus] = useState("");
+  const [program, setProgram] = useState("");
+  const [sort, setSort] = useState<DocumentSort>("name");
+  const queueRows = rows.filter(
     (item) =>
-      (queue !== "available" ||
-        item.coe === "Available" ||
-        item.cor === "Available") &&
-      `${item.id} ${item.name}`
-        .toLowerCase()
-        .includes(search.trim().toLowerCase()) &&
+      queue !== "available" ||
+      item.coe === "Available" ||
+      item.cor === "Available",
+  );
+  const filtered = queueRows.filter(
+    (item) =>
+      matchesDocumentSearch(item, search) &&
       (!recordType ||
         (recordType === "student" ? "year" in item : "submitted" in item)) &&
       (!status ||
         (kind
           ? item[kind] === status
-          : item.coe === status || item.cor === status)),
+          : item.coe === status || item.cor === status)) &&
+      (!campus || item.campus === campus) &&
+      (!program || item.program === program),
   );
-  const record = rows.find((item) => item.id === selected);
+  const visible = sortDocumentRecords(filtered, sort);
+  const record = visible.find((item) => item.id === selected);
   const applicant = record && "submitted" in record;
   function issue(kind: "coe" | "cor") {
     if (!record) return;
@@ -1285,70 +1642,121 @@ function Documents({ recordId, queue }: { recordId?: string; queue?: string }) {
           </div>
           {queue && <Link href="/records/documents">All documents</Link>}
         </div>
-        <div className="records-filters">
-          <label>
-            Name or ID
-            <input
-              value={search}
-              onChange={(event) => setSearch(event.target.value)}
-              placeholder="Search sample records"
+        <ListToolbar
+          filters={
+            <div className="records-filters records-document-filters">
+              <label>
+                Search
+                <input
+                  type="search"
+                  value={search}
+                  onChange={(event) => setSearch(event.target.value)}
+                  placeholder="Name, ID, email, campus, program or COE/COR status"
+                />
+              </label>
+              <label>
+                Campus
+                <select
+                  value={campus}
+                  onChange={(event) => setCampus(event.target.value)}
+                >
+                  <option value="">All campuses</option>
+                  {canonicalCampuses.map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                Program
+                <select
+                  value={program}
+                  onChange={(event) => setProgram(event.target.value)}
+                >
+                  <option value="">All programs</option>
+                  {canonicalPrograms.map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
+                </select>
+              </label>
+              <label>
+                Document type
+                <select
+                  value={kind}
+                  onChange={(event) =>
+                    setKind(event.target.value as typeof kind)
+                  }
+                >
+                  <option value="">All types</option>
+                  <option value="coe">COE</option>
+                  <option value="cor">COR</option>
+                </select>
+              </label>
+              <label>
+                Status
+                <select
+                  value={status}
+                  onChange={(event) => setStatus(event.target.value)}
+                >
+                  <option value="">All statuses</option>
+                  <option>Not Available</option>
+                  <option>Available</option>
+                  <option>Issued</option>
+                </select>
+              </label>
+              <label>
+                Record type
+                <select
+                  value={recordType}
+                  onChange={(event) => setRecordType(event.target.value)}
+                >
+                  <option value="">All records</option>
+                  <option value="applicant">Applicants</option>
+                  <option value="student">Students</option>
+                </select>
+              </label>
+              <button
+                className="records-text-button"
+                type="button"
+                onClick={() => {
+                  setSearch("");
+                  setKind("");
+                  setStatus("");
+                  setRecordType("");
+                  setCampus("");
+                  setProgram("");
+                  setSort("name");
+                }}
+              >
+                Clear filters
+              </button>
+            </div>
+          }
+          count={
+            <span role="status" aria-live="polite" aria-atomic="true">
+              {visible.length} of {queueRows.length} records shown
+            </span>
+          }
+          sort={
+            <SortControl
+              id="document-sort"
+              value={sort}
+              onChange={(value) =>
+                value === "name" ||
+                value === "campus" ||
+                value === "program" ||
+                value === "status"
+                  ? setSort(value)
+                  : undefined
+              }
+              options={[
+                { value: "name", label: "Name A–Z" },
+                { value: "campus", label: "Campus A–Z" },
+                { value: "program", label: "Program A–Z" },
+                { value: "status", label: "Available, then issued" },
+              ]}
             />
-          </label>
-          <label>
-            Document type
-            <select
-              value={kind}
-              onChange={(event) => setKind(event.target.value as typeof kind)}
-            >
-              <option value="">All types</option>
-              <option value="coe">COE</option>
-              <option value="cor">COR</option>
-            </select>
-          </label>
-          <label>
-            Status
-            <select
-              value={status}
-              onChange={(event) => setStatus(event.target.value)}
-            >
-              <option value="">All statuses</option>
-              <option>Not Available</option>
-              <option>Available</option>
-              <option>Issued</option>
-            </select>
-          </label>
-          <label>
-            Record type
-            <select
-              value={recordType}
-              onChange={(event) => setRecordType(event.target.value)}
-            >
-              <option value="">All records</option>
-              <option value="applicant">Applicants</option>
-              <option value="student">Students</option>
-            </select>
-          </label>
-          <button
-            className="records-text-button"
-            type="button"
-            onClick={() => {
-              setSearch("");
-              setKind("");
-              setStatus("");
-              setRecordType("");
-            }}
-          >
-            Clear filters
-          </button>
-        </div>
-        <p
-          className="records-result-count"
-          role="status"
-          aria-live="polite"
-          aria-atomic="true"
-        >
-          {visible.length} of {rows.length} records shown
-        </p>
+          }
+        />
         {visible.length ? (
           <div className="records-queue-list">
             {visible.map((item) => (
@@ -1368,9 +1776,12 @@ function Documents({ recordId, queue }: { recordId?: string; queue?: string }) {
                     {item.id} · {item.program}
                   </small>
                 </span>
-                <small>
-                  COE {item.coe} · COR {item.cor}
-                </small>
+                <span className="records-document-row-status">
+                  <small>COE</small>
+                  <Status>{item.coe}</Status>
+                  <small>COR</small>
+                  <Status>{item.cor}</Status>
+                </span>
               </button>
             ))}
           </div>
@@ -1468,18 +1879,45 @@ function Documents({ recordId, queue }: { recordId?: string; queue?: string }) {
   );
 }
 
-export function RecordsPage({ section, recordId, queue }: Props) {
-  const { applicants, setFeedback } = useRecordsDemo();
+export function RecordsPage({
+  section,
+  recordId,
+  queue,
+  listState = {},
+}: Props) {
+  const { applicants, students, setFeedback } = useRecordsDemo();
   useEffect(() => setFeedback(""), [section, recordId, queue, setFeedback]);
   const applicant = applicants.find((item) => item.id === recordId);
+  const student = students.find((item) => item.id === recordId);
+  const selectedRecord =
+    section === "applicants"
+      ? applicant
+      : section === "students"
+        ? student
+        : undefined;
+  const recordBackHref =
+    section === "applicants"
+      ? buildDirectoryHref(
+          "applicants",
+          listState,
+          undefined,
+          queue === "requirements" ? "requirements" : undefined,
+        )
+      : section === "students"
+        ? buildDirectoryHref("students", listState)
+        : undefined;
   return (
     <div className="records-page">
-      <Heading section={section} />
+      <Heading
+        section={section}
+        record={selectedRecord}
+        backHref={recordBackHref}
+      />
       {section === "dashboard" && <Dashboard />}
       {section === "applicants" &&
         (recordId ? (
           applicant ? (
-            <RecordDetail record={applicant} from={queue} />
+            <RecordDetail record={applicant} />
           ) : (
             <Empty
               title="Applicant record not found"
@@ -1487,10 +1925,12 @@ export function RecordsPage({ section, recordId, queue }: Props) {
             />
           )
         ) : (
-          <Applicants queue={queue} />
+          <Applicants queue={queue} initialState={listState} />
         ))}
       {section === "dcat" && <Dcat recordId={recordId} queue={queue} />}
-      {section === "students" && <Students recordId={recordId} />}
+      {section === "students" && (
+        <Students recordId={recordId} initialState={listState} />
+      )}
       {section === "enrollment" && <Enrollment recordId={recordId} />}
       {section === "documents" && (
         <Documents recordId={recordId} queue={queue} />

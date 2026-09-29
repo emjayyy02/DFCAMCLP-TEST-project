@@ -11,6 +11,68 @@
   box-sizing: border-box;
 }
 
+.academic-page-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.9rem;
+  color: var(--foreground-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.academic-offering-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.academic-offering-subnav a {
+  display: inline-flex;
+  min-height: var(--control-height);
+  align-items: center;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.academic-offering-subnav a:hover,
+.academic-offering-subnav a.is-current {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  color: var(--primary-hover);
+}
+
+.academic-offering-context {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+  margin: 1rem 0;
+  padding: 0.9rem 0;
+  border-block: 1px solid var(--border);
+}
+
+.academic-offering-context h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.academic-offering-context p {
+  margin: 0.25rem 0 0;
+  color: var(--foreground-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
 .academic-eyebrow {
   margin: 0;
   color: var(--foreground-muted);
@@ -152,11 +214,9 @@
 
 .academic-today-list li > div a,
 .academic-task-list strong {
-  color: var(--primary);
+  color: var(--foreground);
   font-size: 0.9rem;
   font-weight: 650;
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 .academic-today-list li > div a:hover,
@@ -486,6 +546,13 @@
 
 .academic-button:hover {
   background: var(--primary-hover);
+}
+
+.academic-button-compact {
+  flex: 0 0 auto;
+  padding-inline: 0.8rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 
 .academic-button:disabled {
@@ -883,10 +950,10 @@
 
 .academic-filter-row button {
   flex: 0 0 auto;
-  min-height: 2.6rem;
+  min-height: var(--control-height);
   padding: 0.45rem 0.8rem;
   border: 1px solid var(--border);
-  border-radius: 999px;
+  border-radius: var(--radius);
   background: var(--surface);
   color: var(--foreground-muted);
   cursor: pointer;
@@ -913,9 +980,16 @@
 }
 
 .academic-announcement-list article {
-  padding: 1rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  min-width: 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.academic-announcement-list article.academic-announcement-featured {
+  grid-column: 1 / -1;
+  padding-block: 0.35rem 1.25rem;
+  border-top: 0;
+  border-bottom: 1px solid var(--border-strong);
 }
 
 .academic-announcement-meta {
@@ -928,8 +1002,13 @@
 
 .academic-announcement-list h3 {
   margin: 0.75rem 0 0.3rem;
-  font-size: 1rem;
+  font-size: 1.08rem;
   line-height: 1.35;
+}
+
+.academic-announcement-featured h3 {
+  font-size: 1.35rem;
+  line-height: 1.3;
 }
 
 .academic-announcement-list p {
@@ -937,6 +1016,11 @@
   color: var(--foreground-muted);
   font-size: 0.85rem;
   line-height: 1.55;
+}
+
+.academic-announcement-featured p {
+  max-width: 70ch;
+  font-size: 0.9rem;
 }
 
 .academic-management-intro > p {
@@ -1048,6 +1132,15 @@
 }
 
 @media (max-width: 900px) {
+  .academic-page > .context-header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .academic-page > .context-header .context-header-actions {
+    justify-content: flex-start;
+  }
+
   .academic-dashboard-grid {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1081,11 +1174,30 @@
   .academic-management-list article > a {
     grid-column: 2;
   }
+
+  .academic-offering-context {
+    align-items: start;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 680px) {
   .academic-page {
     gap: 1rem;
+  }
+
+  .academic-page-context {
+    gap: 0.25rem 0.65rem;
+    font-size: 0.82rem;
+  }
+
+  .academic-offering-subnav {
+    width: 100%;
+  }
+
+  .academic-offering-subnav a {
+    flex: 1 1 auto;
+    justify-content: center;
   }
 
   .academic-section-heading {
