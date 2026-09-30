@@ -11,7 +11,7 @@
 
 ## Changed files
 
-Modified: `src/app/globals.css`, `src/features/applicant/applicant-page.tsx`, `src/features/applicant/applicant.css`, `src/features/student/student-page.tsx`, `src/features/student/student.css`, and `docs/phase-4/P4-ROADMAP.md`.
+Modified: `src/app/globals.css`, `src/app/page.tsx` (Programs surface correction), `src/features/applicant/applicant-page.tsx`, `src/features/applicant/applicant.css`, `src/features/student/student-page.tsx`, `src/features/student/student.css`, and `docs/phase-4/P4-ROADMAP.md`.
 
 Created: this report and the separate [FD3 evidence directory](fd3-after/manifest.json). Existing FD1 and FD2 captures were not overwritten.
 
@@ -22,6 +22,10 @@ The [manifest](fd3-after/manifest.json) maps G01–G16 to the prepass baseline a
 The [runtime checks](fd3-after/runtime-checks.json) cover ten representative routes at 320×812, 375×812, 768×900, 1440×900, and 1920×1080. All 50 measurements had no page-level horizontal overflow or browser page error. Practical 200% computed-text-size checks for Login and the Applicant form at 768px, plus [Student Dashboard](fd3-after/extra-checks.json), stayed within the viewport. This is a browser simulation, not an operating-system text-size or physical-device test.
 
 Keyboard checks covered the public menu, visible skip-link focus, mobile portal drawer containment/Escape/focus return, Applicant tab Arrow/End/Home keys, and a long preview with a reachable close and print action at 320px. The additional checks covered Student Schedule/Subjects/Grades/Attendance/Curriculum tab keys, a 320px request dialog with reachable actions and Escape close, atomic `10:30 AM` calendar time, and an invalid Applicant field with focused error summary and no 320px overflow. Rendered Login samples measured 7.19:1 secondary text on white, 10.54:1 white on blue action, and 3.95:1 input border on white. Home and Login under reduced motion showed content with no active checked animation or transition. These are sampled accessibility checks, not certification.
+
+### Programs surface correction — 30 September 2026
+
+The Home Programs `<section>` had both `public-section` and `public-container`, constraining its white surface to 80rem and exposing the gray page canvas on wide screens. `src/app/page.tsx` now applies `public-container` to one transparent inner wrapper while the section's existing white CSS surface spans the viewport. The heading, link, and both program tables retain the 80rem grid; no content or behavior changed. [Targeted captures and measurements](fd3-after/programs-surface-correction/checks.json) show a 1920px and 1440px wide white section with 1280px content, clean adjacent section transitions, and no second white box. Home and `/programs` were checked at 1920×1080, 1440×900, and 375×812 with no horizontal overflow or browser errors. The `/programs` page still renders all four programs. This correction does not begin FD4.
 
 ## Validation and limits
 

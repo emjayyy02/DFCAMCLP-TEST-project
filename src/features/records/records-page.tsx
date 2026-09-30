@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { DemoNotice } from "@/components/ui/demo-notice";
 import { EmptyState as SharedEmptyState } from "@/components/ui/states";
 import { ListToolbar, SortControl } from "@/components/ui/list-toolbar";
+import { SortableHeader } from "@/components/ui/sortable-header";
 import { useEffect, useMemo, useState } from "react";
 import { useRecordsDemo } from "./demo-context";
 import {
@@ -50,6 +51,7 @@ type DirectoryState = {
   stage?: string;
   year?: string;
   sort?: string;
+  direction?: string;
 };
 const titles: Record<string, string> = {
   dashboard: "Admissions & Records",
@@ -421,6 +423,7 @@ const directoryStateKeys = [
   "stage",
   "year",
   "sort",
+  "direction",
 ] as const;
 
 function buildDirectoryHref(
@@ -456,10 +459,16 @@ function ApplicantRows({
   records,
   from,
   state,
+  sort,
+  reverse,
+  onSort,
 }: {
   records: ApplicantRecord[];
   from: string;
   state: DirectoryState;
+  sort: DirectorySort;
+  reverse: boolean;
+  onSort: (column: "name" | "attention" | "submitted") => void;
 }) {
   if (!records.length) return <Empty />;
   return (
@@ -468,10 +477,44 @@ function ApplicantRows({
         <table>
           <thead>
             <tr>
-              <th>Applicant</th>
+              <SortableHeader
+                label="Applicant"
+                direction={
+                  sort === "name"
+                    ? reverse
+                      ? "descending"
+                      : "ascending"
+                    : undefined
+                }
+                onSort={() => onSort("name")}
+              />
               <th>Campus / program</th>
-              <th>Current stage</th>
-              <th>Submitted</th>
+              {from === "requirements" ? (
+                <SortableHeader
+                  label="Review priority"
+                  direction={
+                    sort === "attention"
+                      ? reverse
+                        ? "descending"
+                        : "ascending"
+                      : undefined
+                  }
+                  onSort={() => onSort("attention")}
+                />
+              ) : (
+                <th>Current stage</th>
+              )}
+              <SortableHeader
+                label="Submitted"
+                direction={
+                  sort === "newest"
+                    ? "descending"
+                    : sort === "oldest"
+                      ? "ascending"
+                      : undefined
+                }
+                onSort={() => onSort("submitted")}
+              />
               <th>
                 <span className="sr-only">Action</span>
               </th>
@@ -489,7 +532,21 @@ function ApplicantRows({
                   <small>{record.program}</small>
                 </td>
                 <td>
-                  <Status>{record.stage}</Status>
+                  {from === "requirements" ? (
+                    <>
+                      <Status>
+                        {["Needs Attention", "Pending", "Presented"].find(
+                          (status) =>
+                            record.requirements.some(
+                              (item) => item.status === status,
+                            ),
+                        ) ?? "Verified"}
+                      </Status>
+                      <small>{record.stage}</small>
+                    </>
+                  ) : (
+                    <Status>{record.stage}</Status>
+                  )}
                 </td>
                 <td>{record.submitted}</td>
                 <td>
@@ -550,6 +607,23 @@ function Applicants({
   const [sort, setSort] = useState<DirectorySort>(
     isDirectorySort(initialState?.sort) ? initialState.sort : defaultSort,
   );
+  const [reverse, setReverse] = useState(
+    initialState?.direction === "desc" &&
+      (initialState?.sort === "name" || initialState?.sort === "attention"),
+  );
+  function chooseSort(next: DirectorySort) {
+    setSort(next);
+    setReverse(false);
+  }
+  function sortColumn(column: "name" | "attention" | "submitted") {
+    if (column === "submitted") {
+      chooseSort(sort === "newest" ? "oldest" : "newest");
+    } else if (sort === column) {
+      setReverse((current) => !current);
+    } else {
+      chooseSort(column);
+    }
+  }
   const stages = [...new Set(applicants.map((item) => item.stage))];
   const queueRecords = applicants.filter(
     (item) =>
@@ -558,11 +632,12 @@ function Applicants({
         (requirement) => requirement.status !== "Verified",
       ),
   );
-  const records = sortApplicants(
+  const sortedRecords = sortApplicants(
     filters.filtered.filter((item) => queueRecords.includes(item)),
     sort,
   );
-  const state = { ...filters, sort };
+  const records = reverse ? sortedRecords.toReversed() : sortedRecords;
+  const state = { ...filters, sort, direction: reverse ? "desc" : undefined };
   return (
     <section className="records-panel">
       <div className="records-panel-head">
@@ -590,7 +665,7 @@ function Applicants({
                 ? "Name, ID, email, campus, program, stage, requirement or status"
                 : "Name, ID, email, campus, program or stage"
             }
-            onClear={() => setSort(defaultSort)}
+            onClear={() => chooseSort(defaultSort)}
           />
         }
         count={
@@ -601,20 +676,35 @@ function Applicants({
         sort={
           <SortControl
             id="applicant-sort"
+            className="table-mobile-sort"
             value={sort}
-            onChange={(value) => isDirectorySort(value) && setSort(value)}
+            onChange={(value) => isDirectorySort(value) && chooseSort(value)}
+            direction={
+              sort === "newest"
+                ? "descending"
+                : sort === "oldest"
+                  ? "ascending"
+                  : reverse
+                    ? "descending"
+                    : "ascending"
+            }
+            onDirectionChange={() => {
+              if (sort === "newest") chooseSort("oldest");
+              else if (sort === "oldest") chooseSort("newest");
+              else setReverse((current) => !current);
+            }}
             options={
               queue === "requirements"
                 ? [
-                    { value: "attention", label: "Attention, then oldest" },
+                    { value: "attention", label: "Review priority" },
                     { value: "oldest", label: "Oldest submission" },
                     { value: "newest", label: "Newest submission" },
-                    { value: "name", label: "Name A–Z" },
+                    { value: "name", label: "Applicant name" },
                   ]
                 : [
                     { value: "newest", label: "Newest submission" },
                     { value: "oldest", label: "Oldest submission" },
-                    { value: "name", label: "Name A–Z" },
+                    { value: "name", label: "Applicant name" },
                   ]
             }
           />
@@ -624,6 +714,9 @@ function Applicants({
         records={records}
         from={queue === "requirements" ? "requirements" : "applicants"}
         state={state}
+        sort={sort}
+        reverse={reverse}
+        onSort={sortColumn}
       />
     </section>
   );
@@ -894,6 +987,11 @@ function Dcat({ recordId, queue }: { recordId?: string; queue?: string }) {
   const [program, setProgram] = useState("");
   const [status, setStatus] = useState("");
   const [sort, setSort] = useState<DcatSort>("exam-date");
+  const [reverse, setReverse] = useState(false);
+  function chooseDcatSort(next: DcatSort) {
+    setSort(next);
+    setReverse(false);
+  }
   const candidates = applicants.filter(
     (item) => item.stage === "Eligible for DCAT" || item.dcat,
   );
@@ -903,7 +1001,7 @@ function Dcat({ recordId, queue }: { recordId?: string; queue?: string }) {
       (queue === "scheduling" && item.stage === "Eligible for DCAT") ||
       (queue === "results" && item.dcat?.status === "Awaiting Result"),
   );
-  const visible = sortDcatRecords(
+  const sortedCandidates = sortDcatRecords(
     queueCandidates.filter(
       (item) =>
         matchesDcatSearch(item, search) &&
@@ -913,6 +1011,7 @@ function Dcat({ recordId, queue }: { recordId?: string; queue?: string }) {
     ),
     sort,
   );
+  const visible = reverse ? sortedCandidates.toReversed() : sortedCandidates;
   const record = visible.find((item) => item.id === selected);
   return (
     <div className="records-stack">
@@ -992,7 +1091,7 @@ function Dcat({ recordId, queue }: { recordId?: string; queue?: string }) {
                   setCampus("");
                   setProgram("");
                   setStatus("");
-                  setSort("exam-date");
+                  chooseDcatSort("exam-date");
                 }}
               >
                 Clear filters
@@ -1010,12 +1109,14 @@ function Dcat({ recordId, queue }: { recordId?: string; queue?: string }) {
               value={sort}
               onChange={(value) =>
                 value === "name" || value === "exam-date"
-                  ? setSort(value)
+                  ? chooseDcatSort(value)
                   : undefined
               }
+              direction={reverse ? "descending" : "ascending"}
+              onDirectionChange={() => setReverse((current) => !current)}
               options={[
-                { value: "exam-date", label: "Exam date, earliest first" },
-                { value: "name", label: "Name A–Z" },
+                { value: "exam-date", label: "Exam date" },
+                { value: "name", label: "Applicant name" },
               ]}
             />
           }
@@ -1257,13 +1358,28 @@ function Students({
   const [sort, setSort] = useState<StudentSort>(
     isStudentSort(initialState?.sort) ? initialState.sort : "name",
   );
+  const [reverse, setReverse] = useState(initialState?.direction === "desc");
+  function chooseSort(next: StudentSort) {
+    setSort(next);
+    setReverse(false);
+  }
+  function sortColumn(column: StudentSort) {
+    if (sort === column) setReverse((current) => !current);
+    else chooseSort(column);
+  }
   const years = [...canonicalYearLevels];
   const standings = [...new Set(students.map((item) => item.standing))];
-  const studentRows = sortStudents(
+  const sortedStudents = sortStudents(
     filters.filtered.filter((item) => !year || item.year === year),
     sort,
   );
-  const state = { ...filters, year, sort };
+  const studentRows = reverse ? sortedStudents.toReversed() : sortedStudents;
+  const state = {
+    ...filters,
+    year,
+    sort,
+    direction: reverse ? "desc" : undefined,
+  };
   const record = students.find((item) => item.id === recordId);
   if (recordId && !record)
     return (
@@ -1347,7 +1463,7 @@ function Students({
             stages={standings}
             stageLabel="Status"
             yearFilter={{ options: years, value: year, set: setYear }}
-            onClear={() => setSort("name")}
+            onClear={() => chooseSort("name")}
           />
         }
         count={
@@ -1358,10 +1474,13 @@ function Students({
         sort={
           <SortControl
             id="student-sort"
+            className="table-mobile-sort"
             value={sort}
-            onChange={(value) => isStudentSort(value) && setSort(value)}
+            onChange={(value) => isStudentSort(value) && chooseSort(value)}
+            direction={reverse ? "descending" : "ascending"}
+            onDirectionChange={() => setReverse((current) => !current)}
             options={[
-              { value: "name", label: "Name A–Z" },
+              { value: "name", label: "Student name" },
               { value: "id", label: "Student ID" },
               { value: "year", label: "Year level" },
             ]}
@@ -1374,9 +1493,40 @@ function Students({
             <table>
               <thead>
                 <tr>
-                  <th>Student</th>
+                  <SortableHeader
+                    label="Student"
+                    direction={
+                      sort === "name"
+                        ? reverse
+                          ? "descending"
+                          : "ascending"
+                        : undefined
+                    }
+                    onSort={() => sortColumn("name")}
+                  />
+                  <SortableHeader
+                    label="Student ID"
+                    direction={
+                      sort === "id"
+                        ? reverse
+                          ? "descending"
+                          : "ascending"
+                        : undefined
+                    }
+                    onSort={() => sortColumn("id")}
+                  />
                   <th>Program</th>
-                  <th>Year</th>
+                  <SortableHeader
+                    label="Year"
+                    direction={
+                      sort === "year"
+                        ? reverse
+                          ? "descending"
+                          : "ascending"
+                        : undefined
+                    }
+                    onSort={() => sortColumn("year")}
+                  />
                   <th>Status</th>
                   <th>
                     <span className="sr-only">Action</span>
@@ -1388,8 +1538,8 @@ function Students({
                   <tr key={item.id}>
                     <td>
                       <strong>{item.name}</strong>
-                      <small>{item.id}</small>
                     </td>
+                    <td>{item.id}</td>
                     <td>
                       {item.program}
                       <small>{item.campus}</small>
@@ -1599,6 +1749,11 @@ function Documents({ recordId, queue }: { recordId?: string; queue?: string }) {
   const [campus, setCampus] = useState("");
   const [program, setProgram] = useState("");
   const [sort, setSort] = useState<DocumentSort>("name");
+  const [reverse, setReverse] = useState(false);
+  function chooseDocumentSort(next: DocumentSort) {
+    setSort(next);
+    setReverse(false);
+  }
   const queueRows = rows.filter(
     (item) =>
       queue !== "available" ||
@@ -1617,7 +1772,8 @@ function Documents({ recordId, queue }: { recordId?: string; queue?: string }) {
       (!campus || item.campus === campus) &&
       (!program || item.program === program),
   );
-  const visible = sortDocumentRecords(filtered, sort);
+  const sortedDocuments = sortDocumentRecords(filtered, sort);
+  const visible = reverse ? sortedDocuments.toReversed() : sortedDocuments;
   const record = visible.find((item) => item.id === selected);
   const applicant = record && "submitted" in record;
   function issue(kind: "coe" | "cor") {
@@ -1724,7 +1880,7 @@ function Documents({ recordId, queue }: { recordId?: string; queue?: string }) {
                   setRecordType("");
                   setCampus("");
                   setProgram("");
-                  setSort("name");
+                  chooseDocumentSort("name");
                 }}
               >
                 Clear filters
@@ -1745,14 +1901,16 @@ function Documents({ recordId, queue }: { recordId?: string; queue?: string }) {
                 value === "campus" ||
                 value === "program" ||
                 value === "status"
-                  ? setSort(value)
+                  ? chooseDocumentSort(value)
                   : undefined
               }
+              direction={reverse ? "descending" : "ascending"}
+              onDirectionChange={() => setReverse((current) => !current)}
               options={[
-                { value: "name", label: "Name A–Z" },
-                { value: "campus", label: "Campus A–Z" },
-                { value: "program", label: "Program A–Z" },
-                { value: "status", label: "Available, then issued" },
+                { value: "name", label: "Record name" },
+                { value: "campus", label: "Campus" },
+                { value: "program", label: "Program" },
+                { value: "status", label: "Document status" },
               ]}
             />
           }
@@ -1909,6 +2067,7 @@ export function RecordsPage({
   return (
     <div
       className="records-page"
+      data-section={section}
       data-layout={
         section === "dashboard" ? "dashboard" : recordId ? "detail" : "wide"
       }

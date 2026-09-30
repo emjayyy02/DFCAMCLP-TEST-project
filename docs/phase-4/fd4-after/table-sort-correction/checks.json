@@ -1,0 +1,484 @@
+{
+  "browser": "Microsoft Edge Chromium",
+  "timestamp": "2026-09-30T05:51:33.841Z",
+  "checks": [
+    {
+      "name": "applicants 375 overflow",
+      "pass": true,
+      "scrollWidth": 375
+    },
+    {
+      "name": "applicants 768 overflow",
+      "pass": true,
+      "scrollWidth": 768
+    },
+    {
+      "name": "applicants 1440 overflow",
+      "pass": true,
+      "scrollWidth": 1440
+    },
+    {
+      "name": "applicants 1920 overflow",
+      "pass": true,
+      "scrollWidth": 1920
+    },
+    {
+      "name": "students 375 overflow",
+      "pass": true,
+      "scrollWidth": 375
+    },
+    {
+      "name": "students 768 overflow",
+      "pass": true,
+      "scrollWidth": 768
+    },
+    {
+      "name": "students 1440 overflow",
+      "pass": true,
+      "scrollWidth": 1440
+    },
+    {
+      "name": "students 1920 overflow",
+      "pass": true,
+      "scrollWidth": 1920
+    },
+    {
+      "name": "dcat 375 overflow",
+      "pass": true,
+      "scrollWidth": 375
+    },
+    {
+      "name": "dcat 768 overflow",
+      "pass": true,
+      "scrollWidth": 768
+    },
+    {
+      "name": "dcat 1440 overflow",
+      "pass": true,
+      "scrollWidth": 1440
+    },
+    {
+      "name": "dcat 1920 overflow",
+      "pass": true,
+      "scrollWidth": 1920
+    },
+    {
+      "name": "documents 375 overflow",
+      "pass": true,
+      "scrollWidth": 375
+    },
+    {
+      "name": "documents 768 overflow",
+      "pass": true,
+      "scrollWidth": 768
+    },
+    {
+      "name": "documents 1440 overflow",
+      "pass": true,
+      "scrollWidth": 1440
+    },
+    {
+      "name": "documents 1920 overflow",
+      "pass": true,
+      "scrollWidth": 1920
+    },
+    {
+      "name": "accounts 375 overflow",
+      "pass": true,
+      "scrollWidth": 375
+    },
+    {
+      "name": "accounts 768 overflow",
+      "pass": true,
+      "scrollWidth": 768
+    },
+    {
+      "name": "accounts 1440 overflow",
+      "pass": true,
+      "scrollWidth": 1440
+    },
+    {
+      "name": "accounts 1920 overflow",
+      "pass": true,
+      "scrollWidth": 1920
+    },
+    {
+      "name": "applicant default newest",
+      "pass": true
+    },
+    {
+      "name": "applicant first click ascending",
+      "pass": true
+    },
+    {
+      "name": "applicant second click descending",
+      "pass": true
+    },
+    {
+      "name": "submitted first click newest",
+      "pass": true
+    },
+    {
+      "name": "submitted second click oldest",
+      "pass": true
+    },
+    {
+      "name": "filter with sorting",
+      "pass": true
+    },
+    {
+      "name": "search with sorting",
+      "pass": true
+    },
+    {
+      "name": "clear restores default sort",
+      "pass": true
+    },
+    {
+      "name": "record URL retains descending direction",
+      "pass": true,
+      "recordHref": "/records/applicants?sort=name&direction=desc&record=DEMO-APP-004&from=applicants",
+      "url": "http://localhost:3000/records/applicants?sort=name&direction=desc&record=DEMO-APP-004&from=applicants"
+    },
+    {
+      "name": "requirements default priority",
+      "pass": true
+    },
+    {
+      "name": "requirements reverse",
+      "pass": true
+    },
+    {
+      "name": "students default name",
+      "pass": true
+    },
+    {
+      "name": "student keyboard year ascending",
+      "pass": true
+    },
+    {
+      "name": "student keyboard year descending",
+      "pass": true
+    },
+    {
+      "name": "student empty result",
+      "pass": true
+    },
+    {
+      "name": "accounts default name",
+      "pass": true
+    },
+    {
+      "name": "accounts name descending",
+      "pass": true
+    },
+    {
+      "name": "accounts email ascending",
+      "pass": true
+    },
+    {
+      "name": "accounts search with sorting",
+      "pass": true
+    },
+    {
+      "name": "dcat inline sort available",
+      "pass": true
+    },
+    {
+      "name": "dcat direction toggles",
+      "pass": true
+    },
+    {
+      "name": "dcat field change resets ascending",
+      "pass": true
+    },
+    {
+      "name": "documents inline sort available",
+      "pass": true
+    },
+    {
+      "name": "documents direction toggles",
+      "pass": true
+    },
+    {
+      "name": "documents field change resets ascending",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "key": "applicants",
+      "url": "/records/applicants",
+      "width": 375,
+      "height": 812,
+      "file": "applicants-375x812.png",
+      "scrollWidth": 375,
+      "viewport": 375,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "applicants",
+      "url": "/records/applicants",
+      "width": 768,
+      "height": 900,
+      "file": "applicants-768x900.png",
+      "scrollWidth": 768,
+      "viewport": 768,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "applicants",
+      "url": "/records/applicants",
+      "width": 1440,
+      "height": 900,
+      "file": "applicants-1440x900.png",
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "headers": [
+        {
+          "text": "Applicant↕",
+          "sort": "none"
+        },
+        {
+          "text": "Submitted↓",
+          "sort": "descending"
+        }
+      ],
+      "inline": 0
+    },
+    {
+      "key": "applicants",
+      "url": "/records/applicants",
+      "width": 1920,
+      "height": 1080,
+      "file": "applicants-1920x1080.png",
+      "scrollWidth": 1920,
+      "viewport": 1920,
+      "headers": [
+        {
+          "text": "Applicant↕",
+          "sort": "none"
+        },
+        {
+          "text": "Submitted↓",
+          "sort": "descending"
+        }
+      ],
+      "inline": 0
+    },
+    {
+      "key": "students",
+      "url": "/records/students",
+      "width": 375,
+      "height": 812,
+      "file": "students-375x812.png",
+      "scrollWidth": 375,
+      "viewport": 375,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "students",
+      "url": "/records/students",
+      "width": 768,
+      "height": 900,
+      "file": "students-768x900.png",
+      "scrollWidth": 768,
+      "viewport": 768,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "students",
+      "url": "/records/students",
+      "width": 1440,
+      "height": 900,
+      "file": "students-1440x900.png",
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "headers": [
+        {
+          "text": "Student↑",
+          "sort": "ascending"
+        },
+        {
+          "text": "Student ID↕",
+          "sort": "none"
+        },
+        {
+          "text": "Year↕",
+          "sort": "none"
+        }
+      ],
+      "inline": 0
+    },
+    {
+      "key": "students",
+      "url": "/records/students",
+      "width": 1920,
+      "height": 1080,
+      "file": "students-1920x1080.png",
+      "scrollWidth": 1920,
+      "viewport": 1920,
+      "headers": [
+        {
+          "text": "Student↑",
+          "sort": "ascending"
+        },
+        {
+          "text": "Student ID↕",
+          "sort": "none"
+        },
+        {
+          "text": "Year↕",
+          "sort": "none"
+        }
+      ],
+      "inline": 0
+    },
+    {
+      "key": "dcat",
+      "url": "/records/dcat",
+      "width": 375,
+      "height": 812,
+      "file": "dcat-375x812.png",
+      "scrollWidth": 375,
+      "viewport": 375,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "dcat",
+      "url": "/records/dcat",
+      "width": 768,
+      "height": 900,
+      "file": "dcat-768x900.png",
+      "scrollWidth": 768,
+      "viewport": 768,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "dcat",
+      "url": "/records/dcat",
+      "width": 1440,
+      "height": 900,
+      "file": "dcat-1440x900.png",
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "dcat",
+      "url": "/records/dcat",
+      "width": 1920,
+      "height": 1080,
+      "file": "dcat-1920x1080.png",
+      "scrollWidth": 1920,
+      "viewport": 1920,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "documents",
+      "url": "/records/documents",
+      "width": 375,
+      "height": 812,
+      "file": "documents-375x812.png",
+      "scrollWidth": 375,
+      "viewport": 375,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "documents",
+      "url": "/records/documents",
+      "width": 768,
+      "height": 900,
+      "file": "documents-768x900.png",
+      "scrollWidth": 768,
+      "viewport": 768,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "documents",
+      "url": "/records/documents",
+      "width": 1440,
+      "height": 900,
+      "file": "documents-1440x900.png",
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "documents",
+      "url": "/records/documents",
+      "width": 1920,
+      "height": 1080,
+      "file": "documents-1920x1080.png",
+      "scrollWidth": 1920,
+      "viewport": 1920,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "accounts",
+      "url": "/technology/accounts",
+      "width": 375,
+      "height": 812,
+      "file": "accounts-375x812.png",
+      "scrollWidth": 375,
+      "viewport": 375,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "accounts",
+      "url": "/technology/accounts",
+      "width": 768,
+      "height": 900,
+      "file": "accounts-768x900.png",
+      "scrollWidth": 768,
+      "viewport": 768,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "accounts",
+      "url": "/technology/accounts",
+      "width": 1440,
+      "height": 900,
+      "file": "accounts-1440x900.png",
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "headers": [],
+      "inline": 1
+    },
+    {
+      "key": "accounts",
+      "url": "/technology/accounts",
+      "width": 1920,
+      "height": 1080,
+      "file": "accounts-1920x1080.png",
+      "scrollWidth": 1920,
+      "viewport": 1920,
+      "headers": [
+        {
+          "text": "Name↑",
+          "sort": "ascending"
+        },
+        {
+          "text": "Email↕",
+          "sort": "none"
+        }
+      ],
+      "inline": 0
+    }
+  ],
+  "errors": []
+}

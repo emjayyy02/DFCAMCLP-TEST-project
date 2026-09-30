@@ -26,26 +26,45 @@ export function SortControl({
   value,
   onChange,
   options,
+  direction,
+  onDirectionChange,
+  className = "",
 }: {
   id: string;
   value: string;
   onChange: (value: string) => void;
   options: Array<{ value: string; label: string }>;
+  direction: "ascending" | "descending";
+  onDirectionChange: () => void;
+  className?: string;
 }) {
   return (
-    <label className="sort-control" htmlFor={id}>
-      <span>Sort by</span>
-      <Select
-        id={id}
-        value={value}
-        onChange={(event) => onChange(event.target.value)}
-      >
-        {options.map((option) => (
-          <option value={option.value} key={option.value}>
-            {option.label}
-          </option>
-        ))}
-      </Select>
-    </label>
+    <div className={`inline-sort-control ${className}`}>
+      <label htmlFor={id}>Sorted by:</label>
+      <div className="inline-sort-actions">
+        <Select
+          id={id}
+          value={value}
+          onChange={(event) => onChange(event.target.value)}
+        >
+          {options.map((option) => (
+            <option value={option.value} key={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </Select>
+        <button
+          className="inline-sort-direction"
+          type="button"
+          onClick={onDirectionChange}
+          aria-label={`Sort ${direction === "ascending" ? "descending" : "ascending"}`}
+          title={`Sort ${direction === "ascending" ? "descending" : "ascending"}`}
+        >
+          <span aria-hidden="true">
+            {direction === "ascending" ? "↑" : "↓"}
+          </span>
+        </button>
+      </div>
+    </div>
   );
 }

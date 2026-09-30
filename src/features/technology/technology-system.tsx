@@ -37,6 +37,7 @@ export function TechnologySystem({ environment }: { environment: string }) {
 
       <TechnologySection
         title="Environment"
+        variant="plain"
         description="Runtime mode only; no host path, secret, or service-health value is shown."
       >
         <dl className="mt-4 grid gap-4 border-y border-border py-4 sm:grid-cols-[12rem_minmax(0,1fr)]">

@@ -8,6 +8,7 @@ export function TechnologySecurity() {
       <div className="grid min-w-0 gap-6 xl:grid-cols-2">
         <TechnologySection
           title="Authentication"
+          variant="plain"
           description="Better Auth handles sign-in; protected routes resolve sessions on the server."
         >
           <dl className="mt-4 divide-y divide-border border-y border-border">
@@ -45,6 +46,7 @@ export function TechnologySecurity() {
 
         <TechnologySection
           title="Authorization"
+          variant="plain"
           description="Deny by default: the selector sets portal intent, and each protected route must pass the full server-side sequence."
         >
           <TechnologyAccessPath />
@@ -53,6 +55,7 @@ export function TechnologySecurity() {
 
       <TechnologySection
         title="Sample access scenarios"
+        variant="plain"
         description="Fictional examples of route responses, not logs or recorded events."
       >
         <ul className="mt-4 divide-y divide-border border-y border-border">
@@ -73,6 +76,7 @@ export function TechnologySecurity() {
 
       <TechnologySection
         title="Known limitations"
+        variant="plain"
         description="Current limits of the implemented security foundation."
       >
         <ul className="mt-4 list-disc space-y-2 pl-5 leading-6 text-muted-foreground marker:text-foreground">

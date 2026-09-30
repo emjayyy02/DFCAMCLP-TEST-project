@@ -1,0 +1,390 @@
+{
+  "timestamp": "2026-09-30T05:14:42.058Z",
+  "browser": "Microsoft Edge Chromium",
+  "sizes": [
+    {
+      "group": "faculty",
+      "url": "/academic",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Academic portal",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "url": "/academic",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Academic portal",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "url": "/academic",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Academic portal",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/classes?offering=off-is203-bsis-2a",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "IS 304 · Project Management",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/classes?offering=off-is203-bsis-2a",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "IS 304 · Project Management",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/classes?offering=off-is203-bsis-2a",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "IS 304 · Project Management",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/announcements",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Announcements",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/announcements",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Announcements",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/announcements",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Announcements",
+      "pass": true
+    },
+    {
+      "group": "coordinator",
+      "url": "/academic/management",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Academic management",
+      "pass": true
+    },
+    {
+      "group": "coordinator",
+      "url": "/academic/management",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Academic management",
+      "pass": true
+    },
+    {
+      "group": "coordinator",
+      "url": "/academic/management",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Academic management",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "url": "/records/applicants",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Applicants",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "url": "/records/applicants",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Applicants",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "url": "/records/applicants",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Applicants",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "url": "/records/applicants?record=DEMO-APP-002",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Alex Rivera",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "url": "/records/applicants?record=DEMO-APP-002",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Alex Rivera",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "url": "/records/applicants?record=DEMO-APP-002",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Alex Rivera",
+      "pass": true
+    },
+    {
+      "group": "operations",
+      "url": "/operations",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Operations",
+      "pass": true
+    },
+    {
+      "group": "operations",
+      "url": "/operations",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Operations",
+      "pass": true
+    },
+    {
+      "group": "operations",
+      "url": "/operations",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Operations",
+      "pass": true
+    },
+    {
+      "group": "operations",
+      "url": "/operations/facilities?ticket=FAC-26037",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "A projector does not start when switched on.",
+      "pass": true
+    },
+    {
+      "group": "operations",
+      "url": "/operations/facilities?ticket=FAC-26037",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "A projector does not start when switched on.",
+      "pass": true
+    },
+    {
+      "group": "operations",
+      "url": "/operations/facilities?ticket=FAC-26037",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "A projector does not start when switched on.",
+      "pass": true
+    },
+    {
+      "group": "school-admin",
+      "url": "/operations",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Operations",
+      "pass": true
+    },
+    {
+      "group": "school-admin",
+      "url": "/operations",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Operations",
+      "pass": true
+    },
+    {
+      "group": "school-admin",
+      "url": "/operations",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Operations",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Demo accounts",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Demo accounts",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Demo accounts",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "url": "/technology/security",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Security",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "url": "/technology/security",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Security",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "url": "/technology/security",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Security",
+      "pass": true
+    },
+    {
+      "group": "faculty-it",
+      "url": "/technology/developer",
+      "width": 320,
+      "scrollWidth": 320,
+      "viewport": 320,
+      "h1": "Developer",
+      "pass": true
+    },
+    {
+      "group": "faculty-it",
+      "url": "/technology/developer",
+      "width": 768,
+      "scrollWidth": 768,
+      "viewport": 768,
+      "h1": "Developer",
+      "pass": true
+    },
+    {
+      "group": "faculty-it",
+      "url": "/technology/developer",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "h1": "Developer",
+      "pass": true
+    }
+  ],
+  "text200": [
+    {
+      "group": "faculty",
+      "url": "/academic/classes?offering=off-is203-bsis-2a",
+      "scrollWidth": 375,
+      "viewport": 375,
+      "rootFont": "32px",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "url": "/records/applicants",
+      "scrollWidth": 375,
+      "viewport": 375,
+      "rootFont": "32px",
+      "pass": true
+    },
+    {
+      "group": "operations",
+      "url": "/operations/facilities?ticket=FAC-26037",
+      "scrollWidth": 375,
+      "viewport": 375,
+      "rootFont": "32px",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "scrollWidth": 375,
+      "viewport": 375,
+      "rootFont": "32px",
+      "pass": true
+    }
+  ],
+  "interaction": [
+    {
+      "test": "announcement audience filter",
+      "pass": true
+    },
+    {
+      "test": "records tabs arrow key",
+      "pass": true
+    },
+    {
+      "test": "mobile selected account follows row",
+      "pass": true,
+      "row": true,
+      "detail": true,
+      "pressed": "true"
+    },
+    {
+      "test": "drawer escape focus return",
+      "pass": true
+    },
+    {
+      "test": "attendance dialog escape",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

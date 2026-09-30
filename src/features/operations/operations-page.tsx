@@ -1530,6 +1530,7 @@ export function OperationsPage({
   return (
     <div
       className="operations-page"
+      data-section={section}
       data-layout={
         section === "dashboard"
           ? "dashboard"

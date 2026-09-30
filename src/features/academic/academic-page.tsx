@@ -1447,7 +1447,7 @@ function AnnouncementsView({ isCoordinator }: { isCoordinator: boolean }) {
   );
   return (
     <section
-      className="academic-panel"
+      className="academic-panel academic-announcements-feed"
       aria-labelledby="announcements-list-title"
     >
       <SectionHeading
@@ -1694,6 +1694,7 @@ export function AcademicPage({
   return (
     <div
       className="academic-page"
+      data-section={section}
       data-layout={
         section === "dashboard"
           ? "dashboard"

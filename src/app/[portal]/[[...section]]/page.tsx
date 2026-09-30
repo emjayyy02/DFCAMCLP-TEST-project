@@ -88,6 +88,8 @@ export default async function PortalFoundationPage({
           stage: typeof query.stage === "string" ? query.stage : undefined,
           year: typeof query.year === "string" ? query.year : undefined,
           sort: typeof query.sort === "string" ? query.sort : undefined,
+          direction:
+            typeof query.direction === "string" ? query.direction : undefined,
         }}
       />
     );

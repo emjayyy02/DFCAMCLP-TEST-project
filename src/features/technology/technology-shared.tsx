@@ -7,16 +7,18 @@ export function TechnologySection({
   description,
   children,
   className = "",
+  variant = "panel",
 }: {
   title: string;
   description?: string;
   children: ReactNode;
   className?: string;
+  variant?: "panel" | "plain";
 }) {
   return (
     <section
       aria-label={title}
-      className={`min-w-0 rounded-lg border border-border bg-white p-5 sm:p-6 ${className}`}
+      className={`min-w-0 ${variant === "plain" ? "border-t border-border pt-5" : "rounded-lg border border-border bg-white p-5 sm:p-6"} ${className}`}
     >
       <h2 className="text-lg font-semibold sm:text-xl">{title}</h2>
       {description ? (

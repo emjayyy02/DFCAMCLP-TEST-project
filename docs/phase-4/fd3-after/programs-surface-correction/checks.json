@@ -1,0 +1,210 @@
+{
+  "date": "2026-09-30T04:54:24.205Z",
+  "checks": [
+    {
+      "route": "/",
+      "width": 1920,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "section": {
+        "left": 0,
+        "right": 1920,
+        "width": 1920,
+        "top": 559.5625,
+        "bottom": 1080.484375
+      },
+      "content": {
+        "left": 320,
+        "right": 1600,
+        "width": 1280,
+        "top": 623.5625,
+        "bottom": 1016.484375
+      },
+      "heading": {
+        "left": 320,
+        "right": 1600,
+        "width": 1280,
+        "top": 623.5625,
+        "bottom": 735.5625
+      },
+      "columns": {
+        "left": 320,
+        "right": 1600,
+        "width": 1280,
+        "top": 759.5625,
+        "bottom": 1016.484375
+      },
+      "introBottom": 559.5625,
+      "journeyTop": 1080.484375,
+      "sectionBackground": "rgb(255, 255, 255)",
+      "containerBackground": "rgba(0, 0, 0, 0)",
+      "sectionBorders": {
+        "top": "0px solid rgb(23, 35, 59)",
+        "bottom": "0px solid rgb(23, 35, 59)"
+      },
+      "tables": [
+        {
+          "left": 320,
+          "right": 936,
+          "width": 616,
+          "top": 799.5625,
+          "bottom": 1016.484375
+        },
+        {
+          "left": 984,
+          "right": 1600,
+          "width": 616,
+          "top": 799.5625,
+          "bottom": 942.0625
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/programs",
+      "width": 1920,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Programs & campuses",
+      "programs": 4,
+      "overflow": []
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "section": {
+        "left": 0,
+        "right": 1440,
+        "width": 1440,
+        "top": 379.5625,
+        "bottom": 900.484375
+      },
+      "content": {
+        "left": 80,
+        "right": 1360,
+        "width": 1280,
+        "top": 443.5625,
+        "bottom": 836.484375
+      },
+      "heading": {
+        "left": 80,
+        "right": 1360,
+        "width": 1280,
+        "top": 443.5625,
+        "bottom": 555.5625
+      },
+      "columns": {
+        "left": 80,
+        "right": 1360,
+        "width": 1280,
+        "top": 579.5625,
+        "bottom": 836.484375
+      },
+      "introBottom": 379.5625,
+      "journeyTop": 900.484375,
+      "sectionBackground": "rgb(255, 255, 255)",
+      "containerBackground": "rgba(0, 0, 0, 0)",
+      "sectionBorders": {
+        "top": "0px solid rgb(23, 35, 59)",
+        "bottom": "0px solid rgb(23, 35, 59)"
+      },
+      "tables": [
+        {
+          "left": 80,
+          "right": 696,
+          "width": 616,
+          "top": 619.5625,
+          "bottom": 836.484375
+        },
+        {
+          "left": 744,
+          "right": 1360,
+          "width": 616,
+          "top": 619.5625,
+          "bottom": 762.0625
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/programs",
+      "width": 1440,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Programs & campuses",
+      "programs": 4,
+      "overflow": []
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "viewport": 375,
+      "pageWidth": 375,
+      "section": {
+        "left": 0,
+        "right": 375,
+        "width": 375,
+        "top": -13.6875,
+        "bottom": 856.734375
+      },
+      "content": {
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "top": 34.3125,
+        "bottom": 808.734375
+      },
+      "heading": {
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "top": 34.3125,
+        "bottom": 227.3125
+      },
+      "columns": {
+        "left": 16,
+        "right": 359,
+        "width": 343,
+        "top": 247.3125,
+        "bottom": 808.734375
+      },
+      "introBottom": -13.6875,
+      "journeyTop": 856.734375,
+      "sectionBackground": "rgb(255, 255, 255)",
+      "containerBackground": "rgba(0, 0, 0, 0)",
+      "sectionBorders": {
+        "top": "0px solid rgb(23, 35, 59)",
+        "bottom": "0px solid rgb(23, 35, 59)"
+      },
+      "tables": [
+        {
+          "left": 16,
+          "right": 359,
+          "width": 343,
+          "top": 287.3125,
+          "bottom": 549.234375
+        },
+        {
+          "left": 16,
+          "right": 359,
+          "width": 343,
+          "top": 621.234375,
+          "bottom": 808.734375
+        }
+      ],
+      "overflow": []
+    },
+    {
+      "route": "/programs",
+      "width": 375,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Programs & campuses",
+      "programs": 4,
+      "overflow": []
+    }
+  ],
+  "errors": []
+}

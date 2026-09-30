@@ -622,3 +622,79 @@
     display: none !important;
   }
 }
+
+/* FD4: the inset criteria strip and ruled results form one registry surface. */
+.records-page .records-panel-head {
+  margin-bottom: 0.85rem;
+}
+
+.records-page .list-toolbar {
+  margin-bottom: 0;
+}
+
+.records-page .records-filters {
+  border-top: 0;
+  border-bottom: 0;
+  padding-block: 0;
+}
+
+.records-page .records-table-wrap th:first-child,
+.records-page .records-table-wrap td:first-child {
+  min-width: 18rem;
+}
+
+.records-page .records-table-wrap td:first-child strong,
+.records-page .records-table-wrap td:first-child small {
+  overflow-wrap: normal;
+}
+
+.records-page .records-mobile-row {
+  min-height: 44px;
+  border-radius: 0;
+  overflow-wrap: anywhere;
+}
+
+.records-page[data-section="applicants"]
+  .records-panel:has(.records-tabs)
+  .records-detail-head {
+  margin-bottom: 0;
+  padding-bottom: 0.65rem;
+}
+
+.records-page[data-section="applicants"]
+  .records-panel:has(.records-tabs)
+  .records-detail-head
+  h2 {
+  font-size: 1rem;
+}
+
+.records-page[data-section="applicants"]
+  .records-panel:has(.records-tabs)
+  .records-tabs {
+  margin-top: 0;
+}
+
+.records-page[data-section="applicants"]
+  .records-panel:has(.records-tabs)
+  .records-detail-content {
+  padding-top: 0.85rem;
+}
+
+.records-page[data-section="students"]
+  .records-table-wrap
+  :is(th, td):first-child {
+  min-width: 12rem;
+}
+
+.records-page[data-section="students"]
+  .records-table-wrap
+  :is(th, td):nth-child(2) {
+  min-width: 11rem;
+  white-space: nowrap;
+}
+
+.records-page[data-section="students"]
+  .records-table-wrap
+  :is(th, td):nth-child(4) {
+  white-space: nowrap;
+}

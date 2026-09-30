@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input, Select } from "@/components/ui/input";
 import { ListToolbar, SortControl } from "@/components/ui/list-toolbar";
+import { SortableHeader } from "@/components/ui/sortable-header";
 import { EmptyState } from "@/components/ui/states";
 import { IdentitySummary } from "@/components/ui/identity";
 import { portalCodes, portalDetails } from "@/lib/portals";
@@ -171,14 +172,23 @@ export function TechnologyAccountsDirectory({
   const [filters, setFilters] = useState(initialFilters);
   const [selectedEmail, setSelectedEmail] = useState<string | null>(null);
   const [sortOrder, setSortOrder] = useState<TechnologyAccountSort>("name");
+  const [reverse, setReverse] = useState(false);
+  function chooseSort(next: TechnologyAccountSort) {
+    setSortOrder(next);
+    setReverse(false);
+  }
+  function sortColumn(column: TechnologyAccountSort) {
+    if (sortOrder === column) setReverse((current) => !current);
+    else chooseSort(column);
+  }
   const filteredAccounts = useMemo(
     () => filterTechnologyAccounts(accounts, filters),
     [accounts, filters],
   );
-  const sortedAccounts = useMemo(
-    () => sortTechnologyAccounts(filteredAccounts, sortOrder),
-    [filteredAccounts, sortOrder],
-  );
+  const sortedAccounts = useMemo(() => {
+    const sorted = sortTechnologyAccounts(filteredAccounts, sortOrder);
+    return reverse ? sorted.toReversed() : sorted;
+  }, [filteredAccounts, sortOrder, reverse]);
   const selectedAccount = filteredAccounts.find(
     (account) => account.email === selectedEmail,
   );
@@ -280,13 +290,14 @@ export function TechnologyAccountsDirectory({
             sort={
               <SortControl
                 id="technology-account-sort"
+                className="table-mobile-sort"
                 value={sortOrder}
-                onChange={(value) =>
-                  setSortOrder(value as TechnologyAccountSort)
-                }
+                onChange={(value) => chooseSort(value as TechnologyAccountSort)}
+                direction={reverse ? "descending" : "ascending"}
+                onDirectionChange={() => setReverse((current) => !current)}
                 options={[
-                  { value: "name", label: "Name A–Z" },
-                  { value: "email", label: "Email A–Z" },
+                  { value: "name", label: "Name" },
+                  { value: "email", label: "Email" },
                 ]}
               />
             }
@@ -321,7 +332,7 @@ export function TechnologyAccountsDirectory({
                       <span className="block break-words font-semibold">
                         {account.name}
                       </span>
-                      <span className="mt-1 block break-all text-sm text-muted-foreground">
+                      <span className="mt-1 block break-words text-sm text-muted-foreground">
                         {account.email}
                       </span>
                       <span className="mt-3 flex flex-wrap items-center gap-2">
@@ -350,7 +361,28 @@ export function TechnologyAccountsDirectory({
                   </caption>
                   <thead>
                     <tr>
-                      <th scope="col">Demo identity</th>
+                      <SortableHeader
+                        label="Name"
+                        direction={
+                          sortOrder === "name"
+                            ? reverse
+                              ? "descending"
+                              : "ascending"
+                            : undefined
+                        }
+                        onSort={() => sortColumn("name")}
+                      />
+                      <SortableHeader
+                        label="Email"
+                        direction={
+                          sortOrder === "email"
+                            ? reverse
+                              ? "descending"
+                              : "ascending"
+                            : undefined
+                        }
+                        onSort={() => sortColumn("email")}
+                      />
                       <th scope="col">Account status</th>
                       <th scope="col">Portal memberships</th>
                       <th scope="col">Role summary</th>
@@ -373,10 +405,10 @@ export function TechnologyAccountsDirectory({
                             <span className="block font-semibold">
                               {account.name}
                             </span>
-                            <span className="mt-1 block break-all text-sm text-muted-foreground">
-                              {account.email}
-                            </span>
                           </button>
+                        </td>
+                        <td className="min-w-64 break-words text-sm text-muted-foreground">
+                          {account.email}
                         </td>
                         <td>
                           <AccountStatusBadge status={account.status} />

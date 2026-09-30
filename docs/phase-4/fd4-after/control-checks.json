@@ -1,0 +1,11 @@
+{
+  "browser": "Microsoft Edge Chromium",
+  "results": [
+    { "test": "Records applicant search", "pass": true },
+    { "test": "Records clear filters restores all results", "pass": true },
+    { "test": "Records sort selection", "pass": true },
+    { "test": "Technology account search", "pass": true },
+    { "test": "Portal switcher authorized choices", "pass": true },
+    { "test": "Account menu sign-out action present", "pass": true }
+  ]
+}

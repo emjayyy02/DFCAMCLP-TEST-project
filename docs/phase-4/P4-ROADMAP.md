@@ -1,6 +1,6 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 through P4-M6 complete; P4-FD1, P4-FD2, and P4-FD3 PASS / COMPLETE; P4-FD4 next, NOT STARTED; P4-M7 NOT STARTED.** Updated 30 September 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) now owns the final frontend direction and explicitly supersedes the visual rules listed in its §12. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains the historical foundation; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 through P4-M6 complete; P4-FD1 through P4-FD4 PASS / COMPLETE; P4-M7 next, NOT STARTED.** Updated 30 September 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) now owns the final frontend direction and explicitly supersedes the visual rules listed in its §12. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains the historical foundation; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 
@@ -162,7 +162,7 @@ M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy 
 
 ## P4-FD4 — Academic + Records + Operations + Technology Design Pass
 
-**Status: NOT STARTED. Requires a separate implementation instruction.**
+**Status: PASS / COMPLETE — 30 September 2026.** See [P4-FD4-STAFF-PORTAL-DESIGN.md](P4-FD4-STAFF-PORTAL-DESIGN.md).
 
 **Objective:** finish operational composition, density and technical reference hierarchy using one system.
 
@@ -346,3 +346,9 @@ Source: [PHASE-4-MANUAL-AUDIT.md](PHASE-4-MANUAL-AUDIT.md). Each row has one pri
 - Public, Applicant, and Student composition is complete under the Final Visual Lock. G01–G16 and fourteen additional states have fresh desktop/mobile and relevant full-page evidence in `fd3-after/`; an Academic staff page served as the unchanged comparator.
 - All requested test, integration, lint, type, build, and whitespace gates pass. Repository-wide format checking still reports four unchanged files recorded in the FD3 report.
 - Routes, auth/access, fixtures, validation, scenarios, workflows, actions, search/filter/sort, and demo state remain unchanged. FD4 is next and has not started.
+
+### P4-FD4 completion — 30 September 2026
+
+- Academic, Admissions & Records, Operations, and Technology composition now follows the Final Visual Lock. G17–G35 and five extension states have fresh desktop/mobile and relevant full-page evidence in `fd4-after/`; an Applicant profile served as the unchanged FD3 comparator.
+- All requested tests, integration suites, lint, typecheck, build, and whitespace checks pass. Repository-wide formatting still reports the four unchanged files recorded in the FD4 report.
+- Routes, auth/access, fixtures, validation, scenarios, workflows, actions, search/filter/sort, and demo state remain unchanged. M7 is next and has not started.

@@ -53,23 +53,22 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          className="public-section public-container"
-          aria-labelledby="programs-title"
-        >
-          <div className="section-heading">
-            <div>
-              <h2 id="programs-title">Programs across two campuses</h2>
-              <p>
-                Four degree programs in the project model, with BSBA majors
-                grouped under the degree.
-              </p>
+        <section className="public-section" aria-labelledby="programs-title">
+          <div className="public-container">
+            <div className="section-heading">
+              <div>
+                <h2 id="programs-title">Programs across two campuses</h2>
+                <p>
+                  Four degree programs in the project model, with BSBA majors
+                  grouped under the degree.
+                </p>
+              </div>
+              <Link className="text-link" href="/programs">
+                View programs
+              </Link>
             </div>
-            <Link className="text-link" href="/programs">
-              View programs
-            </Link>
+            <CampusPrograms detailed />
           </div>
-          <CampusPrograms detailed />
         </section>
         <section className="journey-section">
           <div className="public-container">

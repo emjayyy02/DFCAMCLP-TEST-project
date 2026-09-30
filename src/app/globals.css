@@ -398,14 +398,6 @@
     font-size: var(--text-secondary);
     line-height: 1.5;
   }
-  .sort-control {
-    display: grid;
-    gap: var(--space-1);
-    min-width: min(100%, 12rem);
-    color: var(--foreground);
-    font-size: var(--text-secondary);
-    font-weight: 600;
-  }
   .empty-state,
   .error-state {
     padding: var(--space-4);
@@ -1896,7 +1888,7 @@
 .data-table tbody tr[aria-selected="true"] td:first-child {
   box-shadow: inset 3px 0 0 var(--primary);
 }
-.technology-account-table button {
+.technology-account-table tbody button {
   text-decoration: underline;
 }
 .portal-main [data-layout="wide"] {
@@ -2376,6 +2368,112 @@
   }
   .technology-account-list {
     display: none;
+  }
+}
+
+.sortable-header-button {
+  display: inline-flex;
+  width: calc(100% + 32px);
+  min-height: 44px;
+  align-items: center;
+  gap: 0.35rem;
+  margin: -12px -16px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sortable-header-button:hover {
+  background: var(--primary-soft);
+}
+
+.sortable-header-button:focus-visible,
+.inline-sort-direction:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: -2px;
+}
+
+.sortable-header-indicator {
+  color: var(--foreground-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.sortable-header-indicator.is-active {
+  color: var(--primary);
+}
+
+.inline-sort-control {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  color: var(--foreground-muted);
+  font-size: 0.875rem;
+}
+
+.inline-sort-control select {
+  width: auto;
+  max-width: min(100%, 14rem);
+  min-height: 44px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.875rem;
+}
+
+.inline-sort-actions {
+  display: inline-flex;
+  min-width: 0;
+  max-width: 100%;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.inline-sort-actions select {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.inline-sort-actions button {
+  flex: 0 0 44px;
+}
+
+.inline-sort-direction {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inline-sort-direction:hover {
+  background: var(--primary-soft);
+}
+
+.records-page .table-mobile-sort,
+.technology-directory .table-mobile-sort {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .records-page .table-mobile-sort {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 95.99rem) {
+  .technology-directory .table-mobile-sort {
+    display: inline-flex;
   }
 }
 @media (max-width: 48rem) {

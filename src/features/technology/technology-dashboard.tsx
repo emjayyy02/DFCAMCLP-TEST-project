@@ -102,6 +102,7 @@ export function TechnologyDashboard({
 
       <TechnologySection
         title="Implemented foundations"
+        variant="plain"
         description="These labels describe project architecture, not a live service health check."
       >
         <dl className="mt-4 divide-y divide-border border-y border-border">
@@ -132,6 +133,7 @@ export function TechnologyDashboard({
         <div className="grid min-w-0 gap-6 xl:grid-cols-2">
           <TechnologySection
             title="Security foundations"
+            variant="plain"
             description="A concise summary of implemented access protections. No external certification is claimed."
           >
             <ul className="mt-4 divide-y divide-border border-y border-border">
@@ -158,6 +160,7 @@ export function TechnologyDashboard({
 
           <TechnologySection
             title="Sample security scenarios"
+            variant="plain"
             description="Illustrative outcomes only. This is not recorded activity or audit history."
           >
             <ul className="mt-4 divide-y divide-border border-y border-border">

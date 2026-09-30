@@ -1,0 +1,2523 @@
+{
+  "startedAt": "2026-09-30T05:10:12.498Z",
+  "browser": "Microsoft Edge Chromium, headless, scale 1",
+  "baseURL": "http://localhost:3000",
+  "captures": [
+    {
+      "golden": "G17",
+      "capture": "0177-academic",
+      "group": "faculty",
+      "state": "academic",
+      "url": "/academic",
+      "before": [
+        "desktop-1920x1080/faculty/0177-academic--viewport.png",
+        "desktop-1920x1080/faculty/0177-academic--full-page.png",
+        "mobile-375x812/faculty/0177-academic--viewport.png",
+        "mobile-375x812/faculty/0177-academic--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/faculty/G17-0177-academic--viewport.png",
+        "desktop-1920x1080/faculty/G17-0177-academic--full-page.png",
+        "mobile-375x812/faculty/G17-0177-academic--viewport.png",
+        "mobile-375x812/faculty/G17-0177-academic--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Academic portal",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1408,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Academic portal",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G18",
+      "capture": "0182-academic-classes-offering-off-is203-bsis-2a",
+      "group": "faculty",
+      "state": "academic classes offering off-is203-bsis-2a",
+      "url": "/academic/classes?offering=off-is203-bsis-2a",
+      "before": [
+        "desktop-1920x1080/faculty/0182-academic-classes-offering-off-is203-bsis-2a--viewport.png",
+        "desktop-1920x1080/faculty/0182-academic-classes-offering-off-is203-bsis-2a--full-page.png",
+        "mobile-375x812/faculty/0182-academic-classes-offering-off-is203-bsis-2a--viewport.png",
+        "mobile-375x812/faculty/0182-academic-classes-offering-off-is203-bsis-2a--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/faculty/G18-0182-academic-classes-offering-off-is203-bsis-2a--viewport.png",
+        "desktop-1920x1080/faculty/G18-0182-academic-classes-offering-off-is203-bsis-2a--full-page.png",
+        "mobile-375x812/faculty/G18-0182-academic-classes-offering-off-is203-bsis-2a--viewport.png",
+        "mobile-375x812/faculty/G18-0182-academic-classes-offering-off-is203-bsis-2a--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "IS 304 · Project Management",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1536,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "IS 304 · Project Management",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G19",
+      "capture": "0425-attendance-review-and-save-dialog",
+      "group": "faculty",
+      "state": "Attendance - Review and save dialog",
+      "url": "/academic/attendance",
+      "before": [
+        "desktop-1920x1080/faculty/0425-attendance-review-and-save-dialog--viewport.png",
+        "desktop-1920x1080/faculty/0425-attendance-review-and-save-dialog--full-page.png",
+        "mobile-375x812/faculty/0425-attendance-review-and-save-dialog--viewport.png",
+        "mobile-375x812/faculty/0425-attendance-review-and-save-dialog--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/faculty/G19-0425-attendance-review-and-save-dialog--viewport.png",
+        "desktop-1920x1080/faculty/G19-0425-attendance-review-and-save-dialog--full-page.png",
+        "mobile-375x812/faculty/G19-0425-attendance-review-and-save-dialog--viewport.png",
+        "mobile-375x812/faculty/G19-0425-attendance-review-and-save-dialog--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Attendance",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1536,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Attendance",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G20",
+      "capture": "0427-grades-review-submission-dialog",
+      "group": "faculty",
+      "state": "Grades - Review submission dialog",
+      "url": "/academic/grades",
+      "before": [
+        "desktop-1920x1080/faculty/0427-grades-review-submission-dialog--viewport.png",
+        "desktop-1920x1080/faculty/0427-grades-review-submission-dialog--full-page.png",
+        "mobile-375x812/faculty/0427-grades-review-submission-dialog--viewport.png",
+        "mobile-375x812/faculty/0427-grades-review-submission-dialog--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/faculty/G20-0427-grades-review-submission-dialog--viewport.png",
+        "desktop-1920x1080/faculty/G20-0427-grades-review-submission-dialog--full-page.png",
+        "mobile-375x812/faculty/G20-0427-grades-review-submission-dialog--viewport.png",
+        "mobile-375x812/faculty/G20-0427-grades-review-submission-dialog--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Grades",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1536,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Grades",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G21",
+      "capture": "0181-academic-announcements",
+      "group": "faculty",
+      "state": "academic announcements",
+      "url": "/academic/announcements",
+      "before": [
+        "desktop-1920x1080/faculty/0181-academic-announcements--viewport.png",
+        "desktop-1920x1080/faculty/0181-academic-announcements--full-page.png",
+        "mobile-375x812/faculty/0181-academic-announcements--viewport.png",
+        "mobile-375x812/faculty/0181-academic-announcements--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/faculty/G21-0181-academic-announcements--viewport.png",
+        "desktop-1920x1080/faculty/G21-0181-academic-announcements--full-page.png",
+        "mobile-375x812/faculty/G21-0181-academic-announcements--viewport.png",
+        "mobile-375x812/faculty/G21-0181-academic-announcements--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Announcements",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 672,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Announcements",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G22",
+      "capture": "0311-academic-management",
+      "group": "coordinator",
+      "state": "academic management",
+      "url": "/academic/management",
+      "before": [
+        "desktop-1920x1080/coordinator/0311-academic-management--viewport.png",
+        "desktop-1920x1080/coordinator/0311-academic-management--full-page.png",
+        "mobile-375x812/coordinator/0311-academic-management--viewport.png",
+        "mobile-375x812/coordinator/0311-academic-management--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/coordinator/G22-0311-academic-management--viewport.png",
+        "desktop-1920x1080/coordinator/G22-0311-academic-management--full-page.png",
+        "mobile-375x812/coordinator/G22-0311-academic-management--viewport.png",
+        "mobile-375x812/coordinator/G22-0311-academic-management--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Academic management",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1536,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Academic management",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G23",
+      "capture": "0189-records-applicants",
+      "group": "records",
+      "state": "records applicants",
+      "url": "/records/applicants",
+      "before": [
+        "desktop-1920x1080/records/0189-records-applicants--viewport.png",
+        "desktop-1920x1080/records/0189-records-applicants--full-page.png",
+        "mobile-375x812/records/0189-records-applicants--viewport.png",
+        "mobile-375x812/records/0189-records-applicants--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/records/G23-0189-records-applicants--viewport.png",
+        "desktop-1920x1080/records/G23-0189-records-applicants--full-page.png",
+        "mobile-375x812/records/G23-0189-records-applicants--viewport.png",
+        "mobile-375x812/records/G23-0189-records-applicants--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Applicants",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1536,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Applicants",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G24",
+      "capture": "0194-records-students-no-search-results",
+      "group": "records",
+      "state": "records students - No search results",
+      "url": "/records/students",
+      "before": [
+        "desktop-1920x1080/records/0194-records-students-no-search-results--viewport.png",
+        "mobile-375x812/records/0194-records-students-no-search-results--viewport.png",
+        "mobile-375x812/records/0194-records-students-no-search-results--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/records/G24-0194-records-students-no-search-results--viewport.png",
+        "desktop-1920x1080/records/G24-0194-records-students-no-search-results--full-page.png",
+        "mobile-375x812/records/G24-0194-records-students-no-search-results--viewport.png",
+        "mobile-375x812/records/G24-0194-records-students-no-search-results--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Students",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1536,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Students",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G25",
+      "capture": "0208-records-applicants-record-demo-app-002-requirements",
+      "group": "records",
+      "state": "records applicants record DEMO-APP-002 - Requirements",
+      "url": "/records/applicants?record=DEMO-APP-002",
+      "before": [
+        "desktop-1920x1080/records/0208-records-applicants-record-demo-app-002-requirements--viewport.png",
+        "desktop-1920x1080/records/0208-records-applicants-record-demo-app-002-requirements--full-page.png",
+        "mobile-375x812/records/0208-records-applicants-record-demo-app-002-requirements--viewport.png",
+        "mobile-375x812/records/0208-records-applicants-record-demo-app-002-requirements--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/records/G25-0208-records-applicants-record-demo-app-002-requirements--viewport.png",
+        "desktop-1920x1080/records/G25-0208-records-applicants-record-demo-app-002-requirements--full-page.png",
+        "mobile-375x812/records/G25-0208-records-applicants-record-demo-app-002-requirements--viewport.png",
+        "mobile-375x812/records/G25-0208-records-applicants-record-demo-app-002-requirements--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Alex Rivera",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 896,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Alex Rivera",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G26",
+      "capture": "0272-operations",
+      "group": "operations",
+      "state": "operations",
+      "url": "/operations",
+      "before": [
+        "desktop-1920x1080/operations/0272-operations--viewport.png",
+        "desktop-1920x1080/operations/0272-operations--full-page.png",
+        "mobile-375x812/operations/0272-operations--viewport.png",
+        "mobile-375x812/operations/0272-operations--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/operations/G26-0272-operations--viewport.png",
+        "desktop-1920x1080/operations/G26-0272-operations--full-page.png",
+        "mobile-375x812/operations/G26-0272-operations--viewport.png",
+        "mobile-375x812/operations/G26-0272-operations--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Operations",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1408,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Operations",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G28",
+      "capture": "0327-operations",
+      "group": "school-admin",
+      "state": "operations",
+      "url": "/operations",
+      "before": [
+        "desktop-1920x1080/school-admin/0327-operations--viewport.png",
+        "desktop-1920x1080/school-admin/0327-operations--full-page.png",
+        "mobile-375x812/school-admin/0327-operations--viewport.png",
+        "mobile-375x812/school-admin/0327-operations--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/school-admin/G28-0327-operations--viewport.png",
+        "desktop-1920x1080/school-admin/G28-0327-operations--full-page.png",
+        "mobile-375x812/school-admin/G28-0327-operations--viewport.png",
+        "mobile-375x812/school-admin/G28-0327-operations--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Operations",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1408,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Operations",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G29",
+      "capture": "0299-technology-accounts-view-details-for-quinn-testmultiporal",
+      "group": "technology",
+      "state": "technology accounts - View details for Quinn Testmultiporal",
+      "url": "/technology/accounts",
+      "before": [
+        "desktop-1920x1080/technology/0299-technology-accounts-view-details-for-quinn-testmultiporal--viewport.png",
+        "desktop-1920x1080/technology/0299-technology-accounts-view-details-for-quinn-testmultiporal--full-page.png",
+        "mobile-375x812/technology/0299-technology-accounts-view-details-for-quinn-testmultiporal--viewport.png",
+        "mobile-375x812/technology/0299-technology-accounts-view-details-for-quinn-testmultiporal--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--viewport.png",
+        "desktop-1920x1080/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--full-page.png",
+        "mobile-375x812/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--viewport.png",
+        "mobile-375x812/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Demo accounts",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1536,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Demo accounts",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G30",
+      "capture": "0303-technology-security",
+      "group": "technology",
+      "state": "technology security",
+      "url": "/technology/security",
+      "before": [
+        "desktop-1920x1080/technology/0303-technology-security--viewport.png",
+        "desktop-1920x1080/technology/0303-technology-security--full-page.png",
+        "mobile-375x812/technology/0303-technology-security--viewport.png",
+        "mobile-375x812/technology/0303-technology-security--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/technology/G30-0303-technology-security--viewport.png",
+        "desktop-1920x1080/technology/G30-0303-technology-security--full-page.png",
+        "mobile-375x812/technology/G30-0303-technology-security--viewport.png",
+        "mobile-375x812/technology/G30-0303-technology-security--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Security",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1408,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Security",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G31",
+      "capture": "0360-technology-developer",
+      "group": "faculty-it",
+      "state": "technology developer",
+      "url": "/technology/developer",
+      "before": [
+        "desktop-1920x1080/faculty-it/0360-technology-developer--viewport.png",
+        "desktop-1920x1080/faculty-it/0360-technology-developer--full-page.png",
+        "mobile-375x812/faculty-it/0360-technology-developer--viewport.png",
+        "mobile-375x812/faculty-it/0360-technology-developer--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/faculty-it/G31-0360-technology-developer--viewport.png",
+        "desktop-1920x1080/faculty-it/G31-0360-technology-developer--full-page.png",
+        "mobile-375x812/faculty-it/G31-0360-technology-developer--viewport.png",
+        "mobile-375x812/faculty-it/G31-0360-technology-developer--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Developer",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1408,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Developer",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G32",
+      "capture": "0366-applicant-navigation-drawer",
+      "group": "applicant",
+      "state": "APPLICANT - Navigation drawer",
+      "url": "/applicant",
+      "before": [
+        "desktop-1920x1080/applicant/0366-applicant-navigation-drawer--viewport.png",
+        "desktop-1920x1080/applicant/0366-applicant-navigation-drawer--full-page.png",
+        "mobile-375x812/applicant/0366-applicant-navigation-drawer--viewport.png",
+        "mobile-375x812/applicant/0366-applicant-navigation-drawer--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Your next step",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1216,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Your next step",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G33",
+      "capture": "0377-technology-account-menu",
+      "group": "technology",
+      "state": "TECHNOLOGY - Account menu",
+      "url": "/technology",
+      "before": [
+        "desktop-1920x1080/technology/0377-technology-account-menu--viewport.png",
+        "desktop-1920x1080/technology/0377-technology-account-menu--full-page.png",
+        "mobile-375x812/technology/0377-technology-account-menu--viewport.png",
+        "mobile-375x812/technology/0377-technology-account-menu--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/technology/G33-0377-technology-account-menu--viewport.png",
+        "desktop-1920x1080/technology/G33-0377-technology-account-menu--full-page.png",
+        "mobile-375x812/technology/G33-0377-technology-account-menu--viewport.png",
+        "mobile-375x812/technology/G33-0377-technology-account-menu--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Technology",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1408,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Technology",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G34",
+      "capture": "0384-academic-portal-switcher",
+      "group": "faculty-it",
+      "state": "ACADEMIC - Portal switcher",
+      "url": "/academic",
+      "before": [
+        "desktop-1920x1080/faculty-it/0384-academic-portal-switcher--viewport.png",
+        "desktop-1920x1080/faculty-it/0384-academic-portal-switcher--full-page.png",
+        "mobile-375x812/faculty-it/0384-academic-portal-switcher--viewport.png",
+        "mobile-375x812/faculty-it/0384-academic-portal-switcher--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/faculty-it/G34-0384-academic-portal-switcher--viewport.png",
+        "desktop-1920x1080/faculty-it/G34-0384-academic-portal-switcher--full-page.png",
+        "mobile-375x812/faculty-it/G34-0384-academic-portal-switcher--viewport.png",
+        "mobile-375x812/faculty-it/G34-0384-academic-portal-switcher--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Academic portal",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 1408,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Academic portal",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G35",
+      "capture": "0388-access-denied-unauthorized-portal",
+      "group": "student",
+      "state": "Access denied - Unauthorized portal",
+      "url": "/technology",
+      "before": [
+        "desktop-1920x1080/student/0388-access-denied-unauthorized-portal--viewport.png",
+        "mobile-375x812/student/0388-access-denied-unauthorized-portal--viewport.png"
+      ],
+      "after": [
+        "desktop-1920x1080/student/G35-0388-access-denied-unauthorized-portal--viewport.png",
+        "mobile-375x812/student/G35-0388-access-denied-unauthorized-portal--viewport.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Access denied",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Access denied",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "X01",
+      "capture": "0400-dcat-review-sample-schedule",
+      "group": "records",
+      "state": "DCAT - Review sample schedule",
+      "url": "/records/dcat?record=DEMO-APP-003",
+      "before": [
+        "desktop-1920x1080/records/0400-dcat-review-sample-schedule--viewport.png",
+        "desktop-1920x1080/records/0400-dcat-review-sample-schedule--full-page.png",
+        "mobile-375x812/records/0400-dcat-review-sample-schedule--viewport.png",
+        "mobile-375x812/records/0400-dcat-review-sample-schedule--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/records/X01-0400-dcat-review-sample-schedule--viewport.png",
+        "desktop-1920x1080/records/X01-0400-dcat-review-sample-schedule--full-page.png",
+        "mobile-375x812/records/X01-0400-dcat-review-sample-schedule--viewport.png",
+        "mobile-375x812/records/X01-0400-dcat-review-sample-schedule--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "DCAT",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 896,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "DCAT",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "X02",
+      "capture": "0401-dcat-review-passed-result",
+      "group": "records",
+      "state": "DCAT - Review Passed result",
+      "url": "/records/dcat?record=DEMO-APP-005",
+      "before": [
+        "desktop-1920x1080/records/0401-dcat-review-passed-result--viewport.png",
+        "desktop-1920x1080/records/0401-dcat-review-passed-result--full-page.png",
+        "mobile-375x812/records/0401-dcat-review-passed-result--viewport.png",
+        "mobile-375x812/records/0401-dcat-review-passed-result--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/records/X02-0401-dcat-review-passed-result--viewport.png",
+        "desktop-1920x1080/records/X02-0401-dcat-review-passed-result--full-page.png",
+        "mobile-375x812/records/X02-0401-dcat-review-passed-result--viewport.png",
+        "mobile-375x812/records/X02-0401-dcat-review-passed-result--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "DCAT",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 896,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "DCAT",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "X03",
+      "capture": "0434-dcat-review-not-qualified-result",
+      "group": "records",
+      "state": "DCAT - Review Not Qualified result",
+      "url": "/records/dcat?record=DEMO-APP-005",
+      "before": [
+        "desktop-1920x1080/records/0434-dcat-review-not-qualified-result--viewport.png",
+        "desktop-1920x1080/records/0434-dcat-review-not-qualified-result--full-page.png",
+        "mobile-375x812/records/0434-dcat-review-not-qualified-result--viewport.png",
+        "mobile-375x812/records/0434-dcat-review-not-qualified-result--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/records/X03-0434-dcat-review-not-qualified-result--viewport.png",
+        "desktop-1920x1080/records/X03-0434-dcat-review-not-qualified-result--full-page.png",
+        "mobile-375x812/records/X03-0434-dcat-review-not-qualified-result--viewport.png",
+        "mobile-375x812/records/X03-0434-dcat-review-not-qualified-result--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "DCAT",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 896,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "DCAT",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "X04",
+      "capture": "0249-records-documents-record-demo-stu-2026-0142-preview-sample-1",
+      "group": "records",
+      "state": "records documents record DEMO-STU-2026-0142 - Preview sample 1",
+      "url": "/records/documents?record=DEMO-STU-2026-0142",
+      "before": [
+        "desktop-1920x1080/records/0249-records-documents-record-demo-stu-2026-0142-preview-sample-1--viewport.png",
+        "desktop-1920x1080/records/0249-records-documents-record-demo-stu-2026-0142-preview-sample-1--full-page.png",
+        "mobile-375x812/records/0249-records-documents-record-demo-stu-2026-0142-preview-sample-1--viewport.png",
+        "mobile-375x812/records/0249-records-documents-record-demo-stu-2026-0142-preview-sample-1--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/records/X04-0249-records-documents-record-demo-stu-2026-0142-preview-sample-1--viewport.png",
+        "desktop-1920x1080/records/X04-0249-records-documents-record-demo-stu-2026-0142-preview-sample-1--full-page.png",
+        "mobile-375x812/records/X04-0249-records-documents-record-demo-stu-2026-0142-preview-sample-1--viewport.png",
+        "mobile-375x812/records/X04-0249-records-documents-record-demo-stu-2026-0142-preview-sample-1--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Documents",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 896,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Documents",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "X05",
+      "capture": "0032-applicant-profile",
+      "group": "applicant",
+      "state": "applicant profile",
+      "url": "/applicant/profile",
+      "before": [
+        "desktop-1920x1080/applicant/0032-applicant-profile--viewport.png",
+        "desktop-1920x1080/applicant/0032-applicant-profile--full-page.png",
+        "mobile-375x812/applicant/0032-applicant-profile--viewport.png",
+        "mobile-375x812/applicant/0032-applicant-profile--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/applicant/X05-0032-applicant-profile--viewport.png",
+        "desktop-1920x1080/applicant/X05-0032-applicant-profile--full-page.png",
+        "mobile-375x812/applicant/X05-0032-applicant-profile--viewport.png",
+        "mobile-375x812/applicant/X05-0032-applicant-profile--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "Profile",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 896,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "Profile",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    },
+    {
+      "golden": "G27",
+      "capture": "0281-operations-facilities-ticket-fac-26037",
+      "group": "operations",
+      "state": "operations facilities ticket FAC-26037",
+      "url": "/operations/facilities?ticket=FAC-26037",
+      "before": [
+        "desktop-1920x1080/operations/0281-operations-facilities-ticket-fac-26037--viewport.png",
+        "mobile-375x812/operations/0281-operations-facilities-ticket-fac-26037--viewport.png",
+        "mobile-375x812/operations/0281-operations-facilities-ticket-fac-26037--full-page.png"
+      ],
+      "after": [
+        "desktop-1920x1080/operations/G27-0281-operations-facilities-ticket-fac-26037--viewport.png",
+        "desktop-1920x1080/operations/G27-0281-operations-facilities-ticket-fac-26037--full-page.png",
+        "mobile-375x812/operations/G27-0281-operations-facilities-ticket-fac-26037--viewport.png",
+        "mobile-375x812/operations/G27-0281-operations-facilities-ticket-fac-26037--full-page.png"
+      ],
+      "checks": {
+        "desktop-1920x1080": {
+          "width": 1920,
+          "viewport": 1920,
+          "h1": "A projector does not start when switched on.",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "32px",
+            "weight": "600",
+            "line": "38px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 896,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        },
+        "mobile-375x812": {
+          "width": 375,
+          "viewport": 375,
+          "h1": "A projector does not start when switched on.",
+          "h1Style": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "28px",
+            "weight": "600",
+            "line": "34px"
+          },
+          "bodyStyle": {
+            "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+            "size": "16px",
+            "weight": "400",
+            "line": "24px"
+          },
+          "contentWidth": 343,
+          "fonts": [
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "400"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "600"
+            },
+            {
+              "family": "sourceSans",
+              "status": "loaded",
+              "weight": "700"
+            },
+            {
+              "family": "Source Serif 4",
+              "status": "unloaded",
+              "weight": "600"
+            }
+          ],
+          "missingImages": [],
+          "invalidWeights": []
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "captureRecoveries": [],
+  "completedAt": "2026-09-30T05:13:27.641Z"
+}

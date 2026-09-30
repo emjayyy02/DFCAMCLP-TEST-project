@@ -62,6 +62,7 @@ export function TechnologyDeveloper({
 
       <TechnologySection
         title="Portal map"
+        variant="plain"
         description="These are the project's authenticated feature families, not a DFCAMCLP organization chart."
       >
         <dl className="mt-4 grid gap-x-8 sm:grid-cols-2">
@@ -81,6 +82,7 @@ export function TechnologyDeveloper({
 
       <TechnologySection
         title="Institution data integrity"
+        variant="plain"
         description="This read-only view is rendered from the project's canonical seed registry. BSBA majors stay nested under BSBA."
       >
         <div className="mt-4 grid gap-x-8 sm:grid-cols-2">
@@ -116,6 +118,7 @@ export function TechnologyDeveloper({
       <div className="grid min-w-0 gap-6 xl:grid-cols-2">
         <TechnologySection
           title="Frontend milestones"
+          variant="plain"
           description="P3-M7 complete — the Technology foundation is delivered."
         >
           <ul className="mt-4 divide-y divide-border border-y border-border">
@@ -143,6 +146,7 @@ export function TechnologyDeveloper({
 
         <TechnologySection
           title="Demo data and limits"
+          variant="plain"
           description="This project demonstrates frontend workflows around a real authentication and access foundation."
         >
           <ul className="mt-4 list-disc space-y-2 pl-5 leading-6 text-muted-foreground marker:text-foreground">
@@ -160,6 +164,7 @@ export function TechnologyDeveloper({
       <div className="grid min-w-0 gap-6 xl:grid-cols-2">
         <TechnologySection
           title="Build and tooling references"
+          variant="plain"
           description="These are project scripts for the repository; they do not run from this page."
         >
           <dl className="mt-4 divide-y divide-border border-y border-border">
@@ -186,6 +191,7 @@ export function TechnologyDeveloper({
 
         <TechnologySection
           title="Read-only route reference"
+          variant="plain"
           description="Lists routes available to this signed-in Developer membership. It is a reference only and does not run an access test."
         >
           <ul className="mt-4 divide-y divide-border border-y border-border">
