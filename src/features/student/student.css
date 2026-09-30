@@ -1541,6 +1541,141 @@
   }
 }
 
+/* FD3: personal academic work led by class, agenda, and ruled context. */
+.student-experience[data-section="dashboard"] .student-dashboard-grid {
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+  gap: 24px;
+}
+.student-experience[data-section="dashboard"] .student-next-class {
+  min-height: 0;
+  padding: 24px;
+  border-color: var(--border-strong);
+  border-left: 3px solid var(--primary);
+  background: var(--primary-soft);
+}
+.student-experience[data-section="dashboard"]
+  .student-dashboard-surface[aria-labelledby="today-title"] {
+  min-height: 0;
+  padding: 24px;
+  border-top: 2px solid var(--border-strong);
+}
+.student-experience[data-section="dashboard"]
+  .student-dashboard-surface[aria-labelledby="enrollment-title"],
+.student-experience[data-section="dashboard"]
+  .student-dashboard-surface[aria-labelledby="recent-title"] {
+  min-height: 0;
+  padding: 16px 0 0;
+  border: 0;
+  border-top: 2px solid var(--border-strong);
+  border-radius: 0;
+  background: transparent;
+}
+.student-experience[data-section="dashboard"] .student-next-class h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.student-experience[data-section="dashboard"] .student-section-heading h2 {
+  font-size: 20px;
+  line-height: 26px;
+}
+.student-experience[data-section="academics"] .student-term-context {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--muted);
+  border-left: 2px solid var(--border-strong);
+}
+.student-experience[data-section="academics"]
+  .student-tab[aria-selected="true"] {
+  border-color: transparent;
+  border-bottom-color: var(--primary);
+}
+.student-experience[data-section="academics"] .student-academic-panel {
+  border-top: 2px solid var(--border-strong);
+}
+.student-week-day h3 span,
+.student-meeting-time,
+.student-subject-code {
+  font-size: 14px;
+  line-height: 20px;
+}
+.student-meeting-time {
+  color: var(--foreground);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.student-curriculum-group {
+  padding: 16px 0;
+  border: 0;
+  border-top: 2px solid var(--border-strong);
+  border-radius: 0;
+  background: transparent;
+}
+.student-experience[data-section="enrollment"] .student-enrollment-summary {
+  border-top: 2px solid var(--border-strong);
+}
+.student-experience[data-section="enrollment"] .student-document-row {
+  padding: 16px 0;
+  border: 0;
+  border-bottom: 1px solid var(--border-strong);
+  border-radius: 0;
+  background: transparent;
+}
+.student-experience[data-section="requests"] .student-request-list,
+.student-experience[data-section="announcements"] .student-announcement-list {
+  border-top: 2px solid var(--border-strong);
+}
+.student-experience[data-section="calendar"] .student-calendar-toolbar {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--border-strong);
+}
+.student-experience[data-section="calendar"] .student-calendar-agenda h3 {
+  font-size: 20px;
+  line-height: 26px;
+}
+.student-calendar-event-list > li {
+  grid-template-columns: minmax(6.5rem, auto) minmax(0, 1fr);
+  gap: 12px;
+}
+.student-calendar-event-list time {
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+  font-variant-numeric: tabular-nums;
+}
+.student-experience[data-section="profile"] .student-profile-identity {
+  padding: 24px;
+  border-top: 2px solid var(--border-strong);
+}
+.student-experience[data-section="profile"] .student-profile-group {
+  padding: 20px 0 0;
+  border: 0;
+  border-top: 2px solid var(--border-strong);
+  border-radius: 0;
+  background: transparent;
+}
+.student-experience[data-section="profile"] .student-profile-group dl > div {
+  border-bottom-color: var(--border-strong);
+}
+@media (max-width: 1000px) {
+  .student-experience[data-section="dashboard"] .student-dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+  .student-experience[data-section="dashboard"] .student-next-class,
+  .student-experience[data-section="dashboard"]
+    .student-dashboard-surface[aria-labelledby="today-title"] {
+    padding: 20px 16px;
+  }
+  .student-experience[data-section="calendar"] .student-mobile-date-picker {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-strong);
+  }
+  .student-experience[data-section="profile"] .student-profile-identity {
+    padding: 20px 16px;
+  }
+}
+
 @media print {
   body * {
     visibility: hidden !important;

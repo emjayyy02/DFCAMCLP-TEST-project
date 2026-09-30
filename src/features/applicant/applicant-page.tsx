@@ -643,6 +643,7 @@ export function ApplicantPage({
     <div
       className="applicant-experience"
       data-layout={section === "profile" ? "detail" : "personal"}
+      data-section={section}
     >
       <PageHeader title={title} description={description} />
       <DemoNotice detail="Fictional applicant data · Changes reset on refresh" />

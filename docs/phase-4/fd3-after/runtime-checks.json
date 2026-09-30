@@ -1,0 +1,1294 @@
+{
+  "startedAt": "2026-09-30T04:28:48.434Z",
+  "responsive": [
+    {
+      "group": "public",
+      "url": "/",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Student & Staff Portal",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "\"Source Serif 4\", Georgia, serif",
+      "h1Size": "40px",
+      "mainWidth": 320,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Student & Staff Portal",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "\"Source Serif 4\", Georgia, serif",
+      "h1Size": "40px",
+      "mainWidth": 375,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Student & Staff Portal",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "\"Source Serif 4\", Georgia, serif",
+      "h1Size": "40px",
+      "mainWidth": 768,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Student & Staff Portal",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "\"Source Serif 4\", Georgia, serif",
+      "h1Size": "64px",
+      "mainWidth": 1440,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Student & Staff Portal",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "\"Source Serif 4\", Georgia, serif",
+      "h1Size": "64px",
+      "mainWidth": 1920,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/login",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Portal sign in",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 288,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/login",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Portal sign in",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 343,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/login",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Portal sign in",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 736,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/login",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Portal sign in",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1280,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/login",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Portal sign in",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1280,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/account/create/applicant",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Applicant entry preview",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 288,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/account/create/applicant",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Applicant entry preview",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 343,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/account/create/applicant",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Applicant entry preview",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 704,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/account/create/applicant",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Applicant entry preview",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 704,
+      "overflow": []
+    },
+    {
+      "group": "public",
+      "url": "/account/create/applicant",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Applicant entry preview",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 704,
+      "overflow": []
+    },
+    {
+      "group": "applicant",
+      "url": "/applicant/application",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Application",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 320,
+      "overflow": []
+    },
+    {
+      "group": "applicant",
+      "url": "/applicant/application",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Application",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 375,
+      "overflow": []
+    },
+    {
+      "group": "applicant",
+      "url": "/applicant/application",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Application",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 768,
+      "overflow": []
+    },
+    {
+      "group": "applicant",
+      "url": "/applicant/application",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Application",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1184,
+      "overflow": []
+    },
+    {
+      "group": "applicant",
+      "url": "/applicant/application",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Application",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1664,
+      "overflow": []
+    },
+    {
+      "group": "student",
+      "url": "/student/academics",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Academics",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 320,
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "class": "student-tab"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "student-tab"
+        },
+        {
+          "tag": "BUTTON",
+          "class": "student-day-button"
+        }
+      ]
+    },
+    {
+      "group": "student",
+      "url": "/student/academics",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Academics",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 375,
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "class": "student-tab"
+        }
+      ]
+    },
+    {
+      "group": "student",
+      "url": "/student/academics",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Academics",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 768,
+      "overflow": []
+    },
+    {
+      "group": "student",
+      "url": "/student/academics",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Academics",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1184,
+      "overflow": []
+    },
+    {
+      "group": "student",
+      "url": "/student/academics",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Academics",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1664,
+      "overflow": []
+    },
+    {
+      "group": "student",
+      "url": "/student/calendar",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Calendar",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 320,
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "class": "student-day-button"
+        },
+        {
+          "tag": "SPAN",
+          "class": ""
+        },
+        {
+          "tag": "SPAN",
+          "class": ""
+        },
+        {
+          "tag": "BUTTON",
+          "class": "student-day-button"
+        },
+        {
+          "tag": "SPAN",
+          "class": ""
+        }
+      ]
+    },
+    {
+      "group": "student",
+      "url": "/student/calendar",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Calendar",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 375,
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "class": "student-day-button"
+        },
+        {
+          "tag": "SPAN",
+          "class": ""
+        },
+        {
+          "tag": "SPAN",
+          "class": ""
+        }
+      ]
+    },
+    {
+      "group": "student",
+      "url": "/student/calendar",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Calendar",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 768,
+      "overflow": []
+    },
+    {
+      "group": "student",
+      "url": "/student/calendar",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Calendar",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1184,
+      "overflow": []
+    },
+    {
+      "group": "student",
+      "url": "/student/calendar",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Calendar",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1664,
+      "overflow": []
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/attendance",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Attendance",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 320,
+      "overflow": []
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/attendance",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Attendance",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 375,
+      "overflow": []
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/attendance",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Attendance",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 768,
+      "overflow": []
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/attendance",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Attendance",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1184,
+      "overflow": []
+    },
+    {
+      "group": "faculty",
+      "url": "/academic/attendance",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Attendance",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1664,
+      "overflow": []
+    },
+    {
+      "group": "records",
+      "url": "/records/students",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Students",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 320,
+      "overflow": []
+    },
+    {
+      "group": "records",
+      "url": "/records/students",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Students",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 375,
+      "overflow": []
+    },
+    {
+      "group": "records",
+      "url": "/records/students",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Students",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 768,
+      "overflow": []
+    },
+    {
+      "group": "records",
+      "url": "/records/students",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Students",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1184,
+      "overflow": []
+    },
+    {
+      "group": "records",
+      "url": "/records/students",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Students",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1664,
+      "overflow": []
+    },
+    {
+      "group": "operations",
+      "url": "/operations/facilities",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Facilities",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 320,
+      "overflow": []
+    },
+    {
+      "group": "operations",
+      "url": "/operations/facilities",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Facilities",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 375,
+      "overflow": []
+    },
+    {
+      "group": "operations",
+      "url": "/operations/facilities",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Facilities",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 768,
+      "overflow": []
+    },
+    {
+      "group": "operations",
+      "url": "/operations/facilities",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Facilities",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1184,
+      "overflow": []
+    },
+    {
+      "group": "operations",
+      "url": "/operations/facilities",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Facilities",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1664,
+      "overflow": []
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "width": 320,
+      "height": 812,
+      "viewport": 320,
+      "pageWidth": 320,
+      "h1": "Demo accounts",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 320,
+      "overflow": []
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "width": 375,
+      "height": 812,
+      "viewport": 375,
+      "pageWidth": 375,
+      "h1": "Demo accounts",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "28px",
+      "mainWidth": 375,
+      "overflow": []
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "width": 768,
+      "height": 900,
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Demo accounts",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 768,
+      "overflow": []
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "width": 1440,
+      "height": 900,
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Demo accounts",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1184,
+      "overflow": []
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "width": 1920,
+      "height": 1080,
+      "viewport": 1920,
+      "pageWidth": 1920,
+      "h1": "Demo accounts",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1664,
+      "overflow": []
+    }
+  ],
+  "keyboard": [
+    {
+      "group": "applicant",
+      "type": "drawer",
+      "initial": true,
+      "contained": true,
+      "focusTrail": [
+        {
+          "inside": true,
+          "tag": "SELECT",
+          "text": "Application draftWaiting for doc"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Dashboard"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Application"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "DCAT"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Enrollment"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Announcements"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Profile"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Account"
+        },
+        {
+          "inside": true,
+          "tag": "BUTTON",
+          "text": "Sign out"
+        },
+        {
+          "inside": true,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "inside": true,
+          "tag": "SELECT",
+          "text": "Application draftWaiting for doc"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Dashboard"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Application"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "DCAT"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Enrollment"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Announcements"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Profile"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Account"
+        }
+      ],
+      "returned": true,
+      "selectionClosed": true,
+      "authorizedChoices": []
+    },
+    {
+      "group": "faculty-it",
+      "type": "drawer",
+      "initial": true,
+      "contained": true,
+      "focusTrail": [
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Dashboard"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Teaching"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Attendance"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Grades"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Announcements"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "AcademicCurrent"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Technology"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Account"
+        },
+        {
+          "inside": true,
+          "tag": "BUTTON",
+          "text": "Sign out"
+        },
+        {
+          "inside": true,
+          "tag": "BUTTON",
+          "text": ""
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Dashboard"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Teaching"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Attendance"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Grades"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Announcements"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "AcademicCurrent"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Technology"
+        },
+        {
+          "inside": true,
+          "tag": "A",
+          "text": "Account"
+        }
+      ],
+      "returned": true,
+      "selectionClosed": true,
+      "authorizedChoices": ["AcademicCurrent", "Technology"]
+    },
+    {
+      "type": "applicant-tabs-and-preview",
+      "arrow": "true",
+      "end": "true",
+      "home": "true",
+      "dialog": {
+        "left": 16,
+        "right": 304,
+        "top": 19.048999786376953,
+        "bottom": 799.048999786377,
+        "scrollBody": 584,
+        "scrollHeight": 956,
+        "actions": [
+          {
+            "label": "Close preview",
+            "bottom": 96.04899597167969,
+            "top": 52.04899978637695
+          },
+          {
+            "label": "Print / Save as PDF",
+            "bottom": 766.0490112304688,
+            "top": 722.0490112304688
+          }
+        ]
+      },
+      "returned": true
+    },
+    {
+      "type": "public-menu",
+      "expanded": "true",
+      "collapsed": "false",
+      "returned": true
+    },
+    {
+      "type": "visible-focus",
+      "focus": [
+        {
+          "text": "Skip to content",
+          "outline": "rgb(22, 33, 78) solid 2px",
+          "offset": "1px"
+        }
+      ]
+    }
+  ],
+  "fonts": [
+    {
+      "url": "/",
+      "body": [
+        {
+          "familyName": "Source Serif 4 Semibold",
+          "postScriptName": "SourceSerif4-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 22
+        }
+      ],
+      "serifRequests": ["/fonts/SourceSerif4-Semibold.ttf.woff2"]
+    },
+    {
+      "url": "/login",
+      "body": [
+        {
+          "familyName": "Source Sans 3 Semibold",
+          "postScriptName": "SourceSans3-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ],
+      "serifRequests": []
+    },
+    {
+      "url": "/account/create/applicant",
+      "body": [
+        {
+          "familyName": "Source Sans 3 Semibold",
+          "postScriptName": "SourceSans3-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 23
+        }
+      ],
+      "serifRequests": []
+    },
+    {
+      "url": "/applicant/application",
+      "body": [
+        {
+          "familyName": "Source Sans 3 Semibold",
+          "postScriptName": "SourceSans3-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 11
+        }
+      ],
+      "serifRequests": []
+    },
+    {
+      "url": "/student/academics",
+      "body": [
+        {
+          "familyName": "Source Sans 3 Semibold",
+          "postScriptName": "SourceSans3-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 9
+        }
+      ],
+      "serifRequests": []
+    },
+    {
+      "url": "/student/calendar",
+      "body": [
+        {
+          "familyName": "Source Sans 3 Semibold",
+          "postScriptName": "SourceSans3-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ],
+      "serifRequests": []
+    },
+    {
+      "url": "/academic/attendance",
+      "body": [
+        {
+          "familyName": "Source Sans 3 Semibold",
+          "postScriptName": "SourceSans3-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ],
+      "serifRequests": []
+    },
+    {
+      "url": "/records/students",
+      "body": [
+        {
+          "familyName": "Source Sans 3 Semibold",
+          "postScriptName": "SourceSans3-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ],
+      "serifRequests": []
+    },
+    {
+      "url": "/operations/facilities",
+      "body": [
+        {
+          "familyName": "Source Sans 3 Semibold",
+          "postScriptName": "SourceSans3-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 10
+        }
+      ],
+      "serifRequests": []
+    },
+    {
+      "url": "/technology/accounts",
+      "body": [
+        {
+          "familyName": "Source Sans 3 Semibold",
+          "postScriptName": "SourceSans3-Semibold",
+          "isCustomFont": true,
+          "glyphCount": 13
+        }
+      ],
+      "serifRequests": []
+    },
+    {
+      "specimen": [
+        {
+          "familyName": "Source Sans 3",
+          "postScriptName": "SourceSans3-Regular",
+          "isCustomFont": true,
+          "glyphCount": 51
+        }
+      ],
+      "synthesis": "none"
+    }
+  ],
+  "contrast": [
+    {
+      "selector": "body",
+      "color": "rgb(23, 35, 59)",
+      "surface": [237, 240, 244],
+      "textRatio": 13.709926691064194,
+      "borderRatio": null
+    },
+    {
+      "selector": ".login-intro",
+      "color": "rgb(74, 88, 112)",
+      "surface": [255, 255, 255],
+      "textRatio": 7.18924732594433,
+      "borderRatio": null
+    },
+    {
+      "selector": ".login-note",
+      "color": "rgb(74, 88, 112)",
+      "surface": [255, 255, 255],
+      "textRatio": 7.18924732594433,
+      "borderRatio": null
+    },
+    {
+      "selector": "label",
+      "color": "rgb(23, 35, 59)",
+      "surface": [255, 255, 255],
+      "textRatio": 15.671668045247575,
+      "borderRatio": null
+    },
+    {
+      "selector": "input",
+      "color": "rgb(23, 35, 59)",
+      "surface": [255, 255, 255],
+      "textRatio": 15.671668045247575,
+      "borderRatio": 3.9455365474751942
+    },
+    {
+      "selector": "button[type=\"submit\"]",
+      "color": "rgb(255, 255, 255)",
+      "surface": [13, 19, 205],
+      "textRatio": 10.54313381758664,
+      "borderRatio": null
+    }
+  ],
+  "fallback": [
+    {
+      "url": "/",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Student & Staff Portal",
+      "font": [
+        {
+          "familyName": "Georgia",
+          "postScriptName": "Georgia-Bold",
+          "isCustomFont": false,
+          "glyphCount": 22
+        }
+      ],
+      "h1Font": "\"Source Serif 4\", Georgia, serif",
+      "h1Size": "64px",
+      "mainWidth": 1440,
+      "overflow": []
+    },
+    {
+      "url": "/login",
+      "viewport": 1440,
+      "pageWidth": 1440,
+      "h1": "Portal sign in",
+      "font": [
+        {
+          "familyName": "Segoe UI Semibold",
+          "postScriptName": "SegoeUI-Semibold",
+          "isCustomFont": false,
+          "glyphCount": 14
+        }
+      ],
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "32px",
+      "mainWidth": 1280,
+      "overflow": []
+    }
+  ],
+  "textZoom": [
+    {
+      "group": "public",
+      "url": "/login",
+      "method": "Computed font sizes and line heights doubled at 768 CSS px",
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Portal sign in",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, sans-serif",
+      "h1Size": "56px",
+      "mainWidth": 736,
+      "overflow": []
+    },
+    {
+      "group": "technology",
+      "url": "/technology/accounts",
+      "method": "Computed font sizes and line heights doubled at 768 CSS px",
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Demo accounts",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "64px",
+      "mainWidth": 768,
+      "overflow": []
+    },
+    {
+      "group": "applicant",
+      "url": "/applicant/application",
+      "method": "Computed font sizes and line heights doubled at 768 CSS px",
+      "viewport": 768,
+      "pageWidth": 768,
+      "h1": "Application",
+      "font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Font": "sourceSans, system-ui, \"Segoe UI\", sans-serif, system-ui, \"Segoe UI\", sans-serif",
+      "h1Size": "64px",
+      "mainWidth": 768,
+      "overflow": []
+    }
+  ],
+  "reducedMotion": [
+    {
+      "url": "/",
+      "contentPresent": true,
+      "animated": 0
+    },
+    {
+      "url": "/login",
+      "contentPresent": true,
+      "animated": 0
+    }
+  ],
+  "http": [
+    {
+      "group": "public",
+      "url": "/screenshot-missing-page",
+      "status": 404,
+      "heading": "Page not found"
+    },
+    {
+      "group": "student",
+      "url": "/student/screenshot-missing-section",
+      "status": 404,
+      "heading": "Page not found"
+    },
+    {
+      "group": "student",
+      "url": "/technology",
+      "status": 403,
+      "heading": "Access denied"
+    }
+  ],
+  "errors": [],
+  "completedAt": "2026-09-30T04:29:19.306Z"
+}

@@ -945,6 +945,7 @@ export function StudentPage({
             ? "wide"
             : "personal"
       }
+      data-section={section}
     >
       <PageHeader title={title} description={description} density="personal" />
       <DemoNotice detail="Fictional student data · Changes reset on refresh" />

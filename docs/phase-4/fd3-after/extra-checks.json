@@ -1,0 +1,61 @@
+{
+  "studentZoom": {
+    "viewport": 768,
+    "pageWidth": 768,
+    "h1": "Good morning, John Paul.",
+    "overflow": []
+  },
+  "studentTabs": {
+    "names": ["Schedule", "Subjects", "Grades", "Attendance", "Curriculum"],
+    "end": "true",
+    "home": "true",
+    "arrow": "true"
+  },
+  "calendarTime": [
+    {
+      "text": "8:00 AM",
+      "whiteSpace": "nowrap",
+      "width": 104,
+      "scrollWidth": 104
+    },
+    {
+      "text": "10:30 AM",
+      "whiteSpace": "nowrap",
+      "width": 104,
+      "scrollWidth": 104
+    },
+    {
+      "text": "1:00 PM",
+      "whiteSpace": "nowrap",
+      "width": 104,
+      "scrollWidth": 104
+    }
+  ],
+  "applicantErrors": {
+    "alert": "Check these fields\nFirst name: Complete this field for the demo.",
+    "invalid": 1,
+    "focus": "applicant-errors",
+    "pageWidth": 1440,
+    "viewport": 1440,
+    "mobile": {
+      "pageWidth": 320,
+      "viewport": 320,
+      "alertWidth": 254
+    }
+  },
+  "requestDialog": {
+    "left": 16,
+    "right": 304,
+    "buttons": [
+      {
+        "text": "Close",
+        "bottom": 311.3125
+      },
+      {
+        "text": "Review request",
+        "bottom": 552.671875
+      }
+    ],
+    "closed": true
+  }
+}
