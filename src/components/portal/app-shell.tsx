@@ -90,8 +90,8 @@ function PortalSwitcher({
           <path d="m6 8 4 4 4-4" />
         </svg>
       </summary>
-      <div className="absolute right-0 z-30 mt-2 w-64 rounded-lg bg-surface-elevated p-2 shadow-elevated">
-        <p className="px-3 py-2 text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+      <div className="portal-popover absolute right-0 z-30 mt-2 w-64 rounded-lg bg-surface-elevated p-2 shadow-elevated">
+        <p className="px-3 py-2 text-sm font-semibold text-muted-foreground">
           Authorized portals
         </p>
         <ul>
@@ -123,7 +123,7 @@ function UserMenu({ user }: Pick<AppShellProps, "user">) {
       <summary className="account-trigger flex min-h-11 cursor-pointer list-none items-center rounded-md border border-input px-3 text-[15px] font-semibold text-foreground hover:bg-muted">
         Account
       </summary>
-      <div className="absolute right-0 z-30 mt-2 w-[min(19rem,calc(100vw-2rem))] rounded-lg bg-surface-elevated p-3 shadow-elevated">
+      <div className="portal-popover absolute right-0 z-30 mt-2 w-[min(19rem,calc(100vw-2rem))] rounded-lg bg-surface-elevated p-3 shadow-elevated">
         <div className="border-b border-border px-2 pb-3">
           <IdentitySummary name={user.name} detail={user.email} size="small" />
         </div>

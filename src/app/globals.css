@@ -1749,6 +1749,32 @@
 .portal-drawer {
   border-right: 1px solid var(--border-strong);
 }
+.portal-drawer[open] {
+  animation: m7-drawer-enter 180ms ease-out;
+}
+.portal-popover {
+  animation: m7-popover-enter 180ms ease-out;
+}
+@keyframes m7-drawer-enter {
+  from {
+    opacity: 0.96;
+    transform: translateX(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes m7-popover-enter {
+  from {
+    opacity: 0.96;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .portal-drawer::backdrop,
 .dialog-surface::backdrop {
   background: rgb(23 35 59 / 40%);

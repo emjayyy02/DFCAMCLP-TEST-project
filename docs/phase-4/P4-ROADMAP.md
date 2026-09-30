@@ -1,6 +1,6 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 through P4-M6 complete; P4-FD1 through P4-FD4 PASS / COMPLETE; P4-M7 next, NOT STARTED.** Updated 30 September 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) now owns the final frontend direction and explicitly supersedes the visual rules listed in its §12. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains the historical foundation; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 through P4-M7 complete; P4-FD1 through P4-FD4 PASS / COMPLETE; Phase 4 COMPLETE as a concept/demo release candidate.** Updated 30 September 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) now owns the final frontend direction and explicitly supersedes the visual rules listed in its §12. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains the historical foundation; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 
@@ -175,6 +175,8 @@ M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy 
 **Acceptance:** owned golden pairs, Technology full-page master/detail, applicable inline DCAT/document-review extensions, long IDs/names, all staff role variants, account/switcher/drawer states and one unaffected personal comparator. Verify useful 1920px width, 375px ruled rows, tablet wrapping and preserved control semantics. Follow common validation and record limitations. No feature/backend work or final motion; stop before M7.
 
 ## P4-M7 — Final Motion + Cross-Portal QA + Release Candidate
+
+**Status: PASS / COMPLETE — 30 September 2026.** See [P4-M7-RELEASE-CANDIDATE.md](P4-M7-RELEASE-CANDIDATE.md). Final verdict: **CONCEPT RELEASE CANDIDATE — PASS**. Phase 4 is complete within its demo/concept boundary.
 
 **Objective:** validate one coherent product and add only motion that helps comprehension.
 
