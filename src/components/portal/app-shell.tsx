@@ -55,7 +55,7 @@ function Navigation({
                 aria-current={isCurrent ? "page" : undefined}
                 onClick={onNavigate}
                 className={cn(
-                  "navigation-item font-medium text-foreground transition-colors",
+                  "navigation-item text-foreground transition-colors",
                   isCurrent && "font-semibold",
                 )}
               >
@@ -120,9 +120,8 @@ function PortalSwitcher({
 function UserMenu({ user }: Pick<AppShellProps, "user">) {
   return (
     <details className="group relative">
-      <summary className="flex min-h-11 cursor-pointer list-none items-center rounded-md px-3 text-sm font-semibold text-foreground hover:bg-muted">
-        <span className="hidden sm:inline">Account</span>
-        <span className="sm:hidden">Menu</span>
+      <summary className="account-trigger flex min-h-11 cursor-pointer list-none items-center rounded-md border border-input px-3 text-[15px] font-semibold text-foreground hover:bg-muted">
+        Account
       </summary>
       <div className="absolute right-0 z-30 mt-2 w-[min(19rem,calc(100vw-2rem))] rounded-lg bg-surface-elevated p-3 shadow-elevated">
         <div className="border-b border-border px-2 pb-3">
@@ -177,15 +176,42 @@ function MobileDrawer({
         ref={dialogRef}
         aria-labelledby="mobile-navigation-title"
         onClose={() => triggerRef.current?.focus()}
-        className="m-0 h-dvh max-h-none w-[min(88vw,20rem)] max-w-none bg-surface p-0 text-foreground backdrop:bg-slate-950/45"
+        onKeyDown={(event) => {
+          if (event.key !== "Tab") return;
+          const focusable = Array.from(
+            event.currentTarget.querySelectorAll<HTMLElement>(
+              'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+            ),
+          ).filter((element) => element.getClientRects().length > 0);
+          const first = focusable[0];
+          const last = focusable.at(-1);
+          if (!first || !last) return;
+          if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last.focus();
+          } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first.focus();
+          }
+        }}
+        className="portal-drawer m-0 h-dvh max-h-none w-[min(88vw,20rem)] max-w-none bg-surface p-0 text-foreground"
       >
         <div className="flex min-h-full flex-col">
           <div className="flex min-h-16 items-center justify-between border-b border-border px-5">
-            <div>
-              <p id="mobile-navigation-title" className="font-semibold">
+            <div className="portal-identity">
+              <p id="mobile-navigation-title" className="portal-identity-title">
                 {portalDetails[currentPortal].label}
               </p>
-              <p className="text-xs text-muted-foreground">Portal navigation</p>
+              {memberships
+                .find((membership) => membership.portal === currentPortal)
+                ?.roleLabels.join(", ") !==
+              portalDetails[currentPortal].label ? (
+                <p className="portal-identity-role">
+                  {memberships
+                    .find((membership) => membership.portal === currentPortal)
+                    ?.roleLabels.join(", ")}
+                </p>
+              ) : null}
             </div>
             <button
               type="button"
@@ -287,8 +313,8 @@ export function AppShell({
       >
         Skip to content
       </a>
-      <header className="border-b border-border bg-surface">
-        <div className="mx-auto flex min-h-16 w-full max-w-[100rem] items-center gap-3 px-4 sm:px-6 lg:px-8">
+      <header className="institution-masthead">
+        <div className="shell-width mx-auto flex min-h-16 w-full flex-wrap items-center gap-2 px-4 py-2 sm:gap-3 sm:px-6 lg:px-8">
           <MobileDrawer
             currentPortal={currentPortal}
             memberships={memberships}
@@ -308,10 +334,8 @@ export function AppShell({
               className="h-10 w-10 shrink-0 object-contain"
             />
             <span className="flex min-w-0 flex-col justify-center">
-              <span className="truncate font-semibold tracking-wide text-primary-hover">
-                DFCAMCLP
-              </span>
-              <span className="truncate text-xs text-muted-foreground">
+              <span className="institution-wordmark">DFCAMCLP</span>
+              <span className="institution-portal-label">
                 {portalDetails[currentPortal].label} portal
               </span>
             </span>
@@ -325,14 +349,12 @@ export function AppShell({
           </div>
         </div>
       </header>
-      <div className="mx-auto grid min-h-[calc(100vh-4.0625rem)] w-full max-w-[100rem] lg:grid-cols-[16rem_minmax(0,1fr)]">
-        <aside className="hidden border-r border-border bg-surface px-5 py-7 lg:block">
-          <div className="mb-6 border-b border-border pb-5">
-            <p className="font-semibold">{portalLabel}</p>
+      <div className="shell-width mx-auto grid min-h-[calc(100vh-4.0625rem)] w-full lg:grid-cols-[16rem_minmax(0,1fr)]">
+        <aside className="portal-sidebar hidden border-r border-border-strong bg-surface px-4 py-6 lg:block">
+          <div className="portal-identity mb-6 border-b border-border-strong pb-4">
+            <p className="portal-identity-title">{portalLabel}</p>
             {roleSummary && roleSummary !== portalLabel ? (
-              <p className="mt-1 text-sm leading-6 text-muted-foreground">
-                {roleSummary}
-              </p>
+              <p className="portal-identity-role">{roleSummary}</p>
             ) : null}
           </div>
           {navigationTools ? (
@@ -343,7 +365,10 @@ export function AppShell({
           <Navigation items={navigation} />
         </aside>
         <div className="min-w-0">
-          <main id="main" className="px-5 py-8 sm:px-8 sm:py-10 lg:px-10">
+          <main
+            id="main"
+            className="portal-main px-4 pt-6 pb-8 sm:px-6 lg:px-8 lg:pt-8 lg:pb-12"
+          >
             {children}
           </main>
           <footer className="border-t border-border px-5 py-6 text-sm leading-6 text-muted-foreground sm:px-8 lg:px-10">

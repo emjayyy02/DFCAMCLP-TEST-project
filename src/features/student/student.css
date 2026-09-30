@@ -1,9 +1,9 @@
 .student-experience {
-  width: min(100%, var(--width-operational));
   margin-inline: auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: var(--space-8);
+  width: min(100%, var(--width-personal));
 }
 
 .student-page-content {
@@ -43,9 +43,9 @@
   display: flex;
   align-items: center;
   gap: 0.55rem;
-  color: var(--primary-hover);
   font-size: 0.875rem;
   font-weight: 700;
+  color: var(--foreground);
 }
 
 .student-section-label::before {
@@ -53,7 +53,7 @@
   height: 0.45rem;
   border-radius: 50%;
   background: var(--accent);
-  content: "";
+  content: none;
 }
 
 .student-next-class h2 {
@@ -61,7 +61,7 @@
   font-size: clamp(1.55rem, 2.5vw, 2rem);
   font-weight: 600;
   line-height: 1.25;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
   text-wrap: balance;
 }
 
@@ -178,13 +178,13 @@
   min-height: 1.65rem;
   align-items: center;
   padding: 0.2rem 0.55rem;
-  border-radius: 999px;
   background: var(--muted);
   color: var(--foreground);
-  font-size: 0.75rem;
   font-weight: 600;
-  line-height: 1.25;
   white-space: nowrap;
+  border-radius: var(--radius-badge);
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .student-status[data-state="released"],
@@ -268,12 +268,13 @@
   display: flex;
   gap: 0.25rem;
   overflow-x: auto;
-  padding: 0.3rem;
-  border-radius: var(--radius-panel);
-  background: var(--muted);
   overscroll-behavior-inline: contain;
   scrollbar-color: var(--border-strong) var(--muted);
   scrollbar-width: thin;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 1px solid var(--border-strong);
 }
 
 .student-tab {
@@ -281,13 +282,15 @@
   min-height: 2.75rem;
   padding: 0.55rem 0.85rem;
   border: 1px solid transparent;
-  border-radius: var(--radius);
   color: var(--foreground-muted);
-  font-size: 0.875rem;
   font-weight: 600;
   transition:
     color 150ms ease,
     background-color 150ms ease;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 .student-tab:hover {
@@ -296,8 +299,10 @@
 
 .student-tab[aria-selected="true"] {
   border-color: var(--border);
-  background: var(--surface);
   color: var(--primary-hover);
+  background: transparent;
+  border-bottom-color: var(--primary);
+  font-weight: 600;
 }
 
 .student-tab-panel {
@@ -336,16 +341,16 @@
   min-height: 2.75rem;
   align-items: center;
   justify-content: center;
-  padding: 0.6rem 0.9rem;
   border: 1px solid transparent;
   border-radius: var(--radius);
-  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 1.25;
   transition:
     color 150ms ease,
     background-color 150ms ease,
     border-color 150ms ease;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 8px 16px;
 }
 
 .student-button:active {
@@ -362,9 +367,9 @@
 }
 
 .student-button-secondary {
-  border-color: var(--border-strong);
   background: var(--surface);
   color: var(--foreground);
+  border-color: var(--input);
 }
 
 .student-button-secondary:hover:not(:disabled) {
@@ -374,7 +379,9 @@
 
 .student-button:disabled {
   cursor: not-allowed;
-  opacity: 0.55;
+  opacity: 1;
+  background: var(--muted);
+  color: var(--foreground-muted);
 }
 
 .student-week-grid {
@@ -476,7 +483,7 @@
 }
 
 .student-grade-table th[scope="row"] {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .student-grade-table th[scope="row"] .student-subject-code {
@@ -539,10 +546,11 @@
 
 .student-empty-state {
   padding: 1rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
   background: var(--background);
   line-height: 1.55;
+  border: 0;
+  border-radius: 0;
+  border-top: 1px solid var(--border-strong);
 }
 
 .student-empty-state > p + p {
@@ -712,21 +720,22 @@
 }
 
 .student-modal {
-  width: min(44rem, calc(100vw - 2rem));
   max-width: none;
-  max-height: min(90dvh, 56rem);
   margin: auto;
-  padding: clamp(1rem, 3vw, 1.5rem);
   overflow: auto;
   border: 1px solid var(--border);
   border-radius: var(--radius-panel);
   background: var(--surface-elevated);
   color: var(--foreground);
-  box-shadow: var(--shadow-elevated);
+  box-shadow: var(--shadow-modal);
+  width: min(40rem, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 24px;
+  border-color: var(--border-strong);
 }
 
 .student-modal::backdrop {
-  background: rgb(17 24 39 / 48%);
+  background: rgb(23 35 59 / 40%);
 }
 
 .student-modal-header {
@@ -1144,7 +1153,7 @@
 
 .student-profile-group dd {
   overflow-wrap: anywhere;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (max-width: 1000px) {
@@ -1473,10 +1482,20 @@
 @media (max-width: 480px) {
   .student-tab {
     padding-inline: 0.7rem;
+
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    line-height: 22px;
   }
 
   .student-tabs {
     margin-inline: -0.2rem;
+
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid var(--border-strong);
   }
 
   .student-agenda-list .student-meeting {
@@ -1499,9 +1518,12 @@
   }
 
   .student-modal {
-    width: 100vw;
-    max-height: 100dvh;
     border-radius: 0;
+
+    width: min(40rem, calc(100vw - 32px));
+    max-height: calc(100dvh - 32px);
+    padding: 24px;
+    border-color: var(--border-strong);
   }
 
   .student-modal .student-dialog-actions {

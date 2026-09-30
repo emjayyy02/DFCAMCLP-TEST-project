@@ -38,8 +38,8 @@ export function SiteHeader() {
           <Image
             src="/images/dfcamclp-seal.webp"
             alt=""
-            width={56}
-            height={56}
+            width={40}
+            height={40}
             unoptimized
           />
           <span>

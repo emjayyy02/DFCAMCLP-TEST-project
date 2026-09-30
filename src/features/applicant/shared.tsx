@@ -223,7 +223,7 @@ export function DemoDocument({
             Close preview
           </Button>
         </div>
-        <article className="applicant-document">
+        <article className="applicant-document shared-dialog-body">
           <p className="applicant-document-notice">
             SAMPLE DOCUMENT · NOT VALID FOR OFFICIAL USE
           </p>

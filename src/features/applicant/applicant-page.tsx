@@ -640,7 +640,10 @@ export function ApplicantPage({
 }) {
   const [title, description] = pageDetails[section];
   return (
-    <div className="applicant-experience">
+    <div
+      className="applicant-experience"
+      data-layout={section === "profile" ? "detail" : "personal"}
+    >
       <PageHeader title={title} description={description} />
       <DemoNotice detail="Fictional applicant data · Changes reset on refresh" />
       {section === "dashboard" ? (

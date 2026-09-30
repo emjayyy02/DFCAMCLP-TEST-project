@@ -1907,7 +1907,12 @@ export function RecordsPage({
         ? buildDirectoryHref("students", listState)
         : undefined;
   return (
-    <div className="records-page">
+    <div
+      className="records-page"
+      data-layout={
+        section === "dashboard" ? "dashboard" : recordId ? "detail" : "wide"
+      }
+    >
       <Heading
         section={section}
         record={selectedRecord}

@@ -10,7 +10,7 @@ export function Alert({
   return (
     <div
       className={cn(
-        "rounded-md px-4 py-3 text-sm leading-6",
+        "ui-alert px-4 py-3 text-sm leading-5",
         statusStyles[tone],
         className,
       )}

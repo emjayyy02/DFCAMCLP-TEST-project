@@ -1049,7 +1049,7 @@ function ReviewDialog({
       }}
     >
       <h2 id="academic-dialog-title">{title}</h2>
-      {children}
+      <div className="shared-dialog-body">{children}</div>
     </dialog>
   );
 }
@@ -1692,7 +1692,16 @@ export function AcademicPage({
       view = <DashboardView isCoordinator={isCoordinator} />;
   }
   return (
-    <div className="academic-page">
+    <div
+      className="academic-page"
+      data-layout={
+        section === "dashboard"
+          ? "dashboard"
+          : section === "announcements"
+            ? "reading"
+            : "wide"
+      }
+    >
       {selectedClassOffering ? (
         <ContextHeader
           parent="Academic"

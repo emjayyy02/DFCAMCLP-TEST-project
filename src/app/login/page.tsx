@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { LoginForm } from "@/features/identity/login-form";
 import { SiteShell } from "@/components/public/site-shell";
@@ -17,13 +16,6 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
     <SiteShell>
       <main id="main" className="public-container login-page">
         <section className="login-panel" aria-labelledby="login-title">
-          <Image
-            src="/images/dfcamclp-seal.webp"
-            alt="DFCAMCLP seal"
-            width={72}
-            height={72}
-            unoptimized
-          />
           <h1 id="login-title">Portal sign in</h1>
           <p className="login-intro">Choose your portal to continue.</p>
           <p className="login-note">

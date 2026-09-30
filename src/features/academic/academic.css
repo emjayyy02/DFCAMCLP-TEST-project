@@ -25,6 +25,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 0.4rem;
+  border-bottom: 1px solid var(--border-strong);
 }
 
 .academic-offering-subnav a {
@@ -32,12 +33,13 @@
   min-height: var(--control-height);
   align-items: center;
   padding: 0.45rem 0.75rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
   color: var(--primary);
-  font-size: 0.85rem;
-  font-weight: 650;
   text-decoration: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .academic-offering-subnav a:hover,
@@ -107,8 +109,8 @@
 .academic-section-heading h2 {
   margin: 0.2rem 0 0;
   font-size: 1.2rem;
-  font-weight: 650;
-  letter-spacing: -0.02em;
+  font-weight: 600;
+  letter-spacing: -0.015em;
   line-height: 1.35;
 }
 
@@ -153,7 +155,7 @@
 .academic-welcome h2 {
   margin: 0.25rem 0 0;
   font-size: clamp(1.4rem, 2.6vw, 1.85rem);
-  font-weight: 650;
+  font-weight: 600;
   letter-spacing: -0.035em;
   line-height: 1.25;
 }
@@ -216,7 +218,7 @@
 .academic-task-list strong {
   color: var(--foreground);
   font-size: 0.9rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .academic-today-list li > div a:hover,
@@ -238,7 +240,7 @@
 .academic-task-list > li > a {
   color: var(--primary);
   font-size: 0.8rem;
-  font-weight: 650;
+  font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
   white-space: nowrap;
@@ -251,7 +253,7 @@
   align-items: center;
   color: var(--primary);
   font-size: 0.875rem;
-  font-weight: 650;
+  font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -325,7 +327,7 @@
 
 .academic-activity-list strong {
   font-size: 0.875rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .academic-activity-list span:last-child {
@@ -389,7 +391,7 @@
 .academic-program-summary > a {
   color: var(--primary);
   font-size: 0.8rem;
-  font-weight: 650;
+  font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -421,7 +423,7 @@
 .academic-offering-code {
   color: var(--primary);
   font-size: 0.85rem;
-  font-weight: 750;
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
 
@@ -429,7 +431,7 @@
 .academic-management-list h3 {
   margin: 0;
   font-size: 0.95rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .academic-offering-main p,
@@ -449,7 +451,7 @@
 .academic-offering-open {
   color: var(--primary);
   font-size: 0.8rem;
-  font-weight: 650;
+  font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -531,17 +533,18 @@
   min-height: 2.75rem;
   align-items: center;
   justify-content: center;
-  padding: 0.6rem 1rem;
   border: 1px solid var(--primary);
   border-radius: var(--radius);
   background: var(--primary);
   color: var(--primary-foreground);
   cursor: pointer;
   font: inherit;
-  font-size: 0.85rem;
-  font-weight: 650;
+  font-weight: 600;
   text-align: center;
   text-decoration: none;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 8px 16px;
 }
 
 .academic-button:hover {
@@ -557,13 +560,15 @@
 
 .academic-button:disabled {
   cursor: not-allowed;
-  opacity: 0.55;
+  opacity: 1;
+  background: var(--muted);
+  color: var(--foreground-muted);
 }
 
 .academic-button-secondary {
-  border-color: var(--border-strong);
   background: var(--surface);
   color: var(--foreground);
+  border-color: var(--input);
 }
 
 .academic-button-secondary:hover {
@@ -573,8 +578,9 @@
 .academic-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 .academic-table th,
@@ -586,10 +592,10 @@
 }
 
 .academic-table thead th {
+  font-size: 15px;
   background: var(--muted);
-  color: var(--foreground-muted);
-  font-size: 0.75rem;
-  font-weight: 700;
+  color: var(--foreground);
+  font-weight: 600;
 }
 
 .academic-table tbody th {
@@ -606,7 +612,7 @@
   background: var(--muted);
   color: var(--foreground-muted);
   font-size: 0.73rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .academic-roster-cards {
@@ -646,7 +652,7 @@
   gap: 0.4rem;
   color: var(--foreground);
   font-size: 0.82rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .academic-form-grid select,
@@ -790,24 +796,26 @@
 
 .academic-dialog {
   margin: auto;
-  width: min(100%, 34rem);
-  max-height: min(90dvh, 48rem);
   overflow: auto;
-  padding: 1.4rem;
   border: 1px solid var(--border);
   border-radius: var(--radius-panel);
   background: var(--surface);
-  box-shadow: var(--shadow-elevated);
+  box-shadow: var(--shadow-modal);
+  width: min(40rem, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 24px;
+  border-color: var(--border-strong);
 }
 
 .academic-dialog::backdrop {
-  background: rgb(17 24 39 / 45%);
+  background: rgb(23 35 59 / 40%);
 }
 
 .academic-dialog h2 {
   margin: 0 0 0.75rem;
-  font-size: 1.3rem;
-  line-height: 1.3;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
 }
 
 .academic-dialog > p {
@@ -828,7 +836,7 @@
   padding: 0.85rem 0;
   border-block: 1px solid var(--border);
   font-size: 0.84rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .academic-warning {
@@ -1092,7 +1100,7 @@
 .academic-management-list article > a {
   color: var(--primary);
   font-size: 0.8rem;
-  font-weight: 650;
+  font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -1193,11 +1201,19 @@
 
   .academic-offering-subnav {
     width: 100%;
+
+    border-bottom: 1px solid var(--border-strong);
   }
 
   .academic-offering-subnav a {
     flex: 1 1 auto;
     justify-content: center;
+
+    border: 0;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400;
   }
 
   .academic-section-heading {
@@ -1340,7 +1356,7 @@
     display: grid;
     gap: 0.3rem;
     font-size: 0.78rem;
-    font-weight: 650;
+    font-weight: 600;
   }
 
   .academic-grade-card-entry .academic-grade-input {

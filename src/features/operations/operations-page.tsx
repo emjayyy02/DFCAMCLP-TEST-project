@@ -1528,7 +1528,16 @@ export function OperationsPage({
       Boolean(ticketId && tickets.some((item) => item.id === ticketId)));
 
   return (
-    <div className="operations-page">
+    <div
+      className="operations-page"
+      data-layout={
+        section === "dashboard"
+          ? "dashboard"
+          : ticketId || requestId || employeeId
+            ? "detail"
+            : "wide"
+      }
+    >
       {hasSelectedRecord ? null : (
         <PageHeader title={pageTitle} description={pageDescription.trim()} />
       )}

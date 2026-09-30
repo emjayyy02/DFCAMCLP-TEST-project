@@ -11,7 +11,6 @@ export function DemoNotice({
 }) {
   return (
     <aside className="demo-notice" aria-label={label}>
-      <span className="demo-notice-marker" aria-hidden="true" />
       <div className="demo-notice-copy">
         <p className="demo-notice-label">{label}</p>
         <p className="demo-notice-detail">{detail}</p>

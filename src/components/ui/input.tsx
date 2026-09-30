@@ -2,7 +2,7 @@ import type { ComponentProps } from "react";
 import { cn } from "@/lib/utils";
 
 const controlStyle =
-  "min-h-(--control-height) w-full min-w-0 rounded-md border border-input bg-surface px-3 py-2 text-base text-foreground transition-colors placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:bg-muted disabled:opacity-60 aria-invalid:border-destructive";
+  "min-h-(--control-height) w-full min-w-0 rounded-md border border-input bg-surface px-3 py-2 text-base leading-6 text-foreground transition-colors placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:bg-muted disabled:text-foreground-muted aria-invalid:border-destructive";
 
 export function Input({ className, ...props }: ComponentProps<"input">) {
   return <input className={cn(controlStyle, className)} {...props} />;
@@ -16,7 +16,7 @@ export function Textarea({ className, ...props }: ComponentProps<"textarea">) {
   return (
     <textarea
       className={cn(
-        "min-h-28 w-full min-w-0 rounded-md border border-input bg-surface px-3 py-2 text-base leading-6 text-foreground transition-colors placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:bg-muted disabled:opacity-60 aria-invalid:border-destructive",
+        "min-h-28 w-full min-w-0 rounded-md border border-input bg-surface px-3 py-2 text-base leading-6 text-foreground transition-colors placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:bg-muted disabled:text-foreground-muted aria-invalid:border-destructive",
         className,
       )}
       {...props}

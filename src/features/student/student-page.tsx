@@ -936,7 +936,16 @@ export function StudentPage({
     : sectionDescriptions[section];
 
   return (
-    <div className="student-experience">
+    <div
+      className="student-experience"
+      data-layout={
+        section === "profile"
+          ? "detail"
+          : section === "academics"
+            ? "wide"
+            : "personal"
+      }
+    >
       <PageHeader title={title} description={description} density="personal" />
       <DemoNotice detail="Fictional student data · Changes reset on refresh" />
       <div className="student-page-content">

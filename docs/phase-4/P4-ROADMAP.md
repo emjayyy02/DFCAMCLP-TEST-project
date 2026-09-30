@@ -1,14 +1,14 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 complete; P4-M2 PASS / COMPLETE; P4-M3 PASS / COMPLETE; P4-M4 PASS / COMPLETE; P4-M5 PASS / COMPLETE; P4-M6 PASS / COMPLETE; P4-M7 next.** This roadmap allocates work; only an explicit milestone instruction authorizes implementation. Visual and behavioral decisions are owned by [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) and [P4-UX-RULES.md](P4-UX-RULES.md). Product authority, evidence limits, and U1–U10 gates are in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 through P4-M6 complete; P4-FD1 PASS / COMPLETE; P4-FD2 PASS / COMPLETE; P4-FD3 next, NOT STARTED; P4-FD4 and P4-M7 NOT STARTED.** Updated 30 September 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) now owns the final frontend direction and explicitly supersedes the visual rules listed in its §12. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains the historical foundation; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 
-Keep the proposed seven-milestone shape: the current architecture already separates public/identity, shared shell/primitives, and six feature families. No framework or route reorganization is justified.
+Retain completed M1–M6 and the existing architecture, which already separates public/identity, shared shell/primitives, and six feature families. Insert the final frontend design sequence before M7. No framework or route reorganization is justified.
 
-Sequence: **M1 → M2 → M3 → M4 → M5 → M6 → M7**. M4 establishes coherent demo identity/term changes before M5 consumes them in Academic/Records. M6 reuses those decisions in Operations/Technology. This sequence is not permission to run ahead.
+Sequence: **M1 → M2 → M3 → M4 → M5 → M6 → FD1 → FD2 → FD3 → FD4 → M7**. M4 established coherent demo identity/term changes before M5 consumed them in Academic/Records; M6 reused them. FD1 locks visual direction, FD2 establishes the shared visual foundation, and FD3/FD4 apply it to existing surfaces. This sequence is not permission to run ahead.
 
-M2 owns shared contracts and shared adoption. M3–M6 own feature data, copy, and entity-specific interactions. M7 validates and adds bounded motion; it does not become a catch-all feature milestone. The audit table assigns one primary owner to each item. Downstream regression consumers are not duplicate owners.
+M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy and entity-specific interactions. Those implementation reports and A01–A55/O1–O8 dispositions below remain historical records. New visual findings V01–V13 are owned by FD2–FD4 as mapped in the [FD1 audit](P4-FD1-FINAL-VISUAL-AUDIT.md). M7 validates and adds bounded motion; it does not become a catch-all feature milestone. The FD sequence changes presentation only and does not reopen feature, fixture, policy or backend work.
 
 ## P4-M1 — Phase 4 Product & Design Lock-In
 
@@ -116,13 +116,71 @@ M2 owns shared contracts and shared adoption. M3–M6 own feature data, copy, an
 
 **Acceptance:** specifically inspect Operations summaries and Facilities filters at 375 and 768; no cramped two-column summary or clipped controls; High priority and status are distinct; Closed does not imply success; updates/required outcome notes still work. Test both Operations role variants and IT Admin/Developer/multi-portal navigation and direct denial. Additional technical content has attributable source/meaning and no secret/live-health claims. Run common validation plus Operations/Technology fixture/access tests.
 
-## P4-M7 — Motion, Cross-Portal QA & Concept Release Candidate
+## P4-FD1 — Final Visual Audit & Design Lock
+
+**Status: PASS / COMPLETE — documentation only, 30 September 2026.**
+
+**Objective:** audit the current screenshot corpus and select one final Premium Civic-Academic Interface direction before implementation.
+
+**Scope:** read canonical/Phase 4 sources and M2–M6 reports; map the 469-view/1,602-PNG manifest; inspect distinct archetypes and representative states; document systemic findings and explicit visual-rule amendments; select a golden review set.
+
+**Deliverables:** [P4-FD1-FINAL-VISUAL-AUDIT.md](P4-FD1-FINAL-VISUAL-AUDIT.md), [P4-FINAL-VISUAL-LOCK.md](P4-FINAL-VISUAL-LOCK.md), and this roadmap update.
+
+**Evidence:** 83 states inspected at both corpus sizes, with additional full-page and dialog-bottom inspection. The 35-state golden set references 70 primary desktop/mobile PNGs plus available long-content companions; all nine account groups and all six portal families are represented. The manifest inventory and screenshot existence were checked; this is not a new all-route browser/accessibility pass.
+
+**Acceptance:** evidence-linked findings with priorities; one typography/color/surface/shell/density direction; old rules explicitly superseded; exact golden paths and reproduction notes; documentation checks and no source changes. No source implementation, packages, fixtures, routes, auth/access, database or workflow changes. FD2 is not started.
+
+## P4-FD2 — Shared Visual Foundation
+
+**Status: PASS / COMPLETE — 30 September 2026.** See [P4-FD2-SHARED-VISUAL-FOUNDATION.md](P4-FD2-SHARED-VISUAL-FOUNDATION.md).
+
+**Objective:** express the Final Visual Lock through the existing shared presentation foundation.
+
+**Scope:** shared typography and future self-hosted font assets; neutral/color/border/elevation/radius/spacing/width roles; masthead/sidebar/account/drawer visual treatment; PageHeader/ContextHeader/DemoNotice; buttons, links, native controls, tabs, table/list/toolbar recipes, badges, dialog geometry, empty/error/denied/404 presentation. Shared adoption may affect every family; migrate consumers minimally to preserve contracts. Do not create a second component library.
+
+**Dependencies:** FD1 accepted; read installed Next.js guides before source edits; inspect current Git state, existing components, and golden baseline. Preserve all working controls, content facts and authorized destinations.
+
+**Findings owned:** V01, V02, V05 foundation, V06, V10; shared portion of V03, V04, V08, V11 and V12. Exact ownership is in the FD1 audit.
+
+**Boundary:** visual foundation only. No route/query changes, search/filter/sort behavior changes, fixtures, permissions, new workflow, auth/database work, new package, theme engine, scroll motion or publication. A presentation component for an existing 404 is not a new route; preserve not-found/guard behavior.
+
+**Acceptance:** all 35 paired golden states reviewed after the foundation batch, with long-page/dialog companions where relevant; fresh font/fallback, focus, contrast, keyboard/drawer/dialog, 320px reflow and 768/1440px spot checks. Correct shared regressions and record exact evidence. Follow common implementation validation; source/build success alone is insufficient. Stop before FD3.
+
+## P4-FD3 — Public + Applicant + Student Design Pass
+
+**Status: NOT STARTED. Requires a separate implementation instruction.**
+
+**Objective:** carry institutional editorial identity through public pages and strengthen personal journey/academic workspace composition.
+
+**Scope:** public masthead/hero-to-footer continuity, Programs/Admissions/About, login and public account guidance; Applicant next task/journey/form/profile composition; Student next class/agenda/academics/calendar/profile and existing document/request presentation. Use FD2 primitives; no new copy claims, fields, scenarios or actions.
+
+**Dependencies:** FD2 accepted. Canonical photo/seal/facts, existing demo disclosure and public/auth behavior preserved.
+
+**Findings owned:** V07, V13; personal/public adoption of V03–V05, V08–V09 and V11–V12.
+
+**Acceptance:** owned golden pairs and full pages, public menu, form/error/review/document states, personal mobile agenda, profile, long labels and one unaffected staff comparator. Preserve all routes, workflows, data, local state and search/filter/sort behavior. Run appropriate existing checks and visual acceptance. No M7 motion; stop before FD4.
+
+## P4-FD4 — Academic + Records + Operations + Technology Design Pass
+
+**Status: NOT STARTED. Requires a separate implementation instruction.**
+
+**Objective:** finish operational composition, density and technical reference hierarchy using one system.
+
+**Scope:** Faculty/Coordinator teaching and announcements; Records registry/detail/inline reviews; Maintenance/School Admin work queues and detail views; IT Admin account master/detail and Developer technical reference pages. Widen task regions and simplify repeated containers without changing any task or behavior.
+
+**Dependencies:** FD2 and FD3 accepted; preserve established entity/query contracts, default filtering/sorting, role-specific actions and sample data.
+
+**Findings owned:** staff adoption of V03–V04, V08–V09 and V11–V12; shared recipes remain at their FD2 owner rather than being copied into each family.
+
+**Acceptance:** owned golden pairs, Technology full-page master/detail, applicable inline DCAT/document-review extensions, long IDs/names, all staff role variants, account/switcher/drawer states and one unaffected personal comparator. Verify useful 1920px width, 375px ruled rows, tablet wrapping and preserved control semantics. Follow common validation and record limitations. No feature/backend work or final motion; stop before M7.
+
+## P4-M7 — Final Motion + Cross-Portal QA + Release Candidate
 
 **Objective:** validate one coherent product and add only motion that helps comprehension.
 
 **Scope:** restrained admission-journey/history scroll enhancement where useful; final cross-portal layout, typography, interaction, session-navigation and accessibility review; full responsive evidence matrix and bounded defect repair; concept-release handoff with unresolved/deferred items.
 
-**Dependencies:** M2–M6 accepted or explicitly documented blocked/deferred portions. No feature may be called implemented because a later milestone could finish it.
+**Dependencies:** M2–M6 and FD2–FD4 accepted or explicitly documented blocked/deferred portions; FD1 Final Visual Lock remains authoritative. No feature may be called implemented because a later milestone could finish it.
 
 **Findings addressed:** audit §6.6, admissions scroll animation, integration quality and final review gaps.
 
@@ -130,11 +188,11 @@ M2 owns shared contracts and shared adoption. M3–M6 own feature data, copy, an
 
 **Implementation boundary:** no redesign loop or new feature family. Motion never hides essential content, delays tasks, or changes workflow meaning. Reduced motion shows the complete final state immediately. Fix reasonable concrete defects in a bounded review, not an open-ended style exploration.
 
-**Acceptance:** representative routes/states for every family at all three target sizes; keyboard/focus/dialog/tab/reflow and reduced-motion checks; no major page overflow or console/runtime errors; role-specific workflow/denial tests; live session navigation verification without treating O8 as a known bug. Run institution/frontend/database/auth/access suites, lint, typecheck, format, build, and diff check. Record real results and environment exceptions. Issue a concept release-candidate report, not a production-ready or formally certified claim.
+**Acceptance:** final 35-state golden comparison at 375×812 and 1920×1080, plus 768×900 and 1440×900 coverage; all 35 portal routes, public/account surfaces, nine account groups and relevant states receive final regression coverage. Do not automatically recapture all 1,602 PNGs: use golden pairs plus targeted route/state evidence and record gaps. Check keyboard/focus/dialog/tab/reflow and reduced motion; no major page overflow or console/runtime errors; role-specific workflow/denial tests; live session navigation verification without treating O8 as a known bug. Run institution/frontend/database/auth/access suites, lint, typecheck, format, build, and diff check. Record real results and environment exceptions. Issue a concept release-candidate report, not a production-ready or formally certified claim.
 
 ## Common implementation validation
 
-M2–M7 must validate the changed rendered paths, state variations, and relevant roles. Use existing scripts and meaningful tests of behavior, not snapshots that merely restate implementation. For broad shared/fixture work, run `pnpm test`, `pnpm test:db`, `pnpm test:auth`, `pnpm test:access`, `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, `pnpm build`, and `git diff --check`. Institution-data tests are included in the non-integration test suite. Narrow follow-up fixes may use targeted reruns with explicit attribution; M7 runs the full gate.
+M2–M7 and FD2–FD4 must validate the changed rendered paths, state variations, and relevant roles. FD1 is documentation-only and does not require application test/build runs. Use existing scripts and meaningful tests of behavior, not snapshots that merely restate implementation. For broad shared/fixture work, run `pnpm test`, `pnpm test:db`, `pnpm test:auth`, `pnpm test:access`, `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, `pnpm build`, and `git diff --check`. Institution-data tests are included in the non-integration test suite. Narrow follow-up fixes may use targeted reruns with explicit attribution; M7 runs the full gate. The FD milestones authorize no fixture changes.
 
 Do not reset the database without demonstrated need and appropriate authorization. Existing integration suites may manage their own controlled fictional fixtures. If `pnpm env:check` fails before loading the script with `uv_os_get_passwd returned ENOMEM`, record the runtime failure separately; it is not a passing environment check or evidence of an application defect. If repository formatting flags untouched `DFCAMCLP.md`, preserve canonical content and report that existing issue rather than making unrelated changes.
 
@@ -271,4 +329,14 @@ Source: [PHASE-4-MANUAL-AUDIT.md](PHASE-4-MANUAL-AUDIT.md). Each row has one pri
 - P4-M6 is **PASS / COMPLETE**. P4-M7 is next and has not started.
 - No database reset, credential synchronization, commit, push, or deployment was performed for P4-M6.
 
-**Stop after P4-M6. Do not begin P4-M7.**
+**Historical P4-M6 handoff:** Stop after P4-M6. Do not begin P4-M7. The FD1 amendment above inserts the final design sequence before M7; the earlier completion notes are retained as historical statements.
+
+### P4-FD1 completion — 30 September 2026
+
+- Audit and final visual lock complete; final direction is Premium Civic-Academic Interface with Source Sans 3 and selective public Source Serif 4.
+- The old Arial, pale neutral/border, operational width, panel geometry, disclosure-card and visual-ownership rules are superseded only as enumerated in Final Visual Lock §12. Existing behavioral/canonical constraints and deferred/rejected backend-policy items remain.
+- A45/R1's rejection of three designed families remains valid. Its old one-family default is now explicitly amended to the two-family direction; no third family is authorized.
+- The golden set has 35 logical states, 70 primary viewport images, and existing long-content companions. This is an index to baseline evidence, not a new screenshot run or application acceptance claim.
+- Only the two requested new design documents and this roadmap are changed. Application source, styles, routes, fixtures, packages, configuration and screenshot originals are unchanged. No application tests/build were rerun for prose-only work.
+
+**Historical P4-FD1 handoff:** Stop after P4-FD1. The later FD2 implementation is complete; P4-FD3 is next and NOT STARTED.

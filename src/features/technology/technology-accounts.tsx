@@ -191,9 +191,9 @@ export function TechnologyAccountsDirectory({
   }
 
   return (
-    <div className="space-y-6">
+    <div className="technology-directory space-y-6">
       <form
-        className="grid gap-4 rounded-lg border border-border bg-white p-5 sm:grid-cols-2 sm:p-6 xl:grid-cols-[minmax(18rem,1fr)_13rem_15rem]"
+        className="technology-directory-filters grid gap-4 p-4 sm:grid-cols-2 xl:grid-cols-[minmax(18rem,1fr)_13rem_15rem]"
         onSubmit={(event) => event.preventDefault()}
         role="search"
         aria-label="Filter demo accounts"
@@ -263,7 +263,7 @@ export function TechnologyAccountsDirectory({
         </div>
       </form>
 
-      <div className="grid min-w-0 gap-6 xl:grid-cols-[minmax(0,1.6fr)_minmax(18rem,0.9fr)]">
+      <div className="technology-account-layout min-w-0">
         <section aria-labelledby="technology-accounts-list" className="min-w-0">
           <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
             <h2 id="technology-accounts-list" className="text-xl font-semibold">
@@ -308,12 +308,12 @@ export function TechnologyAccountsDirectory({
             />
           ) : (
             <>
-              <ul className="space-y-3 xl:hidden">
+              <ul className="technology-account-list">
                 {sortedAccounts.map((account) => (
                   <li key={account.email}>
                     <button
                       type="button"
-                      className="w-full rounded-lg border border-border bg-white p-4 text-left hover:bg-muted aria-pressed:border-primary aria-pressed:bg-primary-soft sm:p-5"
+                      className="technology-account-row"
                       aria-pressed={selectedEmail === account.email}
                       aria-label={`View details for ${account.name}`}
                       onClick={() => setSelectedEmail(account.email)}
@@ -332,7 +332,7 @@ export function TechnologyAccountsDirectory({
                       </span>
                     </button>
                     {selectedEmail === account.email ? (
-                      <div className="mt-3 xl:hidden">
+                      <div className="mt-3">
                         <AccountDetails
                           account={account}
                           headingId="technology-account-details-mobile"
@@ -343,7 +343,7 @@ export function TechnologyAccountsDirectory({
                 ))}
               </ul>
 
-              <div className="hidden overflow-hidden rounded-lg border border-border bg-white xl:block">
+              <div className="technology-account-table overflow-x-auto border border-border bg-white">
                 <table className="data-table">
                   <caption className="sr-only">
                     Fictional demo accounts and their access summaries
@@ -396,7 +396,7 @@ export function TechnologyAccountsDirectory({
           )}
         </section>
 
-        <div className="hidden xl:block">
+        <div className="technology-account-rail">
           <AccountDetails
             account={selectedAccount ?? null}
             headingId="technology-account-details-desktop"

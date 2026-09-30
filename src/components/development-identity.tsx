@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export function DevelopmentHeader() {
   return (
-    <header className="border-b border-border bg-surface px-5 py-5 sm:px-8">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2">
+    <header className="institution-masthead px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex min-h-16 max-w-[80rem] flex-wrap items-center justify-between gap-x-6 gap-y-2 py-2">
         <Link
           href="/"
           className="inline-flex min-h-11 items-center gap-2 font-semibold tracking-wide text-primary-hover"
@@ -17,7 +17,7 @@ export function DevelopmentHeader() {
             unoptimized
             className="h-10 w-10 object-contain"
           />
-          <span>DFCAMCLP</span>
+          <span className="institution-wordmark">DFCAMCLP</span>
         </Link>
         <span className="text-sm text-muted-foreground">
           Development environment
