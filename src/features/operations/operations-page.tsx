@@ -67,8 +67,14 @@ function StatusLabel({ children }: StatusLabelProps) {
   return <Badge tone={tone}>{children}</Badge>;
 }
 
-function DemoNotice({ children }: { children: React.ReactNode }) {
-  return <SharedDemoNotice detail={children} />;
+function DemoNotice({
+  children,
+  label,
+}: {
+  children: React.ReactNode;
+  label: string;
+}) {
+  return <SharedDemoNotice detail={children} label={label} />;
 }
 
 function EmptyState({ title, detail }: { title: string; detail: string }) {
@@ -508,7 +514,7 @@ function StudentServices({ requestId }: { requestId?: string }) {
 
   return (
     <div className="operations-stack">
-      <DemoNotice>
+      <DemoNotice label="Service model">
         Sample service categories and statuses are project assumptions. No SLA
         or official service catalog is represented.
       </DemoNotice>
@@ -751,7 +757,7 @@ function Employees({ employeeId }: { employeeId?: string }) {
 
   return (
     <div className="operations-stack">
-      <DemoNotice>
+      <DemoNotice label="Directory scope">
         Fictional employee entries use provisional functional groupings, not an
         official organization chart. No HR or account-access workflow is
         included.
@@ -1157,7 +1163,7 @@ function Facilities({
 
   return (
     <div className="operations-stack">
-      <DemoNotice>
+      <DemoNotice label="Facilities model">
         Fictional locations and simple demo categories, priorities, and
         statuses. No inventory or response-time policy is represented.
       </DemoNotice>
@@ -1403,7 +1409,7 @@ function Administration() {
   );
   return (
     <div className="operations-stack">
-      <DemoNotice>
+      <DemoNotice label="Reference scope">
         Reference information is read-only demo context. Academic-year and
         semester values are not official live settings.
       </DemoNotice>
@@ -1542,11 +1548,6 @@ export function OperationsPage({
       {hasSelectedRecord ? null : (
         <PageHeader title={pageTitle} description={pageDescription.trim()} />
       )}
-      {section === "dashboard" ? (
-        <DemoNotice>
-          Fictional Operations data · Changes reset on refresh
-        </DemoNotice>
-      ) : null}
       {feedback ? (
         <p className="operations-live-message" role="status">
           {feedback}

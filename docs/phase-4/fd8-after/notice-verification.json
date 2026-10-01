@@ -1,0 +1,491 @@
+{
+  "recordedAt": "2026-10-01T11:45:56.071Z",
+  "basis": "FD7 inventory + full source diff review; markers are regression sentinels, not complete workflow execution",
+  "contextual": [
+    {
+      "id": "B01",
+      "file": "src/app/login/page.tsx",
+      "pass": true,
+      "markers": ["Demo accounts only. Do not enter real student information."],
+      "missing": []
+    },
+    {
+      "id": "B02",
+      "file": "src/app/account/create/page.tsx",
+      "pass": true,
+      "markers": ["Account entry preview", "No account"],
+      "missing": []
+    },
+    {
+      "id": "B03",
+      "file": "src/app/account/create/applicant/page.tsx",
+      "pass": true,
+      "markers": ["Entry preview", "No password"],
+      "missing": []
+    },
+    {
+      "id": "B04",
+      "file": "src/app/account/recovery/page.tsx",
+      "pass": true,
+      "markers": ["Recovery preview", "No account lookup"],
+      "missing": []
+    },
+    {
+      "id": "B05",
+      "file": "src/features/identity/account-entry.tsx",
+      "pass": true,
+      "markers": [
+        "temporary preview",
+        "No account or application was created",
+        "not checked or contacted",
+        "no upload fields",
+        "does not match identities"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B06",
+      "file": "src/features/identity/account-entry.tsx",
+      "pass": true,
+      "markers": [
+        "identity-check behavior are not connected",
+        "does not look up accounts",
+        "No recovery email was sent"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B07",
+      "file": "src/features/identity/account-profile.tsx",
+      "pass": true,
+      "markers": [
+        "Photo and bio are temporary in this tab",
+        "sign-out",
+        "maxLength={240}",
+        "Demo bio updated in this tab",
+        "School-domain profiles remain separate"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B08",
+      "file": "src/components/ui/demo-profile-photo.tsx",
+      "pass": true,
+      "markers": [
+        "Temporary sample photo. Not uploaded or saved",
+        "Shown only in this tab",
+        "up to 2 MB",
+        "This image could not be opened"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B09",
+      "file": "src/features/student/student-page.tsx",
+      "pass": true,
+      "markers": [
+        "Sample school profile. Your sign-in identity",
+        "Student ID is separate"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B10",
+      "file": "src/features/applicant/scenario-switcher.tsx",
+      "pass": true,
+      "markers": ["Changes the sample journey only. No school records change."],
+      "missing": []
+    },
+    {
+      "id": "B11",
+      "file": "src/features/applicant/application-form.tsx",
+      "pass": true,
+      "markers": [
+        "Submit this demo application?",
+        "Nothing will be sent to",
+        "Refresh resets the demo",
+        "not available in this demo",
+        "submitted in this tab only"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B12",
+      "file": "src/features/applicant/applicant-page.tsx",
+      "pass": true,
+      "markers": ["No real appointment has been booked"],
+      "missing": []
+    },
+    {
+      "id": "B13",
+      "file": "src/features/applicant/shared.tsx",
+      "pass": true,
+      "markers": [
+        "SAMPLE DOCUMENT · NOT VALID FOR OFFICIAL USE",
+        "signatures",
+        "not defined in this concept"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B14",
+      "file": "src/features/applicant/applicant-page.tsx",
+      "pass": true,
+      "markers": ["This demo assigns no Student ID or membership"],
+      "missing": []
+    },
+    {
+      "id": "B15",
+      "file": "src/features/student/student-page.tsx",
+      "pass": true,
+      "markers": [
+        "Sample · Not valid for official use",
+        "not an issued school record",
+        "No official record or school"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B16",
+      "file": "src/features/student/student-page.tsx",
+      "pass": true,
+      "markers": [
+        "This demo request stays in this browser session",
+        "It is not sent to",
+        "Review request",
+        "Submit demo request"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B17",
+      "file": "src/features/student/student-academics.tsx",
+      "pass": true,
+      "markers": [
+        "Synthetic course list",
+        "not an official curriculum",
+        "V1 ASSUMPTION"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B18",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "markers": ["Your changes in this session", "They reset when you"],
+      "missing": []
+    },
+    {
+      "id": "B19",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "markers": ["Coordinator view: this sample roster is read-only"],
+      "missing": []
+    },
+    {
+      "id": "B20",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "markers": [
+        "Attendance saved in this demo session. It resets on refresh",
+        "Past-session edits",
+        "No official attendance"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B21",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "markers": [
+        "No official record or notification is created",
+        "has not been released to students",
+        "does not define a scale"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B22",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "markers": [
+        "Publishing, delivery, and official campus updates are not part of this demo"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B23",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "markers": [
+        "No coordinator edits are saved",
+        "V1 ASSUMPTION",
+        "Official enrollment",
+        "Changes to official schedules"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B24",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "markers": [
+        "Staff demo statuses only",
+        "V1 ASSUMPTION",
+        "not an official admissions decision",
+        "checklist is locked"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B25",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "markers": ["This demo does not create a Student ID"],
+      "missing": []
+    },
+    {
+      "id": "B26",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "markers": [
+        "Review sample schedule",
+        "Save sample schedule",
+        "Confirm sample result"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B27",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "markers": [
+        "sample statuses, not official releases",
+        "Confirm sample step"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B28",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "markers": [
+        "SAMPLE · DEMO · NOT VALID FOR OFFICIAL USE",
+        "Print sample preview",
+        "not an"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B29",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "markers": [
+        "Service model",
+        "No SLA or official service catalog is represented"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B30",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "markers": [
+        "It does not contact the student",
+        "Admissions, DCAT, enrollment, student records, and official documents"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B31",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "markers": [
+        "Directory scope",
+        "not an official organization chart",
+        "No HR or account-access workflow"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B32",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "markers": ["does not confirm an official department"],
+      "missing": []
+    },
+    {
+      "id": "B33",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "markers": [
+        "Facilities model",
+        "No inventory or response-time policy is represented"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B34",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "markers": [
+        "Status changes stay in this browser session",
+        "No response-time or emergency policy",
+        "Sample ticket history"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B35",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "markers": [
+        "Reference scope",
+        "not official live settings",
+        "V1 ASSUMPTION",
+        "not an institutional configuration editor"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B36",
+      "file": "src/app/[portal]/[[...section]]/page.tsx",
+      "pass": true,
+      "markers": ["Read-only account directory"],
+      "missing": []
+    },
+    {
+      "id": "B37",
+      "file": "src/app/[portal]/[[...section]]/page.tsx",
+      "pass": true,
+      "markers": [
+        "System reporting",
+        "No live monitoring or service-health reporting"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B38",
+      "file": "src/features/technology/technology-dashboard.tsx",
+      "pass": true,
+      "markers": [
+        "Counts are derived from fictional development accounts and their current seeded memberships"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B39",
+      "file": "src/features/technology/technology-accounts.tsx",
+      "pass": true,
+      "markers": [
+        "review its account state, portal memberships",
+        "Fictional demo accounts and their access summaries",
+        "does not assign roles"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B40",
+      "file": "src/features/technology/technology-security.tsx",
+      "pass": true,
+      "markers": [
+        "not logs or recorded events",
+        "No timestamps or IP addresses",
+        "not persisted as an audit history",
+        "MFA and production account-recovery delivery are not implemented"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B41",
+      "file": "src/features/technology/technology-system.tsx",
+      "pass": true,
+      "markers": [
+        "not live health",
+        "Runtime mode only",
+        "No live health checks",
+        "No uptime, latency"
+      ],
+      "missing": []
+    },
+    {
+      "id": "B42",
+      "file": "src/features/technology/technology-developer.tsx",
+      "pass": true,
+      "markers": [
+        "real authentication and access foundation",
+        "technologyDemoLimitations.slice(2)",
+        "they do not run from this page",
+        "does not run an access test"
+      ],
+      "missing": []
+    }
+  ],
+  "additional": [
+    {
+      "id": "B09",
+      "file": "src/features/applicant/applicant-page.tsx",
+      "marker": "Sample school profile. Your sign-in identity",
+      "pass": true
+    },
+    {
+      "id": "B12",
+      "file": "src/features/applicant/shared.tsx",
+      "marker": "Past demo appointment",
+      "pass": true
+    },
+    {
+      "id": "B26",
+      "file": "src/features/records/demo-context.tsx",
+      "marker": "notification",
+      "pass": true
+    },
+    {
+      "id": "B42",
+      "file": "src/features/technology/demo-data.ts",
+      "marker": "persistent audit history",
+      "pass": true
+    }
+  ],
+  "protectedFilesUnchanged": true,
+  "protectedChanged": [],
+  "sourceSHA256": {
+    "src/app/login/page.tsx": "123bae44aec75bb46c912f43f5be9eef794b2df493041c25b0a93c819d9cd437",
+    "src/app/account/create/page.tsx": "92c471c6c133df4071c225d54be48e615896d8ab80148f227f4405af3872e668",
+    "src/app/account/create/applicant/page.tsx": "0ec9c3e977b3c7133cd6737783a1043824d0d73581dfe776c28c2982d06096ff",
+    "src/app/account/recovery/page.tsx": "35605e25f065361cd3a7b7101f73ef3f793d6252b09b19bd7e03138ec46684c0",
+    "src/features/identity/account-entry.tsx": "f5a52c145a3087edd0ff13074429a461893a86489c94eef7d2a2b01dc1dbf6ba",
+    "src/features/identity/account-profile.tsx": "87df822c8018664e9db344e21f71a10c9f23a76def8b0aaae76d33b8be2b8c6b",
+    "src/components/ui/demo-profile-photo.tsx": "6257233860ebb09b22d425c21a14d4f2c2d448aa75d2dc3819aa19cad0565bdc",
+    "src/features/applicant/applicant-page.tsx": "81b9e9edbd69ac18093aa5f8e76e1e017c6362794628ae41c20fc84f76bc8a48",
+    "src/features/student/student-page.tsx": "9b540b8f1e62011853fb256b3468901f871b3256b650e8cbd4fffc7e3a049581",
+    "src/features/applicant/scenario-switcher.tsx": "9f295efd3fd8281899f7e6c472c7df3ae3179dec032f83995dee0c86ce47c719",
+    "src/features/applicant/application-form.tsx": "09b9a2d4bcc05c72ebf4f27dbbf072821a1e1671400ed048aa8eb1589034ad35",
+    "src/features/applicant/shared.tsx": "ff689fbcef5ea37296039432368ce9cb851b971a5b610a2ba29843832fb982b0",
+    "src/features/student/student-academics.tsx": "ffae952f051a1d0fbbf5acfb9d71032a1931734a66e20211a4957cf6fa935351",
+    "src/features/academic/academic-page.tsx": "d1bc77588486dd9b82806670b2e8721d2d8904470e7d7d9af0715b63adf971e5",
+    "src/features/records/records-page.tsx": "32e27c31668e43c84bf973e089bb7fd11b3ad3b9131e60f9653fb4133889b45f",
+    "src/features/operations/operations-page.tsx": "83669f081d604718fd8dbd92207da1a3d8a85079740fdbb46ea6051c871bec85",
+    "src/app/[portal]/[[...section]]/page.tsx": "d5852a81b85b3610d9dbf2482133636cafaa41cb9e1d26ce5d1a79b64201e611",
+    "src/features/technology/technology-dashboard.tsx": "46a3555e7cb290d337e401fb4a4789f46090c08e8ceb55718a4f529e04b447bf",
+    "src/features/technology/technology-accounts.tsx": "a1f3ce7c6d1de49d0f0ebed89194072a1edbd3e129c8a62e475ecec96ed1b4e8",
+    "src/features/technology/technology-security.tsx": "41493cd329a07f871ccbfb441146caaee8b5f61cc5f739b80c9e709cb1f24363",
+    "src/features/technology/technology-system.tsx": "3777d2816e439586cd2dd3031c0479a41d5e41529d1ca7ad03f8a8c5ce0aa3bb",
+    "src/features/technology/technology-developer.tsx": "99a95493a2d6bae64fc166c7c24cb9d7ee3172dbfec7a89f00bed6c0ced1b4ad",
+    "src/app/about/page.tsx": "da98a029d1cc901b2fa5cfbd91bc7108ead391a8824827809894e311c8b1bef7",
+    "src/app/account/page.tsx": "fd347a9fe61a108d803753e74854288f6307d8e230a1f96279ca0611e3ade24f",
+    "src/app/globals.css": "a594c62f07cdb163766353f3f8f44eee42077098d067d50735ba45497cf67202",
+    "src/app/layout.tsx": "693cb1d526b45c0db68f8f6966875942d0833d99e256c9d5e9da24ea8e4e467d",
+    "src/components/development-identity.tsx": "ecbef70b9c7c509b0b912bdb43c3ff255e6619001adbc530d9a48ec223ccbae4",
+    "src/components/portal/app-shell.tsx": "39b63da99ba6081cdaa193b88927547d03cd0104d5ff79a58454fb8538f78879",
+    "src/components/public/site-shell.tsx": "6cd3ebf4ab8c489a2d66b9078e7258aef37e0e428d8462f78ad75de10e797b89",
+    "src/app/acceptable-use/page.tsx": "2b198ad490524e3d64cedde318f8bfeb064abd87c589eac0bb8b193832fe7a26",
+    "src/app/disclaimer/page.tsx": "1be6e992b5841c854ecb89754aa436bd4925df7852b2419d72928cbe5e199240",
+    "src/app/privacy/page.tsx": "7ad410ffb62c7aa8405d5177873a479f88a8041eed5cbfc98d506a4e0035f028",
+    "src/app/terms/page.tsx": "2109ea2cae2b80029f4a0bf6342911aab3071ebe76370b95e1c0d9d08f514198",
+    "src/features/disclosure/demo-disclosure-provider.tsx": "623af82e6e160a69b902844214a4776b3f5b4576f42785b26f107dde92b420b7",
+    "src/features/disclosure/disclosure-content.ts": "78886faa217779989b0e37c6f0cbabf705873059c97fca17ea91f052830d9771",
+    "src/features/disclosure/project-information-page.tsx": "d38be73f7ec38d651e78b50c5056fc4ed5b6ec4e30841c1cfda27d8380eadaa2"
+  },
+  "errors": []
+}

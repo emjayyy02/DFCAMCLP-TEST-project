@@ -29,9 +29,6 @@ export default async function AccountPage() {
           title="Account profile"
           description="Your sign-in identity, portal access, and temporary personal presentation."
         />
-        <p className="account-profile-disclosure">
-          Fictional demo account · Photo and bio stay in this tab.
-        </p>
         <AccountProfile
           key={current.user.id}
           user={{

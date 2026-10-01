@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ProjectInformationLinks } from "@/features/disclosure/demo-disclosure-provider";
 
 export function DevelopmentHeader() {
   return (
@@ -30,10 +31,7 @@ export function DevelopmentHeader() {
 export function ConceptDisclaimer() {
   return (
     <footer className="mx-auto w-full max-w-6xl px-5 py-7 text-sm leading-6 text-muted-foreground sm:px-8">
-      <p className="max-w-3xl">
-        Unofficial concept project for educational and portfolio purposes. Not
-        affiliated with or endorsed by DFCAMCLP.
-      </p>
+      <ProjectInformationLinks />
     </footer>
   );
 }

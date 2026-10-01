@@ -1,6 +1,6 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 through P4-M7 and P4-FD1 through P4-FD4 retain their historical PASS / COMPLETE status. P4-FD5 ✅ is accepted through the owner's FD6 implementation brief. P4-FD6 ✅ is complete after frontend acceptance. P4-FD7 disclosure/legal planning is PASS, ready for owner acceptance; mark COMPLETE only after that acceptance. P4-FD8 is next and NOT STARTED; RC2A and RC2B remain after FD8.** Updated 1 October 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) remains the foundation; the [FD5 implementation lock](P4-FD5-IMPLEMENTATION-LOCK.md) specifies the accepted expressive amendments. The [FD7 disclosure/legal lock](P4-FD7-DISCLOSURE-LEGAL-UX-LOCK.md) proposes the bounded disclosure amendment. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains historical; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior except the explicitly identified disclosure changes after FD7 acceptance. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 through P4-M7 and P4-FD1 through P4-FD4 retain their historical PASS / COMPLETE status. P4-FD5 ✅ is accepted through the owner's FD6 implementation brief. P4-FD6 ✅ is complete after frontend acceptance. P4-FD7 ✅ is accepted through the owner's FD8 implementation brief. P4-FD8 ✅ is complete after frontend acceptance. RC2A is next and NOT STARTED; RC2B follows RC2A.** Updated 1 October 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) remains the foundation; the [FD5 implementation lock](P4-FD5-IMPLEMENTATION-LOCK.md) specifies the accepted expressive amendments. The [FD7 disclosure/legal lock](P4-FD7-DISCLOSURE-LEGAL-UX-LOCK.md) owns the accepted disclosure amendment. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains historical; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior except the explicitly identified disclosure changes implemented in FD8. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 
@@ -220,7 +220,7 @@ M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy 
 
 ## P4-FD7 — Demo Disclosure + Legal UX Planning
 
-**Status: PASS — planning deliverables ready for owner acceptance, 1 October 2026.** COMPLETE only after owner acceptance. Documentation only; no source implementation or final product QA is claimed.
+**Status: ✅ PASS / COMPLETE — accepted through the owner's explicit FD8 implementation brief, 1 October 2026.** The FD7 deliverables remain documentation-only; FD8 owns implementation and its acceptance evidence.
 
 **Deliverables:** [P4-FD7-DEMO-DISCLOSURE-AUDIT.md](P4-FD7-DEMO-DISCLOSURE-AUDIT.md) and [P4-FD7-DISCLOSURE-LEGAL-UX-LOCK.md](P4-FD7-DISCLOSURE-LEGAL-UX-LOCK.md).
 
@@ -230,7 +230,7 @@ M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy 
 
 ## P4-FD8 — Demo Disclosure + Legal UX Implementation
 
-**Status: NEXT / NOT STARTED.** Requires accepted FD7 lock and an explicit implementation brief.
+**Status: ✅ PASS / COMPLETE — 1 October 2026, after frontend acceptance.** See [P4-FD8-DISCLOSURE-LEGAL-IMPLEMENTATION.md](P4-FD8-DISCLOSURE-LEGAL-IMPLEMENTATION.md): 277 browser checks, 42 captures, A01–A15 consolidated and B01–B42 retained. Existing validation gates pass except unchanged historical format debt. Work stops here; RC2A is next and NOT STARTED.
 
 **Scope:** FD7 lock §13 file map: one root disclosure owner, version-only localStorage preference, public Disclaimer/Terms/Privacy/Acceptable Use routes, shared footer/reopen entries, exact A-clause removal and B-warning retention. Preserve real authentication, temporary workflow/photo/bio behavior and all existing contracts. No public credential release under this scope.
 

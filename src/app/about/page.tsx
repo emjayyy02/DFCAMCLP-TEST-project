@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  SiteShell,
-  PageIntro,
-  conceptNotice,
-} from "@/components/public/site-shell";
+import { SiteShell, PageIntro } from "@/components/public/site-shell";
 import { HistoryTimeline } from "@/components/public/institution-content";
 import { Button } from "@/components/ui/button";
 export const metadata: Metadata = {
@@ -55,11 +51,12 @@ export default function AboutPage() {
         <section className="about-disclosure" aria-labelledby="project-title">
           <div>
             <h2 id="project-title">About this project</h2>
-            <p>{conceptNotice}</p>
             <p>
-              This portfolio project is not commissioned for institutional
-              deployment and is not designed to process real student, applicant,
-              or employee information.
+              Read the{" "}
+              <Link className="text-link" href="/disclaimer">
+                Project Disclaimer
+              </Link>{" "}
+              for the purpose and boundaries of this concept.
             </p>
           </div>
           <Button asChild variant="outline">

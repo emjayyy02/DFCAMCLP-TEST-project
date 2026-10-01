@@ -150,14 +150,10 @@ export function TechnologyDeveloper({
           description="This project demonstrates frontend workflows around a real authentication and access foundation."
         >
           <ul className="mt-4 list-disc space-y-2 pl-5 leading-6 text-muted-foreground marker:text-foreground">
-            {technologyDemoLimitations.map((limitation) => (
+            {technologyDemoLimitations.slice(2).map((limitation) => (
               <li key={limitation}>{limitation}</li>
             ))}
           </ul>
-          <p className="mt-4 border-t border-border pt-4 text-sm leading-6 text-muted-foreground">
-            Unofficial concept project for learning and portfolio demonstration.
-            It is not affiliated with or endorsed by DFCAMCLP.
-          </p>
         </TechnologySection>
       </div>
 

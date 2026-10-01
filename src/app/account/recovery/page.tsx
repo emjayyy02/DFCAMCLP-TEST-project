@@ -17,7 +17,7 @@ export default function AccountRecoveryPage() {
           not send email or create support tickets.
         </PageIntro>
         <DemoNotice
-          label="Recovery concept"
+          label="Recovery preview"
           detail="Use fictional details only. No account lookup, email delivery, or ticket service is connected."
         />
 

@@ -15,7 +15,7 @@ export default function ApplicantEntryPage() {
           Review the first information a connected application might ask for.
         </PageIntro>
         <DemoNotice
-          label="Temporary preview"
+          label="Entry preview"
           detail="Use fictional details. Information stays in this page only and is lost when you leave or refresh. No password is collected."
         />
         <ApplicantEntryPreview />

@@ -12,6 +12,10 @@ import { cn } from "@/lib/utils";
 import { Avatar, IdentitySummary } from "@/components/ui/identity";
 import { useAccountPresentation } from "@/features/identity/demo-presentation-provider";
 import { InteractionFeedback } from "@/components/ui/interaction-feedback";
+import {
+  AboutDemoButton,
+  ProjectInformationLinks,
+} from "@/features/disclosure/demo-disclosure-provider";
 
 type MembershipSummary = {
   portal: PortalCode;
@@ -175,6 +179,11 @@ function UserMenu({ user }: Pick<AppShellProps, "user">) {
         >
           View profile
         </Link>
+        <AboutDemoButton
+          className="navigation-item w-full font-medium"
+          onOpen={close}
+          focusTarget={() => menu.current?.querySelector("summary") ?? null}
+        />
         <SignOutButton className="mt-1 w-full" variant="ghost" />
       </div>
     </details>
@@ -418,10 +427,7 @@ export function AppShell({
             {children}
           </main>
           <footer className="border-t border-border px-5 py-6 text-sm leading-6 text-muted-foreground sm:px-8 lg:px-10">
-            <p className="max-w-3xl">
-              Unofficial concept project for educational and portfolio purposes.
-              Not affiliated with or endorsed by DFCAMCLP.
-            </p>
+            <ProjectInformationLinks />
           </footer>
         </div>
       </div>

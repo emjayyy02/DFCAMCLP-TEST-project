@@ -17,7 +17,7 @@ export default function AccountEntryPage() {
           accounts remain institution-managed.
         </PageIntro>
         <DemoNotice
-          label="Concept flow"
+          label="Account entry preview"
           detail="No account, application, email, or portal access is created here. Use fictional details only."
         />
 

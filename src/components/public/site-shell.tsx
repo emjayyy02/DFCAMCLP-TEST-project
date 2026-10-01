@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { SiteHeader } from "./site-header";
 import { SkipLink } from "@/components/development-identity";
+import { ProjectInformationLinks } from "@/features/disclosure/demo-disclosure-provider";
 
-export const conceptNotice =
-  "Unofficial concept project for educational and portfolio purposes. Not affiliated with or endorsed by DFCAMCLP.";
 export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="public-site">
@@ -23,7 +22,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
               <Link href="/login">Sign In</Link>
             </nav>
           </div>
-          <p>{conceptNotice}</p>
+          <ProjectInformationLinks />
           <p className="footer-copyright">
             © 2026 Marvin Silverio · Independent portfolio project.
           </p>

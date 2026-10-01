@@ -4,7 +4,6 @@ import Link from "next/link";
 import { PageHeader } from "@/components/portal/page-header";
 import { ContextHeader } from "@/components/ui/context-header";
 import { Badge } from "@/components/ui/badge";
-import { DemoNotice } from "@/components/ui/demo-notice";
 import { EmptyState as SharedEmptyState } from "@/components/ui/states";
 import { ListToolbar, SortControl } from "@/components/ui/list-toolbar";
 import { SortableHeader } from "@/components/ui/sortable-header";
@@ -156,7 +155,6 @@ function Heading({
           description={descriptions[section] ?? descriptions.dashboard}
         />
       )}
-      <DemoNotice detail="Fictional records · Changes reset on refresh" />
     </>
   );
 }

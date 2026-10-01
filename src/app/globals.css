@@ -1,5 +1,237 @@
 @import "tailwindcss";
 
+/* Project disclosure and reading surfaces reuse the civic-academic tokens. */
+.demo-disclosure-dialog {
+  width: min(32rem, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--foreground);
+  box-shadow: var(--shadow-elevated);
+}
+.demo-disclosure-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+.demo-disclosure-dialog::backdrop {
+  background: rgb(23 35 59 / 55%);
+}
+.demo-disclosure-body {
+  min-height: 0;
+  overflow-y: auto;
+  padding: 24px;
+  overscroll-behavior: contain;
+}
+.demo-disclosure-body h2 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.demo-disclosure-body h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: var(--accent);
+  margin-top: 12px;
+}
+.demo-disclosure-body p,
+.disclosure-fallback p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+.demo-disclosure-body nav {
+  display: grid;
+  margin-top: 16px;
+}
+.demo-disclosure-body nav a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.demo-disclosure-body nav a,
+.demo-disclosure-actions > a,
+.project-page-navigation a,
+.disclosure-fallback a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.demo-disclosure-body nav a:hover,
+.demo-disclosure-actions > a:hover,
+.project-page-navigation a:hover,
+.disclosure-fallback a:hover {
+  text-decoration-thickness: 2px;
+}
+.demo-disclosure-actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border-strong);
+}
+.demo-disclosure-actions > a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.demo-disclosure-actions button {
+  height: auto;
+  min-height: 44px;
+  white-space: normal;
+}
+.project-footer-information p {
+  margin-block: 16px 4px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.project-footer-information nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 4px;
+}
+.project-footer-information nav a,
+.about-demo-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.about-demo-button {
+  cursor: pointer;
+  color: var(--primary);
+  text-align: left;
+}
+.about-demo-button[hidden] {
+  display: none;
+}
+.about-demo-button:hover {
+  text-decoration-thickness: 2px;
+}
+.public-footer .project-footer-information :is(p, button) {
+  color: var(--surface);
+}
+.public-footer .about-demo-button:focus-visible {
+  outline-color: var(--surface);
+}
+.project-reading-column {
+  max-width: 42rem;
+  margin-inline: auto;
+  min-width: 0;
+}
+.project-notice-version {
+  color: var(--foreground-muted);
+  font-size: 14px;
+  line-height: 20px;
+}
+.project-page-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-block: 16px 32px;
+  padding-block: 12px;
+  border-block: 1px solid var(--border-strong);
+}
+.project-page-navigation a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+.project-page-navigation a[aria-current="page"] {
+  font-weight: 600;
+  text-decoration-thickness: 2px;
+}
+.project-information-page article section {
+  margin-top: 32px;
+}
+.project-information-page article h2 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.project-information-page article :is(p, li) {
+  font-size: 16px;
+  line-height: 24px;
+  overflow-wrap: anywhere;
+}
+.project-information-page article p + p {
+  margin-top: 12px;
+}
+.project-information-page article ul {
+  list-style: disc;
+  padding-left: 24px;
+}
+.project-information-page article li + li {
+  margin-top: 12px;
+}
+.project-information-page article ul + p {
+  margin-top: 16px;
+}
+.project-notice-closing {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 2px solid var(--border-strong);
+  font-size: 14px;
+  line-height: 20px;
+}
+.return-to-demo {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 12px;
+}
+.disclosure-fallback {
+  max-width: 42rem;
+  margin: 16px auto;
+  padding: 16px;
+  background: var(--surface);
+  color: var(--foreground);
+  border: 1px solid var(--border-strong);
+}
+.disclosure-fallback nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block: 16px;
+}
+@media (max-width: 600px) {
+  .demo-disclosure-body {
+    padding: 16px;
+  }
+  .demo-disclosure-actions {
+    padding: 12px 16px;
+  }
+  .demo-disclosure-actions button {
+    width: 100%;
+  }
+  .project-information-page article h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+@media print {
+  .demo-disclosure-dialog,
+  .disclosure-fallback,
+  .about-demo-button {
+    display: none !important;
+  }
+}
+
 @font-face {
   font-family: "Source Serif 4";
   src: url("/fonts/SourceSerif4-Semibold.ttf.woff2") format("woff2");

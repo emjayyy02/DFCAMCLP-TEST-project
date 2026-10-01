@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { PageHeader } from "@/components/portal/page-header";
 import { ContextHeader } from "@/components/ui/context-header";
-import { DemoNotice } from "@/components/ui/demo-notice";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useAcademicDemo } from "./demo-context";
 import {
@@ -593,10 +592,6 @@ function TeachingView({
               <li className="academic-empty">No students match this search.</li>
             ) : null}
           </ul>
-          <p className="academic-note">
-            All names and student identifiers on this page are fictional demo
-            data.
-          </p>
         </section>
       </div>
     );
@@ -1629,10 +1624,7 @@ function ManagementView() {
             );
           })}
         </div>
-        <p className="academic-note">
-          Names, assignments, and rosters are fictional. No coordinator edits
-          are saved.
-        </p>
+        <p className="academic-note">No coordinator edits are saved.</p>
       </section>
     </div>
   );
@@ -1743,7 +1735,6 @@ export function AcademicPage({
           }
         />
       )}
-      <DemoNotice detail="Fictional academic records · Changes reset on refresh" />
       {view}
     </div>
   );

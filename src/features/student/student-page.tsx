@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { StudentAcademics } from "./student-academics";
 import { PageHeader } from "@/components/portal/page-header";
-import { DemoNotice } from "@/components/ui/demo-notice";
 import { IdentitySummary } from "@/components/ui/identity";
 import { DemoProfilePhotoPicker } from "@/components/ui/demo-profile-photo";
 import { useStudentDemo } from "./demo-context";
@@ -953,7 +952,6 @@ export function StudentPage({
       data-section={section}
     >
       <PageHeader title={title} description={description} density="personal" />
-      <DemoNotice detail="Fictional student data · Changes reset on refresh" />
       <div className="student-page-content">
         {section === "dashboard" ? <DashboardPage /> : null}
         {section === "academics" ? (

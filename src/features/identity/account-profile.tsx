@@ -8,6 +8,7 @@ import { IdentitySummary } from "@/components/ui/identity";
 import { DemoProfilePhotoPicker } from "@/components/ui/demo-profile-photo";
 import { useAccountPresentation } from "./demo-presentation-provider";
 import { SignOutButton } from "./sign-out-button";
+import { AboutDemoButton } from "@/features/disclosure/demo-disclosure-provider";
 
 type ProfileIdentity = {
   id: string;
@@ -89,6 +90,7 @@ export function AccountProfile({
             Photo and bio are temporary in this tab. They reset on reload or
             sign-out.
           </p>
+          <AboutDemoButton />
           {editing ? (
             <form
               onSubmit={(event) => {

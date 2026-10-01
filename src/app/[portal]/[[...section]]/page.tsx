@@ -136,11 +136,13 @@ export default async function PortalFoundationPage({
         />
         <DemoNotice
           label={
-            section[0] === "accounts" ? "Demo workspace" : "Project information"
+            section[0] === "accounts"
+              ? "Read-only account directory"
+              : "System reporting"
           }
           detail={
             section[0] === "accounts"
-              ? "Fictional development accounts · Read-only"
+              ? "Read-only account directory"
               : "No live monitoring or service-health reporting"
           }
         />

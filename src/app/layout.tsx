@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { DemoPresentationProvider } from "@/features/identity/demo-presentation-provider";
+import { DemoDisclosureProvider } from "@/features/disclosure/demo-disclosure-provider";
 
 const sourceSans = localFont({
   src: [
@@ -40,7 +41,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={sourceSans.variable}>
       <body>
-        <DemoPresentationProvider>{children}</DemoPresentationProvider>
+        <DemoDisclosureProvider>
+          <DemoPresentationProvider>{children}</DemoPresentationProvider>
+        </DemoDisclosureProvider>
       </body>
     </html>
   );

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState, type ReactNode } from "react";
 import { PageHeader } from "@/components/portal/page-header";
-import { DemoNotice } from "@/components/ui/demo-notice";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckboxInput, Select } from "@/components/ui/input";
@@ -594,9 +593,6 @@ function Announcements() {
   return (
     <section className="applicant-announcements">
       <div className="applicant-section-heading">
-        <p className="applicant-muted">
-          Fictional notices for exploring this portal concept.
-        </p>
         <div>
           <label className="applicant-filter-label" htmlFor="notice-category">
             Notice category
@@ -744,7 +740,6 @@ export function ApplicantPage({
       data-section={section}
     >
       <PageHeader title={title} description={description} />
-      <DemoNotice detail="Fictional applicant data · Changes reset on refresh" />
       {section === "dashboard" ? (
         <Dashboard />
       ) : section === "application" ? (
