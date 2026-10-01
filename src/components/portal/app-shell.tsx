@@ -9,7 +9,9 @@ import { portalDetails } from "@/lib/portals";
 import type { NavigationItem } from "@/server/access-control/navigation";
 import { SignOutButton } from "@/features/identity/sign-out-button";
 import { cn } from "@/lib/utils";
-import { IdentitySummary } from "@/components/ui/identity";
+import { Avatar, IdentitySummary } from "@/components/ui/identity";
+import { useAccountPresentation } from "@/features/identity/demo-presentation-provider";
+import { InteractionFeedback } from "@/components/ui/interaction-feedback";
 
 type MembershipSummary = {
   portal: PortalCode;
@@ -24,7 +26,7 @@ type AppShellProps = {
   memberships: MembershipSummary[];
   navigation: NavigationItem[];
   navigationTools?: ReactNode;
-  user: { name: string; email: string };
+  user: { id: string; name: string; email: string };
 };
 
 function Navigation({
@@ -73,10 +75,23 @@ function PortalSwitcher({
   currentPortal,
   memberships,
 }: Pick<AppShellProps, "currentPortal" | "memberships">) {
+  const menu = useRef<HTMLDetailsElement>(null);
+  function close() {
+    if (menu.current) menu.current.open = false;
+  }
   if (memberships.length < 2) return null;
 
   return (
-    <details className="group relative hidden md:block">
+    <details
+      ref={menu}
+      className="group relative hidden md:block"
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          close();
+          menu.current?.querySelector("summary")?.focus();
+        }
+      }}
+    >
       <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-md border border-border-strong bg-surface px-3 text-sm font-semibold text-foreground hover:bg-muted">
         Switch portal
         <svg
@@ -99,6 +114,7 @@ function PortalSwitcher({
             <li key={membership.portal}>
               <Link
                 href={membership.path}
+                onClick={close}
                 aria-current={
                   membership.portal === currentPortal ? "page" : undefined
                 }
@@ -118,17 +134,46 @@ function PortalSwitcher({
 }
 
 function UserMenu({ user }: Pick<AppShellProps, "user">) {
+  const { photo } = useAccountPresentation(user.id);
+  const menu = useRef<HTMLDetailsElement>(null);
+  function close() {
+    if (menu.current) menu.current.open = false;
+  }
   return (
-    <details className="group relative">
+    <details
+      ref={menu}
+      className="group relative"
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          close();
+          menu.current?.querySelector("summary")?.focus();
+        }
+      }}
+    >
       <summary className="account-trigger flex min-h-11 cursor-pointer list-none items-center rounded-md border border-input px-3 text-[15px] font-semibold text-foreground hover:bg-muted">
-        Account
+        <Avatar name={user.name} src={photo} size="small" />
+        <span className="account-trigger-label">Account</span>
       </summary>
       <div className="portal-popover absolute right-0 z-30 mt-2 w-[min(19rem,calc(100vw-2rem))] rounded-lg bg-surface-elevated p-3 shadow-elevated">
-        <div className="border-b border-border px-2 pb-3">
-          <IdentitySummary name={user.name} detail={user.email} size="small" />
-        </div>
-        <Link href="/account" className="navigation-item mt-2 font-medium">
-          Account
+        <Link
+          href="/account"
+          onClick={close}
+          aria-label={`View profile for ${user.name}`}
+          className="account-identity-link border-b border-border px-2 pb-3"
+        >
+          <IdentitySummary
+            name={user.name}
+            detail={user.email}
+            src={photo}
+            size="small"
+          />
+        </Link>
+        <Link
+          href="/account"
+          onClick={close}
+          className="navigation-item mt-2 font-medium"
+        >
+          View profile
         </Link>
         <SignOutButton className="mt-1 w-full" variant="ghost" />
       </div>
@@ -281,7 +326,7 @@ function MobileDrawer({
               onClick={closeDrawer}
               className="navigation-item font-medium"
             >
-              Account
+              View profile
             </Link>
             <SignOutButton className="mt-1 w-full" variant="ghost" />
           </div>
@@ -307,6 +352,7 @@ export function AppShell({
 
   return (
     <div className="min-h-screen bg-background">
+      <InteractionFeedback />
       <a
         href="#main"
         className="sr-only z-50 rounded-md bg-surface focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:p-3"

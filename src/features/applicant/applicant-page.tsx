@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { PageHeader } from "@/components/portal/page-header";
 import { DemoNotice } from "@/components/ui/demo-notice";
 import { Button } from "@/components/ui/button";
@@ -29,6 +29,96 @@ import {
   ScheduleBlock,
   Tabs,
 } from "./shared";
+
+function TaskLayout({
+  children,
+  context = "summary",
+}: {
+  children: ReactNode;
+  context?:
+    "summary" | "journey" | "exam" | "registrar" | "enrollment" | "notices";
+}) {
+  const { state, scenario, savedDraft } = useApplicantDemo();
+  return (
+    <div className="applicant-task-layout">
+      <div className="applicant-task-main">{children}</div>
+      <aside className="applicant-context" aria-label="Application context">
+        <h2>
+          {context === "notices" ? "Your current stage" : "Application context"}
+        </h2>
+        <p className="applicant-context-stage">{state.stage}</p>
+        <Facts
+          items={[
+            ["Applicant ID", applicantIdentity.id],
+            ["Program", programDisplay(savedDraft)],
+            ["Campus", campusDisplay(savedDraft)],
+          ]}
+        />
+        {context === "journey" ? (
+          <Journey
+            steps={journeySteps}
+            current={state.journey}
+            halted={scenario === "notQualified"}
+            compact
+          />
+        ) : null}
+        {context === "exam" && state.exam !== "unavailable" ? (
+          <ScheduleBlock
+            title="Exam schedule"
+            schedule={{
+              ...demoSchedules.exam,
+              campus: campusDisplay(savedDraft),
+            }}
+            past={state.exam !== "scheduled"}
+          />
+        ) : null}
+        {context === "registrar" && state.enrollment >= 0 ? (
+          <ScheduleBlock
+            title="Registrar appointment"
+            schedule={{
+              ...demoSchedules.registrar,
+              campus: campusDisplay(savedDraft),
+            }}
+            past={state.enrollment > 1}
+          />
+        ) : null}
+        {context === "enrollment" ? (
+          <>
+            <Journey
+              steps={enrollmentSteps}
+              current={state.enrollment}
+              compact
+            />
+            <Facts
+              items={[
+                [
+                  "COE",
+                  state.enrollment >= 3
+                    ? "Available · sample preview"
+                    : "Not yet issued",
+                ],
+                [
+                  "COR",
+                  state.enrollment >= 4
+                    ? "Available · sample preview"
+                    : "Not yet issued",
+                ],
+              ]}
+            />
+          </>
+        ) : null}
+        <Link
+          className="applicant-link"
+          href={context === "notices" ? "/applicant" : "/applicant/profile"}
+        >
+          {context === "notices"
+            ? "View your next step"
+            : "View applicant profile"}
+        </Link>
+      </aside>
+    </div>
+  );
+}
 
 function Dashboard() {
   const { scenario, state, savedDraft } = useApplicantDemo();
@@ -103,7 +193,7 @@ function Dashboard() {
           ? demoSchedules.registrar
           : null;
   return (
-    <>
+    <div className="applicant-dashboard-layout">
       <section className="applicant-next-action">
         <div className="applicant-section-heading">
           <h2>{action.title}</h2>
@@ -189,7 +279,7 @@ function Dashboard() {
           </article>
         ))}
       </section>
-    </>
+    </div>
   );
 }
 
@@ -508,7 +598,7 @@ function Announcements() {
           Fictional notices for exploring this portal concept.
         </p>
         <div>
-          <label className="sr-only" htmlFor="notice-category">
+          <label className="applicant-filter-label" htmlFor="notice-category">
             Notice category
           </label>
           <Select
@@ -558,20 +648,28 @@ function Profile() {
     useApplicantDemo();
   const fullName = `${savedDraft.firstName} ${savedDraft.lastName}`;
   return (
-    <section className="applicant-surface">
+    <section className="applicant-surface applicant-profile-layout">
       <div className="applicant-profile-identity">
         <IdentitySummary
           name={fullName}
           detail={`Sample applicant · ${applicantIdentity.id}`}
           src={profilePhoto}
           size="large"
-        />
-        <DemoProfilePhotoPicker
-          id="applicant-profile-photo"
-          hasPhoto={Boolean(profilePhoto)}
-          onSelect={setProfilePhoto}
+          avatar={
+            <DemoProfilePhotoPicker
+              id="applicant-profile-photo"
+              name={fullName}
+              src={profilePhoto}
+              onSelect={setProfilePhoto}
+              domain
+            />
+          }
         />
       </div>
+      <p className="domain-profile-context">
+        Sample school profile. Your sign-in identity is in{" "}
+        <Link href="/account">Account profile</Link>.
+      </p>
       <section className="applicant-review-group">
         <h3>Personal</h3>
         <Facts
@@ -590,7 +688,7 @@ function Profile() {
           ]}
         />
       </section>
-      <section className="applicant-review-group">
+      <section className="applicant-review-group applicant-profile-application">
         <h3>Application</h3>
         <Facts
           items={[
@@ -642,7 +740,7 @@ export function ApplicantPage({
   return (
     <div
       className="applicant-experience"
-      data-layout={section === "profile" ? "detail" : "personal"}
+      data-layout={section === "dashboard" ? "dashboard" : "personal"}
       data-section={section}
     >
       <PageHeader title={title} description={description} />
@@ -654,9 +752,30 @@ export function ApplicantPage({
           key={`application-${view}`}
           initial={view === "requirements" ? 1 : view === "status" ? 2 : 0}
           items={[
-            { label: "Application form", content: <ApplicationForm /> },
-            { label: "Requirements", content: <Requirements /> },
-            { label: "Status", content: <ApplicationStatus /> },
+            {
+              label: "Application form",
+              content: (
+                <TaskLayout context="journey">
+                  <ApplicationForm />
+                </TaskLayout>
+              ),
+            },
+            {
+              label: "Requirements",
+              content: (
+                <TaskLayout context="journey">
+                  <Requirements />
+                </TaskLayout>
+              ),
+            },
+            {
+              label: "Status",
+              content: (
+                <TaskLayout>
+                  <ApplicationStatus />
+                </TaskLayout>
+              ),
+            },
           ]}
         />
       ) : section === "dcat" ? (
@@ -664,21 +783,65 @@ export function ApplicantPage({
           key={`dcat-${view}`}
           initial={view === "results" ? 2 : 0}
           items={[
-            { label: "Exam schedule", content: <DcatSchedule /> },
-            { label: "DCAT form", content: <DcatForm /> },
-            { label: "Results", content: <Results /> },
+            {
+              label: "Exam schedule",
+              content: (
+                <TaskLayout context="journey">
+                  <DcatSchedule />
+                </TaskLayout>
+              ),
+            },
+            {
+              label: "DCAT form",
+              content: (
+                <TaskLayout context="exam">
+                  <DcatForm />
+                </TaskLayout>
+              ),
+            },
+            {
+              label: "Results",
+              content: (
+                <TaskLayout context="journey">
+                  <Results />
+                </TaskLayout>
+              ),
+            },
           ]}
         />
       ) : section === "enrollment" ? (
         <Tabs
           items={[
-            { label: "Progress", content: <EnrollmentProgress /> },
-            { label: "Registrar schedule", content: <RegistrarSchedule /> },
-            { label: "COE / COR", content: <EnrollmentDocuments /> },
+            {
+              label: "Progress",
+              content: (
+                <TaskLayout context="registrar">
+                  <EnrollmentProgress />
+                </TaskLayout>
+              ),
+            },
+            {
+              label: "Registrar schedule",
+              content: (
+                <TaskLayout context="enrollment">
+                  <RegistrarSchedule />
+                </TaskLayout>
+              ),
+            },
+            {
+              label: "COE / COR",
+              content: (
+                <TaskLayout context="enrollment">
+                  <EnrollmentDocuments />
+                </TaskLayout>
+              ),
+            },
           ]}
         />
       ) : section === "announcements" ? (
-        <Announcements />
+        <TaskLayout context="notices">
+          <Announcements />
+        </TaskLayout>
       ) : (
         <Profile />
       )}

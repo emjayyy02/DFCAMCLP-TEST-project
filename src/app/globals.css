@@ -79,7 +79,7 @@
   --radius-badge: 4px;
   --shadow-shell: 0 1px 2px rgb(23 35 59 / 6%);
   --shadow-modal: 0 12px 32px rgb(23 35 59 / 16%);
-  --transition-interaction: 150ms ease;
+  --transition-interaction: 140ms cubic-bezier(0.2, 0, 0, 1);
 }
 
 @theme inline {
@@ -2588,5 +2588,563 @@
     > :is(.page-header, .context-header)
     + .demo-notice {
     margin-top: -8px;
+  }
+}
+
+/* FD6: expressive interaction and identity, within the FD5 visual lock. */
+:root {
+  --motion-press: 80ms;
+  --motion-feedback: 140ms;
+  --motion-continuity: 180ms;
+  --motion-drawer: 220ms;
+  --motion-editorial: 320ms;
+  --ease-feedback: cubic-bezier(0.2, 0, 0, 1);
+  --ease-arrival: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-interaction: var(--motion-feedback) var(--ease-feedback);
+}
+.ui-button,
+.navigation-item,
+summary,
+[role="tab"],
+.sortable-header-button,
+.inline-sort-direction,
+.technology-account-row,
+input,
+select,
+textarea,
+.text-link,
+.applicant-link {
+  transition:
+    color var(--transition-interaction),
+    background-color var(--transition-interaction),
+    border-color var(--transition-interaction),
+    text-decoration-thickness var(--transition-interaction),
+    transform var(--transition-interaction);
+}
+.ui-button:not(:disabled):active {
+  transform: scale(0.98);
+  transition-duration: var(--motion-press);
+}
+.navigation-item {
+  transition:
+    color var(--transition-interaction),
+    background-color var(--transition-interaction),
+    box-shadow var(--motion-continuity) var(--ease-feedback);
+}
+.portal-main [role="tab"] {
+  transition:
+    color var(--transition-interaction),
+    background-color var(--transition-interaction),
+    border-color var(--transition-interaction);
+}
+.public-navigation[data-open="true"] {
+  animation: fd6-popover var(--motion-continuity) var(--ease-arrival);
+}
+.applicant-link:active,
+.applicant-tabs button:active {
+  transform: none;
+}
+:where(input, select, textarea):not(:disabled):hover {
+  border-color: var(--foreground);
+}
+:where(input, select, textarea):focus-visible {
+  border-color: var(--primary);
+}
+:where(a, button, summary, input, select, textarea):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+.ui-button.bg-primary:focus-visible {
+  outline: 2px solid var(--primary);
+}
+.campus-hero :is(a, button):focus-visible {
+  outline-color: white;
+}
+:where(.portal-main tr):has(a, button):hover,
+:where(.portal-main tr):has(a, button):focus-within {
+  background: var(--primary-soft);
+}
+.sortable-header-indicator {
+  transition: color var(--transition-interaction);
+}
+.portal-main
+  :is(.applicant-tabs, .student-tabs, .records-tabs, [role="tablist"]) {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--muted);
+  scroll-padding-inline: 6px;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  padding: 6px 5px;
+}
+.portal-main
+  :is(.applicant-tabs, .student-tabs, .records-tabs, [role="tablist"])
+  > :is(button, a) {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  min-height: 44px;
+  padding-inline: 16px;
+  position: relative;
+}
+[role="tab"][aria-selected="true"]::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -2px;
+  height: 2px;
+  background: var(--primary);
+  animation: fd6-marker var(--motion-continuity) var(--ease-feedback);
+}
+@keyframes fd6-marker {
+  from {
+    transform: translateY(3px);
+  }
+  to {
+    transform: none;
+  }
+}
+.institution-wordmark::after,
+.site-identity strong::after {
+  width: 64px;
+  height: 4px;
+  background: var(--accent);
+  border: 0;
+}
+.portal-identity::after {
+  width: 48px;
+  height: 4px;
+  background: var(--accent);
+}
+.page-header,
+.context-header {
+  position: relative;
+}
+.page-header::after,
+.context-header::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -2px;
+  left: 0;
+  width: 64px;
+  height: 4px;
+  background: var(--accent);
+}
+[data-arrival="true"]::after {
+  animation: fd6-context var(--motion-continuity) var(--ease-feedback);
+}
+@keyframes fd6-context {
+  from {
+    transform: translateX(-4px);
+    background: var(--primary);
+  }
+  to {
+    transform: none;
+    background: var(--accent);
+  }
+}
+.portal-main .applicant-journey [data-state="current"] .applicant-step-marker {
+  background: var(--accent);
+  color: var(--foreground);
+  border: 2px solid var(--primary);
+}
+.portal-popover {
+  animation: fd6-popover var(--motion-continuity) var(--ease-arrival);
+}
+@keyframes fd6-popover {
+  from {
+    transform: translateY(-4px);
+  }
+  to {
+    transform: none;
+  }
+}
+.portal-drawer[open] {
+  animation: fd6-drawer var(--motion-drawer) var(--ease-arrival);
+}
+@keyframes fd6-drawer {
+  from {
+    transform: translateX(-16px);
+  }
+  to {
+    transform: none;
+  }
+}
+dialog[open]:not(.portal-drawer),
+.portal-main dialog[open]:not(.portal-drawer) {
+  animation: fd6-dialog var(--motion-continuity) var(--ease-arrival);
+}
+@keyframes fd6-dialog {
+  from {
+    transform: translateY(8px);
+  }
+  to {
+    transform: none;
+  }
+}
+dialog::backdrop {
+  animation: fd6-backdrop var(--motion-feedback) var(--ease-feedback);
+}
+@keyframes fd6-backdrop {
+  from {
+    background-color: rgb(23 35 59 / 32%);
+  }
+  to {
+    background-color: rgb(23 35 59 / 40%);
+  }
+}
+.account-trigger {
+  gap: 8px;
+}
+@media (max-width: 360px) {
+  .account-trigger-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+.account-identity-link {
+  display: block;
+  border-radius: var(--radius);
+  padding-top: 8px;
+}
+.account-identity-link:hover {
+  background: var(--primary-soft);
+}
+.demo-photo-control {
+  position: relative;
+  flex: 0 0 auto;
+  width: fit-content;
+}
+.demo-photo-trigger {
+  position: absolute;
+  right: -12px;
+  bottom: -12px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.demo-photo-trigger > span {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  background: var(--accent);
+  color: var(--foreground);
+  transition:
+    transform var(--transition-interaction),
+    background-color var(--transition-interaction);
+}
+.demo-photo-trigger svg {
+  width: 18px;
+  height: 18px;
+}
+.demo-photo-trigger:hover > span {
+  background: var(--accent-soft);
+}
+.demo-photo-trigger:active > span {
+  transform: scale(0.96);
+  transition-duration: var(--motion-press);
+}
+.demo-photo-dialog {
+  margin: auto;
+  width: min(440px, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  color: var(--foreground);
+  box-shadow: var(--shadow-modal);
+  text-align: left;
+}
+.demo-photo-dialog::backdrop {
+  background: rgb(23 35 59 / 40%);
+}
+.demo-photo-dialog-body {
+  padding: 24px;
+}
+.demo-photo-dialog h2 {
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.demo-photo-dialog p {
+  color: var(--foreground-muted);
+  font-size: 14px;
+  margin-top: 12px;
+}
+.demo-photo-dialog .demo-photo-error {
+  color: var(--destructive-foreground);
+}
+.demo-photo-preview {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+.demo-photo-dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  position: sticky;
+  bottom: 0;
+}
+.domain-profile-context {
+  font-size: 14px;
+  color: var(--foreground-muted);
+  margin-block: 16px;
+}
+.domain-profile-context a,
+.account-memberships a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.account-profile-page {
+  width: min(1216px, calc(100% - 32px));
+  margin: 40px auto;
+  flex: 1;
+}
+.account-profile-disclosure {
+  color: var(--foreground-muted);
+  font-size: 14px;
+  margin: 8px 0 24px;
+}
+.account-profile-identity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 32px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+}
+.account-profile-identity .identity-summary {
+  gap: 24px;
+}
+.account-profile-state {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+}
+.account-profile-state > span:first-child {
+  color: var(--foreground-muted);
+}
+.account-profile-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 32px;
+  margin-top: 32px;
+}
+.account-profile-columns > section {
+  min-width: 0;
+  border-top: 2px solid var(--border-strong);
+  padding-top: 16px;
+}
+.account-profile-content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.account-profile-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.account-profile-help,
+.account-profile-session p {
+  font-size: 14px;
+  color: var(--foreground-muted);
+  margin-top: 8px;
+  max-width: 672px;
+}
+.account-profile-bio form {
+  margin-top: 24px;
+  max-width: 704px;
+}
+.account-profile-bio label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.account-profile-bio textarea {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  padding: 12px;
+  resize: vertical;
+  border: 1px solid var(--input);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.account-profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+.account-bio-text,
+.account-bio-empty {
+  margin-top: 24px;
+  padding-block: 16px;
+  max-width: 672px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.account-bio-empty {
+  color: var(--foreground-muted);
+}
+.account-profile-feedback:empty {
+  display: none;
+}
+.account-profile-feedback {
+  margin-top: 16px;
+  color: var(--success-foreground);
+  font-size: 14px;
+}
+.account-memberships li {
+  padding-block: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.account-memberships h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.account-memberships li p {
+  color: var(--foreground-muted);
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}
+.account-memberships a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+.account-profile-session {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.reveal-history {
+  position: relative;
+  padding-top: 12px;
+}
+.reveal-history::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: var(--accent);
+  margin-bottom: 20px;
+  transform-origin: left;
+}
+.reveal-history[data-reveal="true"]::before {
+  animation: fd6-line var(--motion-editorial) var(--ease-arrival);
+}
+.reveal-journey .admissions-journey > li:not(:last-child)::after {
+  background: var(--primary);
+  box-shadow: inset 12px 0 var(--accent);
+  height: 2px;
+  transform-origin: left;
+}
+.reveal-journey[data-reveal="true"] .admissions-journey > li::after {
+  animation: fd6-line var(--motion-editorial) var(--ease-arrival);
+}
+.reveal-journey[data-reveal="true"] li:nth-child(2)::after {
+  animation-delay: 36ms;
+}
+.reveal-journey[data-reveal="true"] li:nth-child(3)::after {
+  animation-delay: 72ms;
+}
+.reveal-journey[data-reveal="true"] li:nth-child(4)::after {
+  animation-delay: 108ms;
+}
+@keyframes fd6-line {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@media (max-width: 1100px) {
+  .account-profile-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .account-profile-page {
+    margin-block: 24px;
+  }
+  .account-profile-identity {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 16px;
+    gap: 20px;
+  }
+  .account-profile-columns {
+    margin-top: 24px;
+    gap: 24px;
+  }
+  .demo-photo-dialog-body {
+    padding: 20px;
+  }
+  .demo-photo-dialog-actions {
+    padding: 16px;
+  }
+  .demo-photo-dialog-actions .ui-button {
+    flex: 1 1 auto;
+  }
+  .page-header::after,
+  .context-header::after {
+    width: 48px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+    transform: none !important;
+  }
+}
+@media print {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
   }
 }

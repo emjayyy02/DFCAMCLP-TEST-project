@@ -153,6 +153,13 @@ export function Tabs({
               refs.current[index] = node;
             }}
             onClick={() => setSelected(index)}
+            onFocus={(event) => {
+              event.currentTarget.scrollIntoView({
+                block: "nearest",
+                inline: "nearest",
+                behavior: "instant",
+              });
+            }}
             onKeyDown={(event) => {
               const next =
                 event.key === "ArrowRight"

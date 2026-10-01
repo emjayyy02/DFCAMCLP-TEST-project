@@ -1,0 +1,1258 @@
+{
+  "date": "2026-10-01 Asia/Taipei",
+  "startedAt": "2026-10-01T10:44:47.280Z",
+  "commit": "386dc1438470e8d13528df25a0c93f9e42c83534",
+  "dirty": "M docs/phase-4/P4-ROADMAP.md\n M next-env.d.ts\n M src/app/[portal]/layout.tsx\n M src/app/account/page.tsx\n M src/app/globals.css\n M src/app/layout.tsx\n M src/components/portal/app-shell.tsx\n M src/components/public/institution-content.tsx\n M src/components/ui/demo-profile-photo.tsx\n M src/components/ui/identity.tsx\n M src/features/applicant/applicant-page.tsx\n M src/features/applicant/applicant.css\n M src/features/applicant/shared.tsx\n M src/features/identity/sign-out-button.tsx\n M src/features/student/student-page.tsx\n?? docs/phase-4/P4-FD5-EXPRESSIVE-UI-AUDIT.md\n?? docs/phase-4/P4-FD5-IMPLEMENTATION-LOCK.md\n?? docs/phase-4/P4-FD6-EXPRESSIVE-UI-IDENTITY-IMPLEMENTATION.md\n?? docs/phase-4/fd6-after/\n?? src/components/ui/interaction-feedback.tsx\n?? src/components/ui/reveal-accent.tsx\n?? src/features/identity/account-profile.tsx\n?? src/features/identity/demo-presentation-provider.tsx",
+  "browser": "Microsoft Edge Chromium / Next.js production server",
+  "captures": [
+    {
+      "id": "keyboard-end-application",
+      "group": "applicant",
+      "state": "End key / final tab fully visible",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 320,
+        "pageWidth": 320,
+        "heading": "Application",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "keyboard-end-application-320.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "keyboard-end-application",
+      "group": "applicant",
+      "state": "End key / final tab fully visible",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "keyboard-end-application-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "keyboard-end-dcat",
+      "group": "applicant",
+      "state": "End key / final tab fully visible",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 320,
+        "pageWidth": 320,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "keyboard-end-dcat-320.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "keyboard-end-dcat",
+      "group": "applicant",
+      "state": "End key / final tab fully visible",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "keyboard-end-dcat-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "keyboard-end-enrollment",
+      "group": "applicant",
+      "state": "End key / final tab fully visible",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 320,
+        "pageWidth": 320,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "keyboard-end-enrollment-320.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "keyboard-end-enrollment",
+      "group": "applicant",
+      "state": "End key / final tab fully visible",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "keyboard-end-enrollment-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "applicant login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "applicant account identity",
+      "pass": true,
+      "detail": "JT\n\nJamie Testapplicant\n\napplicant.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "applicant memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 320 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 246,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 320 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 226.125,
+        "right": 298.734375,
+        "viewport": 320,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 320
+      }
+    },
+    {
+      "name": "keyboard-end-application no overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "pageWidth": 320,
+        "heading": "Application",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 320 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 320 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 246,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 320 reduce",
+      "pass": true,
+      "detail": {
+        "left": 226.125,
+        "right": 298.734375,
+        "viewport": 320,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 320
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 320 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 375 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 241.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 375 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 281.125,
+        "right": 353.734375,
+        "viewport": 375,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 375
+      }
+    },
+    {
+      "name": "keyboard-end-application no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 375 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 375 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 241.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 375 reduce",
+      "pass": true,
+      "detail": {
+        "left": 281.125,
+        "right": 353.734375,
+        "viewport": 375,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 375
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 375 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 768 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 223.25,
+        "accountLeft": 626.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 768 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 299.125,
+        "right": 371.734375,
+        "viewport": 768,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 768
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 768 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 768 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 223.25,
+        "accountLeft": 626.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 768 reduce",
+      "pass": true,
+      "detail": {
+        "left": 299.125,
+        "right": 371.734375,
+        "viewport": 768,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 768
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 768 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 1440 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1290.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 1440 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 563.125,
+        "right": 635.734375,
+        "viewport": 1440,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1440
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 1440 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 1440 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1290.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 1440 reduce",
+      "pass": true,
+      "detail": {
+        "left": 563.125,
+        "right": 635.734375,
+        "viewport": 1440,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1440
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 1440 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 1920 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1770.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 1920 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 755.125,
+        "right": 827.734375,
+        "viewport": 1920,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1920
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 1920 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/application 1920 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1770.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/application 1920 reduce",
+      "pass": true,
+      "detail": {
+        "left": 755.125,
+        "right": 827.734375,
+        "viewport": 1920,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1920
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/application 1920 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 320 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 246,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 320 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 220.5,
+        "right": 299.4375,
+        "viewport": 320,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 320
+      }
+    },
+    {
+      "name": "keyboard-end-dcat no overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "pageWidth": 320,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 320 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 320 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 246,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 320 reduce",
+      "pass": true,
+      "detail": {
+        "left": 220.5,
+        "right": 299.4375,
+        "viewport": 320,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 320
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 320 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 375 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 241.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 375 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 248.5,
+        "right": 327.4375,
+        "viewport": 375,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 375
+      }
+    },
+    {
+      "name": "keyboard-end-dcat no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 375 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 375 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 241.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 375 reduce",
+      "pass": true,
+      "detail": {
+        "left": 248.5,
+        "right": 327.4375,
+        "viewport": 375,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 375
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 375 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 768 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 223.25,
+        "accountLeft": 626.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 768 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 264.5,
+        "right": 343.4375,
+        "viewport": 768,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 768
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 768 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 768 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 223.25,
+        "accountLeft": 626.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 768 reduce",
+      "pass": true,
+      "detail": {
+        "left": 264.5,
+        "right": 343.4375,
+        "viewport": 768,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 768
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 768 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 1440 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1290.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 1440 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 528.5,
+        "right": 607.4375,
+        "viewport": 1440,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1440
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 1440 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 1440 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1290.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 1440 reduce",
+      "pass": true,
+      "detail": {
+        "left": 528.5,
+        "right": 607.4375,
+        "viewport": 1440,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1440
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 1440 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 1920 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1770.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 1920 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 720.5,
+        "right": 799.4375,
+        "viewport": 1920,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1920
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 1920 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/dcat 1920 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1770.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/dcat 1920 reduce",
+      "pass": true,
+      "detail": {
+        "left": 720.5,
+        "right": 799.4375,
+        "viewport": 1920,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1920
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/dcat 1920 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 320 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 246,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 320 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 202.078125,
+        "right": 298.703125,
+        "viewport": 320,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 320
+      }
+    },
+    {
+      "name": "keyboard-end-enrollment no overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "pageWidth": 320,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 320 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 320 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 246,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 320 reduce",
+      "pass": true,
+      "detail": {
+        "left": 202.078125,
+        "right": 298.703125,
+        "viewport": 320,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 320
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 320 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 375 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 241.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 375 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 257.078125,
+        "right": 353.703125,
+        "viewport": 375,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 375
+      }
+    },
+    {
+      "name": "keyboard-end-enrollment no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 375 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 375 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 211.25,
+        "accountLeft": 241.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "48px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 375 reduce",
+      "pass": true,
+      "detail": {
+        "left": 257.078125,
+        "right": 353.703125,
+        "viewport": 375,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 375
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 375 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 768 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 223.25,
+        "accountLeft": 626.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 768 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 276.078125,
+        "right": 372.703125,
+        "viewport": 768,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 768
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 768 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 768 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 223.25,
+        "accountLeft": 626.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 768 reduce",
+      "pass": true,
+      "detail": {
+        "left": 276.078125,
+        "right": 372.703125,
+        "viewport": 768,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 768
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 768 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 1440 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1290.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 1440 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 540.078125,
+        "right": 636.703125,
+        "viewport": 1440,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1440
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 1440 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 1440 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1290.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 1440 reduce",
+      "pass": true,
+      "detail": {
+        "left": 540.078125,
+        "right": 636.703125,
+        "viewport": 1440,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1440
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 1440 reduce",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 1920 no-preference",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1770.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 1920 no-preference",
+      "pass": true,
+      "detail": {
+        "left": 732.078125,
+        "right": 828.703125,
+        "viewport": 1920,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1920
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 1920 no-preference",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Masthead separation /applicant/enrollment 1920 reduce",
+      "pass": true,
+      "detail": {
+        "wordmarkRight": 175.25,
+        "accountLeft": 1770.09375,
+        "contextLine": {
+          "display": "block",
+          "width": "64px",
+          "height": "4px",
+          "background": "rgb(252, 223, 0)",
+          "visibility": "visible"
+        }
+      }
+    },
+    {
+      "name": "End tab visible /applicant/enrollment 1920 reduce",
+      "pass": true,
+      "detail": {
+        "left": 732.078125,
+        "right": 828.703125,
+        "viewport": 1920,
+        "selected": "true",
+        "focused": true,
+        "outline": "solid",
+        "pageWidth": 1920
+      }
+    },
+    {
+      "name": "Home tab visible /applicant/enrollment 1920 reduce",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "responsive": [],
+  "summary": {
+    "checks": 99,
+    "failed": 0,
+    "captures": 6
+  },
+  "finishedAt": "2026-10-01T10:45:10.632Z"
+}

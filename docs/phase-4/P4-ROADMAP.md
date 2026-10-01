@@ -1,12 +1,12 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 through P4-M7 complete; P4-FD1 through P4-FD4 PASS / COMPLETE; Phase 4 COMPLETE as a concept/demo release candidate.** Updated 30 September 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) now owns the final frontend direction and explicitly supersedes the visual rules listed in its §12. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains the historical foundation; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 through P4-M7 and P4-FD1 through P4-FD4 retain their historical PASS / COMPLETE status. P4-FD5 ✅ is accepted through the owner's FD6 implementation brief. P4-FD6 ✅ is complete after frontend acceptance. P4-FD7 disclosure/legal planning is PASS, ready for owner acceptance; mark COMPLETE only after that acceptance. P4-FD8 is next and NOT STARTED; RC2A and RC2B remain after FD8.** Updated 1 October 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) remains the foundation; the [FD5 implementation lock](P4-FD5-IMPLEMENTATION-LOCK.md) specifies the accepted expressive amendments. The [FD7 disclosure/legal lock](P4-FD7-DISCLOSURE-LEGAL-UX-LOCK.md) proposes the bounded disclosure amendment. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains historical; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior except the explicitly identified disclosure changes after FD7 acceptance. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 
 Retain completed M1–M6 and the existing architecture, which already separates public/identity, shared shell/primitives, and six feature families. Insert the final frontend design sequence before M7. No framework or route reorganization is justified.
 
-Sequence: **M1 → M2 → M3 → M4 → M5 → M6 → FD1 → FD2 → FD3 → FD4 → M7**. M4 established coherent demo identity/term changes before M5 consumed them in Academic/Records; M6 reused them. FD1 locks visual direction, FD2 establishes the shared visual foundation, and FD3/FD4 apply it to existing surfaces. This sequence is not permission to run ahead.
+Sequence: **M1 → M2 → M3 → M4 → M5 → M6 → FD1 → FD2 → FD3 → FD4 → M7 (historical Concept RC) → FD5 → FD6 → FD7 → FD8 → RC2A → RC2B**. M4 established coherent demo identity/term changes before M5 consumed them in Academic/Records; M6 reused them. FD1 locked visual direction, FD2 established the shared visual foundation, and FD3/FD4 applied it. FD5 plans expressive interaction, identity presentation and Applicant composition; FD6 implements the authorized lock. The owner's newer FD7 brief supersedes the previous FD7 final-QA label: FD7 plans demo disclosure and legal UX; FD8 implements the accepted plan; RC2A/RC2B own subsequent final review and integrated release checks. This sequence is not permission to run ahead; earlier reports retain their historical milestone labels.
 
 M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy and entity-specific interactions. Those implementation reports and A01–A55/O1–O8 dispositions below remain historical records. New visual findings V01–V13 are owned by FD2–FD4 as mapped in the [FD1 audit](P4-FD1-FINAL-VISUAL-AUDIT.md). M7 validates and adds bounded motion; it does not become a catch-all feature milestone. The FD sequence changes presentation only and does not reopen feature, fixture, policy or backend work.
 
@@ -176,7 +176,7 @@ M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy 
 
 ## P4-M7 — Final Motion + Cross-Portal QA + Release Candidate
 
-**Status: PASS / COMPLETE — 30 September 2026.** See [P4-M7-RELEASE-CANDIDATE.md](P4-M7-RELEASE-CANDIDATE.md). Final verdict: **CONCEPT RELEASE CANDIDATE — PASS**. Phase 4 is complete within its demo/concept boundary.
+**Historical status: PASS / COMPLETE — 30 September 2026.** See [P4-M7-RELEASE-CANDIDATE.md](P4-M7-RELEASE-CANDIDATE.md). Original verdict: **CONCEPT RELEASE CANDIDATE — PASS**. Phase 4 was complete within that demo/concept boundary; the owner's later expressive-quality rejection opens FD5–FD7 below without erasing this result.
 
 **Objective:** validate one coherent product and add only motion that helps comprehension.
 
@@ -192,9 +192,69 @@ M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy 
 
 **Acceptance:** final 35-state golden comparison at 375×812 and 1920×1080, plus 768×900 and 1440×900 coverage; all 35 portal routes, public/account surfaces, nine account groups and relevant states receive final regression coverage. Do not automatically recapture all 1,602 PNGs: use golden pairs plus targeted route/state evidence and record gaps. Check keyboard/focus/dialog/tab/reflow and reduced motion; no major page overflow or console/runtime errors; role-specific workflow/denial tests; live session navigation verification without treating O8 as a known bug. Run institution/frontend/database/auth/access suites, lint, typecheck, format, build, and diff check. Record real results and environment exceptions. Issue a concept release-candidate report, not a production-ready or formally certified claim.
 
+## P4-FD5 — Expressive UI Planning
+
+**Status: P4-FD5 — Expressive UI Planning ✅.** Accepted by the owner's explicit FD6 implementation brief. The 30 September planning deliverables remain historical.
+
+**Objective:** respond to the owner's rejection of final expressive quality while preserving the accepted civic-academic foundation and all product boundaries.
+
+**Deliverables:** [P4-FD5-EXPRESSIVE-UI-AUDIT.md](P4-FD5-EXPRESSIVE-UI-AUDIT.md), [P4-FD5-IMPLEMENTATION-LOCK.md](P4-FD5-IMPLEMENTATION-LOCK.md), and this roadmap amendment. The audit qualifies the single-context review, committed screenshot evidence and bounded public browser inspection.
+
+**Scope:** motion/hover/press/focus and reduced-motion contracts; disciplined stronger yellow; all six Applicant routes and tabs; shared avatar/photo dialog; one `/account` profile from signed-in identity; temporary bio/photo state and truthful reset behavior; account/domain identity separation; global corrections, ownership and golden acceptance.
+
+**Boundary:** documentation only. No application source, fixture, backend, database, auth/access/permission, workflow, search/filter/sort or package changes. Preserve all FD1–FD4/M7 reports and screenshots.
+
+**Acceptance:** evidence-linked findings, exact recipes/compositions, explicit visual-rule amendments, feasible current-data account/state design, skill reconciliation and documentation checks. No source/build test is claimed for the historical prose-only FD5 change. The separately authorized FD6 implementation is documented below.
+
+## P4-FD6 — Expressive UI Implementation
+
+**Status: P4-FD6 — Expressive UI Implementation ✅ / PASS — 1 October 2026.** See [FD6 implementation report](P4-FD6-EXPRESSIVE-UI-IDENTITY-IMPLEMENTATION.md).
+
+**Objective:** implement the selected expressive system without changing school, workflow or access truth.
+
+**Scope and ownership:** exact file map in FD5 lock §12: shared recipes; frontend presentation provider; existing `/account` profile and Account entry; shared avatar/photo interaction; Applicant compositions; public reveals; bounded cross-portal adoption. Existing server-rendered presentation files may pass a minimal identity DTO; server services/guards remain unchanged. All nine identities use one account view.
+
+**Boundary:** no backend/storage/schema/auth/permissions/fixture/workflow changes, packages or search/filter behavior changes. Separate domain fixtures from signed-in identity. Custom photo/bio data is temporary presentation; no persistence claim.
+
+**Acceptance:** affected G01–G35 and F01–F12 evidence, five viewport sizes, normal/reduced motion, keyboard/photo/bio/navigation/reset cases, readable fields and useful 1920px composition. Run common shared-change checks. Save fresh evidence in `fd6-after/`; preserve M7. Stop before FD7.
+
+## P4-FD7 — Demo Disclosure + Legal UX Planning
+
+**Status: PASS — planning deliverables ready for owner acceptance, 1 October 2026.** COMPLETE only after owner acceptance. Documentation only; no source implementation or final product QA is claimed.
+
+**Deliverables:** [P4-FD7-DEMO-DISCLOSURE-AUDIT.md](P4-FD7-DEMO-DISCLOSURE-AUDIT.md) and [P4-FD7-DISCLOSURE-LEGAL-UX-LOCK.md](P4-FD7-DISCLOSURE-LEGAL-UX-LOCK.md).
+
+**Scope:** exact global/contextual notice inventory; concise first-entry disclosure; browser-only version acknowledgement and reopening; four public information pages; shared secondary footer/account access; source-grounded privacy; future Login → View demo accounts placement without credentials; mobile/accessibility contract and FD8 ownership.
+
+**Acceptance:** full notice dispositions, source-backed privacy, precise copy/behavior/ownership, documentation format/link/diff checks and unchanged application source. Owner acceptance is distinct from planning PASS. No credentials, source, schema, API, auth/access, fixtures, workflows, packages or existing screenshot evidence changes.
+
+## P4-FD8 — Demo Disclosure + Legal UX Implementation
+
+**Status: NEXT / NOT STARTED.** Requires accepted FD7 lock and an explicit implementation brief.
+
+**Scope:** FD7 lock §13 file map: one root disclosure owner, version-only localStorage preference, public Disclaimer/Terms/Privacy/Acceptable Use routes, shared footer/reopen entries, exact A-clause removal and B-warning retention. Preserve real authentication, temporary workflow/photo/bio behavior and all existing contracts. No public credential release under this scope.
+
+**Acceptance:** FD7 lock §14 storage/version/failure/legal-link/focus/no-JS matrix, direct-entry guards, all persistent surfaces, all notice dispositions, sample print markings, privacy matching actual behavior, five widths and honest accessibility/device limits. Appropriate existing gates; new `fd8-after/` evidence and implementation report. Stop before RC2A.
+
+## RC2A — Final Visual + Interaction Review
+
+**Status: NOT STARTED — after FD8.** Requires its own review instruction.
+
+**Scope:** core G01–G35 paired golden set, affected FD5 extensions and disclosure/legal states; motion over time, hover/press/focus/selection, dialogs/reopening, mobile/reflow/text enlargement, sample printing and reduced motion. Preserve identity isolation and photo/bio reset contracts. Use bounded evidence rather than recapturing the historical 1,602-image corpus.
+
+**Acceptance:** no material outstanding visual/interaction defect; truthful screen-reader/browser/device/print limitations and a separate final-review report. No redesign loop or production/institutional approval claim.
+
+## RC2B — Integrated Regression + Concept Release Candidate
+
+**Status: NOT STARTED — after FD8 and RC2A.** Requires its own release-check instruction.
+
+**Scope:** all 35 portal routes, public/legal/account surfaces and nine account groups; real auth/access/denial/session navigation, workflow/search/filter/sort regression, disclosure preference isolation and full existing gates. Preserve M7/FD6 historical evidence.
+
+**Acceptance:** complete integrated evidence and final Concept RC verdict with remaining limitations/blockers explicit. No credential release, deployment or institutional production approval implied.
+
 ## Common implementation validation
 
-M2–M7 and FD2–FD4 must validate the changed rendered paths, state variations, and relevant roles. FD1 is documentation-only and does not require application test/build runs. Use existing scripts and meaningful tests of behavior, not snapshots that merely restate implementation. For broad shared/fixture work, run `pnpm test`, `pnpm test:db`, `pnpm test:auth`, `pnpm test:access`, `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, `pnpm build`, and `git diff --check`. Institution-data tests are included in the non-integration test suite. Narrow follow-up fixes may use targeted reruns with explicit attribution; M7 runs the full gate. The FD milestones authorize no fixture changes.
+M2–M7, FD2–FD4, FD6, FD8 and RC2A/RC2B must validate the relevant rendered paths, state variations, and roles. FD1, FD5 and FD7 are documentation-only and do not require application test/build runs. Use existing scripts and meaningful tests of behavior, not snapshots that merely restate implementation. For broad shared/fixture work, run `pnpm test`, `pnpm test:db`, `pnpm test:auth`, `pnpm test:access`, `pnpm lint`, `pnpm typecheck`, `pnpm format:check`, `pnpm build`, and `git diff --check`. Institution-data tests are included in the non-integration test suite. Narrow follow-up fixes may use targeted reruns with explicit attribution; M7 ran the full gate and RC2B must repeat it for the final implementation. The FD milestones authorize no fixture changes.
 
 Do not reset the database without demonstrated need and appropriate authorization. Existing integration suites may manage their own controlled fictional fixtures. If `pnpm env:check` fails before loading the script with `uv_os_get_passwd returned ENOMEM`, record the runtime failure separately; it is not a passing environment check or evidence of an application defect. If repository formatting flags untouched `DFCAMCLP.md`, preserve canonical content and report that existing issue rather than making unrelated changes.
 

@@ -1,0 +1,1246 @@
+{
+  "date": "2026-10-01 Asia/Taipei",
+  "startedAt": "2026-10-01T00:26:16.884Z",
+  "commit": "386dc1438470e8d13528df25a0c93f9e42c83534",
+  "dirty": "M docs/phase-4/P4-ROADMAP.md\n M next-env.d.ts\n M src/app/[portal]/layout.tsx\n M src/app/account/page.tsx\n M src/app/globals.css\n M src/app/layout.tsx\n M src/components/portal/app-shell.tsx\n M src/components/public/institution-content.tsx\n M src/components/ui/demo-profile-photo.tsx\n M src/components/ui/identity.tsx\n M src/features/applicant/applicant-page.tsx\n M src/features/applicant/applicant.css\n M src/features/identity/sign-out-button.tsx\n M src/features/student/student-page.tsx\n?? docs/phase-4/P4-FD5-EXPRESSIVE-UI-AUDIT.md\n?? docs/phase-4/P4-FD5-IMPLEMENTATION-LOCK.md\n?? docs/phase-4/fd6-after/\n?? src/components/ui/interaction-feedback.tsx\n?? src/components/ui/reveal-accent.tsx\n?? src/features/identity/account-profile.tsx\n?? src/features/identity/demo-presentation-provider.tsx",
+  "browser": "Microsoft Edge Chromium / Next.js production server",
+  "captures": [
+    {
+      "id": "F06-account-student",
+      "group": "student",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-student-1920.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-student",
+      "group": "student",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-student-375.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-records",
+      "group": "records",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-records-1920.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-records",
+      "group": "records",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-records-375.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-faculty-it",
+      "group": "faculty-it",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-faculty-it-1920.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-faculty-it",
+      "group": "faculty-it",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-faculty-it-375.png",
+      "before": []
+    },
+    {
+      "id": "F02-review-cancel",
+      "group": "applicant",
+      "state": "Review retained after cancel",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Application",
+        "columns": "768px 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-review-cancel-1440.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F03-document-preview",
+      "group": "applicant",
+      "state": "DCAT document open",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F03-document-preview-1440.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F08-photo-open",
+      "group": "student",
+      "state": "Initial dialog",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-photo-open-375.png",
+      "before": []
+    },
+    {
+      "id": "F08-photo-preview",
+      "group": "student",
+      "state": "Staged preview",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-photo-preview-375.png",
+      "before": []
+    },
+    {
+      "id": "F09-account-customized",
+      "group": "student",
+      "state": "Committed photo and bio",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F09-account-customized-375.png",
+      "before": []
+    },
+    {
+      "id": "F07-account-menu",
+      "group": "student",
+      "state": "Account menu with temporary photo",
+      "url": "/student",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Good morning, John Paul.",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F07-account-menu-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/student/G12-0157-student--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/student/G12-0157-student--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/student/G12-0157-student--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/student/G12-0157-student--full-page.png"
+      ]
+    },
+    {
+      "id": "F08-invalid-type",
+      "group": "student",
+      "state": "invalid-type",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-invalid-type-375.png",
+      "before": []
+    },
+    {
+      "id": "F08-oversize",
+      "group": "student",
+      "state": "oversize",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-oversize-375.png",
+      "before": []
+    },
+    {
+      "id": "F08-decode-failure",
+      "group": "student",
+      "state": "decode-failure",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-decode-failure-375.png",
+      "before": []
+    },
+    {
+      "id": "F09-multi-portal-bio",
+      "group": "faculty-it",
+      "state": "Bio survives authorized switch",
+      "url": "/account",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F09-multi-portal-bio-1440.png",
+      "before": []
+    },
+    {
+      "id": "F10-reduced-drawer",
+      "group": "applicant",
+      "state": "Reduced motion drawer",
+      "url": "/applicant",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "reduce",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F10-reduced-drawer-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F10-sort",
+      "group": "records",
+      "state": "Applicant descending sort",
+      "url": "/records/applicants",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F10-sort-1440.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-text200-_account",
+      "group": "applicant",
+      "state": "200% text simulation, not OS scaling",
+      "url": "/account",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-text200-_account-768.png",
+      "before": []
+    },
+    {
+      "id": "F12-text200-_applicant_application",
+      "group": "applicant",
+      "state": "200% text simulation, not OS scaling",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Application",
+        "columns": "720px",
+        "motion": ".14s"
+      },
+      "after": "F12-text200-_applicant_application-768.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-text200-_applicant_profile",
+      "group": "applicant",
+      "state": "200% text simulation, not OS scaling",
+      "url": "/applicant/profile",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-text200-_applicant_profile-768.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X01-0032-applicant-profile--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X01-0032-applicant-profile--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X01-0032-applicant-profile--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X01-0032-applicant-profile--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-text200-_records_applicants",
+      "group": "records",
+      "state": "200% text simulation, not OS scaling",
+      "url": "/records/applicants",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-text200-_records_applicants-768.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--full-page.png"
+      ]
+    },
+    {
+      "id": "F11-no-js",
+      "group": "public",
+      "state": "JS disabled",
+      "url": "/",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F11-no-js-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--full-page.png"
+      ]
+    },
+    {
+      "id": "F11-reduced-admissions",
+      "group": "public",
+      "state": "Reduced motion",
+      "url": "/admissions",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "reduce",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "The admissions journey",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F11-reduced-admissions-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/public/G03-0004-admissions--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/public/G03-0004-admissions--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G03-0004-admissions--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G03-0004-admissions--full-page.png"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "applicant login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "applicant account identity",
+      "pass": true,
+      "detail": "JT\n\nJamie Testapplicant\n\napplicant.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "applicant memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "student account identity",
+      "pass": true,
+      "detail": "AT\n\nAlex Teststudent\n\nstudent.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "student memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F06-account-student no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F06-account-student no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "faculty login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty account identity",
+      "pass": true,
+      "detail": "TT\n\nTaylor Testemployee\n\nfaculty.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "faculty memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "records account identity",
+      "pass": true,
+      "detail": "RT\n\nRiley Testrecords\n\nrecords.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "records memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F06-account-records no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F06-account-records no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "operations login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "operations account identity",
+      "pass": true,
+      "detail": "MT\n\nMorgan Testoperations\n\noperations.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "operations memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "technology account identity",
+      "pass": true,
+      "detail": "CT\n\nCasey Testtechnology\n\ntechnology.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "technology memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "coordinator account identity",
+      "pass": true,
+      "detail": "JT\n\nJordan Testcoordinator\n\ncoordinator.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "coordinator memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "school-admin account identity",
+      "pass": true,
+      "detail": "AT\n\nAvery Testadministrator\n\nschool-admin.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "school-admin memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty-it account identity",
+      "pass": true,
+      "detail": "QT\n\nQuinn Testmultiporal\n\nfaculty-it.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "faculty-it memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F06-account-faculty-it no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F06-account-faculty-it no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Application validation visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Application confirmation dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Application confirmation cancel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F02-review-cancel no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Application",
+        "columns": "768px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F03-document-preview no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Document Escape",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Tab End",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Tab Home",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio initial focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio plain text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio focus return",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio 240 limit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio cancel preserves",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo initial focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-photo-open no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F08-photo-preview no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo cancel preserves initials",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo commit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo focus return",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F09-account-customized no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Shell shares account photo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F07-account-menu no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Good morning, John Paul.",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Account Escape return",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Student domain distinct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Domain photo distinct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio survives navigation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo invalid-type",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-invalid-type no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo oversize",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-oversize no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo decode-failure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-decode-failure no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo focus containment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo remove",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo and bio no mutation requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Reload resets",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Empty applied bio clears",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "New tab starts empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Back after signout no bio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Portal switch retains bio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F09-multi-portal-bio no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Drawer 220ms immediate focus",
+      "pass": true,
+      "detail": {
+        "duration": "0.22s",
+        "name": "fd6-drawer",
+        "focus": true
+      }
+    },
+    {
+      "name": "Preference change settles drawer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F10-reduced-drawer no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Drawer Escape focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo dialog 180ms",
+      "pass": true,
+      "detail": "0.18s"
+    },
+    {
+      "name": "Focus visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Button press 80ms",
+      "pass": true,
+      "detail": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "duration": "0.08s"
+      }
+    },
+    {
+      "name": "Sort ascending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Sort descending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F10-sort no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "200% text /account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F12-text200-_account no overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "200% text /applicant/application",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F12-text200-_applicant_application no overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Application",
+        "columns": "720px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "200% text /applicant/profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F12-text200-_applicant_profile no overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "200% text /records/applicants",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F12-text200-_records_applicants no overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Public without JS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F11-no-js no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Reduced admissions content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F11-reduced-admissions no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "The admissions journey",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Print content visible",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "responsive": [],
+  "contrast": [
+    {
+      "label": "ink on canvas",
+      "ratio": 13.709926691064194
+    },
+    {
+      "label": "blue on white",
+      "ratio": 10.54313381758664
+    },
+    {
+      "label": "ink on yellow",
+      "ratio": 11.712079219243133
+    }
+  ],
+  "finishedAt": "2026-10-01T00:26:41.121Z",
+  "summary": {
+    "checks": 97,
+    "failed": 0,
+    "responsive": 0,
+    "captures": 24,
+    "errors": 0
+  }
+}

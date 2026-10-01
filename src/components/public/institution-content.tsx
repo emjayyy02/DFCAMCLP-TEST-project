@@ -1,4 +1,5 @@
 import { campusProgramGroups } from "../../lib/institution-programs";
+import { RevealAccent } from "../ui/reveal-accent";
 
 // Public presentation of DFCAMCLP.md's canonical program registry. This
 // overview needs no database connection or admissions workflow.
@@ -75,15 +76,17 @@ const historyEvents = [
 
 export function HistoryTimeline() {
   return (
-    <ol className="history-timeline">
-      {historyEvents.map((event) => (
-        <li key={event.year}>
-          <p className="history-year">{event.year}</p>
-          <h3>{event.title}</h3>
-          <p>{event.description}</p>
-        </li>
-      ))}
-    </ol>
+    <RevealAccent kind="history">
+      <ol className="history-timeline">
+        {historyEvents.map((event) => (
+          <li key={event.year}>
+            <p className="history-year">{event.year}</p>
+            <h3>{event.title}</h3>
+            <p>{event.description}</p>
+          </li>
+        ))}
+      </ol>
+    </RevealAccent>
   );
 }
 
@@ -103,19 +106,23 @@ export function AdmissionsJourney({
   detailed?: boolean;
 }) {
   return (
-    <ol className={`admissions-journey${detailed ? " journey-detailed" : ""}`}>
-      {steps.map(([title, description], index) => (
-        <li key={title}>
-          <span className="journey-number" aria-hidden="true">
-            {index + 1}
-          </span>
-          <div>
-            <h3>{title}</h3>
-            {detailed && <p>{description}</p>}
-            {!detailed && title === "DCAT" && <p>Admission examination</p>}
-          </div>
-        </li>
-      ))}
-    </ol>
+    <RevealAccent kind="journey">
+      <ol
+        className={`admissions-journey${detailed ? " journey-detailed" : ""}`}
+      >
+        {steps.map(([title, description], index) => (
+          <li key={title}>
+            <span className="journey-number" aria-hidden="true">
+              {index + 1}
+            </span>
+            <div>
+              <h3>{title}</h3>
+              {detailed && <p>{description}</p>}
+              {!detailed && title === "DCAT" && <p>Admission examination</p>}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </RevealAccent>
   );
 }

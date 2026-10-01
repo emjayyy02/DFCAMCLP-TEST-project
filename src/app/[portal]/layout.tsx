@@ -35,7 +35,11 @@ export default async function PortalLayout({
       navigationTools={
         portal === "APPLICANT" ? <ApplicantScenarioSwitcher /> : undefined
       }
-      user={{ name: context.user.name, email: context.user.email }}
+      user={{
+        id: context.user.id,
+        name: context.user.name,
+        email: context.user.email,
+      }}
     >
       {children}
     </AppShell>

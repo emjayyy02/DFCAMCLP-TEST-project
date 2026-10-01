@@ -851,3 +851,147 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* FD6: centered workspaces with existing, scenario-derived context. */
+.portal-main .applicant-experience {
+  margin-inline: auto;
+  container-type: inline-size;
+}
+.applicant-task-layout {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
+.applicant-dashboard-layout {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
+.applicant-task-main {
+  min-width: 0;
+}
+.applicant-experience > *,
+.applicant-tab-area,
+.applicant-tab-panel {
+  min-width: 0;
+  max-width: 100%;
+}
+.applicant-task-main .applicant-form {
+  max-width: 100%;
+}
+.applicant-context {
+  min-width: 0;
+  padding-top: 20px;
+  border-top: 2px solid var(--border-strong);
+}
+.applicant-context-stage {
+  margin-top: 8px;
+  font-weight: 600;
+  color: var(--primary);
+}
+.applicant-context .applicant-facts {
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-block: 20px;
+}
+.applicant-context .applicant-schedule {
+  padding-inline: 0;
+  background: transparent;
+}
+.applicant-filter-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.applicant-announcements > .applicant-section-heading {
+  align-items: end;
+}
+.applicant-profile-identity {
+  grid-template-columns: minmax(0, 1fr);
+}
+.applicant-profile-identity .identity-summary {
+  gap: 24px;
+}
+.applicant-task-main .applicant-announcements {
+  max-width: 672px;
+}
+@container (min-width: 1040px) {
+  .applicant-task-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 32px;
+    align-items: start;
+  }
+  .applicant-context {
+    border-top: 0;
+    border-left: 1px solid var(--border-strong);
+    padding: 8px 0 0 24px;
+  }
+  .applicant-context .applicant-schedule {
+    padding-inline: 0;
+  }
+  .applicant-dashboard-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    grid-template-rows: min-content 1fr;
+    gap: 24px 32px;
+    align-items: start;
+  }
+  .applicant-experience[data-section="dashboard"] .applicant-next-action {
+    grid-column: 1;
+  }
+  .applicant-experience[data-section="dashboard"] .applicant-dashboard-columns {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 0;
+    padding-left: 24px;
+    border-left: 1px solid var(--border-strong);
+  }
+  .applicant-experience[data-section="dashboard"] .applicant-summary {
+    border-left: 0;
+    padding-left: 0;
+  }
+  .applicant-experience[data-section="dashboard"] .applicant-notices {
+    grid-column: 1;
+    margin: 0;
+  }
+  .applicant-profile-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 0 32px;
+    align-items: start;
+  }
+  .applicant-profile-layout
+    > :is(.applicant-profile-identity, .domain-profile-context) {
+    grid-column: 1 / -1;
+  }
+  .applicant-profile-layout > .applicant-review-group {
+    grid-column: 1;
+  }
+  .applicant-profile-layout > .applicant-profile-application {
+    grid-column: 2;
+    grid-row: 3 / span 2;
+  }
+  .applicant-profile-application .applicant-facts {
+    grid-template-columns: 1fr;
+  }
+  .applicant-profile-layout > .applicant-link {
+    grid-column: 2;
+  }
+}
+@media (max-width: 600px) {
+  .applicant-task-layout {
+    gap: 24px;
+  }
+  .applicant-tab-panel {
+    margin-top: 16px;
+  }
+  .applicant-profile-layout .domain-profile-context {
+    margin-block: 12px 20px;
+  }
+  .applicant-experience[data-section="profile"] .applicant-review-group {
+    padding-block: 16px;
+  }
+}

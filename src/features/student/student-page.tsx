@@ -888,16 +888,21 @@ function ProfilePage() {
           detail={`${identity.studentId} · ${identity.yearLevel} · ${identity.campus}`}
           src={profilePhoto}
           size="large"
-        />
-        <DemoProfilePhotoPicker
-          id="student-profile-photo"
-          hasPhoto={Boolean(profilePhoto)}
-          onSelect={setProfilePhoto}
+          avatar={
+            <DemoProfilePhotoPicker
+              id="student-profile-photo"
+              name={identity.fullName}
+              src={profilePhoto}
+              onSelect={setProfilePhoto}
+              domain
+            />
+          }
         />
       </div>
       <p className="student-policy-note">
         Fictional, read-only identity. The Student ID is separate from any
-        Applicant ID.
+        Applicant ID. Sample school profile. Your sign-in identity is in{" "}
+        <Link href="/account">Account profile</Link>.
       </p>
       {groups.map((group) => (
         <section

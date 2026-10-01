@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 function initials(name: string) {
   return name
@@ -35,15 +36,17 @@ export function IdentitySummary({
   detail,
   src,
   size = "medium",
+  avatar,
 }: {
   name: string;
   detail?: string;
   src?: string;
   size?: "small" | "medium" | "large";
+  avatar?: ReactNode;
 }) {
   return (
     <div className="identity-summary">
-      <Avatar name={name} src={src} size={size} />
+      {avatar ?? <Avatar name={name} src={src} size={size} />}
       <div className="identity-summary-copy">
         <p className="identity-summary-name">{name}</p>
         {detail ? <p className="identity-summary-detail">{detail}</p> : null}

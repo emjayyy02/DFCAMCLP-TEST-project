@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import { Button } from "@/components/ui/button";
+import { usePresentationStore } from "./demo-presentation-provider";
 
 export function SignOutButton({
   className,
@@ -13,9 +14,11 @@ export function SignOutButton({
   variant?: "outline" | "ghost";
 } = {}) {
   const router = useRouter();
+  const presentation = usePresentationStore();
   const [isPending, setIsPending] = useState(false);
 
   async function signOut() {
+    presentation.clear();
     setIsPending(true);
     await authClient.signOut();
     router.replace("/login");

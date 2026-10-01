@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { DemoPresentationProvider } from "@/features/identity/demo-presentation-provider";
 
 const sourceSans = localFont({
   src: [
@@ -38,7 +39,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={sourceSans.variable}>
-      <body>{children}</body>
+      <body>
+        <DemoPresentationProvider>{children}</DemoPresentationProvider>
+      </body>
     </html>
   );
 }
