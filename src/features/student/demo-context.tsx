@@ -9,7 +9,7 @@ import {
 } from "react";
 import type { StudentRequest } from "./demo-data";
 import { studentDemoData } from "./demo-data";
-import { useDemoProfilePhoto } from "@/components/ui/demo-profile-photo";
+import { useIdentityPhoto } from "@/features/identity/signed-in-identity";
 
 type StudentDemoContextValue = {
   requests: StudentRequest[];
@@ -26,7 +26,7 @@ export function StudentDemoProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [profilePhoto, setProfilePhoto] = useDemoProfilePhoto();
+  const [profilePhoto, setProfilePhoto] = useIdentityPhoto();
   const [requests, setRequests] = useState<StudentRequest[]>(() =>
     studentDemoData.requests.map((request) => ({ ...request })),
   );

@@ -147,12 +147,12 @@ describe("P2-M4 access control", () => {
   });
 
   it("assigns the Student account only to the Student portal", async () => {
-    const context = await contextFor("student.test@example.invalid");
+    const context = await contextFor("johnpaul.reyes@example.invalid");
     expect(context.memberships.map((item) => item.portal)).toEqual(["STUDENT"]);
   });
 
   it("allows the six Applicant demo pages without granting other portals", async () => {
-    const context = await contextFor("applicant.test@example.invalid");
+    const context = await contextFor("juan.delacruz@example.invalid");
     expect(context.memberships.map((item) => item.portal)).toEqual([
       "APPLICANT",
     ]);
@@ -180,7 +180,7 @@ describe("P2-M4 access control", () => {
     ).toBe(false);
     expect(
       canAccessPortalPath(
-        await contextFor("student.test@example.invalid"),
+        await contextFor("johnpaul.reyes@example.invalid"),
         "APPLICANT",
         "/applicant/application",
       ),
@@ -188,7 +188,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("allows the Student experience routes without granting other portals", async () => {
-    const context = await contextFor("student.test@example.invalid");
+    const context = await contextFor("johnpaul.reyes@example.invalid");
     expect(canEnterPortal(context, "STUDENT")).toBe(true);
     for (const path of [
       "/student",
@@ -210,8 +210,8 @@ describe("P2-M4 access control", () => {
   });
 
   it("allows Records Staff into the six guarded Records pages only", async () => {
-    const staff = await contextFor("records.test@example.invalid");
-    const student = await contextFor("student.test@example.invalid");
+    const staff = await contextFor("jose.garcia@example.invalid");
+    const student = await contextFor("johnpaul.reyes@example.invalid");
     expect(staff.memberships.map((item) => item.portal)).toEqual(["RECORDS"]);
     for (const path of [
       "/records",
@@ -231,7 +231,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("denies Student access to /technology", async () => {
-    const context = await contextFor("student.test@example.invalid");
+    const context = await contextFor("johnpaul.reyes@example.invalid");
     expect(canEnterPortal(context, "TECHNOLOGY")).toBe(false);
     expect(canAccessPortalPath(context, "TECHNOLOGY", "/technology")).toBe(
       false,
@@ -241,7 +241,7 @@ describe("P2-M4 access control", () => {
   it("allows Technology access to /technology", async () => {
     expect(
       canEnterPortal(
-        await contextFor("technology.test@example.invalid"),
+        await contextFor("angelo.cruz@example.invalid"),
         "TECHNOLOGY",
       ),
     ).toBe(true);
@@ -250,14 +250,14 @@ describe("P2-M4 access control", () => {
   it("denies Technology access to /student", async () => {
     expect(
       canEnterPortal(
-        await contextFor("technology.test@example.invalid"),
+        await contextFor("angelo.cruz@example.invalid"),
         "STUDENT",
       ),
     ).toBe(false);
   });
 
   it("allows Faculty into Academic but denies Academic Management", async () => {
-    const context = await contextFor("faculty.test@example.invalid");
+    const context = await contextFor("maria.santos@example.invalid");
     expect(canEnterPortal(context, "ACADEMIC")).toBe(true);
     expect(hasPermission(context, "ACADEMIC", "academic.management.view")).toBe(
       false,
@@ -271,7 +271,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("allows Program Coordinator into Academic Management", async () => {
-    const context = await contextFor("coordinator.test@example.invalid");
+    const context = await contextFor("angelica.bautista@example.invalid");
     expect(
       canAccessPortalPath(context, "ACADEMIC", "/academic/management"),
     ).toBe(true);
@@ -281,7 +281,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("allows Maintenance Staff into Facilities but not Employees", async () => {
-    const context = await contextFor("operations.test@example.invalid");
+    const context = await contextFor("mark.ramos@example.invalid");
     expect(
       canAccessPortalPath(context, "OPERATIONS", "/operations/facilities"),
     ).toBe(true);
@@ -291,7 +291,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("allows School Admin into all normal Operations sections", async () => {
-    const context = await contextFor("school-admin.test@example.invalid");
+    const context = await contextFor("marygrace.mendoza@example.invalid");
     for (const path of [
       "/operations/student-services",
       "/operations/employees",
@@ -303,7 +303,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("allows IT Admin into normal Technology sections but not Developer", async () => {
-    const context = await contextFor("technology.test@example.invalid");
+    const context = await contextFor("angelo.cruz@example.invalid");
     const technologyPermissions =
       context.memberships.find(
         (membership) => membership.portal === "TECHNOLOGY",
@@ -332,7 +332,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("allows the Developer role into the Developer foundation", async () => {
-    const context = await contextFor("faculty-it.test@example.invalid");
+    const context = await contextFor("michael.castro@example.invalid");
     const technologyPermissions =
       context.memberships.find(
         (membership) => membership.portal === "TECHNOLOGY",
@@ -355,7 +355,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("allows the multi-portal account into both explicit portals only", async () => {
-    const context = await contextFor("faculty-it.test@example.invalid");
+    const context = await contextFor("michael.castro@example.invalid");
     expect(canEnterPortal(context, "ACADEMIC")).toBe(true);
     expect(canEnterPortal(context, "TECHNOLOGY")).toBe(true);
     for (const portal of [
@@ -369,8 +369,8 @@ describe("P2-M4 access control", () => {
   });
 
   it("blocks a revoked membership without disabling the account", async () => {
-    const userId = await authUserId("student.test@example.invalid");
-    const cookie = await cookieFor("student.test@example.invalid");
+    const userId = await authUserId("johnpaul.reyes@example.invalid");
+    const cookie = await cookieFor("johnpaul.reyes@example.invalid");
     await database
       .update(portalMemberships)
       .set({ isActive: false, updatedAt: new Date() })
@@ -395,7 +395,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("retains disabled-account behavior independently of membership state", async () => {
-    const email = "applicant.test@example.invalid";
+    const email = "juan.delacruz@example.invalid";
     const userId = await authUserId(email);
     const cookie = await cookieFor(email);
     await disableAccount(database, userId);
@@ -416,7 +416,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("does not create an authenticated session for an unauthorized portal selection", async () => {
-    const userId = await authUserId("student.test@example.invalid");
+    const userId = await authUserId("johnpaul.reyes@example.invalid");
     const before = await database
       .select({ id: authSessions.id })
       .from(authSessions)
@@ -425,7 +425,7 @@ describe("P2-M4 access control", () => {
       auth,
       database,
       {
-        email: "student.test@example.invalid",
+        email: "johnpaul.reyes@example.invalid",
         password,
         portal: "TECHNOLOGY",
       },
@@ -445,7 +445,7 @@ describe("P2-M4 access control", () => {
       auth,
       database,
       {
-        email: "student.test@example.invalid",
+        email: "johnpaul.reyes@example.invalid",
         password,
         portal: "STUDENT",
       },
@@ -455,7 +455,7 @@ describe("P2-M4 access control", () => {
       auth,
       database,
       {
-        email: "technology.test@example.invalid",
+        email: "angelo.cruz@example.invalid",
         password,
         portal: "TECHNOLOGY",
       },
@@ -477,7 +477,7 @@ describe("P2-M4 access control", () => {
   });
 
   it("rejects a role assignment whose role and membership portals differ", async () => {
-    const studentId = await authUserId("student.test@example.invalid");
+    const studentId = await authUserId("johnpaul.reyes@example.invalid");
     const [membership] = await database
       .select({ id: portalMemberships.id })
       .from(portalMemberships)

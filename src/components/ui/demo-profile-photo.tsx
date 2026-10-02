@@ -1,33 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Avatar } from "@/components/ui/identity";
 
 const acceptedImageTypes = ["image/jpeg", "image/png", "image/webp"];
 const maxImageSize = 2 * 1024 * 1024;
-
-export function useDemoProfilePhoto() {
-  const [previewUrl, setPreviewUrl] = useState<string>();
-  const previewUrlRef = useRef<string | undefined>(undefined);
-
-  const setPhoto = useCallback((file: File | null) => {
-    const previousUrl = previewUrlRef.current;
-    const nextUrl = file ? URL.createObjectURL(file) : undefined;
-    previewUrlRef.current = nextUrl;
-    setPreviewUrl(nextUrl);
-    if (previousUrl) URL.revokeObjectURL(previousUrl);
-  }, []);
-
-  useEffect(
-    () => () => {
-      if (previewUrlRef.current) URL.revokeObjectURL(previewUrlRef.current);
-    },
-    [],
-  );
-
-  return [previewUrl, setPhoto] as const;
-}
 
 export function DemoProfilePhotoPicker({
   id,
@@ -181,7 +159,7 @@ export function DemoProfilePhotoPicker({
           </h2>
           <p id={`${id}-help`}>
             {domain
-              ? "Temporary sample photo. Not uploaded or saved. Resets when you leave this portal, reload, or sign out."
+              ? "Shared with your account in this tab. Not uploaded or saved. Resets on reload or sign-out."
               : "Shown only in this tab. Not uploaded or saved. Resets on reload or sign-out."}
           </p>
           <p className="demo-photo-formats">JPEG, PNG, or WebP · up to 2 MB.</p>

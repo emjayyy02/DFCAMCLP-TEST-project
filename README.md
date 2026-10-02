@@ -2,6 +2,8 @@
 
 Development project; not an official college service. Fake development data only.
 
+Current demo identities and the existing-database migration command are listed in [Demo accounts](docs/DEMO-ACCOUNTS.md). Phase milestone documents are historical snapshots.
+
 Phase 1 is preserved in [docs/phase-1](docs/phase-1/PHASE-1-OVERVIEW.md). Phase 2 is **COMPLETE** through P2-M4. P2-M5 is removed as a standalone milestone; regression and shared-foundation checks continue inside frontend milestones. P3-M1 Public Website, P3-M2 Applicant Experience, P3-M3 Student Experience, P3-M4 Academic Experience, P3-M5 Admissions & Records Experience, P3-M6 Operations Experience, and P3-M7 Technology are complete as frontend demos. See [P3-M1 implementation and validation](docs/phase-3/P3-M1-PUBLIC-EXPERIENCE.md), [P3-M2 implementation and validation](docs/phase-3/P3-M2-APPLICANT-EXPERIENCE.md), [P3-M3 Student Experience](docs/phase-3/P3-M3-STUDENT-EXPERIENCE.md), [P3-M4 Academic Experience](docs/phase-3/P3-M4-ACADEMIC-EXPERIENCE.md), [P3-M5 Admissions & Records Experience](docs/phase-3/P3-M5-ADMISSIONS-RECORDS-EXPERIENCE.md), [P3-M6 Operations Experience](docs/phase-3/P3-M6-OPERATIONS-EXPERIENCE.md), and [P3-M7 Technology Experience](docs/phase-3/P3-M7-TECHNOLOGY-EXPERIENCE.md).
 
 ## Local setup

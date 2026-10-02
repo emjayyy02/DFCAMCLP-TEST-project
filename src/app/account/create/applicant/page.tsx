@@ -10,15 +10,17 @@ export const metadata: Metadata = {
 export default function ApplicantEntryPage() {
   return (
     <SiteShell>
-      <main id="main" className="public-container public-page identity-flow">
-        <PageIntro title="Applicant entry preview">
-          Review the first information a connected application might ask for.
-        </PageIntro>
-        <DemoNotice
-          label="Entry preview"
-          detail="Use fictional details. Information stays in this page only and is lost when you leave or refresh. No password is collected."
-        />
-        <ApplicantEntryPreview />
+      <main id="main" className="public-page">
+        <div className="public-container identity-flow">
+          <PageIntro title="Applicant entry preview">
+            Review the first information a connected application might ask for.
+          </PageIntro>
+          <DemoNotice
+            label="Entry preview"
+            detail="Use fictional details. Information stays in this page only and is lost when you leave or refresh. No password is collected."
+          />
+          <ApplicantEntryPreview />
+        </div>
       </main>
     </SiteShell>
   );

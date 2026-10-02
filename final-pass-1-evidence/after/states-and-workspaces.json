@@ -1,0 +1,1841 @@
+{
+  "results": [
+    {
+      "kind": "entry",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "recovery",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "login-error",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "demo-accounts",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "entry",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "recovery",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "login-error",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "demo-accounts",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "entry",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "recovery",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "login-error",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "demo-accounts",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "entry",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "recovery",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "login-error",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "demo-accounts",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "entry",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "recovery",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "login-error",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "center"
+    },
+    {
+      "kind": "demo-accounts",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "center"
+    }
+  ],
+  "workspace": [
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/academics",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/academics",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/academics",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/academics",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/academics",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/enrollment",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/enrollment",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/enrollment",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/enrollment",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/enrollment",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/requests",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/requests",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/requests",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/requests",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/requests",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/announcements",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/announcements",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/announcements",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/announcements",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/announcements",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/calendar",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/calendar",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/calendar",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/calendar",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/calendar",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/classes",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/classes",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/classes",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/classes",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/classes",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/grades",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/grades",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/grades",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/grades",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/grades",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/announcements",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/announcements",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/announcements",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/announcements",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/announcements",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/dcat",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/dcat",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/dcat",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/dcat",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/dcat",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/students",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/students",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/students",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/students",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/students",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/enrollment",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/enrollment",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/enrollment",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/enrollment",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/enrollment",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/documents",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/documents",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/documents",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/documents",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "records",
+      "route": "/records/documents",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations/facilities",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations/facilities",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations/facilities",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations/facilities",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "operations",
+      "route": "/operations/facilities",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/security",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/security",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/security",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/security",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/security",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/system",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/system",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/system",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/system",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "technology",
+      "route": "/technology/system",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/classes",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/classes",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/classes",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/classes",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/classes",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/attendance",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/attendance",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/attendance",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/attendance",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/attendance",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/grades",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/grades",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/grades",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/grades",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/grades",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/announcements",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/announcements",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/announcements",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/announcements",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/announcements",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/management",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/management",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/management",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/management",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "coordinator",
+      "route": "/academic/management",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/student-services",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/student-services",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/student-services",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/student-services",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/student-services",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/facilities",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/facilities",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/facilities",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/facilities",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/facilities",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/administration",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/administration",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/administration",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/administration",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/administration",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/classes",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/classes",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/classes",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/classes",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/classes",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/attendance",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/attendance",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/attendance",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/attendance",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/attendance",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/grades",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/grades",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/grades",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/grades",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/grades",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/announcements",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/announcements",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/announcements",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/announcements",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/academic/announcements",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/system",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/system",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/system",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/system",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/system",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/developer",
+      "width": 320,
+      "scrollWidth": 320,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/developer",
+      "width": 375,
+      "scrollWidth": 375,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/developer",
+      "width": 768,
+      "scrollWidth": 768,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/developer",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "headingAlign": "start"
+    },
+    {
+      "group": "faculty-it",
+      "route": "/technology/developer",
+      "width": 1920,
+      "scrollWidth": 1920,
+      "headingAlign": "start"
+    }
+  ]
+}

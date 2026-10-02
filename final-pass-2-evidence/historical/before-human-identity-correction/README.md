@@ -1,0 +1,1 @@
+Historical OCR evidence from before the approved human demo identity correction. These files document the previous capture; they are not current release expectations. Current evidence is in the parent verification gallery.

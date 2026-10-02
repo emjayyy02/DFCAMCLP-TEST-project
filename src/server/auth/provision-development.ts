@@ -36,6 +36,17 @@ export async function provisionDevelopmentAuthUsers(
   });
 
   for (const seed of developmentAuthAccountSeed) {
+    const [linkedUser] = await database
+      .select({ email: authUsers.email })
+      .from(applicationAccounts)
+      .innerJoin(authUsers, eq(applicationAccounts.authUserId, authUsers.id))
+      .where(eq(applicationAccounts.personId, seed.personId))
+      .limit(1);
+    if (linkedUser && linkedUser.email !== seed.email) {
+      throw new Error(
+        "Existing demo identity requires auth:sync-demo before seeding.",
+      );
+    }
     let [authUser] = await database
       .select({ id: authUsers.id })
       .from(authUsers)

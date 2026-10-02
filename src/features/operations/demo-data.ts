@@ -1,9 +1,11 @@
 /** P3-M6 fictional Operations fixtures. No live school records are represented. */
 import { campusOptions, programOptions } from "../applicant/demo-data";
+import { studentDemoData } from "../student/demo-data";
+import { developmentAuthAccountSeed } from "../../server/db/seed/data";
 
 export const operationsIdentity = {
   maintenanceStaffId: "EMP-DEMO-014",
-  maintenanceStaffName: "Morgan Testoperations",
+  maintenanceStaffName: developmentAuthAccountSeed[4].name,
 } as const;
 
 export const operationsTerm = {
@@ -76,7 +78,7 @@ export type OperationsActivity = {
 export const initialStudentServiceRequests: StudentServiceRequest[] = [
   {
     id: "SS-26041",
-    studentName: "John Paul Reyes",
+    studentName: studentDemoData.identity.fullName,
     studentId: "DEMO-STU-2026-0142",
     category: "General student assistance",
     campus: "IIT Campus",
@@ -136,7 +138,7 @@ export const initialStudentServiceRequests: StudentServiceRequest[] = [
 export const initialEmployees: EmployeeDirectoryEntry[] = [
   {
     id: "EMP-DEMO-014",
-    name: "Morgan Testoperations",
+    name: developmentAuthAccountSeed[4].name,
     functionalArea: "Facilities",
     campus: "IIT Campus",
     position: "Facilities staff",
@@ -144,7 +146,7 @@ export const initialEmployees: EmployeeDirectoryEntry[] = [
   },
   {
     id: "EMP-DEMO-015",
-    name: "Avery Testadministrator",
+    name: developmentAuthAccountSeed[7].name,
     functionalArea: "Administration",
     campus: "Main Campus",
     position: "Administrative support",
@@ -152,7 +154,7 @@ export const initialEmployees: EmployeeDirectoryEntry[] = [
   },
   {
     id: "EMP-DEMO-016",
-    name: "Taylor Testemployee",
+    name: developmentAuthAccountSeed[2].name,
     functionalArea: "Academic",
     campus: "IIT Campus",
     position: "Faculty demo profile",
@@ -160,7 +162,7 @@ export const initialEmployees: EmployeeDirectoryEntry[] = [
   },
   {
     id: "EMP-DEMO-017",
-    name: "Casey Testtechnology",
+    name: developmentAuthAccountSeed[5].name,
     functionalArea: "Technology",
     campus: "Main Campus",
     position: "Technology support",

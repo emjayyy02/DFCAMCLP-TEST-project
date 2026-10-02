@@ -7,6 +7,7 @@ import { PageHeader } from "@/components/portal/page-header";
 import { IdentitySummary } from "@/components/ui/identity";
 import { DemoProfilePhotoPicker } from "@/components/ui/demo-profile-photo";
 import { useStudentDemo } from "./demo-context";
+import { useSignedInIdentity } from "@/features/identity/signed-in-identity";
 import {
   formatScheduleRange,
   formatScheduleTime,
@@ -187,6 +188,7 @@ function DashboardPage() {
 }
 
 function EnrollmentPage() {
+  const user = useSignedInIdentity();
   const [activeDocument, setActiveDocument] = useState<DocumentKind | null>(
     null,
   );
@@ -309,7 +311,7 @@ function EnrollmentPage() {
               <dl className="student-document-details">
                 <div>
                   <dt>Student</dt>
-                  <dd>{studentDemoData.identity.fullName}</dd>
+                  <dd>{user.name}</dd>
                 </div>
                 <div>
                   <dt>Student ID</dt>
@@ -852,7 +854,12 @@ function CalendarPage() {
 }
 
 function ProfilePage() {
-  const identity = studentDemoData.identity;
+  const user = useSignedInIdentity();
+  const identity = {
+    ...studentDemoData.identity,
+    fullName: user.name,
+    email: user.email,
+  };
   const { profilePhoto, setProfilePhoto } = useStudentDemo();
   const groups = [
     {
@@ -932,8 +939,9 @@ export function StudentPage({
   view?: string;
 }) {
   const isDashboard = section === "dashboard";
+  const user = useSignedInIdentity();
   const title = isDashboard
-    ? `Good morning, ${studentDemoData.identity.firstName}.`
+    ? `Good morning, ${user.name.split(" ")[0]}.`
     : (sectionTitles[section] ?? "Student portal");
   const description = isDashboard
     ? `${studentDemoData.identity.program} · ${studentDemoData.identity.yearLevel} · ${studentDemoData.identity.campus} · AY ${studentDemoData.term.academicYear} · ${studentDemoData.term.semester}`

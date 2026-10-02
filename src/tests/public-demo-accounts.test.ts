@@ -24,9 +24,14 @@ describe("public demo account presentation boundary", () => {
 
   it("projects only the approved public fields", () => {
     for (const account of publicDemoAccounts) {
+      expect(account.name).toBe(
+        developmentAuthAccountSeed.find((seed) => seed.email === account.email)!
+          .name,
+      );
       expect(Object.keys(account).sort()).toEqual([
         "email",
         "label",
+        "name",
         "portals",
       ]);
     }
@@ -45,12 +50,12 @@ describe("public demo account presentation boundary", () => {
   it("keeps IT Admin distinct from the two-portal Faculty + Developer", () => {
     expect(
       publicDemoAccounts.find(
-        (account) => account.email === "technology.test@example.invalid",
+        (account) => account.email === "angelo.cruz@example.invalid",
       ),
     ).toMatchObject({ label: "IT Admin", portals: ["Technology"] });
     expect(
       publicDemoAccounts.find(
-        (account) => account.email === "faculty-it.test@example.invalid",
+        (account) => account.email === "michael.castro@example.invalid",
       ),
     ).toMatchObject({
       label: "Faculty + Developer",

@@ -49,11 +49,12 @@ export function assertDemoCredentialRows(rows) {
     );
   }
   for (const seed of developmentAuthAccountSeed) {
-    const matches = rows.filter((row) => row.email === seed.email);
+    const matches = rows.filter((row) => row.personId === seed.personId);
     const row = matches[0];
     if (
       matches.length !== 1 ||
       !seed.email.endsWith("@example.invalid") ||
+      !row.email.endsWith("@example.invalid") ||
       row.personId !== seed.personId ||
       row.providerId !== "credential" ||
       row.accountId !== row.userId ||

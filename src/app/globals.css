@@ -1490,18 +1490,10 @@
   color: var(--foreground-muted);
   text-align: left;
 }
-.login-note {
-  border-top: 1px solid var(--border);
-  color: var(--foreground-muted);
-  font-size: 14px;
-  line-height: 20px;
-  padding-top: 12px;
-  margin-top: 16px;
-}
 .login-account-links {
   display: grid;
-  justify-items: start;
-  gap: 4px;
+  justify-items: center;
+  gap: 12px;
   margin-top: 20px;
 }
 .login-account-links .text-link {
@@ -2624,9 +2616,41 @@
 .login-panel {
   border-top: 2px solid var(--border-strong);
 }
-.login-note {
-  margin-top: 12px;
-  padding-top: 8px;
+.login-heading :is(h1, .login-intro) {
+  text-align: center;
+}
+.login-heading::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 16px auto 0;
+  background: var(--primary);
+}
+.login-create-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: var(--control-height);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--accent);
+  color: var(--primary);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+.login-create-account:hover {
+  background: var(--accent-soft);
+  color: var(--primary-hover);
+}
+.identity-flow .public-page-intro {
+  margin-inline: auto;
+  text-align: center;
+}
+.identity-flow .public-page-intro > p {
+  margin-inline: auto;
 }
 .login-account-links {
   padding-top: 12px;

@@ -161,8 +161,8 @@ describe("P2-M2 database foundation", () => {
     const student = await getStudentFoundation(database, "TEST-2027-0001");
 
     expect(student).toMatchObject({
-      firstName: "Alex",
-      lastName: "Teststudent",
+      firstName: "John",
+      lastName: "Paul Reyes",
       programCode: "BSIS",
       campusCode: "IIT_CAA",
     });
@@ -172,8 +172,8 @@ describe("P2-M2 database foundation", () => {
     const applicant = await getApplicantFoundation(database, "APP-TEST-0001");
 
     expect(applicant).toMatchObject({
-      firstName: "Jamie",
-      lastName: "Testapplicant",
+      firstName: "Juan",
+      lastName: "Dela Cruz",
       programCode: "CPE",
       campusCode: "IIT_CAA",
     });

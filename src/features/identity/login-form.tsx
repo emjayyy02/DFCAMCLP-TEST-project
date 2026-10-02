@@ -86,7 +86,6 @@ export function LoginForm({
         </label>
         <Select
           id="portal"
-          aria-describedby="portal-help"
           name="portal"
           required
           defaultValue={defaultPortal}
@@ -101,12 +100,6 @@ export function LoginForm({
             </option>
           ))}
         </Select>
-        <p
-          id="portal-help"
-          className="mt-2 text-sm leading-6 text-muted-foreground"
-        >
-          Use a portal your account has access to.
-        </p>
       </div>
 
       <FormSection>

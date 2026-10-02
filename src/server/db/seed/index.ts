@@ -8,7 +8,13 @@ import {
   programs,
   studentProfiles,
 } from "../schema";
-import { campusSeed, majorSeed, programSeed, seedIds } from "./data";
+import {
+  campusSeed,
+  majorSeed,
+  programSeed,
+  seedIds,
+  developmentAuthAccountSeed,
+} from "./data";
 
 export async function seedDatabase(database: Database) {
   await database.transaction(async (transaction) => {
@@ -58,53 +64,11 @@ export async function seedDatabase(database: Database) {
         });
     }
 
-    const fakePeople = [
-      {
-        id: seedIds.people.student,
-        firstName: "Alex",
-        lastName: "Teststudent",
-      },
-      {
-        id: seedIds.people.applicant,
-        firstName: "Jamie",
-        lastName: "Testapplicant",
-      },
-      {
-        id: seedIds.people.employee,
-        firstName: "Taylor",
-        lastName: "Testemployee",
-      },
-      {
-        id: seedIds.people.records,
-        firstName: "Riley",
-        lastName: "Testrecords",
-      },
-      {
-        id: seedIds.people.operations,
-        firstName: "Morgan",
-        lastName: "Testoperations",
-      },
-      {
-        id: seedIds.people.technology,
-        firstName: "Casey",
-        lastName: "Testtechnology",
-      },
-      {
-        id: seedIds.people.coordinator,
-        firstName: "Jordan",
-        lastName: "Testcoordinator",
-      },
-      {
-        id: seedIds.people.schoolAdmin,
-        firstName: "Avery",
-        lastName: "Testadministrator",
-      },
-      {
-        id: seedIds.people.facultyTechnology,
-        firstName: "Quinn",
-        lastName: "Testmultiporal",
-      },
-    ] as const;
+    const fakePeople = developmentAuthAccountSeed.map((account) => ({
+      id: account.personId,
+      firstName: account.name.split(" ")[0],
+      lastName: account.name.split(" ").slice(1).join(" "),
+    }));
 
     for (const person of fakePeople) {
       await transaction

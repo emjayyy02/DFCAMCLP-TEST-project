@@ -10,6 +10,7 @@ import { IdentitySummary } from "@/components/ui/identity";
 import { DemoProfilePhotoPicker } from "@/components/ui/demo-profile-photo";
 import { ApplicationForm } from "./application-form";
 import { useApplicantDemo } from "./demo-context";
+import { useSignedInIdentity } from "@/features/identity/signed-in-identity";
 import {
   announcements,
   applicantIdentity,
@@ -640,9 +641,10 @@ function Announcements() {
 }
 
 function Profile() {
+  const user = useSignedInIdentity();
   const { savedDraft, state, profilePhoto, setProfilePhoto } =
     useApplicantDemo();
-  const fullName = `${savedDraft.firstName} ${savedDraft.lastName}`;
+  const fullName = user.name;
   return (
     <section className="applicant-surface applicant-profile-layout">
       <div className="applicant-profile-identity">
@@ -670,7 +672,7 @@ function Profile() {
         <h3>Personal</h3>
         <Facts
           items={[
-            ["Name", `${savedDraft.firstName} ${savedDraft.lastName}`],
+            ["Name", user.name],
             ["Applicant ID", applicantIdentity.id],
           ]}
         />
@@ -679,7 +681,7 @@ function Profile() {
         <h3>Contact</h3>
         <Facts
           items={[
-            ["Email", savedDraft.email],
+            ["Email", user.email],
             ["Mobile", savedDraft.phone],
           ]}
         />

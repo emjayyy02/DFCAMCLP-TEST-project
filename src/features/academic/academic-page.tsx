@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/portal/page-header";
 import { ContextHeader } from "@/components/ui/context-header";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useAcademicDemo } from "./demo-context";
+import { useSignedInIdentity } from "@/features/identity/signed-in-identity";
 import {
   academicDemoData,
   countAttendanceRecords,
@@ -174,6 +175,7 @@ function getAssignedOfferings(isCoordinator: boolean) {
 }
 
 function DashboardView({ isCoordinator }: { isCoordinator: boolean }) {
+  const user = useSignedInIdentity();
   const { attendanceSessions, gradeBooks, activity } = useAcademicDemo();
   const assigned = getAssignedOfferings(isCoordinator);
   const today = academicDemoData.today;
@@ -226,11 +228,7 @@ function DashboardView({ isCoordinator }: { isCoordinator: boolean }) {
           <p className="academic-eyebrow">
             {isCoordinator ? "Program coordination" : "Faculty workspace"}
           </p>
-          <h2 id="academic-welcome-title">
-            {isCoordinator
-              ? `Good morning, ${academicDemoData.identities.coordinator.name}.`
-              : `Good morning, ${academicDemoData.identities.faculty.name}.`}
-          </h2>
+          <h2 id="academic-welcome-title">{`Good morning, ${user.name}.`}</h2>
           <p>
             BSIS — Bachelor of Science in Information Systems{" "}
             <span aria-hidden="true">·</span> IIT Campus
@@ -466,6 +464,13 @@ function TeachingView({
   isCoordinator: boolean;
   offeringId?: string;
 }) {
+  const user = useSignedInIdentity();
+  const ownFacultyId = isCoordinator
+    ? academicDemoData.identities.coordinator.facultyId
+    : academicDemoData.identities.faculty.facultyId;
+  function instructorName(facultyId: string) {
+    return facultyId === ownFacultyId ? user.name : getFaculty(facultyId)?.name;
+  }
   const [rosterQuery, setRosterQuery] = useState("");
   const offerings =
     isCoordinator && offeringId
@@ -473,7 +478,6 @@ function TeachingView({
       : getAssignedOfferings(isCoordinator);
   const selected = offerings.find((item) => item.id === offeringId);
   if (selected) {
-    const faculty = getFaculty(selected.facultyId);
     const students = getOfferingRoster(selected.id);
     const canTeachOffering =
       selected.facultyId ===
@@ -491,7 +495,7 @@ function TeachingView({
           <dl className="academic-facts-grid">
             <div>
               <dt>Instructor</dt>
-              <dd>{faculty?.name}</dd>
+              <dd>{instructorName(selected.facultyId)}</dd>
             </div>
             <div>
               <dt>Campus</dt>
@@ -608,7 +612,6 @@ function TeachingView({
         <div className="academic-offering-list">
           {offerings.map((offering) => {
             const subject = getSubject(offering.subjectId);
-            const faculty = getFaculty(offering.facultyId);
             return (
               <article className="academic-offering-row" key={offering.id}>
                 <div className="academic-offering-code">{subject?.code}</div>
@@ -621,8 +624,8 @@ function TeachingView({
                 <div className="academic-offering-meta">
                   <span>{offeringSchedule(offering)}</span>
                   <span>
-                    {faculty?.name} · {getOfferingRoster(offering.id).length}{" "}
-                    students
+                    {instructorName(offering.facultyId)} ·{" "}
+                    {getOfferingRoster(offering.id).length} students
                   </span>
                 </div>
                 <Link

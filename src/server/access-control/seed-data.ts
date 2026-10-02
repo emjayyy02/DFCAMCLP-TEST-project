@@ -1,3 +1,4 @@
+import { developmentAuthAccountSeed } from "../db/seed/data";
 import type { PortalCode } from "../../lib/portals";
 
 export const roleSeed = [
@@ -184,52 +185,52 @@ export const rolePermissionSeed: Record<RoleCode, readonly PermissionCode[]> = {
 
 export const membershipSeed = [
   {
-    email: "applicant.test@example.invalid",
+    email: developmentAuthAccountSeed[1].email,
     portal: "APPLICANT",
     role: "APPLICANT",
   },
   {
-    email: "student.test@example.invalid",
+    email: developmentAuthAccountSeed[0].email,
     portal: "STUDENT",
     role: "STUDENT",
   },
   {
-    email: "faculty.test@example.invalid",
+    email: developmentAuthAccountSeed[2].email,
     portal: "ACADEMIC",
     role: "FACULTY",
   },
   {
-    email: "records.test@example.invalid",
+    email: developmentAuthAccountSeed[3].email,
     portal: "RECORDS",
     role: "RECORDS_STAFF",
   },
   {
-    email: "operations.test@example.invalid",
+    email: developmentAuthAccountSeed[4].email,
     portal: "OPERATIONS",
     role: "MAINTENANCE_STAFF",
   },
   {
-    email: "technology.test@example.invalid",
+    email: developmentAuthAccountSeed[5].email,
     portal: "TECHNOLOGY",
     role: "IT_ADMIN",
   },
   {
-    email: "coordinator.test@example.invalid",
+    email: developmentAuthAccountSeed[6].email,
     portal: "ACADEMIC",
     role: "PROGRAM_COORDINATOR",
   },
   {
-    email: "school-admin.test@example.invalid",
+    email: developmentAuthAccountSeed[7].email,
     portal: "OPERATIONS",
     role: "SCHOOL_ADMIN",
   },
   {
-    email: "faculty-it.test@example.invalid",
+    email: developmentAuthAccountSeed[8].email,
     portal: "ACADEMIC",
     role: "FACULTY",
   },
   {
-    email: "faculty-it.test@example.invalid",
+    email: developmentAuthAccountSeed[8].email,
     portal: "TECHNOLOGY",
     role: "DEVELOPER",
   },

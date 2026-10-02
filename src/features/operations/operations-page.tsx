@@ -210,7 +210,7 @@ function OperationsDashboard({
             <QueueCountLink
               href="/operations/facilities?view=mine"
               label="My tickets"
-              detail="Assigned to Morgan Testoperations"
+              detail={`Assigned to ${operationsIdentity.maintenanceStaffName}`}
               count={myTickets}
             />
             <QueueCountLink

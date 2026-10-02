@@ -1,9 +1,11 @@
 /** P3-M2 synthetic fixtures only. No institutional policy or live applicant data. */
+import { developmentAuthAccountSeed } from "../../server/db/seed/data";
+const applicantAccount = developmentAuthAccountSeed[1];
 export const applicantIdentity = {
   id: "APP-TEST-0001",
-  firstName: "Jamie",
-  lastName: "Testapplicant",
-  email: "applicant.test@example.invalid",
+  firstName: applicantAccount.name.split(" ")[0],
+  lastName: applicantAccount.name.split(" ").slice(1).join(" "),
+  email: applicantAccount.email,
 } as const;
 
 export const campusOptions = [

@@ -106,7 +106,9 @@ export function DemoAccountsPanel({
             {accounts.map((account) => (
               <li key={account.email} className="demo-account-row">
                 <div className="demo-account-copy">
-                  <h3>{account.label}</h3>
+                  <h3>
+                    {account.name} · {account.label}
+                  </h3>
                   <p className="demo-account-email">{account.email}</p>
                   <p className="demo-account-portals">
                     Portals: {account.portals.join(" · ")}

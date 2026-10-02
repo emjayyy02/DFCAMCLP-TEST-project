@@ -1,4 +1,5 @@
 import "server-only";
+import { developmentAuthAccountSeed } from "../../server/db/seed/data";
 
 import { portalDetails } from "../../lib/portals";
 import {
@@ -8,21 +9,22 @@ import {
 
 export type DemoAccountOption = {
   email: string;
+  name: string;
   label: string;
   portals: string[];
 };
 
 // Public presentation allowlist only. It cannot authorize or enumerate live users.
 const demoEmails = [
-  "applicant.test@example.invalid",
-  "student.test@example.invalid",
-  "faculty.test@example.invalid",
-  "coordinator.test@example.invalid",
-  "records.test@example.invalid",
-  "operations.test@example.invalid",
-  "school-admin.test@example.invalid",
-  "technology.test@example.invalid",
-  "faculty-it.test@example.invalid",
+  developmentAuthAccountSeed[1].email,
+  developmentAuthAccountSeed[0].email,
+  developmentAuthAccountSeed[2].email,
+  developmentAuthAccountSeed[6].email,
+  developmentAuthAccountSeed[3].email,
+  developmentAuthAccountSeed[4].email,
+  developmentAuthAccountSeed[7].email,
+  developmentAuthAccountSeed[5].email,
+  developmentAuthAccountSeed[8].email,
 ] as const;
 
 export const publicDemoAccounts: DemoAccountOption[] = demoEmails.map(
@@ -37,6 +39,9 @@ export const publicDemoAccounts: DemoAccountOption[] = demoEmails.map(
     });
     return {
       email,
+      name: developmentAuthAccountSeed.find(
+        (account) => account.email === email,
+      )!.name,
       label: labels.join(" + "),
       portals: memberships.map(
         (membership) => portalDetails[membership.portal].label,

@@ -34,48 +34,48 @@ export const seedIds = {
 
 export const developmentAuthAccountSeed = [
   {
-    email: "student.test@example.invalid",
-    name: "Alex Teststudent",
+    email: "johnpaul.reyes@example.invalid",
+    name: "John Paul Reyes",
     personId: seedIds.people.student,
   },
   {
-    email: "applicant.test@example.invalid",
-    name: "Jamie Testapplicant",
+    email: "juan.delacruz@example.invalid",
+    name: "Juan Dela Cruz",
     personId: seedIds.people.applicant,
   },
   {
-    email: "faculty.test@example.invalid",
-    name: "Taylor Testemployee",
+    email: "maria.santos@example.invalid",
+    name: "Maria Santos",
     personId: seedIds.people.employee,
   },
   {
-    email: "records.test@example.invalid",
-    name: "Riley Testrecords",
+    email: "jose.garcia@example.invalid",
+    name: "Jose Garcia",
     personId: seedIds.people.records,
   },
   {
-    email: "operations.test@example.invalid",
-    name: "Morgan Testoperations",
+    email: "mark.ramos@example.invalid",
+    name: "Mark Ramos",
     personId: seedIds.people.operations,
   },
   {
-    email: "technology.test@example.invalid",
-    name: "Casey Testtechnology",
+    email: "angelo.cruz@example.invalid",
+    name: "Angelo Cruz",
     personId: seedIds.people.technology,
   },
   {
-    email: "coordinator.test@example.invalid",
-    name: "Jordan Testcoordinator",
+    email: "angelica.bautista@example.invalid",
+    name: "Angelica Bautista",
     personId: seedIds.people.coordinator,
   },
   {
-    email: "school-admin.test@example.invalid",
-    name: "Avery Testadministrator",
+    email: "marygrace.mendoza@example.invalid",
+    name: "Mary Grace Mendoza",
     personId: seedIds.people.schoolAdmin,
   },
   {
-    email: "faculty-it.test@example.invalid",
-    name: "Quinn Testmultiporal",
+    email: "michael.castro@example.invalid",
+    name: "Michael Castro",
     personId: seedIds.people.facultyTechnology,
   },
 ] as const;

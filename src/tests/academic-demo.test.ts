@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { developmentAuthAccountSeed } from "../server/db/seed/data";
 import {
   formatScheduleTime,
   studentDemoData,
@@ -17,7 +18,9 @@ import { rolePermissionSeed } from "../server/access-control/seed-data";
 
 describe("Academic portal sample experience", () => {
   it("keeps the fictional Student identity and current academic context coherent", () => {
-    expect(studentDemoData.identity.fullName).toBe("John Paul Reyes");
+    expect(studentDemoData.identity.fullName).toBe(
+      developmentAuthAccountSeed[0].name,
+    );
     expect(studentDemoData.identity.yearLevel).toBe("3rd Year");
     expect(studentDemoData.term).toMatchObject({
       academicYear: "2026–2027",

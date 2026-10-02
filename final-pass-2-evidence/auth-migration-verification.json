@@ -1,0 +1,11 @@
+{
+  "method": "auth:sync-demo",
+  "checked": 9,
+  "identitiesUpdated": 9,
+  "passwordsUpdated": 0,
+  "repeatSyncIdentitiesUpdated": 0,
+  "repeatSyncPasswordsUpdated": 0,
+  "authAccountCount": 9,
+  "personNamesAgree": true,
+  "rolesAndPermissionsModified": false
+}

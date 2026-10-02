@@ -67,7 +67,7 @@ describe("local demo credential sync safety boundaries", () => {
     duplicate[1] = duplicate[0];
     expect(() => assertDemoCredentialRows(duplicate)).toThrow();
     const unrelated = rows();
-    unrelated[0].email = "unlisted@example.invalid";
+    unrelated[0].email = "real@example.com";
     expect(() => assertDemoCredentialRows(unrelated)).toThrow();
     const unlinked = rows();
     unlinked[0].personId = unlinked[1].personId;
@@ -80,5 +80,12 @@ describe("local demo credential sync safety boundaries", () => {
     const wrong = rows();
     wrong[0].accountId = "unrelated-user";
     expect(() => assertDemoCredentialRows(wrong)).toThrow();
+  });
+  it("accepts fictional email migration for the same stable person mappings", () => {
+    const previous = rows();
+    previous.forEach((row, index) => {
+      row.email = `previous-${index}@example.invalid`;
+    });
+    expect(() => assertDemoCredentialRows(previous)).not.toThrow();
   });
 });

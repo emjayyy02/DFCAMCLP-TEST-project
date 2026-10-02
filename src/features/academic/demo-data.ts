@@ -1,3 +1,6 @@
+import { studentDemoData } from "../student/demo-data";
+import { developmentAuthAccountSeed } from "../../server/db/seed/data";
+
 export type AcademicWeekday =
   "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday";
 
@@ -87,7 +90,7 @@ const roster = [
   {
     id: "student-primary",
     studentId: "DEMO-STU-2026-0142",
-    name: "John Paul Reyes",
+    name: studentDemoData.identity.fullName,
     section: "BSIS-3A",
     status: "Enrolled",
   },
@@ -198,8 +201,14 @@ export const academicDemoData = {
     day: "Friday" as const,
   },
   identities: {
-    faculty: { facultyId: "faculty-ldc", name: "L. Dela Cruz" },
-    coordinator: { facultyId: "faculty-ag", name: "A. Garcia" },
+    faculty: {
+      facultyId: "faculty-ldc",
+      name: developmentAuthAccountSeed[2].name,
+    },
+    coordinator: {
+      facultyId: "faculty-ag",
+      name: developmentAuthAccountSeed[6].name,
+    },
   },
   subjects: [
     { id: "is201", code: "IS 302", title: "Systems Design", units: 3 },
@@ -215,8 +224,16 @@ export const academicDemoData = {
   ] satisfies readonly AcademicSubject[],
   faculty: [
     { id: "faculty-ms", name: "M. Santos", roleLabel: "Faculty" },
-    { id: "faculty-ldc", name: "L. Dela Cruz", roleLabel: "Faculty" },
-    { id: "faculty-ag", name: "A. Garcia", roleLabel: "Program Coordinator" },
+    {
+      id: "faculty-ldc",
+      name: developmentAuthAccountSeed[2].name,
+      roleLabel: "Faculty",
+    },
+    {
+      id: "faculty-ag",
+      name: developmentAuthAccountSeed[6].name,
+      roleLabel: "Program Coordinator",
+    },
     { id: "faculty-rl", name: "R. Lim", roleLabel: "Faculty" },
     { id: "faculty-jc", name: "J. Cruz", roleLabel: "Faculty" },
   ] satisfies readonly AcademicFaculty[],

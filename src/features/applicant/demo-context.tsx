@@ -8,17 +8,27 @@ import {
   type ApplicationDraft,
   type ScenarioKey,
 } from "./demo-data";
-import { useDemoProfilePhoto } from "@/components/ui/demo-profile-photo";
+import {
+  useIdentityPhoto,
+  useSignedInIdentity,
+} from "@/features/identity/signed-in-identity";
 import "./applicant.css";
 
 function useDemoState() {
-  const [profilePhoto, setProfilePhoto] = useDemoProfilePhoto();
+  const user = useSignedInIdentity();
+  const application = {
+    ...initialApplication,
+    firstName: user.name.split(" ")[0],
+    lastName: user.name.split(" ").slice(1).join(" "),
+    email: user.email,
+  };
+  const [profilePhoto, setProfilePhoto] = useIdentityPhoto();
   const [scenario, setScenario] = useState<ScenarioKey>("documents");
   const [draft, setDraft] = useState<ApplicationDraft>({
-    ...initialApplication,
+    ...application,
   });
   const [savedDraft, setSavedDraft] = useState<ApplicationDraft>({
-    ...initialApplication,
+    ...application,
   });
   const [savedAt, setSavedAt] = useState("");
   const [ready, setReady] = useState<string[]>(

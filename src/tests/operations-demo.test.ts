@@ -50,7 +50,7 @@ describe("Operations demo queues", () => {
       filterEmployees(initialEmployees, { search: "EMP-DEMO-015" }).map(
         (employee) => employee.name,
       ),
-    ).toEqual(["Avery Testadministrator"]);
+    ).toEqual(["Mary Grace Mendoza"]);
     expect(
       filterEmployees(initialEmployees, {
         campus: "IIT Campus",
@@ -66,11 +66,11 @@ describe("Operations demo queues", () => {
       sortEmployeesByName(initialEmployees).map((employee) => employee.name),
     ).toEqual([
       "Alex Demo",
-      "Avery Testadministrator",
-      "Casey Testtechnology",
-      "Morgan Testoperations",
+      "Angelo Cruz",
+      "Maria Santos",
+      "Mark Ramos",
+      "Mary Grace Mendoza",
       "Sam Demo",
-      "Taylor Testemployee",
     ]);
   });
 

@@ -1,3 +1,7 @@
+import { developmentAuthAccountSeed } from "../../server/db/seed/data";
+
+const studentAccount = developmentAuthAccountSeed[0];
+
 export type StudentRequestStatus =
   "Pending" | "Ready" | "Completed" | "Cancelled";
 
@@ -23,11 +27,11 @@ export type AcademicView = (typeof academicViews)[number];
 
 export const studentDemoData = {
   identity: {
-    firstName: "John Paul",
-    lastName: "Reyes",
-    fullName: "John Paul Reyes",
+    firstName: studentAccount.name.split(" ")[0],
+    lastName: studentAccount.name.split(" ").slice(1).join(" "),
+    fullName: studentAccount.name,
     studentId: "DEMO-STU-2026-0142",
-    email: "john.reyes@example.invalid",
+    email: studentAccount.email,
     program: "BSIS — Bachelor of Science in Information Systems",
     programCode: "BSIS",
     campus: "IIT Campus",
@@ -58,7 +62,7 @@ export const studentDemoData = {
       code: "IS 304",
       title: "Project Management",
       units: 3,
-      instructor: "L. Dela Cruz",
+      instructor: developmentAuthAccountSeed[2].name,
       status: "Enrolled",
     },
     {
@@ -66,7 +70,7 @@ export const studentDemoData = {
       code: "GE 302",
       title: "Applied Research",
       units: 3,
-      instructor: "A. Garcia",
+      instructor: developmentAuthAccountSeed[6].name,
       status: "Enrolled",
     },
     {

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { AppShell } from "@/components/portal/app-shell";
+import { SignedInIdentityProvider } from "@/features/identity/signed-in-identity";
 import { ApplicantDemoProvider } from "@/features/applicant/demo-context";
 import { ApplicantScenarioSwitcher } from "@/features/applicant/scenario-switcher";
 import { StudentDemoProvider } from "@/features/student/demo-context";
@@ -45,27 +46,40 @@ export default async function PortalLayout({
     </AppShell>
   );
 
-  return portal === "APPLICANT" ? (
-    <ApplicantDemoProvider key={context.user.email}>
-      {appShell}
-    </ApplicantDemoProvider>
-  ) : portal === "STUDENT" ? (
-    <StudentDemoProvider key={context.user.email}>
-      {appShell}
-    </StudentDemoProvider>
-  ) : portal === "ACADEMIC" ? (
-    <AcademicDemoProvider key={context.user.email}>
-      {appShell}
-    </AcademicDemoProvider>
-  ) : portal === "RECORDS" ? (
-    <RecordsDemoProvider key={context.user.email}>
-      {appShell}
-    </RecordsDemoProvider>
-  ) : portal === "OPERATIONS" ? (
-    <OperationsDemoProvider key={context.user.email}>
-      {appShell}
-    </OperationsDemoProvider>
-  ) : (
-    appShell
+  const experience =
+    portal === "APPLICANT" ? (
+      <ApplicantDemoProvider key={context.user.email}>
+        {appShell}
+      </ApplicantDemoProvider>
+    ) : portal === "STUDENT" ? (
+      <StudentDemoProvider key={context.user.email}>
+        {appShell}
+      </StudentDemoProvider>
+    ) : portal === "ACADEMIC" ? (
+      <AcademicDemoProvider key={context.user.email}>
+        {appShell}
+      </AcademicDemoProvider>
+    ) : portal === "RECORDS" ? (
+      <RecordsDemoProvider key={context.user.email}>
+        {appShell}
+      </RecordsDemoProvider>
+    ) : portal === "OPERATIONS" ? (
+      <OperationsDemoProvider key={context.user.email}>
+        {appShell}
+      </OperationsDemoProvider>
+    ) : (
+      appShell
+    );
+  return (
+    <SignedInIdentityProvider
+      key={context.user.id}
+      user={{
+        id: context.user.id,
+        name: context.user.name,
+        email: context.user.email,
+      }}
+    >
+      {experience}
+    </SignedInIdentityProvider>
   );
 }

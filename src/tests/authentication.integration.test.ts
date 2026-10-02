@@ -27,7 +27,7 @@ const auth = createPortalAuth(database, {
   secret: env.BETTER_AUTH_SECRET,
 });
 const seedPassword = env.AUTH_SEED_PASSWORD;
-const activeEmail = "student.test@example.invalid";
+const activeEmail = "johnpaul.reyes@example.invalid";
 
 function requestHeaders(cookie?: string) {
   return new Headers({
@@ -106,7 +106,7 @@ describe("P2-M3 authentication", () => {
 
   it("fails invalid and unknown credentials without revealing account state", async () => {
     const invalid = await signIn(activeEmail, "incorrect-fake-password");
-    const unknown = await signIn("unknown.test@example.invalid");
+    const unknown = await signIn("unknown@example.invalid");
     const invalidBody = await invalid.json();
     const unknownBody = await unknown.json();
 

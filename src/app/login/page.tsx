@@ -18,21 +18,23 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
     <SiteShell>
       <main id="main" className="public-container login-page">
         <section className="login-panel" aria-labelledby="login-title">
-          <h1 id="login-title">Portal sign in</h1>
-          <p className="login-intro">Choose your portal to continue.</p>
-          <p className="login-note">
-            Demo accounts only. Do not enter real student information.
-          </p>
+          <header className="login-heading">
+            <h1 id="login-title">Portal sign in</h1>
+            <p className="login-intro">Choose your portal to continue.</p>
+          </header>
           <LoginForm
             defaultPortal={defaultPortal}
             demoAccounts={publicDemoAccounts}
           />
           <div className="login-account-links">
-            <Link href="/account/recovery" className="text-link">
-              Forgot your password or need account help?
+            <Link
+              href="/account/create"
+              className="ui-button login-create-account"
+            >
+              New applicant? Create an account
             </Link>
-            <Link href="/account/create" className="text-link">
-              New applicant? View account-entry options
+            <Link href="/account/recovery" className="text-link">
+              Forgot password / account help
             </Link>
           </div>
         </section>
