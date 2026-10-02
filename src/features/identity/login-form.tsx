@@ -1,12 +1,14 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { PortalCode } from "@/lib/portals";
 import { Button } from "@/components/ui/button";
 import { Input, Select } from "@/components/ui/input";
 import { Alert } from "@/components/ui/alert";
 import { FormSection } from "@/components/ui/form-section";
+import { DemoAccountsPanel } from "./demo-accounts-panel";
+import type { DemoAccountOption } from "./public-demo-accounts";
 
 const portalOptions = [
   { value: "APPLICANT", label: "Applicant" },
@@ -17,11 +19,18 @@ const portalOptions = [
   { value: "TECHNOLOGY", label: "Technology" },
 ] as const satisfies readonly { value: PortalCode; label: string }[];
 
-export function LoginForm({ defaultPortal = "" }: { defaultPortal?: string }) {
+export function LoginForm({
+  defaultPortal = "",
+  demoAccounts,
+}: {
+  defaultPortal?: string;
+  demoAccounts: readonly DemoAccountOption[];
+}) {
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const emailInput = useRef<HTMLInputElement>(null);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -107,6 +116,7 @@ export function LoginForm({ defaultPortal = "" }: { defaultPortal?: string }) {
             Email address
           </label>
           <Input
+            ref={emailInput}
             id="email"
             name="email"
             type="email"
@@ -180,6 +190,14 @@ export function LoginForm({ defaultPortal = "" }: { defaultPortal?: string }) {
       <Button type="submit" disabled={isSubmitting} className="w-full">
         {isSubmitting ? "Signing in…" : "Sign in"}
       </Button>
+      <DemoAccountsPanel
+        accounts={demoAccounts}
+        onUseEmail={(email) => {
+          if (!emailInput.current) return;
+          emailInput.current.value = email;
+          emailInput.current.focus();
+        }}
+      />
     </form>
   );
 }

@@ -1,0 +1,40 @@
+{
+  "startedAt": "2026-10-01T23:52:20.228Z",
+  "cases": [
+    {
+      "failure": "network-abort",
+      "location": "/account",
+      "state": {
+        "buttons": [
+          {
+            "text": "Signing out…",
+            "disabled": true
+          }
+        ],
+        "alerts": []
+      },
+      "protectedAfter": "/student",
+      "stillAuthenticated": true,
+      "pageErrors": [
+        "Failed to fetch"
+      ],
+      "capture": "signout-network-abort-result-375.png",
+      "pass": false,
+      "normalCleanupRevokedSession": true
+    },
+    {
+      "failure": "http-503",
+      "location": "/login",
+      "state": {
+        "buttons": [],
+        "alerts": []
+      },
+      "protectedAfter": "/student",
+      "stillAuthenticated": true,
+      "pageErrors": [],
+      "capture": "signout-http-503-result-375.png",
+      "pass": false,
+      "normalCleanupRevokedSession": true
+    }
+  ]
+}

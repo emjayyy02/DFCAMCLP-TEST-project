@@ -1,0 +1,1082 @@
+{
+  "startedAt": "2026-10-01T12:15:55.539Z",
+  "commit": "0ab4701f769807a50f4ccf5f6e03c39d97272fb1",
+  "dirtyStatus": " M next-env.d.ts\n M src/app/globals.css\n M src/features/disclosure/demo-disclosure-provider.tsx\n?? docs/phase-4/fd8-after/verify-correction.cjs\n",
+  "browser": "Installed Edge Chromium / installed Playwright; production port 3108",
+  "before": "fd8-after/manifest.json and entry-initial-entry-* screenshots (original FD8)",
+  "sourceSHA256": {
+    "src/app/globals.css": "557c0753f81c4a53120d676a5449a0ed21f9b396dba827ace748a2df9f866122",
+    "src/features/disclosure/demo-disclosure-provider.tsx": "1597b1f9e0c08455082e86dc74e605fa5d5f979687ab019d8e7d98f9834a585d"
+  },
+  "checks": [
+    {
+      "name": "320x812 viewport and horizontal containment",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "w": 320,
+          "h": 812
+        },
+        "rect": {
+          "x": 19,
+          "y": 16,
+          "right": 301,
+          "bottom": 796
+        },
+        "actionBottom": 795,
+        "document": 320,
+        "dialogWidth": 280,
+        "dialogScrollWidth": 280,
+        "bodyWidth": 280,
+        "bodyScrollWidth": 280,
+        "bodyScrollable": true
+      }
+    },
+    {
+      "name": "320 named dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 four semantic rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 factual meaning / locked copy retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 symbols hidden from assistive technology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 centered header and no input-like title frame",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 exact supporting sentence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 legal group responsive columns",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "320 Learn more resource group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 legal links underlined",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 reverse focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 forward focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 visible link keyboard focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 entry Escape no acknowledgement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 legal disclaimer before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 legal terms before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 legal privacy before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 legal acceptable-use before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 exact version and original query",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 manual mode Close only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 manual Escape restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 manual Close restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "320 reload no repeat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375x812 viewport and horizontal containment",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "w": 375,
+          "h": 812
+        },
+        "rect": {
+          "x": 19,
+          "y": 16,
+          "right": 356,
+          "bottom": 796
+        },
+        "actionBottom": 795,
+        "document": 375,
+        "dialogWidth": 335,
+        "dialogScrollWidth": 335,
+        "bodyWidth": 335,
+        "bodyScrollWidth": 335,
+        "bodyScrollable": true
+      }
+    },
+    {
+      "name": "375 named dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 four semantic rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 factual meaning / locked copy retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 symbols hidden from assistive technology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 centered header and no input-like title frame",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 exact supporting sentence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 legal group responsive columns",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "375 Learn more resource group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 legal links underlined",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 reverse focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 forward focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 visible link keyboard focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 entry Escape no acknowledgement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 legal disclaimer before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 legal terms before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 legal privacy before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 legal acceptable-use before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 exact version and original query",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 manual mode Close only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 manual Escape restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 manual Close restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 reload no repeat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768x900 viewport and horizontal containment",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "w": 768,
+          "h": 900
+        },
+        "rect": {
+          "x": 112,
+          "y": 16,
+          "right": 656,
+          "bottom": 884
+        },
+        "actionBottom": 883,
+        "document": 768,
+        "dialogWidth": 542,
+        "dialogScrollWidth": 542,
+        "bodyWidth": 542,
+        "bodyScrollWidth": 542,
+        "bodyScrollable": true
+      }
+    },
+    {
+      "name": "768 named dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 four semantic rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 factual meaning / locked copy retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 symbols hidden from assistive technology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 centered header and no input-like title frame",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 exact supporting sentence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 legal group responsive columns",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "name": "768 Learn more resource group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 legal links underlined",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 reverse focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 forward focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 visible link keyboard focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 entry Escape no acknowledgement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 legal disclaimer before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 legal terms before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 legal privacy before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 legal acceptable-use before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 exact version and original query",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 manual mode Close only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 manual Escape restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 manual Close restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "768 reload no repeat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440x900 viewport and horizontal containment",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "rect": {
+          "x": 448,
+          "y": 16,
+          "right": 992,
+          "bottom": 884
+        },
+        "actionBottom": 883,
+        "document": 1440,
+        "dialogWidth": 542,
+        "dialogScrollWidth": 542,
+        "bodyWidth": 542,
+        "bodyScrollWidth": 542,
+        "bodyScrollable": true
+      }
+    },
+    {
+      "name": "1440 named dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 four semantic rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 factual meaning / locked copy retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 symbols hidden from assistive technology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 centered header and no input-like title frame",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 exact supporting sentence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 legal group responsive columns",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "name": "1440 Learn more resource group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 legal links underlined",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 reverse focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 forward focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 visible link keyboard focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 entry Escape no acknowledgement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 legal disclaimer before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 legal terms before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 legal privacy before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 legal acceptable-use before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 exact version and original query",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 manual mode Close only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 manual Escape restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 manual Close restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 reload no repeat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920x1080 viewport and horizontal containment",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "w": 1920,
+          "h": 1080
+        },
+        "rect": {
+          "x": 688,
+          "y": 72.5,
+          "right": 1232,
+          "bottom": 1007.5
+        },
+        "actionBottom": 1006.5,
+        "document": 1920,
+        "dialogWidth": 542,
+        "dialogScrollWidth": 542,
+        "bodyWidth": 542,
+        "bodyScrollWidth": 542,
+        "bodyScrollable": false
+      }
+    },
+    {
+      "name": "1920 named dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 four semantic rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 factual meaning / locked copy retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 symbols hidden from assistive technology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 centered header and no input-like title frame",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 exact supporting sentence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 legal group responsive columns",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "name": "1920 Learn more resource group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 legal links underlined",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 reverse focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 forward focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 visible link keyboard focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 entry Escape no acknowledgement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 legal disclaimer before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 legal terms before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 legal privacy before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 legal acceptable-use before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 exact version and original query",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 manual mode Close only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 manual Escape restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 manual Close restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1920 reload no repeat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812x375 viewport and horizontal containment",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "w": 812,
+          "h": 375
+        },
+        "rect": {
+          "x": 134,
+          "y": 16,
+          "right": 678,
+          "bottom": 359
+        },
+        "actionBottom": 358,
+        "document": 812,
+        "dialogWidth": 542,
+        "dialogScrollWidth": 542,
+        "bodyWidth": 542,
+        "bodyScrollWidth": 542,
+        "bodyScrollable": true
+      }
+    },
+    {
+      "name": "812 named dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 four semantic rows",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 factual meaning / locked copy retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 symbols hidden from assistive technology",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 centered header and no input-like title frame",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 exact supporting sentence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 legal group responsive columns",
+      "pass": true,
+      "detail": 2
+    },
+    {
+      "name": "812 Learn more resource group",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 legal links underlined",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 reverse focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 forward focus trap",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 visible link keyboard focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 entry Escape no acknowledgement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 legal disclaimer before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 legal terms before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 legal privacy before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 legal acceptable-use before ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 exact version and original query",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 manual mode Close only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 manual Escape restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 manual Close restores focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "812 reload no repeat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 doubled body really 32px",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 doubled text viewport and horizontal containment",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "w": 375,
+          "h": 812
+        },
+        "rect": {
+          "x": 35,
+          "y": 16,
+          "right": 340,
+          "bottom": 796
+        },
+        "actionBottom": 795,
+        "document": 375,
+        "dialogWidth": 303,
+        "dialogScrollWidth": 303,
+        "bodyWidth": 303,
+        "bodyScrollWidth": 303,
+        "bodyScrollable": true
+      }
+    },
+    {
+      "name": "375 doubled body scrolls",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 reduced motion immediate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "375 doubled CTA works",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 doubled body really 32px",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 doubled text viewport and horizontal containment",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "rect": {
+          "x": 448,
+          "y": 16,
+          "right": 992,
+          "bottom": 884
+        },
+        "actionBottom": 883,
+        "document": 1440,
+        "dialogWidth": 542,
+        "dialogScrollWidth": 542,
+        "bodyWidth": 542,
+        "bodyScrollWidth": 542,
+        "bodyScrollable": true
+      }
+    },
+    {
+      "name": "1440 doubled body scrolls",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 reduced motion immediate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1440 doubled CTA works",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Leave demo preserves unacknowledged state",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "captures": [
+    {
+      "file": "correction-320x812-top.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Initial header/title focus and scannable points",
+      "capturedAt": "2026-10-01T12:15:57.622Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-320x812-resources.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Keyboard focus at pre-acknowledgement resources; body internally scrolled",
+      "capturedAt": "2026-10-01T12:15:57.689Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-375x812-top.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Initial header/title focus and scannable points",
+      "capturedAt": "2026-10-01T12:16:01.439Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-375x812-resources.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Keyboard focus at pre-acknowledgement resources; body internally scrolled",
+      "capturedAt": "2026-10-01T12:16:01.505Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-768x900-top.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Initial header/title focus and scannable points",
+      "capturedAt": "2026-10-01T12:16:05.030Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-768x900-resources.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Keyboard focus at pre-acknowledgement resources; body internally scrolled",
+      "capturedAt": "2026-10-01T12:16:05.120Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-1440x900-top.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Initial header/title focus and scannable points",
+      "capturedAt": "2026-10-01T12:16:08.796Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-1440x900-resources.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Keyboard focus at pre-acknowledgement resources; body internally scrolled",
+      "capturedAt": "2026-10-01T12:16:08.897Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-1920x1080-top.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Initial header/title focus and scannable points",
+      "capturedAt": "2026-10-01T12:16:12.837Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-1920x1080-resources.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Keyboard focus at pre-acknowledgement resources; body internally scrolled",
+      "capturedAt": "2026-10-01T12:16:12.955Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-812x375-top.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 812,
+        "height": 375
+      },
+      "state": "Initial header/title focus and scannable points",
+      "capturedAt": "2026-10-01T12:16:16.741Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-812x375-resources.png",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 812,
+        "height": 375
+      },
+      "state": "Keyboard focus at pre-acknowledgement resources; body internally scrolled",
+      "capturedAt": "2026-10-01T12:16:16.821Z",
+      "reducedMotion": false
+    },
+    {
+      "file": "correction-375-doubled-top.png",
+      "route": "/login",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Every computed text size/line height doubled; reduced motion; title initial focus",
+      "capturedAt": "2026-10-01T12:16:20.521Z",
+      "reducedMotion": true
+    },
+    {
+      "file": "correction-375-doubled-resources.png",
+      "route": "/login",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Doubled text, pre-acknowledgement legal links reached by keyboard",
+      "capturedAt": "2026-10-01T12:16:20.631Z",
+      "reducedMotion": true
+    },
+    {
+      "file": "correction-1440-doubled-top.png",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Every computed text size/line height doubled; reduced motion; title initial focus",
+      "capturedAt": "2026-10-01T12:16:21.762Z",
+      "reducedMotion": true
+    },
+    {
+      "file": "correction-1440-doubled-resources.png",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Doubled text, pre-acknowledgement legal links reached by keyboard",
+      "capturedAt": "2026-10-01T12:16:21.898Z",
+      "reducedMotion": true
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-01T12:16:23.207Z"
+}

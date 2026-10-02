@@ -142,7 +142,7 @@ export default async function PortalFoundationPage({
           }
           detail={
             section[0] === "accounts"
-              ? "Read-only account directory"
+              ? "Fictional accounts and their authorized portal access."
               : "No live monitoring or service-health reporting"
           }
         />

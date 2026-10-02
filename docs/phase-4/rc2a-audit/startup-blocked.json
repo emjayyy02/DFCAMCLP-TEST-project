@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-01 Asia/Taipei",
+  "startedAt": "2026-10-01T15:45:02.042Z",
+  "commit": "0ab4701f769807a50f4ccf5f6e03c39d97272fb1",
+  "dirty": "M docs/phase-4/P4-FD8-DISCLOSURE-LEGAL-IMPLEMENTATION.md\n M src/app/globals.css\n M src/features/disclosure/demo-disclosure-provider.tsx\n?? docs/phase-4/fd8-after/correction-1440-doubled-resources.png\n?? docs/phase-4/fd8-after/correction-1440-doubled-top.png\n?? docs/phase-4/fd8-after/correction-1440x900-resources.png\n?? docs/phase-4/fd8-after/correction-1440x900-top.png\n?? docs/phase-4/fd8-after/correction-1920x1080-resources.png\n?? docs/phase-4/fd8-after/correction-1920x1080-top.png\n?? docs/phase-4/fd8-after/correction-320x812-resources.png\n?? docs/phase-4/fd8-after/correction-320x812-top.png\n?? docs/phase-4/fd8-after/correction-375-doubled-resources.png\n?? docs/phase-4/fd8-after/correction-375-doubled-top.png\n?? docs/phase-4/fd8-after/correction-375x812-resources.png\n?? docs/phase-4/fd8-after/correction-375x812-top.png\n?? docs/phase-4/fd8-after/correction-768x900-resources.png\n?? docs/phase-4/fd8-after/correction-768x900-top.png\n?? docs/phase-4/fd8-after/correction-812x375-resources.png\n?? docs/phase-4/fd8-after/correction-812x375-top.png\n?? docs/phase-4/fd8-after/correction-manifest.json\n?? docs/phase-4/fd8-after/verify-correction.cjs\n?? docs/phase-4/rc2a-audit/",
+  "browser": "Microsoft Edge Chromium / Next.js production server",
+  "captures": [],
+  "checks": [
+    {
+      "name": "applicant login",
+      "pass": false,
+      "detail": 401
+    }
+  ],
+  "errors": [
+    {
+      "name": "applicant login",
+      "detail": 401
+    },
+    {
+      "fatal": "locator.innerText: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.account-profile-identity')\u001b[22m\n\n    at run (C:\\DOCUMENTATION FOR EVERYTHING\\TECH VA JOURNEY\\Portfolio Projects\\DFCAMCLP-TEST-project\\docs\\phase-4\\rc2a-audit\\run-qa.cjs:166:8)"
+    }
+  ],
+  "responsive": []
+}

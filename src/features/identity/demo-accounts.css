@@ -1,0 +1,120 @@
+.demo-accounts-dialog {
+  width: min(42rem, calc(100vw - 32px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-panel);
+  background: var(--surface);
+  color: var(--foreground);
+  box-shadow: var(--shadow-elevated);
+  text-align: left;
+}
+.demo-accounts-dialog[open] {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  animation: fd6-dialog var(--motion-continuity) var(--ease-arrival);
+}
+.demo-accounts-dialog::backdrop {
+  background: rgb(23 35 59 / 55%);
+}
+.demo-accounts-header {
+  padding: 24px;
+  border-bottom: 1px solid var(--border);
+}
+.demo-accounts-header h2 {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+.demo-accounts-header p {
+  margin-block: 8px 16px;
+  color: var(--foreground-muted);
+}
+.demo-accounts-body {
+  min-height: 0;
+  overflow-y: auto;
+  padding-inline: 24px;
+}
+.demo-accounts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.demo-account-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  padding-block: 16px;
+}
+.demo-account-row + .demo-account-row {
+  border-top: 1px solid var(--border);
+}
+.demo-account-copy {
+  min-width: 0;
+}
+.demo-account-copy h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.demo-account-email {
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+  user-select: text;
+}
+.demo-account-portals {
+  margin-top: 4px;
+  color: var(--foreground-muted);
+}
+.demo-account-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: center;
+}
+.demo-accounts-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+}
+.demo-accounts-footer p {
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .demo-accounts-header {
+    padding: 16px;
+  }
+  .demo-accounts-body {
+    padding-inline: 16px;
+  }
+  .demo-account-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .demo-account-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .demo-accounts-footer {
+    padding: 16px;
+  }
+}
+@media (max-height: 480px) {
+  .demo-accounts-header {
+    padding-block: 8px;
+  }
+  .demo-accounts-header p {
+    margin-block: 4px 8px;
+  }
+  .demo-accounts-footer {
+    padding-block: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .demo-accounts-dialog[open] {
+    animation: none;
+  }
+}

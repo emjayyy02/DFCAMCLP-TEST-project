@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-01T15:49:15.566Z",
+  "operation": "Read-only credential equality and local sign-in diagnosis; no values or hashes recorded",
+  "accounts": [
+    {
+      "email": "student.test@example.invalid",
+      "status": "ACTIVE",
+      "currentConfiguredPasswordMatches": true
+    },
+    {
+      "email": "applicant.test@example.invalid",
+      "status": "ACTIVE",
+      "currentConfiguredPasswordMatches": true
+    },
+    {
+      "email": "faculty.test@example.invalid",
+      "status": "ACTIVE",
+      "currentConfiguredPasswordMatches": true
+    },
+    {
+      "email": "records.test@example.invalid",
+      "status": "ACTIVE",
+      "currentConfiguredPasswordMatches": true
+    },
+    {
+      "email": "operations.test@example.invalid",
+      "status": "ACTIVE",
+      "currentConfiguredPasswordMatches": true
+    },
+    {
+      "email": "technology.test@example.invalid",
+      "status": "ACTIVE",
+      "currentConfiguredPasswordMatches": true
+    },
+    {
+      "email": "coordinator.test@example.invalid",
+      "status": "ACTIVE",
+      "currentConfiguredPasswordMatches": true
+    },
+    {
+      "email": "school-admin.test@example.invalid",
+      "status": "ACTIVE",
+      "currentConfiguredPasswordMatches": true
+    },
+    {
+      "email": "faculty-it.test@example.invalid",
+      "status": "ACTIVE",
+      "currentConfiguredPasswordMatches": true
+    }
+  ],
+  "demoRows": 9,
+  "otherCredentialRows": 0,
+  "directAuth": {
+    "status": 200,
+    "message": null,
+    "setsCookie": true
+  }
+}

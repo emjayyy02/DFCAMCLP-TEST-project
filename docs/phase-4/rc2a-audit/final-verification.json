@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-02T00:13:35.147Z",
+  "documents": [
+    {
+      "file": "docs/phase-4/P4-RC2A-FINAL-DEMO-QA-AUDIT.md",
+      "sha256": "037ddd3124071ca7502e13bc82a91e7e172f93c960911fb6f3ea87118c0c8997"
+    },
+    {
+      "file": "docs/phase-4/P4-RC2B-DEFECT-FIX-PLAN.md",
+      "sha256": "9499f6c35c3c7f2464d31125e700da1f78addca60321ff6c9d418682b9a4e8e5"
+    },
+    {
+      "file": "docs/phase-4/P4-ROADMAP.md",
+      "sha256": "1a687a5fb946047dae033ee298e09a51082f82834210374efa2139e42a3b21f0"
+    },
+    {
+      "file": "docs/phase-4/rc2a-audit/README.md",
+      "sha256": "919f6d35711c30d48bd70620488b8a3d46e172b3d0b7d860bf96c908e40237ff"
+    }
+  ],
+  "brokenLinks": [],
+  "configuredSecretLiteralHits": [],
+  "sourceFiles": 156,
+  "sourceChanges": [],
+  "images": 159,
+  "pass": true
+}

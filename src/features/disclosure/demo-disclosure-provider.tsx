@@ -70,6 +70,53 @@ export function DisclosureParagraphs() {
   ));
 }
 
+const disclosurePoints = [
+  { heading: "Unofficial project", symbol: "important" },
+  { heading: "Fictional demonstration data", symbol: "sample" },
+  { heading: "Do not enter real information", symbol: "prohibited" },
+  { heading: "Temporary demo state", symbol: "reset" },
+] as const;
+
+function DisclosureSymbol({
+  kind,
+}: {
+  kind: "important" | "sample" | "prohibited" | "reset";
+}) {
+  return (
+    <svg
+      className="demo-disclosure-symbol"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      {kind === "sample" ? (
+        <>
+          <path d="M12 3 22 21H2Z" className="disclosure-symbol-accent" />
+          <path d="M12 9v5m0 3v.25" />
+        </>
+      ) : kind === "reset" ? (
+        <>
+          <path d="M4 10a8 8 0 1 1 .5 7M4 4v6h6" />
+        </>
+      ) : (
+        <>
+          <circle cx="12" cy="12" r="9" />
+          {kind === "important" ? (
+            <path d="M12 7v6m0 4v.25" />
+          ) : (
+            <path d="m8.5 8.5 7 7m0-7-7 7" />
+          )}
+        </>
+      )}
+    </svg>
+  );
+}
+
 export function DemoDisclosureProvider({ children }: { children: ReactNode }) {
   const [store] = useState(createStore);
   const state = useSyncExternalStore(
@@ -247,14 +294,40 @@ export function DemoDisclosureProvider({ children }: { children: ReactNode }) {
         }}
       >
         <div className="demo-disclosure-body">
-          <h2 ref={title} tabIndex={-1} id="demo-disclosure-title">
-            About this demo
-          </h2>
-          <p id="demo-disclosure-summary" className="sr-only">
-            Project purpose, fictional records, and temporary demo behavior.
-          </p>
-          <DisclosureParagraphs />
-          <nav aria-label="Read project notices">
+          <header className="demo-disclosure-header">
+            <DisclosureSymbol kind="sample" />
+            <h2 ref={title} tabIndex={-1} id="demo-disclosure-title">
+              About this demo
+            </h2>
+            <p id="demo-disclosure-summary">
+              Please review these project boundaries before exploring the demo.
+            </p>
+          </header>
+          <ul className="demo-disclosure-points">
+            {disclosurePoints.map((point, index) => (
+              <li key={point.heading} className="demo-disclosure-point">
+                <DisclosureSymbol kind={point.symbol} />
+                <div>
+                  <h3>{point.heading}</h3>
+                  <p>
+                    {index === 2
+                      ? disclosureParagraphs[index].replace(
+                          ", or institutional information",
+                          ", confidential, or institutional information",
+                        )
+                      : disclosureParagraphs[index]}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+          <h3
+            className="demo-disclosure-resources"
+            id="demo-disclosure-resources"
+          >
+            Learn more
+          </h3>
+          <nav aria-labelledby="demo-disclosure-resources">
             {legalLinks.map((link) => (
               <Link key={link.href} href={link.href} onNavigate={information}>
                 {link.title}

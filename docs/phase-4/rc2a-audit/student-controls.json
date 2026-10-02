@@ -1,0 +1,77 @@
+{
+  "startedAt": "2026-10-02T00:04:43.649Z",
+  "checks": [
+    {
+      "name": "Student login",
+      "pass": true
+    },
+    {
+      "name": "Next month changes displayed month",
+      "pass": true
+    },
+    {
+      "name": "Previous month restores displayed month",
+      "pass": true,
+      "detail": {
+        "initial": "February 2027",
+        "returned": "February 2027"
+      }
+    },
+    {
+      "name": "Month navigation selects first day per existing behavior",
+      "pass": true,
+      "detail": "Monday, February 1, no sample events"
+    },
+    {
+      "name": "Both sample document actions present",
+      "pass": true,
+      "detail": [
+        "View sample COR",
+        "View sample COE"
+      ]
+    },
+    {
+      "name": "View sample COR opens",
+      "pass": true
+    },
+    {
+      "name": "View sample COR sample disclosure",
+      "pass": true
+    },
+    {
+      "name": "View sample COR closes",
+      "pass": true
+    },
+    {
+      "name": "View sample COR returns focus",
+      "pass": true
+    },
+    {
+      "name": "View sample COE opens",
+      "pass": true
+    },
+    {
+      "name": "View sample COE sample disclosure",
+      "pass": true
+    },
+    {
+      "name": "View sample COE closes",
+      "pass": true
+    },
+    {
+      "name": "View sample COE returns focus",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "captures": [
+    "student-cor-preview-375.png",
+    "student-coe-preview-375.png"
+  ],
+  "finishedAt": "2026-10-02T00:04:46.256Z",
+  "summary": {
+    "checks": 13,
+    "failed": 0,
+    "pageErrors": 0
+  }
+}

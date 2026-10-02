@@ -1,0 +1,2298 @@
+{
+  "date": "1 October 2026 Asia/Taipei",
+  "startedAt": "2026-10-01T15:52:19.719Z",
+  "commit": "0ab4701f769807a50f4ccf5f6e03c39d97272fb1",
+  "dirtyStatus": " M docs/phase-4/P4-FD8-DISCLOSURE-LEGAL-IMPLEMENTATION.md\n M src/app/globals.css\n M src/features/disclosure/demo-disclosure-provider.tsx\n?? docs/phase-4/fd8-after/correction-1440-doubled-resources.png\n?? docs/phase-4/fd8-after/correction-1440-doubled-top.png\n?? docs/phase-4/fd8-after/correction-1440x900-resources.png\n?? docs/phase-4/fd8-after/correction-1440x900-top.png\n?? docs/phase-4/fd8-after/correction-1920x1080-resources.png\n?? docs/phase-4/fd8-after/correction-1920x1080-top.png\n?? docs/phase-4/fd8-after/correction-320x812-resources.png\n?? docs/phase-4/fd8-after/correction-320x812-top.png\n?? docs/phase-4/fd8-after/correction-375-doubled-resources.png\n?? docs/phase-4/fd8-after/correction-375-doubled-top.png\n?? docs/phase-4/fd8-after/correction-375x812-resources.png\n?? docs/phase-4/fd8-after/correction-375x812-top.png\n?? docs/phase-4/fd8-after/correction-768x900-resources.png\n?? docs/phase-4/fd8-after/correction-768x900-top.png\n?? docs/phase-4/fd8-after/correction-812x375-resources.png\n?? docs/phase-4/fd8-after/correction-812x375-top.png\n?? docs/phase-4/fd8-after/correction-manifest.json\n?? docs/phase-4/fd8-after/verify-correction.cjs\n?? docs/phase-4/rc2a-audit/\n",
+  "browser": "Installed Microsoft Edge Chromium, preserved current preview on port 3000",
+  "checks": [
+    {
+      "name": "entry 320x812 dialog fits/actions reachable",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 320,
+          "height": 812
+        },
+        "rect": {
+          "x": 19,
+          "y": 16,
+          "right": 301,
+          "bottom": 796
+        },
+        "actionBottom": 795,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 320x812 one dialog/four pre-acceptance legal links",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 320,
+          "height": 812
+        },
+        "rect": {
+          "x": 19,
+          "y": 16,
+          "right": 301,
+          "bottom": 796
+        },
+        "actionBottom": 795,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 320x812 named dialog/title initially focused",
+      "pass": true,
+      "detail": "demo-disclosure-title"
+    },
+    {
+      "name": "entry 320x812 reverse focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 320x812 forward focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ack preserves query 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one exact storage item 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer 320 page containment",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "document": 320,
+        "headings": 1
+      }
+    },
+    {
+      "name": "disclaimer 320 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "disclaimer no automatic prompt 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer current notice link 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms 320 page containment",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "document": 320,
+        "headings": 1
+      }
+    },
+    {
+      "name": "terms 320 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "terms no automatic prompt 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms current notice link 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy 320 page containment",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "document": 320,
+        "headings": 1
+      }
+    },
+    {
+      "name": "privacy 320 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "privacy no automatic prompt 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy current notice link 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use 320 page containment",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "document": 320,
+        "headings": 1
+      }
+    },
+    {
+      "name": "acceptable-use 320 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "acceptable-use no automatic prompt 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use current notice link 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 375x812 dialog fits/actions reachable",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "rect": {
+          "x": 19,
+          "y": 16,
+          "right": 356,
+          "bottom": 796
+        },
+        "actionBottom": 795,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 375x812 one dialog/four pre-acceptance legal links",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "rect": {
+          "x": 19,
+          "y": 16,
+          "right": 356,
+          "bottom": 796
+        },
+        "actionBottom": 795,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 375x812 named dialog/title initially focused",
+      "pass": true,
+      "detail": "demo-disclosure-title"
+    },
+    {
+      "name": "entry 375x812 reverse focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 375x812 forward focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ack preserves query 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one exact storage item 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer 375 page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "disclaimer 375 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "disclaimer no automatic prompt 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer current notice link 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms 375 page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "terms 375 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "terms no automatic prompt 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms current notice link 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy 375 page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "privacy 375 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "privacy no automatic prompt 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy current notice link 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use 375 page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "acceptable-use 375 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "acceptable-use no automatic prompt 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use current notice link 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 768x900 dialog fits/actions reachable",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 768,
+          "height": 900
+        },
+        "rect": {
+          "x": 112,
+          "y": 16,
+          "right": 656,
+          "bottom": 884
+        },
+        "actionBottom": 883,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 768x900 one dialog/four pre-acceptance legal links",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 768,
+          "height": 900
+        },
+        "rect": {
+          "x": 112,
+          "y": 16,
+          "right": 656,
+          "bottom": 884
+        },
+        "actionBottom": 883,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 768x900 named dialog/title initially focused",
+      "pass": true,
+      "detail": "demo-disclosure-title"
+    },
+    {
+      "name": "entry 768x900 reverse focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 768x900 forward focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ack preserves query 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one exact storage item 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer 768 page containment",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "document": 768,
+        "headings": 1
+      }
+    },
+    {
+      "name": "disclaimer 768 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "disclaimer no automatic prompt 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer current notice link 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms 768 page containment",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "document": 768,
+        "headings": 1
+      }
+    },
+    {
+      "name": "terms 768 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "terms no automatic prompt 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms current notice link 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy 768 page containment",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "document": 768,
+        "headings": 1
+      }
+    },
+    {
+      "name": "privacy 768 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "privacy no automatic prompt 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy current notice link 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use 768 page containment",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "document": 768,
+        "headings": 1
+      }
+    },
+    {
+      "name": "acceptable-use 768 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "acceptable-use no automatic prompt 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use current notice link 768",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 1440x900 dialog fits/actions reachable",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "rect": {
+          "x": 448,
+          "y": 16,
+          "right": 992,
+          "bottom": 884
+        },
+        "actionBottom": 883,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 1440x900 one dialog/four pre-acceptance legal links",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "rect": {
+          "x": 448,
+          "y": 16,
+          "right": 992,
+          "bottom": 884
+        },
+        "actionBottom": 883,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 1440x900 named dialog/title initially focused",
+      "pass": true,
+      "detail": "demo-disclosure-title"
+    },
+    {
+      "name": "entry 1440x900 reverse focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 1440x900 forward focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ack preserves query 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one exact storage item 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer 1440 page containment",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "document": 1440,
+        "headings": 1
+      }
+    },
+    {
+      "name": "disclaimer 1440 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "disclaimer no automatic prompt 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer current notice link 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms 1440 page containment",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "document": 1440,
+        "headings": 1
+      }
+    },
+    {
+      "name": "terms 1440 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "terms no automatic prompt 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms current notice link 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy 1440 page containment",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "document": 1440,
+        "headings": 1
+      }
+    },
+    {
+      "name": "privacy 1440 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "privacy no automatic prompt 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy current notice link 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use 1440 page containment",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "document": 1440,
+        "headings": 1
+      }
+    },
+    {
+      "name": "acceptable-use 1440 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "acceptable-use no automatic prompt 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use current notice link 1440",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 1920x1080 dialog fits/actions reachable",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "rect": {
+          "x": 688,
+          "y": 72.5,
+          "right": 1232,
+          "bottom": 1007.5
+        },
+        "actionBottom": 1006.5,
+        "scrollable": false,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 1920x1080 one dialog/four pre-acceptance legal links",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 1920,
+          "height": 1080
+        },
+        "rect": {
+          "x": 688,
+          "y": 72.5,
+          "right": 1232,
+          "bottom": 1007.5
+        },
+        "actionBottom": 1006.5,
+        "scrollable": false,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 1920x1080 named dialog/title initially focused",
+      "pass": true,
+      "detail": "demo-disclosure-title"
+    },
+    {
+      "name": "entry 1920x1080 reverse focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 1920x1080 forward focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ack preserves query 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one exact storage item 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer 1920 page containment",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "document": 1920,
+        "headings": 1
+      }
+    },
+    {
+      "name": "disclaimer 1920 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "disclaimer no automatic prompt 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer current notice link 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms 1920 page containment",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "document": 1920,
+        "headings": 1
+      }
+    },
+    {
+      "name": "terms 1920 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "terms no automatic prompt 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms current notice link 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy 1920 page containment",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "document": 1920,
+        "headings": 1
+      }
+    },
+    {
+      "name": "privacy 1920 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "privacy no automatic prompt 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy current notice link 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use 1920 page containment",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "document": 1920,
+        "headings": 1
+      }
+    },
+    {
+      "name": "acceptable-use 1920 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "acceptable-use no automatic prompt 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use current notice link 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 812x375 dialog fits/actions reachable",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 812,
+          "height": 375
+        },
+        "rect": {
+          "x": 134,
+          "y": 16,
+          "right": 678,
+          "bottom": 359
+        },
+        "actionBottom": 358,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 812x375 one dialog/four pre-acceptance legal links",
+      "pass": true,
+      "detail": {
+        "viewport": {
+          "width": 812,
+          "height": 375
+        },
+        "rect": {
+          "x": 134,
+          "y": 16,
+          "right": 678,
+          "bottom": 359
+        },
+        "actionBottom": 358,
+        "scrollable": true,
+        "links": 4,
+        "dialogs": 1,
+        "focus": "demo-disclosure-title",
+        "animation": "0.18s"
+      }
+    },
+    {
+      "name": "entry 812x375 named dialog/title initially focused",
+      "pass": true,
+      "detail": "demo-disclosure-title"
+    },
+    {
+      "name": "entry 812x375 reverse focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry 812x375 forward focus contained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ack preserves query 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one exact storage item 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer 812 page containment",
+      "pass": true,
+      "detail": {
+        "width": 812,
+        "document": 812,
+        "headings": 1
+      }
+    },
+    {
+      "name": "disclaimer 812 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "disclaimer no automatic prompt 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "disclaimer current notice link 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms 812 page containment",
+      "pass": true,
+      "detail": {
+        "width": 812,
+        "document": 812,
+        "headings": 1
+      }
+    },
+    {
+      "name": "terms 812 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "terms no automatic prompt 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "terms current notice link 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy 812 page containment",
+      "pass": true,
+      "detail": {
+        "width": 812,
+        "document": 812,
+        "headings": 1
+      }
+    },
+    {
+      "name": "privacy 812 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "privacy no automatic prompt 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "privacy current notice link 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use 812 page containment",
+      "pass": true,
+      "detail": {
+        "width": 812,
+        "document": 812,
+        "headings": 1
+      }
+    },
+    {
+      "name": "acceptable-use 812 one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "acceptable-use no automatic prompt 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "acceptable-use current notice link 812",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "legal link does not acknowledge",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "legal navigation no dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "safe return keeps origin query and prompts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "entry Escape exits without ack",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reload retains acknowledgement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manual reopen offers Close only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "manual Escape returns focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ack/reopen no mutation requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "new tab reads version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "old/malformed/cleared version prompts fd7-old",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "old/malformed/cleared version prompts malformed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "old/malformed/cleared version prompts null",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced-motion immediate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mid-dialog preference settles",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "200 percent body text really doubles",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "200 percent computed-text simulation page containment",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "document": 1440,
+        "headings": 1
+      }
+    },
+    {
+      "name": "200 percent computed-text simulation one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "200 percent dialog fits and internally scrolls",
+      "pass": true,
+      "detail": {
+        "rect": {
+          "x": 448,
+          "y": 16,
+          "width": 544,
+          "height": 868,
+          "top": 16,
+          "right": 992,
+          "bottom": 884,
+          "left": 448
+        },
+        "width": 1440,
+        "height": 900,
+        "scrollable": true
+      }
+    },
+    {
+      "name": "storage denied announces fallback",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "storage denied navigation stays usable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "storage denied reload prompts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "noJS same-copy static fallback",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "noJS legal exemption disclaimer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "noJS legal exemption terms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "noJS legal exemption privacy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "noJS legal exemption acceptable-use",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "applicant real permitted login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "applicant authenticated direct entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "applicant clean dashboard page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "applicant clean dashboard one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "applicant no generic Demo workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "applicant legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "applicant account menu closed for dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "applicant focus restored to Account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "applicant public notice roundtrip session retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "applicant Account temporary-state helper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "applicant sign-out keeps version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "applicant sign-out no repeat disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student real permitted login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "student authenticated direct entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student clean dashboard page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "student clean dashboard one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "student no generic Demo workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student account menu closed for dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student focus restored to Account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student public notice roundtrip session retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student Account temporary-state helper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "signed-in denied direct entry does not grant access",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "denied state legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student sign-out keeps version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student sign-out no repeat disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty real permitted login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty authenticated direct entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty clean dashboard page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "faculty clean dashboard one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "faculty no generic Demo workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty account menu closed for dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty focus restored to Account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty public notice roundtrip session retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty Account temporary-state helper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty sign-out keeps version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty sign-out no repeat disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records real permitted login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "records authenticated direct entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records clean dashboard page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "records clean dashboard one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "records no generic Demo workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records account menu closed for dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records focus restored to Account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records public notice roundtrip session retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records Account temporary-state helper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records sign-out keeps version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records sign-out no repeat disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operations real permitted login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "operations authenticated direct entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operations clean dashboard page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "operations clean dashboard one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "operations no generic Demo workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operations legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operations account menu closed for dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operations focus restored to Account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operations public notice roundtrip session retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operations Account temporary-state helper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operations sign-out keeps version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operations sign-out no repeat disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology real permitted login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "technology authenticated direct entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology clean dashboard page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "technology clean dashboard one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "technology no generic Demo workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology account menu closed for dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology focus restored to Account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology public notice roundtrip session retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology Account temporary-state helper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology sign-out keeps version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology sign-out no repeat disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator real permitted login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "coordinator authenticated direct entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator clean dashboard page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "coordinator clean dashboard one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "coordinator no generic Demo workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator account menu closed for dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator focus restored to Account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator public notice roundtrip session retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator Account temporary-state helper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator sign-out keeps version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator sign-out no repeat disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin real permitted login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "school-admin authenticated direct entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin clean dashboard page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "school-admin clean dashboard one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "school-admin no generic Demo workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin account menu closed for dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin focus restored to Account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin public notice roundtrip session retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin Account temporary-state helper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin sign-out keeps version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin sign-out no repeat disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it real permitted login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty-it authenticated direct entry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it clean dashboard page containment",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "document": 375,
+        "headings": 1
+      }
+    },
+    {
+      "name": "faculty-it clean dashboard one main heading",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "faculty-it no generic Demo workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it account menu closed for dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it focus restored to Account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it public notice roundtrip session retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it Account temporary-state helper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it sign-out keeps version",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it sign-out no repeat disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "404 entry disclosure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "404 legal footer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "anonymous guard still redirects",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "captures": [
+    {
+      "filename": "entry-initial-entry-320x812.png",
+      "capturedAt": "2026-10-01T15:52:21.290Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Initial title focus and top of disclosure; internal body scroll exposes remaining paragraphs/links",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-320x812.png",
+      "capturedAt": "2026-10-01T15:52:21.346Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Fresh storage, Login deep link, title and four links, no acknowledgement",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "disclaimer-320.png",
+      "capturedAt": "2026-10-01T15:52:22.239Z",
+      "group": "public",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "terms-320.png",
+      "capturedAt": "2026-10-01T15:52:23.460Z",
+      "group": "public",
+      "route": "/terms",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "privacy-320.png",
+      "capturedAt": "2026-10-01T15:52:24.208Z",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "acceptable-use-320.png",
+      "capturedAt": "2026-10-01T15:52:25.306Z",
+      "group": "public",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-initial-entry-375x812.png",
+      "capturedAt": "2026-10-01T15:52:26.480Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Initial title focus and top of disclosure; internal body scroll exposes remaining paragraphs/links",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-375x812.png",
+      "capturedAt": "2026-10-01T15:52:26.557Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Fresh storage, Login deep link, title and four links, no acknowledgement",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "disclaimer-375.png",
+      "capturedAt": "2026-10-01T15:52:27.394Z",
+      "group": "public",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "terms-375.png",
+      "capturedAt": "2026-10-01T15:52:28.223Z",
+      "group": "public",
+      "route": "/terms",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "privacy-375.png",
+      "capturedAt": "2026-10-01T15:52:28.958Z",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "acceptable-use-375.png",
+      "capturedAt": "2026-10-01T15:52:29.793Z",
+      "group": "public",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-initial-entry-768x900.png",
+      "capturedAt": "2026-10-01T15:52:30.789Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Initial title focus and top of disclosure; internal body scroll exposes remaining paragraphs/links",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-768x900.png",
+      "capturedAt": "2026-10-01T15:52:30.854Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Fresh storage, Login deep link, title and four links, no acknowledgement",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "disclaimer-768.png",
+      "capturedAt": "2026-10-01T15:52:31.655Z",
+      "group": "public",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "terms-768.png",
+      "capturedAt": "2026-10-01T15:52:32.504Z",
+      "group": "public",
+      "route": "/terms",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "privacy-768.png",
+      "capturedAt": "2026-10-01T15:52:33.263Z",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "acceptable-use-768.png",
+      "capturedAt": "2026-10-01T15:52:34.099Z",
+      "group": "public",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-initial-entry-1440x900.png",
+      "capturedAt": "2026-10-01T15:52:35.172Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Initial title focus and top of disclosure; internal body scroll exposes remaining paragraphs/links",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-1440x900.png",
+      "capturedAt": "2026-10-01T15:52:35.264Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Fresh storage, Login deep link, title and four links, no acknowledgement",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "disclaimer-1440.png",
+      "capturedAt": "2026-10-01T15:52:36.087Z",
+      "group": "public",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "terms-1440.png",
+      "capturedAt": "2026-10-01T15:52:36.953Z",
+      "group": "public",
+      "route": "/terms",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "privacy-1440.png",
+      "capturedAt": "2026-10-01T15:52:37.856Z",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "acceptable-use-1440.png",
+      "capturedAt": "2026-10-01T15:52:38.578Z",
+      "group": "public",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-initial-entry-1920x1080.png",
+      "capturedAt": "2026-10-01T15:52:39.589Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Initial title focus and top of disclosure; internal body scroll exposes remaining paragraphs/links",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-1920x1080.png",
+      "capturedAt": "2026-10-01T15:52:39.685Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Fresh storage, Login deep link, title and four links, no acknowledgement",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "disclaimer-1920.png",
+      "capturedAt": "2026-10-01T15:52:40.550Z",
+      "group": "public",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "terms-1920.png",
+      "capturedAt": "2026-10-01T15:52:41.347Z",
+      "group": "public",
+      "route": "/terms",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "privacy-1920.png",
+      "capturedAt": "2026-10-01T15:52:42.302Z",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "acceptable-use-1920.png",
+      "capturedAt": "2026-10-01T15:52:43.015Z",
+      "group": "public",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Public notice, reading hierarchy and footer wrapping",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-initial-entry-812x375.png",
+      "capturedAt": "2026-10-01T15:52:44.054Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 812,
+        "height": 375
+      },
+      "state": "Initial title focus and top of disclosure; internal body scroll exposes remaining paragraphs/links",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "entry-812x375.png",
+      "capturedAt": "2026-10-01T15:52:44.137Z",
+      "group": "public",
+      "route": "/login?portal=STUDENT",
+      "viewport": {
+        "width": 812,
+        "height": 375
+      },
+      "state": "Fresh storage, Login deep link, title and four links, no acknowledgement",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "privacy-text-enlargement.png",
+      "capturedAt": "2026-10-01T15:53:07.005Z",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Every computed font size/line height doubled, preserving hierarchy; not physical browser/OS zoom",
+      "reducedMotion": true,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "disclosure-text-enlargement.png",
+      "capturedAt": "2026-10-01T15:53:11.310Z",
+      "group": "public",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Manual disclosure with every computed text size doubled",
+      "reducedMotion": true,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "nojs-home.png",
+      "capturedAt": "2026-10-01T15:53:14.317Z",
+      "group": "public",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "No JavaScript static disclosure and working information links",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "applicant-clean-dashboard.png",
+      "capturedAt": "2026-10-01T15:53:18.415Z",
+      "group": "applicant",
+      "route": "/applicant",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Acknowledged dashboard; global strip removed and legal footer accessible",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "student-clean-dashboard.png",
+      "capturedAt": "2026-10-01T15:53:21.213Z",
+      "group": "student",
+      "route": "/student",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Acknowledged dashboard; global strip removed and legal footer accessible",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "denied-student.png",
+      "capturedAt": "2026-10-01T15:53:23.312Z",
+      "group": "student",
+      "route": "/technology",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Actual server-authorized denied area with shared legal footer",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "faculty-clean-dashboard.png",
+      "capturedAt": "2026-10-01T15:53:25.975Z",
+      "group": "faculty",
+      "route": "/academic",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Acknowledged dashboard; global strip removed and legal footer accessible",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "records-clean-dashboard.png",
+      "capturedAt": "2026-10-01T15:53:28.484Z",
+      "group": "records",
+      "route": "/records",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Acknowledged dashboard; global strip removed and legal footer accessible",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "operations-clean-dashboard.png",
+      "capturedAt": "2026-10-01T15:53:30.922Z",
+      "group": "operations",
+      "route": "/operations",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Acknowledged dashboard; global strip removed and legal footer accessible",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    },
+    {
+      "filename": "technology-clean-dashboard.png",
+      "capturedAt": "2026-10-01T15:53:33.371Z",
+      "group": "technology",
+      "route": "/technology",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Acknowledged dashboard; global strip removed and legal footer accessible",
+      "reducedMotion": false,
+      "before": "FD6 fd6-after/manifest.json for shared surfaces; new disclosure/legal states have no previous rendered counterpart"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-01T15:53:44.085Z"
+}

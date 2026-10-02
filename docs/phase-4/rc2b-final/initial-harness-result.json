@@ -1,0 +1,610 @@
+{
+  "startedAt": "2026-10-02T00:39:15.669Z",
+  "preview": "Fresh Next.js production build / isolated localhost:3109 / process-only auth origin",
+  "browser": "Installed Microsoft Edge Chromium",
+  "checks": [
+    {
+      "name": "first entry has one modal",
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts has exactly nine rows",
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts only one modal",
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts title focus",
+      "pass": true
+    },
+    {
+      "name": "No password UI/placeholder",
+      "pass": true
+    },
+    {
+      "name": "Applicant public row matches",
+      "pass": true
+    },
+    {
+      "name": "Applicant native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Student public row matches",
+      "pass": true
+    },
+    {
+      "name": "Student native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Faculty public row matches",
+      "pass": true
+    },
+    {
+      "name": "Faculty native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Program Coordinator public row matches",
+      "pass": true
+    },
+    {
+      "name": "Program Coordinator native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Admissions & Records public row matches",
+      "pass": true
+    },
+    {
+      "name": "Admissions & Records native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Maintenance Staff public row matches",
+      "pass": true
+    },
+    {
+      "name": "Maintenance Staff native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "School Admin public row matches",
+      "pass": true
+    },
+    {
+      "name": "School Admin native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "IT Admin public row matches",
+      "pass": true
+    },
+    {
+      "name": "IT Admin native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Faculty + Developer public row matches",
+      "pass": true
+    },
+    {
+      "name": "Faculty + Developer native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Escape returns trigger focus",
+      "pass": true
+    },
+    {
+      "name": "Student prefill email only",
+      "pass": true
+    },
+    {
+      "name": "Student prefill email focus",
+      "pass": true
+    },
+    {
+      "name": "IT Admin prefill email only",
+      "pass": true
+    },
+    {
+      "name": "IT Admin prefill email focus",
+      "pass": true
+    },
+    {
+      "name": "Faculty + Developer prefill email only",
+      "pass": true
+    },
+    {
+      "name": "Faculty + Developer prefill email focus",
+      "pass": true
+    },
+    {
+      "name": "Account selection never signs in",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Panel reverse focus boundary",
+      "pass": true
+    },
+    {
+      "name": "Panel forward focus boundary",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 0",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 1",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 2",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 3",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 4",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 5",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 6",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 7",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 8",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 9",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 10",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 11",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 12",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 13",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 14",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 15",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 16",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 17",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 18",
+      "pass": true
+    },
+    {
+      "name": "Panel uses FD6 180ms",
+      "pass": true,
+      "detail": "0.18s"
+    },
+    {
+      "name": "Panel reduced motion mid-open",
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 320 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 301,
+            "top": 24,
+            "bottom": 804,
+            "height": 812
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 356,
+            "top": 16,
+            "bottom": 796,
+            "height": 812
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts 768 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 48,
+            "right": 720,
+            "top": 16,
+            "bottom": 884,
+            "height": 900
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 384,
+            "right": 1056,
+            "top": 16,
+            "bottom": 884,
+            "height": 900
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts 1920 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "bodyWidth": 1920,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 624,
+            "right": 1296,
+            "top": 16,
+            "bottom": 1064,
+            "height": 1080
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts doubled 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 35,
+            "right": 340,
+            "top": 16,
+            "bottom": 796,
+            "height": 812
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts doubled 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 384,
+            "right": 1056,
+            "top": 19.154052734375,
+            "bottom": 887.154052734375,
+            "height": 900
+          }
+        ]
+      }
+    },
+    {
+      "name": "Clipboard failure offers selectable fallback",
+      "pass": true
+    }
+  ],
+  "responsive": [
+    {
+      "name": "Demo Accounts 320",
+      "route": "/login",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "width": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 19,
+          "right": 301,
+          "top": 24,
+          "bottom": 804,
+          "height": 812
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 375",
+      "route": "/login",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 19,
+          "right": 356,
+          "top": 16,
+          "bottom": 796,
+          "height": 812
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 768",
+      "route": "/login",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 48,
+          "right": 720,
+          "top": 16,
+          "bottom": 884,
+          "height": 900
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 1440",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 384,
+          "right": 1056,
+          "top": 16,
+          "bottom": 884,
+          "height": 900
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 1920",
+      "route": "/login",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 624,
+          "right": 1296,
+          "top": 16,
+          "bottom": 1064,
+          "height": 1080
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts doubled 375",
+      "route": "/login",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 35,
+          "right": 340,
+          "top": 16,
+          "bottom": 796,
+          "height": 812
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts doubled 1440",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 384,
+          "right": 1056,
+          "top": 19.154052734375,
+          "bottom": 887.154052734375,
+          "height": 900
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "file": "demo-accounts-320.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Nine fictional entries; no password section",
+      "capturedAt": "2026-10-02T00:39:18.960Z"
+    },
+    {
+      "file": "demo-accounts-375.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Nine fictional entries; no password section",
+      "capturedAt": "2026-10-02T00:39:19.015Z"
+    },
+    {
+      "file": "demo-accounts-768.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Nine fictional entries; no password section",
+      "capturedAt": "2026-10-02T00:39:19.095Z"
+    },
+    {
+      "file": "demo-accounts-1440.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Nine fictional entries; no password section",
+      "capturedAt": "2026-10-02T00:39:19.187Z"
+    },
+    {
+      "file": "demo-accounts-1920.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Nine fictional entries; no password section",
+      "capturedAt": "2026-10-02T00:39:19.299Z"
+    },
+    {
+      "file": "demo-accounts-doubled-375.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Doubled text simulation",
+      "capturedAt": "2026-10-02T00:39:19.423Z"
+    },
+    {
+      "file": "demo-accounts-doubled-1440.png",
+      "group": "public",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Doubled text simulation",
+      "capturedAt": "2026-10-02T00:39:20.248Z"
+    },
+    {
+      "file": "clipboard-failure-1440.png",
+      "group": "public",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Copy denied: truthful selectable-email fallback",
+      "capturedAt": "2026-10-02T00:39:21.351Z"
+    }
+  ],
+  "pageErrors": [],
+  "fatal": "locator.click: Error: strict mode violation: locator('.demo-disclosure-dialog[open] a[href=\"/disclaimer\"]') resolved to 2 elements:\n    1) <a href=\"/disclaimer\">Project Disclaimer</a> aka getByRole('link', { name: 'Project Disclaimer' })\n    2) <a href=\"/disclaimer\">Leave demo</a> aka getByRole('link', { name: 'Leave demo' })\n\nCall log:\n\u001b[2m  - waiting for locator('.demo-disclosure-dialog[open] a[href=\"/disclaimer\"]')\u001b[22m\n"
+}

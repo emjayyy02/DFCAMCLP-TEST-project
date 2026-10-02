@@ -1,0 +1,309 @@
+{
+  "startedAt": "2026-10-01T15:58:11.076Z",
+  "browser": "Installed Edge Chromium / current preview",
+  "checks": [
+    {
+      "name": "legal heading focus disclaimer",
+      "pass": false,
+      "detail": {
+        "tag": "BODY",
+        "id": "",
+        "h1Tabindex": null
+      }
+    },
+    {
+      "name": "legal next Tab destination disclaimer",
+      "pass": false,
+      "detail": {
+        "tag": "A",
+        "text": "Skip to content"
+      }
+    },
+    {
+      "name": "legal heading focus terms",
+      "pass": false,
+      "detail": {
+        "tag": "BODY",
+        "id": "",
+        "h1Tabindex": null
+      }
+    },
+    {
+      "name": "legal next Tab destination terms",
+      "pass": false,
+      "detail": {
+        "tag": "A",
+        "text": "Skip to content"
+      }
+    },
+    {
+      "name": "legal heading focus privacy",
+      "pass": false,
+      "detail": {
+        "tag": "BODY",
+        "id": "",
+        "h1Tabindex": null
+      }
+    },
+    {
+      "name": "legal next Tab destination privacy",
+      "pass": false,
+      "detail": {
+        "tag": "A",
+        "text": "Skip to content"
+      }
+    },
+    {
+      "name": "legal heading focus acceptable-use",
+      "pass": false,
+      "detail": {
+        "tag": "BODY",
+        "id": "",
+        "h1Tabindex": null
+      }
+    },
+    {
+      "name": "legal next Tab destination acceptable-use",
+      "pass": false,
+      "detail": {
+        "tag": "A",
+        "text": "Skip to content"
+      }
+    },
+    {
+      "name": "invalid credentials retain values",
+      "pass": true,
+      "detail": "Portal sign in"
+    },
+    {
+      "name": "technology target login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "technology directory warning is not repeated",
+      "pass": false,
+      "detail": {
+        "text": "Read-only account directory\n\nRead-only account directory"
+      }
+    },
+    {
+      "name": "student target login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "current FD6 drawer 220ms",
+      "pass": true,
+      "detail": {
+        "duration": "0.22s",
+        "name": "mobile-navigation-title"
+      }
+    },
+    {
+      "name": "current Account View profile destination",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sample request dialog closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sample request adds cancel control",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty target login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "attendance review unmarked warning",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "attendance save local/read-only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "attendance reset on reload",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grades lock after demo confirm",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "grades reset on reload",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "failed sign-out does not report apparent completion",
+      "pass": true,
+      "detail": {
+        "failedLocation": "/account",
+        "stillSignedIn": true,
+        "alerts": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "normal sign-out revokes protected session",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "captures": [
+    {
+      "file": "legal-focus-disclaimer-1440.png",
+      "group": "public",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "After disclosure link and next Tab; reproduces destination focus",
+      "capturedAt": "2026-10-01T15:58:12.885Z"
+    },
+    {
+      "file": "legal-focus-terms-1440.png",
+      "group": "public",
+      "route": "/terms",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "After disclosure link and next Tab; reproduces destination focus",
+      "capturedAt": "2026-10-01T15:58:13.813Z"
+    },
+    {
+      "file": "legal-focus-privacy-1440.png",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "After disclosure link and next Tab; reproduces destination focus",
+      "capturedAt": "2026-10-01T15:58:14.649Z"
+    },
+    {
+      "file": "legal-focus-acceptable-use-1440.png",
+      "group": "public",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "After disclosure link and next Tab; reproduces destination focus",
+      "capturedAt": "2026-10-01T15:58:15.419Z"
+    },
+    {
+      "file": "invalid-credentials-375.png",
+      "group": "public",
+      "route": "/login?portal=APPLICANT",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Fictional invalid credentials",
+      "capturedAt": "2026-10-01T15:58:15.954Z"
+    },
+    {
+      "file": "technology-notice-duplicate-1440.png",
+      "group": "technology",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Read-only contextual notice; exact visible wording",
+      "capturedAt": "2026-10-01T15:58:17.524Z"
+    },
+    {
+      "file": "student-request-review-375.png",
+      "group": "student",
+      "route": "/student/requests",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Sample request review and no-delivery warning",
+      "capturedAt": "2026-10-01T15:58:20.041Z"
+    },
+    {
+      "file": "attendance-review-1440.png",
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Unmarked attendance review before a local-only save",
+      "capturedAt": "2026-10-01T15:58:21.316Z"
+    },
+    {
+      "file": "grades-review-1440.png",
+      "group": "faculty",
+      "route": "/academic/grades",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Required sample grades filled, review before local lock",
+      "capturedAt": "2026-10-01T15:58:23.045Z"
+    },
+    {
+      "file": "signout-failed-return-375.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Network-aborted sign-out; resulting location and feedback",
+      "capturedAt": "2026-10-01T15:58:25.427Z"
+    },
+    {
+      "file": "signout-failed-still-authenticated-375.png",
+      "group": "student",
+      "route": "/student",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Protected route after failed sign-out",
+      "capturedAt": "2026-10-01T15:58:26.342Z"
+    }
+  ],
+  "errors": [
+    {
+      "group": "student",
+      "message": "Failed to fetch"
+    }
+  ],
+  "requestButtons": [
+    "",
+    "New request",
+    "Cancel demo request",
+    "About this demo",
+    ""
+  ],
+  "gradeInputCount": 6,
+  "finishedAt": "2026-10-01T15:58:28.097Z",
+  "summary": {
+    "checks": 24,
+    "failed": 9,
+    "captures": 11,
+    "pageErrors": 1
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "startedAt": "2026-10-01T15:56:22.366Z",
+  "browser": "Installed Edge Chromium / current preview",
+  "checks": [
+    {
+      "name": "legal heading focus disclaimer",
+      "pass": false,
+      "detail": {
+        "tag": "BODY",
+        "id": "",
+        "h1Tabindex": null
+      }
+    },
+    {
+      "name": "legal next Tab destination disclaimer",
+      "pass": false,
+      "detail": {
+        "tag": "A",
+        "text": "Skip to content"
+      }
+    },
+    {
+      "name": "legal heading focus terms",
+      "pass": false,
+      "detail": {
+        "tag": "BODY",
+        "id": "",
+        "h1Tabindex": null
+      }
+    },
+    {
+      "name": "legal next Tab destination terms",
+      "pass": false,
+      "detail": {
+        "tag": "A",
+        "text": "Skip to content"
+      }
+    },
+    {
+      "name": "legal heading focus privacy",
+      "pass": false,
+      "detail": {
+        "tag": "BODY",
+        "id": "",
+        "h1Tabindex": null
+      }
+    },
+    {
+      "name": "legal next Tab destination privacy",
+      "pass": false,
+      "detail": {
+        "tag": "A",
+        "text": "Skip to content"
+      }
+    },
+    {
+      "name": "legal heading focus acceptable-use",
+      "pass": false,
+      "detail": {
+        "tag": "BODY",
+        "id": "",
+        "h1Tabindex": null
+      }
+    },
+    {
+      "name": "legal next Tab destination acceptable-use",
+      "pass": false,
+      "detail": {
+        "tag": "A",
+        "text": "Skip to content"
+      }
+    },
+    {
+      "name": "invalid credentials retain values",
+      "pass": true,
+      "detail": "Portal sign in"
+    },
+    {
+      "name": "technology target login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "technology directory warning is not repeated",
+      "pass": false,
+      "detail": {
+        "text": "Read-only account directory\n\nRead-only account directory"
+      }
+    },
+    {
+      "name": "student target login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "current FD6 drawer 220ms",
+      "pass": true,
+      "detail": {
+        "duration": "0.22s",
+        "name": "mobile-navigation-title"
+      }
+    },
+    {
+      "name": "current Account View profile destination",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sample request dialog closes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sample request adds cancel control",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty target login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "attendance review unmarked warning",
+      "pass": false,
+      "detail": ""
+    },
+    {
+      "name": "attendance save local/read-only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "attendance reset on reload",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "captures": [
+    {
+      "file": "legal-focus-disclaimer-1440.png",
+      "group": "public",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "After disclosure link and next Tab; reproduces destination focus",
+      "capturedAt": "2026-10-01T15:56:24.206Z"
+    },
+    {
+      "file": "legal-focus-terms-1440.png",
+      "group": "public",
+      "route": "/terms",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "After disclosure link and next Tab; reproduces destination focus",
+      "capturedAt": "2026-10-01T15:56:25.008Z"
+    },
+    {
+      "file": "legal-focus-privacy-1440.png",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "After disclosure link and next Tab; reproduces destination focus",
+      "capturedAt": "2026-10-01T15:56:25.840Z"
+    },
+    {
+      "file": "legal-focus-acceptable-use-1440.png",
+      "group": "public",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "After disclosure link and next Tab; reproduces destination focus",
+      "capturedAt": "2026-10-01T15:56:26.655Z"
+    },
+    {
+      "file": "invalid-credentials-375.png",
+      "group": "public",
+      "route": "/login?portal=APPLICANT",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Fictional invalid credentials",
+      "capturedAt": "2026-10-01T15:56:27.223Z"
+    },
+    {
+      "file": "technology-notice-duplicate-1440.png",
+      "group": "technology",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Read-only contextual notice; exact visible wording",
+      "capturedAt": "2026-10-01T15:56:28.739Z"
+    },
+    {
+      "file": "student-request-review-375.png",
+      "group": "student",
+      "route": "/student/requests",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Sample request review and no-delivery warning",
+      "capturedAt": "2026-10-01T15:56:31.150Z"
+    },
+    {
+      "file": "attendance-review-1440.png",
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Unmarked attendance review before a local-only save",
+      "capturedAt": "2026-10-01T15:56:32.410Z"
+    }
+  ],
+  "errors": [
+    {
+      "fatal": "locator.fill: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.academic-grade-input').nth(6)\u001b[22m\n\u001b[2m    - locator resolved to <input value=\"1.75\" inputmode=\"decimal\" class=\"academic-grade-input\"/>\u001b[22m\n\u001b[2m    - fill(\"1.75\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+    }
+  ],
+  "requestButtons": [
+    "",
+    "New request",
+    "Cancel demo request",
+    "About this demo",
+    ""
+  ],
+  "gradeInputCount": 12
+}

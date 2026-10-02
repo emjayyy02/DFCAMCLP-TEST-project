@@ -1,0 +1,4955 @@
+{
+  "date": "2026-10-01 Asia/Taipei",
+  "startedAt": "2026-10-01T15:49:48.379Z",
+  "commit": "0ab4701f769807a50f4ccf5f6e03c39d97272fb1",
+  "dirty": "M docs/phase-4/P4-FD8-DISCLOSURE-LEGAL-IMPLEMENTATION.md\n M src/app/globals.css\n M src/features/disclosure/demo-disclosure-provider.tsx\n?? docs/phase-4/fd8-after/correction-1440-doubled-resources.png\n?? docs/phase-4/fd8-after/correction-1440-doubled-top.png\n?? docs/phase-4/fd8-after/correction-1440x900-resources.png\n?? docs/phase-4/fd8-after/correction-1440x900-top.png\n?? docs/phase-4/fd8-after/correction-1920x1080-resources.png\n?? docs/phase-4/fd8-after/correction-1920x1080-top.png\n?? docs/phase-4/fd8-after/correction-320x812-resources.png\n?? docs/phase-4/fd8-after/correction-320x812-top.png\n?? docs/phase-4/fd8-after/correction-375-doubled-resources.png\n?? docs/phase-4/fd8-after/correction-375-doubled-top.png\n?? docs/phase-4/fd8-after/correction-375x812-resources.png\n?? docs/phase-4/fd8-after/correction-375x812-top.png\n?? docs/phase-4/fd8-after/correction-768x900-resources.png\n?? docs/phase-4/fd8-after/correction-768x900-top.png\n?? docs/phase-4/fd8-after/correction-812x375-resources.png\n?? docs/phase-4/fd8-after/correction-812x375-top.png\n?? docs/phase-4/fd8-after/correction-manifest.json\n?? docs/phase-4/fd8-after/verify-correction.cjs\n?? docs/phase-4/rc2a-audit/",
+  "browser": "Microsoft Edge Chromium / Next.js production server",
+  "captures": [
+    {
+      "id": "F06-account-student",
+      "group": "student",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-student-1920.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-student",
+      "group": "student",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-student-375.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-records",
+      "group": "records",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-records-1920.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-records",
+      "group": "records",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-records-375.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-faculty-it",
+      "group": "faculty-it",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-faculty-it-1920.png",
+      "before": []
+    },
+    {
+      "id": "F06-account-faculty-it",
+      "group": "faculty-it",
+      "state": "Shared identity and memberships",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F06-account-faculty-it-375.png",
+      "before": []
+    },
+    {
+      "id": "F12-public-_",
+      "group": "public",
+      "state": "Default route",
+      "url": "/",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-public-_-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-public-_",
+      "group": "public",
+      "state": "Default route",
+      "url": "/",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-public-_-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-public-_admissions",
+      "group": "public",
+      "state": "Default route",
+      "url": "/admissions",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "The admissions journey",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-public-_admissions-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/public/G03-0004-admissions--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/public/G03-0004-admissions--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G03-0004-admissions--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G03-0004-admissions--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-public-_admissions",
+      "group": "public",
+      "state": "Default route",
+      "url": "/admissions",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "The admissions journey",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-public-_admissions-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/public/G03-0004-admissions--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/public/G03-0004-admissions--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G03-0004-admissions--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G03-0004-admissions--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-public-_about",
+      "group": "public",
+      "state": "Default route",
+      "url": "/about",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "About DFCAMCLP",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-public-_about-375.png",
+      "before": []
+    },
+    {
+      "id": "F12-public-_about",
+      "group": "public",
+      "state": "Default route",
+      "url": "/about",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "About DFCAMCLP",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-public-_about-1920.png",
+      "before": []
+    },
+    {
+      "id": "F12-applicant-_applicant",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-applicant-_applicant",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-applicant-_applicant_application",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_application-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-applicant-_applicant_application",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Application",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_application-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-applicant-_applicant_dcat",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_dcat-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F12-applicant-_applicant_dcat",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_dcat-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F12-applicant-_applicant_enrollment",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_enrollment-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F12-applicant-_applicant_enrollment",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_enrollment-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F12-applicant-_applicant_announcements",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/announcements",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Announcements",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_announcements-375.png",
+      "before": []
+    },
+    {
+      "id": "F12-applicant-_applicant_announcements",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/announcements",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Announcements",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_announcements-1920.png",
+      "before": []
+    },
+    {
+      "id": "F12-applicant-_applicant_profile",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/profile",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_profile-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X01-0032-applicant-profile--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X01-0032-applicant-profile--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X01-0032-applicant-profile--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X01-0032-applicant-profile--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-applicant-_applicant_profile",
+      "group": "applicant",
+      "state": "Default route",
+      "url": "/applicant/profile",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-applicant-_applicant_profile-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X01-0032-applicant-profile--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X01-0032-applicant-profile--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X01-0032-applicant-profile--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X01-0032-applicant-profile--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-student-_account",
+      "group": "student",
+      "state": "Default route",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-student-_account-375.png",
+      "before": []
+    },
+    {
+      "id": "F12-student-_account",
+      "group": "student",
+      "state": "Default route",
+      "url": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-student-_account-1920.png",
+      "before": []
+    },
+    {
+      "id": "F12-student-_student_profile",
+      "group": "student",
+      "state": "Default route",
+      "url": "/student/profile",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-student-_student_profile-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/student/G16-0170-student-profile--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/student/G16-0170-student-profile--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/student/G16-0170-student-profile--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/student/G16-0170-student-profile--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-student-_student_profile",
+      "group": "student",
+      "state": "Default route",
+      "url": "/student/profile",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-student-_student_profile-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/student/G16-0170-student-profile--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/student/G16-0170-student-profile--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/student/G16-0170-student-profile--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/student/G16-0170-student-profile--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-records-_records_applicants",
+      "group": "records",
+      "state": "Default route",
+      "url": "/records/applicants",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-records-_records_applicants-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-records-_records_applicants",
+      "group": "records",
+      "state": "Default route",
+      "url": "/records/applicants",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-records-_records_applicants-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-faculty-_academic_attendance",
+      "group": "faculty",
+      "state": "Default route",
+      "url": "/academic/attendance",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Attendance",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-faculty-_academic_attendance-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/faculty/G19-0425-attendance-review-and-save-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/faculty/G19-0425-attendance-review-and-save-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/faculty/G19-0425-attendance-review-and-save-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/faculty/G19-0425-attendance-review-and-save-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-faculty-_academic_attendance",
+      "group": "faculty",
+      "state": "Default route",
+      "url": "/academic/attendance",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Attendance",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-faculty-_academic_attendance-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/faculty/G19-0425-attendance-review-and-save-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/faculty/G19-0425-attendance-review-and-save-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/faculty/G19-0425-attendance-review-and-save-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/faculty/G19-0425-attendance-review-and-save-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-school-admin-_operations_employees",
+      "group": "school-admin",
+      "state": "Default route",
+      "url": "/operations/employees",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Employees",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-school-admin-_operations_employees-375.png",
+      "before": []
+    },
+    {
+      "id": "F12-school-admin-_operations_employees",
+      "group": "school-admin",
+      "state": "Default route",
+      "url": "/operations/employees",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Employees",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-school-admin-_operations_employees-1920.png",
+      "before": []
+    },
+    {
+      "id": "F12-technology-_technology_accounts",
+      "group": "technology",
+      "state": "Default route",
+      "url": "/technology/accounts",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Demo accounts",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-technology-_technology_accounts-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-technology-_technology_accounts",
+      "group": "technology",
+      "state": "Default route",
+      "url": "/technology/accounts",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Demo accounts",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-technology-_technology_accounts-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/technology/G29-0299-technology-accounts-view-details-for-quinn-testmultiporal--full-page.png"
+      ]
+    },
+    {
+      "id": "F01-dashboard-draft",
+      "group": "applicant",
+      "state": "draft",
+      "url": "/applicant",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-draft-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F01-dashboard-documents",
+      "group": "applicant",
+      "state": "documents",
+      "url": "/applicant",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-documents-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F01-dashboard-awaiting",
+      "group": "applicant",
+      "state": "awaiting",
+      "url": "/applicant",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-awaiting-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F01-dashboard-notQualified",
+      "group": "applicant",
+      "state": "notQualified",
+      "url": "/applicant",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-notQualified-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F01-dashboard-cor",
+      "group": "applicant",
+      "state": "cor",
+      "url": "/applicant",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-cor-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F02-04-application-draft-Applicationform",
+      "group": "applicant",
+      "state": "draft / Application form",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Application",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-application-draft-Applicationform-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F02-04-application-draft-Requirements",
+      "group": "applicant",
+      "state": "draft / Requirements",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Application",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-application-draft-Requirements-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F02-04-application-draft-Status",
+      "group": "applicant",
+      "state": "draft / Status",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Application",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-application-draft-Status-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F02-04-dcat-scheduled-Examschedule",
+      "group": "applicant",
+      "state": "scheduled / Exam schedule",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-dcat-scheduled-Examschedule-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-dcat-scheduled-DCATform",
+      "group": "applicant",
+      "state": "scheduled / DCAT form",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-dcat-scheduled-DCATform-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-dcat-scheduled-Results",
+      "group": "applicant",
+      "state": "scheduled / Results",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-dcat-scheduled-Results-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-dcat-notQualified-Results",
+      "group": "applicant",
+      "state": "notQualified / Results",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-dcat-notQualified-Results-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-draft-Progress",
+      "group": "applicant",
+      "state": "draft / Progress",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-draft-Progress-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-draft-Registrarschedule",
+      "group": "applicant",
+      "state": "draft / Registrar schedule",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-draft-Registrarschedule-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-draft-COECOR",
+      "group": "applicant",
+      "state": "draft / COE / COR",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-draft-COECOR-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-coe-Progress",
+      "group": "applicant",
+      "state": "coe / Progress",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-coe-Progress-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-coe-Registrarschedule",
+      "group": "applicant",
+      "state": "coe / Registrar schedule",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-coe-Registrarschedule-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-coe-COECOR",
+      "group": "applicant",
+      "state": "coe / COE / COR",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-coe-COECOR-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-cor-COECOR",
+      "group": "applicant",
+      "state": "cor / COE / COR",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-cor-COECOR-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F05-filtered-notices",
+      "group": "applicant",
+      "state": "DCAT filter",
+      "url": "/applicant/announcements",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Announcements",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      },
+      "after": "F05-filtered-notices-1920.png",
+      "before": []
+    },
+    {
+      "id": "F01-dashboard-draft",
+      "group": "applicant",
+      "state": "draft",
+      "url": "/applicant",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-draft-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F01-dashboard-documents",
+      "group": "applicant",
+      "state": "documents",
+      "url": "/applicant",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-documents-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F01-dashboard-awaiting",
+      "group": "applicant",
+      "state": "awaiting",
+      "url": "/applicant",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-awaiting-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F01-dashboard-notQualified",
+      "group": "applicant",
+      "state": "notQualified",
+      "url": "/applicant",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-notQualified-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F01-dashboard-cor",
+      "group": "applicant",
+      "state": "cor",
+      "url": "/applicant",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F01-dashboard-cor-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F02-04-application-draft-Applicationform",
+      "group": "applicant",
+      "state": "draft / Application form",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-application-draft-Applicationform-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F02-04-application-draft-Requirements",
+      "group": "applicant",
+      "state": "draft / Requirements",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-application-draft-Requirements-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F02-04-application-draft-Status",
+      "group": "applicant",
+      "state": "draft / Status",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-application-draft-Status-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F02-04-dcat-scheduled-Examschedule",
+      "group": "applicant",
+      "state": "scheduled / Exam schedule",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-dcat-scheduled-Examschedule-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-dcat-scheduled-DCATform",
+      "group": "applicant",
+      "state": "scheduled / DCAT form",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-dcat-scheduled-DCATform-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-dcat-scheduled-Results",
+      "group": "applicant",
+      "state": "scheduled / Results",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-dcat-scheduled-Results-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-dcat-notQualified-Results",
+      "group": "applicant",
+      "state": "notQualified / Results",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-dcat-notQualified-Results-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-draft-Progress",
+      "group": "applicant",
+      "state": "draft / Progress",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-draft-Progress-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-draft-Registrarschedule",
+      "group": "applicant",
+      "state": "draft / Registrar schedule",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-draft-Registrarschedule-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-draft-COECOR",
+      "group": "applicant",
+      "state": "draft / COE / COR",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-draft-COECOR-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-coe-Progress",
+      "group": "applicant",
+      "state": "coe / Progress",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-coe-Progress-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-coe-Registrarschedule",
+      "group": "applicant",
+      "state": "coe / Registrar schedule",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-coe-Registrarschedule-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-coe-COECOR",
+      "group": "applicant",
+      "state": "coe / COE / COR",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-coe-COECOR-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F02-04-enrollment-cor-COECOR",
+      "group": "applicant",
+      "state": "cor / COE / COR",
+      "url": "/applicant/enrollment",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      },
+      "after": "F02-04-enrollment-cor-COECOR-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X04-0155-applicant-enrollment-cor-available-coe-cor-preview-cor-form-2--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F05-filtered-notices",
+      "group": "applicant",
+      "state": "DCAT filter",
+      "url": "/applicant/announcements",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Announcements",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F05-filtered-notices-375.png",
+      "before": []
+    },
+    {
+      "id": "F02-review-cancel",
+      "group": "applicant",
+      "state": "Review retained after cancel",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Application",
+        "columns": "768px 320px",
+        "motion": ".14s"
+      },
+      "after": "F02-review-cancel-1440.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F03-document-preview",
+      "group": "applicant",
+      "state": "DCAT document open",
+      "url": "/applicant/dcat",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      },
+      "after": "F03-document-preview-1440.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G11-0094-applicant-dcat-dcat-scheduled-preview-dcat-form-1--dialog-bottom.png"
+      ]
+    },
+    {
+      "id": "F08-photo-open",
+      "group": "student",
+      "state": "Initial dialog",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-photo-open-375.png",
+      "before": []
+    },
+    {
+      "id": "F08-photo-preview",
+      "group": "student",
+      "state": "Staged preview",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-photo-preview-375.png",
+      "before": []
+    },
+    {
+      "id": "F09-account-customized",
+      "group": "student",
+      "state": "Committed photo and bio",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F09-account-customized-375.png",
+      "before": []
+    },
+    {
+      "id": "F07-account-menu",
+      "group": "student",
+      "state": "Account menu with temporary photo",
+      "url": "/student",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Good morning, John Paul.",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F07-account-menu-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/student/G12-0157-student--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/student/G12-0157-student--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/student/G12-0157-student--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/student/G12-0157-student--full-page.png"
+      ]
+    },
+    {
+      "id": "F08-invalid-type",
+      "group": "student",
+      "state": "invalid-type",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-invalid-type-375.png",
+      "before": []
+    },
+    {
+      "id": "F08-oversize",
+      "group": "student",
+      "state": "oversize",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-oversize-375.png",
+      "before": []
+    },
+    {
+      "id": "F08-decode-failure",
+      "group": "student",
+      "state": "decode-failure",
+      "url": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-decode-failure-375.png",
+      "before": []
+    },
+    {
+      "id": "F09-multi-portal-bio",
+      "group": "faculty-it",
+      "state": "Bio survives authorized switch",
+      "url": "/account",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F09-multi-portal-bio-1440.png",
+      "before": []
+    },
+    {
+      "id": "F10-reduced-drawer",
+      "group": "applicant",
+      "state": "Reduced motion drawer",
+      "url": "/applicant",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "reduce",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      },
+      "after": "F10-reduced-drawer-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G08-0021-applicant--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G32-0366-applicant-navigation-drawer--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X02-0047-applicant-not-qualified--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X03-0050-applicant-cor-available--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X03-0050-applicant-cor-available--full-page.png"
+      ]
+    },
+    {
+      "id": "F10-sort",
+      "group": "records",
+      "state": "Applicant descending sort",
+      "url": "/records/applicants",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F10-sort-1440.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-text200-_account",
+      "group": "applicant",
+      "state": "200% text simulation, not OS scaling",
+      "url": "/account",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-text200-_account-768.png",
+      "before": []
+    },
+    {
+      "id": "F12-text200-_applicant_application",
+      "group": "applicant",
+      "state": "200% text simulation, not OS scaling",
+      "url": "/applicant/application",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Application",
+        "columns": "720px",
+        "motion": ".14s"
+      },
+      "after": "F12-text200-_applicant_application-768.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G09-0422-application-draft-validation-errors--full-page.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/G10-0424-application-draft-submission-confirmation-dialog--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-text200-_applicant_profile",
+      "group": "applicant",
+      "state": "200% text simulation, not OS scaling",
+      "url": "/applicant/profile",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-text200-_applicant_profile-768.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X01-0032-applicant-profile--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/applicant/X01-0032-applicant-profile--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X01-0032-applicant-profile--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/applicant/X01-0032-applicant-profile--full-page.png"
+      ]
+    },
+    {
+      "id": "F12-text200-_records_applicants",
+      "group": "records",
+      "state": "200% text simulation, not OS scaling",
+      "url": "/records/applicants",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F12-text200-_records_applicants-768.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/records/G23-0189-records-applicants--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/records/G23-0189-records-applicants--full-page.png"
+      ]
+    },
+    {
+      "id": "F11-no-js",
+      "group": "public",
+      "state": "JS disabled",
+      "url": "/",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F11-no-js-375.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--full-page.png"
+      ]
+    },
+    {
+      "id": "F11-reduced-admissions",
+      "group": "public",
+      "state": "Reduced motion",
+      "url": "/admissions",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "reduce",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "The admissions journey",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F11-reduced-admissions-1920.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/public/G03-0004-admissions--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/public/G03-0004-admissions--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G03-0004-admissions--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G03-0004-admissions--full-page.png"
+      ]
+    },
+    {
+      "id": "F08-dialog-320",
+      "group": "applicant",
+      "state": "Valid staged image; responsive actions",
+      "url": "/account",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 320,
+        "pageWidth": 320,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-dialog-320-320.png",
+      "before": []
+    },
+    {
+      "id": "F08-dialog-1920",
+      "group": "applicant",
+      "state": "Valid staged image; responsive actions",
+      "url": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F08-dialog-1920-1920.png",
+      "before": []
+    },
+    {
+      "id": "F11-normal-connector",
+      "group": "public",
+      "state": "Connector after first intersection",
+      "url": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "motion": "no-preference",
+      "expected": "Visible content and reachable controls, no page overflow",
+      "actual": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      },
+      "after": "F11-normal-connector-1440.png",
+      "before": [
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/desktop-1920x1080/public/G01-0001-home--full-page.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--viewport.png",
+        "../m7-final-rc/golden/mobile-375x812/public/G01-0001-home--full-page.png"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "applicant login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "applicant account identity",
+      "pass": true,
+      "detail": "JT\n\nJamie Testapplicant\n\napplicant.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "applicant memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "student login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "student account identity",
+      "pass": true,
+      "detail": "AT\n\nAlex Teststudent\n\nstudent.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "student memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F06-account-student no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F06-account-student no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "faculty login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty account identity",
+      "pass": true,
+      "detail": "TT\n\nTaylor Testemployee\n\nfaculty.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "faculty memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "records login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "records account identity",
+      "pass": true,
+      "detail": "RT\n\nRiley Testrecords\n\nrecords.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "records memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F06-account-records no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F06-account-records no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "operations login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "operations account identity",
+      "pass": true,
+      "detail": "MT\n\nMorgan Testoperations\n\noperations.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "operations memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technology login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "technology account identity",
+      "pass": true,
+      "detail": "CT\n\nCasey Testtechnology\n\ntechnology.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "technology memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "coordinator login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "coordinator account identity",
+      "pass": true,
+      "detail": "JT\n\nJordan Testcoordinator\n\ncoordinator.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "coordinator memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "school-admin login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "school-admin account identity",
+      "pass": true,
+      "detail": "AT\n\nAvery Testadministrator\n\nschool-admin.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "school-admin memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "faculty-it login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty-it account identity",
+      "pass": true,
+      "detail": "QT\n\nQuinn Testmultiporal\n\nfaculty-it.test@example.invalid\n\nAccount status\nActive"
+    },
+    {
+      "name": "faculty-it memberships",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F06-account-faculty-it no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F06-account-faculty-it no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-public-_ no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-public-_ no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-public-_admissions no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "The admissions journey",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-public-_admissions no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "The admissions journey",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-public-_about no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "About DFCAMCLP",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-public-_about no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "About DFCAMCLP",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_application no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_application no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Application",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_dcat no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_dcat no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_enrollment no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_enrollment no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_announcements no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Announcements",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_announcements no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Announcements",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_profile no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-applicant-_applicant_profile no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-student-_account no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-student-_account no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-student-_student_profile no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-student-_student_profile no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-records-_records_applicants no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-records-_records_applicants no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-faculty-_academic_attendance no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Attendance",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-faculty-_academic_attendance no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Attendance",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-school-admin-_operations_employees no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Employees",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-school-admin-_operations_employees no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Employees",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-technology-_technology_accounts no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Demo accounts",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F12-technology-_technology_accounts no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Demo accounts",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-draft no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-documents no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-awaiting no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-notQualified no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-cor no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Your next step",
+        "columns": "1056px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-application-draft-Applicationform no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Application",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-application-draft-Requirements no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Application",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-application-draft-Status no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Application",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-dcat-scheduled-Examschedule no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-dcat-scheduled-DCATform no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-dcat-scheduled-Results no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-dcat-notQualified-Results no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-draft-Progress no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-draft-Registrarschedule no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-draft-COECOR no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-coe-Progress no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-coe-Registrarschedule no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-coe-COECOR no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-cor-COECOR no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Enrollment",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Notice filter 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F05-filtered-notices no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Announcements",
+        "columns": "864px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-draft no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-documents no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-awaiting no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-notQualified no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F01-dashboard-cor no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-application-draft-Applicationform no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-application-draft-Requirements no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-application-draft-Status no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Application",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-dcat-scheduled-Examschedule no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-dcat-scheduled-DCATform no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-dcat-scheduled-Results no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-dcat-notQualified-Results no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "DCAT",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-draft-Progress no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-draft-Registrarschedule no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-draft-COECOR no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-coe-Progress no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-coe-Registrarschedule no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-coe-COECOR no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F02-04-enrollment-cor-COECOR no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Enrollment",
+        "columns": "none",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Notice filter 375",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F05-filtered-notices no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Announcements",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Application validation visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Application confirmation dialog",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Application confirmation cancel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F02-review-cancel no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Application",
+        "columns": "768px 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F03-document-preview no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "DCAT",
+        "columns": "minmax(0px, 1fr) 320px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Document Escape",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Tab End",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Tab Home",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio initial focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio plain text",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio focus return",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio 240 limit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio cancel preserves",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo initial focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-photo-open no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "F08-photo-preview no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo cancel preserves initials",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo commit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo focus return",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F09-account-customized no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Shell shares account photo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F07-account-menu no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Good morning, John Paul.",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Account Escape return",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Student domain distinct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Domain photo distinct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Bio survives navigation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo invalid-type",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-invalid-type no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo oversize",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-oversize no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo decode-failure",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-decode-failure no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo focus containment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo remove",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo and bio no mutation requests",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Reload resets",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Empty applied bio clears",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "New tab starts empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Back after signout no bio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Portal switch retains bio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F09-multi-portal-bio no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Drawer 220ms immediate focus",
+      "pass": true,
+      "detail": {
+        "duration": "0.22s",
+        "name": "fd6-drawer",
+        "focus": true
+      }
+    },
+    {
+      "name": "Preference change settles drawer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F10-reduced-drawer no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Your next step",
+        "columns": "343px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Drawer Escape focus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Photo dialog 180ms",
+      "pass": true,
+      "detail": "0.18s"
+    },
+    {
+      "name": "Focus visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Button press 80ms",
+      "pass": true,
+      "detail": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "duration": "0.08s"
+      }
+    },
+    {
+      "name": "Sort ascending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Sort descending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F10-sort no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "200% text /account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F12-text200-_account no overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "200% text /applicant/application",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F12-text200-_applicant_application no overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Application",
+        "columns": "720px",
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "200% text /applicant/profile",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F12-text200-_applicant_profile no overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "200% text /records/applicants",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F12-text200-_records_applicants no overflow",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "pageWidth": 768,
+        "heading": "Applicants",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Public without JS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F11-no-js no overflow",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "pageWidth": 375,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Reduced admissions content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F11-reduced-admissions no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "The admissions journey",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Print content visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-dialog-320 no overflow",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "pageWidth": 320,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo apply/replace 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Committed object URL only 320",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F08-dialog-1920 no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "pageWidth": 1920,
+        "heading": "Account profile",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Photo apply/replace 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Committed object URL only 1920",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Empty chooser leaves apply disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Chooser cancel retains committed URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Remove revokes owned URL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Native bio limit enforces 240",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Deliberate portal navigation header emphasis",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Back does not replay header",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "End key scrolls final tab into view",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Public connector progressive reveal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Public connector 320ms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "F11-normal-connector no overflow",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "pageWidth": 1440,
+        "heading": "Student & Staff Portal",
+        "columns": null,
+        "motion": ".14s"
+      }
+    },
+    {
+      "name": "Public Back no reveal replay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Fragment history immediately visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Public menu 180ms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Public menu settles on preference change",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "errors": [],
+  "responsive": [
+    {
+      "group": "public",
+      "route": "/",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Student & Staff Portal",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Student & Staff Portal",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Student & Staff Portal",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Student & Staff Portal",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Student & Staff Portal",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/admissions",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "The admissions journey",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/admissions",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "The admissions journey",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/admissions",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "The admissions journey",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/admissions",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "The admissions journey",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/admissions",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "The admissions journey",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/about",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "About DFCAMCLP",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/about",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "About DFCAMCLP",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/about",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "About DFCAMCLP",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/about",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "About DFCAMCLP",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "public",
+      "route": "/about",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "About DFCAMCLP",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Your next step",
+      "columns": "288px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Your next step",
+      "columns": "343px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Your next step",
+      "columns": "720px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Your next step",
+      "columns": "768px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Your next step",
+      "columns": "1056px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Application",
+      "columns": "288px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Application",
+      "columns": "343px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Application",
+      "columns": "720px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Application",
+      "columns": "768px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/application",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Application",
+      "columns": "864px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "DCAT",
+      "columns": "288px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "DCAT",
+      "columns": "343px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "DCAT",
+      "columns": "720px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "DCAT",
+      "columns": "768px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/dcat",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "DCAT",
+      "columns": "864px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Enrollment",
+      "columns": "288px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Enrollment",
+      "columns": "343px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Enrollment",
+      "columns": "720px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Enrollment",
+      "columns": "768px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/enrollment",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Enrollment",
+      "columns": "864px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Announcements",
+      "columns": "288px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Announcements",
+      "columns": "343px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Announcements",
+      "columns": "720px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Announcements",
+      "columns": "768px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/announcements",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Announcements",
+      "columns": "864px 320px",
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "applicant",
+      "route": "/applicant/profile",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/account",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Account profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/account",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Account profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/account",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Account profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/account",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Account profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/account",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Account profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "student",
+      "route": "/student/profile",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Profile",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Applicants",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Applicants",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Applicants",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Applicants",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "records",
+      "route": "/records/applicants",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Applicants",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Attendance",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Attendance",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Attendance",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Attendance",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "faculty",
+      "route": "/academic/attendance",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Attendance",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Employees",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Employees",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Employees",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Employees",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "school-admin",
+      "route": "/operations/employees",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Employees",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 320,
+      "pageWidth": 320,
+      "heading": "Demo accounts",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 375,
+      "pageWidth": 375,
+      "heading": "Demo accounts",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 768,
+      "pageWidth": 768,
+      "heading": "Demo accounts",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 1440,
+      "pageWidth": 1440,
+      "heading": "Demo accounts",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    },
+    {
+      "group": "technology",
+      "route": "/technology/accounts",
+      "width": 1920,
+      "pageWidth": 1920,
+      "heading": "Demo accounts",
+      "columns": null,
+      "motion": ".14s",
+      "pass": true
+    }
+  ],
+  "contrast": [
+    {
+      "label": "ink on canvas",
+      "ratio": 13.709926691064194
+    },
+    {
+      "label": "blue on white",
+      "ratio": 10.54313381758664
+    },
+    {
+      "label": "ink on yellow",
+      "ratio": 11.712079219243133
+    }
+  ],
+  "renderedContrast": [
+    {
+      "name": "body",
+      "foreground": "rgb(23, 35, 59)",
+      "background": "rgb(237, 240, 244)",
+      "ratio": 13.709926691064194
+    },
+    {
+      "name": "avatar plus",
+      "foreground": "rgb(23, 35, 59)",
+      "background": "rgb(252, 223, 0)",
+      "ratio": 11.712079219243133
+    },
+    {
+      "name": "plus boundary",
+      "foreground": "rgb(13, 19, 205)",
+      "background": "rgb(252, 223, 0)",
+      "ratio": 7.87931559896088
+    }
+  ],
+  "finishedAt": "2026-10-01T15:52:10.168Z",
+  "summary": {
+    "checks": 189,
+    "failed": 0,
+    "responsive": 75,
+    "captures": 97,
+    "errors": 0
+  }
+}

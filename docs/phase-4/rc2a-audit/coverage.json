@@ -1,0 +1,1916 @@
+{
+  "startedAt": "2026-10-01T23:59:42.050Z",
+  "preview": "Existing compiled production preview; Next start on port 3000",
+  "checks": [
+    {
+      "name": "applicant login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "applicant allowed /account",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Account profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "applicant allowed /applicant",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "applicant allowed /applicant/application",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "applicant allowed /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "applicant allowed /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "applicant allowed /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "applicant allowed /applicant/profile",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "student login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "student allowed /account",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Account profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "student allowed /student",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Good morning, John Paul.",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "student allowed /student/academics",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Academics",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "student allowed /student/enrollment",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "student allowed /student/requests",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Requests",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "student allowed /student/announcements",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "student allowed /student/calendar",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Calendar",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "student allowed /student/profile",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty allowed /account",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Account profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty allowed /academic",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Academic portal",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty allowed /academic/classes",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Teaching",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty allowed /academic/attendance",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Attendance",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty allowed /academic/grades",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Grades",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty allowed /academic/announcements",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "records login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "records allowed /account",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Account profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "records allowed /records",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Admissions & Records",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "records allowed /records/applicants",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Applicants",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "records allowed /records/dcat",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "records allowed /records/students",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Students",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "records allowed /records/enrollment",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "records allowed /records/documents",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Documents",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "operations login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "operations allowed /account",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Account profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "operations allowed /operations",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Operations",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "operations allowed /operations/facilities",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Facilities",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "technology login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "technology allowed /account",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Account profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "technology allowed /technology",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Technology",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "technology allowed /technology/accounts",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Demo accounts",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "technology allowed /technology/security",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Security",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "technology allowed /technology/system",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "System",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coordinator login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "coordinator allowed /account",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Account profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coordinator allowed /academic",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Academic portal",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coordinator allowed /academic/classes",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Teaching",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coordinator allowed /academic/attendance",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Attendance",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coordinator allowed /academic/grades",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Grades",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coordinator allowed /academic/announcements",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coordinator allowed /academic/management",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Academic management",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "school-admin login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "school-admin allowed /account",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Account profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "school-admin allowed /operations",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Operations",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "school-admin allowed /operations/student-services",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Student Services",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "school-admin allowed /operations/employees",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Employees",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "school-admin allowed /operations/facilities",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Facilities",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "school-admin allowed /operations/administration",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Administration",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty-it login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty-it allowed /account",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Account profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty-it allowed /academic",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Academic portal",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty-it allowed /academic/classes",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Teaching",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty-it allowed /academic/attendance",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Attendance",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty-it allowed /academic/grades",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Grades",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty-it allowed /academic/announcements",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty-it allowed /technology",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Technology",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty-it allowed /technology/system",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "System",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "faculty-it allowed /technology/developer",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "heading": "Developer",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant draft /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant submitted /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant documents /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant eligible /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant scheduled /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant awaiting /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant notQualified /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant passed /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant coe /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant cor /applicant",
+      "pass": true,
+      "detail": {
+        "heading": "Your next step",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant draft /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "draft /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "draft /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "draft /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant submitted /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "submitted /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "submitted /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "submitted /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant documents /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "documents /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "documents /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "documents /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant eligible /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "eligible /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "eligible /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "eligible /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant scheduled /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "scheduled /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "scheduled /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "scheduled /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant awaiting /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "awaiting /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "awaiting /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "awaiting /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant notQualified /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "notQualified /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "notQualified /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "notQualified /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant passed /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "passed /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "passed /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "passed /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant coe /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coe /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "coe /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "coe /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant cor /applicant/application",
+      "pass": true,
+      "detail": {
+        "heading": "Application",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "cor /applicant/application tab Application form",
+      "pass": true
+    },
+    {
+      "name": "cor /applicant/application tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "cor /applicant/application tab Status",
+      "pass": true
+    },
+    {
+      "name": "Applicant draft /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "draft /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "draft /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "draft /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant submitted /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "submitted /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "submitted /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "submitted /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant documents /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "documents /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "documents /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "documents /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant eligible /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "eligible /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "eligible /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "eligible /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant scheduled /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "scheduled /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "scheduled /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "scheduled /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant awaiting /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "awaiting /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "awaiting /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "awaiting /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant notQualified /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "notQualified /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "notQualified /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "notQualified /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant passed /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "passed /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "passed /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "passed /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant coe /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coe /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "coe /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "coe /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant cor /applicant/dcat",
+      "pass": true,
+      "detail": {
+        "heading": "DCAT",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "cor /applicant/dcat tab Exam schedule",
+      "pass": true
+    },
+    {
+      "name": "cor /applicant/dcat tab DCAT form",
+      "pass": true
+    },
+    {
+      "name": "cor /applicant/dcat tab Results",
+      "pass": true
+    },
+    {
+      "name": "Applicant draft /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "draft /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "draft /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "draft /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant submitted /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "submitted /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "submitted /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "submitted /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant documents /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "documents /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "documents /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "documents /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant eligible /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "eligible /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "eligible /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "eligible /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant scheduled /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "scheduled /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "scheduled /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "scheduled /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant awaiting /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "awaiting /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "awaiting /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "awaiting /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant notQualified /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "notQualified /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "notQualified /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "notQualified /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant passed /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "passed /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "passed /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "passed /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant coe /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "coe /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "coe /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "coe /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant cor /applicant/enrollment",
+      "pass": true,
+      "detail": {
+        "heading": "Enrollment",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "cor /applicant/enrollment tab Progress",
+      "pass": true
+    },
+    {
+      "name": "cor /applicant/enrollment tab Registrar schedule",
+      "pass": true
+    },
+    {
+      "name": "cor /applicant/enrollment tab COE / COR",
+      "pass": true
+    },
+    {
+      "name": "Applicant draft /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant submitted /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant documents /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant eligible /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant scheduled /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant awaiting /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant notQualified /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant passed /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant coe /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant cor /applicant/announcements",
+      "pass": true,
+      "detail": {
+        "heading": "Announcements",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant draft /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant submitted /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant documents /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant eligible /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant scheduled /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant awaiting /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant notQualified /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant passed /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant coe /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Applicant cor /applicant/profile",
+      "pass": true,
+      "detail": {
+        "heading": "Profile",
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Student academics tab Schedule",
+      "pass": true
+    },
+    {
+      "name": "Student academics tab Subjects",
+      "pass": true
+    },
+    {
+      "name": "Student academics tab Grades",
+      "pass": true
+    },
+    {
+      "name": "Student academics tab Attendance",
+      "pass": true
+    },
+    {
+      "name": "Student academics tab Curriculum",
+      "pass": true
+    },
+    {
+      "name": "Student schedule next week",
+      "pass": true
+    },
+    {
+      "name": "Student schedule previous week",
+      "pass": true
+    },
+    {
+      "name": "Student next month",
+      "pass": true
+    },
+    {
+      "name": "Student previous month",
+      "pass": false
+    },
+    {
+      "name": "Records applicant detail tab Overview",
+      "pass": true
+    },
+    {
+      "name": "Records applicant detail tab Application",
+      "pass": true
+    },
+    {
+      "name": "Records applicant detail tab Requirements",
+      "pass": true
+    },
+    {
+      "name": "Records applicant detail tab DCAT",
+      "pass": true
+    },
+    {
+      "name": "Records applicant detail tab Enrollment",
+      "pass": true
+    },
+    {
+      "name": "Invalid entity /records/applicants?record=not-a-record",
+      "pass": true
+    },
+    {
+      "name": "Invalid entity /records/students?record=not-a-record",
+      "pass": true
+    },
+    {
+      "name": "Facilities local status save",
+      "pass": true
+    },
+    {
+      "name": "Facilities has no persistence request",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Facilities local status resets on reload",
+      "pass": true
+    },
+    {
+      "name": "Operations entity /operations/student-services?request=SS-26041",
+      "pass": true,
+      "detail": {
+        "heading": "John Paul Reyes",
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "brokenImages": 0
+      }
+    },
+    {
+      "name": "Operations entity /operations/employees?employee=EMP-DEMO-014",
+      "pass": true,
+      "detail": {
+        "heading": "Morgan Testoperations",
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "brokenImages": 0
+      }
+    }
+  ],
+  "errors": [],
+  "captures": [
+    {
+      "file": "student-calendar-375.png",
+      "route": "/student/calendar",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      }
+    },
+    {
+      "file": "records-applicant-detail-375.png",
+      "route": "/records/applicants?record=DEMO-APP-002",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      }
+    },
+    {
+      "file": "operations-ticket-detail-375.png",
+      "route": "/operations/facilities?ticket=FAC-26037",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      }
+    },
+    {
+      "file": "operations-service-detail-375.png",
+      "route": "/operations/student-services?request=SS-26041",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      }
+    },
+    {
+      "file": "operations-employee-detail-375.png",
+      "route": "/operations/employees?employee=EMP-DEMO-014",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      }
+    }
+  ],
+  "finishedAt": "2026-10-02T00:00:42.958Z",
+  "summary": {
+    "checks": 238,
+    "failed": 1,
+    "pageErrors": 0,
+    "captures": 5
+  }
+}

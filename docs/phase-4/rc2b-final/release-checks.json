@@ -1,0 +1,336 @@
+{
+  "checkedAt": "2026-10-02T00:46:26.421Z",
+  "scope": "Local RC2B handoff gates; no passwords or token values recorded; hosted/history/mutating-endpoint review remains separate",
+  "checks": [
+    {
+      "name": "All contextual B01-B42 sentinels retained",
+      "pass": true
+    },
+    {
+      "name": "Preserved src/app/globals.css",
+      "pass": true
+    },
+    {
+      "name": "Preserved src/features/disclosure/demo-disclosure-provider.tsx",
+      "pass": true
+    },
+    {
+      "name": "Preserved src/features/disclosure/disclosure-content.ts",
+      "pass": true
+    },
+    {
+      "name": "Preserved src/server/auth/factory.ts",
+      "pass": true
+    },
+    {
+      "name": "Preserved src/server/access-control/seed-data.ts",
+      "pass": true
+    },
+    {
+      "name": "Preserved src/server/db/seed/data.ts",
+      "pass": true
+    },
+    {
+      "name": "Preserved package.json",
+      "pass": true
+    },
+    {
+      "name": "Preserved pnpm-lock.yaml",
+      "pass": true
+    },
+    {
+      "name": "Exactly nine canonical fictional auth identities",
+      "pass": true
+    },
+    {
+      "name": "Demo identity emails and names are fictional",
+      "pass": true
+    },
+    {
+      "name": "No configured credential/env/hash/token literal in client assets",
+      "pass": true,
+      "detail": {
+        "files": 27,
+        "leakFiles": []
+      }
+    },
+    {
+      "name": "No configured credential/env/hash/token literal in public Login response",
+      "pass": true
+    },
+    {
+      "name": "Only env example tracked",
+      "pass": true
+    },
+    {
+      "name": "No configured secret literal in tracked text",
+      "pass": true,
+      "detail": {
+        "files": 245,
+        "leakFiles": []
+      }
+    },
+    {
+      "name": "Panel has no password or credential source",
+      "pass": true
+    }
+  ],
+  "contextual": [
+    {
+      "id": "B01",
+      "file": "src/app/login/page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B02",
+      "file": "src/app/account/create/page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B03",
+      "file": "src/app/account/create/applicant/page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B04",
+      "file": "src/app/account/recovery/page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B05",
+      "file": "src/features/identity/account-entry.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B06",
+      "file": "src/features/identity/account-entry.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B07",
+      "file": "src/features/identity/account-profile.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B08",
+      "file": "src/components/ui/demo-profile-photo.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B09",
+      "file": "src/features/student/student-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B10",
+      "file": "src/features/applicant/scenario-switcher.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B11",
+      "file": "src/features/applicant/application-form.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B12",
+      "file": "src/features/applicant/applicant-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B13",
+      "file": "src/features/applicant/shared.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B14",
+      "file": "src/features/applicant/applicant-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B15",
+      "file": "src/features/student/student-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B16",
+      "file": "src/features/student/student-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B17",
+      "file": "src/features/student/student-academics.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B18",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B19",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B20",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B21",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B22",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B23",
+      "file": "src/features/academic/academic-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B24",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B25",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B26",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B27",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B28",
+      "file": "src/features/records/records-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B29",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B30",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B31",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B32",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B33",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B34",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B35",
+      "file": "src/features/operations/operations-page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B36",
+      "file": "src/app/[portal]/[[...section]]/page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B37",
+      "file": "src/app/[portal]/[[...section]]/page.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B38",
+      "file": "src/features/technology/technology-dashboard.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B39",
+      "file": "src/features/technology/technology-accounts.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B40",
+      "file": "src/features/technology/technology-security.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B41",
+      "file": "src/features/technology/technology-system.tsx",
+      "pass": true,
+      "missing": []
+    },
+    {
+      "id": "B42",
+      "file": "src/features/technology/technology-developer.tsx",
+      "pass": true,
+      "missing": []
+    }
+  ],
+  "summary": {
+    "checks": 16,
+    "failed": 0
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-10-02T01:01:00.141Z",
+  "scope": "RC2B new text artifacts, current roadmap, report and changed source; configured secret values, actual credential hashes and session token literals; no values recorded",
+  "files": 28,
+  "leakFiles": [],
+  "pass": true
+}

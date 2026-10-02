@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { SiteShell, PageIntro } from "@/components/public/site-shell";
+import { SiteShell } from "@/components/public/site-shell";
+import { ProjectInformationHeading } from "./project-information-heading";
 import { informationPages, disclosureVersion } from "./disclosure-content";
 import { ReturnToDemo } from "./demo-disclosure-provider";
 
@@ -12,7 +13,10 @@ export function ProjectInformationPage({ route }: { route: string }) {
         className="public-container public-page project-information-page"
       >
         <div className="project-reading-column">
-          <PageIntro title={page.title}>{page.intro}</PageIntro>
+          <div className="public-page-intro">
+            <ProjectInformationHeading title={page.title} />
+            <p>{page.intro}</p>
+          </div>
           <p className="project-notice-version">
             Project notice · Version {disclosureVersion} · Updated 1 October
             2026

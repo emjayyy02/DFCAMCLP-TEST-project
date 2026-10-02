@@ -1,0 +1,2850 @@
+{
+  "startedAt": "2026-10-02T00:41:49.572Z",
+  "preview": "Fresh Next.js production build / isolated localhost:3109 / process-only auth origin",
+  "browser": "Installed Microsoft Edge Chromium",
+  "checks": [
+    {
+      "name": "first entry has one modal",
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts has exactly nine rows",
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts only one modal",
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts title focus",
+      "pass": true
+    },
+    {
+      "name": "No password UI/placeholder",
+      "pass": true
+    },
+    {
+      "name": "Applicant public row matches",
+      "pass": true
+    },
+    {
+      "name": "Applicant native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Student public row matches",
+      "pass": true
+    },
+    {
+      "name": "Student native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Faculty public row matches",
+      "pass": true
+    },
+    {
+      "name": "Faculty native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Program Coordinator public row matches",
+      "pass": true
+    },
+    {
+      "name": "Program Coordinator native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Admissions & Records public row matches",
+      "pass": true
+    },
+    {
+      "name": "Admissions & Records native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Maintenance Staff public row matches",
+      "pass": true
+    },
+    {
+      "name": "Maintenance Staff native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "School Admin public row matches",
+      "pass": true
+    },
+    {
+      "name": "School Admin native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "IT Admin public row matches",
+      "pass": true
+    },
+    {
+      "name": "IT Admin native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Faculty + Developer public row matches",
+      "pass": true
+    },
+    {
+      "name": "Faculty + Developer native clipboard copy",
+      "pass": true
+    },
+    {
+      "name": "Escape returns trigger focus",
+      "pass": true
+    },
+    {
+      "name": "Student prefill email only",
+      "pass": true
+    },
+    {
+      "name": "Student prefill email focus",
+      "pass": true
+    },
+    {
+      "name": "IT Admin prefill email only",
+      "pass": true
+    },
+    {
+      "name": "IT Admin prefill email focus",
+      "pass": true
+    },
+    {
+      "name": "Faculty + Developer prefill email only",
+      "pass": true
+    },
+    {
+      "name": "Faculty + Developer prefill email focus",
+      "pass": true
+    },
+    {
+      "name": "Account selection never signs in",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Panel reverse focus boundary",
+      "pass": true
+    },
+    {
+      "name": "Panel forward focus boundary",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 0",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 1",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 2",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 3",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 4",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 5",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 6",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 7",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 8",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 9",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 10",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 11",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 12",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 13",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 14",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 15",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 16",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 17",
+      "pass": true
+    },
+    {
+      "name": "Panel keyboard traversal 18",
+      "pass": true
+    },
+    {
+      "name": "Panel uses FD6 180ms",
+      "pass": true,
+      "detail": "0.18s"
+    },
+    {
+      "name": "Panel reduced motion mid-open",
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 320 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 301,
+            "top": 21.087812423706055,
+            "bottom": 801.087812423706,
+            "height": 812
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 19,
+            "right": 356,
+            "top": 16,
+            "bottom": 796,
+            "height": 812
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts 768 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 48,
+            "right": 720,
+            "top": 16,
+            "bottom": 884,
+            "height": 900
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 384,
+            "right": 1056,
+            "top": 16,
+            "bottom": 884,
+            "height": 900
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts 1920 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "bodyWidth": 1920,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 624,
+            "right": 1296,
+            "top": 16,
+            "bottom": 1064,
+            "height": 1080
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts doubled 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 35,
+            "right": 340,
+            "top": 16,
+            "bottom": 796,
+            "height": 812
+          }
+        ]
+      }
+    },
+    {
+      "name": "Demo Accounts doubled 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Portal sign in",
+        "dialogs": [
+          {
+            "left": 384,
+            "right": 1056,
+            "top": 19.148038864135742,
+            "bottom": 887.1480388641357,
+            "height": 900
+          }
+        ]
+      }
+    },
+    {
+      "name": "Clipboard failure offers selectable fallback",
+      "pass": true
+    },
+    {
+      "name": "disclaimer destination H1 focus",
+      "pass": true
+    },
+    {
+      "name": "disclaimer pre-ack no stored acceptance",
+      "pass": true
+    },
+    {
+      "name": "disclaimer next Tab stays at destination content",
+      "pass": true
+    },
+    {
+      "name": "disclaimer Back restores query and disclosure",
+      "pass": true
+    },
+    {
+      "name": "terms destination H1 focus",
+      "pass": true
+    },
+    {
+      "name": "terms pre-ack no stored acceptance",
+      "pass": true
+    },
+    {
+      "name": "terms next Tab stays at destination content",
+      "pass": true
+    },
+    {
+      "name": "terms Back restores query and disclosure",
+      "pass": true
+    },
+    {
+      "name": "privacy destination H1 focus",
+      "pass": true
+    },
+    {
+      "name": "privacy pre-ack no stored acceptance",
+      "pass": true
+    },
+    {
+      "name": "privacy next Tab stays at destination content",
+      "pass": true
+    },
+    {
+      "name": "privacy Back restores query and disclosure",
+      "pass": true
+    },
+    {
+      "name": "acceptable-use destination H1 focus",
+      "pass": true
+    },
+    {
+      "name": "acceptable-use pre-ack no stored acceptance",
+      "pass": true
+    },
+    {
+      "name": "acceptable-use next Tab stays at destination content",
+      "pass": true
+    },
+    {
+      "name": "acceptable-use Back restores query and disclosure",
+      "pass": true
+    },
+    {
+      "name": "Accepted legal return does not repeat disclosure",
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 320 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "heading": "Project Disclaimer",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "disclaimer direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Project Disclaimer",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "disclaimer direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 768 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "heading": "Project Disclaimer",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "disclaimer direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Project Disclaimer",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "disclaimer direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 1920 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "bodyWidth": 1920,
+        "heading": "Project Disclaimer",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "disclaimer direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal terms 320 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "heading": "Demo Terms of Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "terms direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal terms 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Demo Terms of Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "terms direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal terms 768 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "heading": "Demo Terms of Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "terms direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal terms 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Demo Terms of Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "terms direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal terms 1920 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "bodyWidth": 1920,
+        "heading": "Demo Terms of Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "terms direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 320 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "heading": "Privacy & Data Notice",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "privacy direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Privacy & Data Notice",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "privacy direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 768 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "heading": "Privacy & Data Notice",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "privacy direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Privacy & Data Notice",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "privacy direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 1920 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "bodyWidth": 1920,
+        "heading": "Privacy & Data Notice",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "privacy direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 320 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "heading": "Acceptable Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "acceptable-use direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Acceptable Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "acceptable-use direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 768 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "heading": "Acceptable Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "acceptable-use direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Acceptable Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "acceptable-use direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 1920 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "bodyWidth": 1920,
+        "heading": "Acceptable Use",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "acceptable-use direct legal exempt",
+      "pass": true
+    },
+    {
+      "name": "Privacy doubled 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Privacy & Data Notice",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Privacy doubled 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Privacy & Data Notice",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Invalid UI login stays Login",
+      "pass": true
+    },
+    {
+      "name": "Valid UI login reaches Student",
+      "pass": true
+    },
+    {
+      "name": "applicant isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "applicant allowed /account",
+      "pass": true
+    },
+    {
+      "name": "applicant allowed /applicant",
+      "pass": true
+    },
+    {
+      "name": "applicant allowed /applicant/application",
+      "pass": true
+    },
+    {
+      "name": "applicant allowed /applicant/dcat",
+      "pass": true
+    },
+    {
+      "name": "applicant allowed /applicant/enrollment",
+      "pass": true
+    },
+    {
+      "name": "applicant allowed /applicant/announcements",
+      "pass": true
+    },
+    {
+      "name": "applicant allowed /applicant/profile",
+      "pass": true
+    },
+    {
+      "name": "applicant Account email correct",
+      "pass": true
+    },
+    {
+      "name": "applicant unauthorized direct URL",
+      "pass": true
+    },
+    {
+      "name": "applicant normal logout protects route",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "student allowed /account",
+      "pass": true
+    },
+    {
+      "name": "student allowed /student",
+      "pass": true
+    },
+    {
+      "name": "student allowed /student/academics",
+      "pass": true
+    },
+    {
+      "name": "student allowed /student/enrollment",
+      "pass": true
+    },
+    {
+      "name": "student allowed /student/requests",
+      "pass": true
+    },
+    {
+      "name": "student allowed /student/announcements",
+      "pass": true
+    },
+    {
+      "name": "student allowed /student/calendar",
+      "pass": true
+    },
+    {
+      "name": "student allowed /student/profile",
+      "pass": true
+    },
+    {
+      "name": "student Account email correct",
+      "pass": true
+    },
+    {
+      "name": "student unauthorized direct URL",
+      "pass": true
+    },
+    {
+      "name": "student normal logout protects route",
+      "pass": true
+    },
+    {
+      "name": "faculty isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty allowed /account",
+      "pass": true
+    },
+    {
+      "name": "faculty allowed /academic",
+      "pass": true
+    },
+    {
+      "name": "faculty allowed /academic/classes",
+      "pass": true
+    },
+    {
+      "name": "faculty allowed /academic/attendance",
+      "pass": true
+    },
+    {
+      "name": "faculty allowed /academic/grades",
+      "pass": true
+    },
+    {
+      "name": "faculty allowed /academic/announcements",
+      "pass": true
+    },
+    {
+      "name": "faculty Account email correct",
+      "pass": true
+    },
+    {
+      "name": "faculty unauthorized direct URL",
+      "pass": true
+    },
+    {
+      "name": "faculty normal logout protects route",
+      "pass": true
+    },
+    {
+      "name": "records isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "records allowed /account",
+      "pass": true
+    },
+    {
+      "name": "records allowed /records",
+      "pass": true
+    },
+    {
+      "name": "records allowed /records/applicants",
+      "pass": true
+    },
+    {
+      "name": "records allowed /records/dcat",
+      "pass": true
+    },
+    {
+      "name": "records allowed /records/students",
+      "pass": true
+    },
+    {
+      "name": "records allowed /records/enrollment",
+      "pass": true
+    },
+    {
+      "name": "records allowed /records/documents",
+      "pass": true
+    },
+    {
+      "name": "records Account email correct",
+      "pass": true
+    },
+    {
+      "name": "records unauthorized direct URL",
+      "pass": true
+    },
+    {
+      "name": "records normal logout protects route",
+      "pass": true
+    },
+    {
+      "name": "operations isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "operations allowed /account",
+      "pass": true
+    },
+    {
+      "name": "operations allowed /operations",
+      "pass": true
+    },
+    {
+      "name": "operations allowed /operations/facilities",
+      "pass": true
+    },
+    {
+      "name": "operations Account email correct",
+      "pass": true
+    },
+    {
+      "name": "operations unauthorized direct URL",
+      "pass": true
+    },
+    {
+      "name": "operations normal logout protects route",
+      "pass": true
+    },
+    {
+      "name": "technology isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "technology allowed /account",
+      "pass": true
+    },
+    {
+      "name": "technology allowed /technology",
+      "pass": true
+    },
+    {
+      "name": "technology allowed /technology/accounts",
+      "pass": true
+    },
+    {
+      "name": "technology allowed /technology/security",
+      "pass": true
+    },
+    {
+      "name": "technology allowed /technology/system",
+      "pass": true
+    },
+    {
+      "name": "technology Account email correct",
+      "pass": true
+    },
+    {
+      "name": "technology unauthorized direct URL",
+      "pass": true
+    },
+    {
+      "name": "Directory warning exact once",
+      "pass": true
+    },
+    {
+      "name": "Technology correction 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Demo accounts",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Technology correction 1920 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "bodyWidth": 1920,
+        "heading": "Demo accounts",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Technology doubled contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Demo accounts",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "technology normal logout protects route",
+      "pass": true
+    },
+    {
+      "name": "coordinator isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "coordinator allowed /account",
+      "pass": true
+    },
+    {
+      "name": "coordinator allowed /academic",
+      "pass": true
+    },
+    {
+      "name": "coordinator allowed /academic/classes",
+      "pass": true
+    },
+    {
+      "name": "coordinator allowed /academic/attendance",
+      "pass": true
+    },
+    {
+      "name": "coordinator allowed /academic/grades",
+      "pass": true
+    },
+    {
+      "name": "coordinator allowed /academic/announcements",
+      "pass": true
+    },
+    {
+      "name": "coordinator allowed /academic/management",
+      "pass": true
+    },
+    {
+      "name": "coordinator Account email correct",
+      "pass": true
+    },
+    {
+      "name": "coordinator unauthorized direct URL",
+      "pass": true
+    },
+    {
+      "name": "coordinator normal logout protects route",
+      "pass": true
+    },
+    {
+      "name": "school-admin isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "school-admin allowed /account",
+      "pass": true
+    },
+    {
+      "name": "school-admin allowed /operations",
+      "pass": true
+    },
+    {
+      "name": "school-admin allowed /operations/student-services",
+      "pass": true
+    },
+    {
+      "name": "school-admin allowed /operations/employees",
+      "pass": true
+    },
+    {
+      "name": "school-admin allowed /operations/facilities",
+      "pass": true
+    },
+    {
+      "name": "school-admin allowed /operations/administration",
+      "pass": true
+    },
+    {
+      "name": "school-admin Account email correct",
+      "pass": true
+    },
+    {
+      "name": "school-admin unauthorized direct URL",
+      "pass": true
+    },
+    {
+      "name": "school-admin normal logout protects route",
+      "pass": true
+    },
+    {
+      "name": "faculty-it isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "faculty-it allowed /account",
+      "pass": true
+    },
+    {
+      "name": "faculty-it allowed /academic",
+      "pass": true
+    },
+    {
+      "name": "faculty-it allowed /academic/classes",
+      "pass": true
+    },
+    {
+      "name": "faculty-it allowed /academic/attendance",
+      "pass": true
+    },
+    {
+      "name": "faculty-it allowed /academic/grades",
+      "pass": true
+    },
+    {
+      "name": "faculty-it allowed /academic/announcements",
+      "pass": true
+    },
+    {
+      "name": "faculty-it allowed /technology",
+      "pass": true
+    },
+    {
+      "name": "faculty-it allowed /technology/system",
+      "pass": true
+    },
+    {
+      "name": "faculty-it allowed /technology/developer",
+      "pass": true
+    },
+    {
+      "name": "faculty-it Account email correct",
+      "pass": true
+    },
+    {
+      "name": "faculty-it unauthorized direct URL",
+      "pass": true
+    },
+    {
+      "name": "faculty-it isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "Multi-membership switch works",
+      "pass": true
+    },
+    {
+      "name": "Multi-membership Developer permitted",
+      "pass": true
+    },
+    {
+      "name": "faculty-it normal logout protects route",
+      "pass": true
+    },
+    {
+      "name": "technology isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "Technology correction 320 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "heading": "Demo accounts",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Technology correction 768 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "heading": "Demo accounts",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Technology correction 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Demo accounts",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "account 375 network-abort pending",
+      "pass": true
+    },
+    {
+      "name": "account 375 network-abort stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "account 375 network-abort retry enabled",
+      "pass": true
+    },
+    {
+      "name": "account 375 network-abort accessible alert",
+      "pass": true
+    },
+    {
+      "name": "network-abort presentation retained",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account network-abort 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Account profile",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "network-abort refresh remains authenticated",
+      "pass": false
+    },
+    {
+      "name": "network-abort normal reload clears temporary bio",
+      "pass": true
+    },
+    {
+      "name": "account network-abort retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "account network-abort protected after success",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "account 375 http-503 pending",
+      "pass": true
+    },
+    {
+      "name": "account 375 http-503 stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "account 375 http-503 retry enabled",
+      "pass": true
+    },
+    {
+      "name": "account 375 http-503 accessible alert",
+      "pass": true
+    },
+    {
+      "name": "http-503 presentation retained",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Account profile",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "Sign-out error doubled contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Account profile",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "http-503 refresh remains authenticated",
+      "pass": false
+    },
+    {
+      "name": "http-503 normal reload clears temporary bio",
+      "pass": true
+    },
+    {
+      "name": "account http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "account http-503 protected after success",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "account 1920 network-abort pending",
+      "pass": true
+    },
+    {
+      "name": "account 1920 network-abort stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "account 1920 network-abort retry enabled",
+      "pass": true
+    },
+    {
+      "name": "account 1920 network-abort accessible alert",
+      "pass": true
+    },
+    {
+      "name": "network-abort presentation retained",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account network-abort 1920 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "bodyWidth": 1920,
+        "heading": "Account profile",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "network-abort refresh remains authenticated",
+      "pass": false
+    },
+    {
+      "name": "network-abort normal reload clears temporary bio",
+      "pass": true
+    },
+    {
+      "name": "account network-abort retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "account network-abort protected after success",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "account 1920 http-503 pending",
+      "pass": true
+    },
+    {
+      "name": "account 1920 http-503 stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "account 1920 http-503 retry enabled",
+      "pass": true
+    },
+    {
+      "name": "account 1920 http-503 accessible alert",
+      "pass": true
+    },
+    {
+      "name": "http-503 presentation retained",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 1920 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1920,
+        "documentWidth": 1920,
+        "bodyWidth": 1920,
+        "heading": "Account profile",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "http-503 refresh remains authenticated",
+      "pass": false
+    },
+    {
+      "name": "http-503 normal reload clears temporary bio",
+      "pass": true
+    },
+    {
+      "name": "account http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "account http-503 protected after success",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "account 320 http-503 pending",
+      "pass": true
+    },
+    {
+      "name": "account 320 http-503 stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "account 320 http-503 retry enabled",
+      "pass": true
+    },
+    {
+      "name": "account 320 http-503 accessible alert",
+      "pass": true
+    },
+    {
+      "name": "http-503 presentation retained",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 320 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "heading": "Account profile",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "http-503 refresh remains authenticated",
+      "pass": false
+    },
+    {
+      "name": "http-503 normal reload clears temporary bio",
+      "pass": true
+    },
+    {
+      "name": "account http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "account http-503 protected after success",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "account 768 http-503 pending",
+      "pass": true
+    },
+    {
+      "name": "account 768 http-503 stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "account 768 http-503 retry enabled",
+      "pass": true
+    },
+    {
+      "name": "account 768 http-503 accessible alert",
+      "pass": true
+    },
+    {
+      "name": "http-503 presentation retained",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 768 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "heading": "Account profile",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "http-503 refresh remains authenticated",
+      "pass": false
+    },
+    {
+      "name": "http-503 normal reload clears temporary bio",
+      "pass": true
+    },
+    {
+      "name": "account http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "account http-503 protected after success",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "account 1440 http-503 pending",
+      "pass": true
+    },
+    {
+      "name": "account 1440 http-503 stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "account 1440 http-503 retry enabled",
+      "pass": true
+    },
+    {
+      "name": "account 1440 http-503 accessible alert",
+      "pass": true
+    },
+    {
+      "name": "http-503 presentation retained",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 1440 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "heading": "Account profile",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "http-503 refresh remains authenticated",
+      "pass": false
+    },
+    {
+      "name": "http-503 normal reload clears temporary bio",
+      "pass": true
+    },
+    {
+      "name": "account http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "account http-503 protected after success",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "menu 375 network-abort pending",
+      "pass": true
+    },
+    {
+      "name": "menu 375 network-abort stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "menu 375 network-abort retry enabled",
+      "pass": true
+    },
+    {
+      "name": "menu 375 network-abort accessible alert",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure menu network-abort 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Good morning, John Paul.",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "menu network-abort retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "menu network-abort protected after success",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "drawer 375 http-503 pending",
+      "pass": true
+    },
+    {
+      "name": "drawer 375 http-503 stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "drawer 375 http-503 retry enabled",
+      "pass": true
+    },
+    {
+      "name": "drawer 375 http-503 accessible alert",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure drawer http-503 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Good morning, John Paul.",
+        "dialogs": [
+          {
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 812,
+            "height": 812
+          }
+        ]
+      }
+    },
+    {
+      "name": "drawer http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "drawer http-503 protected after success",
+      "pass": true
+    },
+    {
+      "name": "student isolated login",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "account 375 unconfirmed-200 pending",
+      "pass": true
+    },
+    {
+      "name": "account 375 unconfirmed-200 stays authenticated page",
+      "pass": true
+    },
+    {
+      "name": "account 375 unconfirmed-200 retry enabled",
+      "pass": true
+    },
+    {
+      "name": "account 375 unconfirmed-200 accessible alert",
+      "pass": true
+    },
+    {
+      "name": "unconfirmed-200 presentation retained",
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account unconfirmed-200 375 contains page/dialog",
+      "pass": true,
+      "detail": {
+        "width": 375,
+        "documentWidth": 375,
+        "bodyWidth": 375,
+        "heading": "Account profile",
+        "dialogs": []
+      }
+    },
+    {
+      "name": "unconfirmed-200 refresh remains authenticated",
+      "pass": false
+    },
+    {
+      "name": "unconfirmed-200 normal reload clears temporary bio",
+      "pass": true
+    },
+    {
+      "name": "account unconfirmed-200 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "account unconfirmed-200 protected after success",
+      "pass": true
+    }
+  ],
+  "responsive": [
+    {
+      "name": "Demo Accounts 320",
+      "route": "/login",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "width": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 19,
+          "right": 301,
+          "top": 21.087812423706055,
+          "bottom": 801.087812423706,
+          "height": 812
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 375",
+      "route": "/login",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 19,
+          "right": 356,
+          "top": 16,
+          "bottom": 796,
+          "height": 812
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 768",
+      "route": "/login",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 48,
+          "right": 720,
+          "top": 16,
+          "bottom": 884,
+          "height": 900
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 1440",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 384,
+          "right": 1056,
+          "top": 16,
+          "bottom": 884,
+          "height": 900
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts 1920",
+      "route": "/login",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 624,
+          "right": 1296,
+          "top": 16,
+          "bottom": 1064,
+          "height": 1080
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts doubled 375",
+      "route": "/login",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 35,
+          "right": 340,
+          "top": 16,
+          "bottom": 796,
+          "height": 812
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Demo Accounts doubled 1440",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Portal sign in",
+      "dialogs": [
+        {
+          "left": 384,
+          "right": 1056,
+          "top": 19.148038864135742,
+          "bottom": 887.1480388641357,
+          "height": 900
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 320",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "width": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "heading": "Project Disclaimer",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 375",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Project Disclaimer",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 768",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "heading": "Project Disclaimer",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 1440",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Project Disclaimer",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal disclaimer 1920",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "heading": "Project Disclaimer",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal terms 320",
+      "route": "/terms",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "width": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "heading": "Demo Terms of Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal terms 375",
+      "route": "/terms",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Demo Terms of Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal terms 768",
+      "route": "/terms",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "heading": "Demo Terms of Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal terms 1440",
+      "route": "/terms",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Demo Terms of Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal terms 1920",
+      "route": "/terms",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "heading": "Demo Terms of Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 320",
+      "route": "/privacy",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "width": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "heading": "Privacy & Data Notice",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 375",
+      "route": "/privacy",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Privacy & Data Notice",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 768",
+      "route": "/privacy",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "heading": "Privacy & Data Notice",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 1440",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Privacy & Data Notice",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal privacy 1920",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "heading": "Privacy & Data Notice",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 320",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "width": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "heading": "Acceptable Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 375",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Acceptable Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 768",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "heading": "Acceptable Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 1440",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Acceptable Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Legal acceptable-use 1920",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "heading": "Acceptable Use",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Privacy doubled 375",
+      "route": "/privacy",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Privacy & Data Notice",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Privacy doubled 1440",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Privacy & Data Notice",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Technology correction 375",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Demo accounts",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Technology correction 1920",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "heading": "Demo accounts",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Technology doubled",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Demo accounts",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Technology correction 320",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "width": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "heading": "Demo accounts",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Technology correction 768",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "heading": "Demo accounts",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Technology correction 1440",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Demo accounts",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account network-abort 375",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Account profile",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 375",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Account profile",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out error doubled",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Account profile",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account network-abort 1920",
+      "route": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "heading": "Account profile",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 1920",
+      "route": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "width": 1920,
+      "documentWidth": 1920,
+      "bodyWidth": 1920,
+      "heading": "Account profile",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 320",
+      "route": "/account",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "width": 320,
+      "documentWidth": 320,
+      "bodyWidth": 320,
+      "heading": "Account profile",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 768",
+      "route": "/account",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "width": 768,
+      "documentWidth": 768,
+      "bodyWidth": 768,
+      "heading": "Account profile",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account http-503 1440",
+      "route": "/account",
+      "viewport": {
+        "width": 1440,
+        "height": 812
+      },
+      "width": 1440,
+      "documentWidth": 1440,
+      "bodyWidth": 1440,
+      "heading": "Account profile",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure menu network-abort 375",
+      "route": "/student",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Good morning, John Paul.",
+      "dialogs": [],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure drawer http-503 375",
+      "route": "/student",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Good morning, John Paul.",
+      "dialogs": [
+        {
+          "left": 0,
+          "right": 320,
+          "top": 0,
+          "bottom": 812,
+          "height": 812
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Sign-out failure account unconfirmed-200 375",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "width": 375,
+      "documentWidth": 375,
+      "bodyWidth": 375,
+      "heading": "Account profile",
+      "dialogs": [],
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "file": "demo-accounts-320.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Start of nine-entry scrollable list; no password section",
+      "capturedAt": "2026-10-02T00:41:52.640Z"
+    },
+    {
+      "file": "demo-accounts-375.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Start of nine-entry scrollable list; no password section",
+      "capturedAt": "2026-10-02T00:41:52.696Z"
+    },
+    {
+      "file": "demo-accounts-768.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Start of nine-entry scrollable list; no password section",
+      "capturedAt": "2026-10-02T00:41:52.774Z"
+    },
+    {
+      "file": "demo-accounts-1440.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Start of nine-entry scrollable list; no password section",
+      "capturedAt": "2026-10-02T00:41:52.865Z"
+    },
+    {
+      "file": "demo-accounts-1920.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Start of nine-entry scrollable list; no password section",
+      "capturedAt": "2026-10-02T00:41:52.971Z"
+    },
+    {
+      "file": "demo-accounts-doubled-375.png",
+      "group": "public",
+      "route": "/login?portal=TECHNOLOGY",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Doubled text simulation",
+      "capturedAt": "2026-10-02T00:41:53.070Z"
+    },
+    {
+      "file": "demo-accounts-doubled-1440.png",
+      "group": "public",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Doubled text simulation",
+      "capturedAt": "2026-10-02T00:41:53.860Z"
+    },
+    {
+      "file": "clipboard-failure-1440.png",
+      "group": "public",
+      "route": "/login",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Copy denied: truthful selectable-email fallback",
+      "capturedAt": "2026-10-02T00:41:54.876Z"
+    },
+    {
+      "file": "legal-disclaimer-focus-1440.png",
+      "group": "public",
+      "route": "/disclaimer",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Pre-ack legal H1 focus and next Tab",
+      "capturedAt": "2026-10-02T00:41:55.895Z"
+    },
+    {
+      "file": "legal-terms-focus-1440.png",
+      "group": "public",
+      "route": "/terms",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Pre-ack legal H1 focus and next Tab",
+      "capturedAt": "2026-10-02T00:41:56.216Z"
+    },
+    {
+      "file": "legal-privacy-focus-1440.png",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Pre-ack legal H1 focus and next Tab",
+      "capturedAt": "2026-10-02T00:41:56.574Z"
+    },
+    {
+      "file": "legal-acceptable-use-focus-1440.png",
+      "group": "public",
+      "route": "/acceptable-use",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Pre-ack legal H1 focus and next Tab",
+      "capturedAt": "2026-10-02T00:41:56.970Z"
+    },
+    {
+      "file": "privacy-reading-375.png",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Legal destination reading layout",
+      "capturedAt": "2026-10-02T00:42:04.928Z"
+    },
+    {
+      "file": "privacy-reading-1920.png",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Legal destination reading layout",
+      "capturedAt": "2026-10-02T00:42:06.928Z"
+    },
+    {
+      "file": "privacy-doubled-375.png",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Doubled text simulation",
+      "capturedAt": "2026-10-02T00:42:10.825Z"
+    },
+    {
+      "file": "privacy-doubled-1440.png",
+      "group": "public",
+      "route": "/privacy",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Doubled text simulation",
+      "capturedAt": "2026-10-02T00:42:11.807Z"
+    },
+    {
+      "file": "successful-login-1440.png",
+      "group": "student",
+      "route": "/student",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Valid fictional account, no credential visible",
+      "capturedAt": "2026-10-02T00:42:13.259Z"
+    },
+    {
+      "file": "technology-correction-375.png",
+      "group": "technology",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Read-only directory heading once with useful detail",
+      "capturedAt": "2026-10-02T00:42:54.435Z"
+    },
+    {
+      "file": "technology-correction-1920.png",
+      "group": "technology",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Read-only directory heading once with useful detail",
+      "capturedAt": "2026-10-02T00:42:54.572Z"
+    },
+    {
+      "file": "technology-doubled-375.png",
+      "group": "technology",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Doubled text on affected warning/directory",
+      "capturedAt": "2026-10-02T00:42:54.709Z"
+    },
+    {
+      "file": "technology-correction-320.png",
+      "group": "technology",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Read-only directory warning once",
+      "capturedAt": "2026-10-02T00:46:17.872Z"
+    },
+    {
+      "file": "technology-correction-768.png",
+      "group": "technology",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Read-only directory warning once",
+      "capturedAt": "2026-10-02T00:46:17.970Z"
+    },
+    {
+      "file": "technology-correction-1440.png",
+      "group": "technology",
+      "route": "/technology/accounts",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Read-only directory warning once",
+      "capturedAt": "2026-10-02T00:46:18.099Z"
+    },
+    {
+      "file": "signout-account-network-abort-375.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:20.727Z"
+    },
+    {
+      "file": "signout-account-http-503-375.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:23.948Z"
+    },
+    {
+      "file": "signout-doubled-375.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Doubled text on truthful failure feedback",
+      "capturedAt": "2026-10-02T00:46:24.025Z"
+    },
+    {
+      "file": "signout-account-network-abort-1920.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:27.287Z"
+    },
+    {
+      "file": "signout-account-http-503-1920.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:30.531Z"
+    },
+    {
+      "file": "signout-account-http-503-320.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:33.780Z"
+    },
+    {
+      "file": "signout-account-http-503-768.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 768,
+        "height": 812
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:37.032Z"
+    },
+    {
+      "file": "signout-account-http-503-1440.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 1440,
+        "height": 812
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:40.311Z"
+    },
+    {
+      "file": "signout-menu-network-abort-375.png",
+      "group": "student",
+      "route": "/student",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:43.801Z"
+    },
+    {
+      "file": "signout-drawer-http-503-375.png",
+      "group": "student",
+      "route": "/student",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:46.660Z"
+    },
+    {
+      "file": "signout-account-unconfirmed-200-375.png",
+      "group": "student",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Injected sign-out failure: truthful state and enabled retry",
+      "capturedAt": "2026-10-02T00:46:49.255Z"
+    }
+  ],
+  "pageErrors": [],
+  "continuations": [
+    {
+      "startedAt": "2026-10-02T00:46:12.711Z",
+      "reason": "Finish after portal-switch selector correction; completed 220 assertions retained."
+    }
+  ],
+  "finishedAt": "2026-10-02T00:46:50.602Z",
+  "summary": {
+    "checks": 333,
+    "failed": 8,
+    "responsive": 46,
+    "responsiveFailures": 0,
+    "captures": 34,
+    "pageErrors": 0
+  }
+}

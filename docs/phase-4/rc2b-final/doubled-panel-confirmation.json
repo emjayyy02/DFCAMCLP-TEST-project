@@ -1,0 +1,360 @@
+{
+  "checkedAt": "2026-10-02T00:57:05.590Z",
+  "scope": "Keyboard action visibility with doubled text simulation",
+  "checks": [
+    {
+      "name": "375 doubled action 0",
+      "pass": true,
+      "detail": {
+        "label": "Close",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 1",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Applicant",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 2",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Applicant",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 3",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Student",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 4",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Student",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 5",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Faculty",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 6",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Faculty",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 7",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Program Coordinator",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 8",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Program Coordinator",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 9",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Admissions & Records",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 10",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Admissions & Records",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 11",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Maintenance Staff",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 12",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Maintenance Staff",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 13",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for School Admin",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 14",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: School Admin",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 15",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for IT Admin",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 16",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: IT Admin",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 17",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Faculty + Developer",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled action 18",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Faculty + Developer",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "375 doubled Escape returns focus",
+      "pass": true
+    },
+    {
+      "name": "1440 doubled action 0",
+      "pass": true,
+      "detail": {
+        "label": "Close",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 1",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Applicant",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 2",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Applicant",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 3",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Student",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 4",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Student",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 5",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Faculty",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 6",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Faculty",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 7",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Program Coordinator",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 8",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Program Coordinator",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 9",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Admissions & Records",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 10",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Admissions & Records",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 11",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Maintenance Staff",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 12",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Maintenance Staff",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 13",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for School Admin",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 14",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: School Admin",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 15",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for IT Admin",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 16",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: IT Admin",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 17",
+      "pass": true,
+      "detail": {
+        "label": "Copy email for Faculty + Developer",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled action 18",
+      "pass": true,
+      "detail": {
+        "label": "Use this account: Faculty + Developer",
+        "contained": true,
+        "visible": true
+      }
+    },
+    {
+      "name": "1440 doubled Escape returns focus",
+      "pass": true
+    }
+  ],
+  "summary": {
+    "checks": 40,
+    "failed": 0
+  }
+}

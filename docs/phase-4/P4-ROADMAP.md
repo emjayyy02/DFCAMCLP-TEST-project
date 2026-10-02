@@ -1,12 +1,12 @@
 # Phase 4 — Roadmap and audit traceability
 
-Status: **P4-M1 through P4-M7 and P4-FD1 through P4-FD4 retain their historical PASS / COMPLETE status. P4-FD5 ✅ is accepted through the owner's FD6 implementation brief. P4-FD6 ✅ is complete after frontend acceptance. P4-FD7 ✅ is accepted through the owner's FD8 implementation brief. P4-FD8 ✅ is complete after frontend acceptance. RC2A is next and NOT STARTED; RC2B follows RC2A.** Updated 1 October 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) remains the foundation; the [FD5 implementation lock](P4-FD5-IMPLEMENTATION-LOCK.md) specifies the accepted expressive amendments. The [FD7 disclosure/legal lock](P4-FD7-DISCLOSURE-LEGAL-UX-LOCK.md) owns the accepted disclosure amendment. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains historical; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior except the explicitly identified disclosure changes implemented in FD8. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
+Status: **P4-M1 through P4-M7 and P4-FD1 through P4-FD4 retain their historical PASS / COMPLETE status. P4-FD5 ✅ is accepted through the owner's FD6 implementation brief. P4-FD6 ✅ is complete after frontend acceptance. P4-FD7 ✅ is accepted through the owner's FD8 implementation brief. P4-FD8 ✅ is complete after frontend acceptance. RC2A ✅ is accepted through the owner's RC2B implementation brief. RC2B ✅ PASS: the three confirmed defects, email-only Demo Accounts panel and required local release gates pass. Next: PUBLIC DEMO RELEASE / CREDENTIAL HANDOFF, not started. Public credential approval and hosted release checks remain pending.** Updated 2 October 2026. This roadmap allocates work; only an explicit milestone instruction authorizes implementation. The [Final Visual Lock](P4-FINAL-VISUAL-LOCK.md) remains the foundation; the [FD5 implementation lock](P4-FD5-IMPLEMENTATION-LOCK.md) specifies the accepted expressive amendments. The [FD7 disclosure/legal lock](P4-FD7-DISCLOSURE-LEGAL-UX-LOCK.md) owns the accepted disclosure amendment. [P4-DESIGN-SYSTEM.md](P4-DESIGN-SYSTEM.md) remains historical; [P4-UX-RULES.md](P4-UX-RULES.md) continues to own behavior except the explicitly identified disclosure changes implemented in FD8. Institution facts remain in `DFCAMCLP.md`; product authority, evidence limits and U1–U10 gates remain in [PHASE-4-CONTEXT.md](PHASE-4-CONTEXT.md).
 
 ## Dependency and ownership model
 
 Retain completed M1–M6 and the existing architecture, which already separates public/identity, shared shell/primitives, and six feature families. Insert the final frontend design sequence before M7. No framework or route reorganization is justified.
 
-Sequence: **M1 → M2 → M3 → M4 → M5 → M6 → FD1 → FD2 → FD3 → FD4 → M7 (historical Concept RC) → FD5 → FD6 → FD7 → FD8 → RC2A → RC2B**. M4 established coherent demo identity/term changes before M5 consumed them in Academic/Records; M6 reused them. FD1 locked visual direction, FD2 established the shared visual foundation, and FD3/FD4 applied it. FD5 plans expressive interaction, identity presentation and Applicant composition; FD6 implements the authorized lock. The owner's newer FD7 brief supersedes the previous FD7 final-QA label: FD7 plans demo disclosure and legal UX; FD8 implements the accepted plan; RC2A/RC2B own subsequent final review and integrated release checks. This sequence is not permission to run ahead; earlier reports retain their historical milestone labels.
+Sequence: **M1 → M2 → M3 → M4 → M5 → M6 → FD1 → FD2 → FD3 → FD4 → M7 (historical Concept RC) → FD5 → FD6 → FD7 → FD8 → RC2A → RC2B → Public Demo Release**. M4 established coherent demo identity/term changes before M5 consumed them in Academic/Records; M6 reused them. FD1 locked visual direction, FD2 established the shared visual foundation, and FD3/FD4 applied it. FD5 plans expressive interaction, identity presentation and Applicant composition; FD6 implements the authorized lock. The owner's newer FD7 brief supersedes the previous FD7 final-QA label: FD7 plans demo disclosure and legal UX; FD8 implements the accepted plan; RC2A/RC2B own subsequent final review and integrated release checks. This sequence is not permission to run ahead; earlier reports retain their historical milestone labels.
 
 M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy and entity-specific interactions. Those implementation reports and A01–A55/O1–O8 dispositions below remain historical records. New visual findings V01–V13 are owned by FD2–FD4 as mapped in the [FD1 audit](P4-FD1-FINAL-VISUAL-AUDIT.md). M7 validates and adds bounded motion; it does not become a catch-all feature milestone. The FD sequence changes presentation only and does not reopen feature, fixture, policy or backend work.
 
@@ -230,27 +230,31 @@ M2 owned shared contracts and shared adoption; M3–M6 owned feature data, copy 
 
 ## P4-FD8 — Demo Disclosure + Legal UX Implementation
 
-**Status: ✅ PASS / COMPLETE — 1 October 2026, after frontend acceptance.** See [P4-FD8-DISCLOSURE-LEGAL-IMPLEMENTATION.md](P4-FD8-DISCLOSURE-LEGAL-IMPLEMENTATION.md): 277 browser checks, 42 captures, A01–A15 consolidated and B01–B42 retained. Existing validation gates pass except unchanged historical format debt. Work stops here; RC2A is next and NOT STARTED.
+**Status: ✅ PASS / COMPLETE — 1 October 2026, after frontend acceptance.** See [P4-FD8-DISCLOSURE-LEGAL-IMPLEMENTATION.md](P4-FD8-DISCLOSURE-LEGAL-IMPLEMENTATION.md): 277 browser checks, 42 captures, A01–A15 consolidated and B01–B42 retained. Existing validation gates pass except unchanged historical format debt. The later RC2A audit preserves this historical acceptance and the pre-existing disclosure correction.
 
 **Scope:** FD7 lock §13 file map: one root disclosure owner, version-only localStorage preference, public Disclaimer/Terms/Privacy/Acceptable Use routes, shared footer/reopen entries, exact A-clause removal and B-warning retention. Preserve real authentication, temporary workflow/photo/bio behavior and all existing contracts. No public credential release under this scope.
 
 **Acceptance:** FD7 lock §14 storage/version/failure/legal-link/focus/no-JS matrix, direct-entry guards, all persistent surfaces, all notice dispositions, sample print markings, privacy matching actual behavior, five widths and honest accessibility/device limits. Appropriate existing gates; new `fd8-after/` evidence and implementation report. Stop before RC2A.
 
-## RC2A — Final Visual + Interaction Review
+## RC2A — Final Demo QA Audit and Plan
 
-**Status: NOT STARTED — after FD8.** Requires its own review instruction.
+**Status: ✅ ACCEPTED — 2 October 2026, through the owner's RC2B implementation brief.** The audit's one P1 and two P2 findings are resolved in RC2B. The audit remains a historical record of the starting defects and release limits. See [P4-RC2A-FINAL-DEMO-QA-AUDIT.md](P4-RC2A-FINAL-DEMO-QA-AUDIT.md).
 
-**Scope:** core G01–G35 paired golden set, affected FD5 extensions and disclosure/legal states; motion over time, hover/press/focus/selection, dialogs/reopening, mobile/reflow/text enlargement, sample printing and reduced motion. Preserve identity isolation and photo/bio reset contracts. Use bounded evidence rather than recapturing the historical 1,602-image corpus.
+**Scope:** read-only whole-product audit against current locks, fresh route/identity/scenario/interaction/responsive evidence, disclosure/legal and Account/Profile review, two independent assessments, exact RC2B checklist and public-demo account release planning. Preserve identity isolation and photo/bio reset contracts. Use bounded golden/affected-state evidence rather than recapturing the historical 1,602-image corpus.
 
-**Acceptance:** no material outstanding visual/interaction defect; truthful screen-reader/browser/device/print limitations and a separate final-review report. No redesign loop or production/institutional approval claim.
+**Acceptance:** owner accepts the audit, reproduced severity classifications, PASS dispositions and exact [RC2B plan](P4-RC2B-DEFECT-FIX-PLAN.md). Findings can block release while the planning milestone is accepted. No product source or credential change; truthful screen-reader/browser/device/print/host limits. No redesign loop or institutional approval claim.
 
-## RC2B — Integrated Regression + Concept Release Candidate
+## RC2B — Defect Fixes and Integrated Regression
 
-**Status: NOT STARTED — after FD8 and RC2A.** Requires its own release-check instruction.
+**Status: ✅ PASS / COMPLETE — 2 October 2026, under the owner's RC2B implementation brief.** See [P4-RC2B-FINAL-DEFECT-FIXES.md](P4-RC2B-FINAL-DEFECT-FIXES.md). Stop after RC2B.
 
-**Scope:** all 35 portal routes, public/legal/account surfaces and nine account groups; real auth/access/denial/session navigation, workflow/search/filter/sort regression, disclosure preference isolation and full existing gates. Preserve M7/FD6 historical evidence.
+**Scope:** exactly RC2A-F01 sign-out failure/retry, F02 legal-heading focus and F03 repeated Technology notice; Login → View demo accounts with exactly nine fictional identities, Copy email and email-only prefill. The newer RC2B brief supersedes the earlier plan: preserve presentation on failed sign-out, omit any password section/value/placeholder, use `rc2b-final/` evidence and run the specified focused regression plus full validation. Nine isolated identity/access sets, multi-membership restrictions, all 42 contextual B notices, local secret-exposure checks and credential integrity pass. Preserve M7/FD6/FD8/RC2A historical evidence. Public password exposure and hosted checks belong to the next milestone.
 
-**Acceptance:** complete integrated evidence and final Concept RC verdict with remaining limitations/blockers explicit. No credential release, deployment or institutional production approval implied.
+**Acceptance:** all three findings are resolved; the panel and required local gates pass. The main run preserves eight invalid neutral-Account reload predicates; a focused 64/64 confirmation resolves them. Full validation passes except the explicitly permitted unchanged four-file formatting debt; changed files pass formatting. Remaining browser/device/host limits are explicit. **READY FOR PUBLIC DEMO CREDENTIAL HANDOFF.** Credential publication and deployment require their own authorization; no institutional production approval is implied.
+
+## PUBLIC DEMO RELEASE / CREDENTIAL HANDOFF — Next after RC2B
+
+**Status: NEXT / NOT STARTED.** RC2B is complete. Obtain an approved shared public credential and verify the actual release database/allowlist/permissions, bounded shared-account behavior and hosted secret/session/privacy checks before publication. No password was exposed or changed in RC2B. Reconcile the older sign-out-intent disclosure wording with the RC2B confirmed-success contract under this milestone's authorization. Public portfolio availability is separate from institutional production readiness. Do not publish credentials, deploy, commit or push without the corresponding instruction.
 
 ## Common implementation validation
 
@@ -414,3 +418,17 @@ Source: [PHASE-4-MANUAL-AUDIT.md](PHASE-4-MANUAL-AUDIT.md). Each row has one pri
 - Academic, Admissions & Records, Operations, and Technology composition now follows the Final Visual Lock. G17–G35 and five extension states have fresh desktop/mobile and relevant full-page evidence in `fd4-after/`; an Applicant profile served as the unchanged FD3 comparator.
 - All requested tests, integration suites, lint, typecheck, build, and whitespace checks pass. Repository-wide formatting still reports the four unchanged files recorded in the FD4 report.
 - Routes, auth/access, fixtures, validation, scenarios, workflows, actions, search/filter/sort, and demo state remain unchanged. M7 is next and has not started.
+
+### P4-RC2A audit handoff — 2 October 2026
+
+- [Final Demo QA Audit](P4-RC2A-FINAL-DEMO-QA-AUDIT.md) and [Defect Fix Plan](P4-RC2B-DEFECT-FIX-PLAN.md) are ready for owner acceptance. FD8 remains ✅; RC2A becomes ✅ only after owner acceptance.
+- Public release is BLOCKED by one confirmed P1 sign-out error-handling defect. Two P2 fixes cover legal destination focus and repeated Technology notice text. Clean areas and release/device limits are explicitly recorded.
+- Fresh read-only evidence is in `rc2a-audit/`; 156 source/configuration/assets hashes are unchanged. Existing dirty FD8 source/report/evidence was preserved. No credential change, database reset, package installation, commit, push or deployment occurred.
+- RC2B is next and NOT STARTED. Public Demo Release follows accepted RC2B and explicit credential-exposure/publication authorization. Earlier M7/RC and milestone handoffs above remain historical statements.
+
+### P4-RC2B completion — 2 October 2026
+
+- RC2A ✅ is accepted through the owner's RC2B brief; RC2B ✅ passes the three fixes, approved nine-account email-only panel and required local gates. See [Final Defect Fixes](P4-RC2B-FINAL-DEFECT-FIXES.md) and fresh `rc2b-final/` evidence.
+- Corrected reload verification passes 64/64; doubled-panel keyboard visibility passes 40/40; all 46 main responsive measurements and 16 local safety checks pass. The raw main manifest retains its eight superseded harness predicates for traceability.
+- All requested validation passes except the unchanged four-file format debt. Credential, logical-account and membership snapshots match. No password section, credential change/exposure, reset, new package, commit, push or deployment occurred.
+- Next is **PUBLIC DEMO RELEASE / CREDENTIAL HANDOFF**. Actual hosted checks and final public-password approval remain pending. Earlier M7/RC/FD/RC2A handoffs above are preserved as historical statements; stop after RC2B.

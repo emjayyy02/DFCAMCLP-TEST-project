@@ -8,3 +8,5 @@ PRODUCT.md
 coverage
 next-env.d.ts
 drizzle/meta
+# Preserve immutable raw results and harness provenance from the completed audit.
+docs/phase-4/rc2a-audit

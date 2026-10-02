@@ -1,0 +1,352 @@
+{
+  "startedAt": "2026-10-02T00:51:42.145Z",
+  "basis": "The eight original reload assertions incorrectly expected a portal summary on neutral /account. This run checks the guarded Account identity and protected Student access instead.",
+  "checks": [
+    {
+      "name": "375 network-abort login",
+      "pass": true
+    },
+    {
+      "name": "375 network-abort failure stays Account",
+      "pass": true
+    },
+    {
+      "name": "375 network-abort failure permits retry",
+      "pass": true
+    },
+    {
+      "name": "375 network-abort guarded Account remains signed in after reload",
+      "pass": true
+    },
+    {
+      "name": "375 network-abort neutral Account H1 present",
+      "pass": true
+    },
+    {
+      "name": "375 network-abort protected Student remains authenticated",
+      "pass": true
+    },
+    {
+      "name": "375 network-abort retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "375 network-abort successful retry revokes protected access",
+      "pass": true
+    },
+    {
+      "name": "375 http-503 login",
+      "pass": true
+    },
+    {
+      "name": "375 http-503 failure stays Account",
+      "pass": true
+    },
+    {
+      "name": "375 http-503 failure permits retry",
+      "pass": true
+    },
+    {
+      "name": "375 http-503 guarded Account remains signed in after reload",
+      "pass": true
+    },
+    {
+      "name": "375 http-503 neutral Account H1 present",
+      "pass": true
+    },
+    {
+      "name": "375 http-503 protected Student remains authenticated",
+      "pass": true
+    },
+    {
+      "name": "375 http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "375 http-503 successful retry revokes protected access",
+      "pass": true
+    },
+    {
+      "name": "1920 network-abort login",
+      "pass": true
+    },
+    {
+      "name": "1920 network-abort failure stays Account",
+      "pass": true
+    },
+    {
+      "name": "1920 network-abort failure permits retry",
+      "pass": true
+    },
+    {
+      "name": "1920 network-abort guarded Account remains signed in after reload",
+      "pass": true
+    },
+    {
+      "name": "1920 network-abort neutral Account H1 present",
+      "pass": true
+    },
+    {
+      "name": "1920 network-abort protected Student remains authenticated",
+      "pass": true
+    },
+    {
+      "name": "1920 network-abort retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "1920 network-abort successful retry revokes protected access",
+      "pass": true
+    },
+    {
+      "name": "1920 http-503 login",
+      "pass": true
+    },
+    {
+      "name": "1920 http-503 failure stays Account",
+      "pass": true
+    },
+    {
+      "name": "1920 http-503 failure permits retry",
+      "pass": true
+    },
+    {
+      "name": "1920 http-503 guarded Account remains signed in after reload",
+      "pass": true
+    },
+    {
+      "name": "1920 http-503 neutral Account H1 present",
+      "pass": true
+    },
+    {
+      "name": "1920 http-503 protected Student remains authenticated",
+      "pass": true
+    },
+    {
+      "name": "1920 http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "1920 http-503 successful retry revokes protected access",
+      "pass": true
+    },
+    {
+      "name": "320 http-503 login",
+      "pass": true
+    },
+    {
+      "name": "320 http-503 failure stays Account",
+      "pass": true
+    },
+    {
+      "name": "320 http-503 failure permits retry",
+      "pass": true
+    },
+    {
+      "name": "320 http-503 guarded Account remains signed in after reload",
+      "pass": true
+    },
+    {
+      "name": "320 http-503 neutral Account H1 present",
+      "pass": true
+    },
+    {
+      "name": "320 http-503 protected Student remains authenticated",
+      "pass": true
+    },
+    {
+      "name": "320 http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "320 http-503 successful retry revokes protected access",
+      "pass": true
+    },
+    {
+      "name": "768 http-503 login",
+      "pass": true
+    },
+    {
+      "name": "768 http-503 failure stays Account",
+      "pass": true
+    },
+    {
+      "name": "768 http-503 failure permits retry",
+      "pass": true
+    },
+    {
+      "name": "768 http-503 guarded Account remains signed in after reload",
+      "pass": true
+    },
+    {
+      "name": "768 http-503 neutral Account H1 present",
+      "pass": true
+    },
+    {
+      "name": "768 http-503 protected Student remains authenticated",
+      "pass": true
+    },
+    {
+      "name": "768 http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "768 http-503 successful retry revokes protected access",
+      "pass": true
+    },
+    {
+      "name": "1440 http-503 login",
+      "pass": true
+    },
+    {
+      "name": "1440 http-503 failure stays Account",
+      "pass": true
+    },
+    {
+      "name": "1440 http-503 failure permits retry",
+      "pass": true
+    },
+    {
+      "name": "1440 http-503 guarded Account remains signed in after reload",
+      "pass": true
+    },
+    {
+      "name": "1440 http-503 neutral Account H1 present",
+      "pass": true
+    },
+    {
+      "name": "1440 http-503 protected Student remains authenticated",
+      "pass": true
+    },
+    {
+      "name": "1440 http-503 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "1440 http-503 successful retry revokes protected access",
+      "pass": true
+    },
+    {
+      "name": "375 unconfirmed-200 login",
+      "pass": true
+    },
+    {
+      "name": "375 unconfirmed-200 failure stays Account",
+      "pass": true
+    },
+    {
+      "name": "375 unconfirmed-200 failure permits retry",
+      "pass": true
+    },
+    {
+      "name": "375 unconfirmed-200 guarded Account remains signed in after reload",
+      "pass": true
+    },
+    {
+      "name": "375 unconfirmed-200 neutral Account H1 present",
+      "pass": true
+    },
+    {
+      "name": "375 unconfirmed-200 protected Student remains authenticated",
+      "pass": true
+    },
+    {
+      "name": "375 unconfirmed-200 retry succeeds",
+      "pass": true
+    },
+    {
+      "name": "375 unconfirmed-200 successful retry revokes protected access",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "file": "reload-confirmation-375-network-abort.png",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Guarded neutral Account after failed sign-out and reload",
+      "capturedAt": "2026-10-02T00:51:44.439Z"
+    },
+    {
+      "file": "reload-confirmation-375-http-503.png",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Guarded neutral Account after failed sign-out and reload",
+      "capturedAt": "2026-10-02T00:51:48.143Z"
+    },
+    {
+      "file": "reload-confirmation-1920-network-abort.png",
+      "route": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Guarded neutral Account after failed sign-out and reload",
+      "capturedAt": "2026-10-02T00:51:51.690Z"
+    },
+    {
+      "file": "reload-confirmation-1920-http-503.png",
+      "route": "/account",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "state": "Guarded neutral Account after failed sign-out and reload",
+      "capturedAt": "2026-10-02T00:51:55.441Z"
+    },
+    {
+      "file": "reload-confirmation-320-http-503.png",
+      "route": "/account",
+      "viewport": {
+        "width": 320,
+        "height": 812
+      },
+      "state": "Guarded neutral Account after failed sign-out and reload",
+      "capturedAt": "2026-10-02T00:51:59.123Z"
+    },
+    {
+      "file": "reload-confirmation-768-http-503.png",
+      "route": "/account",
+      "viewport": {
+        "width": 768,
+        "height": 900
+      },
+      "state": "Guarded neutral Account after failed sign-out and reload",
+      "capturedAt": "2026-10-02T00:52:02.677Z"
+    },
+    {
+      "file": "reload-confirmation-1440-http-503.png",
+      "route": "/account",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": "Guarded neutral Account after failed sign-out and reload",
+      "capturedAt": "2026-10-02T00:52:06.264Z"
+    },
+    {
+      "file": "reload-confirmation-375-unconfirmed-200.png",
+      "route": "/account",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "state": "Guarded neutral Account after failed sign-out and reload",
+      "capturedAt": "2026-10-02T00:52:09.870Z"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-02T00:52:11.769Z",
+  "summary": {
+    "checks": 64,
+    "failed": 0,
+    "captures": 8,
+    "pageErrors": 0
+  }
+}

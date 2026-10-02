@@ -2,7 +2,7 @@
 
 /* Project disclosure and reading surfaces reuse the civic-academic tokens. */
 .demo-disclosure-dialog {
-  width: min(32rem, calc(100vw - 32px));
+  width: min(34rem, calc(100vw - 32px));
   max-height: calc(100dvh - 32px);
   margin: auto;
   padding: 0;
@@ -25,19 +25,26 @@
   padding: 24px;
   overscroll-behavior: contain;
 }
-.demo-disclosure-body h2 {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 600;
-  margin-bottom: 16px;
+.demo-disclosure-header {
+  text-align: center;
 }
-.demo-disclosure-body h2::after {
+.demo-disclosure-header h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+/* This static heading receives initial focus, not an input-like focus frame. */
+.demo-disclosure-header h2:focus {
+  outline: none;
+}
+.demo-disclosure-header::after {
   content: "";
   display: block;
   width: 64px;
   height: 4px;
   background: var(--accent);
-  margin-top: 12px;
+  margin: 16px auto 0;
 }
 .demo-disclosure-body p,
 .disclosure-fallback p {
@@ -45,9 +52,61 @@
   line-height: 24px;
   margin-top: 12px;
 }
+.demo-disclosure-header p {
+  max-width: 28rem;
+  margin: 8px auto 0;
+  color: var(--foreground-muted);
+  font-size: 14px;
+  line-height: 20px;
+}
+.demo-disclosure-symbol {
+  width: 20px;
+  height: 20px;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+.demo-disclosure-header .demo-disclosure-symbol {
+  width: 32px;
+  height: 32px;
+  margin-inline: auto;
+  color: var(--foreground);
+}
+.disclosure-symbol-accent {
+  fill: var(--accent-soft);
+}
+.demo-disclosure-header .disclosure-symbol-accent {
+  fill: var(--accent);
+}
+.demo-disclosure-points {
+  display: grid;
+  gap: 20px;
+  margin-block: 24px;
+  padding: 0;
+  list-style: none;
+}
+.demo-disclosure-point {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+}
+.demo-disclosure-point .demo-disclosure-symbol {
+  margin-top: 2px;
+}
+.demo-disclosure-point h3,
+.demo-disclosure-resources {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.demo-disclosure-point p {
+  margin-top: 4px;
+}
 .demo-disclosure-body nav {
   display: grid;
-  margin-top: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 16px;
+  margin-top: 8px;
 }
 .demo-disclosure-body nav a {
   min-height: 44px;
@@ -72,7 +131,7 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
   padding: 16px 24px;
@@ -82,8 +141,10 @@
   min-height: 44px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .demo-disclosure-actions button {
+  margin-left: auto;
   height: auto;
   min-height: 44px;
   white-space: normal;
@@ -215,6 +276,13 @@
   }
   .demo-disclosure-actions {
     padding: 12px 16px;
+    gap: 8px;
+  }
+  .demo-disclosure-body nav {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .demo-disclosure-actions > a {
+    width: 100%;
   }
   .demo-disclosure-actions button {
     width: 100%;
