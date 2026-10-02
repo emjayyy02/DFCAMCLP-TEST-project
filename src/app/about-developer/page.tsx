@@ -75,13 +75,13 @@ export default function AboutDeveloperPage() {
             <span className="developer-wave" aria-hidden="true">
               👋
             </span>
-            <h1>Hey, I&apos;m Mj.</h1>
+            <h1>Hey, I&apos;m Marvin!.</h1>
             <p>
-              I started this as a side project just to build something fun and
-              realistic. It somehow became a whole portal 😅. I learn mostly by
+              I started this as a side project at random 12 noon on a Sunday, just to build something fun and
+              realistic. Pero tinuloy ko nalang after a few weeks, and now I&apos;m here. I love
               building, breaking things, and improving them.
             </p>
-            <nav className="developer-socials" aria-label="Find Mj online">
+            <nav className="developer-socials" aria-label="Find Marvin online">
               {socials.map((social) => (
                 <Button asChild variant="outline" key={social.name}>
                   <a
