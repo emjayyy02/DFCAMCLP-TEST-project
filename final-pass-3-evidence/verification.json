@@ -1,0 +1,76 @@
+{
+  "validation": true,
+  "popoverHoverFocusClickEscape": true,
+  "imageTypeSizeDecodeRemove": true,
+  "dropdowns": true,
+  "ticketPreview": true,
+  "applicationPreview": true,
+  "editPreservesValues": true,
+  "reloadClearsValues": true,
+  "noFormNetworkWrites": true,
+  "keyboard": true,
+  "text200Percent": true,
+  "layouts": [
+    {
+      "route": "/account/recovery",
+      "width": 320,
+      "scroll": 320,
+      "columns": "288px"
+    },
+    {
+      "route": "/account/recovery",
+      "width": 375,
+      "scroll": 375,
+      "columns": "343px"
+    },
+    {
+      "route": "/account/recovery",
+      "width": 768,
+      "scroll": 768,
+      "columns": "356px 356px"
+    },
+    {
+      "route": "/account/recovery",
+      "width": 1440,
+      "scroll": 1440,
+      "columns": "372px 372px"
+    },
+    {
+      "route": "/account/recovery",
+      "width": 1920,
+      "scroll": 1920,
+      "columns": "372px 372px"
+    },
+    {
+      "route": "/account/create/applicant",
+      "width": 320,
+      "scroll": 320,
+      "columns": "288px"
+    },
+    {
+      "route": "/account/create/applicant",
+      "width": 375,
+      "scroll": 375,
+      "columns": "343px"
+    },
+    {
+      "route": "/account/create/applicant",
+      "width": 768,
+      "scroll": 768,
+      "columns": "356px 356px"
+    },
+    {
+      "route": "/account/create/applicant",
+      "width": 1440,
+      "scroll": 1440,
+      "columns": "372px 372px"
+    },
+    {
+      "route": "/account/create/applicant",
+      "width": 1920,
+      "scroll": 1920,
+      "columns": "372px 372px"
+    }
+  ],
+  "errors": []
+}

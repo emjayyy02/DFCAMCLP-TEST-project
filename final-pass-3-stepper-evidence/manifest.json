@@ -1,0 +1,320 @@
+{
+  "recordedAt": "2026-10-02T14:21:23.776630+00:00",
+  "browser": "installed Microsoft Edge Chromium via Playwright",
+  "runtime": "existing development server localhost:3000",
+  "revision": "40d2c206339a23ae00e67a15d2baea58f7b20d73",
+  "dirtyWorkingTree": true,
+  "sourceHashesRecordedAfterCapture": {
+    "src/app/globals.css": "c396fdc584a3ad0e7cabc0ed920192bbd8137d87cd98bdcf3bc4d0a38c5ad6de",
+    "src/app/account/create/applicant/page.tsx": "e1496a42c60afecd596f4bb81e4222db345214f75040dcf9aa59d71ad6e363fd",
+    "src/components/ui/identity.tsx": "8aa91c0cceaa4529ace6575ac080ed3385fca87b3219e622c540775105f45c93",
+    "src/components/ui/demo-profile-photo.tsx": "ae0e2db5ebca28f566c17a4d16f7382dc7074ec2b0dc43f836d0a5b289999671",
+    "src/features/identity/account-entry.tsx": "6b95be672d732b88529e86a698dd8cbdc4c5ecbadf06ea8967120f64e4aedca3",
+    "src/features/identity/applicant-entry.tsx": "7010ad6c04ec38cbe2d0ad28bf22d2a042bd61a71d5bc164d4af661f810c00e3",
+    "src/features/identity/applicant-entry-rules.ts": "519174f757fe828501d7cd2550da33165ffec851e61ef55e61d20bc285b41b85",
+    "src/tests/applicant-entry.test.ts": "f67b86a35f8185b421d1dd9b18877fff690cfdbea8a39fd2f78c9e4a416bd01c"
+  },
+  "sourceFilesChangedInThisPass": [
+    "src/app/globals.css",
+    "src/app/account/create/applicant/page.tsx",
+    "src/components/ui/identity.tsx",
+    "src/components/ui/demo-profile-photo.tsx",
+    "src/features/identity/account-entry.tsx",
+    "src/features/identity/applicant-entry.tsx",
+    "src/features/identity/applicant-entry-rules.ts",
+    "src/tests/applicant-entry.test.ts"
+  ],
+  "evidenceFiles": [
+    "final-pass-3-stepper-evidence/README.md",
+    "final-pass-3-stepper-evidence/account-academic-1440.png",
+    "final-pass-3-stepper-evidence/account-academic-375.png",
+    "final-pass-3-stepper-evidence/account-applicant-1440.png",
+    "final-pass-3-stepper-evidence/account-applicant-375.png",
+    "final-pass-3-stepper-evidence/account-student-1440.png",
+    "final-pass-3-stepper-evidence/account-student-1920.png",
+    "final-pass-3-stepper-evidence/account-student-320.png",
+    "final-pass-3-stepper-evidence/account-student-375.png",
+    "final-pass-3-stepper-evidence/account-student-768.png",
+    "final-pass-3-stepper-evidence/complete-1440.png",
+    "final-pass-3-stepper-evidence/complete-1920.png",
+    "final-pass-3-stepper-evidence/complete-320.png",
+    "final-pass-3-stepper-evidence/complete-375.png",
+    "final-pass-3-stepper-evidence/complete-768.png",
+    "final-pass-3-stepper-evidence/contact-1.png",
+    "final-pass-3-stepper-evidence/contact-2.png",
+    "final-pass-3-stepper-evidence/contact-3.png",
+    "final-pass-3-stepper-evidence/contact-4.png",
+    "final-pass-3-stepper-evidence/info-open-1440.png",
+    "final-pass-3-stepper-evidence/info-open-1920.png",
+    "final-pass-3-stepper-evidence/info-open-320.png",
+    "final-pass-3-stepper-evidence/info-open-375-200-text.png",
+    "final-pass-3-stepper-evidence/info-open-375.png",
+    "final-pass-3-stepper-evidence/info-open-768.png",
+    "final-pass-3-stepper-evidence/info-verification.cjs",
+    "final-pass-3-stepper-evidence/info-verification.json",
+    "final-pass-3-stepper-evidence/manifest.json",
+    "final-pass-3-stepper-evidence/overflow-before.png",
+    "final-pass-3-stepper-evidence/photo-empty-1440.png",
+    "final-pass-3-stepper-evidence/photo-empty-375.png",
+    "final-pass-3-stepper-evidence/photo-inspection.cjs",
+    "final-pass-3-stepper-evidence/step-1-1440.png",
+    "final-pass-3-stepper-evidence/step-1-1920.png",
+    "final-pass-3-stepper-evidence/step-1-320.png",
+    "final-pass-3-stepper-evidence/step-1-375.png",
+    "final-pass-3-stepper-evidence/step-1-768.png",
+    "final-pass-3-stepper-evidence/step-2-1440.png",
+    "final-pass-3-stepper-evidence/step-2-1920.png",
+    "final-pass-3-stepper-evidence/step-2-320.png",
+    "final-pass-3-stepper-evidence/step-2-375.png",
+    "final-pass-3-stepper-evidence/step-2-768.png",
+    "final-pass-3-stepper-evidence/step-3-1440.png",
+    "final-pass-3-stepper-evidence/step-3-1920.png",
+    "final-pass-3-stepper-evidence/step-3-320.png",
+    "final-pass-3-stepper-evidence/step-3-375.png",
+    "final-pass-3-stepper-evidence/step-3-768.png",
+    "final-pass-3-stepper-evidence/step-4-1440.png",
+    "final-pass-3-stepper-evidence/step-4-1920.png",
+    "final-pass-3-stepper-evidence/step-4-320.png",
+    "final-pass-3-stepper-evidence/step-4-375.png",
+    "final-pass-3-stepper-evidence/step-4-768.png",
+    "final-pass-3-stepper-evidence/stepper-200-text.png",
+    "final-pass-3-stepper-evidence/verification.json",
+    "final-pass-3-stepper-evidence/verify.cjs",
+    "final-pass-3-stepper-evidence/yellow-info-open.png"
+  ],
+  "screenshots": [
+    {
+      "path": "final-pass-3-stepper-evidence/account-academic-1440.png",
+      "capturedAt": "2026-10-02T14:09:34.596424+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/account-academic-375.png",
+      "capturedAt": "2026-10-02T14:09:33.519767+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/account-applicant-1440.png",
+      "capturedAt": "2026-10-02T14:09:32.160165+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/account-applicant-375.png",
+      "capturedAt": "2026-10-02T14:09:31.089776+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/account-student-1440.png",
+      "capturedAt": "2026-10-02T14:09:28.646374+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/account-student-1920.png",
+      "capturedAt": "2026-10-02T14:09:29.738146+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/account-student-320.png",
+      "capturedAt": "2026-10-02T14:09:25.463416+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/account-student-375.png",
+      "capturedAt": "2026-10-02T14:09:26.524784+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/account-student-768.png",
+      "capturedAt": "2026-10-02T14:09:27.585372+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/complete-1440.png",
+      "capturedAt": "2026-10-02T14:09:20.405067+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/complete-1920.png",
+      "capturedAt": "2026-10-02T14:09:22.538564+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/complete-320.png",
+      "capturedAt": "2026-10-02T14:09:14.323553+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/complete-375.png",
+      "capturedAt": "2026-10-02T14:09:16.305905+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/complete-768.png",
+      "capturedAt": "2026-10-02T14:09:18.325292+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/info-open-1440.png",
+      "capturedAt": "2026-10-02T14:17:18.864279+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/info-open-1920.png",
+      "capturedAt": "2026-10-02T14:17:19.963285+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/info-open-320.png",
+      "capturedAt": "2026-10-02T14:17:14.683849+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/info-open-375-200-text.png",
+      "capturedAt": "2026-10-02T14:17:16.708241+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/info-open-375.png",
+      "capturedAt": "2026-10-02T14:17:15.478502+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/info-open-768.png",
+      "capturedAt": "2026-10-02T14:17:17.786139+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/overflow-before.png",
+      "capturedAt": "2026-10-02T14:08:11.829070+00:00",
+      "historical": true
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/photo-empty-1440.png",
+      "capturedAt": "2026-10-02T14:11:31.005808+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/photo-empty-375.png",
+      "capturedAt": "2026-10-02T14:11:29.877763+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-1-1440.png",
+      "capturedAt": "2026-10-02T14:09:19.173868+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-1-1920.png",
+      "capturedAt": "2026-10-02T14:09:21.272538+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-1-320.png",
+      "capturedAt": "2026-10-02T14:09:13.187001+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-1-375.png",
+      "capturedAt": "2026-10-02T14:09:15.132359+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-1-768.png",
+      "capturedAt": "2026-10-02T14:09:17.166098+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-2-1440.png",
+      "capturedAt": "2026-10-02T14:09:19.663426+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-2-1920.png",
+      "capturedAt": "2026-10-02T14:09:21.790448+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-2-320.png",
+      "capturedAt": "2026-10-02T14:09:13.673222+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-2-375.png",
+      "capturedAt": "2026-10-02T14:09:15.631838+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-2-768.png",
+      "capturedAt": "2026-10-02T14:09:17.647929+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-3-1440.png",
+      "capturedAt": "2026-10-02T14:09:19.944397+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-3-1920.png",
+      "capturedAt": "2026-10-02T14:09:22.074260+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-3-320.png",
+      "capturedAt": "2026-10-02T14:09:13.924669+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-3-375.png",
+      "capturedAt": "2026-10-02T14:09:15.893269+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-3-768.png",
+      "capturedAt": "2026-10-02T14:09:17.912291+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-4-1440.png",
+      "capturedAt": "2026-10-02T14:09:20.192404+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-4-1920.png",
+      "capturedAt": "2026-10-02T14:09:22.326289+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-4-320.png",
+      "capturedAt": "2026-10-02T14:09:14.127977+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-4-375.png",
+      "capturedAt": "2026-10-02T14:09:16.099981+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/step-4-768.png",
+      "capturedAt": "2026-10-02T14:09:18.121450+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/stepper-200-text.png",
+      "capturedAt": "2026-10-02T14:09:23.390734+00:00",
+      "historical": false
+    },
+    {
+      "path": "final-pass-3-stepper-evidence/yellow-info-open.png",
+      "capturedAt": "2026-10-02T14:17:15.530702+00:00",
+      "historical": false
+    }
+  ],
+  "unitTests": 118,
+  "integrationTests": 42,
+  "totalTests": 160,
+  "review": "ship; mobile popover clipping fix resolved",
+  "limitations": [
+    "Source hashes were recorded after captures, not as a before baseline.",
+    "200% text is root-font simulation; no physical device or screen-reader claim."
+  ]
+}

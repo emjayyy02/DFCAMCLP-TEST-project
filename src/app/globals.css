@@ -3143,13 +3143,14 @@ dialog::backdrop {
 }
 .demo-photo-control {
   position: relative;
+  width: 80px;
+  height: 80px;
   flex: 0 0 auto;
-  width: fit-content;
 }
 .demo-photo-trigger {
   position: absolute;
-  right: -12px;
-  bottom: -12px;
+  right: -8px;
+  bottom: -8px;
   width: 44px;
   height: 44px;
   display: grid;
@@ -3471,4 +3472,399 @@ dialog::backdrop {
     transition: none !important;
     transform: none !important;
   }
+}
+
+/* Public entry previews: full-width page surface, readable form measure. */
+.preview-page {
+  max-width: 48rem;
+}
+.preview-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.preview-heading > h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  text-wrap: balance;
+}
+.preview-heading > p {
+  margin-top: 0.5rem;
+  color: var(--foreground-muted);
+}
+.preview-info {
+  position: relative;
+  width: fit-content;
+  margin: 0.5rem auto 0;
+}
+.preview-info-trigger {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  min-height: 2.75rem;
+  color: var(--primary);
+  border-radius: var(--radius-md);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.preview-info-trigger:hover {
+  background: var(--primary-soft);
+}
+.preview-info-content {
+  position: absolute;
+  z-index: 20;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(28rem, calc(100vw - 2rem));
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-panel);
+  color: var(--foreground);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  text-align: left;
+}
+.preview-info-content p + p {
+  margin-top: 0.75rem;
+}
+.preview-form {
+  display: grid;
+  gap: 1.5rem;
+}
+.preview-form[hidden] {
+  display: none;
+}
+.preview-form fieldset {
+  min-width: 0;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+.preview-form legend {
+  padding-right: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.preview-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+}
+.preview-fields > div {
+  min-width: 0;
+}
+.preview-form .field-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.preview-field-wide {
+  grid-column: 1 / -1;
+}
+.preview-required-note {
+  font-size: 0.875rem;
+  color: var(--foreground-muted);
+}
+.preview-actions,
+.preview-image-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+.preview-actions {
+  padding-top: 0.5rem;
+}
+.preview-actions .ui-button {
+  max-width: 100%;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.preview-image-picker {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.preview-local-image,
+.preview-photo-empty {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+.preview-photo-empty {
+  display: grid;
+  place-items: center;
+  background: var(--muted);
+  color: var(--foreground-muted);
+  font-size: 2rem;
+}
+.preview-image-name {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: 0.875rem;
+}
+.preview-image-picker .field-error {
+  width: 100%;
+}
+.preview-recovery-section + .preview-recovery-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+.preview-recovery-section > h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+.preview-result {
+  margin-top: 1.5rem;
+  scroll-margin-top: 6rem;
+}
+.preview-result > h2 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.preview-result .preview-local-image {
+  margin-top: 1rem;
+}
+.preview-result dd {
+  white-space: pre-wrap;
+}
+.preview-back {
+  margin-top: 1.5rem;
+}
+@media (max-width: 40rem) {
+  .preview-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .preview-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .preview-result .identity-preview-facts > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+}
+
+/* Four-stage applicant entry, using the existing institutional controls. */
+.entry-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.entry-title h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  text-wrap: balance;
+}
+.entry-title .preview-info {
+  position: static;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  margin: 0;
+}
+.entry-title .preview-info-trigger {
+  background: var(--accent);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+}
+.entry-title .preview-info-content {
+  top: 100%;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+.entry-stepper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.entry-stepper button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  border-bottom: 2px solid var(--border);
+  cursor: pointer;
+}
+.entry-stepper button > span:first-child {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+}
+.entry-stepper button[aria-current="step"] {
+  border-color: var(--primary);
+  font-weight: 600;
+}
+.entry-stepper button[aria-current="step"] > span:first-child {
+  background: var(--accent);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.entry-stepper button:disabled {
+  cursor: default;
+  color: var(--foreground-muted);
+}
+.entry-stepper button:not(:disabled):hover {
+  background: var(--primary-soft);
+}
+.entry-stage-heading {
+  font-size: 1.375rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.entry-stage-heading:focus,
+.entry-complete > h2:focus {
+  outline: none;
+}
+.entry-error-summary {
+  padding: 1rem;
+  border: 1px solid var(--destructive);
+  margin-bottom: 1.5rem;
+}
+.entry-error-summary ul {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.entry-error-summary a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.entry-photo-area {
+  display: grid;
+  justify-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.entry-photo-area .demo-photo-control {
+  margin: 0.5rem;
+}
+.avatar-placeholder {
+  width: 70%;
+  height: 70%;
+  color: var(--foreground-muted);
+}
+.entry-context,
+.entry-consent > p {
+  color: var(--foreground-muted);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.entry-verification,
+.entry-consent {
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+}
+.entry-section-title,
+.entry-review-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.entry-section-title .preview-info {
+  margin: 0;
+}
+.entry-section-title .preview-info-content {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+.entry-section-title h3,
+.entry-review h3,
+.entry-consent h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.entry-code {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 24rem;
+  margin-top: 1rem;
+}
+.entry-review {
+  display: grid;
+  gap: 1.5rem;
+}
+.entry-review .identity-preview-facts {
+  margin-block: 0.5rem;
+}
+.entry-consent {
+  display: grid;
+  gap: 1rem;
+}
+.entry-consent label {
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+  min-height: 44px;
+}
+.entry-consent input {
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+.entry-consent a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.entry-complete > h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.entry-boundary {
+  margin-top: 0.75rem;
+  color: var(--foreground-muted);
+}
+@media (max-width: 40rem) {
+  .entry-title h1 {
+    font-size: 1.75rem;
+  }
+  .entry-stepper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .entry-stepper button {
+    flex-direction: row;
+    text-align: left;
+  }
+  .entry-review-heading {
+    flex-wrap: wrap;
+  }
+  .entry-review .identity-preview-facts > div,
+  .entry-complete .identity-preview-facts > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+}
+@media (max-width: 24rem) {
+  .entry-stepper {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.entry-stepper button > span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }

@@ -1,250 +1,418 @@
 "use client";
-
-import { useState, type FormEvent } from "react";
-import Link from "next/link";
-import { Alert } from "@/components/ui/alert";
+/* eslint-disable @next/next/no-img-element -- Local blob previews must never pass through an image service. */
+import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
-import { FieldHelp, FieldLabel, Input, Select } from "@/components/ui/input";
-import {
-  campusProgramGroups,
-  type CampusCode,
-} from "@/lib/institution-programs";
+import { FieldLabel, Input, Select, Textarea } from "@/components/ui/input";
+import { supportIssues, validatePreviewImage } from "./preview-rules";
 
-export function ApplicantEntryPreview() {
-  const [campusCode, setCampusCode] = useState<CampusCode>("MAIN");
-  const [programCode, setProgramCode] = useState("BSA");
-  const [major, setMajor] = useState("");
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [showPreview, setShowPreview] = useState(false);
-
-  const campus = campusProgramGroups.find((group) => group.id === campusCode)!;
-  const programs = campus.programs;
-  const program = programs.find((item) => item.code === programCode)!;
-
-  function handleCampusChange(value: string) {
-    const nextCampus = value as CampusCode;
-    setCampusCode(nextCampus);
-    setProgramCode(nextCampus === "MAIN" ? "BSA" : "BSIS");
-    setMajor("");
-  }
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setShowPreview(true);
-  }
-
+export function PreviewInfo({ children }: { children: ReactNode }) {
+  const id = useId();
+  const [open, setOpen] = useState(false);
+  const [pinned, setPinned] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    function outside(event: PointerEvent) {
+      if (!ref.current?.contains(event.target as Node)) {
+        setOpen(false);
+        setPinned(false);
+      }
+    }
+    document.addEventListener("pointerdown", outside);
+    return () => document.removeEventListener("pointerdown", outside);
+  }, []);
   return (
-    <section className="identity-flow-panel" aria-labelledby="entry-form-title">
-      <h2 id="entry-form-title">Applicant entry preview</h2>
-      <p className="identity-flow-intro">
-        A connected system would use this information to begin an application.
-        Here it stays in this page as a temporary preview.
-      </p>
-
-      {showPreview ? (
-        <div className="identity-preview-result">
-          <Alert role="status" tone="info">
-            Preview only. No account or application was created, no email was
-            sent, and nothing was saved.
-          </Alert>
-          <dl className="identity-preview-facts">
-            <div>
-              <dt>Name</dt>
-              <dd>{fullName}</dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <dd>{email}</dd>
-            </div>
-            <div>
-              <dt>Preferred campus</dt>
-              <dd>{campus.name}</dd>
-            </div>
-            <div>
-              <dt>Preferred program</dt>
-              <dd>
-                {program.code} — {program.name}
-                {major ? ` · ${major}` : ""}
-              </dd>
-            </div>
-          </dl>
+    <div
+      ref={ref}
+      className="preview-info"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => {
+        if (!pinned && !ref.current?.contains(document.activeElement))
+          setOpen(false);
+      }}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) {
+          setOpen(false);
+          setPinned(false);
+        }
+      }}
+      onKeyDown={(event) => {
+        if (event.key === "Escape") {
+          setOpen(false);
+          setPinned(false);
+        }
+      }}
+    >
+      <button
+        type="button"
+        className="preview-info-trigger"
+        aria-label="About this preview"
+        aria-expanded={open}
+        aria-controls={id}
+        aria-describedby={open ? id : undefined}
+        onFocus={() => setOpen(true)}
+        onClick={() => {
+          setPinned(!pinned);
+          setOpen(!pinned);
+        }}
+      >
+        ⓘ
+      </button>
+      <div id={id} className="preview-info-content" hidden={!open} role="note">
+        {children}
+      </div>
+    </div>
+  );
+}
+export function PreviewHeading({
+  title,
+  intro,
+  children,
+  inlineInfo = false,
+}: {
+  title: string;
+  intro: string;
+  children: ReactNode;
+  inlineInfo?: boolean;
+}) {
+  return (
+    <header className="preview-heading">
+      {inlineInfo ? (
+        <div className="entry-title">
+          <h1>{title}</h1>
+          <PreviewInfo>{children}</PreviewInfo>
+        </div>
+      ) : (
+        <h1>{title}</h1>
+      )}
+      <p>{intro}</p>
+      {!inlineInfo ? <PreviewInfo>{children}</PreviewInfo> : null}
+    </header>
+  );
+}
+type LocalImage = { url: string; name: string } | null;
+function ImagePicker({
+  label,
+  image,
+  setImage,
+}: {
+  label: string;
+  image: LocalImage;
+  setImage: (image: LocalImage) => void;
+}) {
+  const id = useId();
+  const input = useRef<HTMLInputElement>(null);
+  const [error, setError] = useState("");
+  const version = useRef(0);
+  useEffect(
+    () => () => {
+      if (image) URL.revokeObjectURL(image.url);
+    },
+    [image],
+  );
+  useEffect(
+    () => () => {
+      version.current++;
+    },
+    [],
+  );
+  async function choose(file?: File) {
+    const current = ++version.current;
+    setError("");
+    if (!file) return;
+    const invalid = validatePreviewImage(file);
+    if (invalid) {
+      setError(invalid);
+      return;
+    }
+    const url = URL.createObjectURL(file);
+    try {
+      const decoded = new Image();
+      decoded.src = url;
+      await decoded.decode();
+      if (current !== version.current) {
+        URL.revokeObjectURL(url);
+        return;
+      }
+      setImage({ url, name: file.name });
+    } catch {
+      URL.revokeObjectURL(url);
+      if (current === version.current)
+        setError("This image could not be opened. Choose another image.");
+    }
+  }
+  return (
+    <div className="preview-image-picker">
+      {image ? (
+        <>
+          <img
+            className="preview-local-image"
+            src={image.url}
+            alt={
+              label === "Photo" ? "Applicant photo preview" : "Evidence preview"
+            }
+          />
+          <span className="preview-image-name">{image.name}</span>
+        </>
+      ) : label === "Photo" ? (
+        <span className="preview-photo-empty" aria-hidden="true">
+          +
+        </span>
+      ) : null}
+      <div className="preview-image-actions">
+        <Button
+          type="button"
+          variant="outline"
+          onClick={() => input.current?.click()}
+        >
+          {label === "Photo" ? "Choose photo" : "Attach image"}
+        </Button>
+        {image ? (
           <Button
             type="button"
             variant="tertiary"
-            onClick={() => setShowPreview(false)}
+            onClick={() => {
+              version.current++;
+              setImage(null);
+              setError("");
+            }}
           >
-            Edit preview
+            Remove image
           </Button>
-        </div>
-      ) : (
-        <form className="identity-entry-form" onSubmit={handleSubmit}>
-          <div>
-            <FieldLabel htmlFor="applicant-name">Full name</FieldLabel>
-            <Input
-              id="applicant-name"
-              name="name"
-              autoComplete="name"
-              required
-              value={fullName}
-              onChange={(event) => setFullName(event.target.value)}
-              className="mt-2"
-            />
-          </div>
-          <div>
-            <FieldLabel htmlFor="applicant-email">Email address</FieldLabel>
-            <Input
-              id="applicant-email"
-              name="email"
-              type="email"
-              inputMode="email"
-              autoComplete="email"
-              placeholder="name@example.com"
-              required
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              className="mt-2"
-              aria-describedby="applicant-email-help"
-            />
-            <FieldHelp id="applicant-email-help">
-              Use fictional details. This address is not checked or contacted.
-            </FieldHelp>
-          </div>
-          <div>
-            <FieldLabel htmlFor="preferred-campus">Preferred campus</FieldLabel>
-            <Select
-              id="preferred-campus"
-              name="campus"
-              required
-              value={campusCode}
-              onChange={(event) => handleCampusChange(event.target.value)}
-              className="mt-2"
-            >
-              {campusProgramGroups.map((group) => (
-                <option key={group.id} value={group.id}>
-                  {group.name}
-                </option>
-              ))}
-            </Select>
-          </div>
-          <div>
-            <FieldLabel htmlFor="preferred-program">
-              Preferred degree program
-            </FieldLabel>
-            <Select
-              id="preferred-program"
-              name="program"
-              required
-              value={programCode}
-              onChange={(event) => {
-                setProgramCode(event.target.value);
-                setMajor("");
-              }}
-              className="mt-2"
-            >
-              {programs.map((item) => (
-                <option key={item.code} value={item.code}>
-                  {item.code} — {item.name}
-                </option>
-              ))}
-            </Select>
-          </div>
-          {program.code === "BSBA" ? (
-            <div>
-              <FieldLabel htmlFor="preferred-major">
-                Preferred BSBA major
-              </FieldLabel>
-              <Select
-                id="preferred-major"
-                name="major"
-                required
-                value={major}
-                onChange={(event) => setMajor(event.target.value)}
-                className="mt-2"
-              >
-                <option value="" disabled>
-                  Select a major
-                </option>
-                {program.majors.map((item) => (
-                  <option key={item} value={item}>
-                    {item}
-                  </option>
-                ))}
-              </Select>
-            </div>
-          ) : null}
-          <div className="identity-entry-actions">
-            <Button type="submit">Preview entry</Button>
-            <Link className="text-link" href="/account/create">
-              Back to account options
-            </Link>
-          </div>
-        </form>
-      )}
-
-      <div className="identity-flow-boundaries">
-        <p>
-          A future application would be linked to an annual cycle, but cycle
-          names and dates are not set here. Physical documents remain part of a
-          later in-person verification step; this screen has no upload fields.
-        </p>
-        <p>
-          Already started an application? <Link href="/login">Sign in</Link> or
-          use <Link href="/account/recovery">account recovery</Link>. This
-          concept does not match identities or prevent duplicate people.
-        </p>
+        ) : null}
       </div>
+      <input
+        ref={input}
+        id={id}
+        className="sr-only"
+        tabIndex={-1}
+        type="file"
+        accept="image/png,image/jpeg,image/webp"
+        aria-label={label}
+        aria-describedby={error ? `${id}-error` : undefined}
+        onChange={(event) => {
+          void choose(event.target.files?.[0]);
+          event.target.value = "";
+        }}
+      />
+      {error ? (
+        <p id={`${id}-error`} className="field-error" role="alert">
+          {error}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+function PreviewResult({
+  title,
+  facts,
+  image,
+  onEdit,
+}: {
+  title: string;
+  facts: [string, string][];
+  image?: LocalImage;
+  onEdit: () => void;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    ref.current?.focus();
+  }, []);
+  return (
+    <div className="preview-result" ref={ref} tabIndex={-1}>
+      <h2>{title}</h2>
+      {image ? (
+        <img
+          className="preview-local-image"
+          src={image.url}
+          alt="Selected image preview"
+        />
+      ) : null}
+      <dl className="identity-preview-facts">
+        {facts.map(([label, value]) => (
+          <div key={label}>
+            <dt>{label}</dt>
+            <dd>{value || "Not provided"}</dd>
+          </div>
+        ))}
+      </dl>
+      <Button type="button" variant="outline" onClick={onEdit}>
+        Edit details
+      </Button>
+    </div>
+  );
+}
+function validateRequiredText(form: HTMLFormElement) {
+  for (const control of form.querySelectorAll<
+    HTMLInputElement | HTMLTextAreaElement
+  >("input[required], textarea[required]")) {
+    control.setCustomValidity(
+      control.value.trim() ? "" : "Enter a value for this field.",
+    );
+  }
+  return form.reportValidity();
+}
+function Field({
+  label,
+  name,
+  type = "text",
+  required = false,
+  wide = false,
+}: {
+  label: string;
+  name: string;
+  type?: string;
+  required?: boolean;
+  wide?: boolean;
+}) {
+  const id = useId();
+  return (
+    <div className={wide ? "preview-field-wide" : undefined}>
+      <FieldLabel htmlFor={id}>
+        {label}
+        {required ? " *" : ""}
+      </FieldLabel>
+      <Input
+        id={id}
+        name={name}
+        type={type}
+        required={required}
+        maxLength={type === "text" ? 180 : undefined}
+        max={
+          type === "date" ? new Date().toLocaleDateString("en-CA") : undefined
+        }
+      />
+    </div>
+  );
+}
+export function ApplicantRecoveryPreview() {
+  const [facts, setFacts] = useState<[string, string][] | null>(null);
+  return (
+    <section className="preview-recovery-section">
+      <h2>Applicant</h2>
+      <form
+        className="preview-form"
+        autoComplete="off"
+        onInput={(event) => {
+          const target = event.target;
+          if (
+            target instanceof HTMLInputElement ||
+            target instanceof HTMLTextAreaElement
+          )
+            target.setCustomValidity("");
+        }}
+        onSubmit={(event) => {
+          event.preventDefault();
+          if (!validateRequiredText(event.currentTarget)) return;
+          setFacts([
+            ["To", String(new FormData(event.currentTarget).get("email"))],
+            ["Subject", "Account recovery"],
+            [
+              "Message",
+              "Your recovery email would guide you through restoring account access.",
+            ],
+          ]);
+        }}
+      >
+        <Field label="Email address" name="email" type="email" required />
+        <div className="preview-actions">
+          <Button type="submit">Preview recovery email</Button>
+        </div>
+      </form>
+      {facts ? (
+        <PreviewResult
+          title="Recovery email preview"
+          facts={facts}
+          onEdit={() => setFacts(null)}
+        />
+      ) : null}
     </section>
   );
 }
-
-export function ApplicantRecoveryPreview() {
-  const [email, setEmail] = useState("");
-  const [showGuidance, setShowGuidance] = useState(false);
-
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setShowGuidance(true);
-  }
-
+export function SupportRequestPreview() {
+  const form = useRef<HTMLFormElement>(null);
+  const [image, setImage] = useState<LocalImage>(null);
+  const [facts, setFacts] = useState<[string, string][] | null>(null);
   return (
-    <section
-      className="identity-flow-panel"
-      aria-labelledby="applicant-recovery"
-    >
-      <h2 id="applicant-recovery">Applicant account recovery</h2>
-      <p className="identity-flow-intro">
-        Applicant recovery is intended to use an email address. Delivery and
-        identity-check behavior are not connected in this concept.
-      </p>
-      <form className="identity-entry-form" onSubmit={handleSubmit}>
-        <div>
-          <FieldLabel htmlFor="recovery-email">Email address</FieldLabel>
-          <Input
-            id="recovery-email"
-            type="email"
-            inputMode="email"
-            autoComplete="email"
-            placeholder="name@example.com"
-            required
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            className="mt-2"
-            aria-describedby="recovery-email-help"
-          />
-          <FieldHelp id="recovery-email-help">
-            Use fictional details. This concept does not look up accounts.
-          </FieldHelp>
+    <section className="preview-recovery-section">
+      <h2>Student / employee</h2>
+      <form
+        ref={form}
+        hidden={!!facts}
+        className="preview-form"
+        autoComplete="off"
+        onInput={(event) => {
+          const target = event.target;
+          if (
+            target instanceof HTMLInputElement ||
+            target instanceof HTMLTextAreaElement
+          )
+            target.setCustomValidity("");
+        }}
+        onSubmit={(event) => {
+          event.preventDefault();
+          if (!validateRequiredText(event.currentTarget)) return;
+          const data = new FormData(event.currentTarget);
+          setFacts(
+            ["email", "issue", "subject", "description"].map((key) => [
+              {
+                email: "Account email",
+                issue: "Issue",
+                subject: "Subject",
+                description: "Description",
+              }[key]!,
+              String(data.get(key)).trim(),
+            ]),
+          );
+        }}
+      >
+        <div className="preview-fields">
+          <Field label="Account email" name="email" type="email" required />
+          <div>
+            <FieldLabel htmlFor="support-issue">Issue *</FieldLabel>
+            <Select id="support-issue" name="issue" required defaultValue="">
+              <option value="">Choose an issue</option>
+              {supportIssues.map((issue) => (
+                <option key={issue}>{issue}</option>
+              ))}
+            </Select>
+          </div>
+          <Field label="Subject" name="subject" required wide />
+          <div className="preview-field-wide">
+            <FieldLabel htmlFor="support-description">
+              Describe the issue *
+            </FieldLabel>
+            <Textarea
+              id="support-description"
+              name="description"
+              required
+              rows={4}
+              maxLength={4000}
+            />
+          </div>
         </div>
-        <Button type="submit" variant="secondary">
-          Show recovery guidance
-        </Button>
+        <div>
+          <FieldLabel>Evidence</FieldLabel>
+          <ImagePicker label="Evidence" image={image} setImage={setImage} />
+        </div>
+        <div className="preview-actions">
+          <Button type="submit">Preview request</Button>
+          <Button type="button" disabled>
+            Send to administrator
+          </Button>
+        </div>
       </form>
-      {showGuidance ? (
-        <Alert className="mt-5" role="status" tone="info">
-          No recovery email was sent. Email delivery and account verification
-          are not configured in this concept.
-        </Alert>
+      {facts ? (
+        <PreviewResult
+          title="Support request preview"
+          facts={facts}
+          image={image}
+          onEdit={() => {
+            setFacts(null);
+            requestAnimationFrame(() =>
+              form.current?.querySelector<HTMLInputElement>("input")?.focus(),
+            );
+          }}
+        />
       ) : null}
     </section>
   );

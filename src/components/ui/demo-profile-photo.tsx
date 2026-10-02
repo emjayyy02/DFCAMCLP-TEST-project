@@ -13,12 +13,14 @@ export function DemoProfilePhotoPicker({
   src,
   onSelect,
   domain = false,
+  placeholder = false,
 }: {
   id: string;
   name: string;
   src?: string;
   onSelect: (file: File | null) => void;
   domain?: boolean;
+  placeholder?: boolean;
 }) {
   const [error, setError] = useState<string>();
   const [staged, setStaged] = useState<{ file: File; url: string }>();
@@ -57,7 +59,7 @@ export function DemoProfilePhotoPicker({
       setError("Choose a JPEG, PNG, or WebP image.");
       return;
     }
-    if (file.size > maxImageSize) {
+    if (file.size === 0 || file.size > maxImageSize) {
       setError("Choose an image up to 2 MB.");
       return;
     }
@@ -98,7 +100,7 @@ export function DemoProfilePhotoPicker({
   }
   return (
     <div className="demo-photo-control">
-      <Avatar name={name} src={src} size="large" />
+      <Avatar name={name} src={src} size="large" placeholder={placeholder} />
       <button
         ref={trigger}
         type="button"
@@ -158,13 +160,20 @@ export function DemoProfilePhotoPicker({
             {domain ? "Sample profile photo" : "Demo profile photo"}
           </h2>
           <p id={`${id}-help`}>
-            {domain
-              ? "Shared with your account in this tab. Not uploaded or saved. Resets on reload or sign-out."
-              : "Shown only in this tab. Not uploaded or saved. Resets on reload or sign-out."}
+            {placeholder
+              ? "Shown only on this page. Not uploaded or saved. Resets on reload or leaving this page."
+              : domain
+                ? "Shared with your account in this tab. Not uploaded or saved. Resets on reload or sign-out."
+                : "Shown only in this tab. Not uploaded or saved. Resets on reload or sign-out."}
           </p>
           <p className="demo-photo-formats">JPEG, PNG, or WebP · up to 2 MB.</p>
           <div className="demo-photo-preview">
-            <Avatar name={name} src={staged?.url ?? src} size="large" />
+            <Avatar
+              name={name}
+              src={staged?.url ?? src}
+              size="large"
+              placeholder={placeholder}
+            />
           </div>
           <input
             ref={input}

@@ -103,7 +103,7 @@ export const informationPages = [
       {
         heading: "Temporary workflow and form information",
         paragraphs: [
-          "Applicant drafts/checklists/scenarios, Student requests, Academic attendance/grade drafts and submissions, Records processing, and Operations updates use browser memory scoped to their current workspace. They reset on reload, a new tab, or when that workspace's provider is removed, such as leaving its portal. Entry-preview name/email/program and recovery-preview email stay in that page's memory; those previews do not perform account lookup, registration or email delivery. Use fictional details only.",
+          "Applicant drafts/checklists/scenarios, Student requests, Academic attendance/grade drafts and submissions, Records processing, and Operations updates use browser memory scoped to their current workspace. They reset on reload, a new tab, or when that workspace's provider is removed, such as leaving its portal. Applicant-entry details/photos, recovery-preview email, and support-request details/images stay in that page's memory and reset on reload or leaving the page. Images are local previews and are never uploaded. These previews do not perform account lookup, registration, email delivery, application submission, or support-ticket delivery. Use fictional details only.",
         ],
       },
       {

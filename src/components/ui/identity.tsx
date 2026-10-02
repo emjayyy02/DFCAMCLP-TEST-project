@@ -15,15 +15,29 @@ export function Avatar({
   name,
   src,
   size = "medium",
+  placeholder = false,
 }: {
   name: string;
   src?: string;
   size?: "small" | "medium" | "large";
+  placeholder?: boolean;
 }) {
   return (
     <span className={`avatar avatar-${size}`} aria-hidden="true">
       {src ? (
         <Image src={src} alt="" width={48} height={48} unoptimized />
+      ) : placeholder ? (
+        <svg
+          className="avatar-placeholder"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 21v-2a8 8 0 0 1 16 0v2" />
+        </svg>
       ) : (
         initials(name)
       )}
