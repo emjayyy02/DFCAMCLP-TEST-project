@@ -282,6 +282,7 @@
   line-height: 22px;
 }
 .records-table-wrap th {
+  position: relative;
   border-bottom: 1px solid var(--border);
   font-weight: 600;
   white-space: nowrap;
@@ -519,6 +520,20 @@
 .records-print-actions {
   margin-top: 1.5rem;
 }
+.records-table-wrap th > .sr-only {
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1200px) {
+  .records-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .records-filters > * {
+    min-width: 0;
+  }
+}
+
 @media (max-width: 1000px) {
   .records-filters {
     grid-template-columns: repeat(2, minmax(0, 1fr));

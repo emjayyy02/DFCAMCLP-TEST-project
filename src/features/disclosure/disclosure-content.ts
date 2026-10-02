@@ -1,5 +1,4 @@
 export const disclosureVersion = "fd7-v1";
-export const acknowledgementKey = "dfcamclp.demoDisclosure.ackVersion";
 export const disclosureParagraphs = [
   "This is an independent educational and portfolio side project. It is not affiliated with, commissioned by, operated by, or endorsed by DFCAMCLP. Its name, seal, and campus references are used only to demonstrate the concept.",
   "People, accounts, grades, schedules, applications, documents, tickets, and operational records shown are fictional or sample data. No displayed workflow represents an official institutional transaction or policy unless explicitly sourced.",
@@ -96,7 +95,7 @@ export const informationPages = [
       {
         heading: "Sign-in and sessions",
         paragraphs: [
-          "Signing in sends the demo email, password, and selected portal to the project server. Better Auth verifies credentials using the project's authentication database. Successful permitted sign-in uses a browser session cookie and a database-backed session. The project stores demo account identity and access information, authentication credential records, and session identifiers, expiry and timestamps. The session schema also supports IP address and browser user-agent information; the current inspection does not establish which of those optional fields are populated for every request.",
+          "Signing in sends your demo email, password, and selected portal to the project server for verification. The project stores demo identities, access permissions, credential records, and session identifiers and timing, and uses a browser cookie to keep you signed in. Sessions may also include your IP address and browser information; capture of those optional values has not been verified for every request.",
           "Sessions are configured with a seven-day expiry and a daily refresh interval. That is an authentication setting, not a promise to delete database records after seven days. Reloading a page may reset demo work while leaving a valid sign-in session intact. Sign out uses the real authentication service. Choosing a portal or acknowledging this notice does not grant access.",
         ],
       },
@@ -115,7 +114,7 @@ export const informationPages = [
       {
         heading: "Disclosure acknowledgement",
         paragraphs: [
-          "After you choose “I understand — Enter demo”, the browser stores only the current disclosure version in first-party localStorage. It is not sent as a backend acceptance record and is not attached to an account. Clearing that item, using another browser profile/origin, or a material version change makes the disclosure appear again. If storage is unavailable, the choice lasts only for the current visit. It does not persist photos, bio, workflow edits, or authentication.",
+          "After you choose “I understand — Enter demo”, acknowledgement stays only in this app's memory. Ordinary client-side navigation does not repeat the notice. A full page load, refresh, or new tab starts a new visit and shows it again. Project information pages remain accessible before acknowledgement. “About this demo” reopens the notice at any time. The choice is not stored in browser storage, sent as a backend acceptance record, or attached to an account. It does not persist photos, bio, workflow edits, or authentication.",
         ],
       },
       {
@@ -158,5 +157,7 @@ export const legalLinks = informationPages.map(({ route, title }) => ({
   title,
 }));
 export function isInformationRoute(path: string | null) {
-  return legalLinks.some((link) => link.href === path);
+  return (
+    path === "/about-developer" || legalLinks.some((link) => link.href === path)
+  );
 }

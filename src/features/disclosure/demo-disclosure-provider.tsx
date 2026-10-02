@@ -13,8 +13,6 @@ import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
-  acknowledgementKey,
-  disclosureVersion,
   disclosureParagraphs,
   legalLinks,
   isInformationRoute,
@@ -134,14 +132,13 @@ export function DemoDisclosureProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (!store.getSnapshot().ready) {
-      let acknowledged = false;
       try {
-        acknowledged =
-          localStorage.getItem(acknowledgementKey) === disclosureVersion;
+        // Remove acknowledgement left by earlier releases; never read or persist it.
+        localStorage.removeItem("dfcamclp.demoDisclosure.ackVersion");
       } catch {
-        /* Memory fallback remains usable. */
+        /* Disclosure state stays in memory even when storage is unavailable. */
       }
-      store.update({ ready: true, acknowledged });
+      store.update({ ready: true });
     }
     const previous = lastRoute.current;
     const legal = isInformationRoute(pathname);
@@ -212,14 +209,7 @@ export function DemoDisclosureProvider({ children }: { children: ReactNode }) {
     router.push("/disclaimer");
   }
   function acknowledge() {
-    let message = "";
-    try {
-      localStorage.setItem(acknowledgementKey, disclosureVersion);
-    } catch {
-      message =
-        "Understood for this visit. Your browser could not remember this choice.";
-    }
-    store.update({ acknowledged: true, message });
+    store.update({ acknowledged: true });
     close();
   }
   return (
@@ -251,6 +241,7 @@ export function DemoDisclosureProvider({ children }: { children: ReactNode }) {
                   {link.title}
                 </a>
               ))}
+              <Link href="/about-developer">About the developer</Link>
             </nav>
             <a href="#main">Continue to page content</a>
           </aside>
@@ -333,6 +324,9 @@ export function DemoDisclosureProvider({ children }: { children: ReactNode }) {
                 {link.title}
               </Link>
             ))}
+            <Link href="/about-developer" onNavigate={information}>
+              About the developer
+            </Link>
           </nav>
         </div>
         <div className="demo-disclosure-actions">
@@ -389,6 +383,9 @@ export function ProjectInformationLinks() {
             {["Disclaimer", "Terms", "Privacy", "Acceptable Use"][index]}
           </Link>
         ))}
+        <Link href="/about-developer" onNavigate={information}>
+          About the developer
+        </Link>
         <AboutDemoButton />
       </nav>
     </div>

@@ -1,0 +1,355 @@
+{
+  "historicalViews": 489,
+  "historicalImages": 6843,
+  "currentViews": 493,
+  "currentImages": 7875,
+  "accounts": [
+    {
+      "email": "juan.delacruz@example.invalid",
+      "group": "applicant",
+      "memberships": [
+        {
+          "portal": "APPLICANT",
+          "role": "APPLICANT"
+        }
+      ],
+      "loginStatus": 200,
+      "allowedRoutes": [
+        "/account",
+        "/applicant",
+        "/applicant/application",
+        "/applicant/dcat",
+        "/applicant/enrollment",
+        "/applicant/announcements",
+        "/applicant/profile"
+      ],
+      "visited": [
+        "/account",
+        "/applicant",
+        "/applicant/application",
+        "/applicant/dcat",
+        "/applicant/enrollment",
+        "/applicant/announcements",
+        "/applicant/profile",
+        "/applicant/application?view=requirements",
+        "/applicant/application?view=status"
+      ]
+    },
+    {
+      "email": "johnpaul.reyes@example.invalid",
+      "group": "student",
+      "memberships": [
+        {
+          "portal": "STUDENT",
+          "role": "STUDENT"
+        }
+      ],
+      "loginStatus": 200,
+      "allowedRoutes": [
+        "/account",
+        "/student",
+        "/student/academics",
+        "/student/enrollment",
+        "/student/requests",
+        "/student/announcements",
+        "/student/calendar",
+        "/student/profile"
+      ],
+      "visited": [
+        "/account",
+        "/student",
+        "/student/academics",
+        "/student/enrollment",
+        "/student/requests",
+        "/student/announcements",
+        "/student/calendar",
+        "/student/profile",
+        "/student/academics?view=schedule"
+      ]
+    },
+    {
+      "email": "maria.santos@example.invalid",
+      "group": "faculty",
+      "memberships": [
+        {
+          "portal": "ACADEMIC",
+          "role": "FACULTY"
+        }
+      ],
+      "loginStatus": 200,
+      "allowedRoutes": [
+        "/account",
+        "/academic",
+        "/academic/classes",
+        "/academic/attendance",
+        "/academic/grades",
+        "/academic/announcements"
+      ],
+      "visited": [
+        "/account",
+        "/academic",
+        "/academic/classes",
+        "/academic/attendance",
+        "/academic/grades",
+        "/academic/announcements",
+        "/academic/classes?offering=off-is203-bsis-2a",
+        "/academic/attendance?offering=off-is203-bsis-2a",
+        "/academic/grades?offering=off-is203-bsis-2a",
+        "/academic/attendance?offering=off-is203-bsis-2a&date=2027-02-26"
+      ]
+    },
+    {
+      "email": "jose.garcia@example.invalid",
+      "group": "records",
+      "memberships": [
+        {
+          "portal": "RECORDS",
+          "role": "RECORDS_STAFF"
+        }
+      ],
+      "loginStatus": 200,
+      "allowedRoutes": [
+        "/account",
+        "/records",
+        "/records/applicants",
+        "/records/dcat",
+        "/records/students",
+        "/records/enrollment",
+        "/records/documents"
+      ],
+      "visited": [
+        "/account",
+        "/records",
+        "/records/applicants",
+        "/records/dcat",
+        "/records/students",
+        "/records/enrollment",
+        "/records/documents",
+        "/records/applicants?queue=requirements",
+        "/records/dcat?queue=scheduling",
+        "/records/dcat?queue=results",
+        "/records/documents?queue=available",
+        "/records/applicants?record=DEMO-APP-002",
+        "/records/applicants?record=APP-TEST-0001",
+        "/records/applicants?record=DEMO-APP-003",
+        "/records/applicants?record=DEMO-APP-004",
+        "/records/applicants?record=DEMO-APP-005",
+        "/records/applicants?record=DEMO-APP-006",
+        "/records/dcat?record=DEMO-APP-006",
+        "/records/dcat?record=DEMO-APP-005",
+        "/records/dcat?record=DEMO-APP-004",
+        "/records/dcat?record=DEMO-APP-003",
+        "/records/students?record=DEMO-STU-2026-0142",
+        "/records/students?record=DEMO-STU-2026-0191",
+        "/records/students?record=DEMO-STU-2026-0175",
+        "/records/enrollment?record=DEMO-APP-006",
+        "/records/documents?record=DEMO-STU-2026-0142",
+        "/records/documents?record=DEMO-APP-006",
+        "/records/documents?record=DEMO-STU-2026-0191",
+        "/records/documents?record=DEMO-STU-2026-0175",
+        "/records/enrollment?record=DEMO-APP-002",
+        "/records/dcat?record=DEMO-APP-002",
+        "/records/enrollment?record=APP-TEST-0001",
+        "/records/dcat?record=APP-TEST-0001",
+        "/records/enrollment?record=DEMO-APP-003",
+        "/records/enrollment?record=DEMO-APP-004",
+        "/records/enrollment?record=DEMO-APP-005"
+      ]
+    },
+    {
+      "email": "mark.ramos@example.invalid",
+      "group": "operations",
+      "memberships": [
+        {
+          "portal": "OPERATIONS",
+          "role": "MAINTENANCE_STAFF"
+        }
+      ],
+      "loginStatus": 200,
+      "allowedRoutes": [
+        "/account",
+        "/operations",
+        "/operations/facilities"
+      ],
+      "visited": [
+        "/account",
+        "/operations",
+        "/operations/facilities",
+        "/operations/facilities?view=mine",
+        "/operations/facilities?view=high",
+        "/operations/facilities?view=unassigned",
+        "/operations/facilities?ticket=FAC-26037",
+        "/operations/facilities?ticket=FAC-26041",
+        "/operations/facilities?ticket=FAC-26039",
+        "/operations/facilities?ticket=FAC-26033",
+        "/operations/facilities?ticket=FAC-26041&view=mine",
+        "/operations/facilities?ticket=FAC-26039&view=mine",
+        "/operations/facilities?ticket=FAC-26037&view=high",
+        "/operations/facilities?ticket=FAC-26041&view=high",
+        "/operations/facilities?ticket=FAC-26037&view=unassigned"
+      ]
+    },
+    {
+      "email": "angelo.cruz@example.invalid",
+      "group": "technology",
+      "memberships": [
+        {
+          "portal": "TECHNOLOGY",
+          "role": "IT_ADMIN"
+        }
+      ],
+      "loginStatus": 200,
+      "allowedRoutes": [
+        "/account",
+        "/technology",
+        "/technology/accounts",
+        "/technology/security",
+        "/technology/system"
+      ],
+      "visited": [
+        "/account",
+        "/technology",
+        "/technology/accounts",
+        "/technology/security",
+        "/technology/system"
+      ]
+    },
+    {
+      "email": "angelica.bautista@example.invalid",
+      "group": "coordinator",
+      "memberships": [
+        {
+          "portal": "ACADEMIC",
+          "role": "PROGRAM_COORDINATOR"
+        }
+      ],
+      "loginStatus": 200,
+      "allowedRoutes": [
+        "/account",
+        "/academic",
+        "/academic/classes",
+        "/academic/attendance",
+        "/academic/grades",
+        "/academic/announcements",
+        "/academic/management"
+      ],
+      "visited": [
+        "/account",
+        "/academic",
+        "/academic/classes",
+        "/academic/attendance",
+        "/academic/grades",
+        "/academic/announcements",
+        "/academic/management",
+        "/academic/classes?offering=off-ge201-bsis-2a",
+        "/academic/attendance?offering=off-ge201-bsis-2a",
+        "/academic/grades?offering=off-ge201-bsis-2a",
+        "/academic/attendance?offering=off-ge201-bsis-2a&date=2027-02-26",
+        "/academic/classes?offering=off-is201-bsis-2a",
+        "/academic/classes?offering=off-is203-bsis-2a",
+        "/academic/classes?offering=off-is205-bsis-2a",
+        "/academic/classes?offering=off-pe202-bsis-2a"
+      ]
+    },
+    {
+      "email": "marygrace.mendoza@example.invalid",
+      "group": "school-admin",
+      "memberships": [
+        {
+          "portal": "OPERATIONS",
+          "role": "SCHOOL_ADMIN"
+        }
+      ],
+      "loginStatus": 200,
+      "allowedRoutes": [
+        "/account",
+        "/operations",
+        "/operations/student-services",
+        "/operations/employees",
+        "/operations/facilities",
+        "/operations/administration"
+      ],
+      "visited": [
+        "/account",
+        "/operations",
+        "/operations/student-services",
+        "/operations/employees",
+        "/operations/facilities",
+        "/operations/administration",
+        "/operations/facilities?ticket=FAC-26039",
+        "/operations/student-services?request=SS-26038",
+        "/operations/facilities?ticket=FAC-26033",
+        "/operations/student-services?request=SS-26041",
+        "/operations/student-services?request=SS-26032",
+        "/operations/student-services?request=SS-26027",
+        "/operations/employees?employee=EMP-DEMO-019",
+        "/operations/employees?employee=EMP-DEMO-017",
+        "/operations/employees?employee=EMP-DEMO-016",
+        "/operations/employees?employee=EMP-DEMO-014",
+        "/operations/employees?employee=EMP-DEMO-015",
+        "/operations/employees?employee=EMP-DEMO-018",
+        "/operations/facilities?ticket=FAC-26037&view=all",
+        "/operations/facilities?ticket=FAC-26041&view=all",
+        "/operations/facilities?ticket=FAC-26039&view=all",
+        "/operations/facilities?ticket=FAC-26031&view=all",
+        "/operations/facilities?ticket=FAC-26033&view=all"
+      ]
+    },
+    {
+      "email": "michael.castro@example.invalid",
+      "group": "faculty-it",
+      "memberships": [
+        {
+          "portal": "ACADEMIC",
+          "role": "FACULTY"
+        },
+        {
+          "portal": "TECHNOLOGY",
+          "role": "DEVELOPER"
+        }
+      ],
+      "loginStatus": 200,
+      "allowedRoutes": [
+        "/account",
+        "/academic",
+        "/academic/classes",
+        "/academic/attendance",
+        "/academic/grades",
+        "/academic/announcements",
+        "/technology",
+        "/technology/system",
+        "/technology/developer"
+      ],
+      "visited": [
+        "/account",
+        "/academic",
+        "/academic/classes",
+        "/academic/attendance",
+        "/academic/grades",
+        "/academic/announcements",
+        "/technology",
+        "/technology/system",
+        "/technology/developer",
+        "/academic/classes?offering=off-is203-bsis-2a",
+        "/academic/attendance?offering=off-is203-bsis-2a",
+        "/academic/grades?offering=off-is203-bsis-2a",
+        "/academic/attendance?offering=off-is203-bsis-2a&date=2027-02-26"
+      ]
+    }
+  ],
+  "missingHistoricalStates": [],
+  "captureFailures": [],
+  "pageOverflow": [],
+  "missingImages": [],
+  "invalidDimensions": [],
+  "sourceIntegrity": {
+    "checkedFiles": 1683,
+    "changed": [
+      "next-env.d.ts"
+    ]
+  },
+  "postCaptureIntegrity": {
+    "checkedFiles": 1683,
+    "changed": []
+  }
+}

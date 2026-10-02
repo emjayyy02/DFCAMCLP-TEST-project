@@ -20,9 +20,7 @@ export function DevelopmentHeader() {
           />
           <span className="institution-wordmark">DFCAMCLP</span>
         </Link>
-        <span className="text-sm text-muted-foreground">
-          Development environment
-        </span>
+        <span className="text-sm text-muted-foreground">Independent demo</span>
       </div>
     </header>
   );

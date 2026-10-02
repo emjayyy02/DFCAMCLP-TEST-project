@@ -341,8 +341,7 @@ function EnrollmentPage() {
                 </>
               ) : (
                 <p className="student-document-body">
-                  This fictional preview demonstrates a Certificate of
-                  Enrollment layout. It is not an issued school record.
+                  Sample Certificate of Enrollment layout.
                 </p>
               )}
               <p className="student-document-disclaimer">

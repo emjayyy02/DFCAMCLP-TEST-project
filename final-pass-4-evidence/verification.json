@@ -1,0 +1,214 @@
+{
+  "disclosure": {
+    "initial": true,
+    "legacyStorageRemoved": true,
+    "clientNavigationUninterrupted": true,
+    "refreshReopens": true,
+    "manualReopen": true,
+    "focusTrap": true,
+    "escapeAndRestore": true,
+    "legalAndDeveloperNavigation": true
+  },
+  "developer": [
+    {
+      "viewport": 320,
+      "scrollWidth": 320
+    },
+    {
+      "viewport": 375,
+      "scrollWidth": 375
+    },
+    {
+      "viewport": 768,
+      "scrollWidth": 768
+    },
+    {
+      "viewport": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "viewport": 1920,
+      "scrollWidth": 1920
+    }
+  ],
+  "text200": true,
+  "records": [
+    {
+      "route": "/records/students",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "class": "",
+          "width": 832.5625,
+          "right": 1145.5625
+        },
+        {
+          "tag": "THEAD",
+          "class": "",
+          "width": 832.5625,
+          "right": 1145.5625
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "width": 832.5625,
+          "right": 1145.5625
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "width": 174.046875,
+          "right": 1145.5625
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "width": 832.5625,
+          "right": 1145.5625
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "width": 832.5625,
+          "right": 1145.5625
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "width": 174.046875,
+          "right": 1145.5625
+        },
+        {
+          "tag": "A",
+          "class": "records-row-link",
+          "width": 142.046875,
+          "right": 1129.5625
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "width": 832.5625,
+          "right": 1145.5625
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "width": 174.046875,
+          "right": 1145.5625
+        },
+        {
+          "tag": "A",
+          "class": "records-row-link",
+          "width": 128.578125,
+          "right": 1116.09375
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "width": 832.5625,
+          "right": 1145.5625
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "width": 174.046875,
+          "right": 1145.5625
+        },
+        {
+          "tag": "A",
+          "class": "records-row-link",
+          "width": 130.328125,
+          "right": 1117.84375
+        }
+      ]
+    },
+    {
+      "route": "/records/documents",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "overflow": []
+    },
+    {
+      "route": "/records/applicants?queue=requirements",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "overflow": [
+        {
+          "tag": "TABLE",
+          "class": "",
+          "width": 862.46875,
+          "right": 1175.46875
+        },
+        {
+          "tag": "THEAD",
+          "class": "",
+          "width": 862.46875,
+          "right": 1175.46875
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "width": 862.46875,
+          "right": 1175.46875
+        },
+        {
+          "tag": "TH",
+          "class": "",
+          "width": 165.484375,
+          "right": 1175.46875
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "width": 862.46875,
+          "right": 1175.46875
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "width": 862.46875,
+          "right": 1175.46875
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "width": 165.484375,
+          "right": 1175.46875
+        },
+        {
+          "tag": "A",
+          "class": "records-row-link",
+          "width": 108.359375,
+          "right": 1134.34375
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "width": 862.46875,
+          "right": 1175.46875
+        },
+        {
+          "tag": "TD",
+          "class": "",
+          "width": 165.484375,
+          "right": 1175.46875
+        },
+        {
+          "tag": "A",
+          "class": "records-row-link",
+          "width": 133.484375,
+          "right": 1159.46875
+        }
+      ]
+    },
+    {
+      "route": "/records/documents?record=DEMO-STU-2026-0142",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "overflow": []
+    }
+  ],
+  "errors": []
+}

@@ -1094,9 +1094,7 @@ function TicketDetail({
           </div>
           <HistoryList history={ticket.history} />
           <p className="operations-footnote">
-            Ticket categories, locations, priorities, and statuses are demo
-            vocabulary only. No response-time or emergency policy is
-            represented.
+            Demo ticket labels; no response-time or emergency policy is defined.
           </p>
         </section>
       </div>
