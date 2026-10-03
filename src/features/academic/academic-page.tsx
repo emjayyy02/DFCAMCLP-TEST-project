@@ -272,7 +272,10 @@ function DashboardView({ isCoordinator }: { isCoordinator: boolean }) {
             className="academic-button academic-button-secondary academic-button-compact"
             href="/academic/management"
           >
-            Review program offerings <span aria-hidden="true">→</span>
+            <span className="academic-button-label">
+              Review program offerings
+            </span>{" "}
+            <span aria-hidden="true">→</span>
           </Link>
         </section>
       ) : null}

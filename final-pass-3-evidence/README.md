@@ -13,4 +13,3 @@ Browser evidence: `verification.json`; `verify.cjs` uses the installed workstati
 Validation: 78 unit tests and 42 database/auth/access integration tests passed (120 total). Production build and typecheck passed. Lint passed with five existing warnings. Changed-file formatting and git diff checks passed. The mechanical UI detector returned no findings.
 
 Historical pass-2 gallery remains a separate earlier snapshot; this folder contains the current evidence for these two changed routes.
-

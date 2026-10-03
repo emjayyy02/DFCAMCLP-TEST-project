@@ -1,0 +1,790 @@
+{
+  "images": 139,
+  "sheets": [
+    {
+      "sheet": "sheet-01.jpg",
+      "entries": [
+        {
+          "index": 1,
+          "path": "applicant/account-academic-1440.png",
+          "size": [1440, 909]
+        },
+        {
+          "index": 2,
+          "path": "applicant/account-academic-375.png",
+          "size": [375, 1325]
+        },
+        {
+          "index": 3,
+          "path": "applicant/account-applicant-1440.png",
+          "size": [1440, 909]
+        },
+        {
+          "index": 4,
+          "path": "applicant/account-applicant-375.png",
+          "size": [375, 1325]
+        },
+        {
+          "index": 5,
+          "path": "applicant/account-student-1440.png",
+          "size": [1440, 909]
+        },
+        {
+          "index": 6,
+          "path": "applicant/account-student-1920.png",
+          "size": [1920, 1080]
+        },
+        {
+          "index": 7,
+          "path": "applicant/account-student-320.png",
+          "size": [320, 1394]
+        },
+        {
+          "index": 8,
+          "path": "applicant/account-student-375.png",
+          "size": [375, 1325]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-02.jpg",
+      "entries": [
+        {
+          "index": 9,
+          "path": "applicant/account-student-768.png",
+          "size": [768, 1136]
+        },
+        {
+          "index": 10,
+          "path": "applicant/complete-1440.png",
+          "size": [1440, 962]
+        },
+        {
+          "index": 11,
+          "path": "applicant/complete-1920.png",
+          "size": [1920, 1080]
+        },
+        {
+          "index": 12,
+          "path": "applicant/complete-320.png",
+          "size": [320, 1271]
+        },
+        {
+          "index": 13,
+          "path": "applicant/complete-375.png",
+          "size": [375, 1199]
+        },
+        {
+          "index": 14,
+          "path": "applicant/complete-768.png",
+          "size": [768, 922]
+        },
+        {
+          "index": 15,
+          "path": "applicant/step-1-1440.png",
+          "size": [1440, 1080]
+        },
+        {
+          "index": 16,
+          "path": "applicant/step-1-1920.png",
+          "size": [1920, 1080]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-03.jpg",
+      "entries": [
+        {
+          "index": 17,
+          "path": "applicant/step-1-320.png",
+          "size": [320, 1571]
+        },
+        {
+          "index": 18,
+          "path": "applicant/step-1-375.png",
+          "size": [375, 1472]
+        },
+        {
+          "index": 19,
+          "path": "applicant/step-1-768.png",
+          "size": [768, 1036]
+        },
+        {
+          "index": 20,
+          "path": "applicant/step-2-1440.png",
+          "size": [1440, 1383]
+        },
+        {
+          "index": 21,
+          "path": "applicant/step-2-1920.png",
+          "size": [1920, 1383]
+        },
+        {
+          "index": 22,
+          "path": "applicant/step-2-320.png",
+          "size": [320, 1975]
+        },
+        {
+          "index": 23,
+          "path": "applicant/step-2-375.png",
+          "size": [375, 1899]
+        },
+        {
+          "index": 24,
+          "path": "applicant/step-2-768.png",
+          "size": [768, 1339]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-04.jpg",
+      "entries": [
+        {
+          "index": 25,
+          "path": "applicant/step-3-1440.png",
+          "size": [1440, 1448]
+        },
+        {
+          "index": 26,
+          "path": "applicant/step-3-1920.png",
+          "size": [1920, 1448]
+        },
+        {
+          "index": 27,
+          "path": "applicant/step-3-320.png",
+          "size": [320, 2130]
+        },
+        {
+          "index": 28,
+          "path": "applicant/step-3-375.png",
+          "size": [375, 2054]
+        },
+        {
+          "index": 29,
+          "path": "applicant/step-3-768.png",
+          "size": [768, 1404]
+        },
+        {
+          "index": 30,
+          "path": "applicant/step-4-1440.png",
+          "size": [1440, 2486]
+        },
+        {
+          "index": 31,
+          "path": "applicant/step-4-1920.png",
+          "size": [1920, 2486]
+        },
+        {
+          "index": 32,
+          "path": "applicant/step-4-320.png",
+          "size": [320, 3530]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-05.jpg",
+      "entries": [
+        {
+          "index": 33,
+          "path": "applicant/step-4-375.png",
+          "size": [375, 3376]
+        },
+        {
+          "index": 34,
+          "path": "applicant/step-4-768.png",
+          "size": [768, 2442]
+        },
+        {
+          "index": 35,
+          "path": "applicant/stepper-200-text.png",
+          "size": [375, 2296]
+        },
+        {
+          "index": 36,
+          "path": "browser/404-1440.png",
+          "size": [1440, 900]
+        },
+        {
+          "index": 37,
+          "path": "browser/404-375.png",
+          "size": [375, 812]
+        },
+        {
+          "index": 38,
+          "path": "browser/account-applicant-text200.png",
+          "size": [375, 2066]
+        },
+        {
+          "index": 39,
+          "path": "browser/account-coordinator-text200.png",
+          "size": [375, 2066]
+        },
+        {
+          "index": 40,
+          "path": "browser/account-faculty-it-text200.png",
+          "size": [375, 2240]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-06.jpg",
+      "entries": [
+        {
+          "index": 41,
+          "path": "browser/account-faculty-text200.png",
+          "size": [375, 2066]
+        },
+        {
+          "index": 42,
+          "path": "browser/account-operations-text200.png",
+          "size": [375, 2066]
+        },
+        {
+          "index": 43,
+          "path": "browser/account-records-text200.png",
+          "size": [375, 2114]
+        },
+        {
+          "index": 44,
+          "path": "browser/account-school-admin-text200.png",
+          "size": [375, 2066]
+        },
+        {
+          "index": 45,
+          "path": "browser/account-student-text200.png",
+          "size": [375, 2066]
+        },
+        {
+          "index": 46,
+          "path": "browser/account-technology-text200.png",
+          "size": [375, 2066]
+        },
+        {
+          "index": 47,
+          "path": "browser/account-text200.png",
+          "size": [375, 2066]
+        },
+        {
+          "index": 48,
+          "path": "browser/applicant-account.png",
+          "size": [1440, 909]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-07.jpg",
+      "entries": [
+        {
+          "index": 49,
+          "path": "browser/applicant-applicant-dashboard-320-text200.png",
+          "size": [320, 3054]
+        },
+        {
+          "index": 50,
+          "path": "browser/applicant-applicant-dashboard-text200.png",
+          "size": [375, 2819]
+        },
+        {
+          "index": 51,
+          "path": "browser/applicant-applicant-menu.png",
+          "size": [1440, 1131]
+        },
+        {
+          "index": 52,
+          "path": "browser/applicant-dashboard-1440.png",
+          "size": [1440, 1131]
+        },
+        {
+          "index": 53,
+          "path": "browser/applicant-dashboard-375.png",
+          "size": [375, 2010]
+        },
+        {
+          "index": 54,
+          "path": "browser/applicant-domain-profile-320-text200.png",
+          "size": [320, 1916]
+        },
+        {
+          "index": 55,
+          "path": "browser/applicant-domain-profile-text200.png",
+          "size": [375, 1758]
+        },
+        {
+          "index": 56,
+          "path": "browser/applicant-domain-profile.png",
+          "size": [1440, 908]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-08.jpg",
+      "entries": [
+        {
+          "index": 57,
+          "path": "browser/coordinator-academic-dashboard-320-text200.png",
+          "size": [320, 6024]
+        },
+        {
+          "index": 58,
+          "path": "browser/coordinator-academic-dashboard-text200.png",
+          "size": [375, 5340]
+        },
+        {
+          "index": 59,
+          "path": "browser/coordinator-academic-menu.png",
+          "size": [1440, 1227]
+        },
+        {
+          "index": 60,
+          "path": "browser/coordinator-account.png",
+          "size": [1440, 909]
+        },
+        {
+          "index": 61,
+          "path": "browser/coordinator-dashboard-1440.png",
+          "size": [1440, 1227]
+        },
+        {
+          "index": 62,
+          "path": "browser/coordinator-dashboard-375.png",
+          "size": [375, 1889]
+        },
+        {
+          "index": 63,
+          "path": "browser/demo-accounts-375.png",
+          "size": [375, 1162]
+        },
+        {
+          "index": 64,
+          "path": "browser/denied-student.png",
+          "size": [1440, 900]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-09.jpg",
+      "entries": [
+        {
+          "index": 65,
+          "path": "browser/faculty-academic-dashboard-320-text200.png",
+          "size": [320, 4880]
+        },
+        {
+          "index": 66,
+          "path": "browser/faculty-academic-dashboard-text200.png",
+          "size": [375, 4333]
+        },
+        {
+          "index": 67,
+          "path": "browser/faculty-academic-menu.png",
+          "size": [1440, 1104]
+        },
+        {
+          "index": 68,
+          "path": "browser/faculty-account.png",
+          "size": [1440, 909]
+        },
+        {
+          "index": 69,
+          "path": "browser/faculty-dashboard-1440.png",
+          "size": [1440, 1104]
+        },
+        {
+          "index": 70,
+          "path": "browser/faculty-dashboard-375.png",
+          "size": [375, 1631]
+        },
+        {
+          "index": 71,
+          "path": "browser/faculty-it-academic-dashboard-320-text200.png",
+          "size": [320, 4880]
+        },
+        {
+          "index": 72,
+          "path": "browser/faculty-it-academic-dashboard-text200.png",
+          "size": [375, 4389]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-10.jpg",
+      "entries": [
+        {
+          "index": 73,
+          "path": "browser/faculty-it-academic-menu.png",
+          "size": [1440, 1104]
+        },
+        {
+          "index": 74,
+          "path": "browser/faculty-it-account.png",
+          "size": [1440, 1055]
+        },
+        {
+          "index": 75,
+          "path": "browser/faculty-it-dashboard-1440.png",
+          "size": [1440, 1104]
+        },
+        {
+          "index": 76,
+          "path": "browser/faculty-it-dashboard-375.png",
+          "size": [375, 1631]
+        },
+        {
+          "index": 77,
+          "path": "browser/faculty-it-technology-dashboard-320-text200.png",
+          "size": [320, 8638]
+        },
+        {
+          "index": 78,
+          "path": "browser/faculty-it-technology-dashboard-text200.png",
+          "size": [375, 7198]
+        },
+        {
+          "index": 79,
+          "path": "browser/faculty-it-technology-menu.png",
+          "size": [1440, 1374]
+        },
+        {
+          "index": 80,
+          "path": "browser/failed-signout-375.png",
+          "size": [375, 1353]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-11.jpg",
+      "entries": [
+        {
+          "index": 81,
+          "path": "browser/home-1440.png",
+          "size": [1440, 2585]
+        },
+        {
+          "index": 82,
+          "path": "browser/home-375.png",
+          "size": [375, 3610]
+        },
+        {
+          "index": 83,
+          "path": "browser/login-1440.png",
+          "size": [1440, 1102]
+        },
+        {
+          "index": 84,
+          "path": "browser/login-375.png",
+          "size": [375, 1162]
+        },
+        {
+          "index": 85,
+          "path": "browser/operations-account.png",
+          "size": [1440, 909]
+        },
+        {
+          "index": 86,
+          "path": "browser/operations-dashboard-1440.png",
+          "size": [1440, 1121]
+        },
+        {
+          "index": 87,
+          "path": "browser/operations-dashboard-375.png",
+          "size": [375, 1590]
+        },
+        {
+          "index": 88,
+          "path": "browser/operations-operations-dashboard-320-text200.png",
+          "size": [320, 5578]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-12.jpg",
+      "entries": [
+        {
+          "index": 89,
+          "path": "browser/operations-operations-dashboard-text200.png",
+          "size": [375, 4550]
+        },
+        {
+          "index": 90,
+          "path": "browser/operations-operations-menu.png",
+          "size": [1440, 1121]
+        },
+        {
+          "index": 91,
+          "path": "browser/records-account.png",
+          "size": [1440, 909]
+        },
+        {
+          "index": 92,
+          "path": "browser/records-dashboard-1440.png",
+          "size": [1440, 1123]
+        },
+        {
+          "index": 93,
+          "path": "browser/records-dashboard-375.png",
+          "size": [375, 1372]
+        },
+        {
+          "index": 94,
+          "path": "browser/records-records-dashboard-320-text200.png",
+          "size": [320, 4716]
+        },
+        {
+          "index": 95,
+          "path": "browser/records-records-dashboard-text200.png",
+          "size": [375, 4133]
+        },
+        {
+          "index": 96,
+          "path": "browser/records-records-menu.png",
+          "size": [1440, 1123]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-13.jpg",
+      "entries": [
+        {
+          "index": 97,
+          "path": "browser/school-admin-account.png",
+          "size": [1440, 909]
+        },
+        {
+          "index": 98,
+          "path": "browser/school-admin-dashboard-1440.png",
+          "size": [1440, 1085]
+        },
+        {
+          "index": 99,
+          "path": "browser/school-admin-dashboard-375.png",
+          "size": [375, 1413]
+        },
+        {
+          "index": 100,
+          "path": "browser/school-admin-operations-dashboard-320-text200.png",
+          "size": [320, 4100]
+        },
+        {
+          "index": 101,
+          "path": "browser/school-admin-operations-dashboard-text200.png",
+          "size": [375, 3696]
+        },
+        {
+          "index": 102,
+          "path": "browser/school-admin-operations-menu.png",
+          "size": [1440, 1085]
+        },
+        {
+          "index": 103,
+          "path": "browser/student-account.png",
+          "size": [1440, 909]
+        },
+        {
+          "index": 104,
+          "path": "browser/student-dashboard-1440.png",
+          "size": [1440, 956]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-14.jpg",
+      "entries": [
+        {
+          "index": 105,
+          "path": "browser/student-dashboard-375.png",
+          "size": [375, 1450]
+        },
+        {
+          "index": 106,
+          "path": "browser/student-domain-profile-320-text200.png",
+          "size": [320, 6645]
+        },
+        {
+          "index": 107,
+          "path": "browser/student-domain-profile-text200.png",
+          "size": [375, 3843]
+        },
+        {
+          "index": 108,
+          "path": "browser/student-domain-profile.png",
+          "size": [1440, 954]
+        },
+        {
+          "index": 109,
+          "path": "browser/student-student-dashboard-320-text200.png",
+          "size": [320, 3755]
+        },
+        {
+          "index": 110,
+          "path": "browser/student-student-dashboard-text200.png",
+          "size": [375, 3354]
+        },
+        {
+          "index": 111,
+          "path": "browser/student-student-menu.png",
+          "size": [1440, 956]
+        },
+        {
+          "index": 112,
+          "path": "browser/technology-account.png",
+          "size": [1440, 909]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-15.jpg",
+      "entries": [
+        {
+          "index": 113,
+          "path": "browser/technology-dashboard-1440.png",
+          "size": [1440, 1739]
+        },
+        {
+          "index": 114,
+          "path": "browser/technology-dashboard-375.png",
+          "size": [375, 3269]
+        },
+        {
+          "index": 115,
+          "path": "browser/technology-technology-dashboard-320-text200.png",
+          "size": [320, 11021]
+        },
+        {
+          "index": 116,
+          "path": "browser/technology-technology-dashboard-text200.png",
+          "size": [375, 9533]
+        },
+        {
+          "index": 117,
+          "path": "browser/technology-technology-menu.png",
+          "size": [1440, 1739]
+        },
+        {
+          "index": 118,
+          "path": "disclosure/developer-1440.png",
+          "size": [1440, 900]
+        },
+        {
+          "index": 119,
+          "path": "disclosure/developer-1920.png",
+          "size": [1920, 1080]
+        },
+        {
+          "index": 120,
+          "path": "disclosure/developer-320.png",
+          "size": [320, 1140]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-16.jpg",
+      "entries": [
+        {
+          "index": 121,
+          "path": "disclosure/developer-375-text200.png",
+          "size": [375, 1889]
+        },
+        {
+          "index": 122,
+          "path": "disclosure/developer-375.png",
+          "size": [375, 1041]
+        },
+        {
+          "index": 123,
+          "path": "disclosure/developer-768.png",
+          "size": [768, 900]
+        },
+        {
+          "index": 124,
+          "path": "disclosure/disclosure-1440.png",
+          "size": [1440, 900]
+        },
+        {
+          "index": 125,
+          "path": "disclosure/disclosure-1920.png",
+          "size": [1920, 1080]
+        },
+        {
+          "index": 126,
+          "path": "disclosure/disclosure-320.png",
+          "size": [320, 812]
+        },
+        {
+          "index": 127,
+          "path": "disclosure/disclosure-375.png",
+          "size": [375, 812]
+        },
+        {
+          "index": 128,
+          "path": "disclosure/disclosure-768.png",
+          "size": [768, 900]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-17.jpg",
+      "entries": [
+        {
+          "index": 129,
+          "path": "disclosure/records-1-1024.png",
+          "size": [1024, 1323]
+        },
+        {
+          "index": 130,
+          "path": "disclosure/records-2-1024.png",
+          "size": [1024, 1238]
+        },
+        {
+          "index": 131,
+          "path": "disclosure/records-3-1024.png",
+          "size": [1024, 1067]
+        },
+        {
+          "index": 132,
+          "path": "disclosure/records-4-1024.png",
+          "size": [1024, 1563]
+        },
+        {
+          "index": 133,
+          "path": "recovery/recovery-1440.png",
+          "size": [1440, 1493]
+        },
+        {
+          "index": 134,
+          "path": "recovery/recovery-1920.png",
+          "size": [1920, 1493]
+        },
+        {
+          "index": 135,
+          "path": "recovery/recovery-320.png",
+          "size": [320, 1835]
+        },
+        {
+          "index": 136,
+          "path": "recovery/recovery-375.png",
+          "size": [375, 1763]
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-18.jpg",
+      "entries": [
+        {
+          "index": 137,
+          "path": "recovery/recovery-768.png",
+          "size": [768, 1453]
+        },
+        {
+          "index": 138,
+          "path": "recovery/recovery-text200.png",
+          "size": [375, 3069]
+        },
+        {
+          "index": 139,
+          "path": "recovery/ticket-preview.png",
+          "size": [1440, 1365]
+        }
+      ]
+    }
+  ]
+}

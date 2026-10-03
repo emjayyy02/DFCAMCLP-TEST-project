@@ -1,0 +1,7 @@
+{
+  "updateUserStatus": 200,
+  "canonicalNameChanged": true,
+  "listSessionsStatus": 200,
+  "sessionTokenFieldsReturned": true,
+  "probeRestored": true
+}

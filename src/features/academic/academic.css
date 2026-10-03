@@ -196,6 +196,12 @@
   border-top: 0;
   padding-top: 0;
 }
+.academic-today-list {
+  container-type: inline-size;
+}
+.academic-today-list li > div {
+  overflow-wrap: anywhere;
+}
 
 .academic-today-list time {
   color: var(--primary);
@@ -264,6 +270,13 @@
   padding: 0.8rem 0;
   border-top: 1px solid var(--border);
 }
+.academic-task-list {
+  container-type: inline-size;
+}
+.academic-task-list li > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 
 .academic-task-list li:first-child {
   padding-top: 0;
@@ -277,6 +290,18 @@
 .academic-task-list li > a:last-child {
   grid-column: 2;
   grid-row: 2;
+}
+@container (max-width: 14rem) {
+  .academic-task-list li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .academic-task-list li > a,
+  .academic-task-list li > a:last-child {
+    grid-column: 1;
+    grid-row: auto;
+    justify-self: start;
+    white-space: normal;
+  }
 }
 
 .academic-note,
@@ -391,7 +416,7 @@
   font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .academic-offering-list,
@@ -551,9 +576,16 @@
 
 .academic-button-compact {
   flex: 0 0 auto;
+  max-width: 100%;
   padding-inline: 0.8rem;
   font-size: 0.8rem;
-  white-space: nowrap;
+  line-height: 1.71875;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.academic-button-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .academic-button:disabled {
@@ -1507,4 +1539,16 @@
 
 .academic-management-intro + .academic-panel {
   border-top-color: var(--border-strong);
+}
+
+@container (max-width: 14rem) {
+  .academic-today-list li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .academic-today-list .academic-button-compact,
+  .academic-today-list .academic-row-action {
+    grid-column: 1;
+    justify-self: start;
+    white-space: normal;
+  }
 }

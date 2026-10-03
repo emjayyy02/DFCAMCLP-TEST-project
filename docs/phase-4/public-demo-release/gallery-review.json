@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-03T01:04:38.804Z",
+  "gallery": "final-check-pass-4/index.html",
+  "method": "Manifest/local-image fallback; fresh complete visual review of all90 contact sheets, SHA-identical duplicates mapped to every corpus image path, with27 full-resolution follow-ups. Static gallery judgments kept separate from fresh browser interaction checks.",
+  "views": 493,
+  "images": 7875,
+  "uniqueImages": 6300,
+  "accounts": 9,
+  "sheets": 90,
+  "ranges": [
+    {
+      "reviewer": "release_gallery_a",
+      "sheets": [1, 30],
+      "unique": 2100,
+      "paths": 2582,
+      "originalFollowups": [154, 335, 630, 693, 984, 1438, 1609, 1990, 2068]
+    },
+    {
+      "reviewer": "release_gallery_b",
+      "sheets": [31, 60],
+      "unique": 2100,
+      "paths": 3015,
+      "originalFollowups": 11
+    },
+    {
+      "reviewer": "release_gallery_c",
+      "sheets": [61, 90],
+      "unique": 2100,
+      "paths": 2278,
+      "originalFollowups": [4428, 4508, 5415, 5551, 5825, 6121, 6299]
+    }
+  ],
+  "findings": {
+    "confirmedSurfaceOverflowClippingIdentityDefects": 0,
+    "developerLinkStaleInHistoricalCapture": "Previous Portfolio URL belongs to the preserved capture. Current source and fresh focused release screenshots use owner-approved marvinsilverio.vercel.app.",
+    "contextualFictionalNames": "Alex Demo and Sam Demo are permitted contextual fictional records; signed-in canonical identities match.",
+    "scenarioDates": "Controlled past-appointment scenario is intentional; no real-time expiration claim."
+  },
+  "historicalScreenshotsReplaced": 0,
+  "verdict": "PASS for complete static gallery; current runtime verified separately."
+}

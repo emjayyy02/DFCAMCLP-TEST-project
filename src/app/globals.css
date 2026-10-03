@@ -522,7 +522,7 @@
     text-wrap: balance;
 
     font-weight: 600;
-    line-height: 38px;
+    line-height: 1.1875;
     letter-spacing: -0.015em;
   }
   .type-display {
@@ -604,7 +604,7 @@
   .context-header-title {
     font-size: var(--text-page-title);
     font-weight: 600;
-    line-height: 38px;
+    line-height: 1.1875;
     letter-spacing: -0.015em;
     overflow-wrap: break-word;
   }
@@ -636,14 +636,14 @@
   .demo-notice-label {
     font-size: var(--text-secondary);
     font-weight: 600;
-    line-height: 20px;
+    line-height: 1.4285714286;
   }
   .demo-notice-detail {
     color: var(--foreground-muted);
     font-size: var(--text-secondary);
     overflow-wrap: anywhere;
 
-    line-height: 20px;
+    line-height: 1.4285714286;
   }
   .demo-notice-action {
     margin-left: auto;
@@ -657,8 +657,10 @@
   }
   .portal-technology-page {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     width: min(100%, var(--width-operational));
     margin-inline: auto;
+    overflow-wrap: anywhere;
 
     gap: 24px;
   }
@@ -919,7 +921,7 @@
     font-size: 1.75rem;
 
     font-weight: 600;
-    line-height: 38px;
+    line-height: 1.3571428571;
     letter-spacing: -0.015em;
     overflow-wrap: break-word;
   }
@@ -1996,6 +1998,13 @@
   border-bottom: 1px solid var(--border-strong);
   box-shadow: var(--shadow-shell);
 }
+.portal-masthead-brand {
+  flex-basis: max-content;
+  flex-shrink: 0;
+}
+.portal-masthead-brand > span {
+  min-width: max-content;
+}
 .institution-wordmark {
   display: block;
   color: var(--foreground);
@@ -2880,7 +2889,7 @@
   }
   .page-title,
   .context-header-title {
-    line-height: 34px;
+    line-height: 1.2142857143;
   }
   .type-section-title {
     font-size: 22px;
@@ -3181,8 +3190,8 @@ dialog::backdrop {
 }
 .demo-photo-control {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: max(80px, 4rem);
+  height: max(80px, 4rem);
   flex: 0 0 auto;
 }
 .demo-photo-trigger {

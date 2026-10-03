@@ -1,0 +1,188 @@
+{
+  "stepper": true,
+  "requiredBlocks": true,
+  "numericNamesBlocked": true,
+  "cityBarangayRequired": true,
+  "photoRequired": true,
+  "centeredPhoto": true,
+  "photoDialogValidationRemoveFocus": true,
+  "reviewEdits": true,
+  "consentBlocks": true,
+  "applicationNumber": true,
+  "emailCodePreview": true,
+  "emailEditResetsCode": true,
+  "noEntryNetworkWrites": true,
+  "reloadReset": true,
+  "text200": true,
+  "reducedMotion": true,
+  "layouts": [
+    {
+      "width": 320,
+      "scroll": 320,
+      "step": "1\nApplicant type and program",
+      "focus": "MAIN"
+    },
+    {
+      "width": 320,
+      "scroll": 320,
+      "step": "2\nPersonal details",
+      "focus": "BUTTON"
+    },
+    {
+      "width": 320,
+      "scroll": 320,
+      "step": "3\nContact and verification",
+      "focus": "INPUT"
+    },
+    {
+      "width": 320,
+      "scroll": 320,
+      "step": "4\nReview, consent and account generation",
+      "focus": "H2"
+    },
+    {
+      "width": 375,
+      "scroll": 375,
+      "step": "1\nApplicant type and program",
+      "focus": "MAIN"
+    },
+    {
+      "width": 375,
+      "scroll": 375,
+      "step": "2\nPersonal details",
+      "focus": "BUTTON"
+    },
+    {
+      "width": 375,
+      "scroll": 375,
+      "step": "3\nContact and verification",
+      "focus": "INPUT"
+    },
+    {
+      "width": 375,
+      "scroll": 375,
+      "step": "4\nReview, consent and account generation",
+      "focus": "H2"
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "step": "1\nApplicant type and program",
+      "focus": "MAIN"
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "step": "2\nPersonal details",
+      "focus": "BUTTON"
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "step": "3\nContact and verification",
+      "focus": "INPUT"
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "step": "4\nReview, consent and account generation",
+      "focus": "H2"
+    },
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "step": "1\nApplicant type and program",
+      "focus": "MAIN"
+    },
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "step": "2\nPersonal details",
+      "focus": "BUTTON"
+    },
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "step": "3\nContact and verification",
+      "focus": "INPUT"
+    },
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "step": "4\nReview, consent and account generation",
+      "focus": "H2"
+    },
+    {
+      "width": 1920,
+      "scroll": 1920,
+      "step": "1\nApplicant type and program",
+      "focus": "MAIN"
+    },
+    {
+      "width": 1920,
+      "scroll": 1920,
+      "step": "2\nPersonal details",
+      "focus": "BUTTON"
+    },
+    {
+      "width": 1920,
+      "scroll": 1920,
+      "step": "3\nContact and verification",
+      "focus": "INPUT"
+    },
+    {
+      "width": 1920,
+      "scroll": 1920,
+      "step": "4\nReview, consent and account generation",
+      "focus": "H2"
+    }
+  ],
+  "profiles": [
+    {
+      "identity": "John Paul Reyes",
+      "width": 320,
+      "bottomRight": true
+    },
+    {
+      "identity": "John Paul Reyes",
+      "width": 375,
+      "bottomRight": true
+    },
+    {
+      "identity": "John Paul Reyes",
+      "width": 768,
+      "bottomRight": true
+    },
+    {
+      "identity": "John Paul Reyes",
+      "width": 1440,
+      "bottomRight": true
+    },
+    {
+      "identity": "John Paul Reyes",
+      "width": 1920,
+      "bottomRight": true
+    },
+    {
+      "identity": "Juan Dela Cruz",
+      "width": 375,
+      "bottomRight": true
+    },
+    {
+      "identity": "Juan Dela Cruz",
+      "width": 1440,
+      "bottomRight": true
+    },
+    {
+      "identity": "Maria Santos",
+      "width": 375,
+      "bottomRight": true
+    },
+    {
+      "identity": "Maria Santos",
+      "width": 1440,
+      "bottomRight": true
+    }
+  ],
+  "errors": []
+}

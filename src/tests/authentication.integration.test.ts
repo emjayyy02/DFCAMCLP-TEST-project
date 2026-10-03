@@ -169,6 +169,103 @@ describe("P2-M3 authentication", () => {
     expect(after).toBeNull();
   });
 
+  it.each(developmentAuthAccountSeed)(
+    "protects shared identity and concurrent sessions for $name",
+    async (account) => {
+      const firstCookie = sessionCookie(await signIn(account.email));
+      const secondCookie = sessionCookie(await signIn(account.email));
+      const first = await auth.api.getSession({
+        headers: requestHeaders(firstCookie),
+      });
+      const second = await auth.api.getSession({
+        headers: requestHeaders(secondCookie),
+      });
+      expect(first?.session.id).not.toBe(second?.session.id);
+
+      const requests = [
+        {
+          path: "/update-user",
+          body: {
+            name: "Fictional Release Probe",
+            image: "https://example.invalid/photo.png",
+          },
+        },
+        { path: "/change-email", body: { newEmail: "probe@example.invalid" } },
+        {
+          path: "/change-password",
+          body: {
+            currentPassword: seedPassword,
+            newPassword: "Unused-fictional-probe-password",
+          },
+        },
+        { path: "/delete-user", body: { password: seedPassword } },
+        { path: "/list-sessions", method: "GET" },
+        { path: "/revoke-session", body: { token: second!.session.token } },
+        { path: "/revoke-sessions", body: {} },
+        { path: "/revoke-other-sessions", body: {} },
+      ];
+      for (const request of requests) {
+        const response = await auth.handler(
+          new Request(`${env.BETTER_AUTH_URL}/api/auth${request.path}`, {
+            method: request.method ?? "POST",
+            headers: new Headers({
+              ...Object.fromEntries(requestHeaders(firstCookie)),
+              "content-type": "application/json",
+            }),
+            ...(request.body ? { body: JSON.stringify(request.body) } : {}),
+          }),
+        );
+        expect(response.status, request.path).toBe(403);
+      }
+
+      const [unchanged] = await database
+        .select({ name: authUsers.name, email: authUsers.email })
+        .from(authUsers)
+        .where(eq(authUsers.id, first!.user.id));
+      expect(unchanged).toEqual({ name: account.name, email: account.email });
+      await auth.api.signOut({ headers: requestHeaders(firstCookie) });
+      expect(
+        await auth.api.getSession({ headers: requestHeaders(firstCookie) }),
+      ).toBeNull();
+      expect(
+        (await auth.api.getSession({ headers: requestHeaders(secondCookie) }))
+          ?.user.name,
+      ).toBe(account.name);
+      await auth.api.signOut({ headers: requestHeaders(secondCookie) });
+    },
+  );
+
+  it("leaves non-demo identity updates governed by Better Auth", async () => {
+    const email = `${crypto.randomUUID()}@example.invalid`;
+    const provisioningAuth = createPortalAuth(database, {
+      baseURL: env.BETTER_AUTH_URL,
+      secret: env.BETTER_AUTH_SECRET,
+      allowSignUp: true,
+    });
+    await provisioningAuth.api.signUpEmail({
+      body: {
+        email,
+        name: "Fictional Integration Person",
+        password: seedPassword,
+      },
+    });
+    try {
+      const cookie = sessionCookie(await signIn(email));
+      const response = await auth.api.updateUser({
+        headers: requestHeaders(cookie),
+        body: { name: "Fictional Updated Person" },
+        asResponse: true,
+      });
+      expect(response.status).toBe(200);
+      expect(
+        (await auth.api.getSession({ headers: requestHeaders(cookie) }))?.user
+          .name,
+      ).toBe("Fictional Updated Person");
+    } finally {
+      await database.delete(authUsers).where(eq(authUsers.email, email));
+    }
+  });
+
   it("links one Better Auth user explicitly to one Person", async () => {
     const [link] = await database
       .select({

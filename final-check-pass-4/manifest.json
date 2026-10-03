@@ -210,11 +210,7 @@
         }
       ],
       "loginStatus": 200,
-      "allowedRoutes": [
-        "/account",
-        "/operations",
-        "/operations/facilities"
-      ],
+      "allowedRoutes": ["/account", "/operations", "/operations/facilities"],
       "visited": [
         "/account",
         "/operations",
@@ -73831,9 +73827,7 @@
   "completedAt": "2026-10-02T18:06:58.122Z",
   "sourceIntegrity": {
     "checkedFiles": 1683,
-    "changed": [
-      "next-env.d.ts"
-    ]
+    "changed": ["next-env.d.ts"]
   },
   "totalViews": 493,
   "totalPNGs": 7875,

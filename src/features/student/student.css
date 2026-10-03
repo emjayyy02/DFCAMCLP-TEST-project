@@ -150,7 +150,7 @@
 
 .student-today-list li {
   display: grid;
-  grid-template-columns: minmax(7rem, 0.7fr) minmax(0, 1.3fr);
+  grid-template-columns: minmax(min(7rem, 35%), 0.7fr) minmax(0, 1.3fr);
   gap: 0.85rem;
   padding: 0.8rem 0;
   border-top: 1px solid var(--border);
@@ -165,6 +165,8 @@
 .student-today-list li > div,
 .student-today-list li > div span {
   display: block;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .student-today-list li > div span {
@@ -230,10 +232,15 @@
 
 .student-recent-list li {
   display: grid;
-  grid-template-columns: minmax(7rem, 0.75fr) minmax(0, 1.25fr);
+  grid-template-columns: minmax(min(7rem, 35%), 0.75fr) minmax(0, 1.25fr);
   gap: 0.75rem;
   padding-block: 0.75rem;
   border-top: 1px solid var(--border);
+}
+
+.student-recent-list li > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .student-recent-list li:first-child {

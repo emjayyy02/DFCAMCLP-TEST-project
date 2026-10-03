@@ -1,0 +1,155 @@
+[
+  {
+    "group": "applicant",
+    "email": "juan.delacruz@example.invalid",
+    "name": "Juan Dela Cruz",
+    "portals": ["APPLICANT"],
+    "routes": [
+      "/account",
+      "/applicant",
+      "/applicant/application",
+      "/applicant/dcat",
+      "/applicant/enrollment",
+      "/applicant/announcements",
+      "/applicant/profile"
+    ],
+    "photo": true,
+    "signOut": true,
+    "protectedAfterLogout": true
+  },
+  {
+    "group": "student",
+    "email": "johnpaul.reyes@example.invalid",
+    "name": "John Paul Reyes",
+    "portals": ["STUDENT"],
+    "routes": [
+      "/account",
+      "/student",
+      "/student/academics",
+      "/student/enrollment",
+      "/student/requests",
+      "/student/announcements",
+      "/student/calendar",
+      "/student/profile"
+    ],
+    "photo": true,
+    "signOut": true,
+    "protectedAfterLogout": true
+  },
+  {
+    "group": "faculty",
+    "email": "maria.santos@example.invalid",
+    "name": "Maria Santos",
+    "portals": ["ACADEMIC"],
+    "routes": [
+      "/account",
+      "/academic",
+      "/academic/classes",
+      "/academic/attendance",
+      "/academic/grades",
+      "/academic/announcements"
+    ],
+    "photo": true,
+    "signOut": true,
+    "protectedAfterLogout": true
+  },
+  {
+    "group": "records",
+    "email": "jose.garcia@example.invalid",
+    "name": "Jose Garcia",
+    "portals": ["RECORDS"],
+    "routes": [
+      "/account",
+      "/records",
+      "/records/applicants",
+      "/records/dcat",
+      "/records/students",
+      "/records/enrollment",
+      "/records/documents"
+    ],
+    "photo": true,
+    "signOut": true,
+    "protectedAfterLogout": true
+  },
+  {
+    "group": "operations",
+    "email": "mark.ramos@example.invalid",
+    "name": "Mark Ramos",
+    "portals": ["OPERATIONS"],
+    "routes": ["/account", "/operations", "/operations/facilities"],
+    "photo": true,
+    "signOut": true,
+    "protectedAfterLogout": true
+  },
+  {
+    "group": "technology",
+    "email": "angelo.cruz@example.invalid",
+    "name": "Angelo Cruz",
+    "portals": ["TECHNOLOGY"],
+    "routes": [
+      "/account",
+      "/technology",
+      "/technology/accounts",
+      "/technology/security",
+      "/technology/system"
+    ],
+    "photo": true,
+    "signOut": true,
+    "protectedAfterLogout": true
+  },
+  {
+    "group": "coordinator",
+    "email": "angelica.bautista@example.invalid",
+    "name": "Angelica Bautista",
+    "portals": ["ACADEMIC"],
+    "routes": [
+      "/account",
+      "/academic",
+      "/academic/classes",
+      "/academic/attendance",
+      "/academic/grades",
+      "/academic/announcements",
+      "/academic/management"
+    ],
+    "photo": true,
+    "signOut": true,
+    "protectedAfterLogout": true
+  },
+  {
+    "group": "school-admin",
+    "email": "marygrace.mendoza@example.invalid",
+    "name": "Mary Grace Mendoza",
+    "portals": ["OPERATIONS"],
+    "routes": [
+      "/account",
+      "/operations",
+      "/operations/student-services",
+      "/operations/employees",
+      "/operations/facilities",
+      "/operations/administration"
+    ],
+    "photo": true,
+    "signOut": true,
+    "protectedAfterLogout": true
+  },
+  {
+    "group": "faculty-it",
+    "email": "michael.castro@example.invalid",
+    "name": "Michael Castro",
+    "portals": ["ACADEMIC", "TECHNOLOGY"],
+    "routes": [
+      "/account",
+      "/academic",
+      "/academic/classes",
+      "/academic/attendance",
+      "/academic/grades",
+      "/academic/announcements",
+      "/technology",
+      "/technology/system",
+      "/technology/developer"
+    ],
+    "photo": true,
+    "signOut": true,
+    "protectedAfterLogout": true
+  }
+]

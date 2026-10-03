@@ -2,6 +2,7 @@
   width: min(100%, var(--width-operational));
   margin-inline: auto;
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-4);
   padding-bottom: 2rem;
   color: var(--foreground);
@@ -114,6 +115,17 @@
 .records-select-row:hover,
 .records-select-row.selected {
   background: var(--primary-soft);
+}
+.records-queue-link {
+  flex-wrap: wrap;
+}
+.records-queue-link > span:first-child {
+  flex: 1 1 9rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.records-queue-count {
+  flex-shrink: 0;
 }
 .records-queue-link > span:first-child,
 .records-select-row > span:first-child {

@@ -1,0 +1,87 @@
+{
+  "checkedDate": "2026-10-03",
+  "productionBuild": "Local Next.js production at localhost:3122",
+  "unit": {
+    "pass": true,
+    "tests": 118,
+    "files": 11,
+    "log": "logs/public-release-complete-unit.log"
+  },
+  "database": {
+    "pass": true,
+    "tests": 12,
+    "log": "logs/public-release-complete-db.log"
+  },
+  "authentication": {
+    "pass": true,
+    "tests": 19,
+    "log": "logs/public-release-complete-auth.log"
+  },
+  "access": {
+    "pass": true,
+    "tests": 21,
+    "log": "logs/public-release-complete-access.log"
+  },
+  "lint": {
+    "pass": true,
+    "errors": 0,
+    "unchangedHistoricalWarnings": 5,
+    "log": "logs/public-release-complete-lint.log"
+  },
+  "typecheck": {
+    "pass": true,
+    "log": "logs/public-release-complete-typecheck.log"
+  },
+  "build": { "pass": true, "log": "logs/public-release-complete-build.log" },
+  "format": {
+    "exitCode": 1,
+    "acceptedApprovedHistoricalExceptionsOnly": true,
+    "unchangedExceptionsVerifiedWithGitDiff": true,
+    "files": [
+      "docs/phase-4/PHASE-4-MANUAL-AUDIT.md",
+      "final-check-before-uiux/index.html",
+      "final-check-before-uiux/manifest.json",
+      "final-check-before-uiux/source-integrity-before.json"
+    ],
+    "log": "logs/public-release-final-format.log"
+  },
+  "diffCheck": { "pass": true, "log": "logs/public-release-final-diff.log" },
+  "browser": {
+    "pass": true,
+    "identities": 9,
+    "publicRoutes": 13,
+    "publicRouteWidthCases": 65,
+    "enlargedAndNormalTextMeasurements": 210,
+    "pageErrors": 0,
+    "focusedScreenshots": 139,
+    "independentReviewSheets": 18,
+    "independentNativeFollowups": 26,
+    "widths": [320, 375, 768, 1440, 1920],
+    "textSizes": ["100%", "200%"],
+    "artifacts": [
+      "browser/nine-account-verification.json",
+      "browser/public-auth-verification.json",
+      "browser/text-sizing-verification.json",
+      "applicant/verification.json",
+      "recovery/verification.json",
+      "disclosure/verification.json",
+      "focused-visual-review.json"
+    ]
+  },
+  "security": {
+    "pass": true,
+    "artifact": "security-verification.json",
+    "log": "logs/public-release-complete-security.log"
+  },
+  "hosted": {
+    "verified": false,
+    "reason": "No existing public portal deployment configured; actual hosted verification remains release handoff work."
+  },
+  "credentials": {
+    "ownerApprovedPublicPasswordSupplied": false,
+    "passwordPublished": false,
+    "syncOrRotationPerformed": false
+  },
+  "releaseVerdict": "BLOCKED — owner-approved public demo password not supplied.",
+  "scope": "Local browser and project checks. No formal accessibility/security certification or hosted-build PASS claim. No new hosting, database reset, commit or push."
+}

@@ -378,7 +378,7 @@ export function AppShell({
           />
           <Link
             href={`/${portalDetails[currentPortal].slug}`}
-            className="flex min-h-11 min-w-0 flex-1 items-center gap-2 lg:flex-none"
+            className="portal-masthead-brand flex min-h-11 min-w-0 flex-1 items-center gap-2 lg:flex-none"
           >
             <Image
               src="/images/dfcamclp-seal.webp"

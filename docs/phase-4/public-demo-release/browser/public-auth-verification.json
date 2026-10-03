@@ -1,0 +1,1254 @@
+{
+  "public": [
+    {
+      "route": "/",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/programs",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/admissions",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/login",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/account/create",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/account/recovery",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/release-fictional-missing",
+      "width": 320,
+      "status": 404
+    },
+    {
+      "route": "/disclaimer",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/terms",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/privacy",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/acceptable-use",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/about-developer",
+      "width": 320,
+      "status": 200
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/programs",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/admissions",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/login",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/account/create",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/account/recovery",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/release-fictional-missing",
+      "width": 375,
+      "status": 404
+    },
+    {
+      "route": "/disclaimer",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/terms",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/privacy",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/acceptable-use",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/about-developer",
+      "width": 375,
+      "status": 200
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/programs",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/admissions",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/login",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/account/create",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/account/recovery",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/release-fictional-missing",
+      "width": 768,
+      "status": 404
+    },
+    {
+      "route": "/disclaimer",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/terms",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/privacy",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/acceptable-use",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/about-developer",
+      "width": 768,
+      "status": 200
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/programs",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/admissions",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/login",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/account/create",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/account/recovery",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/release-fictional-missing",
+      "width": 1440,
+      "status": 404
+    },
+    {
+      "route": "/disclaimer",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/terms",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/privacy",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/acceptable-use",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/about-developer",
+      "width": 1440,
+      "status": 200
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/programs",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/admissions",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/login",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/account/create",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/account/recovery",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/release-fictional-missing",
+      "width": 1920,
+      "status": 404
+    },
+    {
+      "route": "/disclaimer",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/terms",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/privacy",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/acceptable-use",
+      "width": 1920,
+      "status": 200
+    },
+    {
+      "route": "/about-developer",
+      "width": 1920,
+      "status": 200
+    }
+  ],
+  "legal": [
+    {
+      "route": "disclaimer",
+      "beforeAcceptance": true,
+      "headingFocus": true,
+      "backForward": true,
+      "reducedMotion": true
+    },
+    {
+      "route": "terms",
+      "beforeAcceptance": true,
+      "headingFocus": true,
+      "backForward": true,
+      "reducedMotion": true
+    },
+    {
+      "route": "privacy",
+      "beforeAcceptance": true,
+      "headingFocus": true,
+      "backForward": true,
+      "reducedMotion": true
+    },
+    {
+      "route": "acceptable-use",
+      "beforeAcceptance": true,
+      "headingFocus": true,
+      "backForward": true,
+      "reducedMotion": true
+    }
+  ],
+  "auth": [
+    {
+      "invalid": 401,
+      "wrongPortal": 403,
+      "noSessionAfterWrongPortal": true,
+      "panelCount": 9,
+      "copy": true,
+      "emailOnly": true,
+      "publicPasswordAbsent": true
+    },
+    {
+      "formLogin": true
+    },
+    {
+      "failedSignOut": "network-abort",
+      "truthfulError": true,
+      "retryEnabled": true,
+      "sessionRetained": true
+    },
+    {
+      "failedSignOut": "http-503",
+      "truthfulError": true,
+      "retryEnabled": true,
+      "sessionRetained": true
+    },
+    {
+      "failedSignOut": "unconfirmed-200",
+      "truthfulError": true,
+      "retryEnabled": true,
+      "sessionRetained": true
+    },
+    {
+      "backForward": true
+    },
+    {
+      "concurrentBioIsolated": true,
+      "sharedApiRestricted": true,
+      "oneLogoutLeavesOtherSignedIn": true
+    }
+  ],
+  "access": [
+    {
+      "group": "applicant",
+      "denied": "/technology",
+      "reloadedAuthorizedDashboard": true
+    },
+    {
+      "group": "student",
+      "denied": "/academic",
+      "reloadedAuthorizedDashboard": true
+    },
+    {
+      "group": "faculty",
+      "denied": "/academic/management",
+      "reloadedAuthorizedDashboard": true
+    },
+    {
+      "group": "records",
+      "denied": "/operations",
+      "reloadedAuthorizedDashboard": true
+    },
+    {
+      "group": "operations",
+      "denied": "/operations/employees",
+      "reloadedAuthorizedDashboard": true
+    },
+    {
+      "group": "technology",
+      "denied": "/technology/developer",
+      "reloadedAuthorizedDashboard": true
+    },
+    {
+      "group": "coordinator",
+      "denied": "/technology",
+      "reloadedAuthorizedDashboard": true
+    },
+    {
+      "group": "school-admin",
+      "denied": "/technology",
+      "reloadedAuthorizedDashboard": true
+    },
+    {
+      "group": "faculty-it",
+      "denied": "/records",
+      "reloadedAuthorizedDashboard": true
+    }
+  ],
+  "responsive": [
+    {
+      "label": "/",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/programs",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/admissions",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/about",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/login",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/account/create",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/account/recovery",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/release-fictional-missing",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/disclaimer",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/terms",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/privacy",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/acceptable-use",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/about-developer",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "/",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/programs",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/admissions",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/about",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/login",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/account/create",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/account/recovery",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/release-fictional-missing",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/disclaimer",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/terms",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/privacy",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/acceptable-use",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/about-developer",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "/",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/programs",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/admissions",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/about",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/login",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/account/create",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/account/recovery",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/release-fictional-missing",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/disclaimer",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/terms",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/privacy",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/acceptable-use",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/about-developer",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "/",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/programs",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/admissions",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/about",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/login",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/account/create",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/account/recovery",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/release-fictional-missing",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/disclaimer",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/terms",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/privacy",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/acceptable-use",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/about-developer",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "/",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/programs",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/admissions",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/about",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/login",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/account/create",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/account/recovery",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/release-fictional-missing",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/disclaimer",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/terms",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/privacy",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/acceptable-use",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "/about-developer",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "failed sign-out network-abort",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "failed sign-out http-503",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "failed sign-out unconfirmed-200",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "applicant dashboard",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "applicant account menu",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "applicant dashboard",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "applicant account menu",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "applicant dashboard",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "applicant account menu",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "applicant dashboard",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "applicant account menu",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "applicant dashboard",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "applicant account menu",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "student dashboard",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "student account menu",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "student dashboard",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "student account menu",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "student dashboard",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "student account menu",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "student dashboard",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "student account menu",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "student dashboard",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "student account menu",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "account 200% text",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "faculty dashboard",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "faculty account menu",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "faculty dashboard",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "faculty account menu",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "faculty dashboard",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "faculty account menu",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "faculty dashboard",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "faculty account menu",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "faculty dashboard",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "faculty account menu",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "records dashboard",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "records account menu",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "records dashboard",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "records account menu",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "records dashboard",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "records account menu",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "records dashboard",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "records account menu",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "records dashboard",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "records account menu",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "operations dashboard",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "operations account menu",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "operations dashboard",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "operations account menu",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "operations dashboard",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "operations account menu",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "operations dashboard",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "operations account menu",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "operations dashboard",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "operations account menu",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "technology dashboard",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "technology account menu",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "technology dashboard",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "technology account menu",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "technology dashboard",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "technology account menu",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "technology dashboard",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "technology account menu",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "technology dashboard",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "technology account menu",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "coordinator dashboard",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "coordinator account menu",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "coordinator dashboard",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "coordinator account menu",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "coordinator dashboard",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "coordinator account menu",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "coordinator dashboard",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "coordinator account menu",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "coordinator dashboard",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "coordinator account menu",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "school-admin dashboard",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "school-admin account menu",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "school-admin dashboard",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "school-admin account menu",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "school-admin dashboard",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "school-admin account menu",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "school-admin dashboard",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "school-admin account menu",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "school-admin dashboard",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "school-admin account menu",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "faculty-it dashboard",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "faculty-it account menu",
+      "width": 320,
+      "scrollWidth": 320
+    },
+    {
+      "label": "faculty-it dashboard",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "faculty-it account menu",
+      "width": 375,
+      "scrollWidth": 375
+    },
+    {
+      "label": "faculty-it dashboard",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "faculty-it account menu",
+      "width": 768,
+      "scrollWidth": 768
+    },
+    {
+      "label": "faculty-it dashboard",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "faculty-it account menu",
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    {
+      "label": "faculty-it dashboard",
+      "width": 1920,
+      "scrollWidth": 1920
+    },
+    {
+      "label": "faculty-it account menu",
+      "width": 1920,
+      "scrollWidth": 1920
+    }
+  ],
+  "keyboard": [
+    {
+      "drawerContainmentReturn": true,
+      "touchTarget": true
+    },
+    {
+      "sortableHeader": true,
+      "tabArrowEnd": true
+    }
+  ],
+  "errors": []
+}

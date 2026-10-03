@@ -166,11 +166,7 @@
         }
       ],
       "loginStatus": 200,
-      "allowedRoutes": [
-        "/account",
-        "/operations",
-        "/operations/facilities"
-      ],
+      "allowedRoutes": ["/account", "/operations", "/operations/facilities"],
       "visited": [
         "/account",
         "/operations",
@@ -344,9 +340,7 @@
   "invalidDimensions": [],
   "sourceIntegrity": {
     "checkedFiles": 1683,
-    "changed": [
-      "next-env.d.ts"
-    ]
+    "changed": ["next-env.d.ts"]
   },
   "postCaptureIntegrity": {
     "checkedFiles": 1683,

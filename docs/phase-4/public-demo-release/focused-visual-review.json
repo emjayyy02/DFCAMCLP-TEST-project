@@ -1,0 +1,21 @@
+{
+  "build": "Local production localhost:3122",
+  "reviewer": "release_final_visual_review",
+  "result": "PASS",
+  "images": 139,
+  "contactSheets": 18,
+  "nativeFollowups": 26,
+  "nativeCoverage": "Ten authorized dashboards at 375px/200% text; two domain profiles at 375px/200%; nine Account profiles at 200%; four targeted dashboards at 320px/200%; normal Operations at 375px. All contact sheets reviewed after final capture refresh.",
+  "fixedAreas": [
+    "Account heading and avatar reservation",
+    "Portal branding and account controls",
+    "Student Today and Recent activity rows",
+    "Academic timetable, program button and follow-up tasks",
+    "Records queue labels and count badges",
+    "Operations queue labels and count badges",
+    "Narrow Records, Operations and Technology grids",
+    "Shared demo-notice heading and body line heights"
+  ],
+  "remainingConfirmedDefects": [],
+  "scope": "Independent image/source review. Browser interactions and numerical geometry results are separately recorded in the functional runners. No formal accessibility or security certification claim."
+}

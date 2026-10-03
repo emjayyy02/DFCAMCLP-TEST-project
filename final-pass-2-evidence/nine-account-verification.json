@@ -3,9 +3,7 @@
     "group": "applicant",
     "email": "juan.delacruz@example.invalid",
     "name": "Juan Dela Cruz",
-    "portals": [
-      "APPLICANT"
-    ],
+    "portals": ["APPLICANT"],
     "routes": [
       "/account",
       "/applicant",
@@ -22,9 +20,7 @@
     "group": "student",
     "email": "johnpaul.reyes@example.invalid",
     "name": "John Paul Reyes",
-    "portals": [
-      "STUDENT"
-    ],
+    "portals": ["STUDENT"],
     "routes": [
       "/account",
       "/student",
@@ -42,9 +38,7 @@
     "group": "faculty",
     "email": "maria.santos@example.invalid",
     "name": "Maria Santos",
-    "portals": [
-      "ACADEMIC"
-    ],
+    "portals": ["ACADEMIC"],
     "routes": [
       "/account",
       "/academic",
@@ -60,9 +54,7 @@
     "group": "records",
     "email": "jose.garcia@example.invalid",
     "name": "Jose Garcia",
-    "portals": [
-      "RECORDS"
-    ],
+    "portals": ["RECORDS"],
     "routes": [
       "/account",
       "/records",
@@ -79,14 +71,8 @@
     "group": "operations",
     "email": "mark.ramos@example.invalid",
     "name": "Mark Ramos",
-    "portals": [
-      "OPERATIONS"
-    ],
-    "routes": [
-      "/account",
-      "/operations",
-      "/operations/facilities"
-    ],
+    "portals": ["OPERATIONS"],
+    "routes": ["/account", "/operations", "/operations/facilities"],
     "photo": true,
     "signOut": true
   },
@@ -94,9 +80,7 @@
     "group": "technology",
     "email": "angelo.cruz@example.invalid",
     "name": "Angelo Cruz",
-    "portals": [
-      "TECHNOLOGY"
-    ],
+    "portals": ["TECHNOLOGY"],
     "routes": [
       "/account",
       "/technology",
@@ -111,9 +95,7 @@
     "group": "coordinator",
     "email": "angelica.bautista@example.invalid",
     "name": "Angelica Bautista",
-    "portals": [
-      "ACADEMIC"
-    ],
+    "portals": ["ACADEMIC"],
     "routes": [
       "/account",
       "/academic",
@@ -130,9 +112,7 @@
     "group": "school-admin",
     "email": "marygrace.mendoza@example.invalid",
     "name": "Mary Grace Mendoza",
-    "portals": [
-      "OPERATIONS"
-    ],
+    "portals": ["OPERATIONS"],
     "routes": [
       "/account",
       "/operations",
@@ -148,10 +128,7 @@
     "group": "faculty-it",
     "email": "michael.castro@example.invalid",
     "name": "Michael Castro",
-    "portals": [
-      "ACADEMIC",
-      "TECHNOLOGY"
-    ],
+    "portals": ["ACADEMIC", "TECHNOLOGY"],
     "routes": [
       "/account",
       "/academic",

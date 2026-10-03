@@ -4,14 +4,14 @@ The historical corpus was inspected before repairs: 489 views, 6,843 paths, 5,58
 
 The separate current corpus contains 493 views and 7,875 valid PNGs, representing 6,300 exact-SHA256 unique images in 90 contact sheets. Every tile was inspected; duplicate paths map to identical reviewed images. Suspicious and representative originals were opened at full size. Contact-sheet review is exhaustive coverage of the images, not a claim that all 7,875 paths were opened at native resolution.
 
-| Reviewer | Sheets | Unique images | Mapped paths |
-| --- | --- | ---: | ---: |
-| Historical/current reviewer A | 001–014 | 980 | 1,390 |
-| Historical/current reviewer B | 015–029 | 1,050 | 1,108 |
-| Fresh remaining reviewer A | 030–050 | 1,470 | 2,017 |
-| Fresh remaining reviewer B | 051–071 | 1,470 | 1,971 |
-| Primary agent | 072–090 | 1,330 | 1,389 |
-| Total | 001–090 | 6,300 | 7,875 |
+| Reviewer                      | Sheets  | Unique images | Mapped paths |
+| ----------------------------- | ------- | ------------: | -----------: |
+| Historical/current reviewer A | 001–014 |           980 |        1,390 |
+| Historical/current reviewer B | 015–029 |         1,050 |        1,108 |
+| Fresh remaining reviewer A    | 030–050 |         1,470 |        2,017 |
+| Fresh remaining reviewer B    | 051–071 |         1,470 |        1,971 |
+| Primary agent                 | 072–090 |         1,330 |        1,389 |
+| Total                         | 001–090 |         6,300 |        7,875 |
 
 Reviewer A opened originals 125, 141, 191, 202, 348, 431 and 805. Reviewer B opened the Application 0078, DCAT 0103–0104 and Enrollment 0153/0157 originals. Fresh remaining reviewer A opened 2097, 2159, 2191, 2291, 2404, 2469, 2528, 2673, 2865, 3438 and 3500. Fresh remaining reviewer B opened 3530, 3657, 3779, 4349, 4449, 4538, 4710, 4803 and 4943 and independently checked its duplicate groups. The primary agent opened 5480, 6076, 6285 and 6299 at full size, including the newly restored demo-account panel state.
 

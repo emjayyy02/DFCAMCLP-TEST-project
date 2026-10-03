@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-10-03T11:35:39.641Z",
+  "clientArtifactFiles": 28,
+  "currentTextFiles": 242,
+  "productionHtml": ["/login", "/about-developer"],
+  "leakFiles": [],
+  "privateKeyFiles": [],
+  "legacyRuntimeFiles": [],
+  "realFixtureFiles": [],
+  "accounts": [
+    {
+      "email": "angelica.bautista@example.invalid",
+      "name": "Angelica Bautista",
+      "status": "ACTIVE"
+    },
+    {
+      "email": "angelo.cruz@example.invalid",
+      "name": "Angelo Cruz",
+      "status": "ACTIVE"
+    },
+    {
+      "email": "johnpaul.reyes@example.invalid",
+      "name": "John Paul Reyes",
+      "status": "ACTIVE"
+    },
+    {
+      "email": "jose.garcia@example.invalid",
+      "name": "Jose Garcia",
+      "status": "ACTIVE"
+    },
+    {
+      "email": "juan.delacruz@example.invalid",
+      "name": "Juan Dela Cruz",
+      "status": "ACTIVE"
+    },
+    {
+      "email": "maria.santos@example.invalid",
+      "name": "Maria Santos",
+      "status": "ACTIVE"
+    },
+    {
+      "email": "mark.ramos@example.invalid",
+      "name": "Mark Ramos",
+      "status": "ACTIVE"
+    },
+    {
+      "email": "marygrace.mendoza@example.invalid",
+      "name": "Mary Grace Mendoza",
+      "status": "ACTIVE"
+    },
+    {
+      "email": "michael.castro@example.invalid",
+      "name": "Michael Castro",
+      "status": "ACTIVE"
+    }
+  ],
+  "accountCount": 9,
+  "canonicalExactlyNine": true,
+  "credentialsUnchangedSinceRc2b": true,
+  "credentialComparison": "RC2B credential rows normalized to their prior emails using the stable canonical seed Person keys, then sorted as in the original snapshot. The owner-approved identity/email migration is accounted for; actual password hashes remain private.",
+  "accountsUnchangedSinceRc2b": false,
+  "membershipsUnchangedSinceRc2b": true,
+  "rolePermissionSourceUnchanged": true,
+  "currentCredentialCount": 9,
+  "credentialFingerprint": "3d20444073276ecc7b59af4992cb369688c6bd1ad627ba467709d2e96906bc89",
+  "membershipFingerprint": "215dfc796b6bd276bf3ca7acf3202f08d49cd7b1f535c3a724c742f71be52b5a",
+  "trackedEnvFiles": [".env.example"],
+  "historicalSemanticChanges": [],
+  "ownerApprovedPublicPassword": false,
+  "credentialSyncUsed": false,
+  "host": {
+    "configuredProjectDeployment": false,
+    "appUrlIsLoopback": true,
+    "portalDeploymentUrlFound": false,
+    "hostedVerification": "Not performed: no portal host configured in project or public project catalog."
+  },
+  "earlierMigrationEvidencePresent": true,
+  "scope": "Local production client files and current release text inspected for configured private secret/password literals, actual credential hashes/session tokens, private-key patterns and retired identities. No protected values recorded. Developer attribution is permitted outside fictional fixtures. No remote database or formal security certification claim.",
+  "pass": true
+}

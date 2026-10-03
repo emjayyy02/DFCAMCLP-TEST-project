@@ -6,14 +6,14 @@ import { ReturnToDemo } from "@/features/disclosure/demo-disclosure-provider";
 export const metadata: Metadata = {
   title: "About the developer — Independent portal demo",
   description:
-    "Meet Mj, the developer behind this independent learning project.",
+    "Meet Marvin, the developer behind this independent learning project.",
 };
 
 const socials = [
   { name: "GitHub", href: "https://github.com/emjayyy02", icon: "github" },
   {
     name: "Portfolio",
-    href: "https://project-01-personal-developer-profi.vercel.app",
+    href: "https://marvinsilverio.vercel.app",
     icon: "portfolio",
   },
   {
@@ -75,11 +75,12 @@ export default function AboutDeveloperPage() {
             <span className="developer-wave" aria-hidden="true">
               👋
             </span>
-            <h1>Hey, I&apos;m Marvin!.</h1>
+            <h1>Hey, I&apos;m Marvin!</h1>
             <p>
-              I started this as a side project at random 12 noon on a Sunday, just to build something fun and
-              realistic. Pero tinuloy ko nalang after a few weeks, and now I&apos;m here. I love
-              building, breaking things, and improving them.
+              I started this as a side project at random 12 noon on a Sunday,
+              just to build something fun and realistic. Pero tinuloy ko nalang
+              after a few weeks, and now I&apos;m here. I love building,
+              breaking things, and improving them.
             </p>
             <nav className="developer-socials" aria-label="Find Marvin online">
               {socials.map((social) => (
