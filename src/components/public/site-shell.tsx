@@ -58,7 +58,7 @@ export async function SiteShell({ children }: { children: React.ReactNode }) {
           </div>
           <ProjectInformationLinks />
           <p className="footer-copyright">
-            © 2026 Marvin Silverio · Independent portfolio project.
+            © 2026 Marvin Silverio · Independent side/test project.
           </p>
         </div>
       </footer>
