@@ -1,0 +1,289 @@
+{
+  "pass": true,
+  "accounts": 9,
+  "results": [
+    {
+      "name": "John Paul Reyes",
+      "email": "johnpaul.reyes@example.invalid",
+      "programmatic": [
+        {
+          "portal": "STUDENT",
+          "roleCodes": ["STUDENT"],
+          "identityMatches": true,
+          "authenticated": true
+        }
+      ],
+      "cleanBrowserSignIn": true,
+      "maskedByDefault": true,
+      "showHideCopy": true,
+      "emailPrefillOnly": true,
+      "profileAndRolesMatch": true,
+      "authorizedPortals": ["STUDENT"],
+      "signOut": true
+    },
+    {
+      "name": "Juan Dela Cruz",
+      "email": "juan.delacruz@example.invalid",
+      "programmatic": [
+        {
+          "portal": "APPLICANT",
+          "roleCodes": ["APPLICANT"],
+          "identityMatches": true,
+          "authenticated": true
+        }
+      ],
+      "cleanBrowserSignIn": true,
+      "maskedByDefault": true,
+      "showHideCopy": true,
+      "emailPrefillOnly": true,
+      "profileAndRolesMatch": true,
+      "authorizedPortals": ["APPLICANT"],
+      "signOut": true
+    },
+    {
+      "name": "Maria Santos",
+      "email": "maria.santos@example.invalid",
+      "programmatic": [
+        {
+          "portal": "ACADEMIC",
+          "roleCodes": ["FACULTY"],
+          "identityMatches": true,
+          "authenticated": true
+        }
+      ],
+      "cleanBrowserSignIn": true,
+      "maskedByDefault": true,
+      "showHideCopy": true,
+      "emailPrefillOnly": true,
+      "profileAndRolesMatch": true,
+      "authorizedPortals": ["ACADEMIC"],
+      "signOut": true
+    },
+    {
+      "name": "Jose Garcia",
+      "email": "jose.garcia@example.invalid",
+      "programmatic": [
+        {
+          "portal": "RECORDS",
+          "roleCodes": ["RECORDS_STAFF"],
+          "identityMatches": true,
+          "authenticated": true
+        }
+      ],
+      "cleanBrowserSignIn": true,
+      "maskedByDefault": true,
+      "showHideCopy": true,
+      "emailPrefillOnly": true,
+      "profileAndRolesMatch": true,
+      "authorizedPortals": ["RECORDS"],
+      "signOut": true
+    },
+    {
+      "name": "Mark Ramos",
+      "email": "mark.ramos@example.invalid",
+      "programmatic": [
+        {
+          "portal": "OPERATIONS",
+          "roleCodes": ["MAINTENANCE_STAFF"],
+          "identityMatches": true,
+          "authenticated": true
+        }
+      ],
+      "cleanBrowserSignIn": true,
+      "maskedByDefault": true,
+      "showHideCopy": true,
+      "emailPrefillOnly": true,
+      "profileAndRolesMatch": true,
+      "authorizedPortals": ["OPERATIONS"],
+      "signOut": true
+    },
+    {
+      "name": "Angelo Cruz",
+      "email": "angelo.cruz@example.invalid",
+      "programmatic": [
+        {
+          "portal": "TECHNOLOGY",
+          "roleCodes": ["IT_ADMIN"],
+          "identityMatches": true,
+          "authenticated": true
+        }
+      ],
+      "cleanBrowserSignIn": true,
+      "maskedByDefault": true,
+      "showHideCopy": true,
+      "emailPrefillOnly": true,
+      "profileAndRolesMatch": true,
+      "authorizedPortals": ["TECHNOLOGY"],
+      "signOut": true
+    },
+    {
+      "name": "Angelica Bautista",
+      "email": "angelica.bautista@example.invalid",
+      "programmatic": [
+        {
+          "portal": "ACADEMIC",
+          "roleCodes": ["PROGRAM_COORDINATOR"],
+          "identityMatches": true,
+          "authenticated": true
+        }
+      ],
+      "cleanBrowserSignIn": true,
+      "maskedByDefault": true,
+      "showHideCopy": true,
+      "emailPrefillOnly": true,
+      "profileAndRolesMatch": true,
+      "authorizedPortals": ["ACADEMIC"],
+      "signOut": true
+    },
+    {
+      "name": "Mary Grace Mendoza",
+      "email": "marygrace.mendoza@example.invalid",
+      "programmatic": [
+        {
+          "portal": "OPERATIONS",
+          "roleCodes": ["SCHOOL_ADMIN"],
+          "identityMatches": true,
+          "authenticated": true
+        }
+      ],
+      "cleanBrowserSignIn": true,
+      "maskedByDefault": true,
+      "showHideCopy": true,
+      "emailPrefillOnly": true,
+      "profileAndRolesMatch": true,
+      "authorizedPortals": ["OPERATIONS"],
+      "signOut": true
+    },
+    {
+      "name": "Michael Castro",
+      "email": "michael.castro@example.invalid",
+      "programmatic": [
+        {
+          "portal": "ACADEMIC",
+          "roleCodes": ["FACULTY"],
+          "identityMatches": true,
+          "authenticated": true
+        },
+        {
+          "portal": "TECHNOLOGY",
+          "roleCodes": ["DEVELOPER"],
+          "identityMatches": true,
+          "authenticated": true
+        }
+      ],
+      "cleanBrowserSignIn": true,
+      "maskedByDefault": true,
+      "showHideCopy": true,
+      "emailPrefillOnly": true,
+      "profileAndRolesMatch": true,
+      "authorizedPortals": ["ACADEMIC", "TECHNOLOGY"],
+      "signOut": true
+    }
+  ],
+  "geometry": [
+    {
+      "width": 320,
+      "font": "100%",
+      "scrollWidth": 320,
+      "dialogWidth": 282,
+      "dialogHeight": 780,
+      "viewportHeight": 812,
+      "bodyWidth": 280,
+      "bodyScroll": 280
+    },
+    {
+      "width": 320,
+      "font": "200%",
+      "scrollWidth": 320,
+      "dialogWidth": 250,
+      "dialogHeight": 780,
+      "viewportHeight": 812,
+      "bodyWidth": 248,
+      "bodyScroll": 248
+    },
+    {
+      "width": 375,
+      "font": "100%",
+      "scrollWidth": 375,
+      "dialogWidth": 337,
+      "dialogHeight": 780,
+      "viewportHeight": 812,
+      "bodyWidth": 335,
+      "bodyScroll": 335
+    },
+    {
+      "width": 375,
+      "font": "200%",
+      "scrollWidth": 375,
+      "dialogWidth": 305,
+      "dialogHeight": 780,
+      "viewportHeight": 812,
+      "bodyWidth": 303,
+      "bodyScroll": 303
+    },
+    {
+      "width": 768,
+      "font": "100%",
+      "scrollWidth": 768,
+      "dialogWidth": 672,
+      "dialogHeight": 868,
+      "viewportHeight": 900,
+      "bodyWidth": 670,
+      "bodyScroll": 670
+    },
+    {
+      "width": 768,
+      "font": "200%",
+      "scrollWidth": 768,
+      "dialogWidth": 698,
+      "dialogHeight": 868,
+      "viewportHeight": 900,
+      "bodyWidth": 696,
+      "bodyScroll": 696
+    },
+    {
+      "width": 1440,
+      "font": "100%",
+      "scrollWidth": 1440,
+      "dialogWidth": 672,
+      "dialogHeight": 868,
+      "viewportHeight": 900,
+      "bodyWidth": 670,
+      "bodyScroll": 670
+    },
+    {
+      "width": 1440,
+      "font": "200%",
+      "scrollWidth": 1440,
+      "dialogWidth": 1344,
+      "dialogHeight": 868,
+      "viewportHeight": 900,
+      "bodyWidth": 1342,
+      "bodyScroll": 1342
+    },
+    {
+      "width": 1920,
+      "font": "100%",
+      "scrollWidth": 1920,
+      "dialogWidth": 672,
+      "dialogHeight": 1048,
+      "viewportHeight": 1080,
+      "bodyWidth": 670,
+      "bodyScroll": 670
+    },
+    {
+      "width": 1920,
+      "font": "200%",
+      "scrollWidth": 1920,
+      "dialogWidth": 1344,
+      "dialogHeight": 1048,
+      "viewportHeight": 1080,
+      "bodyWidth": 1342,
+      "bodyScroll": 1342
+    }
+  ],
+  "keyboardFocus": true,
+  "noAutoLogin": true,
+  "passwordRecorded": false,
+  "production": "localhost:3130"
+}

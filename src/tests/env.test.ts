@@ -78,4 +78,15 @@ describe("server environment boundary", () => {
       }),
     ).toThrow("AUTH_SEED_PASSWORD");
   });
+  it("accepts the separately approved demo password in production", () => {
+    const parsed = parseServerEnv({
+      ...valid,
+      APP_ENV: "production",
+      APP_URL: "https://portal.example.invalid",
+      BETTER_AUTH_URL: "https://portal.example.invalid",
+      BETTER_AUTH_SECRET: "synthetic-unique-production-shaped-secret",
+      DEMO_ACCOUNT_PASSWORD: "synthetic-public-demo-password",
+    });
+    expect(parsed.DEMO_ACCOUNT_PASSWORD).toBe("synthetic-public-demo-password");
+  });
 });

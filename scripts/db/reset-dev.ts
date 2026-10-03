@@ -20,14 +20,17 @@ async function main() {
     });
     await migrate(database, { migrationsFolder: "drizzle" });
     await seedDatabase(database);
-    if (!env.AUTH_SEED_PASSWORD) {
-      throw new Error("AUTH_SEED_PASSWORD is required for local auth seeding.");
+    const password = env.DEMO_ACCOUNT_PASSWORD ?? env.AUTH_SEED_PASSWORD;
+    if (!password) {
+      throw new Error(
+        "DEMO_ACCOUNT_PASSWORD or AUTH_SEED_PASSWORD is required for local auth seeding.",
+      );
     }
     await provisionDevelopmentAuthUsers(database, {
       appEnvironment: "development",
       baseURL: env.BETTER_AUTH_URL,
       secret: env.BETTER_AUTH_SECRET,
-      password: env.AUTH_SEED_PASSWORD,
+      password,
     });
     await seedAccessControl(database);
     console.info(

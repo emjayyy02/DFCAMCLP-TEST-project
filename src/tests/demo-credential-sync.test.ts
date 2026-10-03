@@ -11,7 +11,7 @@ const environment = {
   DATABASE_URL: "postgres://demo:unused@localhost/portal_dev",
   POSTGRES_USER: "demo",
   POSTGRES_DB: "portal_dev",
-  AUTH_SEED_PASSWORD: "synthetic-test-only-password",
+  DEMO_ACCOUNT_PASSWORD: "synthetic-test-only-password",
 };
 const rows = () =>
   developmentAuthAccountSeed.map((seed, index) => ({
@@ -56,10 +56,14 @@ describe("local demo credential sync safety boundaries", () => {
       assertDemoSyncEnvironment({ ...environment, DATABASE_URL }),
     ).toThrow();
   });
-  it("refuses a missing seed password", () => {
+  it("refuses a missing approved demo password even if a seed password exists", () => {
     expect(() =>
-      assertDemoSyncEnvironment({ ...environment, AUTH_SEED_PASSWORD: "" }),
-    ).toThrow();
+      assertDemoSyncEnvironment({
+        ...environment,
+        DEMO_ACCOUNT_PASSWORD: "",
+        AUTH_SEED_PASSWORD: "synthetic-private-seed-password",
+      }),
+    ).toThrow("DEMO_ACCOUNT_PASSWORD");
   });
   it("refuses missing, duplicate, unrelated, and incorrectly linked identities", () => {
     expect(() => assertDemoCredentialRows(rows().slice(1))).toThrow();

@@ -32,12 +32,12 @@ export function assertDemoSyncEnvironment(env, args = []) {
       "Sync requires the configured local development/test database.",
     );
   if (
-    typeof env.AUTH_SEED_PASSWORD !== "string" ||
-    env.AUTH_SEED_PASSWORD.length < 12 ||
-    env.AUTH_SEED_PASSWORD.length > 128
+    typeof env.DEMO_ACCOUNT_PASSWORD !== "string" ||
+    env.DEMO_ACCOUNT_PASSWORD.length < 12 ||
+    env.DEMO_ACCOUNT_PASSWORD.length > 128
   ) {
     throw new DemoCredentialSyncError(
-      "AUTH_SEED_PASSWORD must satisfy the existing password length policy.",
+      "DEMO_ACCOUNT_PASSWORD is required and must satisfy the existing 12–128 character password policy.",
     );
   }
 }

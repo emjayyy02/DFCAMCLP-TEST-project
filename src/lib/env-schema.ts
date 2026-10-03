@@ -7,6 +7,7 @@ const schema = z
     BETTER_AUTH_URL: z.url(),
     BETTER_AUTH_SECRET: z.string().min(32),
     AUTH_SEED_PASSWORD: z.string().min(12).optional(),
+    DEMO_ACCOUNT_PASSWORD: z.string().min(12).max(128).optional(),
     DATABASE_URL: z
       .string()
       .url()

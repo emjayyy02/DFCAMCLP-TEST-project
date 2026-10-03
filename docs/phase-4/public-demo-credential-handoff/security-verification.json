@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-03T12:24:10.947Z",
+  "pass": true,
+  "productionClientAssets": 28,
+  "currentTextFiles": 169,
+  "leakedFiles": [],
+  "passwordLiteralFiles": [],
+  "keyFiles": [],
+  "publicPasswordFromRuntimeServerProp": true,
+  "publicPasswordEmbeddedInStaticClientBundles": false,
+  "publicPasswordRecorded": false,
+  "privateConfigurationNotExposed": true,
+  "passwordHashesNotExposed": true,
+  "exactlyNineAllowlistedCredentialMatches": true,
+  "nonDemoCredentialMatches": 0,
+  "nonDemoRecordsUnchanged": true,
+  "identityAndAccessTablesUnchangedDuringSync": true,
+  "rolePermissionSourceUnchanged": true,
+  "trackedEnvFiles": [".env.example"],
+  "hostConfigured": false,
+  "scope": "Local production artifacts/current source and release text checked for configured private values, actual DB credential/token literals, private-key patterns and accidental public-password literals. The approved value is deliberately present only in runtime Login HTML/props; it is never recorded in this evidence."
+}

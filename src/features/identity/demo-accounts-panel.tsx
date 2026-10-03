@@ -6,9 +6,11 @@ import type { DemoAccountOption } from "./public-demo-accounts";
 
 export function DemoAccountsPanel({
   accounts,
+  password,
   onUseEmail,
 }: {
   accounts: readonly DemoAccountOption[];
+  password: string;
   onUseEmail: (email: string) => void;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
@@ -17,6 +19,21 @@ export function DemoAccountsPanel({
   const selectedEmail = useRef<string | null>(null);
   const copyRequest = useRef(0);
   const [message, setMessage] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+
+  async function copyPassword() {
+    const request = ++copyRequest.current;
+    try {
+      await navigator.clipboard.writeText(password);
+      if (request === copyRequest.current) setMessage("Demo password copied.");
+    } catch {
+      if (request === copyRequest.current) {
+        setMessage(
+          "Copy is unavailable. Show and select the demo password to copy it.",
+        );
+      }
+    }
+  }
 
   async function copyEmail(email: string) {
     const request = ++copyRequest.current;
@@ -44,6 +61,7 @@ export function DemoAccountsPanel({
           selectedEmail.current = null;
           copyRequest.current++;
           setMessage("");
+          setShowPassword(false);
           dialog.current?.showModal();
           title.current?.focus({ preventScroll: true });
         }}
@@ -66,8 +84,8 @@ export function DemoAccountsPanel({
         onKeyDown={(event) => {
           if (event.key !== "Tab") return;
           const buttons = Array.from(
-            event.currentTarget.querySelectorAll<HTMLButtonElement>(
-              "button:not([disabled])",
+            event.currentTarget.querySelectorAll<HTMLElement>(
+              "button:not([disabled]), input:not([disabled])",
             ),
           );
           const first = buttons[0],
@@ -102,6 +120,39 @@ export function DemoAccountsPanel({
           </Button>
         </header>
         <div className="demo-accounts-body">
+          <div className="demo-password">
+            <label htmlFor="demo-account-password">Demo password</label>
+            <div className="demo-password-controls">
+              <input
+                id="demo-account-password"
+                type={showPassword ? "text" : "password"}
+                value={password}
+                readOnly
+                autoComplete="off"
+                spellCheck={false}
+              />
+              <Button
+                type="button"
+                variant="outline"
+                aria-label={
+                  showPassword ? "Hide demo password" : "Show demo password"
+                }
+                aria-controls="demo-account-password"
+                aria-pressed={showPassword}
+                onClick={() => setShowPassword((visible) => !visible)}
+              >
+                {showPassword ? "Hide" : "Show"}
+              </Button>
+              <Button
+                type="button"
+                variant="outline"
+                aria-label="Copy demo password"
+                onClick={copyPassword}
+              >
+                Copy
+              </Button>
+            </div>
+          </div>
           <ul className="demo-accounts-list">
             {accounts.map((account) => (
               <li key={account.email} className="demo-account-row">

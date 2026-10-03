@@ -36,16 +36,19 @@ import {
 
 loadEnvConfig(process.cwd());
 const env = parseServerEnv(process.env);
-if (!env.AUTH_SEED_PASSWORD) {
-  throw new Error("AUTH_SEED_PASSWORD is required for access-control tests.");
+const configuredPassword = env.DEMO_ACCOUNT_PASSWORD ?? env.AUTH_SEED_PASSWORD;
+if (!configuredPassword) {
+  throw new Error(
+    "DEMO_ACCOUNT_PASSWORD or AUTH_SEED_PASSWORD is required for access-control tests.",
+  );
 }
+const password: string = configuredPassword;
 
 const { client, database } = createDatabaseClient(env.DATABASE_URL, { max: 1 });
 const auth = createPortalAuth(database, {
   baseURL: env.BETTER_AUTH_URL,
   secret: env.BETTER_AUTH_SECRET,
 });
-const password = env.AUTH_SEED_PASSWORD;
 
 function requestHeaders(cookie?: string) {
   return new Headers({

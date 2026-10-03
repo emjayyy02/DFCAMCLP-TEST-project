@@ -22,9 +22,11 @@ const portalOptions = [
 export function LoginForm({
   defaultPortal = "",
   demoAccounts,
+  demoPassword,
 }: {
   defaultPortal?: string;
   demoAccounts: readonly DemoAccountOption[];
+  demoPassword: string;
 }) {
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
@@ -185,6 +187,7 @@ export function LoginForm({
       </Button>
       <DemoAccountsPanel
         accounts={demoAccounts}
+        password={demoPassword}
         onUseEmail={(email) => {
           if (!emailInput.current) return;
           emailInput.current.value = email;

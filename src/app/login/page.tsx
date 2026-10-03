@@ -4,6 +4,7 @@ import { LoginForm } from "@/features/identity/login-form";
 import { SiteShell } from "@/components/public/site-shell";
 import { isPortalCode } from "@/lib/portals";
 import { publicDemoAccounts } from "@/features/identity/public-demo-accounts";
+import { getPublicDemoPassword } from "@/server/auth/public-demo-configuration";
 import "@/features/identity/demo-accounts.css";
 export const metadata: Metadata = {
   title: "Sign in — DFCAMCLP Portal Concept",
@@ -25,6 +26,7 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
           <LoginForm
             defaultPortal={defaultPortal}
             demoAccounts={publicDemoAccounts}
+            demoPassword={getPublicDemoPassword()}
           />
           <div className="login-account-links">
             <Link

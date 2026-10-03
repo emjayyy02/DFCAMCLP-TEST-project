@@ -1,0 +1,28 @@
+{
+  "verdict": "READY FOR DEPLOYMENT",
+  "sync": { "updated": 9, "idempotentSecondRunUpdated": 0 },
+  "login": { "accounts": 9, "authorizedMemberships": 10, "pass": true },
+  "tests": { "unit": 119, "database": 12, "authentication": 19, "access": 21 },
+  "lint": { "pass": true, "errors": 0, "unchangedHistoricalWarnings": 5 },
+  "typecheck": { "pass": true },
+  "build": { "pass": true },
+  "diffCheck": { "pass": true },
+  "format": {
+    "exitCode": 1,
+    "currentChangedFilesPass": true,
+    "unchangedApprovedExceptions": [
+      "docs/phase-4/PHASE-4-MANUAL-AUDIT.md",
+      "final-check-before-uiux/index.html",
+      "final-check-before-uiux/manifest.json",
+      "final-check-before-uiux/source-integrity-before.json"
+    ]
+  },
+  "security": {
+    "pass": true,
+    "publicCredentialAccounts": 9,
+    "privateLeaks": 0
+  },
+  "productionEnvironmentRequirement": "DEMO_ACCOUNT_PASSWORD",
+  "hostedVerification": "Pending; no public portal host configured.",
+  "remainingLocalBlockers": []
+}

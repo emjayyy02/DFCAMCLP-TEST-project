@@ -13,16 +13,17 @@ async function main() {
   try {
     await seedDatabase(database);
     if (env.APP_ENV === "development" || env.APP_ENV === "test") {
-      if (!env.AUTH_SEED_PASSWORD) {
+      const password = env.DEMO_ACCOUNT_PASSWORD ?? env.AUTH_SEED_PASSWORD;
+      if (!password) {
         throw new Error(
-          "AUTH_SEED_PASSWORD is required for local auth seeding.",
+          "DEMO_ACCOUNT_PASSWORD or AUTH_SEED_PASSWORD is required for local auth seeding.",
         );
       }
       await provisionDevelopmentAuthUsers(database, {
         appEnvironment: env.APP_ENV,
         baseURL: env.BETTER_AUTH_URL,
         secret: env.BETTER_AUTH_SECRET,
-        password: env.AUTH_SEED_PASSWORD,
+        password,
       });
       await seedAccessControl(database);
     }

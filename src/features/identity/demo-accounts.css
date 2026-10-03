@@ -42,6 +42,34 @@
   padding: 0;
   list-style: none;
 }
+.demo-password {
+  padding-block: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.demo-password label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.demo-password-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.demo-password-controls input {
+  flex: 1 1 10rem;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--input);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  background: var(--surface);
+  font: inherit;
+  line-height: 1.5;
+}
 .demo-account-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;

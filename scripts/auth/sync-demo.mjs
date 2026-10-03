@@ -39,16 +39,16 @@ try {
       if (row.email !== seed.email || row.name !== seed.name) {
         await transaction`UPDATE auth_users SET email = ${seed.email}, name = ${seed.name}, updated_at = NOW() WHERE id = ${row.userId}`;
         identitiesUpdated += 1;
+        await transaction`UPDATE people SET first_name = ${seed.name.split(" ")[0]}, last_name = ${seed.name.split(" ").slice(1).join(" ")}, updated_at = NOW() WHERE id = ${seed.personId}`;
       }
-      await transaction`UPDATE people SET first_name = ${seed.name.split(" ")[0]}, last_name = ${seed.name.split(" ").slice(1).join(" ")}, updated_at = NOW() WHERE id = ${seed.personId}`;
       if (
         await verifyPassword({
           hash: row.password,
-          password: process.env.AUTH_SEED_PASSWORD,
+          password: process.env.DEMO_ACCOUNT_PASSWORD,
         })
       )
         continue;
-      const hash = await hashPassword(process.env.AUTH_SEED_PASSWORD);
+      const hash = await hashPassword(process.env.DEMO_ACCOUNT_PASSWORD);
       const changed = await transaction`
         UPDATE auth_accounts SET password = ${hash}, updated_at = NOW()
         WHERE id = ${row.credentialId} AND user_id = ${row.userId} AND provider_id = 'credential'

@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-10-03T12:00:24.583Z",
+  "mechanism": "pnpm auth:sync-demo / scripts/auth/sync-demo.mjs",
+  "first": {
+    "checked": 9,
+    "identitiesUpdated": 0,
+    "updated": 9,
+    "unchanged": 0
+  },
+  "second": {
+    "checked": 9,
+    "identitiesUpdated": 0,
+    "updated": 0,
+    "unchanged": 9
+  },
+  "accounts": [
+    {
+      "email": "johnpaul.reyes@example.invalid",
+      "name": "John Paul Reyes",
+      "memberships": [
+        {
+          "portal": "STUDENT",
+          "roleCodes": ["STUDENT"],
+          "roleLabels": ["Student"]
+        }
+      ]
+    },
+    {
+      "email": "juan.delacruz@example.invalid",
+      "name": "Juan Dela Cruz",
+      "memberships": [
+        {
+          "portal": "APPLICANT",
+          "roleCodes": ["APPLICANT"],
+          "roleLabels": ["Applicant"]
+        }
+      ]
+    },
+    {
+      "email": "maria.santos@example.invalid",
+      "name": "Maria Santos",
+      "memberships": [
+        {
+          "portal": "ACADEMIC",
+          "roleCodes": ["FACULTY"],
+          "roleLabels": ["Faculty"]
+        }
+      ]
+    },
+    {
+      "email": "jose.garcia@example.invalid",
+      "name": "Jose Garcia",
+      "memberships": [
+        {
+          "portal": "RECORDS",
+          "roleCodes": ["RECORDS_STAFF"],
+          "roleLabels": ["Records Staff"]
+        }
+      ]
+    },
+    {
+      "email": "mark.ramos@example.invalid",
+      "name": "Mark Ramos",
+      "memberships": [
+        {
+          "portal": "OPERATIONS",
+          "roleCodes": ["MAINTENANCE_STAFF"],
+          "roleLabels": ["Maintenance Staff"]
+        }
+      ]
+    },
+    {
+      "email": "angelo.cruz@example.invalid",
+      "name": "Angelo Cruz",
+      "memberships": [
+        {
+          "portal": "TECHNOLOGY",
+          "roleCodes": ["IT_ADMIN"],
+          "roleLabels": ["IT Admin"]
+        }
+      ]
+    },
+    {
+      "email": "angelica.bautista@example.invalid",
+      "name": "Angelica Bautista",
+      "memberships": [
+        {
+          "portal": "ACADEMIC",
+          "roleCodes": ["PROGRAM_COORDINATOR"],
+          "roleLabels": ["Program Coordinator"]
+        }
+      ]
+    },
+    {
+      "email": "marygrace.mendoza@example.invalid",
+      "name": "Mary Grace Mendoza",
+      "memberships": [
+        {
+          "portal": "OPERATIONS",
+          "roleCodes": ["SCHOOL_ADMIN"],
+          "roleLabels": ["School Admin"]
+        }
+      ]
+    },
+    {
+      "email": "michael.castro@example.invalid",
+      "name": "Michael Castro",
+      "memberships": [
+        {
+          "portal": "ACADEMIC",
+          "roleCodes": ["FACULTY"],
+          "roleLabels": ["Faculty"]
+        },
+        {
+          "portal": "TECHNOLOGY",
+          "roleCodes": ["DEVELOPER"],
+          "roleLabels": ["Developer"]
+        }
+      ]
+    }
+  ],
+  "exactlyNinePublicCredentialMatches": true,
+  "unrelatedCredentialRecords": 0,
+  "nonDemoRecordsUnchanged": true,
+  "identityAndAccessTablesUnchanged": true,
+  "secondRunAllRecordsUnchanged": true,
+  "missingVariableRejected": true,
+  "credentialSyncCompleted": true,
+  "passwordRecorded": false
+}

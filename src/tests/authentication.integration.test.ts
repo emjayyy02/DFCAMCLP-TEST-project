@@ -17,16 +17,19 @@ import { seedDatabase } from "../server/db/seed";
 
 loadEnvConfig(process.cwd());
 const env = parseServerEnv(process.env);
-if (!env.AUTH_SEED_PASSWORD) {
-  throw new Error("AUTH_SEED_PASSWORD is required for authentication tests.");
+const configuredPassword = env.DEMO_ACCOUNT_PASSWORD ?? env.AUTH_SEED_PASSWORD;
+if (!configuredPassword) {
+  throw new Error(
+    "DEMO_ACCOUNT_PASSWORD or AUTH_SEED_PASSWORD is required for authentication tests.",
+  );
 }
+const seedPassword: string = configuredPassword;
 
 const { client, database } = createDatabaseClient(env.DATABASE_URL, { max: 1 });
 const auth = createPortalAuth(database, {
   baseURL: env.BETTER_AUTH_URL,
   secret: env.BETTER_AUTH_SECRET,
 });
-const seedPassword = env.AUTH_SEED_PASSWORD;
 const activeEmail = "johnpaul.reyes@example.invalid";
 
 function requestHeaders(cookie?: string) {
