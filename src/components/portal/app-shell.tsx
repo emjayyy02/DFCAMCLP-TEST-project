@@ -9,13 +9,10 @@ import { portalDetails } from "@/lib/portals";
 import type { NavigationItem } from "@/server/access-control/navigation";
 import { SignOutButton } from "@/features/identity/sign-out-button";
 import { cn } from "@/lib/utils";
-import { Avatar, IdentitySummary } from "@/components/ui/identity";
-import { useAccountPresentation } from "@/features/identity/demo-presentation-provider";
+import { AccountMenu } from "@/features/identity/account-menu";
+
 import { InteractionFeedback } from "@/components/ui/interaction-feedback";
-import {
-  AboutDemoButton,
-  ProjectInformationLinks,
-} from "@/features/disclosure/demo-disclosure-provider";
+import { ProjectInformationLinks } from "@/features/disclosure/demo-disclosure-provider";
 
 type MembershipSummary = {
   portal: PortalCode;
@@ -132,59 +129,6 @@ function PortalSwitcher({
             </li>
           ))}
         </ul>
-      </div>
-    </details>
-  );
-}
-
-function UserMenu({ user }: Pick<AppShellProps, "user">) {
-  const { photo } = useAccountPresentation(user.id);
-  const menu = useRef<HTMLDetailsElement>(null);
-  function close() {
-    if (menu.current) menu.current.open = false;
-  }
-  return (
-    <details
-      ref={menu}
-      className="group relative"
-      onKeyDown={(event) => {
-        if (event.key === "Escape") {
-          close();
-          menu.current?.querySelector("summary")?.focus();
-        }
-      }}
-    >
-      <summary className="account-trigger flex min-h-11 cursor-pointer list-none items-center rounded-md border border-input px-3 text-[15px] font-semibold text-foreground hover:bg-muted">
-        <Avatar name={user.name} src={photo} size="small" />
-        <span className="account-trigger-label">Account</span>
-      </summary>
-      <div className="portal-popover absolute right-0 z-30 mt-2 w-[min(19rem,calc(100vw-2rem))] rounded-lg bg-surface-elevated p-3 shadow-elevated">
-        <Link
-          href="/account"
-          onClick={close}
-          aria-label={`View profile for ${user.name}`}
-          className="account-identity-link border-b border-border px-2 pb-3"
-        >
-          <IdentitySummary
-            name={user.name}
-            detail={user.email}
-            src={photo}
-            size="small"
-          />
-        </Link>
-        <Link
-          href="/account"
-          onClick={close}
-          className="navigation-item mt-2 font-medium"
-        >
-          View profile
-        </Link>
-        <AboutDemoButton
-          className="navigation-item w-full font-medium"
-          onOpen={close}
-          focusTarget={() => menu.current?.querySelector("summary") ?? null}
-        />
-        <SignOutButton className="mt-1 w-full" variant="ghost" />
       </div>
     </details>
   );
@@ -331,7 +275,7 @@ function MobileDrawer({
           </div>
           <div className="border-t border-border p-4">
             <Link
-              href="/account"
+              href={`/${portalDetails[currentPortal].slug}/profile`}
               onClick={closeDrawer}
               className="navigation-item font-medium"
             >
@@ -400,7 +344,11 @@ export function AppShell({
               currentPortal={currentPortal}
               memberships={memberships}
             />
-            <UserMenu user={user} />
+            <AccountMenu
+              user={user}
+              currentPortal={currentPortal}
+              memberships={memberships}
+            />
           </div>
         </div>
       </header>

@@ -6,8 +6,7 @@ import { PageHeader } from "@/components/portal/page-header";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckboxInput, Select } from "@/components/ui/input";
-import { IdentitySummary } from "@/components/ui/identity";
-import { DemoProfilePhotoPicker } from "@/components/ui/demo-profile-photo";
+
 import { ApplicationForm } from "./application-form";
 import { useApplicantDemo } from "./demo-context";
 import { useSignedInIdentity } from "@/features/identity/signed-in-identity";
@@ -640,33 +639,14 @@ function Announcements() {
   );
 }
 
-function Profile() {
+export function ApplicantProfileInformation() {
   const user = useSignedInIdentity();
-  const { savedDraft, state, profilePhoto, setProfilePhoto } =
-    useApplicantDemo();
-  const fullName = user.name;
+  const { savedDraft, state } = useApplicantDemo();
+
   return (
     <section className="applicant-surface applicant-profile-layout">
-      <div className="applicant-profile-identity">
-        <IdentitySummary
-          name={fullName}
-          detail={`Sample applicant · ${applicantIdentity.id}`}
-          src={profilePhoto}
-          size="large"
-          avatar={
-            <DemoProfilePhotoPicker
-              id="applicant-profile-photo"
-              name={fullName}
-              src={profilePhoto}
-              onSelect={setProfilePhoto}
-              domain
-            />
-          }
-        />
-      </div>
       <p className="domain-profile-context">
-        Sample school profile. Your sign-in identity is in{" "}
-        <Link href="/account">Account profile</Link>.
+        Fictional applicant information from your current demo application.
       </p>
       <section className="applicant-review-group">
         <h3>Personal</h3>
@@ -840,7 +820,7 @@ export function ApplicantPage({
           <Announcements />
         </TaskLayout>
       ) : (
-        <Profile />
+        <ApplicantProfileInformation />
       )}
     </div>
   );

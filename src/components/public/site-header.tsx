@@ -4,16 +4,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
+import {
+  AccountMenu,
+  type AccountNavigation,
+} from "@/features/identity/account-menu";
+import { portalDetails, portalPath } from "@/lib/portals";
 
 const links = [
   ["/", "Home"],
   ["/programs", "Programs"],
   ["/admissions", "Admissions"],
   ["/about", "About"],
-  ["/login", "Sign In"],
 ] as const;
 
-export function SiteHeader() {
+export function SiteHeader({ account }: { account: AccountNavigation | null }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const trigger = useRef<HTMLButtonElement>(null);
@@ -75,6 +79,7 @@ export function SiteHeader() {
           aria-label="Public navigation"
           className="public-navigation"
           data-open={open}
+          data-authenticated={Boolean(account)}
         >
           {links.map(([href, label]) => (
             <Link
@@ -86,6 +91,23 @@ export function SiteHeader() {
               {label}
             </Link>
           ))}
+          {account ? (
+            <>
+              {account.currentPortal ? (
+                <Link
+                  href={portalPath(account.currentPortal)}
+                  onClick={() => closeMenu()}
+                >
+                  Return to {portalDetails[account.currentPortal].label} Portal
+                </Link>
+              ) : null}
+              <AccountMenu {...account} />
+            </>
+          ) : (
+            <Link href="/login" onClick={() => closeMenu()}>
+              Sign In
+            </Link>
+          )}
         </nav>
       </div>
     </header>

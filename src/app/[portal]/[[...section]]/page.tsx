@@ -9,6 +9,7 @@ import { AcademicPage } from "@/features/academic/academic-page";
 import { RecordsPage } from "@/features/records/records-page";
 import { OperationsPage } from "@/features/operations/operations-page";
 import { TechnologyPage } from "@/features/technology/technology-page";
+import { PortalProfile } from "@/features/identity/portal-profile";
 
 export default async function PortalFoundationPage({
   params,
@@ -21,6 +22,9 @@ export default async function PortalFoundationPage({
   const path = `/${portalSlug}${section.length ? `/${section.join("/")}` : ""}`;
   const authorized = await requirePortalPath(portal, path);
   if (!authorized) notFound();
+  if (section.length === 1 && section[0] === "profile") {
+    return <PortalProfile context={authorized.context} portal={portal} />;
+  }
 
   if (portal === "APPLICANT") {
     const query = await searchParams;

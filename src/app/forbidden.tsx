@@ -1,12 +1,19 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { getCurrentAccessContext } from "@/server/access-control/current";
+import {
+  authorizedPrimaryPortal,
+  profilePath,
+} from "@/server/access-control/profile-navigation";
 import {
   ConceptDisclaimer,
   DevelopmentHeader,
   SkipLink,
 } from "@/components/development-identity";
 
-export default function Forbidden() {
+export default async function Forbidden() {
+  const current = await getCurrentAccessContext();
+  const portal = current ? authorizedPrimaryPortal(current) : null;
   return (
     <div className="flex min-h-screen flex-col">
       <SkipLink />
@@ -25,7 +32,9 @@ export default function Forbidden() {
           </p>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
             <Button asChild>
-              <Link href="/account">View account access</Link>
+              <Link href={portal ? profilePath(portal) : "/"}>
+                {portal ? "View profile" : "Return home"}
+              </Link>
             </Button>
             <Button asChild variant="outline">
               <Link href="/login">Return to sign in</Link>

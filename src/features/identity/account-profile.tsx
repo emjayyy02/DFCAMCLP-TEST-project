@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { IdentitySummary } from "@/components/ui/identity";
@@ -23,12 +23,14 @@ type Membership = {
   roleLabels: string[];
 };
 
-export function AccountProfile({
+export function UnifiedProfile({
   user,
   memberships,
+  children,
 }: {
   user: ProfileIdentity;
   memberships: Membership[];
+  children?: ReactNode;
 }) {
   const { photo, setPhoto, bio, setBio } = useAccountPresentation(user.id);
   const [editing, setEditing] = useState(false);
@@ -43,7 +45,7 @@ export function AccountProfile({
     wasEditing.current = editing;
   }, [editing]);
   return (
-    <div className="account-profile-content">
+    <div className="account-profile-content unified-profile">
       <section
         className="account-profile-identity"
         aria-label="Signed-in identity"
@@ -68,6 +70,7 @@ export function AccountProfile({
           </Badge>
         </div>
       </section>
+      {children}
       <div className="account-profile-columns">
         <section className="account-profile-bio" aria-labelledby="bio-title">
           <div className="account-profile-section-heading">
@@ -108,14 +111,14 @@ export function AccountProfile({
                 value={draft}
                 onChange={(event) => setDraft(event.target.value)}
                 maxLength={240}
-                rows={5}
+                rows={3}
                 aria-describedby="bio-limit"
               />
               <p id="bio-limit" className="account-profile-help">
                 {draft.length} / 240 characters · Plain text only.
               </p>
               <div className="account-profile-actions">
-                <Button type="submit">Apply demo bio</Button>
+                <Button type="submit">Save bio</Button>
                 <Button
                   type="button"
                   variant="outline"
@@ -167,8 +170,7 @@ export function AccountProfile({
         <div>
           <h2>Your sign-in</h2>
           <p>
-            Present and server-verified. School-domain profiles remain separate
-            from this account profile.
+            Your session is server-verified. Only explicit sign-out ends it.
           </p>
         </div>
         <SignOutButton />

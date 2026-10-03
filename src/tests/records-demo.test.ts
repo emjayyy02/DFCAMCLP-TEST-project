@@ -161,7 +161,7 @@ describe("P3-M5 Records demo fixtures", () => {
     expect(validSampleSchedule("2026-10-05", "08:00", " ")).toBe(false);
   });
 
-  it("registers exactly six guarded Records destinations using existing permissions", () => {
+  it("registers the Records destinations and unified profile using existing permissions", () => {
     expect(portalRoutes.RECORDS.map((item) => item.path)).toEqual([
       "/records",
       "/records/applicants",
@@ -169,6 +169,7 @@ describe("P3-M5 Records demo fixtures", () => {
       "/records/students",
       "/records/enrollment",
       "/records/documents",
+      "/records/profile",
     ]);
     expect(
       portalRoutes.RECORDS.find((item) => item.path === "/records/dcat")

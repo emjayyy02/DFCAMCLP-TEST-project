@@ -7,8 +7,13 @@ import {
   CampusPrograms,
   HistoryTimeline,
 } from "@/components/public/institution-content";
+import { getCurrentAccessContext } from "@/server/access-control/current";
+import { authorizedPrimaryPortal } from "@/server/access-control/profile-navigation";
+import { portalDetails, portalPath } from "@/lib/portals";
 
-export default function Home() {
+export default async function Home() {
+  const current = await getCurrentAccessContext();
+  const portal = current ? authorizedPrimaryPortal(current) : null;
   return (
     <SiteShell>
       <main id="main">
@@ -30,7 +35,17 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <Button asChild>
-                <Link href="/login">Portal Sign In</Link>
+                <Link
+                  href={
+                    portal ? portalPath(portal) : current ? "/about" : "/login"
+                  }
+                >
+                  {portal
+                    ? `Return to ${portalDetails[portal].label} Portal`
+                    : current
+                      ? "About this project"
+                      : "Portal Sign In"}
+                </Link>
               </Button>
               <Button asChild variant="outline">
                 <Link href="/admissions">Explore Admissions</Link>

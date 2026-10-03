@@ -1,4 +1,8 @@
 import type { Metadata } from "next";
+import { forbidden, redirect } from "next/navigation";
+import { getCurrentAccessContext } from "@/server/access-control/current";
+import { authorizedPrimaryPortal } from "@/server/access-control/profile-navigation";
+import { portalPath } from "@/lib/portals";
 import Link from "next/link";
 import { LoginForm } from "@/features/identity/login-form";
 import { SiteShell } from "@/components/public/site-shell";
@@ -15,6 +19,12 @@ export default async function LoginPage({ searchParams }: PageProps<"/login">) {
     typeof requestedPortal === "string" && isPortalCode(requestedPortal)
       ? requestedPortal
       : "";
+  const current = await getCurrentAccessContext();
+  if (current) {
+    const portal = authorizedPrimaryPortal(current, defaultPortal || null);
+    if (!portal) forbidden();
+    redirect(portalPath(portal));
+  }
   return (
     <SiteShell>
       <main id="main" className="public-container login-page">

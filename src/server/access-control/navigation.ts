@@ -163,6 +163,13 @@ export const portalRoutes: Record<
         "A read-only overview of sample program offerings and faculty assignments.",
       permission: "academic.management.view",
     },
+    {
+      path: "/academic/profile",
+      label: "Profile",
+      title: "Profile",
+      description: "Your signed-in identity and portal access.",
+      permission: "academic.portal.view",
+    },
   ],
   RECORDS: [
     {
@@ -208,6 +215,13 @@ export const portalRoutes: Record<
       description: "Sample COE and COR document states and previews.",
       permission: "records.enrollment.view",
     },
+    {
+      path: "/records/profile",
+      label: "Profile",
+      title: "Profile",
+      description: "Your signed-in identity and portal access.",
+      permission: "records.portal.view",
+    },
   ],
   OPERATIONS: [
     {
@@ -244,6 +258,13 @@ export const portalRoutes: Record<
       title: "Administration",
       description: "Read the demo term and canonical campus/program reference.",
       permission: "operations.administration.view",
+    },
+    {
+      path: "/operations/profile",
+      label: "Profile",
+      title: "Profile",
+      description: "Your signed-in identity and portal access.",
+      permission: "operations.portal.view",
     },
   ],
   TECHNOLOGY: [
@@ -286,6 +307,13 @@ export const portalRoutes: Record<
       description:
         "Explore the project architecture, portal map, canonical data, and demo boundaries.",
       permission: "technology.developer.view",
+    },
+    {
+      path: "/technology/profile",
+      label: "Profile",
+      title: "Profile",
+      description: "Your signed-in identity and portal access.",
+      permission: "technology.portal.view",
     },
   ],
 };

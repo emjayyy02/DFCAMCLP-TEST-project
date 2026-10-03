@@ -3376,6 +3376,121 @@ dialog::backdrop {
   font-weight: 600;
   line-height: 1.3;
 }
+.unified-profile-page {
+  max-width: 960px;
+  margin-inline: auto;
+}
+.unified-profile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.unified-profile .account-profile-identity {
+  padding: 20px 24px;
+  border-top: 2px solid var(--border-strong);
+  flex-wrap: wrap;
+}
+.unified-profile .account-profile-identity .identity-summary {
+  gap: 16px;
+}
+.unified-profile .account-profile-state {
+  gap: 8px;
+}
+.unified-profile > .student-profile-page,
+.unified-profile > .applicant-profile-layout,
+.unified-profile > .unified-profile-information {
+  margin-top: 24px;
+}
+.unified-profile .student-profile-group,
+.unified-profile .applicant-profile-layout,
+.unified-profile-information {
+  padding: 16px 0 0;
+  border: 0;
+  border-top: 2px solid var(--border-strong);
+  border-radius: 0;
+  background: transparent;
+}
+.unified-profile h2 {
+  font-size: 18px;
+}
+.unified-profile-information dl > div {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+  gap: 12px;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--border-strong);
+}
+.unified-profile-information dt {
+  color: var(--foreground-muted);
+  font-size: 14px;
+}
+.unified-profile-information dd {
+  font-weight: 600;
+}
+.unified-profile .account-profile-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+.unified-profile .account-profile-section-heading {
+  flex-wrap: wrap;
+}
+.unified-profile .account-profile-session {
+  margin-top: 24px;
+}
+.public-navigation[data-authenticated="true"] {
+  min-width: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.public-navigation .account-menu {
+  flex-shrink: 0;
+  text-align: left;
+}
+.account-menu-portals {
+  margin-top: 8px;
+  border-block: 1px solid var(--border);
+  padding-block: 4px;
+}
+.public-navigation .account-menu .navigation-item {
+  text-decoration: none;
+}
+.public-site[data-authenticated="true"] .footer-top,
+.public-site[data-authenticated="true"] .footer-top nav {
+  flex-wrap: wrap;
+}
+.public-site[data-authenticated="true"] .footer-top nav {
+  min-width: 0;
+  max-width: 100%;
+}
+.public-site[data-authenticated="true"] .footer-top nav a {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+@media (min-width: 801px) {
+  .public-header:has(.account-menu[open]) {
+    overflow: visible;
+  }
+  .public-navigation .account-menu .portal-popover {
+    max-height: calc(100dvh - 8rem);
+    overflow-y: auto;
+  }
+}
+@media (max-width: 800px) {
+  .unified-profile .account-profile-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .unified-profile .account-profile-identity {
+    padding: 20px 16px;
+  }
+  .public-navigation .account-menu > summary {
+    width: fit-content;
+  }
+  .public-navigation .account-menu .portal-popover {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+  }
+}
 .account-profile-section-heading {
   display: flex;
   align-items: center;

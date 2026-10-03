@@ -316,6 +316,7 @@ describe("P2-M4 access control", () => {
       "/technology/accounts",
       "/technology/security",
       "/technology/system",
+      "/technology/profile",
     ]) {
       expect(canAccessPortalPath(context, "TECHNOLOGY", path)).toBe(true);
     }
@@ -331,6 +332,7 @@ describe("P2-M4 access control", () => {
       "/technology/accounts",
       "/technology/security",
       "/technology/system",
+      "/technology/profile",
     ]);
   });
 
@@ -344,6 +346,7 @@ describe("P2-M4 access control", () => {
       "/technology",
       "/technology/system",
       "/technology/developer",
+      "/technology/profile",
     ]) {
       expect(canAccessPortalPath(context, "TECHNOLOGY", path)).toBe(true);
     }
@@ -354,7 +357,12 @@ describe("P2-M4 access control", () => {
       permittedNavigation("TECHNOLOGY", technologyPermissions).map(
         (item) => item.path,
       ),
-    ).toEqual(["/technology", "/technology/system", "/technology/developer"]);
+    ).toEqual([
+      "/technology",
+      "/technology/system",
+      "/technology/developer",
+      "/technology/profile",
+    ]);
   });
 
   it("allows the multi-portal account into both explicit portals only", async () => {

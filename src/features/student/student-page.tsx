@@ -4,8 +4,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { StudentAcademics } from "./student-academics";
 import { PageHeader } from "@/components/portal/page-header";
-import { IdentitySummary } from "@/components/ui/identity";
-import { DemoProfilePhotoPicker } from "@/components/ui/demo-profile-photo";
+
 import { useStudentDemo } from "./demo-context";
 import { useSignedInIdentity } from "@/features/identity/signed-in-identity";
 import {
@@ -852,14 +851,14 @@ function CalendarPage() {
   );
 }
 
-function ProfilePage() {
+export function StudentProfileInformation() {
   const user = useSignedInIdentity();
   const identity = {
     ...studentDemoData.identity,
     fullName: user.name,
     email: user.email,
   };
-  const { profilePhoto, setProfilePhoto } = useStudentDemo();
+
   const groups = [
     {
       title: "Personal",
@@ -887,27 +886,9 @@ function ProfilePage() {
       className="student-profile-page"
       aria-label="Read-only student profile"
     >
-      <div className="student-profile-identity">
-        <IdentitySummary
-          name={identity.fullName}
-          detail={`${identity.studentId} · ${identity.yearLevel} · ${identity.campus}`}
-          src={profilePhoto}
-          size="large"
-          avatar={
-            <DemoProfilePhotoPicker
-              id="student-profile-photo"
-              name={identity.fullName}
-              src={profilePhoto}
-              onSelect={setProfilePhoto}
-              domain
-            />
-          }
-        />
-      </div>
       <p className="student-policy-note">
-        Fictional, read-only identity. The Student ID is separate from any
-        Applicant ID. Sample school profile. Your sign-in identity is in{" "}
-        <Link href="/account">Account profile</Link>.
+        Fictional, read-only school information. The Student ID is separate from
+        any Applicant ID.
       </p>
       {groups.map((group) => (
         <section
@@ -968,7 +949,7 @@ export function StudentPage({
         {section === "requests" ? <RequestsPage /> : null}
         {section === "announcements" ? <AnnouncementsPage /> : null}
         {section === "calendar" ? <CalendarPage /> : null}
-        {section === "profile" ? <ProfilePage /> : null}
+        {section === "profile" ? <StudentProfileInformation /> : null}
       </div>
     </div>
   );
