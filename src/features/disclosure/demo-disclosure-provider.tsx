@@ -319,12 +319,18 @@ export function DemoDisclosureProvider({ children }: { children: ReactNode }) {
             Learn more
           </h3>
           <nav aria-labelledby="demo-disclosure-resources">
-            {legalLinks.map((link) => (
-              <Link key={link.href} href={link.href} onNavigate={information}>
-                {link.title}
-              </Link>
-            ))}
-            <Link href="/about-developer" onNavigate={information}>
+            <div className="demo-disclosure-legal-links">
+              {legalLinks.map((link) => (
+                <Link key={link.href} href={link.href} onNavigate={information}>
+                  {link.title}
+                </Link>
+              ))}
+            </div>
+            <Link
+              className="demo-disclosure-developer"
+              href="/about-developer"
+              onNavigate={information}
+            >
               About the developer
             </Link>
           </nav>
